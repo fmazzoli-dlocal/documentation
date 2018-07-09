@@ -34,7 +34,7 @@ All submissions of payment info using Fields are made via a secure HTTPS connect
 
 Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com).
 
-**`<script *src*="https://js.dlocal.com/v2/"></script>`**
+`<script *src*="https://js.dlocal.com/v2/"></script>`
 
 Next, create an instance of Fields:
 
@@ -47,25 +47,25 @@ var fields = dlocal.fields();
 
 To securely collect card details from your customers, Fields creates UI components for you that are hosted by dLocal. They are then placed into your payment form, rather than you creating them directly.
 
-To determine where to insert these components, create empty DOM elements \(containers\) with unique IDs within your payment form. We recommend placing your container within a \*\*`<label>`\*\*or next to a **`<label>`** with a **`for`** attribute that matches the unique **`id`** of the Fields container. By doing so, the Field automatically gains focus when the customer clicks on the corresponding label.
+To determine where to insert these components, create empty DOM elements \(containers\) with unique IDs within your payment form. We recommend placing your container within a \*\*`<label>`\*\*or next to a `<label>` with a `for` attribute that matches the unique `id` of the Fields container. By doing so, the Field automatically gains focus when the customer clicks on the corresponding label.
 
 For example:
 
 ```markup
 <form action="/charge" method="post" id="payment-form">
-	<div class="form-row">
-		<label for="card-field">
+    <div class="form-row">
+        <label for="card-field">
       Credit or Debit card
     </label>
-		<div id="card-field">
-			<!-- A dLocal Field will be inserted here. -->
+        <div id="card-field">
+            <!-- A dLocal Field will be inserted here. -->
     </div>
 
-		<!-- Used to display Field errors. -->
+        <!-- Used to display Field errors. -->
     <div id="card-errors" role="alert"></div>
-	</div>
+    </div>
 
-	<button>Pay</button>
+    <button>Pay</button>
 </form>
 ```
 
@@ -88,7 +88,7 @@ var card = fields.create('card', {style: style});
 card.mount('#card-field');
 ```
 
-Fields validates user input as it is typed. To help your customers catch mistakes, you should listen to **`change`** events on the **`card`** Field and display any errors:
+Fields validates user input as it is typed. To help your customers catch mistakes, you should listen to `change` events on the `card` Field and display any errors:
 
 ```javascript
 card.addEventListener('change', function(event) {
@@ -124,10 +124,10 @@ form.addEventListener('submit', function(event) {
 });
 ```
 
-**`dlocal.createToken`** returns a **`Promise`** which resolves with a **`result`** object. This object has either:
+`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
-* **`result.token`**: a token was created successfully.
-* **`result.error`**: there was an error. This includes client-side validation errors.
+* `result.token`: a token was created successfully.
+* `result.error`: there was an error. This includes client-side validation errors.
 
 ## Step 4: Submit the token and the rest of your form to your server
 
@@ -150,7 +150,5 @@ function dlocalTokenHandler(token) {
 
 ## What's next?
 
-###  [Create a Payment](https://dlocal.gitbook.io/setup-guide/api-reference#create-a-payment)
-
-
+### [Create a Payment](https://dlocal.gitbook.io/setup-guide/api-reference#create-a-payment)
 

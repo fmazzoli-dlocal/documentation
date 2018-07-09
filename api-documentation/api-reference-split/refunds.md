@@ -29,7 +29,7 @@ Amount to refund. Default is total amount of the payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-Currency of the Amount. **Only required if `amount` is present.**
+Currency of the Amount. **Only required if** `amount` **is present.**
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -119,3 +119,4 @@ POST**:** _{refund.notification\_url}_
 | `SUCCESS` | 200 | The refund was paid. |
 | `REJECTED` | 300 | The refund was rejected. |
 | `CANCELLED` | 400 | The refund was cancelled. |
+

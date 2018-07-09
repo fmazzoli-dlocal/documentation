@@ -57,3 +57,4 @@ curl -X GET \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/currency-exchanges?from=USD&to=BRL
 ```
+

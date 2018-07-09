@@ -54,8 +54,8 @@ Example Response
 | `holder_name` | String **\(Required\)** | Cardholder's full name |
 | `expiration_month` | Integer **\(Required\)** | Number representing the card's expiration month \(start in 1\). |
 | `expiration_year` | Integer **\(Required\)** | Number representing the card's expiration year. |
-| `number` | String **\(Required if `encrypted_data` not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required is `encrypted_data` not present\)** | Credit card verification value. |
+| `number` | String **\(Required if** `encrypted_data` **not present\)** | The card number, as a string without any separators. |
+| `cvv` | String **\(Required is** `encrypted_data` **not present\)** | Credit card verification value. |
 | `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
 
 ## The Payer Object
@@ -143,3 +143,4 @@ $ curl \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/cards/CV-e90078f7-e027-4ce4-84cb-534c877be33c
 ```
+

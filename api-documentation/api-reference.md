@@ -8,20 +8,20 @@ For sandbox environment replace api.dlocal.com for sandbox.dlocal.com.
 
 ## Security
 
-#### Signature
+### Signature
 
 The signature should use SHA256 as HMAC hash function. The signature header always should have the version prefix that contains the signature version and the used hash function. For now, V2-HMAC-SHA256.
 
-#### Headers
+### Headers
 
 | **Header** | **Type** | **Description** |
 | --- | --- | --- | --- | --- |
-| `X-Date` | String  | ISO8601 Datetime with Timezone |
-| `X-Login` | String  | Merchant xLogin |
+| `X-Date` | String | ISO8601 Datetime with Timezone |
+| `X-Login` | String | Merchant xLogin |
 | `X-Trans-Key` | String \(Optional\) | Merchant xTransKey |
-| Authorization | String  | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date Header+RequestBody"\)&gt; |
+| Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date Header+RequestBody"\)&gt; |
 
-#### Sensitive data encryption
+### Sensitive data encryption
 
 Credit Card data, such as number and cvv, will be encrypted inside the Json Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, so most used languages have any libraries to support it, simplifying the integration for our merchants.
 
@@ -75,7 +75,7 @@ curl -X POST \
 
 Object that identifies each payment method accepted by dLocal.
 
-#### The Payment Method Object
+### The Payment Method Object
 
 {% tabs %}
 {% tab title="Payment Method Object" %}
@@ -182,7 +182,7 @@ Payment method country code. See all country codes here.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Request
+### Example Request
 
 ```bash
 curl -X GET \
@@ -196,7 +196,7 @@ curl -X GET \
 
 This service allows you to create, modify or read payments.
 
-#### The Payment Object
+### The Payment Object
 
 {% tabs %}
 {% tab title="Payment Object" %}
@@ -209,11 +209,11 @@ This service allows you to create, modify or read payments.
 | `payment_method_type` | String | Payment method type of the payment method chosen. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
 | `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
-| `payer` $$ $$ | [Payer Object](api.md#the-payer-object) | Identifies the payer |
-| `card` | [Card Object](api.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
-| `bank_transfer` | [Bank Transfer Object](api.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
-| `direct_debit` | [Direct Debit Object](api.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
-| `ticket` | [Ticket Object](api.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
+| `payer` $$ $$ | [Payer Object](api-reference.md#the-payer-object) | Identifies the payer |
+| `card` | [Card Object](api-reference.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
+| `bank_transfer` | [Bank Transfer Object](api-reference.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
+| `direct_debit` | [Direct Debit Object](api-reference.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
+| `ticket` | [Ticket Object](api-reference.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
 | `refunds` | Date\(ISO\_8601\) | Payment's refunds of refund object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
@@ -272,7 +272,7 @@ This service allows you to create, modify or read payments.
 {% endtab %}
 {% endtabs %}
 
-#### The Payer Object
+### The Payer Object
 
 {% tabs %}
 {% tab title="Payer Object" %}
@@ -285,7 +285,7 @@ This service allows you to create, modify or read payments.
 | `document` | String | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String | User’s document type. |
 | `user_reference` | String | Unique user id at the merchant side. |
-| `address` | [Address Object](api.md#the-address-object) | User’s address. |
+| `address` | [Address Object](api-reference.md#the-address-object) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -309,13 +309,13 @@ This service allows you to create, modify or read payments.
 {% endtab %}
 {% endtabs %}
 
-#### The Address Object
+### The Address Object
 
 {% tabs %}
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-|  `state` | String | User's address state. |
+| `state` | String | User's address state. |
 | `city` | String | User’s address city. |
 | `zip_code` | String | User’s address zip\_code. |
 | `street` | String | User’s address street. |
@@ -336,7 +336,7 @@ This service allows you to create, modify or read payments.
 {% endtab %}
 {% endtabs %}
 
-#### The Card Object
+### The Card Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -355,7 +355,7 @@ This service allows you to create, modify or read payments.
 | `save` | String | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment method flows \) |
 | `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. |
 
-#### The Bank Transfer Object
+### The Bank Transfer Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -369,17 +369,17 @@ This service allows you to create, modify or read payments.
 | `amount_to_transfer` | Positive Float | Amount to transfer \(only for not referenced bank transfers\). |
 | `reference` | String | Reference to make the bank transfer. |
 
-#### The Direct Debit Object
+### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String | Name of the owner of the  |
+| `holder_name` | String | Name of the owner of the |
 | `email` | String | Email of the owner of the bank account. |
 | `document_type` | String | Document of the owner of the bank account. |
 | `document` | String | Document of the owner of the bank account. |
 | `cbu` | String | CBU of the owner of the bank account \(only for AR country\). |
 
-#### The Ticket Object
+### The Ticket Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- |
@@ -439,7 +439,7 @@ Card Object **\(required only for** `CARD` **payment type\)**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direct\_debit" type="object" required=true %}
-Direct Debit Object **\(required only for `DIRECT_DEBIT` payment type\)**
+Direct Debit Object **\(required only for** `DIRECT_DEBIT` **payment type\)**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="external\_reference" type="string" required=true %}
@@ -512,7 +512,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### The Payer Object
+### The Payer Object
 
 {% tabs %}
 {% tab title="Payer Object" %}
@@ -525,7 +525,7 @@ Example Response
 | `document` | String \(Optional\) | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String \(Optional\) | User’s document type. |
 | `user_reference` | String \(Optional\) | Unique user id at the merchant side. |
-| `address` | [Address Object ](api.md#the-address-object)\(Optional\) | User’s address. |
+| `address` | [Address Object ](api-reference.md#the-address-object)\(Optional\) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -549,13 +549,13 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-#### The Address Object
+### The Address Object
 
 {% tabs %}
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-|  `state` | String \(Optional\) | User's address state. |
+| `state` | String \(Optional\) | User's address state. |
 | `city` | String \(Optional\) | User’s address city. |
 | `zip_code` | String \(Optional\) | User’s address zip\_code. |
 | `street` | String \(Optional\) | User’s address street. |
@@ -576,7 +576,7 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-#### The Card Object
+### The Card Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -593,17 +593,17 @@ Example Response
 | `save` | String \(Optional\) | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment methods flows \). Default `NO` |
 | `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
 
-#### The Direct Debit Object
+### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String \(Required\) | Name of the owner of the  |
+| `holder_name` | String \(Required\) | Name of the owner of the |
 | `email` | String \(Required\) | Email of the owner of the bank account. |
 | `document_type` | String \(Required\) | Document of the owner of the bank account. |
 | `document` | String \(Required\) | Document of the owner of the bank account. |
 | `cbu` | String \(Required\) | CBU of the owner of the bank account \(only for AR country\). |
 
-#### Example Request
+### Example Request
 
 ```bash
 curl -X POST \
@@ -614,7 +614,7 @@ curl -X POST \
     https://api.dlocal.com/payments
 ```
 
-#### Example Request Body
+### Example Request Body
 
 ```yaml
 {
@@ -724,7 +724,7 @@ The payment id
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Request
+### Example Request
 
 ```bash
 $ curl \
@@ -770,7 +770,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Request
+### Example Request
 
 ```bash
 $ curl \
@@ -780,7 +780,7 @@ $ curl \
     https://api.dlocal.com/payments/PAY4334346343/status
 ```
 
-#### Payment Status Codes
+### Payment Status Codes
 
 | **Status** | **Status code** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -791,7 +791,7 @@ $ curl \
 | `EXPIRED` | 500 | The payment was expired. |
 | `AUTHORIZED` | 600 | The payment was authorized. |
 
-#### Rejection Status
+### Rejection Status
 
 | **Status** | **Status code** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -804,7 +804,7 @@ $ curl \
 | `REJECTED` | 307 | Duplicated payment. |
 | `REJECTED` | 308 | Credit card disabled. |
 
-#### Errors
+### Errors
 
 All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
 
@@ -823,31 +823,31 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 }
 ```
 
-#### Http Errors {#http-errors}
+### Http Errors {#http-errors}
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `403 Forbidden` | 3001 | Invalid Credentials. |
-|   | 3002 | Unregistered IP address. |
-|   | 3003 | Merchant has no authorization to use this API. |
+|  | 3002 | Unregistered IP address. |
+|  | 3003 | Merchant has no authorization to use this API. |
 | `404 Not Found` | 4000 | Payment not found. |
 | `400 Bad Request` | 5000 | Invalid request. |
-|   | 5001 | Invalid param. |
-|   | 5002 | Invalid transaction status. |
-|   | 5003 | Country not supported. |
-|   | 5004 | Currency not allowed for this country. |
-|   | 5005 | User unauthorized due to cadastral situation. |
-|   | 5006 | User limit exceeded. |
-|   | 5007 | Amount exceeded. |
-|   | 5008 | Token not found or inactive. |
+|  | 5001 | Invalid param. |
+|  | 5002 | Invalid transaction status. |
+|  | 5003 | Country not supported. |
+|  | 5004 | Currency not allowed for this country. |
+|  | 5005 | User unauthorized due to cadastral situation. |
+|  | 5006 | User limit exceeded. |
+|  | 5007 | Amount exceeded. |
+|  | 5008 | Token not found or inactive. |
 | `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
-#### Notifications
+### Notifications
 
 Notifications will be sent in every change of status of a payment to the notification URL specified by the merchant. This URL is taken from the `notification_url` field of the payment, if it differs from the one specified in the merchant panel. The body of the request will always be the payment object.
 
-#### Example Notification POST
+### Example Notification POST
 
 POST: _{payment.notification\_url}_
 
@@ -923,7 +923,7 @@ Amount to refund. Default is total amount of the payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-Currency of the Amount. **Only required if `amount` is present.**
+Currency of the Amount. **Only required if** `amount` **is present.**
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -952,7 +952,7 @@ Currency of the Amount. **Only required if `amount` is present.**
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Request
+### Example Request
 
 ```bash
 $ curl -X POST \
@@ -962,7 +962,7 @@ $ curl -X POST \
     https://api.dlocal.com/refunds
 ```
 
-#### Example Request Body
+### Example Request Body
 
 ```yaml
 {
@@ -973,7 +973,7 @@ $ curl -X POST \
 }
 ```
 
-#### Refund Asynchronous Notification
+### Refund Asynchronous Notification
 
 If a refund is pending, the refund confirmation is sent asynchronously to the refund notification URL by POST, sending the following parameters:
 
@@ -988,7 +988,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | `status_code` | Integer | The [status](https://dlocal.com/docs/?language=cURL#refund-status) code of the refund. |
 | `created_date` | String | The date of when the refund was executed. |
 
-#### Example POST
+### Example POST
 
 POST**:** _{refund.notification\_url}_
 
@@ -1005,7 +1005,7 @@ POST**:** _{refund.notification\_url}_
 }
 ```
 
-#### Refund Status Codes {#refund-status}
+### Refund Status Codes {#refund-status}
 
 | Status | Status code | Description |
 | --- | --- | --- | --- | --- |
@@ -1085,7 +1085,7 @@ The payment id
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### **Example request**
+### **Example request**
 
 ```bash
 $ curl -X POST \
@@ -1163,7 +1163,7 @@ The payment id.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Example Request
+### Example Request
 
 ```bash
 $ curl -X POST \
@@ -1173,7 +1173,7 @@ $ curl -X POST \
     https://api.dlocal.com/payments/PAY4334346343/cancel
 ```
 
-#### Chargeback asynchronous notification
+### Chargeback asynchronous notification
 
 If a charge back was applied \(requested by the user\) a notification is sent to the merchant to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
 
@@ -1205,7 +1205,7 @@ POST: _{merchant.chargeback\_url}_
 }
 ```
 
-#### Chargeback status {#chargeback-status}
+### Chargeback status {#chargeback-status}
 
 | **Status** | **Status code** | **Description** |
 | --- | --- | --- |
@@ -1216,7 +1216,7 @@ POST: _{merchant.chargeback\_url}_
 
 You can specify an installment plan, to guarantee the surcharge per installment that will be charged.
 
-#### The Installment Plan Object
+### The Installment Plan Object
 
 {% tabs %}
 {% tab title="Installment Plan Object" %}
@@ -1227,7 +1227,7 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 | `currency` | String | The currency of the installments plan. |
 | `bin` | String | The credit card bin. |
 | `amount` | Positive Float | The amount of the installments plan. |
-| `installments` | [Installment Object](api.md#the-installment-object)\[ \] | The installments plan information |
+| `installments` | [Installment Object](api-reference.md#the-installment-object)\[ \] | The installments plan information |
 {% endtab %}
 
 {% tab title="Example Installment Plan Object" %}
@@ -1263,7 +1263,7 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 {% endtab %}
 {% endtabs %}
 
-#### The Installment Object
+### The Installment Object
 
 {% tabs %}
 {% tab title="Installment Object" %}
@@ -1357,7 +1357,7 @@ The currency of the installments plan.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### **Example request**
+### **Example request**
 
 ```bash
 $ curl -X POST \
@@ -1428,25 +1428,25 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### The Card Object
+### The Card Object
 
 | **Argument** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- |
 | `holder_name` | String **\(Required\)** | Cardholder's full name |
 | `expiration_month` | Integer **\(Required\)** | Number representing the card's expiration month \(start in 1\). |
 | `expiration_year` | Integer **\(Required\)** | Number representing the card's expiration year. |
-| `number` | String **\(Required if `encrypted_data` not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required is `encrypted_data` not present\)** | Credit card verification value. |
+| `number` | String **\(Required if** `encrypted_data` **not present\)** | The card number, as a string without any separators. |
+| `cvv` | String **\(Required is** `encrypted_data` **not present\)** | Credit card verification value. |
 | `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
 
-#### The Payer Object
+### The Payer Object
 
 | **Argument** | **Type** | **Description** |
 | --- | --- | --- |
 | `name` | String **\(Required\)** | Payer's name |
 | `document` | String **\(Required\)** | Payer's document |
 
-#### Example Request
+### Example Request
 
 ```bash
 curl -X POST \
@@ -1584,3 +1584,4 @@ curl -X GET \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/currency-exchanges?from=USD&to=BRL
 ```
+

@@ -15,11 +15,11 @@ This service allows you to create, modify or read payments.
 | `payment_method_type` | String | Payment method type of the payment method chosen. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
 | `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
-| `payer` | [Payer Object](api.md#the-payer-object) | Identifies the payer |
-| `card` | [Card Object](api.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
-| `bank_transfer` | [Bank Transfer Object](api.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
-| `direct_debit` | [Direct Debit Object](api.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
-| `ticket` | [Ticket Object](api.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
+| `payer` | [Payer Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-payer-object) | Identifies the payer |
+| `card` | [Card Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
+| `bank_transfer` | [Bank Transfer Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
+| `direct_debit` | [Direct Debit Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
+| `ticket` | [Ticket Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
 | `refunds` | Date\(ISO\_8601\) | Payment's refunds of refund object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
@@ -91,7 +91,7 @@ This service allows you to create, modify or read payments.
 | `document` | String | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String | User’s document type. |
 | `user_reference` | String | Unique user id at the merchant side. |
-| `address` | [Address Object](api.md#the-address-object) | User’s address. |
+| `address` | [Address Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-address-object) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -121,7 +121,7 @@ This service allows you to create, modify or read payments.
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-|  `state` | String | User's address state. |
+| `state` | String | User's address state. |
 | `city` | String | User’s address city. |
 | `zip_code` | String | User’s address zip\_code. |
 | `street` | String | User’s address street. |
@@ -179,7 +179,7 @@ This service allows you to create, modify or read payments.
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String | Name of the owner of the  |
+| `holder_name` | String | Name of the owner of the |
 | `email` | String | Email of the owner of the bank account. |
 | `document_type` | String | Document of the owner of the bank account. |
 | `document` | String | Document of the owner of the bank account. |
@@ -245,7 +245,7 @@ Card Object **\(required only for** `CARD` **payment type\)**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direct\_debit" type="object" required=true %}
-Direct Debit Object **\(required only for `DIRECT_DEBIT` payment type\)**
+Direct Debit Object **\(required only for** `DIRECT_DEBIT` **payment type\)**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="external\_reference" type="string" required=true %}
@@ -331,7 +331,7 @@ Example Response
 | `document` | String \(Optional\) | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String \(Optional\) | User’s document type. |
 | `user_reference` | String \(Optional\) | Unique user id at the merchant side. |
-| `address` | [Address Object ](api.md#the-address-object)\(Optional\) | User’s address. |
+| `address` | [Address Object ](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-address-object)\(Optional\) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -361,7 +361,7 @@ Example Response
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-|  `state` | String \(Optional\) | User's address state. |
+| `state` | String \(Optional\) | User's address state. |
 | `city` | String \(Optional\) | User’s address city. |
 | `zip_code` | String \(Optional\) | User’s address zip\_code. |
 | `street` | String \(Optional\) | User’s address street. |
@@ -403,7 +403,7 @@ Example Response
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String \(Required\) | Name of the owner of the  |
+| `holder_name` | String \(Required\) | Name of the owner of the |
 | `email` | String \(Required\) | Email of the owner of the bank account. |
 | `document_type` | String \(Required\) | Document of the owner of the bank account. |
 | `document` | String \(Required\) | Document of the owner of the bank account. |
@@ -634,18 +634,18 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `403 Forbidden` | 3001 | Invalid Credentials. |
-|   | 3002 | Unregistered IP address. |
-|   | 3003 | Merchant has no authorization to use this API. |
+|  | 3002 | Unregistered IP address. |
+|  | 3003 | Merchant has no authorization to use this API. |
 | `404 Not Found` | 4000 | Payment not found. |
 | `400 Bad Request` | 5000 | Invalid request. |
-|   | 5001 | Invalid param. |
-|   | 5002 | Invalid transaction status. |
-|   | 5003 | Country not supported. |
-|   | 5004 | Currency not allowed for this country. |
-|   | 5005 | User unauthorized due to cadastral situation. |
-|   | 5006 | User limit exceeded. |
-|   | 5007 | Amount exceeded. |
-|   | 5008 | Token not found or inactive. |
+|  | 5001 | Invalid param. |
+|  | 5002 | Invalid transaction status. |
+|  | 5003 | Country not supported. |
+|  | 5004 | Currency not allowed for this country. |
+|  | 5005 | User unauthorized due to cadastral situation. |
+|  | 5006 | User limit exceeded. |
+|  | 5007 | Amount exceeded. |
+|  | 5008 | Token not found or inactive. |
 | `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
@@ -697,3 +697,4 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
+

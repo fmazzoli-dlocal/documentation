@@ -1,7 +1,3 @@
----
-description: d•local - 360 payment technology for emerging markets
----
-
 # d•local Setup Guide
 
 

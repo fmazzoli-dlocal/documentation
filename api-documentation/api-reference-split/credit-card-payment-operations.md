@@ -195,3 +195,4 @@ POST: _{merchant.chargeback\_url}_
 | --- | --- | --- |
 | `PENDING` | 100 | The chargeback is pending. |
 | `SUCCESS` | 200 | The chargeback was executed. |
+
