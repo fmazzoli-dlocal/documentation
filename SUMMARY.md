@@ -17,3 +17,5 @@
   * [Refunds](api-reference-2/refunds.md)
   * [Credit Card Payment Operations](api-reference-2/credit-card-operations.md)
   * [Installments](api-reference-2/installments.md)
+  * [Saving Cards](api-reference-2/saving-cards.md)
+  * [Currency Exchange](api-reference-2/currency-exchange.md)
