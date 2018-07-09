@@ -318,7 +318,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### The Payer Object
+#### The Payer Object
 
 {% tabs %}
 {% tab title="Payer Object" %}
@@ -355,7 +355,7 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-### The Address Object
+#### The Address Object
 
 {% tabs %}
 {% tab title="Address Object" %}
@@ -382,7 +382,7 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-### The Card Object
+#### The Card Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -399,7 +399,7 @@ Example Response
 | `save` | String \(Optional\) | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment methods flows \). Default `NO` |
 | `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
 
-### The Direct Debit Object
+#### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
@@ -409,7 +409,7 @@ Example Response
 | `document` | String \(Required\) | Document of the owner of the bank account. |
 | `cbu` | String \(Required\) | CBU of the owner of the bank account \(only for AR country\). |
 
-## Example Request
+### Example Request
 
 ```bash
 curl -X POST \
@@ -530,7 +530,7 @@ The payment id
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Request
+### Example Request
 
 ```bash
 $ curl \
@@ -576,7 +576,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example Request
+### Example Request
 
 ```bash
 $ curl \
@@ -610,7 +610,7 @@ $ curl \
 | `REJECTED` | 307 | Duplicated payment. |
 | `REJECTED` | 308 | Credit card disabled. |
 
-## Errors
+### Errors
 
 All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
 
@@ -629,7 +629,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 }
 ```
 
-### Http Errors {#http-errors}
+#### Http Errors {#http-errors}
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -653,7 +653,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 
 Notifications will be sent in every change of status of a payment to the notification URL specified by the merchant. This URL is taken from the `notification_url` field of the payment, if it differs from the one specified in the merchant panel. The body of the request will always be the payment object.
 
-### Example Notification POST
+#### Example Notification POST
 
 POST: _{payment.notification\_url}_
 
