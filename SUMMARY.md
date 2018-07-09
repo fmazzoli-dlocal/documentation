@@ -1,10 +1,10 @@
 # Table of contents
 
 * [d•local Setup Guide](README.md)
-* [Introduction](introduction/README.md)
-  * [Payins](introduction/payins.md)
-  * [Payouts](introduction/payouts.md)
-* [Fields](fields/README.md)
+//* [Introduction](introduction/README.md)
+//  * [Payins](introduction/payins.md)
+//  * [Payouts](introduction/payouts.md)
+* [Fields](fields/fields-guide.md)
   * [Fields Setup Guide](fields/fields-guide.md)
 
 ## API Documentation

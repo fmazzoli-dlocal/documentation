@@ -15,7 +15,7 @@ This service allows you to create, modify or read payments.
 | `payment_method_type` | String | Payment method type of the payment method chosen. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
 | `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
-| `payer` $$ $$ | [Payer Object](api.md#the-payer-object) | Identifies the payer |
+| `payer` | [Payer Object](api.md#the-payer-object) | Identifies the payer |
 | `card` | [Card Object](api.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
 | `bank_transfer` | [Bank Transfer Object](api.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
 | `direct_debit` | [Direct Debit Object](api.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
