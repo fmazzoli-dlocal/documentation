@@ -4,7 +4,7 @@ This document covers the basic concepts of the payment transaction types and the
 
 JSON is returned by all API responses, including errors.
 
-For sandbox environment replace api.dlocal.com for sandbox.dlocal.com.-
+For sandbox environment replace api.dlocal.com for sandbox.dlocal.com.
 
 ## Security
 
@@ -1584,6 +1584,3 @@ curl -X GET \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/currency-exchanges?from=USD&to=BRL
 ```
-
-
-
