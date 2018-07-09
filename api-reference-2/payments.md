@@ -318,7 +318,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## The Payer Object
+### The Payer Object
 
 {% tabs %}
 {% tab title="Payer Object" %}
@@ -355,7 +355,7 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-## The Address Object
+### The Address Object
 
 {% tabs %}
 {% tab title="Address Object" %}
@@ -382,7 +382,7 @@ Example Response
 {% endtab %}
 {% endtabs %}
 
-## The Card Object
+### The Card Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -399,7 +399,7 @@ Example Response
 | `save` | String \(Optional\) | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment methods flows \). Default `NO` |
 | `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
 
-## The Direct Debit Object
+### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
@@ -420,7 +420,7 @@ curl -X POST \
     https://api.dlocal.com/payments
 ```
 
-### Example Request Body
+#### Example Request Body
 
 ```yaml
 {
