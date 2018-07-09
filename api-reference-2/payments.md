@@ -649,7 +649,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 | `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
-### Notifications
+## Notifications
 
 Notifications will be sent in every change of status of a payment to the notification URL specified by the merchant. This URL is taken from the `notification_url` field of the payment, if it differs from the one specified in the merchant panel. The body of the request will always be the payment object.
 
