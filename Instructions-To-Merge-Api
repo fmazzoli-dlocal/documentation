@@ -1,0 +1,1 @@
+cat security.md payment-methods.md payments.md credit-card-operations.md saving-cards.md refunds.md installments.md currency-exchange.md > ../api-reference.md
