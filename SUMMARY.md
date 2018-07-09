@@ -13,4 +13,4 @@
 * [API Reference \(Split\)](api-reference-2/README.md)
   * [Security](api-reference-2/security.md)
   * [Payment Methods](api-reference-2/payment-methods.md)
-
+  * [Payments](api-reference-2/payments.md)
