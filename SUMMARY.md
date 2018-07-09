@@ -14,3 +14,6 @@
   * [Security](api-reference-2/security.md)
   * [Payment Methods](api-reference-2/payment-methods.md)
   * [Payments](api-reference-2/payments.md)
+  * [Refunds](api-reference-2/refunds.md)
+  * [Credit Card Payment Operations](api-reference-2/credit-card-operations.md)
+  * [Installments](api-reference-2/installments.md)
