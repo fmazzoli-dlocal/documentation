@@ -16,4 +16,4 @@
   * [Installments](api-documentation/api-reference-split/installments.md)
   * [Saving Cards](api-documentation/api-reference-split/saving-cards.md)
   * [Currency Exchange](api-documentation/api-reference-split/currency-exchange.md)
-
+* [API Reference Merged](api-documentation/api-reference-merged.md)
