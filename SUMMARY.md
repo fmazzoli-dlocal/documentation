@@ -1,8 +1,16 @@
 # Table of contents
 
 * [d•local Setup Guide](README.md)
-* [Fields](fields.md)
-* [Fields Setup Guide](fields-setup-guide.md)
+
+## Solutions
+* [Payins](solutions/payins.md)
+* [Payouts](solutions/payouts.md)
+* [Marketplace](solutions/marketplace.md)
+
+## Products  
+
+* [Fields](products/fields/README.md)
+  * [Fields Setup Guide](products/fields/fields-setup-guide.md)
 
 ## API Documentation
 
@@ -15,4 +23,3 @@
   * [Installments](api-documentation/api-reference/installments.md)
   * [Saving Cards](api-documentation/api-reference/saving-cards.md)
   * [Currency Exchange](api-documentation/api-reference/currency-exchange.md)
-
