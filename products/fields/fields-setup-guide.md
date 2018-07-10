@@ -150,5 +150,7 @@ function dlocalTokenHandler(token) {
 
 ## What's next? Create a Payment
 
+Create a payment using the credit card token y collected. Learn more about creating payments here:
+
 {% page-ref page="../../api-documentation/api-reference/payments.md" %}
 
