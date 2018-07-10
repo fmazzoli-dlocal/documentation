@@ -1,4 +1,4 @@
-# API Reference \(+\)
+# API Reference
 
 This section covers the basic concepts of the payment transaction types and the technical details of the dLocal - Payments API. It contains functional examples of the requests and important observations to be taken into account during integration.
 

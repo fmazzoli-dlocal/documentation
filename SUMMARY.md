@@ -6,13 +6,13 @@
 
 ## API Documentation
 
-//* [API Reference](api-documentation/api-reference.md)
-* [API Reference](api-documentation/api-reference-split/README.md)
-  * [Security](api-documentation/api-reference-split/security.md)
-  * [Payment Methods](api-documentation/api-reference-split/payment-methods.md)
-  * [Payments](api-documentation/api-reference-split/payments.md)
-  * [Refunds](api-documentation/api-reference-split/refunds.md)
-  * [Credit Card Payment Operations](api-documentation/api-reference-split/credit-card-payment-operations.md)
-  * [Installments](api-documentation/api-reference-split/installments.md)
-  * [Saving Cards](api-documentation/api-reference-split/saving-cards.md)
-  * [Currency Exchange](api-documentation/api-reference-split/currency-exchange.md)
+* [API Reference](api-documentation/api-reference/README.md)
+  * [Security](api-documentation/api-reference/security.md)
+  * [Payment Methods](api-documentation/api-reference/payment-methods.md)
+  * [Payments](api-documentation/api-reference/payments.md)
+  * [Refunds](api-documentation/api-reference/refunds.md)
+  * [Credit Card Payment Operations](api-documentation/api-reference/credit-card-payment-operations.md)
+  * [Installments](api-documentation/api-reference/installments.md)
+  * [Saving Cards](api-documentation/api-reference/saving-cards.md)
+  * [Currency Exchange](api-documentation/api-reference/currency-exchange.md)
+

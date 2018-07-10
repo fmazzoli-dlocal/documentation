@@ -150,5 +150,7 @@ function dlocalTokenHandler(token) {
 
 ## What's next?
 
-### [Create a Payment](https://dlocal.gitbook.io/setup-guide/api-reference#create-a-payment)
+### [Create a Payment](https://dlocal.gitbook.io/setup-guide/api-documentation/api-reference/payments#create-a-payment)
+
+
 
