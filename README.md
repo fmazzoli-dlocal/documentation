@@ -9,7 +9,6 @@
 dLocal helps merchants accept payment  supports all the local payment types including:
 
 * International and local credit/debit cards
-* Monthly Installments
 * Bank Transfers
 * E-wallets
 * Direct debit
@@ -28,12 +27,28 @@ If your company is not Full PCI DSS compliant, you will not be able to handle cr
 
 Learn more about Fields here:
 
-{% page-ref page="fields/" %}
+{% page-ref page="fields.md" %}
 
-If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. 
+If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. Learn about our API here:
 
-  
+{% page-ref page="api-documentation/api-reference/" %}
 
+#### Installments
+
+Monthly installments are part of the daily life of consumers in emerging markets, especially in LATAM. This option comes with zero financial risk for merchants who accept local cards and has shown to increase average sales by as much as 40%.
+
+Learn more about how to accept installments here:
+
+{% page-ref page="api-documentation/api-reference/installments.md" %}
+
+### Alternative Payment Methods
+
+Besides credit cards, dLocal also accepts payments via a variety of other payment methods, such as:
+
+* Bank Transfers
+* E-wallets
+* Direct debit
+* Cash payments.
 
 ## Payouts
 

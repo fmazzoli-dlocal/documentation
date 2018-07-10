@@ -1,8 +1,8 @@
 # Table of contents
 
 * [d•local Setup Guide](README.md)
-* [Fields](fields/README.md)
-  * [Fields Setup Guide](fields/fields-setup-guide.md)
+* [Fields](fields.md)
+* [Fields Setup Guide](fields-setup-guide.md)
 
 ## API Documentation
 

@@ -10,7 +10,7 @@ description: >-
 
 This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Field. The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
 
-![](../.gitbook/assets/screen-shot-2018-07-02-at-2.48.43-pm.png)
+![](.gitbook/assets/screen-shot-2018-07-02-at-2.48.43-pm.png)
 
 Processing credit card payments with dLocal Fields consists of two parts:
 
@@ -150,5 +150,5 @@ function dlocalTokenHandler(token) {
 
 ## What's next? Create a Payment
 
-{% page-ref page="../api-documentation/api-reference/payments.md" %}
+{% page-ref page="api-documentation/api-reference/payments.md" %}
 

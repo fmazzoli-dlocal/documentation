@@ -12,7 +12,7 @@ This provides you with the ability to customize the look and feel of your web pa
 
 ### Fully Customizable Checkouts
 
-![](../.gitbook/assets/image.png)
+![](.gitbook/assets/image.png)
 
 Fields defers as much of the styling of field components to you as possible. The layout, width, height, and outer styling \(`border`, `box-shadow`, `background`, etc.\) are left completely in your control.
 
