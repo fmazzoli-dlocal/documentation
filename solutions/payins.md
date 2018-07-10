@@ -1,6 +1,6 @@
 # Payins
 
-dLocal helps merchants accept payment  supports all the local payment types including:
+dLocal helps merchants accept payment supports all the local payment types including:
 
 * International and local credit/debit cards
 * Bank Transfers
@@ -21,11 +21,11 @@ If your company is not Full PCI DSS compliant, you will not be able to handle cr
 
 Learn more about Fields here:
 
-{% page-ref page="fields.md" %}
+{% page-ref page="../products/fields/" %}
 
 If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. Learn about our API here:
 
-{% page-ref page="api-documentation/api-reference/" %}
+{% page-ref page="../api-documentation/api-reference/" %}
 
 ### Installments
 
@@ -33,7 +33,7 @@ Monthly installments are part of the daily life of consumers in emerging markets
 
 Learn more about how to accept installments here:
 
-{% page-ref page="api-documentation/api-reference/installments.md" %}
+{% page-ref page="../api-documentation/api-reference/installments.md" %}
 
 ### Alternative Payment Methods
 
@@ -43,3 +43,6 @@ Besides credit cards, dLocal also accepts payments via a variety of other paymen
 * E-wallets
 * Direct debit
 * Cash payments.
+
+
+
