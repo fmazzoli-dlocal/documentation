@@ -1,8 +1,41 @@
 # d•local Setup Guide
 
+## Introduction
 
 
-## Sample demo:
 
-{% embed data="{\"url\":\"https://codepen.io/vsync/pen/kxvEG\",\"type\":\"rich\",\"title\":\"Multi-field &amp; validation \",\"description\":\"using JS to combine fields into one, which is something very common in web forms. This demo is showing a credit card with 4 independent input fields wh...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/19610.kxvEG.small.73327ef1-61b2-48ce-8813-2fff82b58751.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/vsync/embed/preview/kxvEG?height=300&slug-hash=kxvEG&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/vsync/embed/preview/kxvEG?height=300&amp;slug-hash=kxvEG&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null}}" %}
+## Payins
+
+dLocal helps merchants accept payment  supports all the local payment types including:
+
+* International and local credit/debit cards
+* Monthly Installments
+* Bank Transfers
+* E-wallets
+* Direct debit
+* Cash payments.
+
+### Credit Card Payments
+
+#### PCI Compliance
+
+The Payment Card Industry Data Security Standard \(PCI DSS\) is a set of security standards designed to ensure that ALL companies that accept, process, store or transmit credit card information maintain a secure environment.  
+To learn more about PCI DSS compliance, visit [this FAQ](https://www.pcicomplianceguide.org/faq/), or visit the official [PCI website](https://www.pcisecuritystandards.org/).
+
+#### Is your business Full PCI DSS compliant?
+
+If your company is not Full PCI DSS compliant, you will not be able to handle credit card information on your servers. dLocal's Fields solution solves this problem, by letting you accept credit card payments right from your website, without worrying about PCI compliance. 
+
+Learn more about Fields here:
+
+{% page-ref page="fields/" %}
+
+If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. 
+
+  
+
+
+## Payouts
+
+
 
