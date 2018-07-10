@@ -34,7 +34,7 @@ All submissions of payment info using Fields are made via a secure HTTPS connect
 
 Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com).
 
-`<script *src*="https://js.dlocal.com/v2/"></script>`
+`<script src="https://js.dlocal.com/v2/"></script>`
 
 Next, create an instance of Fields:
 
@@ -47,7 +47,7 @@ var fields = dlocal.fields();
 
 To securely collect card details from your customers, Fields creates UI components for you that are hosted by dLocal. They are then placed into your payment form, rather than you creating them directly.
 
-To determine where to insert these components, create empty DOM elements \(containers\) with unique IDs within your payment form. We recommend placing your container within a \*\*`<label>`\*\*or next to a `<label>` with a `for` attribute that matches the unique `id` of the Fields container. By doing so, the Field automatically gains focus when the customer clicks on the corresponding label.
+To determine where to insert these components, create empty DOM elements \(containers\) with unique IDs within your payment form. We recommend placing your container within a `<label>`or next to a `<label>` with a `for` attribute that matches the unique `id` of the Fields container. By doing so, the Field automatically gains focus when the customer clicks on the corresponding label.
 
 For example:
 
@@ -148,9 +148,7 @@ function dlocalTokenHandler(token) {
 }
 ```
 
-## What's next?
+## What's next? Create a Payment
 
-### [Create a Payment](https://dlocal.gitbook.io/setup-guide/api-documentation/api-reference/payments#create-a-payment)
-
-
+{% page-ref page="../api-documentation/api-reference/payments.md" %}
 
