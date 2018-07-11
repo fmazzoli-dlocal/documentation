@@ -12,11 +12,6 @@ This guide will walk you through the creation of a payment form using dLocal's a
 
 ![](../../.gitbook/assets/screen-shot-2018-07-02-at-2.48.43-pm.png)
 
-Processing credit card payments with dLocal Fields consists of two parts:
-
-1. Securely collecting payment details from your customer using dLocal Fields
-2. Using the collected payment method in a `[PAYMENT CALL]`**.**
-
 You can make use of dLocal Fields \(our pre-built UI components\) to create a payment form that securely collects your customer’s card information without you needing to handle sensitive card data. The card details are then converted to a representative token that you can safely send to your servers.
 
 Creating a custom payment form with Fields requires four steps:
