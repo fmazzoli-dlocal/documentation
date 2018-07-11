@@ -5,8 +5,7 @@
 ## Solutions
 
 * [Payins](solutions/payins.md)
-* [Payouts](solutions/payouts.md)
-* [Marketplace](solutions/marketplace.md)
+* [Payouts](https://dlocal.com/developers/documentation.php?sec=cashouts)
 
 ## Products
 

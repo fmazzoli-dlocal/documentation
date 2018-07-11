@@ -10,7 +10,3 @@ Sounds complicated? Not with our powerful solution.
 
 {% page-ref page="solutions/payins.md" %}
 
-{% page-ref page="solutions/payouts.md" %}
-
-{% page-ref page="solutions/marketplace.md" %}
-
