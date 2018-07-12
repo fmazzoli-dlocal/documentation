@@ -1,9 +1,8 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [dLocal Documentation](README.md)
 
 ## Solutions
-* [Introduction](README.md)
 * [Payins](solutions/payins.md)
 * [Payouts](https://dlocal.com/developers/documentation.php?sec=cashouts)
 
