@@ -1,6 +1,6 @@
 # Table of contents
 
-* [d•local Setup Guide](README.md)
+* [Introduction](README.md)
 
 ## Solutions
 * [Introduction](README.md)
