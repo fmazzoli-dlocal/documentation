@@ -1,6 +1,6 @@
 # Payins
 
-dLocal helps merchants accept payment supports all the local payment types including:
+dLocal helps merchants accept payments in emerging countries, by supporting all the local payment methods available in each region including:
 
 * International and local credit/debit cards
 * Bank Transfers
@@ -17,13 +17,13 @@ To learn more about PCI DSS compliance, visit [this FAQ](https://www.pcicomplian
 
 ### Is your business Full PCI DSS compliant?
 
-If your company is not Full PCI DSS compliant, you will not be able to handle credit card information on your servers. dLocal's Fields solution solves this problem, by letting you accept credit card payments right from your website, without worrying about PCI compliance.
+If your company is not Full PCI DSS compliant, you will not be able to handle credit card information on your servers. dLocal's _Fields_ solves this problem, by letting you accept credit card payments right from your website, without worrying about PCI compliance.
 
 Learn more about Fields here:
 
 {% page-ref page="../products/fields/" %}
 
-If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. Learn about our API here:
+If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. Learn about our Payins API here:
 
 {% page-ref page="../api-documentation/payins-api-reference/" %}
 

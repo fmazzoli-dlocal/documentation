@@ -50,7 +50,7 @@ ISO8601 Datetime with TimeZone.
 Merchant xLogin
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="X-Trans-Key" type="string" required=false %}
+{% api-method-parameter name="X-Trans-Key" type="string" required=true %}
 Merchant xTransKey
 {% endapi-method-parameter %}
 
