@@ -25,7 +25,7 @@ Learn more about Fields here:
 
 If you **are** already PCI DSS compliant, we recommend you send dLocal the payment information directly server-to-server. Learn about our API here:
 
-{% page-ref page="../api-documentation/api-reference/" %}
+{% page-ref page="../api-documentation/payins-api-reference/" %}
 
 ### Installments
 
@@ -33,7 +33,7 @@ Monthly installments are part of the daily life of consumers in emerging markets
 
 Learn more about how to accept installments here:
 
-{% page-ref page="../api-documentation/api-reference/installments.md" %}
+{% page-ref page="../api-documentation/payins-api-reference/installments.md" %}
 
 ### Alternative Payment Methods
 
