@@ -11,8 +11,8 @@ This service allows you to create, modify or read payments.
 | `id` | String | Id of payment |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
-| `payment_method_id` | String | Payment method id of the payment method chosen.payment\_method\_id. |
-| `payment_method_type` | String | Payment method type of the payment method chosen. |
+| `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](https://dlocal.gitbook.io/setup-guide/api-documentation/payins-api-reference/payment-methods#payment-method-codes) |
+| `payment_method_type` | String | Payment method type of the payment method chosen. Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
 | `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
 | `payer` | [Payer Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-payer-object) | Identifies the payer |
@@ -23,9 +23,9 @@ This service allows you to create, modify or read payments.
 | `refunds` | Date\(ISO\_8601\) | Payment's refunds of refund object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
-| `status` | String | Payment status. |
+| `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
 | `status_detail` | String | Payment status detail. |
-| `reject_code` | Integer | Rejection status code. |
+| `reject_code` | Integer | Rejection status code.[ See all rejection status.](payments.md#rejection-status) |
 | `order_id` | String | ID given by the merchant in their system. |
 | `description` | String | Payment description |
 | `notification_url` | String | URL where dlocal will send notifications associated to changes in this payment. |

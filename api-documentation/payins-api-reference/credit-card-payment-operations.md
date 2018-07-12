@@ -16,6 +16,17 @@ Capture an existing, uncaptured payment. This is the second half of the two-step
 The payment id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="currency" type="string" required=false %}
+Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\) Each country accepts USD and local currency. **Mandatory if amount is present.**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="amount" type="number" required=false %}
+Amount to be captured \(in the currency entered in the field “x\_currency”\) Must be equal or less than the captured amount.  
+**If not included the capture is for the total authorized amount**.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
