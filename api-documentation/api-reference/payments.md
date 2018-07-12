@@ -26,7 +26,7 @@ This service allows you to create, modify or read payments.
 | `status` | String | Payment status. |
 | `status_detail` | String | Payment status detail. |
 | `reject_code` | Integer | Rejection status code. |
-| `external_reference` | String | ID given by the merchant in their system. |
+| `order_id` | String | ID given by the merchant in their system. |
 | `description` | String | Payment description |
 | `notification_url` | String | URL where dlocal will send notifications associated to changes in this payment. |
 | `callback_url` | String | URL where dlocal does the final redirect \(only for bank transfers and tickets\). |
@@ -71,7 +71,7 @@ This service allows you to create, modify or read payments.
     "approved_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PAID",
     "status_detail" : "The payment was paid.",
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -309,7 +309,7 @@ Example Response
     "approved_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PAID",
     "status_detail" : "The payment was paid.",
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -453,7 +453,7 @@ curl -X POST \
         "capture": false,
         "save" : "YES"
     },
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -521,7 +521,7 @@ The payment id
     "status" : "PENDING",
     "status_detail" : "The payment is pending.",
     "status_code" : 100,
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -693,8 +693,7 @@ POST: _{payment.notification\_url}_
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PENDING",
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
-

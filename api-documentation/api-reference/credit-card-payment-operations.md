@@ -60,7 +60,7 @@ The payment id
     "status" : "PAID",
     "status_detail" : "The payment was paid.",
     "status_code": 200,
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -138,7 +138,7 @@ The payment id.
     "status" : "CANCELLED",
     "status_detail" : "The payment was cancelled.",
     "status_code": 400,
-    "external_reference": "657434343",
+    "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -195,4 +195,3 @@ POST: _{merchant.chargeback\_url}_
 | --- | --- | --- |
 | `PENDING` | 100 | The chargeback is pending. |
 | `SUCCESS` | 200 | The chargeback was executed. |
-

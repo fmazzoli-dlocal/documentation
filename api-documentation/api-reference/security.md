@@ -10,7 +10,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | --- | --- | --- | --- | --- |
 | `X-Date` | String | ISO8601 Datetime with Timezone |
 | `X-Login` | String | Merchant xLogin |
-| `X-Trans-Key` | String \(Optional\) | Merchant xTransKey |
+| `X-Trans-Key` | String | Merchant xTransKey |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date Header+RequestBody"\)&gt; |
 
 ### Sensitive data encryption {#sensitive-data-encryption}
@@ -45,7 +45,7 @@ To perform an idempotent request, provide an additional 'X-Idempotency-Key' head
 
 | **Header** | **Type** | **Description** |
 | --- | --- |
-| `X-Idempotency-KeyString` | String \(Optional\) | Key used for perform an idempotent request. |
+| `X-Idempotency-Key` | String \(Optional\) | Key used for perform an idempotent request. |
 
 #### Example Request
 
@@ -59,10 +59,7 @@ curl -X POST \
     https://api.dlocal.com/payments
 ```
 
-  
+
 
 
 ##   {#payment-methods}
-
-
-

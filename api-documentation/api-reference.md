@@ -18,7 +18,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | --- | --- | --- | --- | --- |
 | `X-Date` | String | ISO8601 Datetime with Timezone |
 | `X-Login` | String | Merchant xLogin |
-| `X-Trans-Key` | String \(Optional\) | Merchant xTransKey |
+| `X-Trans-Key` | String  | Merchant xTransKey |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date Header+RequestBody"\)&gt; |
 
 ### Sensitive data encryption
@@ -1584,4 +1584,3 @@ curl -X GET \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/currency-exchanges?from=USD&to=BRL
 ```
-
