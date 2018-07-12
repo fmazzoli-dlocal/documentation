@@ -126,7 +126,7 @@ curl -X GET \
 ### **Argentina**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | SI | Santander Rio | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/SI.png |
 | PF | Pago Fácil | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PF.png |
 | RP | Rapi Pago | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/RP.png |
@@ -141,6 +141,7 @@ curl -X GET \
 | CS | Cencosud | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CS.png |
 | CL | Cabal | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CL.png |
 | AG | Argencard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AG.png |
+| DB | DirectDebit | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/DB.png |
 | VD | Visa Debit | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VD.png |
 | MD | Mastercard Debit | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MD.png |
 | MS | Maestro Debit | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MS.png |
@@ -205,10 +206,11 @@ curl -X GET \
 ### Colombia
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | EY | Efecty | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EY.png |
 | DA | Davivienda | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/DA.png |
 | PC | PSE | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
+| DB | DirectDebit | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/DB.png |
 | EX | Almacenes Éxito | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EX.png |
 | BU | Baloto | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BU.png |
 | OC | Banco de Occidente | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/OC.png |
@@ -276,6 +278,12 @@ curl -X GET \
 | MI | CMI | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MI.png |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | Mastercard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
+
+### Paraguay
+
+| **Code** | **Description** | **Payment Type** | **Logos** |
+| --- | --- |
+| PE | PagoExpress | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PE.png |
 
 ### **Perú**
 
