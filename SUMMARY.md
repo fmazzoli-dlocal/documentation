@@ -3,7 +3,7 @@
 * [d•local Setup Guide](README.md)
 
 ## Solutions
-
+* [Introduction](README.md)
 * [Payins](solutions/payins.md)
 * [Payouts](https://dlocal.com/developers/documentation.php?sec=cashouts)
 
@@ -23,4 +23,3 @@
   * [Installments](api-documentation/api-reference/installments.md)
   * [Saving Cards](api-documentation/api-reference/saving-cards.md)
   * [Currency Exchange](api-documentation/api-reference/currency-exchange.md)
-
