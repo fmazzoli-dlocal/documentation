@@ -1,9 +1,3 @@
----
-description: >-
-  Pay your local sellers and partners the way they expect to be paid — by
-  depositing the funds in local currency, directly to their local bank account.
----
-
 # Payouts
 
   

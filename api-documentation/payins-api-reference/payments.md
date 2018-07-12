@@ -144,6 +144,8 @@ This service allows you to create, modify or read payments.
 
 ## The Card Object
 
+{% tabs %}
+{% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `holder_name` | String | Cardholder's full name |
@@ -160,6 +162,23 @@ This service allows you to create, modify or read payments.
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
 | `save` | String | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment method flows \) |
 | `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. |
+{% endtab %}
+
+{% tab title="Example Card Object" %}
+```yaml
+{
+"token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
+"holder_name": "Thiago Gabriel",
+"expiration_month": 10,
+"expiration_year": 2040,
+"last4": "1111",
+"brand": "VI",
+"capture": false,
+"save" : "YES"
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## The Bank Transfer Object
 
@@ -205,14 +224,8 @@ Creates a new payment.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="amount" type="string" required=true %}
-Transaction amount \(in the currency entered in the field "currency"\)
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="string" required=true %}
+{% api-method-parameter name="amount" type="number" required=true %}
 Transaction amount \(in the currency entered in the field `currency`\)
 {% endapi-method-parameter %}
 
@@ -384,6 +397,8 @@ Example Response
 
 #### The Card Object
 
+{% tabs %}
+{% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `holder_name` | String **\(Required if token not present\)** | Cardholder's full name |
@@ -398,12 +413,44 @@ Example Response
 | `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
 | `save` | String \(Optional\) | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment methods flows \). Default `NO` |
 | `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
+{% endtab %}
+
+{% tab title="Example Card Object" %}
+```yaml
+{
+        "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
+        "holder_name": "Thiago Gabriel",
+        "expiration_month": 10,
+        "expiration_year": 2040,
+        "last4": "1111",
+        "brand": "VI",
+        "capture": false,
+        "save" : "YES"
+    }
+```
+{% endtab %}
+{% endtabs %}
+
+|  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 #### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String \(Required\) | Name of the owner of the |
+| `holder_name` | String \(Required\) | Name of the owner of the bank account. |
 | `email` | String \(Required\) | Email of the owner of the bank account. |
 | `document_type` | String \(Required\) | Document of the owner of the bank account. |
 | `document` | String \(Required\) | Document of the owner of the bank account. |
@@ -614,11 +661,11 @@ $ curl \
 
 All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
 
-| **Property** | **Description** |
+| **Property** | **Type** | **Description** |
 | --- | --- | --- | --- |
-| `codeinteger` | Error code. |
-| `messagestring` | Human readable message. |
-| `paramstring` | In case one parameter is wrong. |
+| `code` | Integer | Error code. |
+| `message` | String | Human readable message. |
+| `param` | String | In case one parameter is wrong. |
 
 **Example error**
 
@@ -697,3 +744,4 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
+

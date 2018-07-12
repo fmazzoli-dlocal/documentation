@@ -59,7 +59,3 @@ curl -X POST \
     https://api.dlocal.com/payments
 ```
 
-
-
-
-##   {#payment-methods}

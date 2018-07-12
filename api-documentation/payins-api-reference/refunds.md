@@ -24,8 +24,8 @@ The payment id
 If a refund is pending, the refund confirmation is sent asynchronously to this URL.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="amount" type="string" required=false %}
-Amount to refund. Default is total amount of the payment.
+{% api-method-parameter name="amount" type="number" required=false %}
+Amount to refund. If the amount is empty, then the default is total amount of the payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
