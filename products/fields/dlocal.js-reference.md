@@ -16,6 +16,9 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 ## The dLocal Object
 
+* \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
+* \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
+
 ### `dlocal.fields([`_`options`_`])` 
 
 Create pre-built UI components to collect payment information with [Fields](./).
@@ -76,6 +79,8 @@ This method takes two arguments.
 
 ## The Fields Object
 
+* \*\*\*\*[**fields.create\(\)**](dlocal.js-reference.md#fields-create-type-options)\*\*\*\*
+
 ### `fields.create(type, options)` 
 
 ```javascript
@@ -117,7 +122,17 @@ All Fields accept a common set of options, and then some Field-specific options.
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
 | disabled | Boolean \(Optional\) | Applies a disabled state to the Field such that user input is not accepted. Default is `false`. |
 
-## The Field
+## The Field Object
+
+* \*\*\*\*[**field.mount\(\)**](dlocal.js-reference.md#field-mount-domelement)\*\*\*\*
+* \*\*\*\*[**field.on\(\)**](dlocal.js-reference.md#field-on-event-handler)\*\*\*\*
+* \*\*\*\*[**Other methods**](dlocal.js-reference.md#other-methods)\*\*\*\*
+  * blur\(\)
+  * clear\(\)
+  * destroy\(\)
+  * focus\(\)
+  * unmount\(\)
+  * update\(\)
 
 ### `field.mount(domElement)` 
 
