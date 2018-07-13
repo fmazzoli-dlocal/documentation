@@ -42,5 +42,9 @@ Besides credit cards, dLocal also accepts payments via a variety of other paymen
 * Direct debit
 * Cash payments.
 
+Learn more about the payment methods available in each country here:
+
+{% page-ref page="../api-documentation/payins-api-reference/payment-methods.md" %}
+
 
 
