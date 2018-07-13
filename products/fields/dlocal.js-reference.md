@@ -117,5 +117,141 @@ All Elements accept a common set of options, and then some Field-specific option
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Element. Default is `false`. |
 | disabled | Boolean \(Optional\) | Applies a disabled state to the Element such that user input is not accepted. Default is `false`. |
 
+## The Field
 
+### `field.mount(domElement)` 
+
+You need to create a container DOM element to mount a Field. If the container DOM element has a label, the Field is automatically focused when its label is clicked. There are two ways to do this:
+
+1. Mount the instance within a `<label>`.
+
+   ```markup
+   <label>Card
+     <div id="card-field"></div>
+   </label>
+   ```
+
+2. Create a `<label>` with a `for` attribute, referencing the ID of your container.
+
+   ```markup
+   <label for="card-field">Card</label>
+   <div id="card-field"></div>
+   ```
+
+The `field.mount()` method attaches your element to the DOM. `field.mount()` accepts either a CSS Selector \(e.g., `'#card-element'`\) or a DOM element.
+
+```javascript
+cardField.mount('#card-field');
+```
+
+### `field.on(event, handler)` 
+
+The only way to communicate with your Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
+
+| **Event** | **Description** |
+| --- | --- | --- |
+| blur | Triggered when the Field loses focus. |
+| change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
+
+### Input validation
+
+Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
+
+```javascript
+card.addEventListener('change', function(event) {
+  var displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});
+```
+
+### Other Methods
+
+| **Method** | **Description** |
+| --- | --- | --- | --- | --- | --- | --- |
+| `blur()` | Blurs the Field |
+| `clear()` | Clears the value\(s\) of the Field. |
+| `destroy()` | Removes the Field from the DOM and destroys it. Note: a destroyed Field cannot be re-activated or re-mounted to the DOM. |
+| `focus()` | Focuses the Field. |
+| `unmount()` | Unmounts the Field from the DOM. Call [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement) to re-attach it to the DOM. |
+| `update(options)` | Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options). |
+
+If you collect certain information in a different part of your interface \(e.g., postal code\), use `update()`with the appropriate information.
+
+```javascript
+var myPostalCodeField = document.querySelector('input[name="my-postal-code"]');
+myPostalCodeField.addEventListener('change', function(event) {
+  card.update({value: {postalCode: event.target.value}});
+});
+```
+
+The styles of a Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
+
+```javascript
+window.addEventListener('resize', function(event) {
+  if (window.innerWidth <= 320) {
+    card.update({style: {base: {fontSize: '13px'}}});
+  } else {
+    card.update({style: {base: {fontSize: '16px'}}});
+  }
+});
+
+var previousBrand;
+card.on('change', function(event) {
+  if (event.brand !== previousBrand && event.brand === 'mastercard') {
+    card.update({style: {base: {color: 'orange'}}});
+    previousBrand = event.brand;
+  }
+});
+```
+
+## The Field container
+
+Style the container you mount a Field to as if it were an `<input>` on your page. For example, to control `padding` and `border` on a Field, set these properties on the container. This is usually done by re-using the classes that you have applied to your DOM `<input>` elements. Example:
+
+```markup
+<style>
+  .my-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+</style>
+
+<form>
+  <div>
+    <label>Name</label>
+    <input class="my-input">
+  </div>
+  <div>
+    <label>Card</label>
+    <!-- Using the same "my-input" class on the -->
+    <!-- regular input above and on this container. -->
+    <div class="my-input" id="card-field"></div>
+  </div>
+</form>
+```
+
+After the Field is mounted, the `.DlocalField` class is added to the container. Additionally, the following classes are automatically added to the container when the Element is complete, empty, focused, invalid, or autofilled by the browser:
+
+* `.DlocalField--complete`
+* `.DlocalField--empty`
+* `.DlocalField--focus`
+* `.DlocalField--invalid`
+* `.DlocalField--autofilled` \(Chrome and Safari only\)
+
+These class names can be customized using the `classes` [option](dlocal.js-reference.md#field-options) when you create an Element.
+
+## Supported browsers
+
+dLocal.js strives to support all recent versions of major browsers. For the sake of security and providing the best experience to the majority of customers, we do not support browsers that are no longer receiving security updates and represent a small minority of traffic.
+
+* We support Chrome and Safari on all platforms and Firefox on desktop platforms.
+* We support Internet Explorer and Edge per [Microsoft's lifecycle policy](https://support.microsoft.com/en-us/gp/microsoft-internet-explorer). As of January 12, 2016, we support Internet Explorer 9 and above.
+* We support the Android native browser on Android 4.4 and later.
+* We require TLS 1.2 to be supported by the browser.
+
+If you have an issue with dLocal.js on a specific browser, please contact us so we can improve its support.
 
