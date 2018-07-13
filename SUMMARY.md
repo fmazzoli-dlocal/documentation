@@ -11,6 +11,7 @@
 
 * [Fields](products/fields/README.md)
   * [Fields Setup Guide](products/fields/fields-setup-guide.md)
+  * [dlocal.js Reference](products/fields/dlocal.js-reference.md)
 
 ## API Documentation
 

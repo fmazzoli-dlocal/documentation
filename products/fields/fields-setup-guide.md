@@ -29,7 +29,7 @@ All submissions of payment info using Fields are made via a secure HTTPS connect
 
 Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com).
 
-`<script src="https://js.dlocal.com/v2/"></script>`
+`<script src="https://js.dlocal.com/"></script>`
 
 Next, create an instance of Fields:
 
