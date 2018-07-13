@@ -96,7 +96,7 @@ Cancel a credit card payment
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Cancel an existing, uncaptured payment. This is the second half of the two-step payment flow, where first you created a payment with the capture option set to false.
+Cancel an existing, uncaptured payment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -170,7 +170,7 @@ $ curl -X POST \
 
 ## Chargeback asynchronous notification
 
-If a charge back was applied \(requested by the user\) a notification is sent to the merchant to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
+If a chargeback was applied \(requested by the user\) a notification is sent to the merchant to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
