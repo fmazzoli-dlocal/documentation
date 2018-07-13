@@ -28,7 +28,7 @@ This method creates an instance of `fields`, which manages a group of Fields. It
 
 | **Option** | **Type** | **Description** |
 | --- | --- | --- |
-| `fonts` | Array \(Optional\) | An array of custom fonts, which Elements created from the `elements` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
+| `fonts` | Array \(Optional\) | An array of custom fonts, which Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
 | `locale` | String | The [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) of the locale to display placeholders and error strings in. Default is Spanish`(es)`. Supported values are: **es, en, pt, zh, cv, tr.** |
 
 #### The cssSrc attribute
@@ -99,7 +99,7 @@ The the moment, only the [`card`](fields-setup-guide.md) type of Field is availa
 
 ### **Field Options** 
 
-All Elements accept a common set of options, and then some Field-specific options.
+All Fields accept a common set of options, and then some Field-specific options.
 
 #### Common options:
 
@@ -113,9 +113,9 @@ All Elements accept a common set of options, and then some Field-specific option
 | **Option** | **Type** | **Description** |
 | --- | --- | --- | --- | --- |
 | value | Object \(Optional\) | A pre-filled set of values to include in the input \(e.g., `{postalCode: '94110'}`\). Note that sensitive card information \(card number, CVC, and expiration date\) cannot be pre-filled. |
-| iconStyle | String \(Optional\) | Appearance of the icon in the Element. Either `'solid'` or `'default'`. |
-| hideIcon | Boolean \(Optional\) | Hides the icon in the Element. Default is `false`. |
-| disabled | Boolean \(Optional\) | Applies a disabled state to the Element such that user input is not accepted. Default is `false`. |
+| iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
+| hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
+| disabled | Boolean \(Optional\) | Applies a disabled state to the Field such that user input is not accepted. Default is `false`. |
 
 ## The Field
 
@@ -138,7 +138,7 @@ You need to create a container DOM element to mount a Field. If the container DO
    <div id="card-field"></div>
    ```
 
-The `field.mount()` method attaches your element to the DOM. `field.mount()` accepts either a CSS Selector \(e.g., `'#card-element'`\) or a DOM element.
+The `field.mount()` method attaches your Field to the DOM. `field.mount()` accepts either a CSS Selector \(e.g., `'#card-field'`\) or a DOM element.
 
 ```javascript
 cardField.mount('#card-field');
@@ -159,7 +159,7 @@ Fields validates customer input as it is typed. To help your customers catch mis
 
 ```javascript
 card.addEventListener('change', function(event) {
-  var displayError = document.getElementById('card-errors');
+  var displayError = document.getFieldById('card-errors');
   if (event.error) {
     displayError.textContent = event.error.message;
   } else {
@@ -234,7 +234,7 @@ Style the container you mount a Field to as if it were an `<input>` on your page
 </form>
 ```
 
-After the Field is mounted, the `.DlocalField` class is added to the container. Additionally, the following classes are automatically added to the container when the Element is complete, empty, focused, invalid, or autofilled by the browser:
+After the Field is mounted, the `.DlocalField` class is added to the container. Additionally, the following classes are automatically added to the container when the Field is complete, empty, focused, invalid, or autofilled by the browser:
 
 * `.DlocalField--complete`
 * `.DlocalField--empty`
@@ -242,7 +242,7 @@ After the Field is mounted, the `.DlocalField` class is added to the container. 
 * `.DlocalField--invalid`
 * `.DlocalField--autofilled` \(Chrome and Safari only\)
 
-These class names can be customized using the `classes` [option](dlocal.js-reference.md#field-options) when you create an Element.
+These class names can be customized using the `classes` [option](dlocal.js-reference.md#field-options) when you create a Field.
 
 ## Supported browsers
 
