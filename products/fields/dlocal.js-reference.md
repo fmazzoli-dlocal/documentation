@@ -159,7 +159,7 @@ Fields validates customer input as it is typed. To help your customers catch mis
 
 ```javascript
 card.addEventListener('change', function(event) {
-  var displayError = document.getFieldById('card-errors');
+  var displayError = document.getElementById('card-errors');
   if (event.error) {
     displayError.textContent = event.error.message;
   } else {
