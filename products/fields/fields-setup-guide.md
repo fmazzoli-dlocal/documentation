@@ -31,9 +31,9 @@ Fields is available as part of dLocal.js. To get started, include this script on
 
 `<script src="https://js.dlocal.com/"></script>`
 
-For more information on dLocal.js, please visit our _dLocal.js Reference_ page:
-
-{% page-ref page="dlocal.js-reference.md" %}
+{% hint style="info" %}
+For more information on dLocal.js, please visit our [_**dLocal.js Reference page**_](dlocal.js-reference.md).
+{% endhint %}
 
 Next, create an instance of Fields:
 
