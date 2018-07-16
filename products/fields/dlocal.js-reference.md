@@ -1,9 +1,3 @@
----
-description: >-
-  This is the API reference for dlocal.js. Use dlocal.js’ APIs to tokenize
-  sensitive card data using customizable dLocal Fields.
----
-
 # dlocal.js Reference
 
 ### Including dlocal.js
