@@ -84,7 +84,7 @@ var style = {
 var card = fields.create('card', {style: style});
 
 // Add an instance of the card Field into the `card-field` <div>.
-card.mount('#card-field');
+card.mount(document.getElementById('card-field'));
 ```
 
 Fields validates user input as it is typed. To help your customers catch mistakes, you should listen to `change` events on the `card` Field and display any errors:
