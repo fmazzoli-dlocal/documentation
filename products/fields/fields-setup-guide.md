@@ -16,10 +16,10 @@ You can make use of dLocal Fields \(our pre-built UI components\) to create a pa
 
 Creating a custom payment form with Fields requires four steps:
 
-1. Set up dLocal Fields.
-2. Create your payment form.
-3. Create a token to securely transmit card information.
-4. Submit the token and the rest of your form to your server.
+1. [Set up dLocal Fields.](fields-setup-guide.md#step-1-set-up-dlocal-fields)
+2. [Create your payment form.](fields-setup-guide.md#step-2-create-your-payment-form)
+3. [Create a token to securely transmit card information.](fields-setup-guide.md#step-3-create-a-token-to-securely-transmit-card-information)
+4. [Submit the token and the rest of your form to your server.](fields-setup-guide.md#step-4-submit-the-token-and-the-rest-of-your-form-to-your-server)
 
 ## Before you start: **HTTPS requirements**
 
