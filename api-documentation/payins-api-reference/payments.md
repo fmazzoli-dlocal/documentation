@@ -633,21 +633,24 @@ $ curl \
 
 | **Status** | **Status code** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `REJECTED  | 301 | Card declined. |
-| `REJECTED` | 302 | Card expired. |
-| `REJECTED` | 303 | Card reported lost. |
-| `REJECTED` | 304 | Card requested by the bank. |
-| `REJECTED` | 305 | Card restricted by the bank. |
-| `REJECTED` | 306 | Card reported stolen. |
+| `REJECTED` | 301 | Rejected by bank. |
+| `REJECTED` | 302 | Insufficient amount. |
+| `REJECTED` | 303 | Card blacklisted. |
+| `REJECTED` | 304 | Score validation. |
+| `REJECTED` | 305 | Max attempts reached. |
+| `REJECTED` | 306 | Call bank for authorize. |
 | `REJECTED` | 307 | Duplicated payment. |
-| `REJECTED` | 308 | Invalid card number. |
-| `REJECTED` | 309 | Invalid security code. |
-| `REJECTED` | 310 | Insufficient funds. |
-| `REJECTED` | 311 | Unsoported operation. |
-| `REJECTED` | 312 | Call bank to authorize purchase. |
-| `REJECTED` | 313 | Rejected due to high risk. |
-| `REJECTED` | 314 | Invalid transaction. |
-| `REJECTED` | 315 | Card blocked. |
+| `REJECTED` | 308 | Credit card disabled. |
+| `REJECTED` | 309 | Card expired. |
+| `REJECTED` | 310 | Card reported lost. |
+| `REJECTED` | 311 | Card requested by the bank. |
+| `REJECTED` | 312 | Card restricted by the bank. |
+| `REJECTED` | 313 | Card reported stolen. |
+| `REJECTED` | 314 | Invalid card number. |
+| `REJECTED` | 315 | Invalid security code. |
+| `REJECTED` | 316 | Unsoported operation. |
+| `REJECTED` | 317 | Rejected due to high risk. |
+| `REJECTED` | 318 | Invalid transaction. |
 
 ### Errors
 
