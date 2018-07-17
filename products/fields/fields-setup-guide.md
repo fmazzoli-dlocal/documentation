@@ -10,7 +10,9 @@ description: >-
 
 This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Field. The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
 
-![The &amp;lt;card&amp;gt; Field above a payment button.](../../.gitbook/assets/image%20%284%29.png)
+<div>
+  <iframe src="https://static.dlocal.com/fields/test/dlocal-example-v6.html"></iframe>
+</div>
 
 You can make use of dLocal Fields \(our pre-built UI components\) to create a payment form that securely collects your customer’s card information without you needing to handle sensitive card data. The card details are then converted to a representative token that you can safely send to your servers.
 
