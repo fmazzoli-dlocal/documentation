@@ -11,15 +11,15 @@ This service allows you to create, modify or read payments.
 | `id` | String | Id of payment |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
-| `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](https://dlocal.gitbook.io/setup-guide/api-documentation/payins-api-reference/payment-methods#payment-method-codes) |
+| `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](payment-methods.md#payment-method-codes) |
 | `payment_method_type` | String | Payment method type of the payment method chosen. Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
 | `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
-| `payer` | [Payer Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-payer-object) | Identifies the payer |
-| `card` | [Card Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
-| `bank_transfer` | [Bank Transfer Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
-| `direct_debit` | [Direct Debit Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
-| `ticket` | [Ticket Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
+| `payer` | [Payer Object](payments.md#the-payer-object) | Identifies the payer |
+| `card` | [Card Object](payments.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
+| `bank_transfer` | [Bank Transfer Object](payments.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
+| `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
+| `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
 | `refunds` | Date\(ISO\_8601\) | Payment's refunds of refund object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
@@ -91,7 +91,7 @@ This service allows you to create, modify or read payments.
 | `document` | String | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String | User’s document type. |
 | `user_reference` | String | Unique user id at the merchant side. |
-| `address` | [Address Object](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-address-object) | User’s address. |
+| `address` | [Address Object](payments.md#the-address-object) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -156,7 +156,7 @@ This service allows you to create, modify or read payments.
 | `cvv` | String | Credit card verification value. |
 | `brand` | String | Card brand. |
 | `installments` | String | Number of installments. |
-| `installments_id` | String | Installments id of a [installments plan](https://dlocal.com/docs/?language=cURL#installments-plan). |
+| `installments_id` | String | Installments id of a [installments plan](installments.md#the-installment-plan-object). |
 | `descriptor` | String | Dynamic Descriptor. |
 | `last4` | String | The last 4 digits of the card. |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
@@ -344,7 +344,7 @@ Example Response
 | `document` | String \(Optional\) | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
 | `document_type` | String \(Optional\) | User’s document type. |
 | `user_reference` | String \(Optional\) | Unique user id at the merchant side. |
-| `address` | [Address Object ](https://github.com/fmazzoli-dlocal/documentation/tree/dad214d1f8a6a07701bc1cf2b0ef6bf877894e79/api-reference-2/api.md#the-address-object)\(Optional\) | User’s address. |
+| `address` | [Address Object ](payments.md#the-address-object)\(Optional\) | User’s address. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -430,21 +430,6 @@ Example Response
 ```
 {% endtab %}
 {% endtabs %}
-
-|  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
 
 #### The Direct Debit Object
 
