@@ -7,9 +7,6 @@ description: >-
 # Fields Setup Guide
 
 ## Introduction
-<div>
-  <script src="https://static.dlocal.com/modules/fields/1.0.32/parent.js"></script>  
-</div>
 
 This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Field. The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
 
