@@ -680,6 +680,22 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5008 | Token not found or inactive. |
 | `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
+|  | 8001 | Card declined. |
+|  | 8002 | Card expired. |
+|  | 8003 | Card reported lost. |
+|  | 8004 | Card requested by the bank. |
+|  | 8005 | Card restricted by the bank. |
+|  | 8006 | Card reported stolen. |
+|  | 8007 | Duplicated payment. |
+|  | 8008 | Invalid card number. |
+|  | 8009 | Invalid security code. |
+|  | 8010 | Insufficient funds. |
+|  | 8011 | Unsoported operation. |
+|  | 8012 | Call bank to authorize purchase. |
+|  | 8013 | Rejected due to high risk. |
+|  | 8014 | Invalid transaction. |
+|  | 8015 | Card blocked. |
+
 
 ## Notifications
 
@@ -729,4 +745,3 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
-
