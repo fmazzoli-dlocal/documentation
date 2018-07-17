@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-[](codepen://Lingyucoder/AsFJh?height=800&theme=0)
+Test
 
 This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Field. The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
 
