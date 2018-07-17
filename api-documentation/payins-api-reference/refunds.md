@@ -31,6 +31,11 @@ Amount to refund. If the amount is empty, then the default is total amount of th
 {% api-method-parameter name="currency" type="string" required=true %}
 Currency of the Amount. **Only required if** `amount` **is present.**
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="beneficiary_name" type="string" required=false %}
+User's full name. **Only required if the** `type` **of the payment is** `TICKET` **.**
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -207,4 +212,3 @@ Example Response
 | `SUCCESS` | 200 | The refund was paid. |
 | `REJECTED` | 300 | The refund was rejected. |
 | `CANCELLED` | 400 | The refund was cancelled. |
-
