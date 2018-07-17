@@ -633,14 +633,21 @@ $ curl \
 
 | **Status** | **Status code** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `REJECTED` | 301 | Rejected by bank. |
-| `REJECTED` | 302 | Insufficient amount. |
-| `REJECTED` | 303 | Card blacklisted. |
-| `REJECTED` | 304 | Score validation. |
-| `REJECTED` | 305 | Max attempts reached. |
-| `REJECTED` | 306 | Call bank for authorize. |
+| `REJECTED  | 301 | Card declined. |
+| `REJECTED` | 302 | Card expired. |
+| `REJECTED` | 303 | Card reported lost. |
+| `REJECTED` | 304 | Card requested by the bank. |
+| `REJECTED` | 305 | Card restricted by the bank. |
+| `REJECTED` | 306 | Card reported stolen. |
 | `REJECTED` | 307 | Duplicated payment. |
-| `REJECTED` | 308 | Credit card disabled. |
+| `REJECTED` | 308 | Invalid card number. |
+| `REJECTED` | 309 | Invalid security code. |
+| `REJECTED` | 310 | Insufficient funds. |
+| `REJECTED` | 311 | Unsoported operation. |
+| `REJECTED` | 312 | Call bank to authorize purchase. |
+| `REJECTED` | 313 | Rejected due to high risk. |
+| `REJECTED` | 314 | Invalid transaction. |
+| `REJECTED` | 315 | Card blocked. |
 
 ### Errors
 
@@ -680,22 +687,6 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5008 | Token not found or inactive. |
 | `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
-|  | 8001 | Card declined. |
-|  | 8002 | Card expired. |
-|  | 8003 | Card reported lost. |
-|  | 8004 | Card requested by the bank. |
-|  | 8005 | Card restricted by the bank. |
-|  | 8006 | Card reported stolen. |
-|  | 8007 | Duplicated payment. |
-|  | 8008 | Invalid card number. |
-|  | 8009 | Invalid security code. |
-|  | 8010 | Insufficient funds. |
-|  | 8011 | Unsoported operation. |
-|  | 8012 | Call bank to authorize purchase. |
-|  | 8013 | Rejected due to high risk. |
-|  | 8014 | Invalid transaction. |
-|  | 8015 | Card blocked. |
-
 
 ## Notifications
 
