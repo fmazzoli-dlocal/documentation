@@ -739,3 +739,4 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
+
