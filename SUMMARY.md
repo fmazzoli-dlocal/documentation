@@ -9,9 +9,9 @@
 
 ## Products
 
-* [Fields](products/fields/README.md)
-  * [Fields Setup Guide](products/fields/fields-setup-guide.md)
-  * [dlocal.js Reference](products/fields/dlocal.js-reference.md)
+* [Smart Fields](products/smart-fields/README.md)
+  * [Smart Fields Setup Guide](products/smart-fields/fields-setup-guide.md)
+  * [dlocal.js Reference](products/smart-fields/dlocal.js-reference.md)
 
 ## API Documentation
 

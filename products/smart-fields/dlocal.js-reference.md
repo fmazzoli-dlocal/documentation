@@ -15,17 +15,17 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 ### `dlocal.fields([`_`options`_`])` 
 
-Create pre-built UI components to collect payment information with [Fields](./).
+Create pre-built UI components to collect payment information with [Smart Fields](./) \(simply referred to as `fields`in the API\).
 
 ```javascript
 var fields = dlocal.fields();
 ```
 
-This method creates an instance of `fields`, which manages a group of Fields. It accepts an optional`options` object. Available options are documented below:
+This method creates an instance of `fields`, which manages a group of Smart Fields. It accepts an optional`options` object. Available options are documented below:
 
 | **Option** | **Type** | **Description** |
 | --- | --- | --- |
-| `fonts` | Array \(Optional\) | An array of custom fonts, which Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
+| `fonts` | Array \(Optional\) | An array of custom fonts, which Smart Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
 | `locale` | String | The [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) of the locale to display placeholders and error strings in. Default is Spanish`(es)`. Supported values are: **es, en, pt, zh, cv, tr.** |
 
 #### The cssSrc attribute
@@ -47,7 +47,7 @@ This method creates an instance of `fields`, which manages a group of Fields. It
 
 ### `dlocal.createToken(field, tokenData)` 
 
-Use `dlocal.createToken()` to convert information collected by Fields into a  token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
+Use `dlocal.createToken()` to convert information collected by Smart Fields into a  token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
 
 ```javascript
 dlocal.createToken(card,tokenData).then(function(result) {
@@ -57,7 +57,7 @@ dlocal.createToken(card,tokenData).then(function(result) {
 
 This method takes two arguments.
 
-* `field`, the Field you wish to tokenize data from. If applicable, the Field pulls data from other Fields you’ve created on the same instance of [`fields`](dlocal.js-reference.md#dlocal-fields-options) to tokenize.
+* `field`, the Smart Field you wish to tokenize data from. If applicable, the Smart Field pulls data from other Smart Fields you’ve created on the same instance of [`fields`](dlocal.js-reference.md#dlocal-fields-options) to tokenize.
 * `tokenData`, an object containing additional payment information you might have collected. In the case of cards, it can contain any of the following parameters:
 
 | **Parameter** | **Type** | **Description** |
@@ -81,9 +81,9 @@ This method takes two arguments.
 var card = fields.create('card');
 ```
 
-This method creates an instance of a specific Field. It takes the`type` of Field to create as well as an `options` object.
+This method creates an instance of a specific Smart Field. It takes the`type` of Smart Field to create as well as an `options` object.
 
-### **Field Types** 
+### **Smart Field Types** 
 
 | **Type** | **Description** |
 | --- | --- | --- | --- | --- |
@@ -93,12 +93,12 @@ This method creates an instance of a specific Field. It takes the`type` of Field
 | ~~`cardCvc`~~ | The card‘s CVC number. **\(Coming Soon\)** |
 
 {% hint style="info" %}
-The the moment, only the [`card`](fields-setup-guide.md) type of Field is available. In the near future we will also provide separate Fields for cardNumber, cardExpiry and cardCvc. In any case, we highly recommend to continue to use the `card` Fields, as it provides a better user experience.
+The the moment, only the [`card`](fields-setup-guide.md) type of Smart Field is available. In the near future we will also provide separate Smart Fields for cardNumber, cardExpiry and cardCvc. In any case, we highly recommend to continue to use the `card` Field, as it provides a better user experience.
 {% endhint %}
 
 ### **Field Options** 
 
-All Fields accept a common set of options, and then some Field-specific options.
+All Smart Fields accept a common set of options, and then some Field-specific options.
 
 #### Common options:
 
@@ -130,7 +130,7 @@ All Fields accept a common set of options, and then some Field-specific options.
 
 ### `field.mount(domElement)` 
 
-You need to create a container DOM element to mount a Field. If the container DOM element has a label, the Field is automatically focused when its label is clicked. There are two ways to do this:
+You need to create a container DOM element to mount a Smart Field. If the container DOM element has a label, the Field is automatically focused when its label is clicked. There are two ways to do this:
 
 1. Mount the instance within a `<label>`.
 
@@ -155,7 +155,7 @@ cardField.mount('#card-field');
 
 ### `field.on(event, handler)` 
 
-The only way to communicate with your Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
+The only way to communicate with your Smart Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
 
 | **Event** | **Description** |
 | --- | --- | --- |
@@ -164,7 +164,7 @@ The only way to communicate with your Field is by listening to an `event`. Field
 
 ### Input validation
 
-Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
+Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
 
 ```javascript
 card.addEventListener('change', function(event) {
@@ -197,7 +197,7 @@ myPostalCodeField.addEventListener('change', function(event) {
 });
 ```
 
-The styles of a Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
+The styles of a Smart Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
 
 ```javascript
 window.addEventListener('resize', function(event) {
@@ -219,7 +219,7 @@ card.on('change', function(event) {
 
 ## The Field container
 
-Style the container you mount a Field to as if it were an `<input>` on your page. For example, to control `padding` and `border` on a Field, set these properties on the container. This is usually done by re-using the classes that you have applied to your DOM `<input>` elements. Example:
+Style the container you mount a Smart Field to as if it were an `<input>` on your page. For example, to control `padding` and `border` on a Field, set these properties on the container. This is usually done by re-using the classes that you have applied to your DOM `<input>` elements. Example:
 
 ```markup
 <style>
@@ -251,7 +251,7 @@ After the Field is mounted, the `.DlocalField` class is added to the container. 
 * `.DlocalField--invalid`
 * `.DlocalField--autofilled` \(Chrome and Safari only\)
 
-These class names can be customized using the `classes` [option](dlocal.js-reference.md#field-options) when you create a Field.
+These class names can be customized using the `classes` [option](dlocal.js-reference.md#field-options) when you create a Smart Field.
 
 ## Supported browsers
 

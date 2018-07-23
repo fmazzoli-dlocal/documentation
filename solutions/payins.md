@@ -21,9 +21,9 @@ If you **are** already PCI DSS compliant, we recommend you send dLocal the payme
 
 {% page-ref page="../api-documentation/payins-api-reference/" %}
 
-If your company **is not** Full PCI DSS compliant, you will not be able to handle credit card information on your servers. dLocal's _Fields_ solves this problem, by letting you accept credit card payments right from your website, without worrying about PCI compliance. Learn more about Fields here:
+If your company **is not** Full PCI DSS compliant, you will not be able to handle credit card information on your servers. dLocal's _Smart Fields_ solves this problem, by letting you accept credit card payments right from your website, without worrying about PCI compliance. Learn more about Smart Fields here:
 
-{% page-ref page="../products/fields/" %}
+{% page-ref page="../products/smart-fields/" %}
 
 ### Installments
 

@@ -2,11 +2,11 @@
 description: 100% customizable credit card checkouts for non-PCI merchants.
 ---
 
-# Fields
+# Smart Fields
 
 In order to be eligible for the easiest level of PCI compliance – [SAQ A](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment) – certain payment fields on the checkout page must be hosted securely. This requires you to host the information on an external payment gateway's domain and present the fields to your users in an iframe or with a redirect.
 
-dLocal's Fields solution accomplishes this by rendering an iframe to handle input of the following payment fields on your checkout page: Card Number, CVV and Expiration date.
+dLocal's Smart Fields solution accomplishes this by rendering an iframe to handle input of the following payment fields on your checkout page: Card Number, CVV and Expiration date.
 
 This provides you with the ability to customize the look and feel of your web page while ensuring that you are compliant with PCI requirements.
 
@@ -14,12 +14,12 @@ This provides you with the ability to customize the look and feel of your web pa
 
 ![](../../.gitbook/assets/image.png)
 
-Fields defers as much of the styling of field components to you as possible. The layout, width, height, and outer styling \(`border`, `box-shadow`, `background`, etc.\) are left **completely in your control**.
+Smart Fields defer as much of the styling of field components to you as possible. The layout, width, height, and outer styling \(`border`, `box-shadow`, `background`, etc.\) are left **completely in your control**.
 
 {% hint style="info" %}
 Currently only the all-in-one `card` Field is available \(you can try it below\). This design is aligned with the latest trends in checkout design.
 
-Separate Fields for CC Number, Expiration Data and CVV will be coming in the next few weeks.
+Separate Smart Fields for CC Number, Expiration Data and CVV will be coming in the next few weeks.
 {% endhint %}
 
 Below is a live demo of our all-in-one `card`Field. Open on CodePen to make changes to the code in real time:
@@ -28,7 +28,7 @@ Below is a live demo of our all-in-one `card`Field. Open on CodePen to make chan
 
 
 
-#### Ready to start accepting credit card payments right from your website? Setup Fields today in 4 easy steps:
+#### Ready to start accepting credit card payments right from your website? Setup Smart Fields today in 4 easy steps:
 
 {% page-ref page="fields-setup-guide.md" %}
 
