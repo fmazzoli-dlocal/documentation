@@ -10,5 +10,3 @@ Or send funds to your partners in emerging countries with our Payouts solution:
 
 {% page-ref page="solutions/payouts.md" %}
 
-
-
