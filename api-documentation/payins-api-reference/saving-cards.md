@@ -1,6 +1,6 @@
 # Saving Cards
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://api.dlocal.com/" path="secure\_cards" %}
 {% api-method-summary %}
 Create a Card
 {% endapi-method-summary %}

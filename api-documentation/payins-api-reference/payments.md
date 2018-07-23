@@ -233,12 +233,12 @@ Transaction amount \(in the currency entered in the field `currency`\)
 Three-letter ISO currency code, in uppercase.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="payment\_method\_id" type="string" required=true %}
-Payment method id chosen to make the payment.
+{% api-method-parameter name="payment\_method\_id" type="string" required=false %}
+Payment method code chosen to make the payment. Required for `DIRECT` payment flows.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_type" type="string" required=true %}
-Payment method type chosen to make the payment.
+Type of payment method can be `CARD`, `BANK_TRANSFER`, `DIRECT_DEBIT` or `TICKET`.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
