@@ -2,7 +2,7 @@
 
 ### Including dlocal.js
 
-However you’re using dlocal.js, you always begin by including the library and setting your API key. To get started, include this script on your pages—it should always be loaded directly from **https://js.dlocal.com**:
+However you’re using dlocal.js, you always begin by including the library and setting your API key. To get started, include this script on your pages—it should always be loaded directly from **https://js.dlocal.com.** For testing purposes, you can use **https://js-sandbox.dlocal.com.**
 
 ```text
 <script src="https://js.dlocal.com/"></script>

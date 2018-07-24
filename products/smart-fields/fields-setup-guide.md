@@ -29,7 +29,7 @@ All submissions of payment info using Smart Fields are made via a secure HTTPS c
 
 ## Step 1: Set up Smart Fields
 
-Smart Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com).
+Smart Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from **https://js.dlocal.com**. For testing purposes, you can use **https://js-sandbox.dlocal.com.**
 
 `<script src="https://js.dlocal.com/"></script>`
 
