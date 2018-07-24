@@ -269,7 +269,7 @@ ID given by the merchant in their system.
 Payment description.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="notification\_url" type="string" required=true %}
+{% api-method-parameter name="notification\_url" type="string" required=false %}
 URL where dlocal will send notifications associated to changes to this payment.
 {% endapi-method-parameter %}
 
