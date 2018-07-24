@@ -154,12 +154,14 @@ This service allows you to create, modify or read payments.
 | `token` | String | Credit card token. |
 | `number` | String | The card number, as a string without any separators. |
 | `cvv` | String | Credit card verification value. |
-| `brand` | String | Card brand. |
+| `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params |
+| `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). |
+| `card_id` | String | Credit card if returned by the [Create a Card](saving-cards.md#create-a-card) call. |
+| `brand` | String | Card brand code. |
 | `installments` | String | Number of installments. |
 | `installments_id` | String | Installments id of a [installments plan](installments.md#the-installment-plan-object). |
 | `descriptor` | String | Dynamic Descriptor. |
 | `last4` | String | The last 4 digits of the card. |
-| `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
 | `save` | String | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment method flows \) |
 | `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. |
 {% endtab %}
@@ -173,8 +175,7 @@ This service allows you to create, modify or read payments.
 "expiration_year": 2040,
 "last4": "1111",
 "brand": "VI",
-"capture": false,
-"save" : "YES"
+"capture": false
 }
 ```
 {% endtab %}
@@ -400,14 +401,14 @@ Example Response
 {% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String **\(Required only if token or card_id not present\)** | Cardholder's full name |
-| `expiration_month` | Integer **\(Required only if token or card_id not present\)** | Two digit number representing the card's expiration month. |
-| `expiration_year` | Integer **\(Required only if token or card_id not present\)** | Four digit number representing the card's expiration year. |
-| `number` | String **\(Required only if encrypted_data, token or card_id not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required only if encrypted_data, token or card_id not present\)** | Credit card verification value. |
+| `holder_name` | String **\(Required only if `token` or `card_id` not present\)** | Cardholder's full name |
+| `expiration_month` | Integer **\(Required only if `token` or `card_id` not present\)** | Two digit number representing the card's expiration month. |
+| `expiration_year` | Integer **\(Required only if `token` or `card_id` not present\)** | Four digit number representing the card's expiration year. |
+| `number` | String **\(Required only if `encrypted_data`, `token` or `card_id` not present\)** | The card number, as a string without any separators. |
+| `cvv` | String **\(Required only if `encrypted_data`, `token` or `card_id` not present\)** | Credit card verification value. |
 | `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
-| `token` | String \(Optional\) | Temporary credit card token created using Smart Fields. |
-| `card_id` | String \(Optional\) | Credit card id returned by the `Create a Card` call. |
+| `token` | String \(Optional\) | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). |
+| `card_id` | String \(Optional\) | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. |
 | `installments` | String \(Optional\) | Number of installments. Default 1. |
 | `installments_id` | String \(Optional\) | Installments id of a installments plan. |
 | `descriptor` | String \(Optional\) | Dynamic Descriptor |
@@ -736,3 +737,4 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
+

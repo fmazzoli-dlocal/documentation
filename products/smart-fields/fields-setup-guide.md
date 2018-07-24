@@ -1,7 +1,7 @@
 ---
 description: >-
-  Integrate with dLocal Smart Fields to start accepting credit card payments on
-  your website.
+  Integrate with dLocal Fields to start accepting credit card payments on your
+  website.
 ---
 
 # Smart Fields Setup Guide

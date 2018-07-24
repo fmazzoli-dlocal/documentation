@@ -1,7 +1,3 @@
----
-description: 100% customizable credit card checkouts for non-PCI merchants.
----
-
 # Smart Fields
 
 In order to be eligible for the easiest level of PCI compliance – [SAQ A](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment) – certain payment fields on the checkout page must be hosted securely. This requires you to host the information on an external payment gateway's domain and present the fields to your users in an iframe or with a redirect.
