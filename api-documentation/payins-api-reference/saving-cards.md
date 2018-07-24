@@ -6,7 +6,7 @@ Create a Card
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Stores a card's information on dLocal's servers, and returns a token.
+Stores a card's information on dLocal's servers, and returns a card\_id, that can be used to make payments later on.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -34,7 +34,7 @@ Example Response
 
 ```yaml
 {
-    "token": "CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9",
+    "card_id": "CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9",
     "holder_name": "Thiago Gabriel",
     "expiration_month": 10,
     "expiration_year": 2040,
@@ -96,20 +96,20 @@ curl -X POST \
 }
 ```
 
-{% api-method method="get" host=" https://api.dlocal.com/cards/" path="{token}" %}
+{% api-method method="get" host=" https://api.dlocal.com/cards/" path="{card\_id}" %}
 {% api-method-summary %}
 Retrieve a Card
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Retrieve information about an existing card.
+Retrieve information about a saved card.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="token" type="string" required=true %}
-The card token.
+{% api-method-parameter name="card\_id" type="string" required=true %}
+The card id received when saving the card.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -122,7 +122,7 @@ The card token.
 
 ```yaml
 {
-    "token": "CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9",
+    "card_id": "CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9",
     "holder_name": "Thiago Gabriel",
     "expiration_month": 10,
     "expiration_year": 2040,

@@ -220,7 +220,7 @@ Create a Payment
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Creates a new payment.
+Creates a new payment using any of the available payment methods.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -396,6 +396,8 @@ Example Response
 {% endtabs %}
 
 #### The Card Object
+
+For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../products/smart-fields/). For recurring payments, first [save the card](saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
 
 {% tabs %}
 {% tab title="Card Object" %}
