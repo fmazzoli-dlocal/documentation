@@ -278,13 +278,8 @@ Example Response
 ```yaml
 {
     "id": "CHAR42342",
-    "payment_id": "PAY245235",
-    "amount": 100.00,
-    "amount_chargedback": 100.00,
-    "currency": "USD",
     "status": "SUCCESS",
-    "status_code": 200,
-    "created_date" : "2018-02-15T15:14:52-00:00"
+    "status_detail": "The chargeback was executed."
 }
 ```
 {% endapi-method-response-example %}
