@@ -316,7 +316,6 @@ Example Response
         "last4": "1111",
         "brand": "VI",
         "capture": false,
-        "save" : "YES"
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
@@ -401,17 +400,17 @@ Example Response
 {% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String **\(Required if token not present\)** | Cardholder's full name |
-| `expiration_month` | Integer **\(Required if token not present\)** | Two digit number representing the card's expiration month. |
-| `expiration_year` | Integer **\(Required if token not present\)** | Four digit number representing the card's expiration year. |
-| `token` | String \(Optional\) | Credit card token. |
-| `number` | String **\(Required if encrypted\_data or token is not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required if encrypted\_data or token is not present\)** | Credit card verification value. |
+| `holder_name` | String **\(Required only if token or card_id not present\)** | Cardholder's full name |
+| `expiration_month` | Integer **\(Required only if token or card_id not present\)** | Two digit number representing the card's expiration month. |
+| `expiration_year` | Integer **\(Required only if token or card_id not present\)** | Four digit number representing the card's expiration year. |
+| `number` | String **\(Required only if encrypted_data, token or card_id not present\)** | The card number, as a string without any separators. |
+| `cvv` | String **\(Required only if encrypted_data, token or card_id not present\)** | Credit card verification value. |
+| `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
+| `token` | String \(Optional\) | Temporary credit card token created using Smart Fields. |
+| `card_id` | String \(Optional\) | Credit card id returned by the `Create a Card` call. |
 | `installments` | String \(Optional\) | Number of installments. Default 1. |
 | `installments_id` | String \(Optional\) | Installments id of a installments plan. |
 | `descriptor` | String \(Optional\) | Dynamic Descriptor |
-| `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
-| `save` | String \(Optional\) | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment methods flows \). Default `NO` |
 | `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
 {% endtab %}
 
@@ -424,8 +423,7 @@ Example Response
         "expiration_year": 2040,
         "last4": "1111",
         "brand": "VI",
-        "capture": false,
-        "save" : "YES"
+        "capture": false
     }
 ```
 {% endtab %}
@@ -482,8 +480,7 @@ curl -X POST \
         "expiration_year": 2040,
         "number": "41111111111111",
         "cvv": "123",
-        "capture": false,
-        "save" : "YES"
+        "capture": false
     },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
@@ -739,4 +736,3 @@ POST: _{payment.notification\_url}_
     "notification_url": "http://merchant.com/notifications"
 }
 ```
-
