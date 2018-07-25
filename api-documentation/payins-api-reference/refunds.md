@@ -28,28 +28,28 @@ If a refund is pending, the refund confirmation is sent asynchronously to this U
 Amount to refund. If the amount is empty, then the default is total amount of the payment.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="currency" type="string" required=true %}
-Currency of the Amount. **Only required if** `amount` **is present.**
+{% api-method-parameter name="currency" type="string" required=false %}
+Currency of the Amount. **Required if** `amount` **is present.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="beneficiary\_name" type="string" required=false %}
-User's full name. **Only required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+User's full name. **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank" type="string" required=false %}
-User's bank name. **Only required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+User's bank name. **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_account" type="string" required=false %}
-User's bank account number. **Only required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+User's bank account number. **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_account\_type" type="string" required=false %}
-Type of bank account. `C`: for Current accounts; `S`: for Savings accounts; `I`: International accounts. **Only required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+Type of bank account. `C`: for Current accounts; `S`: for Savings accounts; `I`: International accounts. **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_branch" type="string" required=false %}
-User's bank branch name. **Only required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+User's bank branch name. **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

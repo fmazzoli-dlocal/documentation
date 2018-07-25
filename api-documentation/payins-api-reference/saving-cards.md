@@ -51,20 +51,20 @@ Example Response
 
 | **Argument** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String **\(Required\)** | Cardholder's full name |
-| `expiration_month` | Integer **\(Required only if** `token` **not present\)** | Number representing the card's expiration month \(start in 1\). |
-| `expiration_year` | Integer **\(Required only if** `token` **not present\)** | Number representing the card's expiration year. |
-| `number` | String **\(Required if** `encrypted_data` or `token` **not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required is** `encrypted_data` or `token` **not present\)** | Credit card verification value. |
-| `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
-| `token` | String \(Optional\) | Temporary credit card token created using Smart Fields. |
+| `holder_name` | String  | Cardholder's full name. **Required.** |
+| `expiration_month` | Integer | Number representing the card's expiration month \(start in 1\). **Required if `token` not present.** |
+| `expiration_year` | Integer | Number representing the card's expiration year. **Required if** `token` **not present.** |
+| `number` | String | The card number, as a string without any separators. **Required if** `encrypted_data` **or** `token` **not present.** |
+| `cvv` | String | Credit card verification value. **Required if** `encrypted_data` **or** `token` **not present.** |
+| `encrypted_data` | String  | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
+| `token` | String  | Temporary credit card token created using Smart Fields. Optional |
 
 ## The Payer Object
 
 | **Argument** | **Type** | **Description** |
 | --- | --- | --- |
-| `name` | String **\(Required\)** | Payer's name |
-| `document` | String **\(Required\)** | Payer's document |
+| `name` | String | Payer's name. **Required.** |
+| `document` | String | Payer's document. **Required.** |
 
 ## Example Request
 

@@ -254,12 +254,14 @@ User's country code. ISO 3166-1 alpha-2 code.
 Payer Object
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="card" type="object" required=true %}
-Card Object **\(required only for** `CARD` **payment type\)**
+{% api-method-parameter name="card" type="object" required=false %}
+Card Object   
+**Required only for** `CARD` **payment type.**
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="direct\_debit" type="object" required=true %}
-Direct Debit Object **\(required only for** `DIRECT_DEBIT` **payment type\)**
+{% api-method-parameter name="direct\_debit" type="object" required=false %}
+Direct Debit Object  
+**Required only for** `DIRECT_DEBIT` **payment type.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="external\_reference" type="string" required=true %}
@@ -337,14 +339,14 @@ Example Response
 {% tab title="Payer Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `name` | String **\(Required\)** | User's full name |
-| `email` | String **\(Required\)** | User’s email address. |
-| `birth_date` | String \(Optional\) | User’s birthdate \(DD-MM-YYYY\). |
-| `phone` | String \(Optional\) | User’s phone. |
-| `document` | String \(Optional\) | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
-| `document_type` | String \(Optional\) | User’s document type. |
-| `user_reference` | String \(Optional\) | Unique user id at the merchant side. |
-| `address` | [Address Object ](payments.md#the-address-object)\(Optional\) | User’s address. |
+| `name` | String  | User's full name. **Required.** |
+| `email` | String  | User’s email address. **Required.** |
+| `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
+| `phone` | String  | User’s phone. Optional. |
+| `document` | String  | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. Optional. |
+| `document_type` | String  | User’s document type. Optional. |
+| `user_reference` | String  | Unique user id at the merchant side. Optional. |
+| `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}

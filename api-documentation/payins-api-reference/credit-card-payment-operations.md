@@ -19,7 +19,7 @@ The payment id
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="currency" type="string" required=false %}
-Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\) Each country accepts USD and local currency. **Mandatory if amount is present.**
+Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\) Each country accepts USD and local currency. **Required if amount is present.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="amount" type="number" required=false %}
