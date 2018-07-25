@@ -376,11 +376,11 @@ Example Response
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `state` | String \(Optional\) | User's address state. |
-| `city` | String \(Optional\) | User’s address city. |
-| `zip_code` | String \(Optional\) | User’s address zip\_code. |
-| `street` | String \(Optional\) | User’s address street. |
-| `number` | String \(Optional\) | User’s address number. |
+| `state` | String | User's address state. Optional. |
+| `city` | String | User’s address city. Optional. |
+| `zip_code` | String | User’s address zip\_code. Optional. |
+| `street` | String | User’s address street. Optional. |
+| `number` | String | User’s address number. Optional. |
 {% endtab %}
 
 {% tab title="Example Address Object" %}
@@ -405,18 +405,18 @@ For credit card payments you can use the card information only if you business i
 {% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String **\(Required only if `token` or `card_id` not present\)** | Cardholder's full name |
-| `expiration_month` | Integer **\(Required only if `token` or `card_id` not present\)** | Two digit number representing the card's expiration month. |
-| `expiration_year` | Integer **\(Required only if `token` or `card_id` not present\)** | Four digit number representing the card's expiration year. |
-| `number` | String **\(Required only if `encrypted_data`, `token` or `card_id` not present\)** | The card number, as a string without any separators. |
-| `cvv` | String **\(Required only if `encrypted_data`, `token` or `card_id` not present\)** | Credit card verification value. |
-| `encrypted_data` | String \(Optional\) | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. |
-| `token` | String \(Optional\) | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). |
-| `card_id` | String \(Optional\) | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. |
-| `installments` | String \(Optional\) | Number of installments. Default 1. |
-| `installments_id` | String \(Optional\) | Installments id of a installments plan. |
-| `descriptor` | String \(Optional\) | Dynamic Descriptor |
-| `capture` | Boolean \(Optional\) | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE` |
+| `holder_name` | String | Cardholder's full name. **Required if** `token` **or** `card_id` **not present** |
+| `expiration_month` | Integer | Two digit number representing the card's expiration month. **Required if** `token` **or** `card_id` **not present** |
+| `expiration_year` | Integer | Four digit number representing the card's expiration year. **Required if** `token` **or** `card_id` **not present** |
+| `number` | String | The card number, as a string without any separators.  **Required if**`encrypted_data` **,**`token` **or** `card_id` **not present** |
+| `cvv` | String | Credit card verification value. **Required if**`encrypted_data` **,**`token` **or** `card_id` **not present** |
+| `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
+| `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). Optional. |
+| `card_id` | String | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. Optional. |
+| `installments` | String | Number of installments. Default 1. Optional. |
+| `installments_id` | String | Installments id of a installments plan. Optional. |
+| `descriptor` | String | Dynamic Descriptor.  Optional. |
+| `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE`. Optional. |
 {% endtab %}
 
 {% tab title="Example Card Object" %}
@@ -438,11 +438,11 @@ For credit card payments you can use the card information only if you business i
 
 | **Property** | **Type** | **Description** |
 | --- | --- | --- | --- | --- | --- |
-| `holder_name` | String \(Required\) | Name of the owner of the bank account. |
-| `email` | String \(Required\) | Email of the owner of the bank account. |
-| `document_type` | String \(Required\) | Document of the owner of the bank account. |
-| `document` | String \(Required\) | Document of the owner of the bank account. |
-| `cbu` | String \(Required\) | CBU of the owner of the bank account \(only for AR country\). |
+| `holder_name` | String | Name of the owner of the bank account. **Required.** |
+| `email` | String | Email of the owner of the bank account. **Required.** |
+| `document_type` | String | Document of the owner of the bank account. **Required.** |
+| `document` | String | Document of the owner of the bank account. **Required.** |
+| `cbu` | String | CBU of the owner of the bank account \(**only for AR country**\). **Required.** |
 
 ### Example Request
 

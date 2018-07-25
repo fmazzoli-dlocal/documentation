@@ -45,7 +45,7 @@ To perform an idempotent request, provide an additional 'X-Idempotency-Key' head
 
 | **Header** | **Type** | **Description** |
 | --- | --- |
-| `X-Idempotency-Key` | String \(Optional\) | Key used for perform an idempotent request. |
+| `X-Idempotency-Key` | String | Key used for perform an idempotent request. Optional. |
 
 #### Example Request
 

@@ -57,7 +57,7 @@ Example Response
 | `number` | String | The card number, as a string without any separators. **Required if** `encrypted_data` **or** `token` **not present.** |
 | `cvv` | String | Credit card verification value. **Required if** `encrypted_data` **or** `token` **not present.** |
 | `encrypted_data` | String  | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
-| `token` | String  | Temporary credit card token created using Smart Fields. Optional |
+| `token` | String  | Temporary credit card token created using Smart Fields. Optional. |
 
 ## The Payer Object
 
