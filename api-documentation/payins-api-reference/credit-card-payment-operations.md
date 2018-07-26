@@ -24,7 +24,7 @@ Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="amount" type="number" required=false %}
-Amount to be captured \(in the currency entered in the field “x\_currency”\) Must be equal or less than the captured amount.  
+Amount to be captured \(in the currency entered in`currency`\) Must be equal or less than the captured amount.  
 **If not included the capture is for the total authorized amount**.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
