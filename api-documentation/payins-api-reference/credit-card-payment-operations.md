@@ -6,7 +6,7 @@ Capture a credit card payment
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Capture an existing, uncaptured payment. This is the second half of the two-step payment flow, where first you created a paymentwith the capture option set to false.
+Capture an existing, uncaptured payment. This is the second half of the two-step payment flow, where first you created a payment with the `capture` option set to `FALSE`.
 {% endapi-method-description %}
 
 {% api-method-spec %}
