@@ -21,6 +21,7 @@
   * [Payments](api-documentation/payins-api-reference/payments.md)
   * [Refunds](api-documentation/payins-api-reference/refunds.md)
   * [Credit Card Payment Operations](api-documentation/payins-api-reference/credit-card-payment-operations.md)
+  * [Orders](api-documentation/payins-api-reference/orders.md)
   * [Installments](api-documentation/payins-api-reference/installments.md)
   * [Saving Cards](api-documentation/payins-api-reference/saving-cards.md)
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
