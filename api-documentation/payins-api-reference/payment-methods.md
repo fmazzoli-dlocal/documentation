@@ -7,7 +7,7 @@ Object that identifies each payment method accepted by dLocal.
 {% tabs %}
 {% tab title="Payment Method Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | Payment method id |
 | `type` | String | Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
 | `name` | String | Payment type name |
@@ -126,7 +126,7 @@ curl -X GET \
 ### **Argentina**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | SI | Santander Rio | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/SI.png |
 | PF | Pago Fácil | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PF.png |
 | RP | Rapi Pago | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/RP.png |
@@ -151,7 +151,7 @@ curl -X GET \
 ### **Brazil**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | BL | Boleto | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BL.png |
 | I | Itau | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/I.png |
 | B | Bradesco | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/B.png |
@@ -172,7 +172,7 @@ curl -X GET \
 ### **Chile**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | WP | WebPay | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | MasterCard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
@@ -199,14 +199,14 @@ curl -X GET \
 ### **China**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | EE | ePayLinks | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/EE.png |
 | UP | China Union Pay | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/UP.png |
 
 ### Colombia
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | EY | Efecty | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EY.png |
 | DA | Davivienda | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/DA.png |
 | PC | PSE | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
@@ -245,7 +245,7 @@ curl -X GET \
 ### **India**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | MasterCard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
 | DC | Diners Club | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
@@ -257,7 +257,7 @@ curl -X GET \
 ### **Mexico**
 
 | **Code** | **Description** | **Payment Type** | **Logo** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | OX | OXXO | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/OX.png |
 | SE | SPEI | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/SE.png |
 | BV | BBVA Bancomer | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BV.png |
@@ -273,7 +273,7 @@ curl -X GET \
 ### **Morocco**
 
 | **Code** | **Description** | **Payment Type** | **Logos** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | AM | AmanPay | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/AM.png |
 | MI | CMI | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MI.png |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
@@ -282,13 +282,13 @@ curl -X GET \
 ### Paraguay
 
 | **Code** | **Description** | **Payment Type** | **Logos** |
-| --- | --- |
+| :--- | :--- | :--- | :--- |
 | PE | PagoExpress | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PE.png |
 
 ### **Perú**
 
 | **Code** | **Description** | **Payment Type** | **Logos** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | Mastercard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
 | AE | American Express | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
@@ -302,7 +302,7 @@ curl -X GET \
 ### **Turkey**
 
 | **Code** | **Description** | **Payment Type** | **Logos** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | AE | Amex | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
 | VI | Visa | Credit / Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | Mastercard | Credit / Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
@@ -310,7 +310,7 @@ curl -X GET \
 ### **Uruguay**
 
 | **Code** | **Description** | **Payment Type** | **Logos** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | VI | Visa | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
 | MC | Mastercard | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
 | DC | Diners Club | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |

@@ -74,6 +74,7 @@ User's bank branch name.
     "amount_refunded": 100.00,
     "currency": "USD",
     "status": "SUCCESS",
+    "status_code": "200",
     "status_detail": "The refund was paid.",
     "notification_url": "http://some.url",
     "created_date" : "2018-02-15T15:14:52-00:00"
@@ -109,16 +110,20 @@ $ curl -X POST \
 
 If a refund is pending, the refund confirmation is sent asynchronously to the refund notification URL by POST, sending the following parameters:
 
+#### The Refund Object
+
 | Property | Type | Description |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | The refund id. |
 | `payment_id` | String | The payment id. |
 | `amount` | Positive Float | The amount of the refund. |
 | `amount_refunded` | Positive Float | The refunded amount. |
 | `currency` | String | The currency code of the refund. |
 | `status` | String | The status of the refund. |
-| `status_code` | Integer | The [status](https://dlocal.com/docs/?language=cURL#refund-status) code of the refund. |
+| `status_code` | String | The [status](refunds.md#refund-status) code of the refund. |
+| `status_detail` | String | The status detail. |
 | `created_date` | String | The date of when the refund was executed. |
+| `notification_URL` | String | URL where dlocal will send notifications associated to changes in this refund. |
 
 ## Example POST
 
@@ -169,6 +174,7 @@ The refund id
     "amount_refunded": 100.00,
     "currency": "USD",
     "status": "SUCCESS",
+    "status_code": "200",
     "status_detail": "The refund was paid.",
     "notification_url": "http://some.url",
     "created_date" : "2018-02-15T15:14:52-00:00"
@@ -217,6 +223,7 @@ Example Response
 {
     "id": "REF42342",
     "status": "SUCCESS",
+    "status_code": "200",
     "status_detail": "The refund was paid.",
 }
 ```
@@ -228,7 +235,7 @@ Example Response
 ## Refund Status Codes {#refund-status}
 
 | Status | Status code | Description |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `PENDING` | 100 | The refund is pending. |
 | `SUCCESS` | 200 | The refund was paid. |
 | `REJECTED` | 300 | The refund was rejected. |

@@ -7,7 +7,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 #### Headers {#headers}
 
 | **Header** | **Type** | **Description** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `X-Date` | String | ISO8601 Datetime with Timezone |
 | `X-Login` | String | Merchant xLogin |
 | `X-Trans-Key` | String | Merchant xTransKey |
@@ -22,7 +22,7 @@ The following parameters can be encrypted and added to a new `encrypted_data` fi
 {% tabs %}
 {% tab title="Properties" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `cvv` | String | Credit Card security code |
 | `number` | String | Credit Card number |
 {% endtab %}
@@ -44,7 +44,7 @@ The following parameters can be encrypted and added to a new `encrypted_data` fi
 To perform an idempotent request, provide an additional 'X-Idempotency-Key' header to the request.
 
 | **Header** | **Type** | **Description** |
-| --- | --- |
+| :--- | :--- | :--- |
 | `X-Idempotency-Key` | String | Key used for perform an idempotent request. Optional. |
 
 #### Example Request

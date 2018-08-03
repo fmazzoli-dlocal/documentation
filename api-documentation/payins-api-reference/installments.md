@@ -7,13 +7,13 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 {% tabs %}
 {% tab title="Installment Plan Object" %}
 | **Property** | Type | **Description** |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | The installments plan id. |
 | `country` | String | The country of the installments plan. |
 | `currency` | String | The currency of the installments plan. |
 | `bin` | String | The credit card bin. |
 | `amount` | Positive Float | The amount of the installments plan. |
-| `installments` | [Installment Object](https://github.com/fmazzoli-dlocal/documentation/tree/af9605a5811cd2e3f4f74b57fd8ededbe8c8ee80/api-reference-2/api.md#the-installment-object)\[ \] | The installments plan information |
+| `installments` | [Installment Object](installments.md#the-installment-object)\[ \] | The installments plan information |
 {% endtab %}
 
 {% tab title="Example Installment Plan Object" %}
@@ -54,7 +54,7 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 {% tabs %}
 {% tab title="Installment Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | The installment id |
 | `installment_amount` | Positive Float | Instalment amount. |
 | `total_amount` | Positive Float | Instalments total amount. |

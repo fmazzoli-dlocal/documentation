@@ -174,7 +174,7 @@ $ curl -X POST \
 If a chargeback was applied \(requested by the user\) a notification is sent to the merchant to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | The chargeback id. |
 | `payment_id` | String | The payment id. |
 | `amount` | Positive Float | The amount of the chargeback. |
@@ -291,7 +291,7 @@ Example Response
 ### Chargeback status {#chargeback-status}
 
 | **Status** | **Status code** | **Description** |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `PENDING` | 100 | The chargeback is pending. |
 | `SUCCESS` | 200 | The chargeback was executed. |
 

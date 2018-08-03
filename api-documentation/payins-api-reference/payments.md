@@ -7,7 +7,7 @@ This service allows you to create, modify or read payments.
 {% tabs %}
 {% tab title="Payment Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `id` | String | Id of payment |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
@@ -20,12 +20,12 @@ This service allows you to create, modify or read payments.
 | `bank_transfer` | [Bank Transfer Object](payments.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
 | `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
 | `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
-| `refunds` | Date\(ISO\_8601\) | Payment's refunds of refund object. |
+| `refunds` | [Refund Object](refunds.md#the-refund-object) | Payment's refunds of refund object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
 | `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
 | `status_detail` | String | Payment status detail. |
-| `reject_code` | Integer | Rejection status code.[ See all rejection status.](payments.md#rejection-status) |
+| `status_code` | String | Status code.[ See all payment status codes.](payments.md#payment-status-codes) |
 | `order_id` | String | ID given by the merchant in their system. |
 | `description` | String | Payment description |
 | `notification_url` | String | URL where dlocal will send notifications associated to changes in this payment. |
@@ -83,7 +83,7 @@ This service allows you to create, modify or read payments.
 {% tabs %}
 {% tab title="Payer Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `name` | String | User's full name |
 | `email` | String | User’s email address. |
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). |
@@ -120,7 +120,8 @@ This service allows you to create, modify or read payments.
 {% tabs %}
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
+| `country` | String | User's country code as in ISO-3166-1 alpha-2. Eg: "BR". |
 | `state` | String | User's address state. |
 | `city` | String | User’s address city. |
 | `zip_code` | String | User’s address zip\_code. |
@@ -147,7 +148,7 @@ This service allows you to create, modify or read payments.
 {% tabs %}
 {% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `holder_name` | String | Cardholder's full name |
 | `expiration_month` | Integer | Two digit number representing the card's expiration month. |
 | `expiration_year` | Integer | Four digit number representing the card's expiration year. |
@@ -184,7 +185,7 @@ This service allows you to create, modify or read payments.
 ## The Bank Transfer Object
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `type` | String | Bank account type |
 | `name` | String | Bank name. |
 | `code` | String | Bank code. |
@@ -198,7 +199,7 @@ This service allows you to create, modify or read payments.
 ## The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `holder_name` | String | Name of the owner of the |
 | `email` | String | Email of the owner of the bank account. |
 | `document_type` | String | Document of the owner of the bank account. |
@@ -208,7 +209,7 @@ This service allows you to create, modify or read payments.
 ## The Ticket Object
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `type` | String | Type of ticket, can be `REFERENCE_CODE`, or `BAR_CODE` |
 | `format` | String | Ticket barcode format only for `BAR_CODE`, for example `CODE_128`. |
 | `number` | String | Ticket number. |
@@ -239,7 +240,7 @@ Payment method code chosen to make the payment. Required for `DIRECT` payment fl
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_type" type="string" required=true %}
-Type of payment method can be `CARD`, `BANK_TRANSFER`, `DIRECT_DEBIT` or `TICKET`.
+Type of payment method can be `CARD`, `BANK_TRANSFER`, `DIRECT_DEBIT` or `TICKET`.  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
@@ -264,7 +265,7 @@ Direct Debit Object
 **Required only for** `DIRECT_DEBIT` **payment type.**
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="external\_reference" type="string" required=true %}
+{% api-method-parameter name="order\_id" type="string" required=true %}
 ID given by the merchant in their system.
 {% endapi-method-parameter %}
 
@@ -296,21 +297,6 @@ Example Response
     "country": "BR",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "document_type" : "CPF",
-        "user_reference": "12345",
-        "address": {
-            "country" : "BR",
-            "state"  : "Rio de Janeiro",
-            "city" : "Volta Redonda",
-            "zip_code" : "27275-595",
-            "street" : "Servidão B-1",
-            "number" : "1106"
-        }
-    },
     "card":{
         "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
@@ -323,6 +309,7 @@ Example Response
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PAID",
+    "status_code" : "200",
     "status_detail" : "The payment was paid.",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
@@ -338,7 +325,7 @@ Example Response
 {% tabs %}
 {% tab title="Payer Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `name` | String  | User's full name. **Required.** |
 | `email` | String  | User’s email address. **Required.** |
 | `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
@@ -375,7 +362,7 @@ Example Response
 {% tabs %}
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `state` | String | User's address state. Optional. |
 | `city` | String | User’s address city. Optional. |
 | `zip_code` | String | User’s address zip\_code. Optional. |
@@ -404,7 +391,7 @@ For credit card payments you can use the card information only if you business i
 {% tabs %}
 {% tab title="Card Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `holder_name` | String | Cardholder's full name. **Required if** `token` **or** `card_id` **not present** |
 | `expiration_month` | Integer | Two digit number representing the card's expiration month. **Required if** `token` **or** `card_id` **not present** |
 | `expiration_year` | Integer | Four digit number representing the card's expiration year. **Required if** `token` **or** `card_id` **not present** |
@@ -437,7 +424,7 @@ For credit card payments you can use the card information only if you business i
 #### The Direct Debit Object
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `holder_name` | String | Name of the owner of the bank account. **Required.** |
 | `email` | String | Email of the owner of the bank account. **Required.** |
 | `document_type` | String | Document of the owner of the bank account. **Required.** |
@@ -554,7 +541,7 @@ The payment id
     "approved_date" : "2018-02-15T15:44:42.310Z",
     "status" : "PENDING",
     "status_detail" : "The payment is pending.",
-    "status_code" : 100,
+    "status_code" : "100",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -602,6 +589,7 @@ Example Response
 {
     "id": "PAY4334346343",
     "status" : "PENDING",
+    "status_code" : "100",
     "status_detail" : "The payment is pending."
 }
 ```
@@ -623,7 +611,7 @@ $ curl \
 ## Payment Status Codes
 
 | **Status** | **Status code** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `PENDING` | 100 | The payment is pending. |
 | `PAID` | 200 | The payment was paid. |
 | `REJECTED` | 300 | The payment was rejected. |
@@ -634,7 +622,7 @@ $ curl \
 ### Rejection Status
 
 | **Status** | **Status code** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `REJECTED` | 301 | Rejected by bank. |
 | `REJECTED` | 302 | Insufficient amount. |
 | `REJECTED` | 303 | Card blacklisted. |
@@ -659,7 +647,7 @@ $ curl \
 All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `code` | Integer | Error code. |
 | `message` | String | Human readable message. |
 | `param` | String | In case one parameter is wrong. |
@@ -676,7 +664,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 #### Http Errors {#http-errors}
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `403 Forbidden` | 3001 | Invalid Credentials. |
 |  | 3002 | Unregistered IP address. |
 |  | 3003 | Merchant has no authorization to use this API. |

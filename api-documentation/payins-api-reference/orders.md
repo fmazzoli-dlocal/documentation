@@ -9,7 +9,7 @@ description: This service allows you get information about the Order.
 {% tabs %}
 {% tab title="The Order Object" %}
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `order_id` | String | ID given by the merchant in their system. |
 | `payment_id` | String | The payment id at dLocal. |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
@@ -17,6 +17,7 @@ description: This service allows you get information about the Order.
 | `created_date` | Date \(ISO\_8601\) | Payment’s creation date. |
 | `approved_date` | Date \(ISO\_8601\) | Payment’s approval date. |
 | `status` | String | [Payment status](https://dlocal.com/docs/#payment-status). |
+| `status_code` | String | The [payment status code](payments.md#payment-status-codes). |
 | `status_detail` | String | [Payment status](https://dlocal.com/docs/#payment-status) detail. |
 {% endtab %}
 
@@ -30,7 +31,8 @@ description: This service allows you get information about the Order.
 	"created_date": "2018-07-12T15:20:02.000+0000",
 	"approved_date": "2018-07-12T15:20:02.000+0000",
 	"status": "AUTHORIZED",
-	"status_detail": "The payment was authorized"
+	"status_code": "600",
+	"status_detail": "The payment was authorized."
 }
 ```
 {% endtab %}
@@ -62,15 +64,15 @@ ID given by the merchant in their system.
 
 ```yaml
 {
-  "payment_id": "string",
-  "order_id": "string",
-  "amount": 0,
-  "currency": "string",
+  "payment_id": "D-4-f77392b1-4ff0-477c-749ac9a237b5",
+  "order_id": "LDMYZ5mtmsCa",
+  "amount": 382.00,
+  "currency": "USD",
   "approved_date": "2018-07-11T19:55:56.348Z",
   "created_date": "2018-07-11T19:55:56.348Z",
-  "reject_code": 0,
   "status": "PENDING",
-  "status_detail": ""
+  "status_code": "100",
+  "status_detail": "The payment is pending"
 }
 ```
 {% endapi-method-response-example %}

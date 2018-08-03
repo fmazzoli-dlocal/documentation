@@ -50,7 +50,7 @@ Example Response
 ## The Card Object
 
 | **Argument** | **Type** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `holder_name` | String  | Cardholder's full name. **Required.** |
 | `expiration_month` | Integer | Number representing the card's expiration month \(start in 1\). **Required if `token` not present.** |
 | `expiration_year` | Integer | Number representing the card's expiration year. **Required if** `token` **not present.** |
@@ -62,7 +62,7 @@ Example Response
 ## The Payer Object
 
 | **Argument** | **Type** | **Description** |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `name` | String | Payer's name. **Required.** |
 | `document` | String | Payer's document. **Required.** |
 

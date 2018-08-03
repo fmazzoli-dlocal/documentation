@@ -24,20 +24,20 @@ var fields = dlocal.fields();
 This method creates an instance of `fields`, which manages a group of Smart Fields. It accepts an optional`options` object. Available options are documented below:
 
 | **Option** | **Type** | **Description** |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `fonts` | Array \(Optional\) | An array of custom fonts, which Smart Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
 | `locale` | String | The [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) of the locale to display placeholders and error strings in. Default is Spanish`(es)`. Supported values are: **es, en, pt, zh, cv, tr.** |
 
 #### The cssSrc attribute
 
 | **Parameter** | **Type** | **Description** |
-| --- | --- |
+| :--- | :--- | :--- |
 | `cssSrc` | String | A relative or absolute URL pointing to a CSS file with [@font-face](https://developer.mozilla.org/en/docs/Web/CSS/@font-face) definitions, for example:  `"https://fonts.googleapis.com/css?family=Open+Sans"`  |
 
 #### The Font object
 
 | Parameter | Type | Description |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `family` | String | The name to give the font. |
 | `src` | String | A valid [src ](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/src)value pointing to your custom font file. This is usually \(though not always\) a link to a file with a `.woff`, `.otf`, or `.svg` suffix. |
 | `display` | String \(Optional\) | A valid [font-display ](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display)value. |
@@ -61,7 +61,7 @@ This method takes two arguments.
 * `tokenData`, an object containing additional payment information you might have collected. In the case of cards, it can contain any of the following parameters:
 
 | **Parameter** | **Type** | **Description** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `name` | String **\(Required\)** | Cardholder name |
 | `address_line1 address_line2 address_city address_state address_zip address_country` | String \(Optional\) | Fields for billing address information. The **address\_country** field is a two character country code \(for example, `'BR'`\). |
 | `currency` | String \(Optional\) | Currency of the transaction  |
@@ -86,7 +86,7 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 ### **Smart Field Types** 
 
 | **Type** | **Description** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- |
 | `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. |
 | ~~`cardNumber`~~ | The card number. **\(Coming Soon\)** |
 | ~~`cardExpiry`~~ | The card‘s expiration date. **\(Coming Soon\)** |
@@ -103,14 +103,14 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 #### Common options:
 
 | **Option** | **Type** | **Description** |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | classes | Object \(Optional\) | Set custom class names on the container DOM element when the dLocal Field is in a particular state. |
 | style | Object \(Optional\) | Customize appearance using CSS properties. Style is specified as an object for any of the variants below.For each of the above, the properties below can be customized.The following pseudo-classes and pseudo-elements can also be styled with the above properties, as a nested object inside the variant. |
 
 #### **Options available exclusively to the `card` Field:**
 
 | **Option** | **Type** | **Description** |
-| --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | value | Object \(Optional\) | A pre-filled set of values to include in the input \(e.g., `{postalCode: '94110'}`\). Note that sensitive card information \(card number, CVC, and expiration date\) cannot be pre-filled. |
 | iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
@@ -158,7 +158,7 @@ cardField.mount('#card-field');
 The only way to communicate with your Smart Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
 
 | **Event** | **Description** |
-| --- | --- | --- |
+| :--- | :--- |
 | blur | Triggered when the Field loses focus. |
 | change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
 
@@ -180,7 +180,7 @@ card.addEventListener('change', function(event) {
 ### Other Methods
 
 | **Method** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | `blur()` | Blurs the Field |
 | `clear()` | Clears the value\(s\) of the Field. |
 | `destroy()` | Removes the Field from the DOM and destroys it. Note: a destroyed Field cannot be re-activated or re-mounted to the DOM. |

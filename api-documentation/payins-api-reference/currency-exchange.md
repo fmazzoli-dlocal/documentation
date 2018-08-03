@@ -3,7 +3,7 @@
 ## The Currency Exchange Object
 
 | **Property** | **Type** | **Description** |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | `from` | String | Origin currency code |
 | `to` | String | Destination currency code |
 | `rate` | Decimal | Ratio of conversion from `from` currency to `to` currency. |
