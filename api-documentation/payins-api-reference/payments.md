@@ -69,8 +69,9 @@ This service allows you to create, modify or read payments.
     "refunds": [],
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
-    "status" : "PAID",
-    "status_detail" : "The payment was paid.",
+    "status" : "PENDING",
+    "status_detail" : "The payment is pending.",
+    "status_code" : "100",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -330,7 +331,7 @@ Example Response
 | `email` | String  | User’s email address. **Required.** |
 | `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
 | `phone` | String  | User’s phone. Optional. |
-| `document` | String  | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. Optional. |
+| `document` | String  | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. **Required**. |
 | `document_type` | String  | User’s document type. Optional. |
 | `user_reference` | String  | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
