@@ -50,7 +50,6 @@ This service allows you to create, modify or read payments.
         "document_type" : "CPF",
         "user_reference": "12345",
         "address": {
-            "country" : "BR",
             "state"  : "Rio de Janeiro",
             "city" : "Volta Redonda",
             "zip_code" : "27275-595",
@@ -122,7 +121,6 @@ This service allows you to create, modify or read payments.
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `country` | String | User's country code as in ISO-3166-1 alpha-2. Eg: "BR". |
 | `state` | String | User's address state. |
 | `city` | String | User’s address city. |
 | `zip_code` | String | User’s address zip\_code. |
@@ -133,7 +131,6 @@ This service allows you to create, modify or read payments.
 {% tab title="Example Address Object" %}
 ```yaml
 {
-"country" : "BR",
 "state"  : "Rio de Janeiro",
 "city" : "Volta Redonda",
 "zip_code" : "27275-595",
@@ -237,11 +234,7 @@ Three-letter ISO currency code, in uppercase.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_id" type="string" required=false %}
-Payment method code chosen to make the payment. Required for `DIRECT` payment flows.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="payment\_method\_type" type="string" required=true %}
-Type of payment method can be `CARD`, `BANK_TRANSFER`, `DIRECT_DEBIT` or `TICKET`.  
+Payment method code chosen to make the payment, or the keyword `CARD`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
