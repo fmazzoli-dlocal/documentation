@@ -44,28 +44,14 @@ Amount to be captured \(in the currency entered in`currency`\) Must be equal or 
     "country": "BR",   
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "document_type" : "CPF",
-        "address": {
-            "country" : "BR",
-            "state"  : "Rio de Janeiro",
-            "city" : "Volta Redonda",
-            "zip_code" : "27275-595",
-            "street" : "Servidão B-1",
-            "number" : "1106"
-        }
-    },
+    "payment_method_id": "VI",
     "card":{
         "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,
         "last4": "1111",
-        "brand": "VI",
-        "capture": true
+        "brand": "VI"
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:17:52-00:00",
