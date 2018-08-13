@@ -12,7 +12,7 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 * \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
 * \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
-* **dlocal.createInstallmentsPlan\(\)**
+* \*\*\*\*[**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)\*\*\*\*
 
 ### `dlocal.fields([`_`options`_`])` 
 
