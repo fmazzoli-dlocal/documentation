@@ -12,6 +12,7 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 * \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
 * \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
+* **dlocal.createInstallmentsPlan\(\)**
 
 ### `dlocal.fields([`_`options`_`])` 
 
@@ -52,9 +53,13 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 Use `dlocal.createToken()` to convert information collected by Smart Fields into a  token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
 
 ```javascript
-dlocal.createToken(card,tokenData).then(function(result) {
-  // Handle result.error or result.token
-});
+dlocal.createToken(card,tokenData)
+.then(function(result) {
+  // Handle result.token
+}
+.catch(function(result) {
+  // Handle result.error
+}););
 ```
 
 This method takes two arguments.
@@ -72,6 +77,82 @@ This method takes two arguments.
 
 * `result.token`: a Token was created successfully.
 * `result.error`: there was an error. This includes client-side validation errors.
+
+### `dlocal.createInstallmentsPlan(field, amount, currency)`
+
+Use `dlocal.createInstallmentsPlan(field, amount, currency)`to specify an installment plan, to guarantee the surcharge per installment that will be charged.
+
+```javascript
+dlocal.createInstallmentsPlan(card, amount, currency)
+.then(function(result) {
+  // Handle result.installments
+}
+.catch(function(result) {
+  // Handle result.error
+}););
+```
+
+{% tabs %}
+{% tab title="Installments Arguments" %}
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `field` | SmartField | The Smart Field you wish to create the installments plan, if you are not using a `card` Field we recommend to use `number` Field to create installments, but any of the Fields will work. |
+| `amount` | Positive Float | The amount of the installments plan. |
+| `currency` | String | The currency of the installments plan. |
+{% endtab %}
+
+{% tab title="Installments Plan Object" %}
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `id` | String | The installments plan id. |
+| `country` | String | The country of the installments plan \(this is the same you specified when you created the field\). |
+| `currency` | String | The currency of the installments plan. |
+| `bin` | String | The credit card bin. |
+| `amount` | Positive Float | The amount of the installments plan. |
+| `installments` | ​[Installment Object](https://docs.dlocal.com/api-documentation/payins-api-reference/installments#the-installment-object)\[ \] | The installments plan information |
+{% endtab %}
+
+{% tab title="Installment Object" %}
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `id` | String | The installment id. |
+| `installment_amount` | Positive Float | Installment amount. |
+| `total_amount` | Positive Float | Installments total amount. |
+| `installments` | Integer | Number of installments. |
+{% endtab %}
+
+{% tab title="Example Installments Plan Object" %}
+```javascript
+{
+    "id" : "INS54434",
+    "country" : "BR",
+    "currency" : "BRL",
+    "bin" : "435921",
+    "amount": 1500,
+    "installments" : [
+        {
+            "id" : "INS54434-3",
+            "installment_amount" : 550,
+            "installments" : 3,
+            "total_amount" : 1650
+        },
+        {
+            "id" : "INS54434-6",
+            "installment_amount" : 350,
+            "installments" : 6,
+            "total_amount" : 2100
+        },
+        {
+            "id" : "INS54434-8",
+            "installment_amount" : 250,
+            "installments" : 12,
+            "total_amount" : 3000
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## The Fields Object
 

@@ -20,7 +20,7 @@ Creating a custom payment form with Smart Fields requires four steps:
 
 1. [Set up dLocal Smart Fields.](fields-setup-guide.md#step-1-set-up-dlocal-fields)
 2. [Create your payment form.](fields-setup-guide.md#step-2-create-your-payment-form)
-3. [Get installments](fields-setup-guide.md#step-3-get-installments)
+3. [Create installments plan](fields-setup-guide.md#step-3-create-installments-plan-optional)
 4. [Create a token to securely transmit card information.](fields-setup-guide.md#step-3-create-a-token-to-securely-transmit-card-information)
 5. [Submit the token and the rest of your form to your server.](fields-setup-guide.md#step-4-submit-the-token-and-the-rest-of-your-form-to-your-server)
 
@@ -109,7 +109,7 @@ card.addEventListener('change', function(event) {
 });
 ```
 
-## Step 3: Get installments \(Optional\)
+## Step 3: Create installments plan \(Optional\)
 
 You can specify an installment plan, to guarantee the surcharge per installment that will be charged.
 
