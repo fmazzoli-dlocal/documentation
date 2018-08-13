@@ -11,6 +11,7 @@ However you’re using dlocal.js, you always begin by including the library and 
 ## The dLocal Object
 
 * \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
+* \*\*\*\*[**dlocal.create\(\)**](dlocal.js-reference.md#the-field-object)\*\*\*\*
 * \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
 * \*\*\*\*[**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)\*\*\*\*
 
@@ -187,14 +188,14 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
+| placeholder | String or obj | Set custom placeholder for Field. For `number`, `expiration` or `cvv` Fields this option is a `string` with the corresponding placeholder value, if the Field is a `card` this option is an `object` with the corresponding placeholder value for each input: `{     cvv: "cvv placeholder",      number: "number placeholder",      expiration: "expiration placeholder"}` |
 | classes | Object \(Optional\) | Set custom class names on the container DOM element when the dLocal Field is in a particular state. |
 | style | Object \(Optional\) | Customize appearance using CSS properties. Style is specified as an object for any of the variants below.For each of the above, the properties below can be customized.The following pseudo-classes and pseudo-elements can also be styled with the above properties, as a nested object inside the variant. |
 
-#### **Options available exclusively to the `card` Field:**
+#### **Options available exclusively to the `card` or `number` Field:**
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| value | Object \(Optional\) | A pre-filled set of values to include in the input \(e.g., `{postalCode: '94110'}`\). Note that sensitive card information \(card number, CVC, and expiration date\) cannot be pre-filled. |
 | iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
 | disabled | Boolean \(Optional\) | Applies a disabled state to the Field such that user input is not accepted. Default is `false`. |
