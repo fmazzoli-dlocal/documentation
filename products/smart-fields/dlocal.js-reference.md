@@ -164,7 +164,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
 | blur | Triggered when any of the Fields elements loses focus. The event payload always contains certain keys: |
 | focus | Triggered when any of the Fields elements gains focus. The event payload always contains certain keys:  |
 | error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`,  `code` and `type`, set to `validation_error`. |
-| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean  - key, which is `true` when the Field is complete and well-formed, and false otherwise. |
+| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean  - key, which is `true` when the Field is complete and well-formed, and `false` otherwise. |
 | empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
 | ready | Triggered when the Field is mounted and loaded in the DOM. |
 | change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
@@ -193,18 +193,9 @@ card.addEventListener('change', function(event) {
 | `blur()` | Blurs the Field |
 | `clear()` | Clears the value\(s\) of the Field. |
 | `destroy()` | Removes the Field from the DOM and destroys it. Note: a destroyed Field cannot be re-activated or re-mounted to the DOM. |
-| `focus()` | Focuses the Field. |
+| `focus()` | Focuses the Field. In a `card` Field it will focus in the `number` field. |
 | `unmount()` | Unmounts the Field from the DOM. Call [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement) to re-attach it to the DOM. |
-| `update(options)` | Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options). |
-
-If you collect certain information in a different part of your interface \(e.g., postal code\), use `update()`with the appropriate information.
-
-```javascript
-var myPostalCodeField = document.querySelector('input[name="my-postal-code"]');
-myPostalCodeField.addEventListener('change', function(event) {
-  card.update({value: {postalCode: event.target.value}});
-});
-```
+| ~~_update\(options\)_~~ | ~~Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as~~ [~~fields.create\(\)~~](dlocal.js-reference.md#fields-create-type-options)~~.~~ **\(Coming soon\)** |
 
 The styles of a Smart Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
 
@@ -228,7 +219,7 @@ card.on('change', function(event) {
 
 ## The Field container
 
-Style the container you mount a Smart Field to as if it were an `<input>` on your page. For example, to control `padding` and `border` on a Field, set these properties on the container. This is usually done by re-using the classes that you have applied to your DOM `<input>` elements. Example:
+Style the container you mount a Smart Field to, as if it were an `<input>` on your page. For example, to control `padding` and `border` on a Field, set these properties on the container. This is usually done by re-using the classes that you have applied to your DOM `<input>` elements. Example:
 
 ```markup
 <style>
