@@ -276,7 +276,7 @@ card.addEventListener('change', function(event) {
 | `destroy()` | Removes the Field from the DOM and destroys it. Note: a destroyed Field cannot be re-activated or re-mounted to the DOM. |
 | `focus()` | Focuses the Field. In a `card` Field it will focus in the `number` field. |
 | `unmount()` | Unmounts the Field from the DOM. Call [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement) to re-attach it to the DOM. |
-| ~~_update\(options\)_~~ | ~~Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as~~ [~~fields.create\(\)~~](dlocal.js-reference.md#fields-create-type-options)~~.~~ **\(Coming soon\)** |
+| `update(options)` | Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options).  |
 
 The styles of a Smart Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
 
