@@ -20,8 +20,9 @@ Creating a custom payment form with Smart Fields requires four steps:
 
 1. [Set up dLocal Smart Fields.](fields-setup-guide.md#step-1-set-up-dlocal-fields)
 2. [Create your payment form.](fields-setup-guide.md#step-2-create-your-payment-form)
-3. [Create a token to securely transmit card information.](fields-setup-guide.md#step-3-create-a-token-to-securely-transmit-card-information)
-4. [Submit the token and the rest of your form to your server.](fields-setup-guide.md#step-4-submit-the-token-and-the-rest-of-your-form-to-your-server)
+3. [Get installments](fields-setup-guide.md#step-3-get-installments)
+4. [Create a token to securely transmit card information.](fields-setup-guide.md#step-3-create-a-token-to-securely-transmit-card-information)
+5. [Submit the token and the rest of your form to your server.](fields-setup-guide.md#step-4-submit-the-token-and-the-rest-of-your-form-to-your-server)
 
 ## Before you start: **HTTPS requirements**
 
@@ -108,7 +109,52 @@ card.addEventListener('change', function(event) {
 });
 ```
 
-## Step 3: Create a token to securely transmit card information
+## Step 3: Get installments \(Optional\)
+
+You can specify an installment plan, to guarantee the surcharge per installment that will be charged.
+
+```markup
+<!-- Add to your form -->
+<div class="form-row">
+    <label>Fees to pay</label>
+    <div class="select-wrapper">
+    <span>▼</span>
+    <select id="installments" disabled>
+        <option value="">Enter the card number first</option>
+    </select>
+    </div>
+</div>
+```
+
+```javascript
+let actualBrand = null;
+card.on('brand', function (event) {
+    document.getElementById('card-errors').innerHTML = "";
+    if (event.brand) {
+        //when card brand changes
+        actualBrand = cardStatus.brand;
+        //totalAmount & currency of the purchase
+        dlocal.createInstallmentsPlan(card, totalAmount, currency)
+        .then((result) => {
+            var installmentsSelect = document.getElementById('installments');
+            buildInstallments(installmentsSelect, result.installments);
+        }).catch((result) => {
+            console.error(result);
+        });
+    }
+});
+
+function buildInstallments(installmentsInput, installmentsPlan) {
+    const installmentsOptions = installmentsPlan.installments.reduce(function (options, plan) {
+            options += "<option value=" + plan.id + ">" + plan.installments + " of " + currency + " " + plan.installment_amount + " (Total : " + currency + " " + plan.total_amount + ")</option>";
+            return options;
+    }, "");
+    installmentsInput.disabled = false;
+    installmentsInput.innerHTML = installmentsOptions;
+}
+```
+
+## Step 4: Create a token to securely transmit card information
 
 The payment details collected using Smart Fields can then be converted into a token. Create an event handler that handles the submit event on the form. The handler sends the sensitive information to dLocal for tokenization and prevents the form’s submission \(the form is submitted by JavaScript in the next step\).
 
@@ -135,7 +181,7 @@ form.addEventListener('submit', function(event) {
 
 `dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has `result.token` the token that was successfully created. 
 
-## Step 4: Submit the token and the rest of your form to your server
+## Step 5: Submit the token and the rest of your form to your server
 
 The last step is to submit the token, along with any additional information that has been collected, to your server.
 
