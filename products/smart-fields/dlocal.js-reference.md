@@ -18,17 +18,19 @@ However you’re using dlocal.js, you always begin by including the library and 
 Create pre-built UI components to collect payment information with [Smart Fields](./) \(simply referred to as `fields`in the API\).
 
 ```javascript
-var fields = dlocal.fields();
+var fields = dlocal.fields({
+            locale: 'en',
+            country: 'BR'
+        });
 ```
 
-This method creates an instance of `fields`, which manages a group of Smart Fields. It accepts an optional`options` object. Available options are documented below:
+This method creates an instance of `fields`, which manages a group of Smart Fields. It receives an  options object. Available options are documented below:
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `fonts` | Array \(Optional\) | An array of custom fonts, which Smart Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
 | `locale` | String | The [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) of the locale to display placeholders and error strings in. Default is Spanish`(es)`. Supported values are: **es, en, pt, zh, cv, tr.** |
-
-#### The cssSrc attribute
+| `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
+| `fonts` | Array \(Optional\) | An array of custom fonts, which Smart Fields created from the `fields` object can use.  Fonts can either be loaded via a CSS file by passing an object with the [cssSrc attribute](dlocal.js-reference.md#the-csssrc-attribute), **or** they can be loaded directly by passing a [Font object](dlocal.js-reference.md#the-font-object). |
 
 | **Parameter** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -87,13 +89,13 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 
 | **Type** | **Description** |
 | :--- | :--- |
-| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. |
-| ~~`cardNumber`~~ | The card number. **\(Coming Soon\)** |
-| ~~`cardExpiry`~~ | The card‘s expiration date. **\(Coming Soon\)** |
-| ~~`cardCvc`~~ | The card‘s CVC number. **\(Coming Soon\)** |
+| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. **\(Recommended\)** |
+| `pan` | The card‘s number.  |
+| `expiration` | The card‘s expiration date.  |
+| `cvv` | The card‘s CVC number.  |
 
 {% hint style="info" %}
-The the moment, only the [`card`](fields-setup-guide.md) type of Smart Field is available. In the near future we will also provide separate Smart Fields for cardNumber, cardExpiry and cardCvc. In any case, we highly recommend to continue to use the `card` Field, as it provides a better user experience.
+We highly recommend to use the `card` Field, as it provides a better user experience.
 {% endhint %}
 
 ### **Field Options** 
@@ -159,8 +161,15 @@ The only way to communicate with your Smart Field is by listening to an `event`.
 
 | **Event** | **Description** |
 | :--- | :--- |
-| blur | Triggered when the Field loses focus. |
+| blur | Triggered when any of the Fields elements loses focus. The event payload always contains certain keys: |
+| focus | Triggered when any of the Fields elements gains focus. The event payload always contains certain keys:  |
+| error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`,  `code` and `type`, set to `validation_error`. |
+| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean  - key, which is `true` when the Field is complete and well-formed, and false otherwise. |
+| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and false otherwise. |
+| ready | Triggered when the Field is mounted and loaded in the DOM. |
 | change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
+
+
 
 ### Input validation
 

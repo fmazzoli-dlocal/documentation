@@ -41,7 +41,10 @@ Next, create an instance of Smart Fields \(referred to as just `fields()`\):
 
 ```javascript
 var dlocal = dlocal('[you_API_key]');
-var fields = dlocal.fields();
+var fields = dlocal.fields({
+            locale: 'en',
+            country: 'BR'
+        });
 ```
 
 ## Step 2: Create your payment form
@@ -56,16 +59,19 @@ For example:
 <form action="/charge" method="post" id="payment-form">
     <div class="form-row">
         <label for="card-field">
-      Credit or Debit card
-    </label>
+        Credit or Debit card
+        </label>
         <div id="card-field">
             <!-- A dLocal Smart Field will be inserted here. -->
-    </div>
+        </div>
 
         <!-- Used to display Smart Field errors. -->
-    <div id="card-errors" role="alert"></div>
+        <div id="card-errors" role="alert"></div>
     </div>
-
+    <div class="form-rowd">
+        <label>Cardholder name</label>
+        <input id="card-holder" type="text" name="card-holder" placeholder="John Doe" />
+    </div>
     <button>Pay</button>
 </form>
 ```
@@ -111,24 +117,23 @@ The payment details collected using Smart Fields can then be converted into a to
 var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-
-  dlocal.createToken(card).then(function(result) {
+  var cardHolderName = document.getElementById('card-holder');
+  dlocal.createToken(card, {
+    name: cardHolderName
+  }).then(function(result) {
+      // Send the token to your server.
+      dlocalTokenHandler(result.token);
+  }).catch((result) => {
     if (result.error) {
       // Inform the customer that there was an error.
       var errorField = document.getElementById('card-errors');
       errorField.textContent = result.error.message;
-    } else {
-      // Send the token to your server.
-      dlocalTokenHandler(result.token);
     }
   });
 });
 ```
 
-`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
-
-* `result.token`: a token was created successfully.
-* `result.error`: there was an error. This includes client-side validation errors.
+`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has `result.token` the token that was successfully created. 
 
 ## Step 4: Submit the token and the rest of your form to your server
 
