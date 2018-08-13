@@ -249,6 +249,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
 | empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
 | ready | Triggered when the Field is mounted and loaded in the DOM. |
 | change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
+| `brand` | Triggered when the Field detects a change in the card brand. This event can only be listened in `number` and `card` Smart Fields \(it wont work in `cvv` and `expiration` Fields\). The event payload always contains `brand` - String - key, which has the name of the detected brand if any, `null` otherwise. |
 
 
 
