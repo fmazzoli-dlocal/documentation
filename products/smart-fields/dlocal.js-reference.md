@@ -165,7 +165,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
 | focus | Triggered when any of the Fields elements gains focus. The event payload always contains certain keys:  |
 | error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`,  `code` and `type`, set to `validation_error`. |
 | complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean  - key, which is `true` when the Field is complete and well-formed, and false otherwise. |
-| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and false otherwise. |
+| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
 | ready | Triggered when the Field is mounted and loaded in the DOM. |
 | change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
 
