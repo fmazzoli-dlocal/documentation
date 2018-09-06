@@ -4,7 +4,6 @@
 
 | Page | Section | Change |
 | :--- | :--- | :--- |
-| Payments | Address Object | Removed 'country' from Example Address Object. |
 | Payments | Notification | Added 'status\_code' and 'status\_detail' to notification body. |
 | Refunds | Make a Refund | Added 'status\_detail' to the Make a Refund example POST. |
 | Credit Card Payment Operations | Cancel  a Credit Card Payment | Added 'payment\_method\_id' Cancel a Credit Card Payment response. |
