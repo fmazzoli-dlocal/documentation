@@ -87,7 +87,7 @@ curl -X POST \
         "expiration_month": 10,
         "expiration_year": 2040,
         "number": "41111111111111",
-        "cvv": "123",
+        "cvv": "123"
     },
     "payer": {
         "name": "Luis Gabriel",
