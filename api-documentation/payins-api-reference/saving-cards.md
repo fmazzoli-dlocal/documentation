@@ -91,7 +91,7 @@ curl -X POST \
     },
     "payer": {
         "name": "Luis Gabriel",
-        "document": "53033315550",
+        "document": "53033315550"
     }
 }
 ```
