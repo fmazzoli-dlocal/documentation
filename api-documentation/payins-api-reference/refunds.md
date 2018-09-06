@@ -68,16 +68,16 @@ User's bank branch name.
 
 ```yaml
 {
-    "id": "REF42342",
-    "id_payment": "PAY4334346343",
-    "amount": 100.00,
-    "amount_refunded": 100.00,
-    "currency": "USD",
-    "status": "SUCCESS",
-    "status_code": "200",
-    "status_detail": "The refund was paid.",
-    "notification_url": "http://some.url",
-    "created_date" : "2018-02-15T15:14:52-00:00"
+   "id" : "REF42342",
+   "id_payment" : "PAY4334346343",
+   "notification_url" : "http://some.url",
+   "amount" : 803.04,
+   "currency" : "BRL",
+   "status" : "SUCCESS",
+   "status_code" : 200,
+   "status_detail" : "The refund was paid",
+   "created_date" : "2018-09-06T22:03:03.000+0000",
+   "amount_refunded" : 803.04
 }
 ```
 {% endapi-method-response-example %}
@@ -174,16 +174,16 @@ The refund id
 
 ```yaml
 {
-    "id": "REF42342",
-    "id_payment": "PAY4334346343",
-    "amount": 100.00,
-    "amount_refunded": 100.00,
-    "currency": "USD",
-    "status": "SUCCESS",
-    "status_code": "200",
-    "status_detail": "The refund was paid.",
-    "notification_url": "http://some.url",
-    "created_date" : "2018-02-15T15:14:52-00:00"
+   "id" : "REF42342",
+   "id_payment" : "PAY4334346343",
+   "notification_url" : "http://some.url",
+   "amount" : 803.04,
+   "currency" : "BRL",
+   "status" : "SUCCESS",
+   "status_code" : 200,
+   "status_detail" : "The refund was paid",
+   "created_date" : "2018-09-06T22:03:03.000+0000",
+   "amount_refunded" : 803.04
 }
 ```
 {% endapi-method-response-example %}

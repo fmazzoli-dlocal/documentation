@@ -501,31 +501,29 @@ The payment id
 
 ```yaml
 {
-    "id": "PAY4334346343",
-    "amount": 150.00,
-    "currency" : "ARS",
-    "country": "AR",
-    "payment_method_id" : "GL",
-    "payment_method_type" : "BANK_TRANSFER",
-    "payment_method_flow" : "DIRECT",
-    "bank_transfer":{
-        "type": "CURRENT_ACCOUNT",
-        "name": "Banco de Galicia",
-        "code": "GL",
-        "beneficiary": "ARS CAPITAL SA",
-        "document": "4234234243",
-        "document_type": "CUIT",
-        "cbu": "00700415-20000021948168",
-        "reference": "43423245",
-        "amount_to_transfer": 150.01
-    },
-    "created_date" : "2018-02-15T15:44:42.310Z",
-    "approved_date" : "2018-02-15T15:44:42.310Z",
-    "status" : "PAID",
-    "status_detail" : "The payment was paid.",
-    "status_code" : "200",
-    "order_id": "657434343",
-    "notification_url": "http://merchant.com/notifications"
+   "id" : "D-4-16112abb-b2c6-4799-86db-497c6bd321ac",
+   "amount" : 120.00,
+   "currency" : "USD",
+   "payment_method_id" : "CARD",
+   "payment_method_type" : "CARD",
+   "payment_method_flow" : "DIRECT",
+   "country" : "BR",
+   "card" : {
+      "holder_name" : "Thiago Gabriel",
+      "expiration_month" : 10,
+      "expiration_year" : 2040,
+      "brand" : "VI",
+      "last4" : "1111",
+      "card_id" : "CV-a9b713b7-3064-4a59-8cd7-bd940326fa43"
+   },
+   "created_date" : "2018-07-012T21:42:27.000+0000",
+   "approved_date" : "2018-07-012T21:42:28.000+0000",
+   "status" : "AUTHORIZED",
+   "status_detail" : "The payment was authorized",
+   "status_code" : "600",
+   "order_id" : "657434343",
+   "notification_url" : "http://merchant.com/notifications",
+   "refunds" : []
 }
 ```
 {% endapi-method-response-example %}
