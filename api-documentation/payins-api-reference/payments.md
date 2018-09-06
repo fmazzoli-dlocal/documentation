@@ -446,7 +446,7 @@ curl -X POST \
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
-    "payment_method_type" : "CARD",
+    "payment_method_id" : "CARD",
     "payment_method_flow" : "DIRECT",
     "payer":{
         "name" : "Thiago Gabriel",
@@ -458,7 +458,7 @@ curl -X POST \
             "state"  : "Rio de Janeiro",
             "city" : "Volta Redonda",
             "zip_code" : "27275-595",
-            "street" : "Servidão B-1",
+            "street" : "Servidao B-1",
             "number" : "1106"
         }
     },
@@ -466,7 +466,7 @@ curl -X POST \
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,
-        "number": "41111111111111",
+        "number": "4111111111111111",
         "cvv": "123",
         "capture": false
     },
