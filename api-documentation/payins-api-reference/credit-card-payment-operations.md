@@ -45,19 +45,11 @@ Amount to be captured \(in the currency entered in`currency`\) Must be equal or 
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "payment_method_id": "VI",
-    "card":{
-        "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
-        "holder_name": "Thiago Gabriel",
-        "expiration_month": 10,
-        "expiration_year": 2040,
-        "last4": "1111",
-        "brand": "VI"
-    },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:17:52-00:00",
     "status" : "PAID",
     "status_detail" : "The payment was paid.",
-    "status_code": 200,
+    "status_code": "200",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -103,39 +95,18 @@ The payment id.
 
 ```yaml
 {
-    "id": "PAY4334346343",
+    "id": "PAY4334346343",   
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
+    "payment_method_id" : "VI",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "document_type" : "CPF",
-        "address": {
-            "country" : "BR",
-            "state"  : "Rio de Janeiro",
-            "city" : "Volta Redonda",
-            "zip_code" : "27275-595",
-            "street" : "Servidão B-1",
-            "number" : "1106"
-        }
-    },
-    "card":{
-        "holder_name": "Thiago Gabriel",
-        "expiration_month": 10,
-        "expiration_year": 2040,
-        "last4": "1111",
-        "brand": "VI",
-        "capture": false
-    },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
     "status" : "CANCELLED",
     "status_detail" : "The payment was cancelled.",
-    "status_code": 400,
+    "status_code": "400",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -166,8 +137,9 @@ If a chargeback was applied \(requested by the user\) a notification is sent to 
 | `amount` | Positive Float | The amount of the chargeback. |
 | `amount_chargedback` | Positive Float | The chargedback amount. |
 | `currency` | String | The currency of the chargeback. |
-| `status` | String | The status of the chargeback. |
-| `status_code` | String | The [status](https://dlocal.com/docs/?language=cURL#chargeback-asynchronous-notification) code of the chargeback. |
+| `status` | String | The [status](credit-card-payment-operations.md#chargeback-status) of the chargeback. |
+| `status_code` | String | The status code of the chargeback. |
+| `status_detail` | String | The description of the chargeback's status. |
 | `created_date` | String | The date of when the chargeback was executed. |
 
 **Example post**
@@ -182,7 +154,8 @@ POST: _{merchant.chargeback\_url}_
     "amount_chargedback": 100.00,
     "currency": "USD",
     "status": "SUCCESS",
-    "status_code": 200,
+    "status_code": "200",
+    "status_detail": "The chargeback was executed."
     "created_date" : "2018-02-15T15:14:52-00:00"
 }
 ```
@@ -219,7 +192,8 @@ The chargeback id
     "amount_chargedback": 100.00,
     "currency": "USD",
     "status": "SUCCESS",
-    "status_code": 200,
+    "status_code": "200",
+    "status_detail": "The chargeback was executed."
     "created_date" : "2018-02-15T15:14:52-00:00"
 }
 ```
@@ -266,6 +240,7 @@ Example Response
 {
     "id": "CHAR42342",
     "status": "SUCCESS",
+    "status_code": "200",
     "status_detail": "The chargeback was executed."
 }
 ```

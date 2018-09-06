@@ -2,7 +2,7 @@
 
 This service allows you to create and read refunds of an existing payment.
 
-A Refund is the reversal of a credit card [payment](https://dlocal.com/docs/?language=cURL#create-a-payment), where the funds are taken from the Merchant and given back to the Card Holder. A refund processing fee may apply.
+A Refund is the reversal of a credit card [payment](payments.md#create-a-payment), where the funds are taken from the Merchant and given back to the Card Holder. A refund processing fee may apply.
 
 {% api-method method="post" host=" https://api.dlocal.com/" path="refunds" %}
 {% api-method-summary %}
@@ -124,6 +124,11 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | `status_detail` | String | The status detail. |
 | `created_date` | String | The date of when the refund was executed. |
 | `notification_URL` | String | URL where dlocal will send notifications associated to changes in this refund. |
+| `description` | String | Description of the refund. |
+| `bank` | String | User's bank name. |
+| `bank_account` | String | User's bank account number. |
+| `bank_account_type` | String | Type of bank account. `C`: for Current accounts; `S`: for Savings accounts; `I`: International accounts. |
+| `bank_branch` | String | User's bank branch name. |
 
 ## Example POST
 
@@ -131,13 +136,14 @@ POST**:** _{refund.notification\_url}_
 
 ```yaml
 {
-    "id": "REF42342",
-    "payment_id": "PAY245235",
-    "amount": 100.00,
-    "amount_refunded": 100.00,
-    "currency": "USD",
-    "status": "SUCCESS",
-    "status_code": 200,
+    "id" : "REF42342",
+    "payment_id" : "PAY245235",
+    "amount" : 100.00,
+    "amount_refunded" : 100.00,
+    "currency" : "USD",
+    "status" : "SUCCESS",
+    "status_code" : "200",
+    "status_detail" : "The refund was paid.",
     "created_date" : "2018-02-15T15:14:52-00:00"
 }
 ```
@@ -192,7 +198,7 @@ $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
-    https://api.dlocal.com/refund/REF42342
+    https://api.dlocal.com/refunds/REF42342
 ```
 
 {% api-method method="get" host="https://api.dlocal.com/refunds/" path="{refund\_id}/status" %}

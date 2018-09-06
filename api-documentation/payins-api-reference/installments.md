@@ -23,25 +23,25 @@ You can specify an installment plan, to guarantee the surcharge per installment 
     "country" : "BR",
     "currency" : "BRL",
     "bin" : "435921",
-    "amount": 1500,
+    "amount": 1500.00,
     "installments" : [
         {
             "id" : "INS54434-3",
-            "installment_amount" : 550,
+            "installment_amount" : 550.00,
             "installments" : 3,
-            "total_amount" : 1650
+            "total_amount" : 1650.00
         },
         {
             "id" : "INS54434-6",
-            "installment_amount" : 350,
+            "installment_amount" : 350.00,
             "installments" : 6,
-            "total_amount" : 2100
+            "total_amount" : 2100.00
         },
         {
             "id" : "INS54434-8",
-            "installment_amount" : 250,
+            "installment_amount" : 250.00,
             "installments" : 12,
-            "total_amount" : 3000
+            "total_amount" : 3000.00
         }
     ]
 }
@@ -114,26 +114,26 @@ The currency of the installments plan.
     "id" : "INS54434",
     "country" : "BR",
     "bin" : "435921",
-    "amount": 1500,
+    "amount": 1500.00,
     "currency" : "BRL",
     "installments" : [
         {
             "id" : "INS54434-3",
-            "installment_amount" : 550,
+            "installment_amount" : 550.00,
             "installments" : 3,
-            "total_amount" : 1650
+            "total_amount" : 1650.00
         },
         {
             "id" : "INS54434-6",
-            "installment_amount" : 350,
+            "installment_amount" : 350.00,
             "installments" : 6,
-            "total_amount" : 2100
+            "total_amount" : 2100.00
         },
         {
             "id" : "INS54434-8",
-            "installment_amount" : 250,
+            "installment_amount" : 250.00,
             "installments" : 12,
-            "total_amount" : 3000
+            "total_amount" : 3000.00
         }
     ]
 }

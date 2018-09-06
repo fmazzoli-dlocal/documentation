@@ -99,11 +99,11 @@ This service allows you to create, modify or read payments.
 {
 "name" : "Thiago Gabriel",
 "email" : "thiago@example.com",
+"birth_date" : "12-07-1989",
 "document" : "53033315550",
 "document_type" : "CPF",
 "user_reference": "12345",
 "address": {
-    "country" : "BR",
     "state"  : "Rio de Janeiro",
     "city" : "Volta Redonda",
     "zip_code" : "27275-595",
@@ -150,7 +150,6 @@ This service allows you to create, modify or read payments.
 | `holder_name` | String | Cardholder's full name |
 | `expiration_month` | Integer | Two digit number representing the card's expiration month. |
 | `expiration_year` | Integer | Four digit number representing the card's expiration year. |
-| `token` | String | Credit card token. |
 | `number` | String | The card number, as a string without any separators. |
 | `cvv` | String | Credit card verification value. |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params |
@@ -200,7 +199,6 @@ This service allows you to create, modify or read payments.
 | :--- | :--- | :--- |
 | `holder_name` | String | Name of the owner of the |
 | `email` | String | Email of the owner of the bank account. |
-| `document_type` | String | Document of the owner of the bank account. |
 | `document` | String | Document of the owner of the bank account. |
 | `cbu` | String | CBU of the owner of the bank account \(only for AR country\). |
 
@@ -289,16 +287,16 @@ Example Response
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
+    "payment_method_id" : "VI",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "card":{
-        "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
+        "card_id": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,
         "last4": "1111",
-        "brand": "VI",
-        "capture": false,
+        "brand": "VI"
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
@@ -367,7 +365,6 @@ Example Response
 {% tab title="Example Address Object" %}
 ```yaml
 {
-"country" : "BR",
 "state"  : "Rio de Janeiro",
 "city" : "Volta Redonda",
 "zip_code" : "27275-595",
@@ -381,6 +378,13 @@ Example Response
 #### The Card Object
 
 For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../products/smart-fields/). For recurring payments, first [save the card](saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
+
+{% hint style="warning" %}
+**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:      
+https://api.dlocal.com/**secure\_payments**
+
+Card payments with a `card_id` or `token` should use the endpoint: https://api.dlocal.com/**payments**
+{% endhint %}
 
 {% tabs %}
 {% tab title="Card Object" %}
@@ -421,9 +425,8 @@ For credit card payments you can use the card information only if you business i
 | :--- | :--- | :--- |
 | `holder_name` | String | Name of the owner of the bank account. **Required.** |
 | `email` | String | Email of the owner of the bank account. **Required.** |
-| `document_type` | String | Document of the owner of the bank account. **Required.** |
 | `document` | String | Document of the owner of the bank account. **Required.** |
-| `cbu` | String | CBU of the owner of the bank account \(**only for AR country**\). **Required.** |
+| `cbu` | String | CBU of the owner of the bank account.. **Required only for Argentina.** |
 
 ### Example Request
 
@@ -452,7 +455,6 @@ curl -X POST \
         "document_type" : "CPF",
         "user_reference": "12345",
         "address": {
-            "country" : "BR",
             "state"  : "Rio de Janeiro",
             "city" : "Volta Redonda",
             "zip_code" : "27275-595",
@@ -506,20 +508,6 @@ The payment id
     "payment_method_id" : "GL",
     "payment_method_type" : "BANK_TRANSFER",
     "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Juan Gomez",
-        "email" : "juan@example.com",
-        "document" : "58473832",
-        "document_type" : "CUIT",
-        "address": {
-            "country" : "AR",
-            "state"  : "Buenos Aires",
-            "city" : "Buenos Aires",
-            "zip_code" : "272235-595",
-            "street" : "Gobernador",
-            "number" : "5433"
-        }
-    },
     "bank_transfer":{
         "type": "CURRENT_ACCOUNT",
         "name": "Banco de Galicia",
@@ -533,9 +521,9 @@ The payment id
     },
     "created_date" : "2018-02-15T15:44:42.310Z",
     "approved_date" : "2018-02-15T15:44:42.310Z",
-    "status" : "PENDING",
-    "status_detail" : "The payment is pending.",
-    "status_code" : "100",
+    "status" : "PAID",
+    "status_detail" : "The payment was paid.",
+    "status_code" : "200",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -582,9 +570,9 @@ Example Response
 ```yaml
 {
     "id": "PAY4334346343",
-    "status" : "PENDING",
-    "status_code" : "100",
-    "status_detail" : "The payment is pending."
+    "status" : "PAID",
+    "status_detail" : "The payment was paid.",
+    "status_code" : "200",
 }
 ```
 {% endapi-method-response-example %}
@@ -713,12 +701,13 @@ POST: _{payment.notification\_url}_
         "beneficiary": "ARS CAPITAL SA",
         "document": "4234234243",
         "document_type": "CUIT",
-        "cbu": "00700415-20000021948168",
         "reference": "43423245",
         "amount_to_transfer": 150.01
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PENDING",
+    "status_code" : "100"
+    "status_detail" : "The payment is pending."
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }

@@ -16,9 +16,9 @@ description: This service allows you get information about the Order.
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
 | `created_date` | Date \(ISO\_8601\) | Payment’s creation date. |
 | `approved_date` | Date \(ISO\_8601\) | Payment’s approval date. |
-| `status` | String | [Payment status](https://dlocal.com/docs/#payment-status). |
-| `status_code` | String | The [payment status code](payments.md#payment-status-codes). |
-| `status_detail` | String | [Payment status](https://dlocal.com/docs/#payment-status) detail. |
+| `status` | String | [Payment status](payments.md#payment-status-codes). |
+| `status_code` | String | The payment status code. |
+| `status_detail` | String | Payment status detail. |
 {% endtab %}
 
 {% tab title="Order Object Example" %}
