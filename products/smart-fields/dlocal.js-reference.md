@@ -198,7 +198,6 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 | :--- | :--- | :--- |
 | iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
-| disabled | Boolean \(Optional\) | Applies a disabled state to the Field such that user input is not accepted. Default is `false`. |
 
 ## The Field Object
 
