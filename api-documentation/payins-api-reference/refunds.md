@@ -33,6 +33,10 @@ Currency of the Amount.
 **Required if** `amount` **is present.**
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="description" type="string" required=false %}
+Description of the refund.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="beneficiary\_name" type="string" required=false %}
 User's full name.  
 **Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
@@ -246,4 +250,3 @@ Example Response
 | `SUCCESS` | 200 | The refund was paid. |
 | `REJECTED` | 300 | The refund was rejected. |
 | `CANCELLED` | 400 | The refund was cancelled. |
-
