@@ -160,7 +160,6 @@ This service allows you to create, modify or read payments.
 | `installments_id` | String | Installments id of a [installments plan](installments.md#the-installment-plan-object). |
 | `descriptor` | String | Dynamic Descriptor. |
 | `last4` | String | The last 4 digits of the card. |
-| `save` | String | Indicate if the card must be save for future payments, can be `YES`, `NO`, `ASK_USER` \( ask user is only for `REDIRECT` payment method flows \) |
 | `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. |
 {% endtab %}
 
