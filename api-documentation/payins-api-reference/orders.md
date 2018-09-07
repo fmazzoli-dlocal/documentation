@@ -1,7 +1,3 @@
----
-description: This service allows you get information about the Order.
----
-
 # Orders
 
 ### The Order Object

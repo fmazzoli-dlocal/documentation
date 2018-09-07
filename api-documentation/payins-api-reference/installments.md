@@ -73,7 +73,7 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 {% endtab %}
 {% endtabs %}
 
-{% api-method method="get" host="https://api.dlocal.com/" path="installments-plans" %}
+{% api-method method="post" host="https://api.dlocal.com/" path="installments-plans" %}
 {% api-method-summary %}
 Create an Installment Plan
 {% endapi-method-summary %}

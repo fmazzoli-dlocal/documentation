@@ -250,3 +250,4 @@ Example Response
 | `SUCCESS` | 200 | The refund was paid. |
 | `REJECTED` | 300 | The refund was rejected. |
 | `CANCELLED` | 400 | The refund was cancelled. |
+
