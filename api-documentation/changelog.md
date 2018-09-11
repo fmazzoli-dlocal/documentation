@@ -1,5 +1,16 @@
 # Changelog
 
+### 
+
+### September 11, 2018
+
+| Page | Section | Change |
+| :--- | :--- | :--- |
+| Security | Headers | Added example for X-Date. |
+| Payments | Create a Payment - Example Request | Added example of payment using token or card\_id. |
+
+### 
+
 ### September 6, 2018
 
 | Page | Section | Change |

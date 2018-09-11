@@ -51,8 +51,8 @@ Example Response
 
 | **Argument** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `holder_name` | String  | Cardholder's full name. **Required.** |
-| `expiration_month` | Integer | Number representing the card's expiration month \(start in 1\). **Required if `token` not present.** |
+| `holder_name` | String  | Cardholder's full name. **Required if** `token` **not present.** |
+| `expiration_month` | Integer | Number representing the card's expiration month \(start in 1\). **Required if** `token` **not present.** |
 | `expiration_year` | Integer | Number representing the card's expiration year. **Required if** `token` **not present.** |
 | `number` | String | The card number, as a string without any separators. **Required if** `encrypted_data` **or** `token` **not present.** |
 | `cvv` | String | Credit card verification value. **Required if** `encrypted_data` **or** `token` **not present.** |

@@ -429,6 +429,63 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 
 ### Example Request
 
+{% tabs %}
+{% tab title="Payment with Credit Card Information " %}
+The following example applies for credit card payments using the plain credit card information \(**only for Full PCI DSS merchants**\). To make payments using encrypted card information, simply **replace** the `number`and `cvv`parameters with `encrypted_data`.
+
+#### Example Request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/secure_payments
+```
+
+#### Example Request Body
+
+```yaml
+{
+    "amount": 120.00,
+    "currency" : "USD",
+    "country": "BR",
+    "payment_method_id" : "CARD",
+    "payment_method_flow" : "DIRECT",
+    "payer":{
+        "name" : "Thiago Gabriel",
+        "email" : "thiago@example.com",
+        "document" : "53033315550",
+        "document_type" : "CPF",
+        "user_reference": "12345",
+        "address": {
+            "state"  : "Rio de Janeiro",
+            "city" : "Volta Redonda",
+            "zip_code" : "27275-595",
+            "street" : "Servidao B-1",
+            "number" : "1106"
+        }
+    },
+    "card":{
+        "holder_name" : "Thiago Gabriel",
+        "number" : "4111111111111111",
+        "cvv" : "123",
+        "expiration_month" : 10,
+        "expiration_year" : 2040,
+        "capture" : false
+    },
+    "order_id": "657434343",
+    "notification_url": "http://merchant.com/notifications"
+}
+```
+{% endtab %}
+
+{% tab title="Payment with Credit Card Token" %}
+The following example applies for credit card payments using a Smart Fields `token`. To make a payment with a `card_id`obtained from the [Create a Card](saving-cards.md#create-a-card) method, simply **replace** the `token`parameter with `card_id`.
+
+#### Example Request
+
 ```bash
 curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
@@ -462,17 +519,15 @@ curl -X POST \
         }
     },
     "card":{
-        "holder_name": "Thiago Gabriel",
-        "expiration_month": 10,
-        "expiration_year": 2040,
-        "number": "4111111111111111",
-        "cvv": "123",
-        "capture": false
+        "token": "CV-124c18a5-874d-4982-89d7-b9c256e647b5",
+        "capture" : false
     },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 {% api-method method="get" host=" https://api.dlocal.com/payments/" path="{payment\_id}" %}
 {% api-method-summary %}
