@@ -431,7 +431,7 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 
 {% tabs %}
 {% tab title="Payment with Credit Card Information " %}
-The following example applies for credit card payments using the plain credit card information \(**only for Full PCI DSS merchants**\). To make payments using encrypted card information, simply **replace** the `number`and `cvv`parameters with `encrypted_data`.
+The following example applies for credit card payments using the plain credit card information \(**only for Full PCI DSS merchants**\). To make payments using encrypted card information, simply **replace** the `number`and `cvv`parameters with [`encrypted_data`](security.md#sensitive-data-encryption).
 
 #### Example Request
 
