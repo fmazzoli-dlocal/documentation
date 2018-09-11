@@ -11,7 +11,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `X-Date` | String | ISO8601 Datetime with Timezone. Eg `2018-07-12T13:46:28.629Z` |
 | `X-Login` | String | Merchant xLogin |
 | `X-Trans-Key` | String | Merchant xTransKey |
-| Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date Header+RequestBody"\)&gt; |
+| Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
 ### Sensitive data encryption {#sensitive-data-encryption}
 
