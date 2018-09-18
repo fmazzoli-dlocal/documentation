@@ -135,7 +135,6 @@ If a chargeback was applied \(requested by the user\) a notification is sent to 
 | `id` | String | The chargeback id. |
 | `payment_id` | String | The payment id. |
 | `amount` | Positive Float | The amount of the chargeback. |
-| `amount_chargedback` | Positive Float | The chargedback amount. |
 | `currency` | String | The currency of the chargeback. |
 | `status` | String | The [status](credit-card-payment-operations.md#chargeback-status) of the chargeback. |
 | `status_code` | String | The status code of the chargeback. |
@@ -151,7 +150,6 @@ POST: _{merchant.chargeback\_url}_
     "id": "CHAR42342",
     "payment_id": "PAY245235",
     "amount": 100.00,
-    "amount_chargedback": 100.00,
     "currency": "USD",
     "status": "SUCCESS",
     "status_code": "200",
@@ -189,9 +187,8 @@ The chargeback id
     "id": "CHAR42342",
     "payment_id": "PAY245235",
     "amount": 100.00,
-    "amount_chargedback": 100.00,
     "currency": "USD",
-    "status": "SUCCESS",
+    "status": "COMPLETED",
     "status_code": "200",
     "status_detail": "The chargeback was executed."
     "created_date" : "2018-02-15T15:14:52-00:00"
@@ -239,7 +236,7 @@ Example Response
 ```yaml
 {
     "id": "CHAR42342",
-    "status": "SUCCESS",
+    "status": "COMPLETED",
     "status_code": "200",
     "status_detail": "The chargeback was executed."
 }
@@ -254,5 +251,9 @@ Example Response
 | **Status** | **Status code** | **Description** |
 | :--- | :--- | :--- |
 | `PENDING` | 100 | The chargeback is pending. |
-| `SUCCESS` | 200 | The chargeback was executed. |
+| `COMPLETED` | 200 | The chargeback was executed. |
+| `CANCELLED` | 400 | The chargeback was cancelled. |
+| `REVERSAL` | 700 | The chargeback was completed but has now been reversed. |
+
+
 

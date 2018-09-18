@@ -88,8 +88,7 @@ This service allows you to create, modify or read payments.
 | `email` | String | User’s email address. |
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). |
 | `phone` | String | User’s phone. |
-| `document` | String | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. |
-| `document_type` | String | User’s document type. |
+| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) |
 | `user_reference` | String | Unique user id at the merchant side. |
 | `address` | [Address Object](payments.md#the-address-object) | User’s address. |
 {% endtab %}
@@ -187,7 +186,6 @@ This service allows you to create, modify or read payments.
 | `code` | String | Bank code. |
 | `beneficiary` | String | Beneficiary name. |
 | `account` | String | Bank account number. |
-| `document_type` | String | Beneficiary document type. |
 | `document` | String | Beneficiary document number. |
 | `amount_to_transfer` | Positive Float | Amount to transfer \(only for not referenced bank transfers\). |
 | `reference` | String | Reference to make the bank transfer. |
@@ -321,8 +319,7 @@ Example Response
 | `email` | String  | User’s email address. **Required.** |
 | `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
 | `phone` | String  | User’s phone. Optional. |
-| `document` | String  | User’s personal identification number: CPF or CNPJ for Brazil, DNI for Argentina and ID for other countries. **Required**. |
-| `document_type` | String  | User’s document type. Optional. |
+| `document` | String  | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
 | `user_reference` | String  | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
 {% endtab %}
@@ -457,7 +454,6 @@ curl -X POST \
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
         "document" : "53033315550",
-        "document_type" : "CPF",
         "user_reference": "12345",
         "address": {
             "state"  : "Rio de Janeiro",
@@ -736,7 +732,6 @@ POST: _{payment.notification\_url}_
         "name" : "Juan Gomez",
         "email" : "juan@example.com",
         "document" : "58473832",
-        "document_type" : "CUIT",
         "address": {
             "country" : "AR",
             "state"  : "Buenos Aires",
@@ -752,7 +747,6 @@ POST: _{payment.notification\_url}_
         "code": "GL",
         "beneficiary": "ARS CAPITAL SA",
         "document": "4234234243",
-        "document_type": "CUIT",
         "reference": "43423245",
         "amount_to_transfer": 150.01
     },

@@ -43,6 +43,20 @@ Example Response
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Example Error Response.
+{% endapi-method-response-example-description %}
+
+```yaml
+{
+    “code” : 5001,
+    “message” : "Invalid parameter",
+    “param” : "card.number"
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -144,4 +158,21 @@ $ curl \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/cards/CV-e90078f7-e027-4ce4-84cb-534c877be33c
 ```
+
+
+
+
+
+#### Http Errors {#http-errors}
+
+| **HTTP Status Code** | **Error Code** | **Error Detail** |
+| :--- | :--- | :--- |
+| `403 Forbidden` | 3001 | Invalid Credentials. |
+| ​ | 3002 | Unregistered IP address. |
+| ​ | 3003 | Merchant has no authorization to use this API. |
+| `400 Bad Request` | 5000 | Invalid request. |
+| ​ | 5001 | Invalid parameter. |
+| ​ | 5003 | Country not supported. |
+| ​ | 5005 | User unauthorized due to cadastral situation. |
+| ​ | 5008 | Token not found or inactive. |
 

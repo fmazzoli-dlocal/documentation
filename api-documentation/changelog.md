@@ -1,5 +1,22 @@
 # Changelog
 
+### September 18, 2018 {#september-14-2018}
+
+| Page | Section | Change |
+| :--- | :--- | :--- |
+| Credit Card Payment Operations | Chargeback Status | Added more details to chargeback status codes. |
+
+### 
+
+### September 14, 2018
+
+| Page | Section | Change |
+| :--- | :--- | :--- |
+| Country Reference | Documents | Added new Documents section with details of the personal IDs for each country |
+| Payments | Payer Object | Added reference to [Documents](payins-api-reference/country-reference.md#documents) sections in the description of the `document` parameter. |
+| Saving Cards | Create a Card | Added example for invalid parameter error. |
+| Saving Cards | HTTP Errors | Added possible errors list. |
+
 ### 
 
 ### September 11, 2018

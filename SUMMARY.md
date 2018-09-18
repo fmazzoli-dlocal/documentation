@@ -25,6 +25,7 @@
   * [Installments](api-documentation/payins-api-reference/installments.md)
   * [Saving Cards](api-documentation/payins-api-reference/saving-cards.md)
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
+  * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](https://dlocal.com/developers/documentation.php?sec=cashouts)
 * [Changelog](api-documentation/changelog.md)
 

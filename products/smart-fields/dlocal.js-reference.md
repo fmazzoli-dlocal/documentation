@@ -95,11 +95,41 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 
 {% tabs %}
 {% tab title="Installments Arguments" %}
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| `field` | SmartField | The Smart Field you wish to create the installments plan, if you are not using a `card` Field we recommend to use `number` Field to create installments, but any of the Fields will work. |
-| `amount` | Positive Float | The amount of the installments plan. |
-| `currency` | String | The currency of the installments plan. |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Parameter</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>field</code>
+      </td>
+      <td style="text-align:left">SmartField</td>
+      <td style="text-align:left">
+        <p></p>
+        <p></p>
+        <p>The Smart Field you wish to create the installments plan, if you are not
+          using a <code>card</code> Field we recommend to use <code>number</code> Field
+          to create installments, but any of the Fields will work.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>amount</code>
+      </td>
+      <td style="text-align:left">Positive Float</td>
+      <td style="text-align:left">The amount of the installments plan.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>currency</code>
+      </td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">The currency of the installments plan.</td>
+    </tr>
+  </tbody>
+</table>
 {% endtab %}
 
 {% tab title="Installments Plan Object" %}
@@ -186,13 +216,123 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 
 #### Common options:
 
-| **Option** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| placeholder | String or obj | Set custom placeholder for Field. For `number`, `expiration` or `cvv` Fields this option is a `string` with the corresponding placeholder value, if the Field is a `card` this option is an `object` with the corresponding placeholder value for each input: `{     cvv: "cvv placeholder",      number: "number placeholder",      expiration: "expiration placeholder"}` |
-| classes | Object \(Optional\) | Set custom class names on the container DOM element when the dLocal Field is in a particular state. |
-| style | Object \(Optional\) | Customize appearance using CSS properties. Style is specified as an object for any of the variants below.For each of the above, the properties below can be customized.The following pseudo-classes and pseudo-elements can also be styled with the above properties, as a nested object inside the variant. |
-
-#### **Options available exclusively to the `card` or `number` Field:**
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Option</b>
+      </th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">placeholder</td>
+      <td style="text-align:left">String or obj</td>
+      <td style="text-align:left">
+        <p>Set custom placeholder for Field. For <code>number</code>, <code>expiration</code> or <code>cvv</code> Fields
+          this option is a <code>string</code> with the corresponding placeholder value,
+          if the Field is a <code>card</code> this option is an <code>object</code> with
+          the corresponding placeholder value for each input:</p>
+        <p><code>{</code>
+        </p>
+        <p><code>     cvv: &quot;cvv placeholder&quot;, </code>
+        </p>
+        <p><code>     number: &quot;number placeholder&quot;, </code>
+        </p>
+        <p><code>     expiration: &quot;expiration placeholder&quot;</code>
+        </p>
+        <p><code>}</code>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">classes</td>
+      <td style="text-align:left">Object (Optional)</td>
+      <td style="text-align:left">
+        <p>Set custom class names on the container DOM element when the dLocal Field
+          is in a particular state.</p>
+        <ul>
+          <li><code>base</code> - The base class applied to the container.
+            <br />Defaults to <b>DlocalField</b>.</li>
+          <li><code>complete</code>- The class name to apply when the Field is complete.
+            <br
+            />Defaults to <b>DlocalField--complete</b>.</li>
+          <li><code>empty</code> - The class name to apply when the Field is empty.
+            <br
+            />Defaults to <b>DlocalField--empty</b>.</li>
+          <li><code>focus</code> - The class name to apply when the Field is focused.
+            <br
+            />Defaults to <b>DlocalField--focus</b>.</li>
+          <li><code>invalid</code> - The class name to apply when the Field is invalid.
+            <br
+            />Defaults to <b>DlocalField--invalid</b>.</li>
+          <li><code>webkitAutofill</code> - The class name to apply when the Field has
+            its value autofilled by the browser (only on Chrome and Safari).
+            <br />Defaults to <b>DlocalField--autofilled</b>.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">style</td>
+      <td style="text-align:left">Object (Optional)</td>
+      <td style="text-align:left">
+        <p>Customize appearance using CSS properties. Style is specified as an object
+          for any of the variants below.</p>
+        <ul>
+          <li><code>base</code>, base style—all other variants inherit from this style</li>
+          <li><code>complete</code>, applied when the Field has valid input</li>
+          <li><code>empty</code>, applied when the Field has no customer input</li>
+          <li><code>invalid</code>, applied when the Field has invalid input</li>
+          <li><code>autofilled</code>, applied when the Field is autofilled</li>
+        </ul>
+        <p>For each of the above, the properties below can be customized.</p>
+        <ul>
+          <li><code>color</code>
+          </li>
+          <li><code>fontFamily</code>
+          </li>
+          <li><code>fontSize</code>
+          </li>
+          <li><code>fontSmoothing</code>
+          </li>
+          <li><code>fontStyle</code>
+          </li>
+          <li><code>fontVariant</code>
+          </li>
+          <li><code>iconColor</code>
+          </li>
+          <li><code>lineHeight</code>, to avoid cursors being rendered inconsistently
+            across browsers, consider using a padding on the Field's container instead.</li>
+          <li><code>letterSpacing</code>
+          </li>
+          <li><code>textDecoration</code>
+          </li>
+          <li><code>textShadow</code>
+          </li>
+          <li><code>textTransform</code>
+          </li>
+        </ul>
+        <p>The following pseudo-classes and pseudo-elements can also be styled with
+          the above properties, as a nested object inside the variant.</p>
+        <ul>
+          <li><code>:hover</code>
+          </li>
+          <li><code>:focus</code>
+          </li>
+          <li><code>::placeholder</code>
+          </li>
+          <li><code>::selection</code>
+          </li>
+          <li><code>:disabled</code>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>#### **Options available exclusively to the `card` or `number` Field:**
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -240,19 +380,137 @@ cardField.mount('#card-field');
 
 The only way to communicate with your Smart Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
 
-| **Event** | **Description** |
-| :--- | :--- |
-| blur | Triggered when any of the Fields elements loses focus. The event payload always contains certain keys: |
-| focus | Triggered when any of the Fields elements gains focus. The event payload always contains certain keys:  |
-| error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`,  `code` and `type`, set to `validation_error`. |
-| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean  - key, which is `true` when the Field is complete and well-formed, and `false` otherwise. |
-| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
-| ready | Triggered when the Field is mounted and loaded in the DOM. |
-| change | Triggered when any of the following values changes on the Field. The event payload always contains certain keys, in addition to some Field-specific keys. |
-| brand | Triggered when the Field detects a change in the card brand. This event can only be listened in `number` and `card` Smart Fields \(it wont work in `cvv` and `expiration` Fields\). The event payload always contains `brand` - String - key, which has the name of the detected brand if any, `null` otherwise. |
-| autofilled | Triggered when the Field detects a change in it's autofilled status. The event payload always contains `autofilled` - Boolean - key, which is **`true`** if the field is autofilled. |
-
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Event</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">blur</td>
+      <td style="text-align:left">
+        <p>Triggered when any of the Fields elements loses focus. The event payload
+          always contains certain keys:</p>
+        <ul>
+          <li><code>empty</code> - Boolean - <b><code>true</code></b> if the value is empty.</li>
+          <li><code>complete</code> - Boolean -<b><code>true</code></b> if the value is
+            well-formed and complete<b>:</b> 
+            <ul>
+              <li><code>complete</code> can be used to progressively disclose the next parts
+                of your form or to enable form submission.</li>
+              <li><code>complete</code> is not an indicator of whether a customer is done
+                with their input—it only indicates that the Field contains a complete,
+                well-formed value.</li>
+            </ul>
+          </li>
+          <li><code>error</code> - The current validation error, if any. Comprised of <code>message</code>, <code>code</code>,
+            and <code>type</code> set to <code>validation_error</code>.</li>
+          <li><code>brand</code> - String - The detected card brand, if any.</li>
+          <li><code>element</code> - String - The name of the field that triggered the
+            event: <code>&apos;number&apos;</code>, <code>&apos;expiration&apos;</code>,<code> &apos;cvv&apos;</code>.</li>
+          <li><code>hasFocus</code> - Boolean - <b><code>true</code></b> if any of the
+            Fields elements has focus (always false in <code>pan</code>, <code>expiration</code> and <code>cvv</code> Fields).</li>
+          <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
+            Fields is autofilled.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">focus</td>
+      <td style="text-align:left">
+        <p>Triggered when any of the Fields elements gains focus. The event payload
+          always contains certain keys:</p>
+        <ul>
+          <li><code>empty</code> - Boolean - <b><code>true</code></b> if the value is empty.</li>
+          <li><code>complete</code> - Boolean -<b><code>true</code></b> if the value is
+            well-formed and complete<b>:</b> 
+            <ul>
+              <li><code>complete</code> can be used to progressively disclose the next parts
+                of your form or to enable form submission.</li>
+              <li><code>complete</code> is not an indicator of whether a customer is done
+                with their input—it only indicates that the Field contains a complete,
+                well-formed value.</li>
+            </ul>
+          </li>
+          <li><code>error</code> - The current validation error, if any. Comprised of <code>message</code>, <code>code</code>,
+            and <code>type</code> set to <code>validation_error</code>.</li>
+          <li><code>brand</code> - String - The detected card brand, if any.</li>
+          <li><code>element</code> - String - The name of the field that triggered the
+            event: <code>&apos;number&apos;</code>, <code>&apos;expiration&apos;</code>, <code>&apos;cvv&apos;</code>.</li>
+          <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
+            Fields is autofilled.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">error</td>
+      <td style="text-align:left">Triggered when a client-side validation error is detected. The event payload
+        always contains <code>error</code> key which contains the current validation
+        error. Comprised of: <code>message</code>, <code>code</code> and <code>type</code>,
+        set to <code>validation_error</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">complete</td>
+      <td style="text-align:left">Triggered when the Field changes it's complete status. The event payload
+        always contains<code>complete </code>- Boolean - key, which is <code>true</code> when
+        the Field is complete and well-formed, and <code>false</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">empty</td>
+      <td style="text-align:left">Triggered when the Field changes it's empty status. The event payload
+        always contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
+        the Field is empty, and <code>false</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">ready</td>
+      <td style="text-align:left">Triggered when the Field is mounted and loaded in the DOM.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">change</td>
+      <td style="text-align:left">
+        <p>Triggered when any of the following values changes on the Field. The event
+          payload always contains certain keys, in addition to some Field-specific
+          keys.</p>
+        <ul>
+          <li><code>empty</code> - Boolean - <b><code>true</code></b> if the value is empty.</li>
+          <li><code>complete</code> - Boolean -<b><code>true</code></b> if the value is
+            well-formed and complete<b>:</b> 
+            <ul>
+              <li><code>complete</code> can be used to progressively disclose the next parts
+                of your form or to enable form submission.</li>
+              <li><code>complete</code>  <em>is not</em> an indicator of whether a customer
+                is done with their input—it only indicates that the Field contains a complete,
+                well-formed value.</li>
+            </ul>
+          </li>
+          <li><code>error</code> - The current validation error, if any. Comprised of <code>message</code>, <code>code</code>,
+            and <code>type</code> set to <code>validation_error</code>.</li>
+          <li><code>brand</code> - The detected card brand, if any.</li>
+          <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
+            Fields is autofilled.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">brand</td>
+      <td style="text-align:left">Triggered when the Field detects a change in the card brand. This event
+        can only be listened in <code>number</code> and <code>card</code> Smart Fields
+        (it wont work in <code>cvv</code> and <code>expiration</code> Fields). The
+        event payload always contains <code>brand</code> - String - key, which has
+        the name of the detected brand if any, <code>null</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">autofilled</td>
+      <td style="text-align:left">Triggered when the Field detects a change in it's autofilled status. The
+        event payload always contains <code>autofilled</code> - Boolean - key, which
+        is <b><code>true</code></b> if the field is autofilled.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Input validation
 
