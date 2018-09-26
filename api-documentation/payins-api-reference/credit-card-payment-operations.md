@@ -65,6 +65,7 @@ Amount to be captured \(in the currency entered in`currency`\) Must be equal or 
 $ curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343/capture
 ```
@@ -99,7 +100,7 @@ The payment id.
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
-    "payment_method_id" : "VI",
+    "payment_method_id" : "CARD",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "created_date" : "2018-02-15T15:14:52-00:00",
@@ -122,6 +123,7 @@ The payment id.
 $ curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343/cancel
 ```
@@ -205,6 +207,7 @@ The chargeback id
 $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/chargebacks/CHAR42342
 ```

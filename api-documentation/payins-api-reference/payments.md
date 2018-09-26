@@ -100,7 +100,6 @@ This service allows you to create, modify or read payments.
 "email" : "thiago@example.com",
 "birth_date" : "12-07-1989",
 "document" : "53033315550",
-"document_type" : "CPF",
 "user_reference": "12345",
 "address": {
     "state"  : "Rio de Janeiro",
@@ -284,7 +283,7 @@ Example Response
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
-    "payment_method_id" : "VI",
+    "payment_method_id" : "CARD",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "card":{
@@ -330,10 +329,8 @@ Example Response
 "name" : "Thiago Gabriel",
 "email" : "thiago@example.com",
 "document" : "53033315550",
-"document_type" : "CPF",
 "user_reference": "12345",
 "address": {
-    "country" : "BR",
     "state"  : "Rio de Janeiro",
     "city" : "Volta Redonda",
     "zip_code" : "27275-595",
@@ -390,7 +387,7 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 | `expiration_month` | Integer | Two digit number representing the card's expiration month. **Required if** `token` **or** `card_id` **not present** |
 | `expiration_year` | Integer | Four digit number representing the card's expiration year. **Required if** `token` **or** `card_id` **not present** |
 | `number` | String | The card number, as a string without any separators.  **Required if**`encrypted_data` **,**`token` **or** `card_id` **not present** |
-| `cvv` | String | Credit card verification value. **Required if**`encrypted_data` **,**`token` **or** `card_id` **not present** |
+| `cvv` | String | Credit card verification value. Optional. **Required for India.** |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
 | `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). Optional. |
 | `card_id` | String | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. Optional. |
@@ -436,6 +433,7 @@ The following example applies for credit card payments using the plain credit ca
 curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
     https://api.dlocal.com/secure_payments
@@ -587,6 +585,7 @@ The payment id
 $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343
 ```
@@ -634,6 +633,7 @@ Example Response
 $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343/status
 ```
