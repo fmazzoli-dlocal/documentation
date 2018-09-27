@@ -1,9 +1,5 @@
 # Table of contents
 
-<<<<<<< HEAD
-* [Initial page](README.md)
-
-=======
 * [dLocal Documentation](README.md)
 
 ## Solutions
