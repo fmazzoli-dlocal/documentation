@@ -20,7 +20,6 @@
 ## API Documentation
 
 * [Payins API Reference](api-documentation/payins-api-reference/README.md)
-  * [Amazon](api-documentation/payins-api-reference/amazon.md)
   * [Security](api-documentation/payins-api-reference/security.md)
   * [Payment Methods](api-documentation/payins-api-reference/payment-methods.md)
   * [Payments](api-documentation/payins-api-reference/payments.md)
