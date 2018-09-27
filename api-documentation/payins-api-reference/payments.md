@@ -40,7 +40,7 @@ This service allows you to create, modify or read payments.
     "amount": 120.00,
     "currency" : "USD",
     "country": "BR",
-    "payment_method_id" : "VI",
+    "payment_method_id" : "CARD",
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "payer":{
@@ -62,15 +62,14 @@ This service allows you to create, modify or read payments.
         "expiration_month": 10,
         "expiration_year": 2040,
         "last4": "4544",
-        "brand": "VI",
-        "capture": true
+        "brand": "VI"
     },
     "refunds": [],
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
-    "status" : "PENDING",
-    "status_detail" : "The payment is pending.",
-    "status_code" : "100",
+    "status" : "PAID",
+    "status_detail" : "The payment was paid.",
+    "status_code" : "200",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -398,16 +397,32 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 {% endtab %}
 
 {% tab title="Example Card Object" %}
+#### Example with raw credit card information:
+
 ```yaml
 {
-        "token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,
-        "last4": "1111",
-        "brand": "VI",
-        "capture": false
-    }
+        "number": "4111111111111111",
+        "cvv": "123"
+ }
+```
+
+#### Example with Smart Fields `token`:
+
+```text
+{
+    "token":"CV-124c18a5-874d-4982-89d7-b9c256e647b5"
+}
+```
+
+#### Example with `card_id` from Create a Card method:
+
+```text
+{    
+    "card_id":"CV-hgv23jh4g-n23n-kj3k-bkhb3-kj3hj3gjh3k3"
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -501,8 +516,7 @@ curl -X POST \
     "payer":{
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "document_type" : "CPF",
+        "document" : "53033315550"
         "user_reference": "12345",
         "address": {
             "state"  : "Rio de Janeiro",
