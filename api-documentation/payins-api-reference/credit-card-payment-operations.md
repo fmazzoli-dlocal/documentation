@@ -18,8 +18,12 @@ The payment id
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="order\_capture\_id" type="string" required=false %}
+Capture id given by the merchant on their system.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="currency" type="string" required=false %}
-Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\) Each country accepts USD and local currency.  
+Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\\) Each country accepts USD and local currency.  
 **Required if amount is present.**
 {% endapi-method-parameter %}
 
@@ -39,6 +43,7 @@ Amount to be captured \(in the currency entered in`currency`\) Must be equal or 
 ```yaml
 {
     "id": "PAY4334346343",
+    "capture_id" : "CA-jh4jh5vj4fdg",
     "amount": 120.00,
     "currency" : "USD",   
     "payment_method_id": "CARD",
@@ -51,6 +56,7 @@ Amount to be captured \(in the currency entered in`currency`\) Must be equal or 
     "status_detail" : "The payment was paid.",
     "status_code": "200",
     "order_id": "657434343",
+    "order_capture_id" : "5436243345",
     "notification_url": "http://merchant.com/notifications"
 }
 ```
@@ -69,6 +75,55 @@ $ curl -X POST \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343/capture
 ```
+
+{% api-method method="get" host="https://api.dlocal.com/payments/capture/" path="{id}" %}
+{% api-method-summary %}
+Retrieve a Capture
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Retrieve a capture of a payment.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="capture\_id" type="string" required=true %}
+The capture id.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```yaml
+{
+    "id": "PAY4334346343",
+    "capture_id" : "CA-jh4jh5vj4fdg",
+    "amount": 120.00,
+    "currency" : "USD",   
+    "payment_method_id": "CARD",
+    "payment_method_type" : "CARD",
+    "payment_method_flow" : "DIRECT",
+    "country": "BR",
+    "created_date" : "2018-07-12T15:14:52-00:00",
+    "approved_date" : "2018-07-12T15:17:52-00:00",
+    "status" : "PAID",
+    "status_detail" : "The payment was paid.",
+    "status_code": "200",
+    "order_id": "657434343",
+    "order_capture_id" : "5436243345",
+    "notification_url": "http://merchant.com/notifications"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 {% api-method method="post" host="https://api.dlocal.com/payments/" path="{id}/cancel" %}
 {% api-method-summary %}
@@ -257,6 +312,4 @@ Example Response
 | `COMPLETED` | 200 | The chargeback was executed. |
 | `CANCELLED` | 400 | The chargeback was cancelled. |
 | `REVERSAL` | 700 | The chargeback was completed but has now been reversed. |
-
-
 

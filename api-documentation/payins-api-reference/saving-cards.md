@@ -65,13 +65,13 @@ Example Error Response.
 
 | **Argument** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `holder_name` | String  | Cardholder's full name. **Required if** `token` **not present.** |
+| `holder_name` | String | Cardholder's full name. **Required if** `token` **not present.** |
 | `expiration_month` | Integer | Number representing the card's expiration month \(start in 1\). **Required if** `token` **not present.** |
 | `expiration_year` | Integer | Number representing the card's expiration year. **Required if** `token` **not present.** |
 | `number` | String | The card number, as a string without any separators. **Required if** `encrypted_data` **or** `token` **not present.** |
 | `cvv` | String | Credit card verification value. **Required if** `encrypted_data` **or** `token` **not present.** |
-| `encrypted_data` | String  | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
-| `token` | String  | Temporary credit card token created using Smart Fields. Optional. |
+| `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
+| `token` | String | Temporary credit card token created using Smart Fields. Optional. |
 
 ## The Payer Object
 
@@ -161,11 +161,7 @@ $ curl \
     https://api.dlocal.com/cards/CV-e90078f7-e027-4ce4-84cb-534c877be33c
 ```
 
-
-
-
-
-#### Http Errors {#http-errors}
+### Http Errors {#http-errors}
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | :--- | :--- | :--- |

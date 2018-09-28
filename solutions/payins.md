@@ -46,5 +46,3 @@ Learn more about the payment methods available in each country here:
 
 {% page-ref page="../api-documentation/payins-api-reference/payment-methods.md" %}
 
-
-

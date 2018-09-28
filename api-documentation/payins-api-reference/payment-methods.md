@@ -120,212 +120,211 @@ curl -X GET \
     https://api.dlocal.com/payments-methods?country=AR
 ```
 
-
-
 ## Payment Method Codes
 
 {% hint style="warning" %}
+
 To make **credit/debit card** [**payments**](payments.md#create-a-payment), you should use`"CARD"` as the `payment_method_id`.  
 For **other types of payments** \(eg: bank transfer\), you should use the corresponding payment\_method\_id found in the tables below.
 
-Examples:   
-- Payment with Visa credit card in Argentina, use `payment_method_id = "CARD"`  
-- Payment with Rapi Pago in Argentina, use `payment_method_id = "RP"`
-{% endhint %}
+Examples:
+
+* Payment with Visa credit card in Argentina, use `payment_method_id = "CARD"`  
+* Payment with Rapi Pago in Argentina, use `payment_method_id = "RP"`
 
 ### **Argentina**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `SI` | Santander Rio | `BANK_TRANSFER` | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/SI.png |
-| `PF` | Pago Fácil | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PF.png |
-| `RP` | Rapi Pago | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/RP.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `DC` | Diners | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `CM` | CMR Falabella | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CM.png |
-| `NJ` | Tarjeta Naranja | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/NJ.png |
-| `TS` | Tarjeta Shopping | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/TS.png |
-| `NT` | Nativa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/NT.png |
-| `CS` | Cencosud | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CS.png |
-| `CL` | Cabal | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CL.png |
-| `AG` | Argencard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AG.png |
-| `DB` | DirectDebit | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/DB.png |
-| `VD` | Visa Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VD.png |
-| `MD` | Mastercard Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MD.png |
-| `MS` | Maestro Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MS.png |
-| `CO` | Cordial | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CO.png |
-| `CB` | Cordobesa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CB.png |
+| `SI` | Santander Rio | `BANK_TRANSFER` | Bank Transfer Offline | [https://pay.dlocal.com/views/2.0/images/payments/SI.png](https://pay.dlocal.com/views/2.0/images/payments/SI.png) |
+| `PF` | Pago Fácil | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/PF.png](https://pay.dlocal.com/views/2.0/images/payments/PF.png) |
+| `RP` | Rapi Pago | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/RP.png](https://pay.dlocal.com/views/2.0/images/payments/RP.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `DC` | Diners | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `CM` | CMR Falabella | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CM.png](https://pay.dlocal.com/views/2.0/images/payments/CM.png) |
+| `NJ` | Tarjeta Naranja | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/NJ.png](https://pay.dlocal.com/views/2.0/images/payments/NJ.png) |
+| `TS` | Tarjeta Shopping | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/TS.png](https://pay.dlocal.com/views/2.0/images/payments/TS.png) |
+| `NT` | Nativa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/NT.png](https://pay.dlocal.com/views/2.0/images/payments/NT.png) |
+| `CS` | Cencosud | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CS.png](https://pay.dlocal.com/views/2.0/images/payments/CS.png) |
+| `CL` | Cabal | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CL.png](https://pay.dlocal.com/views/2.0/images/payments/CL.png) |
+| `AG` | Argencard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AG.png](https://pay.dlocal.com/views/2.0/images/payments/AG.png) |
+| `DB` | DirectDebit | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/DB.png](https://pay.dlocal.com/views/2.0/images/payments/DB.png) |
+| `VD` | Visa Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/VD.png](https://pay.dlocal.com/views/2.0/images/payments/VD.png) |
+| `MD` | Mastercard Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/MD.png](https://pay.dlocal.com/views/2.0/images/payments/MD.png) |
+| `MS` | Maestro Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/MS.png](https://pay.dlocal.com/views/2.0/images/payments/MS.png) |
+| `CO` | Cordial | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CO.png](https://pay.dlocal.com/views/2.0/images/payments/CO.png) |
+| `CB` | Cordobesa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CB.png](https://pay.dlocal.com/views/2.0/images/payments/CB.png) |
 
 ### **Brazil**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `BL` | Boleto | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BL.png |
-| `I` | Itau | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/I.png |
-| `B` | Bradesco | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/B.png |
-| `BB` | Banco do Brasil | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/BB.png |
-| `CA` | Caixa | `BANK_TRANSFER` | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/CA.png |
-| `SB` | Santander | `BANK_TRANSFER` | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/SB.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `EL` | Elo | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/EL.png |
-| `DC` | Diners Club | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `HI` | Hipercard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/HI.png |
-| `ML` | Cartao MercadoLivre | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/ML.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `JC` | JCB | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/JC.png |
-| `AU` | Aura | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AU.png |
-| `DS` | Discover | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DS.png |
+| `BL` | Boleto | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BL.png](https://pay.dlocal.com/views/2.0/images/payments/BL.png) |
+| `I` | Itau | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/I.png](https://pay.dlocal.com/views/2.0/images/payments/I.png) |
+| `B` | Bradesco | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/B.png](https://pay.dlocal.com/views/2.0/images/payments/B.png) |
+| `BB` | Banco do Brasil | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/BB.png](https://pay.dlocal.com/views/2.0/images/payments/BB.png) |
+| `CA` | Caixa | `BANK_TRANSFER` | Bank Transfer Offline | [https://pay.dlocal.com/views/2.0/images/payments/CA.png](https://pay.dlocal.com/views/2.0/images/payments/CA.png) |
+| `SB` | Santander | `BANK_TRANSFER` | Bank Transfer Offline | [https://pay.dlocal.com/views/2.0/images/payments/SB.png](https://pay.dlocal.com/views/2.0/images/payments/SB.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `EL` | Elo | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/EL.png](https://pay.dlocal.com/views/2.0/images/payments/EL.png) |
+| `DC` | Diners Club | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `HI` | Hipercard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/HI.png](https://pay.dlocal.com/views/2.0/images/payments/HI.png) |
+| `ML` | Cartao MercadoLivre | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/ML.png](https://pay.dlocal.com/views/2.0/images/payments/ML.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `JC` | JCB | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/JC.png](https://pay.dlocal.com/views/2.0/images/payments/JC.png) |
+| `AU` | Aura | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AU.png](https://pay.dlocal.com/views/2.0/images/payments/AU.png) |
+| `DS` | Discover | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DS.png](https://pay.dlocal.com/views/2.0/images/payments/DS.png) |
 
 ### **Chile**
 
-| **`payment_method_id`** | **Description** | **`payment_method_type`** | **Details** | **Logo** |
+| `payment_method_id` | **Description** | `payment_method_type` | **Details** | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `WP` | WebPay | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `DC` | Diners Club | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `PR` | Presto | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/PR.png |
-| `CM` | CMR | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/CM.png |
-| `MG` | Magna | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MG.png |
-| `SP` | Servipag | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/SP.png |
-| `WP` | BBVA | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Santander | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | ITAU | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Corpbanca | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | BCI-TBANC | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Falabella | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Estado | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Bice | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Security | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Consorcio | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Banco Ripley | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | ScotiaBank | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
-| `WP` | Coopeuch | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/WP.png |
+| `WP` | WebPay | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `DC` | Diners Club | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `PR` | Presto | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/PR.png](https://pay.dlocal.com/views/2.0/images/payments/PR.png) |
+| `CM` | CMR | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/CM.png](https://pay.dlocal.com/views/2.0/images/payments/CM.png) |
+| `MG` | Magna | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MG.png](https://pay.dlocal.com/views/2.0/images/payments/MG.png) |
+| `SP` | Servipag | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/SP.png](https://pay.dlocal.com/views/2.0/images/payments/SP.png) |
+| `WP` | BBVA | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Santander | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | ITAU | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Corpbanca | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | BCI-TBANC | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Falabella | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Estado | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Bice | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Security | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Consorcio | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Banco Ripley | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | ScotiaBank | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
+| `WP` | Coopeuch | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/WP.png](https://pay.dlocal.com/views/2.0/images/payments/WP.png) |
 
 ### **China**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | Details | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | Details | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `EE` | ePayLinks | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/EE.png |
-| `UP` | China Union Pay | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/UP.png |
+| `EE` | ePayLinks | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/EE.png](https://pay.dlocal.com/views/2.0/images/payments/EE.png) |
+| `UP` | China Union Pay | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/UP.png](https://pay.dlocal.com/views/2.0/images/payments/UP.png) |
 
 ### Colombia
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `EY` | Efecty | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EY.png |
-| `DA` | Davivienda | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/DA.png |
-| `PC` | PSE | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `DB` | DirectDebit | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/DB.png |
-| `EX` | Almacenes Éxito | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EX.png |
-| `BU` | Baloto | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BU.png |
-| `OC` | Banco de Occidente | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/OC.png |
-| `CR` | Carulla | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/CR.png |
-| `EQ` | Empresa de Energía del Quindio | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EQ.png |
-| `SX` | Surtimax | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/SX.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `VD` | Visa Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VD.png |
-| `MD` | MasterCard Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MD.png |
-| `BN` | Boleto Bancolombia | `BANK_TRANSFER` | Bank Transfer Offline | https://pay.dlocal.com/views/2.0/images/payments/BN.png |
-| `AE` | Amex | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `DC` | Diners | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `PC` | Banco Agrario | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Av Villas | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Caja Social | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Colpatria | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Corpbanca S.A. | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco de Bogota | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco de Occidente | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco GNB Sudameris | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Pichincha S.A. | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Popular | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Procredit | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Bancolombia | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Bancoomeva S.A. | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | BBVA Colombia S.A. | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Citibank | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Helm Bank S.A. | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
-| `PC` | Banco Falabella | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/PC.png |
+| `EY` | Efecty | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/EY.png](https://pay.dlocal.com/views/2.0/images/payments/EY.png) |
+| `DA` | Davivienda | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/DA.png](https://pay.dlocal.com/views/2.0/images/payments/DA.png) |
+| `PC` | PSE | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `DB` | DirectDebit | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/DB.png](https://pay.dlocal.com/views/2.0/images/payments/DB.png) |
+| `EX` | Almacenes Éxito | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/EX.png](https://pay.dlocal.com/views/2.0/images/payments/EX.png) |
+| `BU` | Baloto | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BU.png](https://pay.dlocal.com/views/2.0/images/payments/BU.png) |
+| `OC` | Banco de Occidente | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/OC.png](https://pay.dlocal.com/views/2.0/images/payments/OC.png) |
+| `CR` | Carulla | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/CR.png](https://pay.dlocal.com/views/2.0/images/payments/CR.png) |
+| `EQ` | Empresa de Energía del Quindio | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/EQ.png](https://pay.dlocal.com/views/2.0/images/payments/EQ.png) |
+| `SX` | Surtimax | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/SX.png](https://pay.dlocal.com/views/2.0/images/payments/SX.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `VD` | Visa Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/VD.png](https://pay.dlocal.com/views/2.0/images/payments/VD.png) |
+| `MD` | MasterCard Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/MD.png](https://pay.dlocal.com/views/2.0/images/payments/MD.png) |
+| `BN` | Boleto Bancolombia | `BANK_TRANSFER` | Bank Transfer Offline | [https://pay.dlocal.com/views/2.0/images/payments/BN.png](https://pay.dlocal.com/views/2.0/images/payments/BN.png) |
+| `AE` | Amex | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `DC` | Diners | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `PC` | Banco Agrario | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Av Villas | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Caja Social | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Colpatria | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Corpbanca S.A. | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco de Bogota | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco de Occidente | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco GNB Sudameris | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Pichincha S.A. | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Popular | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Procredit | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Bancolombia | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Bancoomeva S.A. | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | BBVA Colombia S.A. | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Citibank | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Helm Bank S.A. | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
+| `PC` | Banco Falabella | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/PC.png](https://pay.dlocal.com/views/2.0/images/payments/PC.png) |
 
 ### **India**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `DC` | Diners Club | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `NB` | Netbanking | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/NB.png |
-| `UI` | UPI | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/UI.png |
-| `RU` | RuPay | `CARD` | Credit / Debit Card | https://pay.dlocal.com/views/2.0/images/payments/RU.png |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `DC` | Diners Club | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `NB` | Netbanking | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/NB.png](https://pay.dlocal.com/views/2.0/images/payments/NB.png) |
+| `UI` | UPI | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/UI.png](https://pay.dlocal.com/views/2.0/images/payments/UI.png) |
+| `RU` | RuPay | `CARD` | Credit / Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/RU.png](https://pay.dlocal.com/views/2.0/images/payments/RU.png) |
 
 ### **Mexico**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | Details | **Logo** |
+| `payment_method_id` | **Name** | `payment_method_type` | Details | **Logo** |
 | :---: | :--- | :--- | :--- | :--- |
-| `OX` | OXXO | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/OX.png |
-| `SE` | SPEI | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/SE.png |
-| `BV` | BBVA Bancomer | `TICKETTICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BV.png |
-| `BM` | Banamex | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BM.png |
-| `BN` | Banorte | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/BN.png |
-| `SM` | Santander | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/SM.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | MasterCard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `VD` | Visa Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VD.png |
-| `MD` | MasterCard Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MD.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
+| `OX` | OXXO | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/OX.png](https://pay.dlocal.com/views/2.0/images/payments/OX.png) |
+| `SE` | SPEI | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/SE.png](https://pay.dlocal.com/views/2.0/images/payments/SE.png) |
+| `BV` | BBVA Bancomer | `TICKETTICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BV.png](https://pay.dlocal.com/views/2.0/images/payments/BV.png) |
+| `BM` | Banamex | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BM.png](https://pay.dlocal.com/views/2.0/images/payments/BM.png) |
+| `BN` | Banorte | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BN.png](https://pay.dlocal.com/views/2.0/images/payments/BN.png) |
+| `SM` | Santander | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/SM.png](https://pay.dlocal.com/views/2.0/images/payments/SM.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | MasterCard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `VD` | Visa Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/VD.png](https://pay.dlocal.com/views/2.0/images/payments/VD.png) |
+| `MD` | MasterCard Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/MD.png](https://pay.dlocal.com/views/2.0/images/payments/MD.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
 
 ### **Morocco**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logos** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logos** |
 | :---: | :--- | :--- | :--- | :--- |
-| `AM` | AmanPay | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/AM.png |
-| `MI` | CMI | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MI.png |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | Mastercard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
+| `AM` | AmanPay | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/AM.png](https://pay.dlocal.com/views/2.0/images/payments/AM.png) |
+| `MI` | CMI | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MI.png](https://pay.dlocal.com/views/2.0/images/payments/MI.png) |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | Mastercard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
 
 ### Paraguay
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logos** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logos** |
 | :---: | :--- | :--- | :--- | :--- |
-| `PE` | PagoExpress | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/PE.png |
+| `PE` | PagoExpress | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/PE.png](https://pay.dlocal.com/views/2.0/images/payments/PE.png) |
 
 ### **Perú**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logos** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logos** |
 | :---: | :--- | :--- | :--- | :--- |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | Mastercard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `AE` | American Express | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `DC` | Diners Club | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `VD` | Visa Debit | `CARD` | Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VD.png |
-| `EF` | Pago Efectivo | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/EF.png |
-| `BC` | BCP | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/BC.png |
-| `IB` | Interbank | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/IB.png |
-| `BP` | BBVA | `BANK_TRANSFER` | Bank Transfer Online | https://pay.dlocal.com/views/2.0/images/payments/BP.png |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | Mastercard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `AE` | American Express | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `DC` | Diners Club | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `VD` | Visa Debit | `CARD` | Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/VD.png](https://pay.dlocal.com/views/2.0/images/payments/VD.png) |
+| `EF` | Pago Efectivo | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/EF.png](https://pay.dlocal.com/views/2.0/images/payments/EF.png) |
+| `BC` | BCP | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/BC.png](https://pay.dlocal.com/views/2.0/images/payments/BC.png) |
+| `IB` | Interbank | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/IB.png](https://pay.dlocal.com/views/2.0/images/payments/IB.png) |
+| `BP` | BBVA | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/BP.png](https://pay.dlocal.com/views/2.0/images/payments/BP.png) |
 
 ### **Turkey**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logos** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logos** |
 | :---: | :--- | :--- | :--- | :--- |
-| `AE` | Amex | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/AE.png |
-| `VI` | Visa | `CARD` | Credit / Debit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | Mastercard | `CARD` | Credit / Debit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
+| `AE` | Amex | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/AE.png](https://pay.dlocal.com/views/2.0/images/payments/AE.png) |
+| `VI` | Visa | `CARD` | Credit / Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | Mastercard | `CARD` | Credit / Debit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
 
 ### **Uruguay**
 
-| **`payment_method_id`** | **Name** | **`payment_method_type`** | **Details** | **Logos** |
+| `payment_method_id` | **Name** | `payment_method_type` | **Details** | **Logos** |
 | :---: | :--- | :--- | :--- | :--- |
-| `VI` | Visa | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/VI.png |
-| `MC` | Mastercard | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/MC.png |
-| `DC` | Diners Club | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/DC.png |
-| `OA` | OCA | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/OA.png |
-| `LI` | Lider | `CARD` | Credit Card | https://pay.dlocal.com/views/2.0/images/payments/LI.png |
-| `RE` | Red Pagos | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/RE.png |
-| `AI` | Abitab | `TICKET` | Cash Payment | https://pay.dlocal.com/views/2.0/images/payments/AI.png |
+| `VI` | Visa | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/VI.png](https://pay.dlocal.com/views/2.0/images/payments/VI.png) |
+| `MC` | Mastercard | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/MC.png](https://pay.dlocal.com/views/2.0/images/payments/MC.png) |
+| `DC` | Diners Club | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/DC.png](https://pay.dlocal.com/views/2.0/images/payments/DC.png) |
+| `OA` | OCA | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/OA.png](https://pay.dlocal.com/views/2.0/images/payments/OA.png) |
+| `LI` | Lider | `CARD` | Credit Card | [https://pay.dlocal.com/views/2.0/images/payments/LI.png](https://pay.dlocal.com/views/2.0/images/payments/LI.png) |
+| `RE` | Red Pagos | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/RE.png](https://pay.dlocal.com/views/2.0/images/payments/RE.png) |
+| `AI` | Abitab | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/AI.png](https://pay.dlocal.com/views/2.0/images/payments/AI.png) |
 

@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Smart Field \(also referred to as  '`card`Field'\). The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
+This guide will walk you through the creation of a payment form using dLocal's all-in-one `card` Smart Field \(also referred to as '`card`Field'\). The `card` Field simplifies the form and minimizes the number of fields required by inserting a single, flexible input field that securely collects all necessary card details.
 
 You can make use of Smart Fields \(our pre-built UI components\) to create a payment form that securely collects your customer’s card information without you needing to handle sensitive card data. The card details are then converted to a representative token that you can safely send to your servers.
 
@@ -30,7 +30,7 @@ All submissions of payment info using Smart Fields are made via a secure HTTPS c
 
 ## Step 1: Set up Smart Fields
 
-Smart Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from **https://js.dlocal.com**. For testing purposes, you can use **https://js-sandbox.dlocal.com.**
+Smart Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com). For testing purposes, you can use [https://js-sandbox.dlocal.com](https://js-sandbox.dlocal.com)**.**
 
 `<script src="https://js.dlocal.com/"></script>`
 
@@ -179,7 +179,7 @@ form.addEventListener('submit', function(event) {
 });
 ```
 
-`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has `result.token` the token that was successfully created. 
+`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has `result.token` the token that was successfully created.
 
 ## Step 5: Submit the token and the rest of your form to your server
 

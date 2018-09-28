@@ -1,6 +1,6 @@
 # Payments
 
-This service allows you to create, modify or read payments.
+This service allows you to create or read payments.
 
 ## The Payment Object
 
@@ -11,6 +11,7 @@ This service allows you to create, modify or read payments.
 | `id` | String | Id of payment |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
+| `exchange_code` | String | Unique identifier of the exchange rate. |
 | `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](payment-methods.md#payment-method-codes) |
 | `payment_method_type` | String | Payment method type of the payment method chosen. Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
@@ -20,7 +21,8 @@ This service allows you to create, modify or read payments.
 | `bank_transfer` | [Bank Transfer Object](payments.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
 | `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
 | `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
-| `refunds` | [Refund Object](refunds.md#the-refund-object) | Payment's refunds of refund object. |
+| `refunds` | [Refund Object](refunds.md#the-refund-object)  \[ \]  | Payment's refunds. |
+| `captures` | Capture Object \[ \] | Payment's captures. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
 | `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
@@ -39,6 +41,7 @@ This service allows you to create, modify or read payments.
     "id": "3436735432",
     "amount": 120.00,
     "currency" : "USD",
+    "exchange_code": "FX-3fv4h5f34",
     "country": "BR",
     "payment_method_id" : "CARD",
     "payment_method_type" : "CARD",
@@ -65,6 +68,7 @@ This service allows you to create, modify or read payments.
         "brand": "VI"
     },
     "refunds": [],
+    "captures": [],
     "created_date" : "2018-02-15T15:14:52-00:00",
     "approved_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PAID",
@@ -218,6 +222,10 @@ Creates a new payment using any of the available payment methods.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="exchange\_code" type="string" required=false %}
+Unique identifier of the exchange rate.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="amount" type="number" required=true %}
 Transaction amount \(in the currency entered in the field `currency`\)
 {% endapi-method-parameter %}
@@ -243,7 +251,7 @@ Payer Object
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=false %}
-Card Object   
+Card Object  
 **Required only for** `CARD` **payment type.**
 {% endapi-method-parameter %}
 
@@ -281,6 +289,7 @@ Example Response
     "id": "PAY2323243343543",
     "amount": 120.00,
     "currency" : "USD",
+    "exchange_code": "FX-3fv4h5f34",
     "country": "BR",
     "payment_method_id" : "CARD",
     "payment_method_type" : "CARD",
@@ -313,12 +322,12 @@ Example Response
 {% tab title="Payer Object" %}
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `name` | String  | User's full name. **Required.** |
-| `email` | String  | User’s email address. **Required.** |
-| `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
-| `phone` | String  | User’s phone. Optional. |
-| `document` | String  | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
-| `user_reference` | String  | Unique user id at the merchant side. Optional. |
+| `name` | String | User's full name. **Required.** |
+| `email` | String | User’s email address. **Required.** |
+| `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
+| `phone` | String | User’s phone. Optional. |
+| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
+| `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
 {% endtab %}
 
@@ -372,10 +381,10 @@ Example Response
 For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../products/smart-fields/). For recurring payments, first [save the card](saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
 
 {% hint style="warning" %}
-**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:      
-https://api.dlocal.com/**secure\_payments**
+**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
+[https://api.dlocal.com/\*\*secure\_payments\*\*](https://api.dlocal.com/**secure_payments**)
 
-Card payments with a `card_id` or `token` should use the endpoint: https://api.dlocal.com/**payments**
+Card payments with a `card_id` or `token` should use the endpoint: [https://api.dlocal.com/\*\*payments\*\*](https://api.dlocal.com/**payments**)
 {% endhint %}
 
 {% tabs %}
@@ -460,6 +469,7 @@ curl -X POST \
 {
     "amount": 120.00,
     "currency" : "USD",
+    "exchange_code": "FX-3fv4h5f34",
     "country": "BR",
     "payment_method_id" : "CARD",
     "payment_method_flow" : "DIRECT",
@@ -566,6 +576,7 @@ The payment id
    "id" : "D-4-16112abb-b2c6-4799-86db-497c6bd321ac",
    "amount" : 120.00,
    "currency" : "USD",
+   "exchange_code": "FX-3fv4h5f34"
    "payment_method_id" : "CARD",
    "payment_method_type" : "CARD",
    "payment_method_flow" : "DIRECT",
@@ -585,7 +596,8 @@ The payment id
    "status_code" : "600",
    "order_id" : "657434343",
    "notification_url" : "http://merchant.com/notifications",
-   "refunds" : []
+   "refunds" : [],
+   "captures" : []
 }
 ```
 {% endapi-method-response-example %}
