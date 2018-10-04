@@ -526,7 +526,7 @@ curl -X POST \
     "payer":{
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
-        "document" : "53033315550"
+        "document" : "53033315550",
         "user_reference": "12345",
         "address": {
             "state"  : "Rio de Janeiro",
