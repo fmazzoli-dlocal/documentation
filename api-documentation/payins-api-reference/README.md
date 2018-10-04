@@ -4,7 +4,7 @@ This section covers the basic concepts of the payment transaction types and the 
 
 JSON is returned by all API responses, including errors. For sandbox environment just replace **api.dlocal.com** for **sandbox.dlocal.com**.
 
-Get started with the Security section of this documentation: 
+Get started with the Security section of this documentation:
 
 {% page-ref page="security.md" %}
 

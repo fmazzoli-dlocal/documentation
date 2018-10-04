@@ -19,7 +19,7 @@ The payment id
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="currency" type="string" required=false %}
-Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\) Each country accepts USD and local currency.  
+Transaction currency in ISO 4217 \(see http://en.wikipedia.org/wiki/ISO\_4217\\\) Each country accepts USD and local currency.  
 **Required if amount is present.**
 {% endapi-method-parameter %}
 
@@ -257,6 +257,4 @@ Example Response
 | `COMPLETED` | 200 | The chargeback was executed. |
 | `CANCELLED` | 400 | The chargeback was cancelled. |
 | `REVERSAL` | 700 | The chargeback was completed but has now been reversed. |
-
-
 

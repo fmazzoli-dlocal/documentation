@@ -1,6 +1,5 @@
 # Table of contents
 
-<<<<<<< HEAD
 * [dLocal Documentation](README.md)
 
 ## Solutions
@@ -29,4 +28,4 @@
   * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](https://dlocal.com/developers/documentation.php?sec=cashouts)
 * [Changelog](api-documentation/changelog.md)
->>>>>>> 73a23c82deb1ab3739dd377fbac1c49a2e2baedc
+

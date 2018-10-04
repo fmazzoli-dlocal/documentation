@@ -1,6 +1,6 @@
 # Orders
 
-### The Order Object
+## The Order Object
 
 {% tabs %}
 {% tab title="The Order Object" %}
@@ -20,15 +20,15 @@
 {% tab title="Order Object Example" %}
 ```yaml
 {
-	"order_id": "LDMYZ5mtmsCa",
-	"payment_id": "D-4-f77392b1-4ff0-477c-749ac9a237b5",
-	"currency": "USD",
-	"amount": 382.00,
-	"created_date": "2018-07-12T15:20:02.000+0000",
-	"approved_date": "2018-07-12T15:20:02.000+0000",
-	"status": "AUTHORIZED",
-	"status_code": "600",
-	"status_detail": "The payment was authorized."
+    "order_id": "LDMYZ5mtmsCa",
+    "payment_id": "D-4-f77392b1-4ff0-477c-749ac9a237b5",
+    "currency": "USD",
+    "amount": 382.00,
+    "created_date": "2018-07-12T15:20:02.000+0000",
+    "approved_date": "2018-07-12T15:20:02.000+0000",
+    "status": "AUTHORIZED",
+    "status_code": "600",
+    "status_detail": "The payment was authorized."
 }
 ```
 {% endtab %}
@@ -76,7 +76,7 @@ ID given by the merchant in their system.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Example Request
+## Example Request
 
 ```bash
 $ curl \
@@ -86,6 +86,4 @@ $ curl \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/orders/43343463432
 ```
-
-
 

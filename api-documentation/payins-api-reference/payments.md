@@ -243,7 +243,7 @@ Payer Object
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=false %}
-Card Object   
+Card Object  
 **Required only for** `CARD` **payment type.**
 {% endapi-method-parameter %}
 
@@ -313,12 +313,12 @@ Example Response
 {% tab title="Payer Object" %}
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `name` | String  | User's full name. **Required.** |
-| `email` | String  | User’s email address. **Required.** |
-| `birth_date` | String  | User’s birthdate \(DD-MM-YYYY\). Optional. |
-| `phone` | String  | User’s phone. Optional. |
-| `document` | String  | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
-| `user_reference` | String  | Unique user id at the merchant side. Optional. |
+| `name` | String | User's full name. **Required.** |
+| `email` | String | User’s email address. **Required.** |
+| `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
+| `phone` | String | User’s phone. Optional. |
+| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
+| `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
 {% endtab %}
 
@@ -372,10 +372,10 @@ Example Response
 For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../products/smart-fields/). For recurring payments, first [save the card](saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
 
 {% hint style="warning" %}
-**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:      
-https://api.dlocal.com/**secure\_payments**
+**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
+[https://api.dlocal.com/\*\*secure\_payments\*\*](https://api.dlocal.com/**secure_payments**)
 
-Card payments with a `card_id` or `token` should use the endpoint: https://api.dlocal.com/**payments**
+Card payments with a `card_id` or `token` should use the endpoint: [https://api.dlocal.com/\*\*payments\*\*](https://api.dlocal.com/**payments**)
 {% endhint %}
 
 {% tabs %}
@@ -516,7 +516,7 @@ curl -X POST \
     "payer":{
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
-        "document" : "53033315550"
+        "document" : "53033315550",
         "user_reference": "12345",
         "address": {
             "state"  : "Rio de Janeiro",

@@ -4,7 +4,7 @@
 
 Bellow are the allow documents for each country that need to be entered in the [Payer Object. ](payments.md#the-payer-object)
 
-Some countries might require more than one document \(eg: India\). In that case, other required documents  need to be included in additional `document[#]` parameters.
+Some countries might require more than one document \(eg: India\). In that case, other required documents need to be included in additional `document[#]` parameters.
 
 {% tabs %}
 {% tab title="Example Payer Object: Brazil" %}

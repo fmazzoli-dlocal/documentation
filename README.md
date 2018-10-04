@@ -15,3 +15,4 @@ On this site you'll find the [API Reference of dLocal's API 2.0](api-documentati
 
 **Looking for the documentation of dLocal's API 1.0?** You can find it [here](https://dlocal.com/developers).
 {% endhint %}
+
