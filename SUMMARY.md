@@ -12,6 +12,7 @@
 * [Smart Fields](products/smart-fields/README.md)
   * [Smart Fields Setup Guide](products/smart-fields/fields-setup-guide.md)
   * [dlocal.js Reference](products/smart-fields/dlocal.js-reference.md)
+  * [Examples of Smart Fields](https://dlocal.github.io/smart-fields-examples/)
 
 ## API Documentation
 
