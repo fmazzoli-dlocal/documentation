@@ -8,15 +8,9 @@ This provides you with the ability to customize the look and feel of your web pa
 
 ## Fully Customizable Checkouts
 
-![](https://github.com/fmazzoli-dlocal/documentation/tree/9e55a801a26ef2238054324fcdec402ab93d797d/.gitbook/assets/image.png)
+![](../../.gitbook/assets/image%20%284%29.png)
 
 Smart Fields defer as much of the styling of field components to you as possible. The layout, width, height, and outer styling \(`border`, `box-shadow`, `background`, etc.\) are left **completely in your control**.
-
-{% hint style="info" %}
-Currently only the all-in-one `card` Field is available \(you can try it below\). This design is aligned with the latest trends in checkout design.
-
-Separate Smart Fields for CC Number, Expiration Data and CVV will be coming in the next few weeks.
-{% endhint %}
 
 Below is a live demo of our all-in-one `card`Field. Open on CodePen to make changes to the code in real time:
 
