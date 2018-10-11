@@ -16,6 +16,10 @@ Make a Refund
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="order\_refund\_id" type="string" required=false %}
+Refund id given by the merchant in their system.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id\_payment" type="string" required=true %}
 The payment id
 {% endapi-method-parameter %}
@@ -74,6 +78,7 @@ User's bank branch name.
 {
    "id" : "REF42342",
    "id_payment" : "PAY4334346343",
+   "order_refund_id" : "7625347623",
    "notification_url" : "http://some.url",
    "amount" : 803.04,
    "currency" : "BRL",
@@ -100,11 +105,12 @@ $ curl -X POST \
     https://api.dlocal.com/refunds
 ```
 
-### Example Request Body
+#### Example Request Body
 
 ```yaml
 {
     "id_payment" : "PAY4334346343",
+    "order_refund_id" : "7625347623",
     "amount": 100.00,
     "currency": "USD",
     "notification_url": "http://some.url"
@@ -121,6 +127,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | :--- | :--- | :--- |
 | `id` | String | The refund id. |
 | `payment_id` | String | The payment id. |
+| `order_refund_id` | String | The refund id given by the merchant in their system. |
 | `amount` | Positive Float | The amount of the refund. |
 | `amount_refunded` | Positive Float | The refunded amount. |
 | `currency` | String | The currency code of the refund. |
@@ -143,6 +150,7 @@ POST**:** _{refund.notification\_url}_
 {
     "id" : "REF42342",
     "payment_id" : "PAY245235",
+    "order_refund_id" : "7625347623",
     "amount" : 100.00,
     "amount_refunded" : 100.00,
     "currency" : "USD",
@@ -153,7 +161,7 @@ POST**:** _{refund.notification\_url}_
 }
 ```
 
-{% api-method method="get" host=" https://api.dlocal.com/refunds/" path="{refund\_id}" %}
+{% api-method method="get" host=" https://api.dlocal.com/refunds/" path="{id}" %}
 {% api-method-summary %}
 Retrieve a Refund
 {% endapi-method-summary %}
@@ -165,7 +173,7 @@ Retrieve information about a refund.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="refund\_id" type="string" required=true %}
+{% api-method-parameter name="id" type="string" required=true %}
 The refund id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -181,6 +189,7 @@ The refund id
 {
    "id" : "REF42342",
    "id_payment" : "PAY4334346343",
+   "order_refund_id" : "7625347623",
    "notification_url" : "http://some.url",
    "amount" : 803.04,
    "currency" : "BRL",
@@ -207,7 +216,7 @@ $ curl \
     https://api.dlocal.com/refunds/REF42342
 ```
 
-{% api-method method="get" host="https://api.dlocal.com/refunds/" path="{refund\_id}/status" %}
+{% api-method method="get" host="https://api.dlocal.com/refunds/" path="{id}/status" %}
 {% api-method-summary %}
 Retrieve a Refund Status
 {% endapi-method-summary %}
@@ -219,7 +228,7 @@ Retrieve information about the status of a refund.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="refund\_id" type="string" required=true %}
+{% api-method-parameter name="id" type="string" required=true %}
 The refund id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}

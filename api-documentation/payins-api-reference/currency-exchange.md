@@ -7,6 +7,8 @@
 | `from` | String | Origin currency code |
 | `to` | String | Destination currency code |
 | `rate` | Decimal | Ratio of conversion from `from` currency to `to` currency. |
+| `exchange_code` | String | Unique identifier of the exchange rate. |
+| `expiration` | Datetime \(ISO-8601\) | Date and time when the exchange\_code expires. |
 
 {% api-method method="get" host="https://api.dlocal.com/currency-exchanges?" path="from={from}&to={to}" %}
 {% api-method-summary %}
@@ -40,7 +42,9 @@ Example Response
 {
     "from": "USD",
     "to": "BRL",
-    "rate": 3.33
+    "rate": 3.33,
+    "exchange_code": "FX-j2g34t234",
+    "expiration": "2018-09-28T15:56:33Z"
 }
 ```
 {% endapi-method-response-example %}

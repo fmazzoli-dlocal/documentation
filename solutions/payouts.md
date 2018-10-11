@@ -7,4 +7,3 @@ Typical settlement times are 24-48 hours. That means your payouts recipients can
 ![](../.gitbook/assets/image%20%285%29.png)
 
 To learn more on how to start sending funds to your partners in emerging countries, visit our Payouts API Reference:
-
