@@ -10,10 +10,10 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 ## The dLocal Object
 
-* \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
-* \*\*\*\*[**dlocal.create\(\)**](dlocal.js-reference.md#the-field-object)\*\*\*\*
-* \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
-* \*\*\*\*[**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)\*\*\*\*
+* [**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)
+* [**dlocal.create\(\)**](dlocal.js-reference.md#the-field-object)
+* [**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)
+* [**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)
 
 ### `dlocal.fields([options])`
 
@@ -441,4 +441,3 @@ dLocal.js strives to support all recent versions of major browsers. For the sake
 * We require TLS 1.2 to be supported by the browser.
 
 If you have an issue with dLocal.js on a specific browser, please contact us so we can improve its support.
-
