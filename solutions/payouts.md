@@ -4,6 +4,7 @@ Pay your partners in their local currency by depositing the funds directly to th
 
 Typical settlement times are 24-48 hours. That means your payouts recipients can access the funds quickly and securely using the financial infrastructure on which they rely daily.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image-5.png)
 
 To learn more on how to start sending funds to your partners in emerging countries, visit our Payouts API Reference:
+

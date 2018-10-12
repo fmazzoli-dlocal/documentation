@@ -89,11 +89,11 @@ This method takes two arguments.
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>address_line1 </code>
+        <p><code>address_line1</code>
         </p>
-        <p><code>address_line2 </code>
+        <p><code>address_line2</code>
         </p>
-        <p><code>address_city address_state </code>
+        <p><code>address_city address_state</code>
         </p>
         <p><code>address_zip address_country</code>
         </p>
@@ -135,8 +135,8 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | `field` | SmartField | The Smart Field you wish to create the installments plan, if you are not using a `card` Field we recommend to use `number` Field to create installments, but any of the Fields will work. |
-| `amount` | Positive Float |  The amount of the installments plan. |
-| `currency`  | String | The currency of the installments plan. |
+| `amount` | Positive Float | The amount of the installments plan. |
+| `currency` | String | The currency of the installments plan. |
 {% endtab %}
 
 {% tab title="Installments Plan Object" %}
@@ -208,7 +208,7 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 
 | **Type** | **Description** |
 | :--- | :--- |
-| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc.  |
+| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. |
 | `pan` | The card‘s number. |
 | `expiration` | The card‘s expiration date. |
 | `cvv` | The card‘s CVC number. |
@@ -282,7 +282,6 @@ All Smart Fields accept a common set of options, and then some Field-specific op
       <td style="text-align:left">style</td>
       <td style="text-align:left">Object (Optional)</td>
       <td style="text-align:left">
-        <p></p>
         <p>Customize appearance using CSS properties. Style is specified as an object
           for any of the variants below.</p>
         <ul>
@@ -336,7 +335,7 @@ All Smart Fields accept a common set of options, and then some Field-specific op
       </td>
     </tr>
   </tbody>
-</table>#### Options available exclusively to the card or number Field
+</table>#### Options available exclusively to the card or number Field:
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -514,7 +513,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
         is <b><code>true</code></b> if the field is autofilled.</td>
     </tr>
   </tbody>
-</table>### Input validation
+</table>### Input Validation
 
 Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
 
@@ -606,3 +605,4 @@ dLocal.js strives to support all recent versions of major browsers. For the sake
 * We require TLS 1.2 to be supported by the browser.
 
 If you have an issue with dLocal.js on a specific browser, please contact us so we can improve its support.
+
