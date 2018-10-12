@@ -94,7 +94,7 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 ```
 
 {% tabs %}
-{% tab title="Installments Arguments" %}
+{% tab title="Installments Arguments!" %}
 <table>
   <thead>
     <tr>
