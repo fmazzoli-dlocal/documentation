@@ -14,7 +14,7 @@ You can make use of Smart Fields \(our pre-built UI components\) to create a pay
 
 Below is a live demo of the `card`Smart Field. Try changing the width of the browser to see how the Field adapts. You can make changes to the code on CodePen:
 
-{% embed data="{\"url\":\"https://codepen.io/martindlocal/pen/MBeJdN\",\"type\":\"rich\",\"title\":\"Fields-simple-example\",\"description\":\"...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/2175964.MBeJdN.small.b9f579c0-4a55-4e46-a526-344e3d450013.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/martindlocal/embed/preview/MBeJdN?height=300&slug-hash=MBeJdN&default-tabs=css,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\\"https://codepen.io/martindlocal/embed/preview/MBeJdN?height=300&amp;slug-hash=MBeJdN&amp;default-tabs=css,result&amp;host=https://codepen.io&amp;embed-version=2\\\" style=\\\"border: 0; width: 100%; height: 300px;\\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Card Smart Field \(below\) matching the style of the merchant\'s form\"}" %}
+{% embed url="https://codepen.io/martindlocal/pen/MBeJdN" caption="Card Smart Field \(below\) matching the style of the merchant\'s form" %}
 
 Creating a custom payment form with Smart Fields requires five steps:
 
