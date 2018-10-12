@@ -20,10 +20,10 @@ However you’re using dlocal.js, you always begin by including the library and 
 Create pre-built UI components to collect payment information with [Smart Fields](./) \(simply referred to as `fields`in the API\).
 
 ```javascript
-var fields = dlocal.fields({
-            locale: 'en',
-            country: 'BR'
-        });
+var fields = dlocal.fields({ 
+    locale: 'en',
+    country: 'BR'
+});
 ```
 
 This method creates an instance of `fields`, which manages a group of Smart Fields. It receives an options object. Available options are documented below:
@@ -208,7 +208,7 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 
 | **Type** | **Description** |
 | :--- | :--- |
-| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. **\(Recommended\)** |
+| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc.  |
 | `pan` | The card‘s number. |
 | `expiration` | The card‘s expiration date. |
 | `cvv` | The card‘s CVC number. |
@@ -343,11 +343,60 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 | iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
 | hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
 
+## The Field Object
+
+* [**field.mount\(\)**](dlocal.js-reference.md#field-mount-domelement)
+* [**field.on\(\)**](dlocal.js-reference.md#field-on-event-handler)
+* [**Other methods**](dlocal.js-reference.md#other-methods)
+  * blur\(\)
+  * clear\(\)
+  * destroy\(\)
+  * focus\(\)
+  * unmount\(\)
+  * update\(\)
+
+### `field.mount(domElement)`
+
+You need to create a container DOM element to mount a Smart Field. If the container DOM element has a label, the Field is automatically focused when its label is clicked. There are two ways to do this:
+
+1. Mount the instance within a `<label>`.
+
+   ```markup
+   <label>Card
+     <div id="card-field"></div>
+   </label>
+   ```
+
+2. Create a `<label>` with a `for` attribute, referencing the ID of your container.
+
+   ```markup
+   <label for="card-field">Card</label>
+   <div id="card-field"></div>
+   ```
+
+The `field.mount()` method attaches your Field to the DOM. `field.mount()` accepts either a CSS Selector \(e.g., `'#card-field'`\) or a DOM element.
+
+```javascript
+cardField.mount('#card-field');
+```
+
+### `field.on(event, handler)`
+
+The only way to communicate with your Smart Field is by listening to an `event`. Fields might emit any of the events below. All events have a payload object that has an `fieldType` property with the [type](https://stripe.com/docs/stripe-js/reference#element-types) of the Field that emitted the event.
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">blur</th>
-      <th style="text-align:left">
+      <th style="text-align:left"><b>Event</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">blur</td>
+      <td style="text-align:left">
         <p>Triggered when any of the Fields elements loses focus. The event payload
           always contains certain keys:</p>
         <ul>
@@ -372,15 +421,11 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </th>
+      </td>
     </tr>
-  </thead>
-  <tbody></tbody>
-</table><table>
-  <thead>
     <tr>
-      <th style="text-align:left">focus</th>
-      <th style="text-align:left">
+      <td style="text-align:left">focus</td>
+      <td style="text-align:left">
         <p>Triggered when any of the Fields elements gains focus. The event payload
           always contains certain keys:</p>
         <ul>
@@ -403,31 +448,34 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </th>
+      </td>
     </tr>
-  </thead>
-  <tbody></tbody>
-</table>| error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`, `code` and `type`, set to `validation_error`. |
-| :--- | :--- |
-
-
-| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean - key, which is `true` when the Field is complete and well-formed, and `false` otherwise. |
-| :--- | :--- |
-
-
-| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
-| :--- | :--- |
-
-
-| ready | Triggered when the Field is mounted and loaded in the DOM. |
-| :--- | :--- |
-
-
-<table>
-  <thead>
     <tr>
-      <th style="text-align:left">change</th>
-      <th style="text-align:left">
+      <td style="text-align:left">error</td>
+      <td style="text-align:left">Triggered when a client-side validation error is detected. The event payload
+        always contains <code>error</code> key which contains the current validation
+        error. Comprised of: <code>message</code>, <code>code</code> and <code>type</code>,
+        set to <code>validation_error</code>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">complete</td>
+      <td style="text-align:left">Triggered when the Field changes it's complete status. The event payload
+        always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
+        the Field is complete and well-formed, and <code>false</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">empty</td>
+      <td style="text-align:left">Triggered when the Field changes it's empty status. The event payload
+        always contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
+        the Field is empty, and <code>false</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">ready</td>
+      <td style="text-align:left">Triggered when the Field is mounted and loaded in the DOM.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">change</td>
+      <td style="text-align:left">
         <p>Triggered when any of the following values changes on the Field. The event
           payload always contains certain keys, in addition to some Field-specific
           keys.</p>
@@ -449,17 +497,24 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </th>
+      </td>
     </tr>
-  </thead>
-  <tbody></tbody>
-</table>| brand | Triggered when the Field detects a change in the card brand. This event can only be listened in `number` and `card` Smart Fields \(it wont work in `cvv` and `expiration` Fields\). The event payload always contains `brand` - String - key, which has the name of the detected brand if any, `null` otherwise. |
-| :--- | :--- |
-
-
-| autofilled | Triggered when the Field detects a change in it's autofilled status. The event payload always contains `autofilled` - Boolean - key, which is **`true`** if the field is autofilled. |
-| :--- | :--- |
-
+    <tr>
+      <td style="text-align:left">brand</td>
+      <td style="text-align:left">Triggered when the Field detects a change in the card brand. This event
+        can only be listened in <code>number</code> and <code>card</code> Smart Fields
+        (it wont work in <code>cvv</code> and <code>expiration</code> Fields). The
+        event payload always contains <code>brand</code> - String - key, which has
+        the name of the detected brand if any, <code>null</code> otherwise.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">autofilled</td>
+      <td style="text-align:left">Triggered when the Field detects a change in it's autofilled status. The
+        event payload always contains <code>autofilled</code> - Boolean - key, which
+        is <b><code>true</code></b> if the field is autofilled.</td>
+    </tr>
+  </tbody>
+</table>### Input validation
 
 Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
 
