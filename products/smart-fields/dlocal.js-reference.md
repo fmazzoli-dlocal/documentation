@@ -10,10 +10,10 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 ## The dLocal Object
 
-* [**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)
-* [**dlocal.create\(\)**](dlocal.js-reference.md#the-field-object)
-* [**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)
-* [**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)
+* [dlocal.fields\(\)](dlocal.js-reference.md#dlocal-fields-options)
+* [dlocal.create\(\)](dlocal.js-reference.md#the-field-object)
+* [dlocal.createToken\(\)](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)
+* [dlocal.createInstallmentsPlan\(\)](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)
 
 ### `dlocal.fields([options])`
 
@@ -194,7 +194,7 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 
 ## The Fields Object
 
-* [**fields.create\(\)**](dlocal.js-reference.md#fields-create-type-options)
+* [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options)
 
 ### `fields.create(type, options)`
 
@@ -345,9 +345,9 @@ All Smart Fields accept a common set of options, and then some Field-specific op
 
 ## The Field Object
 
-* [**field.mount\(\)**](dlocal.js-reference.md#field-mount-domelement)
-* [**field.on\(\)**](dlocal.js-reference.md#field-on-event-handler)
-* [**Other methods**](dlocal.js-reference.md#other-methods)
+* [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement)
+* [field.on\(\)](dlocal.js-reference.md#field-on-event-handler)
+* [Other methods](dlocal.js-reference.md#other-methods)
   * blur\(\)
   * clear\(\)
   * destroy\(\)
