@@ -68,17 +68,53 @@ This method takes two arguments.
 * `field`, the Smart Field you wish to tokenize data from. If applicable, the Smart Field pulls data from other Smart Fields you’ve created on the same instance of [`fields`](dlocal.js-reference.md#dlocal-fields-options) to tokenize.
 * `tokenData`, an object containing additional payment information you might have collected. In the case of cards, it can contain any of the following parameters:
 
-| **Parameter** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `name` | String **\(Required\)** | Cardholder name |
-| `address_line1 address_line2 address_city address_state address_zip address_country` | String \(Optional\) | Fields for billing address information. The **address\_country** field is a two character country code \(for example, `'BR'`\). |
-| `currency` | String \(Optional\) | Currency of the transaction |
-
-`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter</b>
+      </th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>name</code>
+      </td>
+      <td style="text-align:left">String <b>(Required)</b>
+      </td>
+      <td style="text-align:left">Cardholder name</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>address_line1 </code>
+        </p>
+        <p><code>address_line2 </code>
+        </p>
+        <p><code>address_city address_state </code>
+        </p>
+        <p><code>address_zip address_country</code>
+        </p>
+      </td>
+      <td style="text-align:left">String (Optional)</td>
+      <td style="text-align:left">
+        <p>Fields for billing address information.</p>
+        <p>The <b>address_country</b> field is a two character country code (for example, <code>&apos;BR&apos;</code>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>currency</code>
+      </td>
+      <td style="text-align:left">String (Optional)</td>
+      <td style="text-align:left">Currency of the transaction</td>
+    </tr>
+  </tbody>
+</table>`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
 * `result.token`: a Token was created successfully.
 * `result.error`: there was an error. This includes client-side validation errors.
-
 
 ### `dlocal.createInstallmentsPlan(field, amount, currency)`
 
@@ -96,41 +132,11 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 
 {% tabs %}
 {% tab title="Installments Arguments" %}
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>field</code>
-      </td>
-      <td style="text-align:left">SmartField</td>
-      <td style="text-align:left">
-        <p></p>
-        <p></p>
-        <p>The Smart Field you wish to create the installments plan, if you are not
-          using a <code>card</code> Field we recommend to use <code>number</code> Field
-          to create installments, but any of the Fields will work.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>amount</code>
-      </td>
-      <td style="text-align:left">Positive Float</td>
-      <td style="text-align:left">The amount of the installments plan.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>currency</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">The currency of the installments plan.</td>
-    </tr>
-  </tbody>
-</table>
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `field` | SmartField | The Smart Field you wish to create the installments plan, if you are not using a `card` Field we recommend to use `number` Field to create installments, but any of the Fields will work. |
+| `amount` | Positive Float |  The amount of the installments plan. |
+| `currency`  | String | The currency of the installments plan. |
 {% endtab %}
 
 {% tab title="Installments Plan Object" %}
@@ -188,9 +194,9 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 
 ## The Fields Object
 
-* \*\*\*\*[**fields.create\(\)**](dlocal.js-reference.md#fields-create-type-options)\*\*\*\*
+* [**fields.create\(\)**](dlocal.js-reference.md#fields-create-type-options)
 
-### `fields.create(type, options)` 
+### `fields.create(type, options)`
 
 ```javascript
 var card = fields.create('card');
@@ -198,20 +204,16 @@ var card = fields.create('card');
 
 This method creates an instance of a specific Smart Field. It takes the`type` of Smart Field to create as well as an `options` object.
 
-### **Smart Field Types** 
+### **Smart Field Types**
 
 | **Type** | **Description** |
 | :--- | :--- |
 | `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc. **\(Recommended\)** |
-| `pan` | The card‘s number.  |
-| `expiration` | The card‘s expiration date.  |
-| `cvv` | The card‘s CVC number.  |
+| `pan` | The card‘s number. |
+| `expiration` | The card‘s expiration date. |
+| `cvv` | The card‘s CVC number. |
 
-{% hint style="info" %}
-We highly recommend to use the `card` Field, as it provides a better user experience.
-{% endhint %}
-
-### **Field Options** 
+### **Field Options**
 
 All Smart Fields accept a common set of options, and then some Field-specific options.
 
@@ -231,7 +233,7 @@ All Smart Fields accept a common set of options, and then some Field-specific op
   <tbody>
     <tr>
       <td style="text-align:left">placeholder</td>
-      <td style="text-align:left">String or obj</td>
+      <td style="text-align:left">String or Object</td>
       <td style="text-align:left">
         <p>Set custom placeholder for Field. For <code>number</code>, <code>expiration</code> or <code>cvv</code> Fields
           this option is a <code>string</code> with the corresponding placeholder value,
@@ -280,6 +282,7 @@ All Smart Fields accept a common set of options, and then some Field-specific op
       <td style="text-align:left">style</td>
       <td style="text-align:left">Object (Optional)</td>
       <td style="text-align:left">
+        <p></p>
         <p>Customize appearance using CSS properties. Style is specified as an object
           for any of the variants below.</p>
         <ul>
@@ -333,21 +336,18 @@ All Smart Fields accept a common set of options, and then some Field-specific op
       </td>
     </tr>
   </tbody>
-</table>\#\#\#\# \*\*Options available exclusively to the \`card\` or \`number\` Field:\*\* \| \*\*Option\*\* \| \*\*Type\*\* \| \*\*Description\*\* \| \| :--- \| :--- \| :--- \| \| iconStyle \| String \\(Optional\\) \| Appearance of the icon in the Field. Either \`'solid'\` or \`'default'\`. \| \| hideIcon \| Boolean \\(Optional\\) \| Hides the icon in the Field. Default is \`false\`. \| \#\# The Field Object \* \\*\\*\\*\\*\[\*\*field.mount\\(\\)\*\*\]\(dlocal.js-reference.md\#field-mount-domelement\)\\*\\*\\*\\* \* \\*\\*\\*\\*\[\*\*field.on\\(\\)\*\*\]\(dlocal.js-reference.md\#field-on-event-handler\)\\*\\*\\*\\* \* \\*\\*\\*\\*\[\*\*Other methods\*\*\]\(dlocal.js-reference.md\#other-methods\)\\*\\*\\*\\* \* blur\\(\\) \* clear\\(\\) \* destroy\\(\\) \* focus\\(\\) \* unmount\\(\\) \* update\\(\\) \#\#\# \`field.mount\(domElement\)\` You need to create a container DOM element to mount a Smart Field. If the container DOM element has a label, the Field is automatically focused when its label is clicked. There are two ways to do this: 1. Mount the instance within a \`\`. \`\`\`markup Card \`\`\` 2. Create a \`\` with a \`for\` attribute, referencing the ID of your container. \`\`\`markup Card \`\`\` The \`field.mount\(\)\` method attaches your Field to the DOM. \`field.mount\(\)\` accepts either a CSS Selector \\(e.g., \`'\#card-field'\`\\) or a DOM element. \`\`\`javascript cardField.mount\('\#card-field'\); \`\`\` \#\#\# \`field.on\(event, handler\)\` The only way to communicate with your Smart Field is by listening to an \`event\`. Fields might emit any of the events below. All events have a payload object that has an \`fieldType\` property with the \[type\]\(https://stripe.com/docs/stripe-js/reference\#element-types\) of the Field that emitted the event.
+</table>#### Options available exclusively to the card or number Field
+
+| **Option** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| iconStyle | String \(Optional\) | Appearance of the icon in the Field. Either `'solid'` or `'default'`. |
+| hideIcon | Boolean \(Optional\) | Hides the icon in the Field. Default is `false`. |
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Event</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">blur</td>
-      <td style="text-align:left">
+      <th style="text-align:left">blur</th>
+      <th style="text-align:left">
         <p>Triggered when any of the Fields elements loses focus. The event payload
           always contains certain keys:</p>
         <ul>
@@ -372,11 +372,15 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table><table>
+  <thead>
     <tr>
-      <td style="text-align:left">focus</td>
-      <td style="text-align:left">
+      <th style="text-align:left">focus</th>
+      <th style="text-align:left">
         <p>Triggered when any of the Fields elements gains focus. The event payload
           always contains certain keys:</p>
         <ul>
@@ -399,34 +403,31 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </td>
+      </th>
     </tr>
+  </thead>
+  <tbody></tbody>
+</table>| error | Triggered when a client-side validation error is detected. The event payload always contains `error` key which contains the current validation error. Comprised of: `message`, `code` and `type`, set to `validation_error`. |
+| :--- | :--- |
+
+
+| complete | Triggered when the Field changes it's complete status. The event payload always contains`complete` - Boolean - key, which is `true` when the Field is complete and well-formed, and `false` otherwise. |
+| :--- | :--- |
+
+
+| empty | Triggered when the Field changes it's empty status. The event payload always contains `empty` - `Boolean` - key, which is `true` when the Field is empty, and `false` otherwise. |
+| :--- | :--- |
+
+
+| ready | Triggered when the Field is mounted and loaded in the DOM. |
+| :--- | :--- |
+
+
+<table>
+  <thead>
     <tr>
-      <td style="text-align:left">error</td>
-      <td style="text-align:left">Triggered when a client-side validation error is detected. The event payload
-        always contains <code>error</code> key which contains the current validation
-        error. Comprised of: <code>message</code>, <code>code</code> and <code>type</code>,
-        set to <code>validation_error</code>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">complete</td>
-      <td style="text-align:left">Triggered when the Field changes it's complete status. The event payload
-        always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
-        the Field is complete and well-formed, and <code>false</code> otherwise.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">empty</td>
-      <td style="text-align:left">Triggered when the Field changes it's empty status. The event payload
-        always contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
-        the Field is empty, and <code>false</code> otherwise.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">ready</td>
-      <td style="text-align:left">Triggered when the Field is mounted and loaded in the DOM.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">change</td>
-      <td style="text-align:left">
+      <th style="text-align:left">change</th>
+      <th style="text-align:left">
         <p>Triggered when any of the following values changes on the Field. The event
           payload always contains certain keys, in addition to some Field-specific
           keys.</p>
@@ -448,24 +449,17 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
             Fields is autofilled.</li>
         </ul>
-      </td>
+      </th>
     </tr>
-    <tr>
-      <td style="text-align:left">brand</td>
-      <td style="text-align:left">Triggered when the Field detects a change in the card brand. This event
-        can only be listened in <code>number</code> and <code>card</code> Smart Fields
-        (it wont work in <code>cvv</code> and <code>expiration</code> Fields). The
-        event payload always contains <code>brand</code> - String - key, which has
-        the name of the detected brand if any, <code>null</code> otherwise.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">autofilled</td>
-      <td style="text-align:left">Triggered when the Field detects a change in it's autofilled status. The
-        event payload always contains <code>autofilled</code> - Boolean - key, which
-        is <b><code>true</code></b> if the field is autofilled.</td>
-    </tr>
-  </tbody>
-</table>### Input validation
+  </thead>
+  <tbody></tbody>
+</table>| brand | Triggered when the Field detects a change in the card brand. This event can only be listened in `number` and `card` Smart Fields \(it wont work in `cvv` and `expiration` Fields\). The event payload always contains `brand` - String - key, which has the name of the detected brand if any, `null` otherwise. |
+| :--- | :--- |
+
+
+| autofilled | Triggered when the Field detects a change in it's autofilled status. The event payload always contains `autofilled` - Boolean - key, which is **`true`** if the field is autofilled. |
+| :--- | :--- |
+
 
 Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
 
