@@ -2,7 +2,7 @@
 
 ### Including dlocal.js
 
-However you’re using dlocal.js, you always begin by including the library and setting your API key. To get started, include this script on your pages—it should always be loaded directly from **https://js.dlocal.com.** For testing purposes, you can use **https://js-sandbox.dlocal.com.**
+However you’re using dlocal.js, you always begin by including the library and setting your API key. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com)**.** For testing purposes, you can use [https://js-sandbox.dlocal.com](https://js-sandbox.dlocal.com)**.**
 
 ```text
 <script src="https://js.dlocal.com/"></script>
@@ -10,23 +10,23 @@ However you’re using dlocal.js, you always begin by including the library and 
 
 ## The dLocal Object
 
-* \*\*\*\*[**dlocal.fields\(\)**](dlocal.js-reference.md#dlocal-fields-options)\*\*\*\*
-* \*\*\*\*[**dlocal.create\(\)**](dlocal.js-reference.md#the-field-object)\*\*\*\*
-* \*\*\*\*[**dlocal.createToken\(\)**](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)\*\*\*\*
-* \*\*\*\*[**dlocal.createInstallmentsPlan\(\)**](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)\*\*\*\*
+* [dlocal.fields\(\)](dlocal.js-reference.md#dlocal-fields-options)
+* [dlocal.create\(\)](dlocal.js-reference.md#the-field-object)
+* [dlocal.createToken\(\)](dlocal.js-reference.md#dlocal-createtoken-field-tokendata)
+* [dlocal.createInstallmentsPlan\(\)](dlocal.js-reference.md#dlocal-createinstallmentsplan-field-amount-currency)
 
-### `dlocal.fields([`_`options`_`])`
+### `dlocal.fields([options])`
 
 Create pre-built UI components to collect payment information with [Smart Fields](./) \(simply referred to as `fields`in the API\).
 
 ```javascript
 var fields = dlocal.fields({
-            locale: 'en',
-            country: 'BR'
-        });
+    locale: 'en',
+    country: 'BR'
+});
 ```
 
-This method creates an instance of `fields`, which manages a group of Smart Fields. It receives an  options object. Available options are documented below:
+This method creates an instance of `fields`, which manages a group of Smart Fields. It receives an options object. Available options are documented below:
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -36,7 +36,7 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 
 | **Parameter** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `cssSrc` | String | A relative or absolute URL pointing to a CSS file with [@font-face](https://developer.mozilla.org/en/docs/Web/CSS/@font-face) definitions, for example:  `"https://fonts.googleapis.com/css?family=Open+Sans"`  |
+| `cssSrc` | String | A relative or absolute URL pointing to a CSS file with [@font-face](https://developer.mozilla.org/en/docs/Web/CSS/@font-face) definitions, for example:  `"https://fonts.googleapis.com/css?family=Open+Sans"` |
 
 #### The Font object
 
@@ -51,7 +51,7 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 
 ### `dlocal.createToken(field, tokenData)`
 
-Use `dlocal.createToken()` to convert information collected by Smart Fields into a  token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
+Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
 
 ```javascript
 dlocal.createToken(card,tokenData)
@@ -68,16 +68,154 @@ This method takes two arguments.
 * `field`, the Smart Field you wish to tokenize data from. If applicable, the Smart Field pulls data from other Smart Fields you’ve created on the same instance of [`fields`](dlocal.js-reference.md#dlocal-fields-options) to tokenize.
 * `tokenData`, an object containing additional payment information you might have collected. In the case of cards, it can contain any of the following parameters:
 
-| **Parameter** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `name` | String **\(Required\)** | Cardholder name |
-| `address_line1 address_line2 address_city address_state address_zip address_country` | String \(Optional\) | Fields for billing address information. The **address\_country** field is a two character country code \(for example, `'BR'`\). |
-| `currency` | String \(Optional\) | Currency of the transaction  |
-
-`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Parameter</b>
+      </th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>name</code>
+      </td>
+      <td style="text-align:left">String <b>(Required)</b>
+      </td>
+      <td style="text-align:left">Cardholder name</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>address_line1 </code>
+        </p>
+        <p><code>address_line2 </code>
+        </p>
+        <p><code>address_city address_state </code>
+        </p>
+        <p><code>address_zip address_country</code>
+        </p>
+      </td>
+      <td style="text-align:left">String (Optional)</td>
+      <td style="text-align:left">
+        <p>Fields for billing address information.</p>
+        <p>The <b>address_country</b> field is a two character country code (for example, <code>&apos;BR&apos;</code>).</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>currency</code>
+      </td>
+      <td style="text-align:left">String (Optional)</td>
+      <td style="text-align:left">Currency of the transaction</td>
+    </tr>
+  </tbody>
+</table>`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
 * `result.token`: a Token was created successfully.
 * `result.error`: there was an error. This includes client-side validation errors.
+
+### `dlocal.createInstallmentsPlan(field, amount, currency)`
+
+Use `dlocal.createInstallmentsPlan(field, amount, currency)`to specify an installment plan, to guarantee the surcharge per installment that will be charged.
+
+```javascript
+dlocal.createInstallmentsPlan(card, amount, currency)
+.then(function(result) {
+  // Handle result.installments
+}
+.catch(function(result) {
+  // Handle result.error
+}););
+```
+
+{% tabs %}
+{% tab title="Installments Arguments" %}
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `field` | SmartField | The Smart Field you wish to create the installments plan, if you are not using a `card` Field we recommend to use `number` Field to create installments, but any of the Fields will work. |
+| `amount` | Positive Float |  The amount of the installments plan. |
+| `currency`  | String | The currency of the installments plan. |
+{% endtab %}
+
+{% tab title="Installments Plan Object" %}
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `id` | String | The installments plan id. |
+| `country` | String | The country of the installments plan \(this is the same you specified when you created the field\). |
+| `currency` | String | The currency of the installments plan. |
+| `bin` | String | The credit card bin. |
+| `amount` | Positive Float | The amount of the installments plan. |
+| `installments` | ​[Installment Object](https://docs.dlocal.com/api-documentation/payins-api-reference/installments#the-installment-object)\[ \] | The installments plan information |
+{% endtab %}
+
+{% tab title="Installment Object" %}
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `id` | String | The installment id. |
+| `installment_amount` | Positive Float | Installment amount. |
+| `total_amount` | Positive Float | Installments total amount. |
+| `installments` | Integer | Number of installments. |
+{% endtab %}
+
+{% tab title="Example Installments Plan Object" %}
+```javascript
+{
+    "id" : "INS54434",
+    "country" : "BR",
+    "currency" : "BRL",
+    "bin" : "435921",
+    "amount": 1500,
+    "installments" : [
+        {
+            "id" : "INS54434-3",
+            "installment_amount" : 550,
+            "installments" : 3,
+            "total_amount" : 1650
+        },
+        {
+            "id" : "INS54434-6",
+            "installment_amount" : 350,
+            "installments" : 6,
+            "total_amount" : 2100
+        },
+        {
+            "id" : "INS54434-8",
+            "installment_amount" : 250,
+            "installments" : 12,
+            "total_amount" : 3000
+        }
+    ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## The Fields Object
+
+* [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options)
+
+### `fields.create(type, options)`
+
+```javascript
+var card = fields.create('card');
+```
+
+This method creates an instance of a specific Smart Field. It takes the`type` of Smart Field to create as well as an `options` object.
+
+### **Smart Field Types**
+
+| **Type** | **Description** |
+| :--- | :--- |
+| `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc.  |
+| `pan` | The card‘s number. |
+| `expiration` | The card‘s expiration date. |
+| `cvv` | The card‘s CVC number. |
+
+### **Field Options**
+
+All Smart Fields accept a common set of options, and then some Field-specific options.
 
 #### Common options:
 
@@ -95,7 +233,7 @@ This method takes two arguments.
   <tbody>
     <tr>
       <td style="text-align:left">placeholder</td>
-      <td style="text-align:left">String or obj</td>
+      <td style="text-align:left">String or Object</td>
       <td style="text-align:left">
         <p>Set custom placeholder for Field. For <code>number</code>, <code>expiration</code> or <code>cvv</code> Fields
           this option is a <code>string</code> with the corresponding placeholder value,
@@ -103,11 +241,11 @@ This method takes two arguments.
           the corresponding placeholder value for each input:</p>
         <p><code>{</code>
         </p>
-        <p><code>     cvv: &quot;cvv placeholder&quot;, </code>
+        <p> <code>cvv: &quot;cvv placeholder&quot;,</code>
         </p>
-        <p><code>     number: &quot;number placeholder&quot;, </code>
+        <p> <code>number: &quot;number placeholder&quot;,</code>
         </p>
-        <p><code>     expiration: &quot;expiration placeholder&quot;</code>
+        <p> <code>expiration: &quot;expiration placeholder&quot;</code>
         </p>
         <p><code>}</code>
         </p>
@@ -144,6 +282,7 @@ This method takes two arguments.
       <td style="text-align:left">style</td>
       <td style="text-align:left">Object (Optional)</td>
       <td style="text-align:left">
+        <p></p>
         <p>Customize appearance using CSS properties. Style is specified as an object
           for any of the variants below.</p>
         <ul>
@@ -197,7 +336,7 @@ This method takes two arguments.
       </td>
     </tr>
   </tbody>
-</table>#### **Options available exclusively to the `card` or `number` Field:**
+</table>#### Options available exclusively to the card or number Field
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -206,9 +345,9 @@ This method takes two arguments.
 
 ## The Field Object
 
-* \*\*\*\*[**field.mount\(\)**](dlocal.js-reference.md#field-mount-domelement)\*\*\*\*
-* \*\*\*\*[**field.on\(\)**](dlocal.js-reference.md#field-on-event-handler)\*\*\*\*
-* \*\*\*\*[**Other methods**](dlocal.js-reference.md#other-methods)\*\*\*\*
+* [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement)
+* [field.on\(\)](dlocal.js-reference.md#field-on-event-handler)
+* [Other methods](dlocal.js-reference.md#other-methods)
   * blur\(\)
   * clear\(\)
   * destroy\(\)
@@ -276,7 +415,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
             and <code>type</code> set to <code>validation_error</code>.</li>
           <li><code>brand</code> - String - The detected card brand, if any.</li>
           <li><code>element</code> - String - The name of the field that triggered the
-            event: <code>&apos;number&apos;</code>, <code>&apos;expiration&apos;</code>,<code> &apos;cvv&apos;</code>.</li>
+            event: <code>&apos;number&apos;</code>, <code>&apos;expiration&apos;</code>, <code>&apos;cvv&apos;</code>.</li>
           <li><code>hasFocus</code> - Boolean - <b><code>true</code></b> if any of the
             Fields elements has focus (always false in <code>pan</code>, <code>expiration</code> and <code>cvv</code> Fields).</li>
           <li><code>autofilled</code> - Boolean - <b><code>true</code></b> if any of the
@@ -321,7 +460,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
     <tr>
       <td style="text-align:left">complete</td>
       <td style="text-align:left">Triggered when the Field changes it's complete status. The event payload
-        always contains<code>complete </code>- Boolean - key, which is <code>true</code> when
+        always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
         the Field is complete and well-formed, and <code>false</code> otherwise.</td>
     </tr>
     <tr>
@@ -375,9 +514,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
         is <b><code>true</code></b> if the field is autofilled.</td>
     </tr>
   </tbody>
-</table>
-
-### Input validation
+</table>### Input validation
 
 Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
 
@@ -401,7 +538,7 @@ card.addEventListener('change', function(event) {
 | `destroy()` | Removes the Field from the DOM and destroys it. Note: a destroyed Field cannot be re-activated or re-mounted to the DOM. |
 | `focus()` | Focuses the Field. In a `card` Field it will focus in the `number` field. |
 | `unmount()` | Unmounts the Field from the DOM. Call [field.mount\(\)](dlocal.js-reference.md#field-mount-domelement) to re-attach it to the DOM. |
-| `update(options)` | Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options).  |
+| `update(options)` | Updates the options the Field was initialized with. Updates are merged into the existing configuration. Accepts the same options as [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options). |
 
 The styles of a Smart Field can be dynamically changed using `update()`. This method can be used to simulate CSS media queries that automatically adjust the size of Fields when viewed on different devices.
 
