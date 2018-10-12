@@ -72,7 +72,7 @@ This method takes two arguments.
 | :--- | :--- | :--- |
 | `name` | String **\(Required\)** | Cardholder name |
 | `address_line1 address_line2 address_city address_state address_zip address_country` | String \(Optional\) | Fields for billing address information. The **address\_country** field is a two character country code \(for example, `'BR'`\). |
-| `currency` | String \(Optional\) | Currency of the transaction  |
+| `currency` | String \(Optional\) | Currency of the transaction |
 
 `dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
