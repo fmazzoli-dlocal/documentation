@@ -1,4 +1,4 @@
-# Going Live
+# Going live
 
 Once all the testings in Sandbox responded correctly, you are ready to process the Going Live request.
 

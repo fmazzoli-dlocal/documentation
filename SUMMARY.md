@@ -2,13 +2,6 @@
 
 * [dLocal Documentation](README.md)
 
-## GUIDES
-
-* [Getting Started](guides/getting-started/README.md)
-  * [Initial Settings](guides/getting-started/initial-settings.md)
-  * [Sandbox testing](guides/getting-started/sandbox-testing.md)
-  * [Going Live](guides/getting-started/go-live.md)
-
 ## Solutions
 
 * [Payins](solutions/payins.md)
@@ -36,4 +29,11 @@
   * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](https://dlocal.com/developers/documentation.php?sec=cashouts)
 * [Changelog](api-documentation/changelog.md)
+
+## GUIDES
+
+* [Getting Started](guides/getting-started/README.md)
+  * [Initial settings](guides/getting-started/initial-settings.md)
+  * [Sandbox testing](guides/getting-started/sandbox-testing.md)
+  * [Going live](guides/getting-started/go-live.md)
 

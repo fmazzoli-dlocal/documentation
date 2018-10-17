@@ -1,4 +1,4 @@
-# Initial Settings
+# Initial settings
 
 Access _Integration &gt;&gt; Integration Settings_. The first thing you will see are the test credentials to be used for our Sandbox platform. We'll get to that later.
 
