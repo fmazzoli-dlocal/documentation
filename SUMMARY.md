@@ -2,6 +2,13 @@
 
 * [dLocal Documentation](README.md)
 
+## GUIDES
+
+* [Getting Started](guides/getting-started/README.md)
+  * [Initial Settings](guides/getting-started/initial-settings.md)
+  * [Sandbox testing](guides/getting-started/sandbox-testing.md)
+  * [Going Live](guides/getting-started/go-live.md)
+
 ## Solutions
 
 * [Payins](solutions/payins.md)
