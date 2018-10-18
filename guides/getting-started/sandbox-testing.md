@@ -78,7 +78,6 @@ curl -X POST \
     },
     "card":{
         "token": "CV-124c18a5-874d-4982-89d7-b9c256e647b5",
-        "capture" : false
     },
     "order_id": "657434343",
     "description": "Testing Sandbox",

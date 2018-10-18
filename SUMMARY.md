@@ -32,7 +32,7 @@
 
 ## GUIDES
 
-* [Getting Started](guides/getting-started/README.md)
+* [API integration guide](guides/getting-started/README.md)
   * [Initial settings](guides/getting-started/initial-settings.md)
   * [Sandbox testing](guides/getting-started/sandbox-testing.md)
   * [Going live](guides/getting-started/go-live.md)

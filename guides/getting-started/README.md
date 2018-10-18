@@ -4,7 +4,7 @@ description: >-
   your business will start offering local payment options shortly.
 ---
 
-# Getting Started
+# API integration guide
 
 ### Sign Up
 
