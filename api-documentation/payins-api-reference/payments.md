@@ -21,6 +21,7 @@ This service allows you to create, modify or read payments.
 | `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
 | `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
 | `refunds` | [Refund Object](refunds.md#the-refund-object) | Payment's refunds of refund object. |
+| `three_d_secure` | 3D-Secure Object | 3D-Secure information object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
 | `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
@@ -373,9 +374,9 @@ For credit card payments you can use the card information only if you business i
 
 {% hint style="warning" %}
 **Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
-[https://api.dlocal.com/\*\*secure\_payments\*\*](https://api.dlocal.com/**secure_payments**)
+https://api.dlocal.com/secure\_payments
 
-Card payments with a `card_id` or `token` should use the endpoint: [https://api.dlocal.com/\*\*payments\*\*](https://api.dlocal.com/**payments**)
+Card payments with a `card_id` or `token` should use the endpoint: https://api.dlocal.com/payments
 {% endhint %}
 
 {% tabs %}
@@ -667,6 +668,7 @@ $ curl \
 
 | **Status** | **Status code** | **Description** |
 | :--- | :--- | :--- |
+| `REJECTED` | 300 | The payment was rejected. |
 | `REJECTED` | 301 | Rejected by bank. |
 | `REJECTED` | 302 | Insufficient amount. |
 | `REJECTED` | 303 | Card blacklisted. |
@@ -682,9 +684,16 @@ $ curl \
 | `REJECTED` | 313 | Card reported stolen. |
 | `REJECTED` | 314 | Invalid card number. |
 | `REJECTED` | 315 | Invalid security code. |
-| `REJECTED` | 316 | Unsoported operation. |
+| `REJECTED` | 316 | Unsupported operation. |
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
+
+### Pending Status
+
+| **Status** | **Status code** | **Description** |
+| :--- | :--- | :--- |
+| `PENDING` | 100 | The payment is pending. |
+| `PENDING` | 101 | The payment is pending 3D Secure authentication. |
 
 ### Errors
 
