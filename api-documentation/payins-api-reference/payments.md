@@ -714,7 +714,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 }
 ```
 
-#### Http Errors {#http-errors}
+#### Http Errors <a id="http-errors"></a>
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | :--- | :--- | :--- |

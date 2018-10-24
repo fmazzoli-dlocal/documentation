@@ -1,10 +1,10 @@
 # Security
 
-#### Signature {#signature}
+#### Signature <a id="signature"></a>
 
 The signature should use SHA256 as HMAC hash function. The signature header always should have the version prefix that contains the signature version and the used hash function. For now, V2-HMAC-SHA256.
 
-#### Headers {#headers}
+#### Headers <a id="headers"></a>
 
 | **Header** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `X-Trans-Key` | String | Merchant xTransKey |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
-### Sensitive data encryption {#sensitive-data-encryption}
+### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
 Credit Card data, such as number and cvv, will be encrypted inside the Json Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, so most used languages have any libraries to support it, simplifying the integration for our merchants.
 
@@ -39,7 +39,7 @@ The following parameters can be encrypted and added to a new `encrypted_data` fi
 {% endtab %}
 {% endtabs %}
 
-## Idempotent Requests {#idempotent-requests}
+## Idempotent Requests <a id="idempotent-requests"></a>
 
 To perform an idempotent request, provide an additional 'X-Idempotency-Key' header to the request.
 

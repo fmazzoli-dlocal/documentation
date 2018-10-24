@@ -41,7 +41,7 @@ For more information on dLocal.js, please visit our [_**dLocal.js Reference page
 Next, create an instance of Smart Fields \(referred to as just `fields()`\):
 
 ```javascript
-var dlocal = dlocal('[you_API_key]');
+var dlocal = dlocal('your_API_key');
 var fields = dlocal.fields({
             locale: 'en',
             country: 'BR'
