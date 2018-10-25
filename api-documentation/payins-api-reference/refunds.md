@@ -16,7 +16,7 @@ Make a Refund
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="id\_payment" type="string" required=true %}
+{% api-method-parameter name="payment\_id" type="string" required=true %}
 The payment id
 {% endapi-method-parameter %}
 
@@ -73,7 +73,7 @@ User's bank branch name.
 ```yaml
 {
    "id" : "REF42342",
-   "id_payment" : "PAY4334346343",
+   "payment_id" : "PAY4334346343",
    "notification_url" : "http://some.url",
    "amount" : 803.04,
    "currency" : "BRL",
@@ -104,7 +104,7 @@ $ curl -X POST \
 
 ```yaml
 {
-    "id_payment" : "PAY4334346343",
+    "payment_id" : "PAY4334346343",
     "amount": 100.00,
     "currency": "USD",
     "notification_url": "http://some.url"
@@ -180,7 +180,7 @@ The refund id
 ```yaml
 {
    "id" : "REF42342",
-   "id_payment" : "PAY4334346343",
+   "payment_id" : "PAY4334346343",
    "notification_url" : "http://some.url",
    "amount" : 803.04,
    "currency" : "BRL",
