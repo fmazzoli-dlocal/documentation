@@ -269,7 +269,7 @@ Examples:
 | :---: | :--- | :--- | :--- | :--- |
 | `OX` | OXXO | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/OX.png](https://pay.dlocal.com/views/2.0/images/payments/OX.png) |
 | `SE` | SPEI | `BANK_TRANSFER` | Bank Transfer Online | [https://pay.dlocal.com/views/2.0/images/payments/SE.png](https://pay.dlocal.com/views/2.0/images/payments/SE.png) |
-| `BV` | BBVA Bancomer | `TICKETTICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BV.png](https://pay.dlocal.com/views/2.0/images/payments/BV.png) |
+| `BV` | BBVA Bancomer | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BV.png](https://pay.dlocal.com/views/2.0/images/payments/BV.png) |
 | `BM` | Banamex | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BM.png](https://pay.dlocal.com/views/2.0/images/payments/BM.png) |
 | `BN` | Banorte | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/BN.png](https://pay.dlocal.com/views/2.0/images/payments/BN.png) |
 | `SM` | Santander | `TICKET` | Cash Payment | [https://pay.dlocal.com/views/2.0/images/payments/SM.png](https://pay.dlocal.com/views/2.0/images/payments/SM.png) |
