@@ -10,7 +10,7 @@ This service allows you to create, modify or read payments.
 | :--- | :--- | :--- |
 | `id` | String | Id of payment |
 | `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
-| `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
+| `currency` | String | Three-letter [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217), in uppercase. |
 | `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](payment-methods.md#payment-method-codes) |
 | `payment_method_type` | String | Payment method type of the payment method chosen. Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
 | `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
@@ -224,7 +224,7 @@ Transaction amount \(in the currency entered in the field `currency`\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-Three-letter ISO currency code, in uppercase.
+Three-letter ISO-4217 currency code, in uppercase.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_id" type="string" required=false %}
