@@ -201,7 +201,7 @@ function dlocalTokenHandler(token) {
 ```
 
 {% hint style="info" %}
-**Tokens created with this method expire after 10 minutes**. If you want to save the card to use to make payments later, you need to save the card. You can [learn more about saving cards here.](../../api-documentation/payins-api-reference/saving-cards.md)
+**Tokens created with this method expire after 10 minutes, or after one payment is made.** If you want to save the card to make other payments later, you need to **save the card**. You can [learn more about saving cards here.](../../api-documentation/payins-api-reference/saving-cards.md)
 {% endhint %}
 
 ## What's next? Create a Payment
