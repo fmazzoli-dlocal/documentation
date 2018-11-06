@@ -4,8 +4,8 @@
 
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `from` | String | Origin currency code |
-| `to` | String | Destination currency code |
+| `from` | String | Origin currency code \(ISO-4217\) |
+| `to` | String | Destination currency code \(ISO-4217\) |
 | `rate` | Decimal | Ratio of conversion from `from` currency to `to` currency. |
 
 {% api-method method="get" host="https://api.dlocal.com/currency-exchanges?" path="from={from}&to={to}" %}
