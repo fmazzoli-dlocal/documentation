@@ -51,7 +51,7 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 
 ### `dlocal.createToken(field, tokenData)`
 
-Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created**, so you need to make sure that the payment is made within that timeframe.
+Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created \(or after one payment\)**, so you need to make sure that the payment is made within that timeframe.
 
 ```javascript
 dlocal.createToken(card,tokenData)
