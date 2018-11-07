@@ -209,9 +209,10 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 | **Type** | **Description** |
 | :--- | :--- |
 | `card` | A flexible single-line input that collects cardNumber, cardExpiry and cardCvc.  |
-| `pan` | The card‘s number. |
-| `expiration` | The card‘s expiration date. |
-| `cvv` | The card‘s CVC number. |
+| `pan` | The card‘s number. Use alongside the `expiration` and `cvv` Smart Fields. |
+| `expiration` | The card‘s expiration date. Use alongside the `pan` and `cvv` Smart Fields. |
+| `cvv` | The card‘s CVC number. Use alongside the `pan` and `expiration` Smart Fields. |
+| `cvv-only` | Use this Smart Field if you are **only** going to tokenize the CVV. At the moment this feature is not compatible with installments. |
 
 ### **Field Options**
 
