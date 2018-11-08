@@ -282,7 +282,7 @@ Once user completed the authentication successfully, the payment will proceed to
         "brand": "VI",
         "last4": "1111"
     },
-    "three_d_secure" : {
+    "three_dsecure" : {
         "redirect_url" : "http://sandbox.dlocal.com/three-ds/M-"
     },
     "created_date": "2018-07-12T17:02:47.000+0000",
