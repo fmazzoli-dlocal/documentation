@@ -161,7 +161,7 @@ $ curl \
     https://api.dlocal.com/cards/CV-e90078f7-e027-4ce4-84cb-534c877be33c
 ```
 
-### Http Errors {#http-errors}
+### Http Errors <a id="http-errors"></a>
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | :--- | :--- | :--- |

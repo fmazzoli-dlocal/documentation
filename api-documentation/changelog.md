@@ -1,13 +1,13 @@
 # Changelog
 
-## September 26, 2018 {#september-14-2018}
+## September 26, 2018 <a id="september-14-2018"></a>
 
 | Page | Section | Change |
 | :--- | :--- | :--- |
 | Payment Methods | Payment Methods Codes | Added more details to payment methods. |
 | Payments | Create a Payment | Made `cvv` field optional for most countries. |
 
-## September 18, 2018 {#september-14-2018}
+## September 18, 2018 <a id="september-14-2018"></a>
 
 | Page | Section | Change |
 | :--- | :--- | :--- |

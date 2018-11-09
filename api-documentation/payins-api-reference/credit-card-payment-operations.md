@@ -304,7 +304,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Chargeback status {#chargeback-status}
+### Chargeback status <a id="chargeback-status"></a>
 
 | **Status** | **Status code** | **Description** |
 | :--- | :--- | :--- |

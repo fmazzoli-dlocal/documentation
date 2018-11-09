@@ -253,7 +253,7 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Refund Status Codes {#refund-status}
+## Refund Status Codes <a id="refund-status"></a>
 
 | Status | Status code | Description |
 | :--- | :--- | :--- |

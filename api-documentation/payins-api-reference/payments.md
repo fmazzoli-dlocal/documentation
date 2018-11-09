@@ -382,9 +382,9 @@ For credit card payments you can use the card information only if you business i
 
 {% hint style="warning" %}
 **Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
-[https://api.dlocal.com/\*\*secure\_payments\*\*](https://api.dlocal.com/**secure_payments**)
+https://api.dlocal.com/secure\_payments
 
-Card payments with a `card_id` or `token` should use the endpoint: [https://api.dlocal.com/\*\*payments\*\*](https://api.dlocal.com/**payments**)
+Card payments with a `card_id` or `token` should use the endpoint: https://api.dlocal.com/payments
 {% endhint %}
 
 {% tabs %}
@@ -717,7 +717,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 }
 ```
 
-#### Http Errors {#http-errors}
+#### Http Errors <a id="http-errors"></a>
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | :--- | :--- | :--- |
