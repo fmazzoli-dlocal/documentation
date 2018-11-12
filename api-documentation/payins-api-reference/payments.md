@@ -21,7 +21,7 @@ This service allows you to create, modify or read payments.
 | `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
 | `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
 | `refunds` | [Refund Object](refunds.md#the-refund-object) | Payment's refunds of refund object. |
-| `three_d_secure` | 3D-Secure Object | 3D-Secure information object. |
+| `three_dsecure` | 3D-Secure Object | 3D-Secure information object. |
 | `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
 | `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
 | `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
