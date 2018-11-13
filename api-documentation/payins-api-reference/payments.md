@@ -320,7 +320,7 @@ Example Response
 | `phone` | String | User’s phone. Optional. |
 | `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
-| `address` | [Address Object ](payments.md#the-address-object) | User’s address. Optional. |
+| `address` | [Address Object ](payments.md#the-address-object) | User’s address. **Only required in India.** |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -349,10 +349,10 @@ Example Response
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
 | `state` | String | User's address state. Optional. |
-| `city` | String | User’s address city. Optional. |
+| `city` | String | User’s address city. **Only required in India.** |
 | `zip_code` | String | User’s address zip\_code. Optional. |
-| `street` | String | User’s address street. Optional. |
-| `number` | String | User’s address number. Optional. |
+| `street` | String | User’s address street. **Only required in India.** |
+| `number` | String | User’s address number. **Only required in India.** |
 {% endtab %}
 
 {% tab title="Example Address Object" %}
