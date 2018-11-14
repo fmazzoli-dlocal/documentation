@@ -152,6 +152,7 @@ This service allows you to create, modify or read payments.
 | `cvv` | String | Credit card verification value. |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params |
 | `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). |
+| `cvv_token` | String | Temporary CVV token securely created using the CVV-only Smart Field. |
 | `card_id` | String | Credit card if returned by the [Create a Card](saving-cards.md#create-a-card) call. |
 | `brand` | String | Card brand code. |
 | `installments` | String | Number of installments. |
@@ -390,6 +391,7 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 | `cvv` | String | Credit card verification value. Optional. **Required for India.** |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
 | `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). Optional. |
+| `cvv_token` | String | Temporary CVV token securely created using the CVV-only Smart Field. |
 | `card_id` | String | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. Optional. |
 | `installments` | String | Number of installments. Default 1. Optional. |
 | `installments_id` | String | Installments id of a installments plan. Optional. |
