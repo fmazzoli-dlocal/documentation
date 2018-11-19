@@ -725,7 +725,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 3003 | Merchant has no authorization to use this API. |
 | `404 Not Found` | 4000 | Payment not found. |
 | `400 Bad Request` | 5000 | Invalid request. |
-|  | 5001 | Invalid param. |
+|  | 5001 | Invalid parameter: \[parameter\_name\] |
 |  | 5002 | Invalid transaction status. |
 |  | 5003 | Country not supported. |
 |  | 5004 | Currency not allowed for this country. |
@@ -733,7 +733,9 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5006 | User limit exceeded. |
 |  | 5007 | Amount exceeded. |
 |  | 5008 | Token not found or inactive. |
-| `429 Too many requests` | 6000 | Too many requests to the api \(Not implemented yet\). |
+|  | 5009 | Order id is duplicated. |
+|  | 5010 | Request timeout. |
+| `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
 ## Notifications

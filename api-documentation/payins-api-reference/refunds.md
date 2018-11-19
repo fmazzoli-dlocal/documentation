@@ -253,3 +253,44 @@ Example Response
 | `REJECTED` | 300 | The refund was rejected. |
 | `CANCELLED` | 400 | The refund was cancelled. |
 
+### Errors
+
+All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
+
+| **Property** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| `code` | Integer | Error code. |
+| `message` | String | Human readable message. |
+| `param` | String | In case one parameter is wrong. |
+
+**Example error**
+
+```yaml
+{
+    "code": 5012,
+    "message": "Insufficient funds."
+}
+```
+
+#### Http Errors <a id="http-errors"></a>
+
+| **HTTP Status Code** | **Error Code** | **Error Detail** |
+| :--- | :--- | :--- |
+| `403 Forbidden` | 3001 | Invalid Credentials. |
+|  | 3002 | Unregistered IP address. |
+|  | 3003 | Merchant has no authorization to use this API. |
+| `404 Not Found` | 4000 | Payment not found. |
+| `400 Bad Request` | 5000 | Invalid request. |
+|  | 5001 | Invalid parameter: \[parameter\_name\] |
+|  | 5002 | Invalid transaction status. |
+|  | 5003 | Country not supported. |
+|  | 5004 | Currency not allowed for this country. |
+|  | 5005 | User unauthorized due to cadastral situation. |
+|  | 5006 | User limit exceeded. |
+|  | 5007 | Amount exceeded. |
+|  | 5010 | Request timeout. |
+|  | 5011 | Order refund id is duplicated. |
+|  | 5012 | Insufficient funds. |
+| `429 Too many requests` | 6000 | Too many requests to the API. |
+| `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
+
