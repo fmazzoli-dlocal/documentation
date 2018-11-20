@@ -122,10 +122,8 @@ curl -X GET \
 
 ## Payment Method Codes
 
-{% hint style="warning" %}
-
 To make **credit/debit card** [**payments**](payments.md#create-a-payment), you should use`"CARD"` as the `payment_method_id`.  
-For **other types of payments** \(eg: bank transfer\), you should use the corresponding payment\_method\_id found in the tables below.
+For **other types of payments** \(eg: bank transfer\), you should use the corresponding `payment_method_id`found in the tables below.
 
 Examples:
 
