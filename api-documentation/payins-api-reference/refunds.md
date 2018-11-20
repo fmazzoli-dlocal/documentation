@@ -25,7 +25,8 @@ If a refund is pending, the refund confirmation is sent asynchronously to this U
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="amount" type="number" required=false %}
-Amount to refund. If the amount is empty, then the default is total amount of the payment.
+Amount to refund. If the amount is empty, then the default is total amount of the payment.  
+**Required if** `currency` **is present.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=false %}
