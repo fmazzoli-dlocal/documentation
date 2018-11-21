@@ -108,6 +108,7 @@ curl -X POST \
     "payer": {
         "name": "Luis Gabriel",
         "document": "53033315550"
+        "email": "luis@email.com"
     }
 }
 ```
@@ -175,4 +176,6 @@ $ curl \
 | ​ | 5005 | User unauthorized due to cadastral situation. |
 | ​ | 5008 | Token not found or inactive. |
 |  | 5009 | The card was rejected by the bank. |
+
+
 

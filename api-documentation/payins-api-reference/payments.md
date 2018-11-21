@@ -484,8 +484,7 @@ curl -X POST \
         "number" : "4111111111111111",
         "cvv" : "123",
         "expiration_month" : 10,
-        "expiration_year" : 2040,
-        "capture" : false
+        "expiration_year" : 2040
     },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
@@ -530,8 +529,7 @@ curl -X POST \
         }
     },
     "card":{
-        "token": "CV-124c18a5-874d-4982-89d7-b9c256e647b5",
-        "capture" : false
+        "token": "CV-124c18a5-874d-4982-89d7-b9c256e647b5"
     },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
