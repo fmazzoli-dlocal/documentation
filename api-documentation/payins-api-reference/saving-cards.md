@@ -79,6 +79,7 @@ Example Error Response.
 | :--- | :--- | :--- |
 | `name` | String | Payer's name. **Required.** |
 | `document` | String | Payer's document. **Required.** |
+| `email` | String | Payer's email address. Optional. |
 
 ## Example Request
 
