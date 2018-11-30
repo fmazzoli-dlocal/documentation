@@ -25,7 +25,7 @@ Generally, however, if you are using dLocal you will rely on our PCI Level 1 sta
 
 Performing a PCI compliance self-assessment requires you to complete a questionnaire and, depending on what self-assessment category you fall under, having an outside provider perform a quarterly security scan of your systems.
 
-There are currently eight categories of self-assessment, but not all of these are applicable to online merchants. Your level of PCI scope will ultimately depend on how you capture and work with credit card data. If you are using a third party service like dLocal it is likely that you will be required to fill out either a SAQ A or SAQ D. View the table to the right for more information:
+There are currently eight categories of self-assessment, but not all of these are applicable to online merchants. Your level of PCI scope will ultimately depend on how you capture and work with credit card data. If you are using a third party service like dLocal it is likely that you will be required to fill out either a SAQ A or SAQ D. View the table below for more information:
 
 | IF YOUR SYSTEMS | THEN USE  | COMPLEXITY |
 | :--- | :--- | :--- |
