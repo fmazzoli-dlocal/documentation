@@ -1,8 +1,8 @@
 ---
 description: >-
-  All online merchants that accept credit card payments must be PCI DSS
-  compliant. dLocal can significantly reduce your PCI scope and help avoid a
-  costly, time-intensive on-site data security assessment
+  All merchants that accept credit card payments must be PCI DSS compliant.
+  dLocal can significantly reduce your PCI scope and help avoid a costly,
+  time-intensive on-site data security assessment
 ---
 
 # PCI Compliance
