@@ -687,6 +687,8 @@ $ curl \
 | `REJECTED` | 316 | Unsupported operation. |
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
+| `REJECTED` | 319 | Amount too low. |
+| `REJECTED` | 320 | User blacklisted. |
 
 ### Pending Status
 
