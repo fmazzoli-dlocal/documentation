@@ -1,11 +1,6 @@
----
-description: >-
-  All merchants that accept credit card payments must be PCI DSS compliant.
-  dLocal can significantly reduce your PCI scope and help avoid a costly,
-  time-intensive on-site data security assessment
----
-
 # PCI Compliance
+
+The Payment Card Industry Data Security Standard \(PCI DSS\) is a set of security standards designed to ensure that all companies that accept, process, store or transmit credit card information maintain a secure environment.
 
 ## **Who must be PCI compliant?**
 
