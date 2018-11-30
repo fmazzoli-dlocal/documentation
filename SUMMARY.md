@@ -36,4 +36,5 @@
   * [Initial settings](guides/getting-started/initial-settings.md)
   * [Sandbox testing](guides/getting-started/sandbox-testing.md)
   * [Going live](guides/getting-started/go-live.md)
+* [PCI Compliance](guides/pci-compliance.md)
 
