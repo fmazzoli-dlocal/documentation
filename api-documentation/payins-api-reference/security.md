@@ -13,6 +13,14 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `X-Trans-Key` | String | Merchant xTransKey |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
+#### Examples of hmac signature generation in the most popular languages
+
+| Language | Code |
+| :--- | :--- |
+| PHP | `$signature = hash_hmac("sha256", "$X-Login:$X-Date:$RequestBody", $secretKey);` |
+| Python | `signature = hmac.new(secretKey, X-Login+':'+X-Date+':'+RequestBody, hashlib.sha256).hexdigest()` |
+| Ruby | `signature = OpenSSL::HMAC.hexdigest('sha256', secretKey, '{X-Login}:{X-Date}:{RequestBody}')` |
+
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
 Credit Card data, such as number and cvv, will be encrypted inside the Json Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, so most used languages have any libraries to support it, simplifying the integration for our merchants.
