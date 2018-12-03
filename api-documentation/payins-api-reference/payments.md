@@ -688,7 +688,6 @@ $ curl \
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
 | `REJECTED` | 319 | Amount too low. |
-| `REJECTED` | 320 | User blacklisted. |
 
 ### Pending Status
 
@@ -735,6 +734,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5008 | Token not found or inactive. |
 |  | 5009 | Order id is duplicated. |
 |  | 5010 | Request timeout. |
+|  | 5013 | User blacklisted. |
 | `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
