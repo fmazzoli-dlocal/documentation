@@ -734,7 +734,8 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5008 | Token not found or inactive. |
 |  | 5009 | Order id is duplicated. |
 |  | 5010 | Request timeout. |
-|  | 5013 | User blacklisted. |
+|  | 5013 | Unsupported operation. |
+|  | 5014 | User blacklisted. |
 | `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
