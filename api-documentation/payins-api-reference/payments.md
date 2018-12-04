@@ -687,7 +687,6 @@ $ curl \
 | `REJECTED` | 316 | Unsupported operation. |
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
-| `REJECTED` | 319 | Amount too low. |
 
 ### Pending Status
 
@@ -736,6 +735,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5010 | Request timeout. |
 |  | 5013 | Unsupported operation. |
 |  | 5014 | User blacklisted. |
+|  | 5016 | Amount too low. |
 | `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
