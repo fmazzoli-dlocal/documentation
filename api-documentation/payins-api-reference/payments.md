@@ -229,7 +229,8 @@ Three-letter ISO-4217 currency code, in uppercase.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_id" type="string" required=false %}
-Payment method code chosen to make the payment, or the keyword `CARD`
+Payment method code chosen to make the payment, or the keyword `CARD`  
+**Required for** `DIRECT` **payment method flow.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
