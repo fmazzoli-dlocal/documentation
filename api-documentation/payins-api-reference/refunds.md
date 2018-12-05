@@ -40,27 +40,27 @@ Description of the refund.
 
 {% api-method-parameter name="beneficiary\_name" type="string" required=false %}
 User's full name.  
-**Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+**Recommended if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank" type="string" required=false %}
 User's bank name.  
-**Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+**Recommended if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_account" type="string" required=false %}
 User's bank account number.  
-**Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+**Recommended if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_account\_type" type="string" required=false %}
 Type of bank account. `C`: for Current accounts; `S`: for Savings accounts; `I`: International accounts.  
-**Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+**Recommended if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bank\_branch" type="string" required=false %}
 User's bank branch name.  
-**Required if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
+**Recommended if the** `type` **of the payment is** `TICKET` **or** `BANK_TRANSFER` **.**
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -89,6 +89,12 @@ User's bank branch name.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="warning" %}
+If any of the following parameters are missing or invalid, dLocal will send an email to the buyer \(to the email provided during the Create a Payment\) asking them for the information. 
+
+Parameters: **`beneficiary_name` ,`bank` , `bank_account` , `bank_account_type` , `bank_branch`**
+{% endhint %}
 
 ## Example Request
 
