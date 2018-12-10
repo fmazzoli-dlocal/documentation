@@ -126,6 +126,10 @@ You can specify an installment plan, to guarantee the surcharge per installment 
 </div>
 ```
 
+{% hint style="info" %}
+It is **highly recommended** that you include the `createInstallmentsPlan` on the **`brand`** event. This is because the installment plan _only_ depends on the amount and card brand.
+{% endhint %}
+
 ```javascript
 let actualBrand = null;
 card.on('brand', function (event) {

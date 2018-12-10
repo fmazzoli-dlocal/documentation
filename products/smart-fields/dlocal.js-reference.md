@@ -130,6 +130,10 @@ dlocal.createInstallmentsPlan(card, amount, currency)
 }););
 ```
 
+{% hint style="warning" %}
+It is **highly recommended** that you include the `createInstallmentsPlan` on the **`brand`** event. This is because the installment plan _only_ depends on the amount and card brand.
+{% endhint %}
+
 {% tabs %}
 {% tab title="Installments Arguments" %}
 | Parameter | Type | Description |
@@ -502,11 +506,18 @@ The only way to communicate with your Smart Field is by listening to an `event`.
     </tr>
     <tr>
       <td style="text-align:left">brand</td>
-      <td style="text-align:left">Triggered when the Field detects a change in the card brand. This event
-        can only be listened in <code>number</code> and <code>card</code> Smart Fields
-        (it wont work in <code>cvv</code> and <code>expiration</code> Fields). The
-        event payload always contains <code>brand</code> - String - key, which has
-        the name of the detected brand if any, <code>null</code> otherwise.</td>
+      <td style="text-align:left">
+        <p>Triggered when the Field detects a change in the card brand. This event
+          can only be listened in <code>number</code> and <code>card</code> Smart Fields
+          (it wont work in <code>cvv</code> and <code>expiration</code> Fields). The
+          event payload always contains <code>brand</code> - String - key, which has
+          the name of the detected brand if any, <code>null</code> otherwise.</p>
+        <p></p>
+        <p>If using installments, it is <b>highly recommended</b> that you include
+          the <code>createInstallmentsPlan</code> on the <b><code>brand</code></b> event.
+          This is because the installment plan <em>only</em> depends on the amount
+          and card brand.</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">autofilled</td>
