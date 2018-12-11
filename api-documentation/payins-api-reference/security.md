@@ -17,9 +17,9 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 
 | Language | Code |
 | :--- | :--- |
-| PHP | `$signature = hash_hmac("sha256", "$X-Login:$X-Date:$RequestBody", $secretKey);` |
-| Python | `signature = hmac.new(secretKey, X-Login+':'+X-Date+':'+RequestBody, hashlib.sha256).hexdigest()` |
-| Ruby | `signature = OpenSSL::HMAC.hexdigest('sha256', secretKey, '{X-Login}:{X-Date}:{RequestBody}')` |
+| PHP | `$signature = hash_hmac("sha256", "$X-Login$X-Date$RequestBody", $secretKey);` |
+| Python | `signature = hmac.new(secretKey, X-Login+X-Date+RequestBody, hashlib.sha256).hexdigest()` |
+| Ruby | `signature = OpenSSL::HMAC.hexdigest('sha256', secretKey, '{X-Login}{X-Date}{RequestBody}')` |
 
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
