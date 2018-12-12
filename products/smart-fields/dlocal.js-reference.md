@@ -218,6 +218,16 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 | `cvv` | The card‘s CVC number. Use alongside the `pan` and `expiration` Smart Fields. |
 | `cvv-only` | Use this Smart Field if you are **only** going to tokenize the CVV. At the moment this feature is not compatible with installments. |
 
+{% tabs %}
+{% tab title="Example Checkout with \`card\` Smart Field" %}
+![](../../.gitbook/assets/image%20%282%29.png)
+{% endtab %}
+
+{% tab title="Example Checkout with \`pan\`, \`expiration\`, and \`cvv\` Smart Fields" %}
+![](../../.gitbook/assets/image%20%281%29.png)
+{% endtab %}
+{% endtabs %}
+
 ### **Field Options**
 
 All Smart Fields accept a common set of options, and then some Field-specific options.
