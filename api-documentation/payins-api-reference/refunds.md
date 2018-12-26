@@ -2,7 +2,7 @@
 
 This service allows you to create and read refunds of an existing payment.
 
-A Refund is the reversal of a credit card [payment](payments.md#create-a-payment), where the funds are taken from the Merchant and given back to the Card Holder. A refund processing fee may apply.
+A Refund is the reversal of a credit card [payment](payments/#create-a-payment), where the funds are taken from the Merchant and given back to the Card Holder. A refund processing fee may apply.
 
 {% api-method method="post" host=" https://api.dlocal.com/" path="refunds" %}
 {% api-method-summary %}

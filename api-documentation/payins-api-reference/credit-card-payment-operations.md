@@ -260,7 +260,7 @@ Example Response
 
 ## 3D-Secure Payments
 
-In some regions 3D-Secure authentication might be mandatory. In such scenario,  the [Create a Payment](payments.md#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object and will include a 3D-Secure object, containing the URL that the user needs to be redirected to complete the authorization.
+In some regions 3D-Secure authentication might be mandatory. In such scenario,  the [Create a Payment](payments/#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object and will include a 3D-Secure object, containing the URL that the user needs to be redirected to complete the authorization.
 
 Once user completed the authentication successfully, the payment will proceed to be processed.
 

@@ -1,212 +1,6 @@
 # Payments
 
-This service allows you to create, modify or read payments.
-
-## The Payment Object
-
-{% tabs %}
-{% tab title="Payment Object" %}
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `id` | String | Id of payment |
-| `amount` | Positive Float | Transaction amount \(in the currency entered in the field “currency”\). |
-| `currency` | String | Three-letter [ISO-4217 currency code](https://en.wikipedia.org/wiki/ISO_4217), in uppercase. |
-| `payment_method_id` | String | Payment method id of the payment method chosen. [See all payment method codes here.](payment-methods/#payment-method-codes) |
-| `payment_method_type` | String | Payment method type of the payment method chosen. Type of method can be `CARD` `BANK_TRANSFER` `DIRECT_DEBIT` `TICKET`. |
-| `payment_method_flow` | String | Payment method flow of the payment method chosen, can be `DIRECT` or `REDIRECT`. |
-| `country` | String | User’s country code. ISO 3166-1 alpha-2 codes. |
-| `payer` | [Payer Object](payments.md#the-payer-object) | Identifies the payer |
-| `card` | [Card Object](payments.md#the-card-object) | Credit card information \( only for CARD payment methods \). |
-| `bank_transfer` | [Bank Transfer Object](payments.md#the-bank-transfer-object) | Bank transfer information \( only for BANK\_TRANSFER payment methods \). |
-| `direct_debit` | [Direct Debit Object](payments.md#the-direct-debit-object) | Bank information for direct debit \( only for DIRECT\_DEBIT payment methods \). |
-| `ticket` | [Ticket Object](payments.md#the-ticket-object) | Ticket information \( only for TICKET payment methods \). |
-| `refunds` | [Refund Object](refunds.md#the-refund-object) | Payment's refunds of refund object. |
-| `three_dsecure` | 3D-Secure Object | 3D-Secure information object. |
-| `created_date` | Date\(ISO\_8601\) | Payment's creation date. |
-| `approved_date` | Date\(ISO\_8601\) | Payment's approval date. |
-| `status` | String | Payment status. [See all payment status.](payments.md#payment-status-codes) |
-| `status_detail` | String | Payment status detail. |
-| `status_code` | String | Status code.[ See all payment status codes.](payments.md#payment-status-codes) |
-| `order_id` | String | ID given by the merchant in their system. |
-| `description` | String | Payment description |
-| `notification_url` | String | URL where dlocal will send notifications associated to changes in this payment. |
-| `callback_url` | String | URL where dlocal does the final redirect \(only for bank transfers and tickets\). |
-| `redirect_url` | String | URL where the merchant must redirect the user to complete the payment. |
-{% endtab %}
-
-{% tab title="Example Payment Object" %}
-```yaml
-{
-    "id": "3436735432",
-    "amount": 120.00,
-    "currency" : "USD",
-    "country": "BR",
-    "payment_method_id" : "CARD",
-    "payment_method_type" : "CARD",
-    "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "document_type" : "CPF",
-        "user_reference": "12345",
-        "address": {
-            "state"  : "Rio de Janeiro",
-            "city" : "Volta Redonda",
-            "zip_code" : "27275-595",
-            "street" : "Servidão B-1",
-            "number" : "1106"
-        }
-    },
-    "card":{
-        "holder_name": "Thiago Gabriel",
-        "expiration_month": 10,
-        "expiration_year": 2040,
-        "last4": "4544",
-        "brand": "VI"
-    },
-    "refunds": [],
-    "created_date" : "2018-02-15T15:14:52-00:00",
-    "approved_date" : "2018-02-15T15:14:52-00:00",
-    "status" : "PAID",
-    "status_detail" : "The payment was paid.",
-    "status_code" : "200",
-    "order_id": "657434343",
-    "notification_url": "http://merchant.com/notifications"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## The Payer Object
-
-{% tabs %}
-{% tab title="Payer Object" %}
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `name` | String | User's full name |
-| `email` | String | User’s email address. |
-| `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). |
-| `phone` | String | User’s phone. |
-| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) |
-| `user_reference` | String | Unique user id at the merchant side. |
-| `address` | [Address Object](payments.md#the-address-object) | User’s address. |
-{% endtab %}
-
-{% tab title="Example Payer Object" %}
-```yaml
-{
-"name" : "Thiago Gabriel",
-"email" : "thiago@example.com",
-"birth_date" : "12-07-1989",
-"document" : "53033315550",
-"user_reference": "12345",
-"address": {
-    "state"  : "Rio de Janeiro",
-    "city" : "Volta Redonda",
-    "zip_code" : "27275-595",
-    "street" : "Servidão B-1",
-    "number" : "1106"
-}
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## The Address Object
-
-{% tabs %}
-{% tab title="Address Object" %}
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `state` | String | User's address state. |
-| `city` | String | User’s address city. |
-| `zip_code` | String | User’s address zip\_code. |
-| `street` | String | User’s address street. |
-| `number` | String | User’s address number. |
-{% endtab %}
-
-{% tab title="Example Address Object" %}
-```yaml
-{
-"state"  : "Rio de Janeiro",
-"city" : "Volta Redonda",
-"zip_code" : "27275-595",
-"street" : "Servidão B-1",
-"number" : "1106"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## The Card Object
-
-{% tabs %}
-{% tab title="Card Object" %}
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `holder_name` | String | Cardholder's full name |
-| `expiration_month` | Integer | Two digit number representing the card's expiration month. |
-| `expiration_year` | Integer | Four digit number representing the card's expiration year. |
-| `number` | String | The card number, as a string without any separators. |
-| `cvv` | String | Credit card verification value. |
-| `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params |
-| `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). |
-| `cvv_token` | String | Temporary CVV token securely created using the CVV-only Smart Field. |
-| `card_id` | String | Credit card if returned by the [Create a Card](saving-cards.md#create-a-card) call. |
-| `brand` | String | Card brand code. |
-| `installments` | String | Number of installments. |
-| `installments_id` | String | Installments id of a [installments plan](installments.md#the-installment-plan-object). |
-| `descriptor` | String | Dynamic Descriptor. |
-| `last4` | String | The last 4 digits of the card. |
-| `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. |
-{% endtab %}
-
-{% tab title="Example Card Object" %}
-```yaml
-{
-"token": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
-"holder_name": "Thiago Gabriel",
-"expiration_month": 10,
-"expiration_year": 2040,
-"last4": "1111",
-"brand": "VI",
-"capture": false
-}
-```
-{% endtab %}
-{% endtabs %}
-
-## The Bank Transfer Object
-
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `type` | String | Bank account type |
-| `name` | String | Bank name. |
-| `code` | String | Bank code. |
-| `beneficiary` | String | Beneficiary name. |
-| `account` | String | Bank account number. |
-| `document` | String | Beneficiary document number. |
-| `amount_to_transfer` | Positive Float | Amount to transfer \(only for not referenced bank transfers\). |
-| `reference` | String | Reference to make the bank transfer. |
-
-## The Direct Debit Object
-
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `holder_name` | String | Name of the owner of the |
-| `email` | String | Email of the owner of the bank account. |
-| `document` | String | Document of the owner of the bank account. |
-| `cbu` | String | CBU of the owner of the bank account \(only for AR country\). |
-
-## The Ticket Object
-
-| **Property** | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `type` | String | Type of ticket, can be `REFERENCE_CODE`, or `BAR_CODE` |
-| `format` | String | Ticket barcode format only for `BAR_CODE`, for example `CODE_128`. |
-| `number` | String | Ticket number. |
-| `expiration_date` | Date\(ISO-8601\) | The expiration date of the ticket. |
+This service allows you to create, modify or read payments. 
 
 {% api-method method="post" host="https://api.dlocal.com" path="/payments" %}
 {% api-method-summary %}
@@ -320,9 +114,9 @@ Example Response
 | `email` | String | User’s email address. **Required.** |
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
 | `phone` | String | User’s phone. Optional. |
-| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](country-reference.md#documents) **Required**. |
+| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](../country-reference.md#documents) **Required**. |
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
-| `address` | [Address Object ](payments.md#the-address-object) | User’s address. **Only required in India.** |
+| `address` | [Address Object ](./#the-address-object) | User’s address. **Only required in India.** |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -372,7 +166,7 @@ Example Response
 
 #### The Card Object
 
-For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../products/smart-fields/). For recurring payments, first [save the card](saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
+For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../../products/smart-fields/). For recurring payments, first [save the card](../saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
 
 {% hint style="warning" %}
 **Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
@@ -391,9 +185,9 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 | `number` | String | The card number, as a string without any separators.  **Required if**`encrypted_data` **,**`token` **or** `card_id` **not present** |
 | `cvv` | String | Credit card verification value. Optional. **Required for India.** |
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
-| `token` | String | Temporary credit card token securely created using [Smart Fields](../../products/smart-fields/). Optional. |
+| `token` | String | Temporary credit card token securely created using [Smart Fields](../../../products/smart-fields/). Optional. |
 | `cvv_token` | String | Temporary CVV token securely created using the CVV-only Smart Field. |
-| `card_id` | String | Credit card id returned by the [Create a Card ](saving-cards.md#create-a-card)call. Optional. |
+| `card_id` | String | Credit card id returned by the [Create a Card ](../saving-cards.md#create-a-card)call. Optional. |
 | `installments` | String | Number of installments. Default 1. Optional. |
 | `installments_id` | String | Installments id of a installments plan. Optional. |
 | `descriptor` | String | Dynamic Descriptor.  Optional. |
@@ -444,7 +238,7 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 
 {% tabs %}
 {% tab title="Payment with Credit Card Information " %}
-The following example applies for credit card payments using the plain credit card information \(**only for Full PCI DSS merchants**\). To make payments using encrypted card information, simply **replace** the `number`and `cvv`parameters with [`encrypted_data`](security.md#sensitive-data-encryption).
+The following example applies for credit card payments using the plain credit card information \(**only for Full PCI DSS merchants**\). To make payments using encrypted card information, simply **replace** the `number`and `cvv`parameters with [`encrypted_data`](../security.md#sensitive-data-encryption).
 
 #### Example Request
 
@@ -494,7 +288,7 @@ curl -X POST \
 {% endtab %}
 
 {% tab title="Payment with Credit Card Token" %}
-The following example applies for credit card payments using a Smart Fields `token`. To make a payment with a `card_id`obtained from the [Create a Card](saving-cards.md#create-a-card) method, simply **replace** the `token`parameter with `card_id`.
+The following example applies for credit card payments using a Smart Fields `token`. To make a payment with a `card_id`obtained from the [Create a Card](../saving-cards.md#create-a-card) method, simply **replace** the `token`parameter with `card_id`.
 
 #### Example Request
 
@@ -697,6 +491,12 @@ $ curl \
 | `PENDING` | 101 | The payment is pending 3D Secure authentication. |
 
 ### Errors
+
+Below you can find an example of a **Credit Card** payment. For more examples [visit this page](credit-card-payments.md).
+
+For examples of **Cash \(ticket\)** payments, [visit this page](cash-ticket-payments.md).
+
+For examples of **Bank Transfer** payments, [visit this page](bank-transfer-payments.md).
 
 All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The format of all errors is:
 

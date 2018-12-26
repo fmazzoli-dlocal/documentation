@@ -210,5 +210,5 @@ function dlocalTokenHandler(token) {
 
 ## What's next? Create a Payment
 
-Create a payment using the credit card token you just collected. [**Learn how to make a payment here**](../../api-documentation/payins-api-reference/payments.md#create-a-payment)**.**
+Create a payment using the credit card token you just collected. [**Learn how to make a payment here**](../../api-documentation/payins-api-reference/payments/#create-a-payment)**.**
 

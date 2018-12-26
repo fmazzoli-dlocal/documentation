@@ -12,7 +12,7 @@
 | `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html), in uppercase. |
 | `created_date` | Date \(ISO\_8601\) | Payment’s creation date. |
 | `approved_date` | Date \(ISO\_8601\) | Payment’s approval date. |
-| `status` | String | [Payment status](payments.md#payment-status-codes). |
+| `status` | String | [Payment status](payments/#payment-status-codes). |
 | `status_code` | String | The payment status code. |
 | `status_detail` | String | Payment status detail. |
 {% endtab %}

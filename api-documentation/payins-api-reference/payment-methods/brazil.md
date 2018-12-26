@@ -308,5 +308,5 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%2811%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%2814%29.png)
 
