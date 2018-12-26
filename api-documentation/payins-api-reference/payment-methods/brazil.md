@@ -1,6 +1,6 @@
 # Brazil
 
-### Payment Methods Available
+## Payment Methods Available
 
 <table>
   <thead>
@@ -236,4 +236,77 @@
       <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>​</td>
     </tr>
   </tbody>
-</table>
+</table>## Direct Alternative Payment Methods
+
+### Boleto Bancário
+
+#### Example
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example Request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/secure_payments
+```
+
+#### Example Request Body
+
+```yaml
+{
+    "amount": 100,
+    "currency": "BRL",
+    "country": "BR",
+    "payment_method_id": "BL",
+    "payment_method_flow": "DIRECT",
+    "payer": {
+        "name": "Pedro Gomes",
+        "email": "pedrogomes@dlocal.com",
+        "document": "42243309114"
+    },
+    "order_id": "jhg4v34v534",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+#### Example Response
+
+```yaml
+{
+    "id": "D-4-1a64bdbd-faf5-473e-94b5-f96d36ef0d3f",
+    "amount": 100,
+    "currency": "BRL",
+    "payment_method_id": "BL",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "BR",
+    "ticket": {
+        "type": "CUSTOM",
+        "number": "10491775000000100389136517000100040010993600",
+        "expiration_date": "2018-12-27T20:25:19.000+0000",
+        "id": "14000000001099765",
+        "barcode": "10491775000000100389136517000100040010993600",
+        "company_name": "DLOCAL BRASIL LTDA",
+        "provider_name": "caixa",
+        "provider_logo": "http://static.dlocal.com/images/providers/caixa.png",
+        "image_url": "http://pay.dlocal.com/gmf/payments/M-cee70da0-0542-11e9-b88f-39144191f926"
+    },
+    "created_date": "2018-12-21T17:06:49.545+0000",
+    "status": "PENDING",
+    "order_id": "jhg4v34v534",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%2811%29.png)
+

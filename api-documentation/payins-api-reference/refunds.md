@@ -298,6 +298,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5010 | Request timeout. |
 |  | 5011 | Order refund id is duplicated. |
 |  | 5012 | Insufficient funds. |
+|  | 5017 | Invalid API Version |
 | `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
 
