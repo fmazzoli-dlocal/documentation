@@ -2,7 +2,7 @@
 
 ## Redirect Cash Payments
 
-All Cash \(`TICKET`\) payment methods offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). Here, the API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted website. Here, the user will be able to see the ticket in order to print it or pay using their home banking.
+All Cash \(`TICKET`\) payment methods offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). The API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted page. The user will be able to see the ticket in order to print it or pay using their home banking.
 
 Using the Redirect method, the payment will have the `PENDING` status until the user pays the ticket, and dLocal gets notified.
 
@@ -70,7 +70,7 @@ curl -X POST \
 
 ## Direct Cash Payments
 
-Some alternative payment methods are available via our **Direct APMs** solution \(`payment_method_flow` = `DIRECT`\). Here the important parameters of a ticket are returned via API, so the merchant can build their own UI.
+Some alternative payment methods are available via our **Direct APMs** solution \(`payment_method_flow` = `DIRECT`\). The important parameters of a ticket are returned via API, so the merchant can build their own UI.
 
 The example below belongs to direct payment using Boleto Bancário in Brazil. For a full list of `TICKET` payment methods available, visit the [Payment Methods page](../payment-methods/).
 

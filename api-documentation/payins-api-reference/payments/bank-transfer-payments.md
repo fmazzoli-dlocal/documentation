@@ -2,7 +2,7 @@
 
 ## Redirect Bank Transfer Payments
 
-All Bank Transfer \(`BANK_TRANSFER`\) payment methods offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). Here, the API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted website. Here, the user will be able to see the details in order to complete the transfer via their home banking.
+All Bank Transfer \(`BANK_TRANSFER`\) payment methods offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). The API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted website. The user will be able to see the details in order to complete the transfer via their home banking.
 
 Using the Redirect method, the payment will have the `PENDING` status until the user completes the transfer, and dLocal gets notified.
 
