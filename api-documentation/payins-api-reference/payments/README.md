@@ -482,7 +482,7 @@ $ curl \
 | `REJECTED` | 316 | Unsupported operation. |
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
-| `REJECTE` | 319 | Amount exceeded. |
+| `REJECTED` | 319 | Amount exceeded. |
 
 ### Pending Status
 
