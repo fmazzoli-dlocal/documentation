@@ -23,7 +23,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
-Credit Card data, such as `number` and `cvv`, can be encrypted inside the JSON Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, and most programming languages have libraries to support it.
+Credit Card data, such as `number` and `cvv`, can be encrypted inside the JSON Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, and [most programming languages have libraries](https://openid.net/developers/jwt/) to support it.
 
 The following parameters can be encrypted and added to a  `encrypted_data` field:
 
