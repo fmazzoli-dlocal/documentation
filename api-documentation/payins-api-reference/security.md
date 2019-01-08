@@ -23,9 +23,9 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
-Credit Card data, such as number and cvv, will be encrypted inside the Json Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, so most used languages have any libraries to support it, simplifying the integration for our merchants.
+Credit Card data, such as `number` and `cvv`, can be encrypted inside the JSON Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, and most programming languages have libraries to support it.
 
-The following parameters can be encrypted and added to a new `encrypted_data` field:
+The following parameters can be encrypted and added to a  `encrypted_data` field:
 
 {% tabs %}
 {% tab title="Properties" %}
@@ -37,15 +37,22 @@ The following parameters can be encrypted and added to a new `encrypted_data` fi
 
 {% tab title="Example Credit Card Encrypted Body" %}
 ```yaml
-{
+"card": {
     "holder_name": "Thiago Gabriel",
     "expiration_month": 10,
     "expiration_year": 2040,
-    "encrypted_data": "eyJlbmMiOiJBMjU2R0NNIiwiYW..."
+    "encrypted_data": "[encrypted JSON goes here]"
 }
 ```
 {% endtab %}
 {% endtabs %}
+
+The encryption flow is the following
+
+1. dLocal creates an RSA key pair and issue a certification with a 3rd party authority.
+2. dLocal shares the public key to the merchant using an encrypted method. _Ask your Technical Account Manager for more information_.
+3. The merchant uses this public key to encrypt the `number` and `cvv` into a JSON using JWE, and send it in the API request within the `encrypted_data` field. The rest of the request can be sent unencrypted.
+4. dLocal decrypts the message using the private key. 
 
 ## Idempotent Requests <a id="idempotent-requests"></a>
 
