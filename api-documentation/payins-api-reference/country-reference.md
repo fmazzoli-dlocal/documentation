@@ -4,7 +4,7 @@
 
 Bellow are the allow documents for each country that need to be entered in the [Payer Object. ](payments/#the-payer-object)
 
-Some countries might require more than one document \(eg: India\). In that case, other required documents need to be included in additional `document[#]` parameters.
+Some countries might accept more than one document \(eg: India\). In that case, other documents need to be included in additional `document[#]` parameters.
 
 {% tabs %}
 {% tab title="Example Payer Object: Brazil" %}
@@ -22,8 +22,8 @@ Some countries might require more than one document \(eg: India\). In that case,
 {
 "name" : "Parag Chilimbi",
 "email" : "parag@example.com",
-"document" : "548550008000", ->Aadhar
-"document2" : "EHFGA5967A", ->PAN
+"document" : "EHFGA5967A", #-> PAN 
+"document2" : "548550008000" #-> Aadhaar
 }
 ```
 {% endtab %}
@@ -86,10 +86,11 @@ Some countries might require more than one document \(eg: India\). In that case,
     </tr>
     <tr>
       <td style="text-align:left">India</td>
-      <td style="text-align:left">Aadhaar</td>
+      <td style="text-align:left">PAN</td>
       <td style="text-align:left">
-        <p>12 digits</p>
-        <p>full Aadhaar validation</p>
+        <p>10 characters
+          <br />(5 letters, 4 numbers, 1 letter/number)</p>
+        <p>full PAN validation</p>
       </td>
       <td style="text-align:left"><code>document</code>
       </td>
@@ -97,15 +98,14 @@ Some countries might require more than one document \(eg: India\). In that case,
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">PAN</td>
+      <td style="text-align:left">Aadhaar</td>
       <td style="text-align:left">
-        <p>10 characters
-          <br />(5 letters, 4 numbers, 1 letter/number)</p>
-        <p>full PAN validation</p>
+        <p>12 digits</p>
+        <p>full Aadhaar validation</p>
       </td>
       <td style="text-align:left"><code>document2</code>
       </td>
-      <td style="text-align:left">Yes</td>
+      <td style="text-align:left">Recommended</td>
     </tr>
     <tr>
       <td style="text-align:left">Mexico</td>
