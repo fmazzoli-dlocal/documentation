@@ -105,7 +105,7 @@ Some countries might accept more than one document \(eg: India\). In that case, 
       </td>
       <td style="text-align:left"><code>document2</code>
       </td>
-      <td style="text-align:left">Recommended</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Mexico</td>
