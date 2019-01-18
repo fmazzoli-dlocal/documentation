@@ -50,8 +50,9 @@ curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -H 'X-Content-Type: application/json' \
     -d '{body}'
-    https://api.dlocal.com/payments
+    https://sandbox.dlocal.com/payments
 ```
 
 #### Example request body
