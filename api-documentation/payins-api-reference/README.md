@@ -4,6 +4,31 @@ This section covers the basic concepts of the payment transaction types and the 
 
 JSON is returned by all API responses, including errors. For sandbox environment just replace **api.dlocal.com** for **sandbox.dlocal.com**.
 
+### Content
+
+* \*\*\*\*[**Security**](security.md)
+  * Learn how to set up the headers for making API requests, and encrypt sensitive information.
+* \*\*\*\*[**Payment Methods**](payment-methods/)\*\*\*\*
+  * See the payment methods available by country
+* \*\*\*\*[**Payments**](payments/)\*\*\*\*
+  * Learn how to make payments with all payment methods
+* \*\*\*\*[**Refunds**](refunds.md)\*\*\*\*
+  * Learn how to make refunds
+* \*\*\*\*[**Credit Card Payment Operations**](credit-card-payment-operations.md)\*\*\*\*
+  * Learn some advance credit card functionalities like auth+capture or 3DS.
+* \*\*\*\*[**Orders**](orders.md)\*\*\*\*
+  * Get information about your orders.
+* \*\*\*\*[**Installments**](installments.md)\*\*\*\*
+  * Make payments in installments
+* \*\*\*\*[**Saving Cards**](saving-cards.md)\*\*\*\*
+  * Learn how to securely save cards for recurring payments
+* \*\*\*\*[**Currency Exchange**](currency-exchange.md)\*\*\*\*
+  * Get the exchange rate between any two currencies
+* \*\*\*\*[**Country Reference**](country-reference.md)\*\*\*\*
+  * Detailed information for each country, like ID document required and its validation.
+
+
+
 Get started with the Security section of this documentation:
 
 {% page-ref page="security.md" %}
