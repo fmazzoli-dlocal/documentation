@@ -52,17 +52,6 @@
       <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BV.png">https://pay.dlocal.com/views/2.0/images/payments/BV.png</a>​</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>BM</code>
-      </td>
-      <td style="text-align:left">Banamex</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BM.png">https://pay.dlocal.com/views/2.0/images/payments/BM.png</a>​</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>BN</code>
       </td>
       <td style="text-align:left">Banorte</td>
