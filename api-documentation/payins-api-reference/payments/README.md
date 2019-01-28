@@ -547,6 +547,10 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 
 Notifications will be sent in every change of status of a payment to the notification URL specified by the merchant. This URL is taken from the `notification_url` field of the payment, if it differs from the one specified in the merchant panel. The body of the request will always be the payment object.
 
+{% hint style="info" %}
+Until dLocal receives a 200 status code confirmation on these notifications, it will retry every 10 minutes for 30 days.
+{% endhint %}
+
 #### Example Notification POST
 
 POST: _{payment.notification\_url}_
