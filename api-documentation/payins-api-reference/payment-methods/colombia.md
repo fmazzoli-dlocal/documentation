@@ -55,17 +55,6 @@
       <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>DB</code>
-      </td>
-      <td style="text-align:left">DirectDebit</td>
-      <td style="text-align:left"><code>BANK_TRANSFER</code>
-      </td>
-      <td style="text-align:left">Bank Transfer Online</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DB.png">https://pay.dlocal.com/views/2.0/images/payments/DB.png</a>​</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>EX</code>
       </td>
       <td style="text-align:left">Almacenes Éxito</td>

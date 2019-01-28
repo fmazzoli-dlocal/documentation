@@ -52,7 +52,7 @@
       <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BV.png">https://pay.dlocal.com/views/2.0/images/payments/BV.png</a>​</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>BN</code>
+      <td style="text-align:left"><code>BQ</code>
       </td>
       <td style="text-align:left">Banorte</td>
       <td style="text-align:left"><code>TICKET</code>
