@@ -67,7 +67,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example of redirect page of a OXXO ticket ](../../../.gitbook/assets/image%20%2812%29.png)
+![Example of redirect page of a OXXO ticket ](../../../.gitbook/assets/image%20%2813%29.png)
 
 ## Direct Cash Payments
 
@@ -150,7 +150,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%288%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%286%29.png)
 
 ### The Ticket Object
 
@@ -159,7 +159,7 @@ curl -X POST \
 | `type` | String | Type of ticket, can be `NUMERIC`, `BARCODE` or `CUSTOM` |
 | `number` | String | Numeric code of the `NUMERIC` or `CUSTOM` ticket |
 | `barcode` | String | Code to be included in the barcode of the `BARCODE` or `CUSTOM` ticket. |
-| `format` | String | Format of the barcode of the `BARCODE` or `CUSTOM` ticket. Example `CODE_128.` |
+| `format` | String | Format of the barcode of the `BARCODE` or `CUSTOM` ticket. Example `CODE_128,`or `ITF` |
 | `id` | String | Reference code of the ticket |
 | `expiration_date` | Date\(ISO-8601\) | The expiration date of the ticket. |
 | `company_name` | String | Name of the company that acts as the beneficiary of the payment.  |
