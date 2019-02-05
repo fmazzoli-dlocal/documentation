@@ -114,7 +114,7 @@ Example Response
 | `email` | String | User’s email address. **Required.** |
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
 | `phone` | String | User’s phone. Optional. |
-| `document` | String | User’s personal identification number. Some countries might require more than one document. [Click here for more details.](../country-reference.md#documents) **Required**. |
+| `document` | String | User’s personal identification number. [Click here for more details.](../country-reference.md#documents) **Required**. |
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](./#the-address-object) | User’s address. **Only required in India.** |
 {% endtab %}

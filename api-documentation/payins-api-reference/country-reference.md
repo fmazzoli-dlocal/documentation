@@ -4,8 +4,6 @@
 
 Bellow are the allow documents for each country that need to be entered in the [Payer Object. ](payments/#the-payer-object)
 
-Some countries might accept more than one document \(eg: India\). In that case, other documents need to be included in additional `document[#]` parameters.
-
 {% tabs %}
 {% tab title="Example Payer Object: Brazil" %}
 ```yaml
@@ -13,17 +11,6 @@ Some countries might accept more than one document \(eg: India\). In that case, 
 "name" : "Thiago Alcántara",
 "email" : "thiago@example.com",
 "document" : "42243309114", ->CPF
-}
-```
-{% endtab %}
-
-{% tab title="Example Payer Object: India" %}
-```yaml
-{
-"name" : "Parag Chilimbi",
-"email" : "parag@example.com",
-"document" : "EHFGA5967A", #-> PAN 
-"document2" : "548550008000" #-> Aadhaar
 }
 ```
 {% endtab %}
@@ -93,17 +80,6 @@ Some countries might accept more than one document \(eg: India\). In that case, 
         <p>full PAN validation</p>
       </td>
       <td style="text-align:left"><code>document</code>
-      </td>
-      <td style="text-align:left">Yes</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Aadhaar</td>
-      <td style="text-align:left">
-        <p>12 digits</p>
-        <p>full Aadhaar validation</p>
-      </td>
-      <td style="text-align:left"><code>document2</code>
       </td>
       <td style="text-align:left">Yes</td>
     </tr>
