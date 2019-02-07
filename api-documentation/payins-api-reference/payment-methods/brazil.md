@@ -257,7 +257,7 @@ curl -X POST \
     -H 'X-Trans-Key: fm12O7G9' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
-    https://api.dlocal.com/secure_payments
+    https://api.dlocal.com/payments
 ```
 
 #### Example Request Body
