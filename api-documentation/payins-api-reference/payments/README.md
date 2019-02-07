@@ -1,6 +1,10 @@
 # Payments
 
-This service allows you to create, modify or read payments. 
+This service allows you to create, modify or read payments. For more details on specific types of payments, you can look at the following pages:
+
+* [Credit Card Payments](credit-card-payments/)
+* [Cash \(Ticket\) Payments](cash-ticket-payments.md)
+* [Bank Transfer Payments](bank-transfer-payments.md)
 
 {% api-method method="post" host="https://api.dlocal.com" path="/payments" %}
 {% api-method-summary %}
@@ -62,7 +66,8 @@ URL where dlocal will send notifications associated to changes to this payment.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="callback\_url" type="string" required=false %}
-URL where dlocal does the final redirect \(only for bank transfers and tickets\)
+URL where dlocal does the final redirect.   
+**Required only for `REDIRECT` payment method flow.**
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -248,6 +253,7 @@ curl -X POST \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
     -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
     https://api.dlocal.com/secure_payments
@@ -397,6 +403,7 @@ $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
+    -H 'X-Version: 2.1' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343
 ```
@@ -445,6 +452,7 @@ $ curl \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
+    -H 'X-Version: 2.1' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     https://api.dlocal.com/payments/PAY4334346343/status
 ```
@@ -494,7 +502,7 @@ $ curl \
 
 ### Errors
 
-Below you can find an example of a **Credit Card** payment. For more examples [visit this page](credit-card-payments.md).
+Below you can find an example of a **Credit Card** payment. For more examples [visit this page](credit-card-payments/).
 
 For examples of **Cash \(ticket\)** payments, [visit this page](cash-ticket-payments.md).
 
