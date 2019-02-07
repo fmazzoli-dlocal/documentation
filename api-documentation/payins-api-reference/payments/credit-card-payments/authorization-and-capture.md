@@ -277,3 +277,70 @@ $ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
+## Refunds for Captures
+
+**Refunds are applied to the Captures, not the Authorization**. 
+
+{% api-method method="post" host=" https://api.dlocal.com/" path="refunds" %}
+{% api-method-summary %}
+Make a Refund
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="capture\_id" type="string" required=true %}
+The id of the captured payment.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="notification\_url" type="string" required=true %}
+If a refund is pending, the refund confirmation is sent asynchronously to this URL.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="amount" type="number" required=false %}
+Amount to refund. If the amount is empty, then the default is total amount of the payment.  
+**Required if** `currency` **is present.**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="currency" type="string" required=false %}
+Currency of the Amount.  
+**Required if** `amount` **is present.**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="description" type="string" required=false %}
+Description of the refund.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```yaml
+{
+   "id" : "REF42342",
+   "payment_id" : "D-4-09f52dd0-5cfa-4b0e-a471-1608ea0dba24",
+   "notification_url" : "http://some.url",
+   "amount" : 803.04,
+   "currency" : "BRL",
+   "status" : "SUCCESS",
+   "status_code" : 200,
+   "status_detail" : "The refund was paid",
+   "created_date" : "2018-09-06T22:03:03.000+0000",
+   "amount_refunded" : 803.04
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Read more about Refunds [here](../../refunds.md).
+

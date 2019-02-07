@@ -1,41 +1,14 @@
 # Changelog
 
-## September 26, 2018 <a id="september-14-2018"></a>
+## Changes from v2.0
 
-| Page | Section | Change |
-| :--- | :--- | :--- |
-| Payment Methods | Payment Methods Codes | Added more details to payment methods. |
-| Payments | Create a Payment | Made `cvv` field optional for most countries. |
-
-## September 18, 2018 <a id="september-14-2018"></a>
-
-| Page | Section | Change |
-| :--- | :--- | :--- |
-| Credit Card Payment Operations | Chargeback Status | Added more details to chargeback status codes. |
-
-## September 14, 2018
-
-| Page | Section | Change |
-| :--- | :--- | :--- |
-| Country Reference | Documents | Added new Documents section with details of the personal IDs for each country |
-| Payments | Payer Object | Added reference to [Documents](../api-documentation/payins-api-reference/country-reference.md#documents) sections in the description of the `document` parameter. |
-| Saving Cards | Create a Card | Added example for invalid parameter error. |
-| Saving Cards | HTTP Errors | Added possible errors list. |
-
-## September 11, 2018
-
-| Page | Section | Change |
-| :--- | :--- | :--- |
-| Security | Headers | Added example for X-Date. |
-| Payments | Create a Payment - Example Request | Added example of payment using token or card\_id. |
-
-## September 6, 2018
-
-| Page | Section | Change |
-| :--- | :--- | :--- |
-| dlocal.js Reference | The Field Object | Added ability to customize the style of the Smart Fields on autofill. |
-| Payments | Notification | Added 'status\_code' and 'status\_detail' to notification body. |
-| Refunds | Make a Refund | Added 'status\_detail' to the Make a Refund example POST. |
-| Credit Card Payment Operations | Cancel  a Credit Card Payment | Added 'payment\_method\_id' Cancel a Credit Card Payment response |
-| Credit Card Payment Operations | Chargeback asynchronous notification | Added 'status\_detail' to the Chargeback object. |
+* **New method for capturing authorizations:** While Authorizations are created the same way as in v2.0, capturing that Authorization now looks more similar as creating a payment. The main advantages for this are:
+  * Support for multiple partial captures: Availability depends on region, please contact your Technical Account Manager for more details. 
+  * You can now add an `order_id` to each individual Capture, meaning that you can add your own external reference to each of them. Previously only the Authorization had this feature.
+  * Refunds are now applied to individual Captures, and not to the Authorization.
+* Request headers now need to include API version \(eg: X-Version = 2.1\). Learn more [here](../api-documentation/payins-api-reference/security.md#headers).
+* Removed 'Credit Card Payment Operations' page, and instead replaced it with multiple sub-pages under '[Credit Card Payments](../api-documentation/payins-api-reference/payments/credit-card-payments/)':
+  * [Authorization and Capture](../api-documentation/payins-api-reference/payments/credit-card-payments/authorization-and-capture.md)
+  * [Chargebacks](../api-documentation/payins-api-reference/payments/credit-card-payments/chargebacks.md)
+  * [3D-Secure](../api-documentation/payins-api-reference/payments/credit-card-payments/3d-secure.md)
 
