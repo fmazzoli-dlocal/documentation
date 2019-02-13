@@ -2,7 +2,7 @@
 
 In some regions 3D-Secure authentication might be mandatory. In such scenario, the [Create a Payment](https://docs.dlocal.com/api-documentation/payins-api-reference/payments#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object and will include a 3D-Secure object, containing the URL that the user needs to be redirected to complete the authorization.
 
-Once user completed the authentication successfully, the payment will proceed to be processed.
+Once user completed the authentication successfully, the payment will proceed to be processed, and the user will be redirected to the `callback_url` .
 
 ### Example Response to Create a Payment <a id="example-response-to-create-a-payment"></a>
 
@@ -30,7 +30,8 @@ Once user completed the authentication successfully, the payment will proceed to
     "status_detail": "The payment is pending 3D Secure authentication.",
     "status_code": "101",
     "order_id": "waC3GWwRYwAP",
-    "notification_url": "http://merchant.com/notification"
+    "notification_url": "http://merchant.com/notification",
+    "callback_url": "http://merchant.com/return",
 }
 ```
 
