@@ -31,7 +31,7 @@ Once user completed the authentication successfully, the payment will proceed to
     "status_code": "101",
     "order_id": "waC3GWwRYwAP",
     "notification_url": "http://merchant.com/notification",
-    "callback_url": "http://merchant.com/return",
+    "callback_url": "http://merchant.com/return"
 }
 ```
 

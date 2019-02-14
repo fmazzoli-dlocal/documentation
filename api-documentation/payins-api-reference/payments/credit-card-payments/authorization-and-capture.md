@@ -65,8 +65,7 @@ $ curl -X POST \
         "expiration_month": 10,
         "expiration_year": 2040,
         "brand": "VI",
-        "last4": "1111",
-        "bin": "411111"
+        "last4": "1111"
     },
     "created_date": "2019-02-06T21:04:43.000+0000",
     "approved_date": "2019-02-06T21:04:44.000+0000",
@@ -287,14 +286,14 @@ Make a Refund
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+On the`payment_id` parameter, make sure to include the `id` of the Capture, not the Authorization.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="capture\_id" type="string" required=true %}
-The id of the captured payment.
+{% api-method-parameter name="payment\_id" type="string" required=true %}
+The id of the **capture**.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="notification\_url" type="string" required=true %}
