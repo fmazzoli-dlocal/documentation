@@ -44,7 +44,7 @@
       <td style="text-align:left"><code>BV</code>
       </td>
       <td style="text-align:left">BBVA Bancomer</td>
-      <td style="text-align:left"><code>TICKET</code>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
@@ -55,7 +55,7 @@
       <td style="text-align:left"><code>BQ</code>
       </td>
       <td style="text-align:left">Banorte</td>
-      <td style="text-align:left"><code>TICKET</code>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
@@ -66,7 +66,7 @@
       <td style="text-align:left"><code>SM</code>
       </td>
       <td style="text-align:left">Santander</td>
-      <td style="text-align:left"><code>TICKET</code>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
