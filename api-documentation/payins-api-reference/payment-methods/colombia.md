@@ -30,7 +30,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/EY.png">https://pay.dlocal.com/views/2.0/images/payments/EY.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EY.png">https://pay.dlocal.com/views/2.0/images/payments/EY.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>DA</code>
@@ -41,7 +41,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DA.png">https://pay.dlocal.com/views/2.0/images/payments/DA.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DA.png">https://pay.dlocal.com/views/2.0/images/payments/DA.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -52,18 +52,18 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>EX</code>
       </td>
-      <td style="text-align:left">Almacenes Éxito</td>
+      <td style="text-align:left">Almacenes &#xC9;xito</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/EX.png">https://pay.dlocal.com/views/2.0/images/payments/EX.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EX.png">https://pay.dlocal.com/views/2.0/images/payments/EX.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>BU</code>
@@ -74,7 +74,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BU.png">https://pay.dlocal.com/views/2.0/images/payments/BU.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BU.png">https://pay.dlocal.com/views/2.0/images/payments/BU.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>OC</code>
@@ -85,7 +85,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/OC.png">https://pay.dlocal.com/views/2.0/images/payments/OC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/OC.png">https://pay.dlocal.com/views/2.0/images/payments/OC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CR</code>
@@ -96,18 +96,18 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/CR.png">https://pay.dlocal.com/views/2.0/images/payments/CR.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/CR.png">https://pay.dlocal.com/views/2.0/images/payments/CR.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>EQ</code>
       </td>
-      <td style="text-align:left">Empresa de Energía del Quindio</td>
+      <td style="text-align:left">Empresa de Energ&#xED;a del Quindio</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/EQ.png">https://pay.dlocal.com/views/2.0/images/payments/EQ.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EQ.png">https://pay.dlocal.com/views/2.0/images/payments/EQ.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>SX</code>
@@ -118,7 +118,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/SX.png">https://pay.dlocal.com/views/2.0/images/payments/SX.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SX.png">https://pay.dlocal.com/views/2.0/images/payments/SX.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>VI</code>
@@ -133,7 +133,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MC</code>
@@ -148,7 +148,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>VD</code>
@@ -163,7 +163,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/VD.png">https://pay.dlocal.com/views/2.0/images/payments/VD.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VD.png">https://pay.dlocal.com/views/2.0/images/payments/VD.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MD</code>
@@ -178,7 +178,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>BN</code>
@@ -189,7 +189,7 @@
       <td style="text-align:left">Bank Transfer Offline</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BN.png">https://pay.dlocal.com/views/2.0/images/payments/BN.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BN.png">https://pay.dlocal.com/views/2.0/images/payments/BN.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>AE</code>
@@ -204,7 +204,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>DC</code>
@@ -219,7 +219,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -230,7 +230,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -241,7 +241,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -252,7 +252,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -263,7 +263,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -274,7 +274,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -285,7 +285,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -296,7 +296,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -307,7 +307,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -318,7 +318,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -329,7 +329,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -340,7 +340,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -351,7 +351,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -362,7 +362,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -373,7 +373,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -384,7 +384,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>
@@ -395,7 +395,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PC</code>

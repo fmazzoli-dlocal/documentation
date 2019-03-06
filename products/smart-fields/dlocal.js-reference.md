@@ -301,7 +301,8 @@ All Smart Fields accept a common set of options, and then some Field-specific op
         <p>Customize appearance using CSS properties. Style is specified as an object
           for any of the variants below.</p>
         <ul>
-          <li><code>base</code>, base style—all other variants inherit from this style</li>
+          <li><code>base</code>, base style&#x2014;all other variants inherit from this
+            style</li>
           <li><code>complete</code>, applied when the Field has valid input</li>
           <li><code>empty</code>, applied when the Field has no customer input</li>
           <li><code>invalid</code>, applied when the Field has invalid input</li>
@@ -324,7 +325,8 @@ All Smart Fields accept a common set of options, and then some Field-specific op
           <li><code>iconColor</code>
           </li>
           <li><code>lineHeight</code>, to avoid cursors being rendered inconsistently
-            across browsers, consider using a padding on the Field's container instead.</li>
+            across browsers, consider using a padding on the Field&apos;s container
+            instead.</li>
           <li><code>letterSpacing</code>
           </li>
           <li><code>textDecoration</code>
@@ -422,7 +424,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
               <li><code>complete</code> can be used to progressively disclose the next parts
                 of your form or to enable form submission.</li>
               <li><code>complete</code> is not an indicator of whether a customer is done
-                with their input—it only indicates that the Field contains a complete,
+                with their input&#x2014;it only indicates that the Field contains a complete,
                 well-formed value.</li>
             </ul>
           </li>
@@ -451,7 +453,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
               <li><code>complete</code> can be used to progressively disclose the next parts
                 of your form or to enable form submission.</li>
               <li><code>complete</code> is not an indicator of whether a customer is done
-                with their input—it only indicates that the Field contains a complete,
+                with their input&#x2014;it only indicates that the Field contains a complete,
                 well-formed value.</li>
             </ul>
           </li>
@@ -474,13 +476,13 @@ The only way to communicate with your Smart Field is by listening to an `event`.
     </tr>
     <tr>
       <td style="text-align:left">complete</td>
-      <td style="text-align:left">Triggered when the Field changes it's complete status. The event payload
-        always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
+      <td style="text-align:left">Triggered when the Field changes it&apos;s complete status. The event
+        payload always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
         the Field is complete and well-formed, and <code>false</code> otherwise.</td>
     </tr>
     <tr>
       <td style="text-align:left">empty</td>
-      <td style="text-align:left">Triggered when the Field changes it's empty status. The event payload
+      <td style="text-align:left">Triggered when the Field changes it&apos;s empty status. The event payload
         always contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
         the Field is empty, and <code>false</code> otherwise.</td>
     </tr>
@@ -502,8 +504,8 @@ The only way to communicate with your Smart Field is by listening to an `event`.
               <li><code>complete</code> can be used to progressively disclose the next parts
                 of your form or to enable form submission.</li>
               <li><code>complete</code>  <em>is not</em> an indicator of whether a customer
-                is done with their input—it only indicates that the Field contains a complete,
-                well-formed value.</li>
+                is done with their input&#x2014;it only indicates that the Field contains
+                a complete, well-formed value.</li>
             </ul>
           </li>
           <li><code>error</code> - The current validation error, if any. Comprised of <code>message</code>, <code>code</code>,
@@ -531,9 +533,9 @@ The only way to communicate with your Smart Field is by listening to an `event`.
     </tr>
     <tr>
       <td style="text-align:left">autofilled</td>
-      <td style="text-align:left">Triggered when the Field detects a change in it's autofilled status. The
-        event payload always contains <code>autofilled</code> - Boolean - key, which
-        is <b><code>true</code></b> if the field is autofilled.</td>
+      <td style="text-align:left">Triggered when the Field detects a change in it&apos;s autofilled status.
+        The event payload always contains <code>autofilled</code> - Boolean - key,
+        which is <b><code>true</code></b> if the field is autofilled.</td>
     </tr>
   </tbody>
 </table>### Input validation

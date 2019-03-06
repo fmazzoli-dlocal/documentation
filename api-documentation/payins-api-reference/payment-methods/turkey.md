@@ -34,7 +34,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>VI</code>
@@ -49,7 +49,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MC</code>
@@ -64,7 +64,30 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>OT</code>
+      </td>
+      <td style="text-align:left">Troy</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Credit</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>

@@ -55,7 +55,7 @@ Bellow are the allow documents for each country that need to be entered in the [
     <tr>
       <td style="text-align:left">China</td>
       <td style="text-align:left">
-        <p>公民身份号码</p>
+        <p>&#x516C;&#x6C11;&#x8EAB;&#x4EFD;&#x53F7;&#x7801;</p>
         <p>(citizen ID number)</p>
       </td>
       <td style="text-align:left">between 5 to 20 digits</td>
