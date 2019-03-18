@@ -48,6 +48,10 @@ Example Response
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+At the moment, only the only value for the `from` parameter is **`USD`**, and the `to`parameter can include any local currency.
+{% endhint %}
+
 ## Example request
 
 ```bash
