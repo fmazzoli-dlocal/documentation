@@ -25,7 +25,7 @@ POST: _{merchant.chargeback\_url}_
     "payment_id": "PAY245235",
     "amount": 100.00,
     "currency": "USD",
-    "status": "SUCCESS",
+    "status": "COMPLETED",
     "status_code": "200",
     "status_detail": "The chargeback was executed."
     "created_date" : "2018-02-15T15:14:52-00:00"
