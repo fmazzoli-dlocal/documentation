@@ -10,10 +10,14 @@ If a chargeback was applied \(requested by the user\) a notification is sent to 
 | `payment_id` | String | The payment id. |
 | `amount` | Positive Float | The amount of the chargeback. |
 | `currency` | String | The currency of the chargeback. |
-| `status` | String | The [status]() of the chargeback. |
+| `status` | String | The [status](chargebacks.md#chargeback-status) of the chargeback. |
 | `status_code` | String | The status code of the chargeback. |
 | `status_detail` | String | The description of the chargeback's status. |
 | `created_date` | String | The date of when the chargeback was executed. |
+
+{% hint style="info" %}
+Chargeback notifications are signed. [Learn more about the signature notifications here.](../#signature-of-notifications)
+{% endhint %}
 
 **Example post**
 
