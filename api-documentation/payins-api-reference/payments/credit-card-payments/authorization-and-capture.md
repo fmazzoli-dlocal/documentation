@@ -21,7 +21,7 @@ $ curl -X POST \
     -H 'Content-Type: application/json' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
-    https://api.dlocal.com/payments
+    https://api.dlocal.com/secure_payments
 ```
 
 ```yaml
