@@ -32,7 +32,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BL.png">https://pay.dlocal.com/views/2.0/images/payments/BL.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BL.png">https://pay.dlocal.com/views/2.0/images/payments/BL.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>I</code>
@@ -43,7 +43,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/I.png">https://pay.dlocal.com/views/2.0/images/payments/I.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/I.png">https://pay.dlocal.com/views/2.0/images/payments/I.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>B</code>
@@ -54,7 +54,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/B.png">https://pay.dlocal.com/views/2.0/images/payments/B.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/B.png">https://pay.dlocal.com/views/2.0/images/payments/B.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>BB</code>
@@ -65,7 +65,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/BB.png">https://pay.dlocal.com/views/2.0/images/payments/BB.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BB.png">https://pay.dlocal.com/views/2.0/images/payments/BB.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CA</code>
@@ -76,7 +76,7 @@
       <td style="text-align:left">Bank Transfer Offline</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/CA.png">https://pay.dlocal.com/views/2.0/images/payments/CA.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/CA.png">https://pay.dlocal.com/views/2.0/images/payments/CA.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>SB</code>
@@ -87,7 +87,7 @@
       <td style="text-align:left">Bank Transfer Offline</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/SB.png">https://pay.dlocal.com/views/2.0/images/payments/SB.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SB.png">https://pay.dlocal.com/views/2.0/images/payments/SB.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>VI</code>
@@ -102,7 +102,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MC</code>
@@ -117,7 +117,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>EL</code>
@@ -132,7 +132,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/EL.png">https://pay.dlocal.com/views/2.0/images/payments/EL.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EL.png">https://pay.dlocal.com/views/2.0/images/payments/EL.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>DC</code>
@@ -147,7 +147,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>HI</code>
@@ -162,7 +162,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/HI.png">https://pay.dlocal.com/views/2.0/images/payments/HI.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/HI.png">https://pay.dlocal.com/views/2.0/images/payments/HI.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>ML</code>
@@ -177,7 +177,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/ML.png">https://pay.dlocal.com/views/2.0/images/payments/ML.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/ML.png">https://pay.dlocal.com/views/2.0/images/payments/ML.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>AE</code>
@@ -192,7 +192,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>JC</code>
@@ -207,7 +207,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/JC.png">https://pay.dlocal.com/views/2.0/images/payments/JC.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/JC.png">https://pay.dlocal.com/views/2.0/images/payments/JC.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>AU</code>
@@ -222,7 +222,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/AU.png">https://pay.dlocal.com/views/2.0/images/payments/AU.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AU.png">https://pay.dlocal.com/views/2.0/images/payments/AU.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>DS</code>
@@ -237,7 +237,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">​<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>​</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>&#x200B;</td>
     </tr>
   </tbody>
 </table>## Direct Alternative Payment Methods
