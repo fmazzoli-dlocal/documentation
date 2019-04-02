@@ -196,7 +196,7 @@ function dlocalTokenHandler(token) {
   var tokenInput = document.createElement('input');
   tokenInput.setAttribute('type', 'hidden');
   tokenInput.setAttribute('name', 'dlocalToken');
-  tokenInput.setAttribute('value', token.id);
+  tokenInput.setAttribute('value', token);
   form.appendChild(tokenInput);
 
   // Submit the form
