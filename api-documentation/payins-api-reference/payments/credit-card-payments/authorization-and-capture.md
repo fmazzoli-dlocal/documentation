@@ -34,7 +34,7 @@ $ curl -X POST \
     "payer":{
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
-        "document" : "53033315550",
+        "document" : "53033315550"
     },
     "card":{
         "holder_name" : "Thiago Gabriel",
@@ -132,7 +132,7 @@ ID of the capture given by the merchant in their system. Think of it as an exter
     "status": "PAID",
     "status_detail": "The payment was paid",
     "status_code": "200",
-    "order_id": "657434343-1"
+    "order_id": "657434343-1",
     "authorization_id": "D-4-e2227981-8ec8-48fd-8e9a-19fedb08d73a"
 }
 ```
@@ -179,7 +179,7 @@ $ curl -X POST \
     "status": "PAID",
     "status_detail": "The payment was paid",
     "status_code": "200",
-    "order_id": "657434343-1"
+    "order_id": "657434343-1",
     "authorization_id": "D-4-e2227981-8ec8-48fd-8e9a-19fedb08d73a"
 }
 ```

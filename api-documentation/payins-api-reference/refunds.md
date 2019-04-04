@@ -82,7 +82,7 @@ User's bank branch name.
    "status_code" : 200,
    "status_detail" : "The refund was paid",
    "created_date" : "2018-09-06T22:03:03.000+0000",
-   "amount_refunded" : 803.04
+   "amount_refunded" : 803.04 //Deprecated
 }
 ```
 {% endapi-method-response-example %}
@@ -130,7 +130,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | `id` | String | The refund id. |
 | `payment_id` | String | The payment id. |
 | `amount` | Positive Float | The amount of the refund. |
-| `amount_refunded` | Positive Float | The refunded amount. |
+| `amount_refunded` | Positive Float | Deprecated. Do not use. |
 | `currency` | String | The currency code of the refund. |
 | `status` | String | The status of the refund. |
 | `status_code` | String | The [status](refunds.md#refund-status) code of the refund. |
@@ -196,7 +196,7 @@ The refund id
    "status_code" : 200,
    "status_detail" : "The refund was paid",
    "created_date" : "2018-09-06T22:03:03.000+0000",
-   "amount_refunded" : 803.04
+   "amount_refunded" : 803.04 //Deprecated
 }
 ```
 {% endapi-method-response-example %}
@@ -245,7 +245,7 @@ Example Response
     "id": "REF42342",
     "status": "SUCCESS",
     "status_code": "200",
-    "status_detail": "The refund was paid.",
+    "status_detail": "The refund was paid."
 }
 ```
 {% endapi-method-response-example %}

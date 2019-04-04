@@ -437,7 +437,7 @@ Example Response
     "id": "PAY4334346343",
     "status" : "PAID",
     "status_detail" : "The payment was paid.",
-    "status_code" : "200",
+    "status_code" : "200"
 }
 ```
 {% endapi-method-response-example %}
@@ -597,8 +597,8 @@ POST: _{payment.notification\_url}_
     },
     "created_date" : "2018-02-15T15:14:52-00:00",
     "status" : "PENDING",
-    "status_code" : "100"
-    "status_detail" : "The payment is pending."
+    "status_code" : "100",
+    "status_detail" : "The payment is pending.",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }

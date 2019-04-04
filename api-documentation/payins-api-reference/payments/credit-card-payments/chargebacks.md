@@ -31,7 +31,7 @@ POST: _{merchant.chargeback\_url}_
     "currency": "USD",
     "status": "COMPLETED",
     "status_code": "200",
-    "status_detail": "The chargeback was executed."
+    "status_detail": "The chargeback was executed.",
     "created_date" : "2018-02-15T15:14:52-00:00"
 }
 ```
@@ -68,7 +68,7 @@ The chargeback id
     "currency": "USD",
     "status": "COMPLETED",
     "status_code": "200",
-    "status_detail": "The chargeback was executed."
+    "status_detail": "The chargeback was executed.",
     "created_date" : "2018-02-15T15:14:52-00:00"
 }
 ```

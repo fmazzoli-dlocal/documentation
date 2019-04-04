@@ -232,7 +232,7 @@ $ curl -X POST \
     "payer":{
         "name" : "Thiago Gabriel",
         "email" : "thiago@example.com",
-        "document" : "53033315550",
+        "document" : "53033315550"
     },
     "card":{
         "holder_name" : "Thiago Gabriel",

@@ -23,7 +23,7 @@ Once user completed the authentication successfully, the payment will proceed to
         "last4": "1111"
     },
     "three_dsecure" : {
-        "redirect_url" : "http://sandbox.dlocal.com/three-ds/M-"
+        "redirect_url" : "http://sandbox.dlocal.com/three-ds/M-64356345634587b3495"
     },
     "created_date": "2018-07-12T17:02:47.000+0000",
     "status": "PENDING",

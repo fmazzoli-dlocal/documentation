@@ -10,7 +10,7 @@ Bellow are the allow documents for each country that need to be entered in the [
 {
 "name" : "Thiago Alcántara",
 "email" : "thiago@example.com",
-"document" : "42243309114", ->CPF
+"document" : "42243309114" //CPF
 }
 ```
 {% endtab %}
