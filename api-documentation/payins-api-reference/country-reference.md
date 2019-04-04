@@ -20,115 +20,140 @@ Bellow are the allow documents for each country that need to be entered in the [
   <thead>
     <tr>
       <th style="text-align:left">Country</th>
-      <th style="text-align:left">Document(s)</th>
-      <th style="text-align:left">Allowed Format</th>
-      <th style="text-align:left">Field in Payer Object</th>
-      <th style="text-align:left">Required</th>
+      <th style="text-align:left"><code>country</code> code</th>
+      <th style="text-align:left"><code>currency</code> code</th>
+      <th style="text-align:left"><code>document</code> field</th>
+      <th style="text-align:left"><code>docuement</code> format</th>
+      <th style="text-align:left"><code>document</code>required?</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">Argentina</td>
+      <td style="text-align:left"><code>AR</code>
+      </td>
+      <td style="text-align:left"><code>ARS</code>
+      </td>
       <td style="text-align:left">DNI or CUIT</td>
       <td style="text-align:left">between 7 to 9, or 11 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Brazil</td>
+      <td style="text-align:left"><code>BR</code>
+      </td>
+      <td style="text-align:left"><code>BRL</code>
+      </td>
       <td style="text-align:left">CPF or CNPJ</td>
       <td style="text-align:left">between 11 to 14 digits
         <br />full CPF validation</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Chile</td>
+      <td style="text-align:left"><code>CL</code>
+      </td>
+      <td style="text-align:left"><code>CLP</code>
+      </td>
       <td style="text-align:left">CI/RUT</td>
       <td style="text-align:left">between 8 to 9 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">China</td>
+      <td style="text-align:left"><code>CN</code>
+      </td>
+      <td style="text-align:left"><code>CNY</code>
+      </td>
       <td style="text-align:left">
         <p>&#x516C;&#x6C11;&#x8EAB;&#x4EFD;&#x53F7;&#x7801;</p>
         <p>(citizen ID number)</p>
       </td>
       <td style="text-align:left">between 5 to 20 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Colombia</td>
+      <td style="text-align:left"><code>CO</code>
+      </td>
+      <td style="text-align:left"><code>COP</code>
+      </td>
       <td style="text-align:left">CC</td>
       <td style="text-align:left">between 6 to 10 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">India</td>
+      <td style="text-align:left"><code>IN</code>
+      </td>
+      <td style="text-align:left"><code>INR</code>
+      </td>
       <td style="text-align:left">PAN</td>
       <td style="text-align:left">
         <p>10 characters
           <br />(5 letters, 4 numbers, 1 letter/number)</p>
         <p>full PAN validation</p>
       </td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Mexico</td>
+      <td style="text-align:left"><code>MX</code>
+      </td>
+      <td style="text-align:left"><code>MXN</code>
+      </td>
       <td style="text-align:left">CURP</td>
       <td style="text-align:left">between 10 to 18 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Morocco</td>
+      <td style="text-align:left"><code>MA</code>
+      </td>
+      <td style="text-align:left"><code>MAD</code>
+      </td>
       <td style="text-align:left">CNIE</td>
       <td style="text-align:left">between 5 to 20 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Paraguay</td>
+      <td style="text-align:left"><code>PY</code>
+      </td>
+      <td style="text-align:left"><code>PYG</code>
+      </td>
       <td style="text-align:left">CI</td>
       <td style="text-align:left">between 5 to 20 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Peru</td>
+      <td style="text-align:left"><code>PE</code>
+      </td>
+      <td style="text-align:left"><code>PEN</code>
+      </td>
       <td style="text-align:left">DNI</td>
       <td style="text-align:left">between 8 to 9 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Turkey</td>
+      <td style="text-align:left"><code>TR</code>
+      </td>
+      <td style="text-align:left"><code>TRY</code>
+      </td>
       <td style="text-align:left">T.C. Kimlik No.</td>
       <td style="text-align:left">between 5 to 20 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Uruguay</td>
+      <td style="text-align:left"><code>UY</code>
+      </td>
+      <td style="text-align:left"><code>UYU</code>
+      </td>
       <td style="text-align:left">CI</td>
       <td style="text-align:left">between 6 to 8 digits</td>
-      <td style="text-align:left"><code>document</code>
-      </td>
       <td style="text-align:left">Yes</td>
     </tr>
   </tbody>
