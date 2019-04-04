@@ -129,7 +129,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | :--- | :--- | :--- |
 | `id` | String | The refund id. |
 | `payment_id` | String | The payment id. |
-| `amount` | Positive Float | The amount of the refund. |
+| `amount` | Positive Float | The amount of the refund. Always in local currency. |
 | `amount_refunded` | Positive Float | Deprecated. Do not use. |
 | `currency` | String | The currency code of the refund. |
 | `status` | String | The status of the refund. |
@@ -151,9 +151,9 @@ POST**:** _{refund.notification\_url}_
 {
     "id" : "REF42342",
     "payment_id" : "PAY245235",
-    "amount" : 100.00,
-    "amount_refunded" : 100.00,
-    "currency" : "USD",
+    "amount" : 803.04,
+    "amount_refunded" : 803.04, //Deprecated
+    "currency" : "BRL",
     "status" : "SUCCESS",
     "status_code" : "200",
     "status_detail" : "The refund was paid.",
