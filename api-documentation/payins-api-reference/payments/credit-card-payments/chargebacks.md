@@ -135,5 +135,61 @@ Example Response
 | `CANCELLED` | 400 | The chargeback was cancelled. |
 | `REVERSAL` | 700 | The chargeback was completed but has now been reversed. |
 
-## 
+## Simulating Chargebacks in Sandbox
+
+In the Production environment, Chargebacks are triggered by the buyer by calling their bank. In dLocal's Sandbox environment though, merchants can simulate a Chargeback using the method described below:
+
+{% api-method method="post" host="https://sandbox.dlocal.com" path="/sandbox-tools/chargebacks" %}
+{% api-method-summary %}
+Simulate Chargeback \(Sandbox only\)
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Simulate a Chargeback in Sandbox
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="payment\_id" type="string" required=false %}
+ID of the payment that is being chargebacked.
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Successful response returns the id of the chargeback. 
+{% endapi-method-response-example-description %}
+
+```yaml
+{
+    "id": "CBK-4-184-45b0b9ae-4e05-419e-9248-d5890437b719"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Example Request
+
+```bash
+$ curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    https://sandbox.dlocal.com/sandbox-tools/chargebacks
+```
+
+#### Example Request Body
+
+```yaml
+{
+    "payment_id" : "PAY4334346343",
+}
+```
 
