@@ -23,7 +23,8 @@ Bellow are the allow documents for each country that need to be entered in the [
       <th style="text-align:left"><code>country</code> code</th>
       <th style="text-align:left"><code>currency</code> code</th>
       <th style="text-align:left"><code>document</code> field</th>
-      <th style="text-align:left"><code>docuement</code> format</th>
+      <th style="text-align:left"><code>document</code> 
+        <br />format</th>
       <th style="text-align:left"><code>document</code>required?</th>
     </tr>
   </thead>
