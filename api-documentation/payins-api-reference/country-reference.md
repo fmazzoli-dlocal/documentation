@@ -1,8 +1,6 @@
 # Country Reference
 
-## Documents
-
-Bellow are the allow documents for each country that need to be entered in the [Payer Object. ](payments/#the-payer-object)
+In the table below you can find the `country` code and `currency` of the countries currently covered by dLocal. You can also find the `document` used in each country which needs to be entered in the [Payer Object. ](payments/#the-payer-object)
 
 {% tabs %}
 {% tab title="Example Payer Object: Brazil" %}

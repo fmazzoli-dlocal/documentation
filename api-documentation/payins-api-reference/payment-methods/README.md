@@ -61,7 +61,7 @@ Merchant xTransKey
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="country" type="string" required=true %}
-Payment method country code. See all country codes here.
+Payment method country code.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -108,6 +108,10 @@ Payment method country code. See all country codes here.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+You can find all the country code available in the [**Country Reference**](../country-reference.md) page.
+{% endhint %}
 
 ## Example Request
 
