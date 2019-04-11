@@ -14,8 +14,6 @@ JSON is returned by all API responses, including errors. For sandbox environment
   * Learn how to make payments with all payment methods
 * \*\*\*\*[**Refunds**](refunds.md)\*\*\*\*
   * Learn how to make refunds
-* \*\*\*\*[**Credit Card Payment Operations**]()\*\*\*\*
-  * Learn some advance credit card functionalities like auth+capture or 3DS.
 * \*\*\*\*[**Orders**](orders.md)\*\*\*\*
   * Get information about your orders.
 * \*\*\*\*[**Installments**](installments.md)\*\*\*\*
