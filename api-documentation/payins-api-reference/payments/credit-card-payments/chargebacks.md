@@ -189,7 +189,7 @@ $ curl -X POST \
 
 ```yaml
 {
-    "payment_id" : "PAY4334346343",
+    "payment_id" : "PAY4334346343"
 }
 ```
 
