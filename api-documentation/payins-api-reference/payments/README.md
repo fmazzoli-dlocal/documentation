@@ -550,7 +550,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5017 | Invalid API Version. |
 |  | 5018 | Chargeback in place for this transaction. |
 | `429 Too many requests` | 6000 | Too many requests to the API. |
-| `500 Internal Server Error` | 7000 | The input is correct, but dLocal fails to process the payment. Rare case. |
+| `500 Internal Server Error` | 7000 | Failed to process the request. |
 
 ## Notifications
 
