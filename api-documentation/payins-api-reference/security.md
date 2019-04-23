@@ -13,6 +13,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `X-Trans-Key` | String | Merchant xTransKey |
 | `Content-Type` | String | `application/json` |
 | `X-Version` | String | API Version |
+| `User-Agent` | String | Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
 #### Examples of hmac signature generation in the most popular languages
@@ -73,6 +74,7 @@ curl -X POST \
     -H 'X-Trans-Key: fm12O7G9' \
     -H 'Content-Type: application/json' \
     -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
     -H 'X-Idempotency-Key: a8a85bce-5733-4a6c-91b5-553ed4b3de16' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'

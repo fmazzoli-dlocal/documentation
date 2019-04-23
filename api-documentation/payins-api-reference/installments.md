@@ -157,6 +157,7 @@ $ curl -X POST \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
     -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
     -H 'Content-Type: application/json' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
@@ -216,6 +217,7 @@ $ curl -X POST \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
     -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
     -H 'Content-Type: application/json' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
