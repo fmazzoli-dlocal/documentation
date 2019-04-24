@@ -138,7 +138,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | `status_code` | String | The [status](refunds.md#refund-status) code of the refund. |
 | `status_detail` | String | The status detail. |
 | `created_date` | String | The date of when the refund was executed. |
-| `notification_URL` | String | URL where dlocal will send notifications associated to changes in this refund. |
+| `notification_url` | String | URL where dlocal will send notifications associated to changes in this refund. |
 | `description` | String | Description of the refund. |
 | `bank` | String | User's bank name. |
 | `bank_account` | String | User's bank account number. |
