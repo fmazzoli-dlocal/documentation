@@ -86,7 +86,6 @@ Example Response
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "card":{
-        "card_id": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,

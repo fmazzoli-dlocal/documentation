@@ -16,7 +16,7 @@ Once user completed the authentication successfully, the payment will proceed to
     "payment_method_flow": "DIRECT",
     "country": "IN",
     "card": {
-        "holder_name": "OURKTnSg",
+        "holder_name": "Nino Deicas",
         "expiration_month": 10,
         "expiration_year": 2040,
         "brand": "VI",

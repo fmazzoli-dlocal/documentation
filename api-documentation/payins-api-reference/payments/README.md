@@ -88,7 +88,6 @@ Example Response
     "payment_method_type" : "CARD",
     "payment_method_flow" : "DIRECT",
     "card":{
-        "card_id": "CV-e90078f7-e027-4ce4-84cb-534c877be33c",
         "holder_name": "Thiago Gabriel",
         "expiration_month": 10,
         "expiration_year": 2040,
@@ -304,6 +303,10 @@ The following example applies for credit card payments using a Smart Fields `tok
 curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
     -d '{body}'
     https://api.dlocal.com/payments
@@ -379,8 +382,7 @@ The payment id
       "expiration_month" : 10,
       "expiration_year" : 2040,
       "brand" : "VI",
-      "last4" : "1111",
-      "card_id" : "CV-a9b713b7-3064-4a59-8cd7-bd940326fa43"
+      "last4" : "1111"
    },
    "created_date" : "2018-07-012T21:42:27.000+0000",
    "approved_date" : "2018-07-012T21:42:28.000+0000",
