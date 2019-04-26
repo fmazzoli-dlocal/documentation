@@ -20,7 +20,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <th style="text-align:left">Country</th>
       <th style="text-align:left"><code>country</code> code</th>
       <th style="text-align:left"><code>currency</code> code</th>
-      <th style="text-align:left"><code>document</code> field</th>
+      <th style="text-align:left"><code>document</code> name</th>
       <th style="text-align:left"><code>document</code> 
         <br />format</th>
       <th style="text-align:left"><code>document</code>required?</th>
@@ -93,6 +93,16 @@ In the table below you can find the `country` code and `currency` of the countri
           <br />(5 letters, 4 numbers, 1 letter/number)</p>
         <p>full PAN validation</p>
       </td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Indonesia</td>
+      <td style="text-align:left"><code>ID</code>
+      </td>
+      <td style="text-align:left"><code>IDR</code>
+      </td>
+      <td style="text-align:left">NIK</td>
+      <td style="text-align:left">16 digits</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
