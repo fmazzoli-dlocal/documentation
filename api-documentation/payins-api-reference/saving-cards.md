@@ -81,7 +81,7 @@ Example Error Response.
 | `document` | String | Payer's document. **Required.** |
 | `email` | String | Payer's email address. Optional. |
 
-## Example Request
+### Example Request
 
 ```bash
 curl -X POST \
@@ -155,20 +155,73 @@ The card id received when saving the card.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Example request
+### Example Request
 
 ```bash
-$ curl \
+curl -X POST \
     -H 'X-Date: 2018-02-20T15:44:42.310Z' \
     -H 'X-Login: sak223k2wdksdl2' \
     -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
     -H 'X-Version: 2.1' \
     -H 'User-Agent: MerchantTest / 1.0 ' \
     -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
-    https://api.dlocal.com/cards/CV-e90078f7-e027-4ce4-84cb-534c877be33c
+    -d '{body}'
+    https://api.dlocal.com/secure_cards
 ```
 
-### Http Errors <a id="http-errors"></a>
+{% api-method method="delete" host=" https://api.dlocal.com/secure\_cards/" path="{card\_id}" %}
+{% api-method-summary %}
+Delete a card
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Unlink a `card_id` so that it cannot be use any further.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="card\_id" type="string" required=false %}
+The card id received when saving the card
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```yaml
+{
+    "card_id" : "CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9",
+     "deleted" : true 
+}
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Example Request
+
+```bash
+curl -X DELETE \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/secure_cards/CV-af85ddba-f5f4-4644-b3fa-3c922e0687e9
+```
+
+## Http Errors
 
 | **HTTP Status Code** | **Error Code** | **Error Detail** |
 | :--- | :--- | :--- |
