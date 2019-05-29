@@ -17,6 +17,7 @@
     * [Chile](api-documentation/payins-api-reference/payment-methods/chile.md)
     * [China](api-documentation/payins-api-reference/payment-methods/china.md)
     * [Colombia](api-documentation/payins-api-reference/payment-methods/colombia.md)
+    * [Ecuador](api-documentation/payins-api-reference/payment-methods/ecuador.md)
     * [India](api-documentation/payins-api-reference/payment-methods/india.md)
     * [Indonesia](api-documentation/payins-api-reference/payment-methods/indonesia.md)
     * [Mexico](api-documentation/payins-api-reference/payment-methods/mexico.md)
