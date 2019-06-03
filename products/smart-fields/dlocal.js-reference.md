@@ -51,7 +51,13 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 
 ### `dlocal.createToken(field, tokenData)`
 
-Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created \(or after one payment\)**, so you need to make sure that the payment is made within that timeframe.
+Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created, or after one operation with the token is made, such as a Payment or Card Save**, so you need to make sure that the payment \(or other operation\) is made within that timeframe.
+
+{% hint style="warning" %}
+**Using Smart Fields token for Save + Payment**  
+  
+If you use Smart Fields to first [Save the Card](../../api-documentation/payins-api-reference/saving-cards.md#create-a-card), and then make a [Payment](../../api-documentation/payins-api-reference/payments/credit-card-payments/#pay-with-smart-fields), you'll need to tokenize the card using Smart Fields **twice.** The first time, you'll use the Smart Fields token to Create a Card, and then tokenize again and use the second token to make the Payment.
+{% endhint %}
 
 ```javascript
 dlocal.createToken(card,tokenData)
