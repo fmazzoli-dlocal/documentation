@@ -476,14 +476,24 @@ The only way to communicate with your Smart Field is by listening to an `event`.
     </tr>
     <tr>
       <td style="text-align:left">complete</td>
-      <td style="text-align:left">Triggered when the Field changes it&apos;s complete status. The event
-        payload always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
-        the Field is complete and well-formed, and <code>false</code> otherwise.</td>
+      <td style="text-align:left">
+        <p>Triggered when the Field changes its complete status. The event payload
+          always contains<code>complete</code> - Boolean - key, which is <code>true</code> when
+          the Field is complete and well-formed, and <code>false</code> otherwise.
+          <br
+          />
+        </p>
+        <p><b>Important Note:</b> The <code>complete</code> event will only be triggered
+          for cards with BINs identified by Smart Field&apos;s BIN detector. Some
+          BINs might not yet be supported by the BIN detector so this event <em>might</em> not
+          be triggered for those. Therefore, you should not expect this event for
+          all cards.</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">empty</td>
-      <td style="text-align:left">Triggered when the Field changes it&apos;s empty status. The event payload
-        always contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
+      <td style="text-align:left">Triggered when the Field changes its empty status. The event payload always
+        contains <code>empty</code> - <code>Boolean</code> - key, which is <code>true</code> when
         the Field is empty, and <code>false</code> otherwise.</td>
     </tr>
     <tr>
