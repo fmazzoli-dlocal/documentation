@@ -24,7 +24,7 @@
     <tr>
       <td style="text-align:left"><code>AM</code>
       </td>
-      <td style="text-align:left">AmanPay</td>
+      <td style="text-align:left">Proximo Tasshilat</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left">Cash Payment</td>
