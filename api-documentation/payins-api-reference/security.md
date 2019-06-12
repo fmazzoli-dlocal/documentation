@@ -16,13 +16,58 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `User-Agent` | String | Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. |
 | Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
-#### Examples of hmac signature generation in the most popular languages
+#### Examples of HMAC signature generation in the most popular languages
 
+{% tabs %}
+{% tab title="Java" %}
+```java
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.Formatter;
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
+public final class SignatureCalculator {
+
+    private static final String HMAC_ALGORITHM = "HmacSHA256";
+    private static final String CHARSET = "UTF-8";
+
+    public static String calculateSignature(String x_Login, String x_Date, String secretKey, String body)
+    throws IOException, InvalidKeyException, NoSuchAlgorithmException {
+
+    // Create byte array with the required data for the signature.
+    ByteArrayOutputStream bout = new ByteArrayOutputStream();
+    bout.write(x_Login.getBytes(CHARSET));
+    bout.write(x_Date.getBytes(CHARSET));
+    bout.write(body.getBytes(CHARSET));
+
+    // Calculate the signature.
+    SecretKeySpec signingKey = new SecretKeySpec(secretKey.getBytes(), HMAC_ALGORITHM);
+    Mac mac = Mac.getInstance(HMAC_ALGORITHM);
+    mac.init(signingKey);
+    byte[] signature = mac.doFinal(bout.toByteArray());
+
+    // Create a String with the signature value.
+    Formatter formatter = new Formatter();
+    for (byte b : signature) {
+    formatter.format("%02x", b);
+}
+return formatter.toString();
+}
+}
+```
+{% endtab %}
+
+{% tab title="Other Languages" %}
 | Language | Code |
 | :--- | :--- |
 | PHP | `$signature = hash_hmac("sha256", "$X-Login$X-Date$RequestBody", $secretKey);` |
 | Python | `signature = hmac.new(secretKey, X-Login+X-Date+RequestBody, hashlib.sha256).hexdigest()` |
 | Ruby | `signature = OpenSSL::HMAC.hexdigest('sha256', secretKey, $X-Login + $X-Date + RequestBody)` |
+{% endtab %}
+{% endtabs %}
 
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
