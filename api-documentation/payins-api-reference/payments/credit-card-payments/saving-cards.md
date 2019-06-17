@@ -61,7 +61,7 @@ Example Error Response.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## The Card Object
+#### The Card Object
 
 | **Argument** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -73,7 +73,7 @@ Example Error Response.
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
 | `token` | String | Temporary credit card token created using Smart Fields. Optional. |
 
-## The Payer Object
+#### The Payer Object
 
 | **Argument** | **Type** | **Description** |
 | :--- | :--- | :--- |
