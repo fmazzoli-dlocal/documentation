@@ -16,9 +16,9 @@ JSON is returned by all API responses, including errors. For sandbox environment
   * Learn how to make refunds
 * \*\*\*\*[**Orders**](orders.md)\*\*\*\*
   * Get information about your orders.
-* \*\*\*\*[**Installments**](installments.md)\*\*\*\*
+* \*\*\*\*[**Installments**](payments/credit-card-payments/installments.md)\*\*\*\*
   * Make payments in installments
-* \*\*\*\*[**Saving Cards**](saving-cards.md)\*\*\*\*
+* \*\*\*\*[**Saving Cards**](payments/credit-card-payments/saving-cards.md)\*\*\*\*
   * Learn how to securely save cards for recurring payments
 * \*\*\*\*[**Currency Exchange**](currency-exchange.md)\*\*\*\*
   * Get the exchange rate between any two currencies

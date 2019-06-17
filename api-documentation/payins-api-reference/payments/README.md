@@ -170,7 +170,7 @@ Example Response
 
 #### The Card Object
 
-For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../../products/smart-fields/). For recurring payments, first [save the card](../saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
+For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../../products/smart-fields/). For recurring payments, first [save the card](credit-card-payments/saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
 
 {% hint style="warning" %}
 **Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
@@ -191,11 +191,12 @@ Card payments with a `card_id` or `token` should use the endpoint: https://api.d
 | `encrypted_data` | String | [JWE](https://tools.ietf.org/html/rfc7516) encrypted params. Optional. |
 | `token` | String | Temporary credit card token securely created using [Smart Fields](../../../products/smart-fields/). Optional. |
 | `cvv_token` | String | Temporary CVV token securely created using the CVV-only Smart Field. |
-| `card_id` | String | Credit card id returned by the [Create a Card ](../saving-cards.md#create-a-card)call. Optional. |
+| `card_id` | String | Credit card id returned by the [Create a Card ](credit-card-payments/saving-cards.md#create-a-card)call. Optional. |
 | `installments` | String | Number of installments. Default 1. Optional. |
 | `installments_id` | String | Installments id of a installments plan. Optional. |
 | `descriptor` | String | Dynamic Descriptor.  Optional. |
 | `capture` | Boolean | Whether or not to immediately capture the charge. When false, the charge issues an authorization, and will need to be captured later. Default `TRUE`. Optional. |
+| `save` | Boolean | Whether or not to save the card for future payments. Response will include a `card_id`. [Learn more.](credit-card-payments/saving-cards.md#save-a-card-on-a-payment) |
 {% endtab %}
 
 {% tab title="Example Card Object" %}
@@ -295,7 +296,7 @@ curl -X POST \
 {% endtab %}
 
 {% tab title="Payment with Credit Card Token" %}
-The following example applies for credit card payments using a Smart Fields `token`. To make a payment with a `card_id`obtained from the [Create a Card](../saving-cards.md#create-a-card) method, simply **replace** the `token`parameter with `card_id`.
+The following example applies for credit card payments using a Smart Fields `token`. To make a payment with a `card_id`obtained from the [Create a Card](credit-card-payments/saving-cards.md#create-a-card) method, simply **replace** the `token`parameter with `card_id`.
 
 #### Example Request
 

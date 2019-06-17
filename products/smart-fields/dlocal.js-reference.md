@@ -56,7 +56,7 @@ Use `dlocal.createToken()` to convert information collected by Smart Fields into
 {% hint style="warning" %}
 **Using Smart Fields token for Save + Payment**  
   
-If you use Smart Fields to first [Save the Card](../../api-documentation/payins-api-reference/saving-cards.md#create-a-card), and then make a [Payment](../../api-documentation/payins-api-reference/payments/credit-card-payments/#pay-with-smart-fields), you'll need to tokenize the card using Smart Fields **twice.** The first time, you'll use the Smart Fields token to Create a Card, and then tokenize again and use the second token to make the Payment.
+If you use Smart Fields to first [Save the Card](../../api-documentation/payins-api-reference/payments/credit-card-payments/saving-cards.md#create-a-card), and then make a [Payment](../../api-documentation/payins-api-reference/payments/credit-card-payments/#pay-with-smart-fields), you'll need to tokenize the card using Smart Fields **twice.** The first time, you'll use the Smart Fields token to Create a Card, and then tokenize again and use the second token to make the Payment.
 {% endhint %}
 
 ```javascript

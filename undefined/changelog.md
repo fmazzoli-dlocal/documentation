@@ -11,4 +11,6 @@
   * [Authorization and Capture](../api-documentation/payins-api-reference/payments/credit-card-payments/authorization-and-capture.md)
   * [Chargebacks](../api-documentation/payins-api-reference/payments/credit-card-payments/chargebacks.md)
   * [3D-Secure](../api-documentation/payins-api-reference/payments/credit-card-payments/3d-secure.md)
+  * [Installments](../api-documentation/payins-api-reference/payments/credit-card-payments/installments.md)
+  * [Saving Cards](../api-documentation/payins-api-reference/payments/credit-card-payments/saving-cards.md)
 

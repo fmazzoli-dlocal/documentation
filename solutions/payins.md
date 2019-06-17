@@ -31,7 +31,7 @@ Monthly installments are part of the daily life of consumers in emerging markets
 
 Learn more about how to accept installments here:
 
-{% page-ref page="../api-documentation/payins-api-reference/installments.md" %}
+{% page-ref page="../api-documentation/payins-api-reference/payments/credit-card-payments/installments.md" %}
 
 ### Alternative Payment Methods
 

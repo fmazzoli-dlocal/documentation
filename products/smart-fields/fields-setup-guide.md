@@ -205,11 +205,11 @@ function dlocalTokenHandler(token) {
 ```
 
 {% hint style="info" %}
-**Tokens created with this method expire after 10 minutes, or after one operation with that token is made \(eg: Payment or Save Card\).** If you want to save the card to make other payments later, you need to **save the card**. You can [learn more about saving cards here.](../../api-documentation/payins-api-reference/saving-cards.md)
+**Tokens created with this method expire after 10 minutes, or after one operation with that token is made \(eg: Payment or Save Card\).** If you want to save the card to make other payments later, you need to **save the card**. You can [learn more about saving cards here.](../../api-documentation/payins-api-reference/payments/credit-card-payments/saving-cards.md)
 
 **Using Smart Fields token for Save + Payment**  
   
-If you use Smart Fields to first [Save the Card](../../api-documentation/payins-api-reference/saving-cards.md#create-a-card), and then make a [Payment](../../api-documentation/payins-api-reference/payments/credit-card-payments/#pay-with-smart-fields), you'll need to tokenize the card using Smart Fields **twice.** The first time, you'll use the Smart Fields token to Create a Card, and then tokenize again and use the second token to make the Payment.
+If you use Smart Fields to first [Save the Card](../../api-documentation/payins-api-reference/payments/credit-card-payments/saving-cards.md#create-a-card), and then make a [Payment](../../api-documentation/payins-api-reference/payments/credit-card-payments/#pay-with-smart-fields), you'll need to tokenize the card using Smart Fields **twice.** The first time, you'll use the Smart Fields token to Create a Card, and then tokenize again and use the second token to make the Payment.
 {% endhint %}
 
 ## What's next? Create a Payment
