@@ -170,7 +170,7 @@ Example Response
 
 #### The Card Object
 
-For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../../products/smart-fields/). For recurring payments, first [save the card](credit-card-payments/saving-cards.md#create-a-card), and then use the `card_id` to charge the card.
+For credit card payments you can use the card information only if you business is [Full PCI DSS compliant](../../../solutions/payins.md#pci-compliance). Otherwise you need to collect the card information using [Smart Fields](../../../products/smart-fields/). For recurring payments, make a payment with [`"save": true`](credit-card-payments/saving-cards.md#save-a-card-on-a-payment) and use the `card_id` from the response [for future payments](credit-card-payments/#pay-with-saved-card). 
 
 {% hint style="warning" %}
 **Important**: If you are making a payment **with credit card information**, you need to use the following endpoint instead:  
