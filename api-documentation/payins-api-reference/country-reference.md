@@ -38,6 +38,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Bolivia</td>
+      <td style="text-align:left"><code>BO</code>
+      </td>
+      <td style="text-align:left"><code>BOB</code>
+      </td>
+      <td style="text-align:left">CI</td>
+      <td style="text-align:left">between 5 to 20 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Brazil</td>
       <td style="text-align:left"><code>BR</code>
       </td>

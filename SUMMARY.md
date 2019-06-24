@@ -13,6 +13,7 @@
   * [Security](api-documentation/payins-api-reference/security.md)
   * [Payment Methods](api-documentation/payins-api-reference/payment-methods/README.md)
     * [Argentina](api-documentation/payins-api-reference/payment-methods/argentina.md)
+    * [Bolivia](api-documentation/payins-api-reference/payment-methods/bolivia.md)
     * [Brazil](api-documentation/payins-api-reference/payment-methods/brazil.md)
     * [Chile](api-documentation/payins-api-reference/payment-methods/chile.md)
     * [China](api-documentation/payins-api-reference/payment-methods/china.md)
