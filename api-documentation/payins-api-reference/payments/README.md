@@ -572,41 +572,24 @@ POST: _{payment.notification\_url}_
 
 ```yaml
 {
-    "id": "PAY4334346343",
-    "amount": 150.00,
-    "currency" : "ARS",
+    "id": "D-4-be8eda8c-5fe7-49dd-8058-4ddaac00611b",
+    "amount": 72.00,
+    "status": "PAID",
+    "status_detail": "The payment was paid.",
+    "status_code": "200",
+    "currency": "USD",
     "country": "AR",
-    "payment_method_id" : "GL",
-    "payment_method_type" : "BANK_TRANSFER",
-    "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Juan Gomez",
-        "email" : "juan@example.com",
-        "document" : "58473832",
-        "address": {
-            "country" : "AR",
-            "state"  : "Buenos Aires",
-            "city" : "Buenos Aires",
-            "zip_code" : "272235-595",
-            "street" : "Gobernador",
-            "number" : "5433"
-        }
+    "payment_method_id": "RP",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "REDIRECT",
+    "payer": {
+        "name": "Nino Deicas",
+        "user_reference": "US-jmh3gb4kj5h34",
+        "email": "buyer@gmail.com",
     },
-    "bank_transfer":{
-        "type": "CURRENT_ACCOUNT",
-        "name": "Banco de Galicia",
-        "code": "GL",
-        "beneficiary": "ARS CAPITAL SA",
-        "document": "4234234243",
-        "reference": "43423245",
-        "amount_to_transfer": 150.01
-    },
-    "created_date" : "2018-02-15T15:14:52-00:00",
-    "status" : "PENDING",
-    "status_code" : "100",
-    "status_detail" : "The payment is pending.",
-    "order_id": "657434343",
-    "notification_url": "http://merchant.com/notifications"
+    "order_id": "4m1OdghPUQtg",
+    "notification_url": "http://www.merchant.com/notifications",
+    "created_date": "2019-06-26T15:17:31.000+0000"
 }
 ```
 
