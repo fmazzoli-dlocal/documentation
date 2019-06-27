@@ -210,7 +210,7 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AU.png">https://pay.dlocal.com/views/2.0/images/payments/AU.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>DS</code>
+      <td style="text-align:left"><code>DI</code>
       </td>
       <td style="text-align:left">Discover</td>
       <td style="text-align:left"><code>CARD</code>
