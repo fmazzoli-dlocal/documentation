@@ -218,17 +218,6 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AG.png">https://pay.dlocal.com/views/2.0/images/payments/AG.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>DB</code>
-      </td>
-      <td style="text-align:left">DirectDebit</td>
-      <td style="text-align:left"><code>BANK_TRANSFER</code>
-      </td>
-      <td style="text-align:left">Bank Transfer Online</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DB.png">https://pay.dlocal.com/views/2.0/images/payments/DB.png</a>&#x200B;</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>VD</code>
       </td>
       <td style="text-align:left">Visa Debit</td>
