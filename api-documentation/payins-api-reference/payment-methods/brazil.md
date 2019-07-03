@@ -5,11 +5,13 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><code>payment_method_id</code>
+      <th style="text-align:left"><code>payment_<br />method_id</code>
       </th>
       <th style="text-align:left"><b>Name</b>
       </th>
-      <th style="text-align:left"><code>payment_method_type</code>
+      <th style="text-align:left"><code>payment_<br />method_type</code>
+      </th>
+      <th style="text-align:left"><code>brand</code>
       </th>
       <th style="text-align:left"><b>Details</b>
       </th>
@@ -25,6 +27,7 @@
       <td style="text-align:left">Boleto</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left">
         <p><code>DIRECT</code>
@@ -40,6 +43,7 @@
       <td style="text-align:left">Itau</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
@@ -51,6 +55,7 @@
       <td style="text-align:left">Bradesco</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
@@ -62,6 +67,7 @@
       <td style="text-align:left">Banco do Brasil</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
@@ -73,6 +79,7 @@
       <td style="text-align:left">Caixa</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Offline</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
@@ -84,16 +91,19 @@
       <td style="text-align:left">Santander</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Offline</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SB.png">https://pay.dlocal.com/views/2.0/images/payments/SB.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>VI</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Visa</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>VI</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -105,10 +115,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>MC</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">MasterCard</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>MC</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -120,10 +132,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>EL</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Elo</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>EL</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -135,10 +149,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EL.png">https://pay.dlocal.com/views/2.0/images/payments/EL.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>HI</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Hipercard</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>HI</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -150,10 +166,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/HI.png">https://pay.dlocal.com/views/2.0/images/payments/HI.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>ML</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Cartao MercadoLivre</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>ML</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -165,10 +183,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/ML.png">https://pay.dlocal.com/views/2.0/images/payments/ML.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>AE</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">American Express</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>AE</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -180,10 +200,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>JC</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">JCB</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>JC</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -195,10 +217,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/JC.png">https://pay.dlocal.com/views/2.0/images/payments/JC.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>AU</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Aura</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>AU</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
@@ -210,10 +234,12 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AU.png">https://pay.dlocal.com/views/2.0/images/payments/AU.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>DI</code>
+      <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Discover</td>
       <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>DI</code>
       </td>
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left">
