@@ -55,17 +55,6 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PC.png">https://pay.dlocal.com/views/2.0/images/payments/PC.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>EX</code>
-      </td>
-      <td style="text-align:left">Almacenes &#xC9;xito</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EX.png">https://pay.dlocal.com/views/2.0/images/payments/EX.png</a>&#x200B;</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>BU</code>
       </td>
       <td style="text-align:left">Baloto</td>
@@ -75,50 +64,6 @@
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BU.png">https://pay.dlocal.com/views/2.0/images/payments/BU.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>OC</code>
-      </td>
-      <td style="text-align:left">Banco de Occidente</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/OC.png">https://pay.dlocal.com/views/2.0/images/payments/OC.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>CR</code>
-      </td>
-      <td style="text-align:left">Carulla</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/CR.png">https://pay.dlocal.com/views/2.0/images/payments/CR.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>EQ</code>
-      </td>
-      <td style="text-align:left">Empresa de Energ&#xED;a del Quindio</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EQ.png">https://pay.dlocal.com/views/2.0/images/payments/EQ.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>SX</code>
-      </td>
-      <td style="text-align:left">Surtimax</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SX.png">https://pay.dlocal.com/views/2.0/images/payments/SX.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>VI</code>
@@ -179,17 +124,6 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>BN</code>
-      </td>
-      <td style="text-align:left">Boleto Bancolombia</td>
-      <td style="text-align:left"><code>BANK_TRANSFER</code>
-      </td>
-      <td style="text-align:left">Bank Transfer Offline</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BN.png">https://pay.dlocal.com/views/2.0/images/payments/BN.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>AE</code>
