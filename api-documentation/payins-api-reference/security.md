@@ -69,6 +69,10 @@ public final class SignatureCalculator {
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+We recommend testing your generated signature using the [Search Payment Methods](payment-methods/#search-payment-methods) call, to make sure your signature is working before moving forward with the integration.
+{% endhint %}
+
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
 
 Credit Card data, such as `number` and `cvv`, can be encrypted inside the JSON Request Body using [JWE](https://tools.ietf.org/html/rfc7516). This standard is being widely used in the market, and [most programming languages have libraries](https://openid.net/developers/jwt/) to support it.
