@@ -465,6 +465,10 @@ $ curl \
 
 ## Payment Status Codes
 
+{% hint style="info" %}
+**Tip**: You can test different status codes in Sandbox by sending the desired status code in the `description` field. [**Learn more here.**](../../../guides/getting-started/sandbox-testing.md#testing-payments)\*\*\*\*
+{% endhint %}
+
 | **Status** | **Status code** | **Description** |
 | :--- | :--- | :--- |
 | `PENDING` | 100 | The payment is pending. |
