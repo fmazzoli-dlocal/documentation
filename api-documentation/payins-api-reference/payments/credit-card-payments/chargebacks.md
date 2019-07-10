@@ -151,7 +151,7 @@ Simulate a Chargeback in Sandbox
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="payment\_id" type="string" required=false %}
+{% api-method-parameter name="payment\_id" type="string" required=true %}
 ID of the payment that is being chargebacked.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
