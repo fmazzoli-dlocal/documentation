@@ -99,7 +99,7 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left">CI</td>
       <td style="text-align:left">between 5 to 20 digits</td>
-      <td style="text-align:left">No</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">India</td>
