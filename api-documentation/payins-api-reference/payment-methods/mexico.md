@@ -165,5 +165,41 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Carnet Credit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>KC</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/KC.png">https://pay.dlocal.com/views/2.0/images/payments/KC.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Carnet Debit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>KD</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/KD.png">https://pay.dlocal.com/views/2.0/images/payments/KD.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
