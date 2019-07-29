@@ -42,6 +42,14 @@ This function returns a list of valid payment methods for the requested country.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="X-Version" type="string" required=true %}
+API Version
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="User-Agent" type="string" required=true %}
+API Used to identify the application type, operating system, software vendor or software version of the requesting software user agent.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="X-Date" type="string" required=true %}
 ISO8601 Datetime with TimeZone.
 {% endapi-method-parameter %}
