@@ -60,4 +60,5 @@
 ## Other <a id="undefined"></a>
 
 * [Changelog](undefined/changelog.md)
+* [Chinese 中文文档](https://dlocal.gitbook.io/dlocal-china/)
 
