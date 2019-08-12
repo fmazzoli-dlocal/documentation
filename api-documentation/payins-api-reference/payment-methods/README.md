@@ -147,11 +147,14 @@ Examples:
 ### **Payment Methods By Country**
 
 * \*\*\*\*[**Argentina**](argentina.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**Bolivia**](bolivia.md)\*\*\*\*
 * \*\*\*\*[**Brazil**](brazil.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Chile**](chile.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**China**](chile.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Colombia**](colombia.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*
 * \*\*\*\*[**India**](india.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**Indonesia**](indonesia.md)\*\*\*\*
 * \*\*\*\*[**Mexico**](mexico.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Morocco**](morocco.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Paraguay**](paraguay.md#payment-methods-available)\*\*\*\*
