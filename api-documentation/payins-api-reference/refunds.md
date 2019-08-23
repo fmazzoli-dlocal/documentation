@@ -294,6 +294,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 3002 | Unregistered IP address. |
 |  | 3003 | Merchant has no authorization to use this API. |
 | `404 Not Found` | 4000 | Payment not found. |
+|  | 4001 | Refund not found. |
 | `400 Bad Request` | 5000 | Invalid request. |
 |  | 5001 | Invalid parameter: \[parameter\_name\] |
 |  | 5002 | Invalid transaction status. |
