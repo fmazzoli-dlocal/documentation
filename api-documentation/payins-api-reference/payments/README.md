@@ -502,6 +502,8 @@ $ curl \
 | `REJECTED` | 317 | Rejected due to high risk. |
 | `REJECTED` | 318 | Invalid transaction. |
 | `REJECTED` | 319 | Amount exceeded. |
+| `REJECTED` | 320 | 3D-Secure is required. |
+| `REJECTED` | 321 | Error in acquirer. |
 
 ### Pending Status
 
