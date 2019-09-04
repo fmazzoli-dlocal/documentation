@@ -52,7 +52,7 @@
   * [Going live](guides/getting-started/go-live.md)
 * [PCI Compliance](guides/pci-compliance.md)
 
-## Other
+## Other <a id="undefined"></a>
 
 * [Changelog](undefined/changelog.md)
 
