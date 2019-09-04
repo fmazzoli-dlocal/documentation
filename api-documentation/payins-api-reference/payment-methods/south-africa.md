@@ -6,5 +6,5 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | `CARD` | Visa | `CARD` | `VI` | Credit Card | `DIRECT REDIRECT` |  |
 | `CARD` | MasterCard | `CARD` | `MC` | Credit Card | `DIRECT REDIRECT` |  |
-| `IO` | ACH | `BANK_TRANSFER` | \`\` | Bank transfer | `REDIRECT` | \`\` |
+| `IO` | ACH | `BANK_TRANSFER` |  | Bank transfer | `REDIRECT` |  |
 
