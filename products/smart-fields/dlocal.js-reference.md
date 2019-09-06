@@ -220,11 +220,11 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 
 {% tabs %}
 {% tab title="Example Checkout with \`card\` Smart Field" %}
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 {% endtab %}
 
 {% tab title="Example Checkout with \`pan\`, \`expiration\`, and \`cvv\` Smart Fields" %}
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 {% endtab %}
 {% endtabs %}
 

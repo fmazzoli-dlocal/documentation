@@ -8,7 +8,7 @@ This provides you with the ability to customize the look and feel of your web pa
 
 ## Fully Customizable Checkouts
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2815%29.png)
 
 Smart Fields defer as much of the styling of field components to you as possible. The layout, width, height, and outer styling \(`border`, `box-shadow`, `background`, etc.\) are left **completely in your control**.
 
