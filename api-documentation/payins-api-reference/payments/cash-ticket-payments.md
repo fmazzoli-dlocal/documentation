@@ -69,7 +69,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example of redirect page of a OXXO ticket ](../../../.gitbook/assets/image%20%2813%29.png)
+![Example of redirect page of a OXXO ticket ](../../../.gitbook/assets/image%20%2814%29.png)
 
 ## Direct Cash Payments
 
@@ -154,7 +154,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%286%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%287%29.png)
 
 ### The Ticket Object
 
