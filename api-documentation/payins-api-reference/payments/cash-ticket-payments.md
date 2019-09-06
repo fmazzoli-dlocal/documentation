@@ -167,6 +167,7 @@ curl -X POST \
 | `id` | String | Reference code of the ticket |
 | `expiration_date` | Date\(ISO-8601\) | The expiration date of the ticket. |
 | `company_name` | String | Name of the company that acts as the beneficiary of the payment.  |
+| `company_id` | String | Identifier of the company. |
 | `provider_name` | String | Name of the company/bank that is creating the ticket. |
 | `provider_logo` | String | URL of the logo of the company/bank that is creating the ticket. |
 | `image_url` | String | URL of the full version of the ticket.  |
