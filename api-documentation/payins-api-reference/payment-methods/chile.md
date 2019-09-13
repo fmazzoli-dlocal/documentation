@@ -389,8 +389,7 @@ curl -X POST \
         "type": "CUSTOM",
         "number": "12345234",
         "expiration_date": "2018-12-27T20:25:19.000+0000",
-        "barcode": "10491775000000100389136517000100040010993600",
-        "company_name": "dLocal Chile",
+        "company_name": "dLocal",
         "company_id": "50283",
         "company_id2" : "50284",
         "provider_name": "Servipag",
@@ -406,5 +405,5 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/image%20%2815%29.png)
+![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/image%20%2810%29.png)
 
