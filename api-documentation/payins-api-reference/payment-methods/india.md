@@ -42,6 +42,24 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
+      <td style="text-align:left">Visa Debit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>VD</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="      https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;">https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
       <td style="text-align:left">MasterCard</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
@@ -55,6 +73,24 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">MasterCard Debit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>MD</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;">https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
