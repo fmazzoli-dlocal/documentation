@@ -166,6 +166,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">South Africa</td>
+      <td style="text-align:left"><code>ZA</code>
+      </td>
+      <td style="text-align:left"><code>ZAR</code>
+      </td>
+      <td style="text-align:left">ID</td>
+      <td style="text-align:left">between 5 to 20 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Turkey</td>
       <td style="text-align:left"><code>TR</code>
       </td>
