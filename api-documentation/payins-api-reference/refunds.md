@@ -146,6 +146,7 @@ If a refund is pending, the refund confirmation is sent asynchronously to the re
 | `bank_account` | String | User's bank account number. |
 | `bank_account_type` | String | Type of bank account. `C`: for Current accounts; `S`: for Savings accounts; `I`: International accounts. |
 | `bank_branch` | String | User's bank branch name. |
+| `order_id` | String | ID of the payment, given by the merchant in their system. |
 
 ## Example POST
 
@@ -161,7 +162,8 @@ POST**:** _{refund.notification\_url}_
     "status" : "SUCCESS",
     "status_code" : "200",
     "status_detail" : "The refund was paid.",
-    "created_date" : "2018-02-15T15:14:52-00:00"
+    "created_date" : "2018-02-15T15:14:52-00:00",
+    "order_id" : "SALE-124635123"
 }
 ```
 
