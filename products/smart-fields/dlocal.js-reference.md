@@ -204,7 +204,7 @@ It is **highly recommended** that you include the `createInstallmentsPlan` on th
 
 ### `dlocal.getBinInformation(field)`
 
-Use `dlocal.getBinInformation(field)`to retrieve information from that card number. **The `field` object from the input must be type `card` .**
+Use `dlocal.getBinInformation(field)`to retrieve information from that card number.
 
 **Example Response**
 
