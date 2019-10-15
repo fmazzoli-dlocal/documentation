@@ -202,6 +202,23 @@ It is **highly recommended** that you include the `createInstallmentsPlan` on th
 {% endtab %}
 {% endtabs %}
 
+### `dlocal.getBinInformation(field)`
+
+Use `dlocal.getBinInformation(field)`to retrieve information from that card number. **The `field` object from the input must be type `card` .**
+
+**Example Response**
+
+```yaml
+"bin": {
+        "bin": "430307",
+        "brand": "VI",
+        "type": "DEBIT",
+        "category": "CLASSIC",
+        "issuer": "RIAS REDBANC, S.A.",
+        "country": "UY"
+}
+```
+
 ## The Fields Object
 
 * [fields.create\(\)](dlocal.js-reference.md#fields-create-type-options)
@@ -222,7 +239,7 @@ This method creates an instance of a specific Smart Field. It takes the`type` of
 | `pan` | The card‘s number. Use alongside the `expiration` and `cvv` Smart Fields. |
 | `expiration` | The card‘s expiration date. Use alongside the `pan` and `cvv` Smart Fields. |
 | `cvv` | The card‘s CVC number. Use alongside the `pan` and `expiration` Smart Fields. |
-| `cvv-only` | Use this Smart Field if you are **only** going to tokenize the CVV. At the moment this feature is not compatible with installments. |
+| `cvv-only` | Use this Smart Field if you are **only** going to tokenize the CVV.  |
 
 {% tabs %}
 {% tab title="Example Checkout with \`card\` Smart Field" %}
