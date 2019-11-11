@@ -119,6 +119,8 @@ Example Response
 | `document` | String | User’s personal identification number. [Click here for more details.](../../country-reference.md#documents) **Required**. |
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](../#the-address-object) | User’s address. **Only required in India.** |
+| `ip` | String | User's IP address. |
+| `device_id` | String | User's unique device identifier. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
@@ -134,7 +136,9 @@ Example Response
     "zip_code" : "27275-595",
     "street" : "Servidão B-1",
     "number" : "1106"
-}
+},
+"ip" : "179.27.83.210",
+"device_id" : "2fg3d4gf234"
 }
 ```
 {% endtab %}
