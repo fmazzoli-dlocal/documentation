@@ -275,7 +275,9 @@ curl -X POST \
             "zip_code" : "27275-595",
             "street" : "Servidao B-1",
             "number" : "1106"
-        }
+        },
+        "ip" : "179.27.83.210",
+        "device_id" : "2fg3d4gf234"
     },
     "card":{
         "holder_name" : "Thiago Gabriel",
@@ -362,7 +364,9 @@ curl -X POST \
             "zip_code" : "27275-595",
             "street" : "Servidao B-1",
             "number" : "1106"
-        }
+        },
+        "ip" : "179.27.83.210",
+        "device_id" : "2fg3d4gf234"
     },
     "card":{
         "token": "CV-124c18a5-874d-4982-89d7-b9c256e647b5"
@@ -445,7 +449,9 @@ curl -X POST \
             "zip_code" : "27275-595",
             "street" : "Servidao B-1",
             "number" : "1106"
-        }
+        },
+        "ip" : "179.27.83.210",
+        "device_id" : "2fg3d4gf234"
     },
     "card":{
         "card_id": "CID-124c18a5-874d-4982-89d7-b9c256e647b5"
