@@ -142,7 +142,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left"><code>MAD</code>
       </td>
       <td style="text-align:left">CNIE</td>
-      <td style="text-align:left">between 5 to 20 digits</td>
+      <td style="text-align:left">between 5 to 20 characters</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
