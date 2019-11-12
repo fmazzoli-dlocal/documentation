@@ -132,7 +132,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left"><code>MXN</code>
       </td>
       <td style="text-align:left">CURP</td>
-      <td style="text-align:left">between 10 to 18 digits</td>
+      <td style="text-align:left">between 10 to 18 characters</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
