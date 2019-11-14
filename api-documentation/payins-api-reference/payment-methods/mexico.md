@@ -51,7 +51,7 @@
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BV.png">https://pay.dlocal.com/views/2.0/images/payments/BV.png</a>&#x200B;</td>
@@ -63,7 +63,7 @@
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BN.png">https://pay.dlocal.com/views/2.0/images/payments/BN.png</a>&#x200B;</td>
@@ -75,7 +75,7 @@
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SM.png">https://pay.dlocal.com/views/2.0/images/payments/SM.png</a>&#x200B;</td>
