@@ -130,6 +130,7 @@ Check below the different values that bank\_code parameter can take depending on
 | Banco del Estado de Chile | 012 |
 | Scotiabank Chile | 014 |
 | Banco Crédito e Inversiones | 016 |
+| Corpbanca | 027 |
 | Banco Bice | 028 |
 | HSBC Bank | 031 |
 | Banco Santander- Santiago | 037 |
@@ -142,6 +143,7 @@ Check below the different values that bank\_code parameter can take depending on
 | Rabobank Chile | 054 |
 | Banco Consorcio | 055 |
 | Banco Penta | 056 |
+| Paris | 057 |
 | BBVA Chile | 504 |
 | Banco del Desarrollo | 507 |
 
