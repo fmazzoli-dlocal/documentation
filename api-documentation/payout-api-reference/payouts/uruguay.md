@@ -167,7 +167,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">BROU</td>
+      <td style="text-align:left">BeROU</td>
       <td style="text-align:left">XXXYYYYYYZ</td>
       <td style="text-align:left">12</td>
       <td style="text-align:left">
