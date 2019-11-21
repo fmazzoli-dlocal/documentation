@@ -1,0 +1,266 @@
+# India
+
+### Mandatory parameters
+
+| **Mandatory parameter** | **Description** |
+| :--- | :--- |
+| **login** | 32 chars |
+| **password** | 32 chars |
+| **external\_id** | Max. 100 chars |
+| **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars |
+| **country** | IN |
+| **bank\_code** | See bank's codes [here ](india.md#codes-for-bank_code-parameter)- Only mandatory if bank\_branch is not IFSC |
+| **bank\_branch** | See bank's branch validations [here](india.md#bank-accounts-validations) |
+| **bank\_account** | Max. 45 chars |
+| **amount** | Max. 2 decimal numbers |
+
+### Example request
+
+```text
+{
+"login":"1n234n56",
+"pass":"HolAc123o",
+"external_id":"1234567812345678b",
+"beneficiary_name":"RUDRAH",
+"beneficiary_lastname":"HASHIMI",
+"country":"IN",
+"bank_branch":"SBIN0007440",
+"bank_account":"12345678912",
+"amount":"2064.00",
+"address":"Kailash Colony Market, HS-10",
+"comments":"this is the 1st comment",
+"currency":"INR",
+"email":"thisisanemail@dlocal.com",
+"phone":"+91 123456789",
+"extra_info":"{\"this_is_extra:2334/"}",
+"notification_url":"https:\/\/thisisawebsite.net\/payments",
+"type":"json"
+}
+```
+
+### Bank account's validations
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><em>Name</em>
+      </th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Length</th>
+      <th style="text-align:left">Format</th>
+      <th style="text-align:left">Details</th>
+      <th style="text-align:left">Verification digit</th>
+      <th style="text-align:left">Validation</th>
+      <th style="text-align:left">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">IFSC</td>
+      <td style="text-align:left">Alphanumeric</td>
+      <td style="text-align:left">11</td>
+      <td style="text-align:left">AAAA0XXXXXX</td>
+      <td style="text-align:left">
+        <p>A -&gt;</p>
+        <p>alphabetic</p>
+        <p>0 -&gt;</p>
+        <p>Zero</p>
+        <p>X -&gt;</p>
+        <p>Alphanumeric</p>
+      </td>
+      <td style="text-align:left">No</td>
+      <td style="text-align:left">Validated through the list of valid IFSCs published by the RTGS and the
+        NEFT</td>
+      <td style="text-align:left">INDB0000018</td>
+    </tr>
+  </tbody>
+</table>### **Codes for bank\_code parameter**
+
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
+
+| **Bank** | **Code** |
+| :--- | :--- |
+| ABHYUDAYA COOP BANK | 1 |
+| THE ROYAL BANK OF SCOTLAND | 2 |
+| ABU DHABI COMMERCIAL BANK | 3 |
+| THE AKOLA DISTRICT CENTRAL COOPERATIVE BANK | 4 |
+| AIRTEL PAYMENTS BANK LIMITED | 5 |
+| AKOLA JANATA COMMERCIAL COOPERATIVE BANK | 6 |
+| ALLAHABAD BANK | 7 |
+| THE AHMEDABAD MERC COOP BANK | 8 |
+| ANDHRA BANK | 9 |
+| AUSTRALIA & NEW ZEALAND BANK | 10 |
+| THE ANDHRA PRADESH STATE COOP BANK | 11 |
+| ANDHRA PRAGATI GRAMEEN BANK | 12 |
+| THE A.P. MAHESH CO-OP URBAN BANK | 13 |
+| APNA SAHAKARI BANK LTD | 14 |
+| ALMORA URBAN CO-OPERATIVE BANK LTD. | 15 |
+| BASSEIN CATHOLIC CO-OP BANK | 16 |
+| BANK OF BARODA | 17 |
+| BARCLAYS BANK | 18 |
+| BANK OF BAHREIN & KUWAIT | 19 |
+| THE BHARAT COOPERATIVE BANK | 20 |
+| BANK OF CEYLON | 21 |
+| BANDHAN BANK LIMITED | 22 |
+| DENA BANK | 23 |
+| BANK OF INDIA | 24 |
+| BHARATIYA MAHILA BANK LIMITED | 25 |
+| B N PARIBAS BANK | 26 |
+| BANK OF AMERICA | 27 |
+| BANK OF TOKYO-MITSUBISHI | 28 |
+| CENTRAL BANK OF INDIA | 29 |
+| CITIZEN CREDIT COOP BANK | 30 |
+| JP MORGAN CHASE BANK | 31 |
+| CITI BANK | 32 |
+| CITY UNION BANK | 33 |
+| CAPITAL LOCAL AREA BANK LTD. | 34 |
+| CANARA BANK | 35 |
+| CORPORATION BANK | 36 |
+| THE COSMOS CO-OP. BANK | 37 |
+| CREDIT SUISSE AG? | 38 |
+| CREDIT AGRICOLE CORP N INVSMNT BK | 39 |
+| CHHATRAPATI RAJARSHISHAHU COOP BANK | 40 |
+| CATHOLIC SYRIAN BANK | 41 |
+| COMMONWEALTH BK OF AUSTRALIA | 42 |
+| CHINATRUST COMMERCIAL BANK | 43 |
+| DEVELOPMENT BANK OF SINGAPORE | 44 |
+| DEVELOPMENT CREDIT BANK | 45 |
+| DEOGIRI NAGARI SAHAKARI BANK LTD. AURANGABAD | 46 |
+| DEUTSCHE BANK | 47 |
+| DICGC | 48 |
+| THE DELHI STATE COOPERATIVE BANK LIMITED | 49 |
+| DHANALAXMI BANK | 50 |
+| DOMBIVLI NAGARI SAHAKARI BANK LTD | 51 |
+| DOHA BANK QSC | 52 |
+| EXPORT IMPORT BANK OF INDIA | 53 |
+| EQUITAS SMALL FINANCE BANK LIMITED | 54 |
+| THE FEDERAL BANK | 55 |
+| FIRSTRAND BANK | 56 |
+| THE GREATER BOMBAY CO-OP. BANK LTD | 57 |
+| THE GADCHIROLI DISTRICT CENTRAL COOPERATIVE BANK LIMITED | 58 |
+| GURGAON GRAMIN BANK LTD. | 59 |
+| THE GUJARAT STATE CO-OPERATIVE BANK | 60 |
+| THE HASTI COOP BANK LTD | 61 |
+| HDFC BANK LTD. | 62 |
+| HIMACHAL PRADESH STATE COOPERATIVE BANK LTD | 63 |
+| HONG KONG & SHANGHAI BANK | 64 |
+| Woori | 65 |
+| PT BANK MAYBANK INDONESIA TBK | 66 |
+| IDBI BANK | 67 |
+| INDUSTRIAL BANK OF KOREA | 68 |
+| INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED | 69 |
+| ICICI BANK LTD. | 70 |
+| IDFC BANK LIMITED | 71 |
+| INDIAN BANK | 72 |
+| IDUKKI DISTRICT CO OPERATIVE BANK LTD | 73 |
+| INDUS-IND BANK | 74 |
+| INDIAN OVERSEAS BANK | 75 |
+| THE JAMMU & KASHMIR BANK | 76 |
+| JANSEVA SHAHKARI BANK LTD. PUNE | 77 |
+| JANASEVA SAHAKARI BANK BORIVLI LIMITED | 78 |
+| JALGAON JANATA SAHAKARI | 79 |
+| THE JALGAON PEOPELS COOPERATIVE BANK LIMITED | 80 |
+| JANKALYAN SHAKARI BANK | 81 |
+| JANATA SAHAKARI BANK LTD \(PUNE\) | 82 |
+| THE KANGRA CENTRAL COOPERATIVE BANK | 83 |
+| KALLAPPANNA AWADE ICH JANATA S | 84 |
+| THE KANGRA COOPERATIVE BANK LTD | 85 |
+| KARNATAKA BANK | 86 |
+| KAPOLE BANK | 87 |
+| THE KALUPUR COMM COOP BANK | 88 |
+| THE KALYAN JANATA SAHAKARI BANK | 89 |
+| KOTAK MAHINDRA BANK | 90 |
+| KERALA GRAMIN BANK | 91 |
+| THE KURMANCHAL NAGAR SAHAKARI BANK LIMITED | 92 |
+| THE KARNATAKA STATE COOP APEX BANK | 93 |
+| KEB Hana Bank | 94 |
+| THE KARAD URBAN COOP BANK LTD | 95 |
+| KARUR VYSYA BANK | 96 |
+| KARNATAKA GRAMIN VIKAS BANK | 97 |
+| THE LAKSHMI VILAS BANK | 98 |
+| BANK OF MAHARASHTRA | 99 |
+| Maharashtra Gramin Bank | 100 |
+| MAHANAGAR COOP BANK | 101 |
+| MUMBAI DISTRICT CENTRAL CO-OP BANK | 102 |
+| MIZUHO CORPORATE BANK LTD | 103 |
+| Maharashtra State Cooperative Bank | 104 |
+| MASHREQ BANK | 105 |
+| THE MEHSANA URBAN COOPERATIVE BANK | 106 |
+| THE MUNICIPAL CO OPERATIVE BANK LTD | 107 |
+| NATIONAL AUSTRALIA BANK LIMITED | 108 |
+| NATIONAL BANK OF ABU DHABI PJSC | 109 |
+| NAGPUR NAGRIK \(NNSB LTD\*\) | 110 |
+| NEW INDIA CO-OPERATIVE BANK | 111 |
+| NKGSB BANK | 112 |
+| THE NASIK MERCHANTS CO-OP BANK LTD. | 113 |
+| NORTH MALBAR GRAMIN BANK | 114 |
+| NUTAN NAGARIK SAHAKARI BANK | 115 |
+| THE BANK OF NOVA SCOTIA | 116 |
+| THE NAINITAL BANK LTD | 117 |
+| NAGAR URBAN CO OPERATIVE BANK | 118 |
+| OMAN INTERNATIONAL BANK | 119 |
+| ORIENTAL BANK OF COMMERCE | 120 |
+| PARSIK JANATA SAHAKARI BANK | 121 |
+| PRAGATHI KRISHNA GRAMIN BANK | 122 |
+| PUNJAB AND MAHARASHTRA CO-OP BANK | 123 |
+| PRIME CO OPERATIVE BANK LTD | 124 |
+| PRATHAMA BANK | 125 |
+| PUNJAB AND SIND BANK | 126 |
+| THE PANDHARPUR URBAN CO OP. BANK LTD. PANDHARPUR | 127 |
+| PUNJAB NATIONAL BANK | 128 |
+| RABOBANK INTERNATIONAL \(CCRB\) | 129 |
+| THE RATNAKAR BANK | 130 |
+| RESERVE BANK OF INDIA | 131 |
+| RAJKOT NAGARIK SAHAKARI BANK LTD | 132 |
+| RAJGURUNAGAR SAHAKARI BANK LIMITED | 133 |
+| THE RAJASTHAN STATE CO-OP BANK | 134 |
+| SBERBANK | 135 |
+| SAHEBRAO DESHMUKH COOPERATIVE BANK LIMITED | 136 |
+| STATE BANK OF BIKANER AND JAIPUR | 137 |
+| STATE BANK OF HYDERABAD | 138 |
+| STATE BANK OF INDIA | 139 |
+| STATE BANK OF MYSORE | 140 |
+| SAMARTH SAHAKARI BANK LTD | 141 |
+| STATE BANK OF TRAVANCORE | 142 |
+| STANDARD CHARTERED BANK | 143 |
+| THE SURAT DISTRICT CO-OP BAN | 144 |
+| SHINHAN BANK | 145 |
+| SHIKSHAK SAHAKARI BANK LIMITED | 146 |
+| SOUTH INDIAN BANK | 147 |
+| SOLAPUR JANATA SAHAKARI BANK LIMITED | 148 |
+| SUMITOMO MITSUI BANKING CORPORATION | 149 |
+| SHIVALIK MERCANTILE CO OPERATIVE BANK LTD | 150 |
+| SOCIETE GENERALE | 151 |
+| THE SURAT PEOPLE?S CO-OP BANK | 152 |
+| THE SARASWAT CO-OPERATIVE BANK | 153 |
+| STATE BANK OF PATIALA | 154 |
+| STATE BANK OF MAURITIUS | 155 |
+| SURAT NATIONAL COOPERATIVE BANK LIMITED | 156 |
+| THE SUTEX COOPERATIVE BANK | 157 |
+| THE SEVA VIKAS COOPERATIVE BANK LIMITED | 158 |
+| THE SHAMRAO VITHAL COOP BANK | 159 |
+| SYNDICATE BANK | 160 |
+| THANE BHARAT SAHAKARI BANK LTD | 161 |
+| THE THANE DISTRICT CENTRAL COOPERATIVE BANK LIMITED | 162 |
+| TUMKUR GRAIN MERCHANTS CO-OP BANK | 163 |
+| THE THANE JANATA SAHAKARI BANK | 164 |
+| TAMILNADU MERC. BANK | 165 |
+| THE TAMILDADU STATE APEX COOP BANK | 166 |
+| UNION BANK OF INDIA | 167 |
+| UBS AG | 168 |
+| UCO BANK | 169 |
+| UNITED OVERSEAS BANK LIMITED | 170 |
+| UNITED BANK OF INDIA | 171 |
+| AXIS BANK | 172 |
+| THE VARACHHA CO-OP. BANK LTD. | 173 |
+| VIJAYA BANK | 174 |
+| THE VISHWESHWAR SAHAKARI BANK LTD | 175 |
+| VASAI VIKAS SAHAKARI BANK | 176 |
+| ING VYSYA BANK | 177 |
+| THE WEST BENGAL STATE CO-OP BANK | 178 |
+| WESTPAC BANKING CORPORATION | 179 |
+| YES BANK | 180 |
+| THE ZOROASTRIAN COOPERATIVE BANK LIMITED | 181 |
+| ZILA SAHAKRI BANK LIMITED GHAZIABAD | 182 |
+
