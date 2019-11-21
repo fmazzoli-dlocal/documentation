@@ -192,7 +192,7 @@ Check below the different values that bank\_code parameter can take depending on
 | BANCO AGIPLAN S.A. | 121 |
 | CONFEDERACAO NACIONAL DAS COOPERATIVAS CENTRAIS UNICREDS | 136 |
 | BANCO ORIGINAL | 212 |
-| NU PAGAMENTOS | 260 |
+| NU PAGAMENTOS \(NUBANK\) | 260 |
 | PAGSEGURO INTERNET S.A | 290 |
 | BANCO BMG S.A. | 318 |
 | BANCO C6 S.A. | 336 |
