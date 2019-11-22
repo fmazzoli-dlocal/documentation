@@ -8,7 +8,7 @@ All request to the payouts API must be signed using the merchant secret key with
 
 The signature must be calculated using the request payload and adding this result in a request header with name Payload-Signature.
 
-The following table describe an example calculation algorithm based on PHP language: TBD
+The following table describe an example calculation algorithm based on PHP language:
 
 ### **Signature calculation algorithm** 
 
