@@ -59,7 +59,7 @@ Check below the different values that bank\_code parameter can take depending on
 | Banco Banex | 297 |
 | Banco Bradesco Argentina | 336 |
 | Banco Cetelem Argentina | 331 |
-| Banco CMF | 335 |
+| Banco Cofidis | 335 |
 | Banco Columbia | 389 |
 | Banco Comafi | 299 |
 | Banco Credicoop Coop. L | 191 |
