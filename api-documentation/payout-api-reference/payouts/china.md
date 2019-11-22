@@ -46,9 +46,9 @@
 
 ### **Codes for bank\_code parameter**
 
-| **Bank** | **Code** |
+| **Bank name** | Bank Code |
 | :--- | :--- |
-| People s Bank of China | **1** |
+| People s Bank of China | 1 |
 | Industrial and Commercial Bank | 102 |
 | Agricultural Bank of China | 103 |
 | Bank of China | 104 |
@@ -58,4 +58,72 @@
 | Agricultural Development of China | 203 |
 | Bank of Communications | 301 |
 | China CITIC Bank | 302 |
+| China Everbright Bank | 303 |
+| Huaxia Bank | 304 |
+| China Minsheng Bank | 305 |
+| Guangdong Development Bank | 306 |
+| Shenzhen Development Bank | 307 |
+| China Merchants Bank | 308 |
+| China s Industrial Bank | 309 |
+| Shanghai Pudong Development Bank | 310 |
+| Dongguan Commercial Bank | 311 |
+| Evergrowing Bank | 315 |
+| China Zheshang Bank | 316 |
+| Bohai Bank | 318 |
+| Huishang Bank | 319 |
+| Postal Savings Bank of China | 403 |
+| Hongkong and Shanghai Banking Corporation | 501 |
+| Bank of East Asia | 502 |
+| Nanyang Commercial Bank | 503 |
+| Hang Seng Bank | 504 |
+| Bank of China \(Hongkong\) Ltd | 505 |
+| Chiyu Banking Corporation Limited | 506 |
+| Chong Hing Bank | 507 |
+| DBS Bank \(China\) | 509 |
+| Wing Hang Bank | 510 |
+| Wing Lung Bank | 512 |
+| Citibank | 531 |
+| Bank of America | 532 |
+| J.P. Morgan Chase | 533 |
+| Bank of Tokyo-Mitsubishi UFJ | 561 |
+| Sumitomo Mitsui Banking Corporation | 563 |
+| Mizuho Corporate Bank | 564 |
+| Japan Pass Bank | 565 |
+| Korea Exchange Bank | 591 |
+| Woori Bank | 593 |
+| Korea Development Bank | 594 |
+| ShinHan Bank | 595 |
+| Industrial Bank of Korea | 596 |
+| Hana Bank | 597 |
+| Overseas Chinese Banking Corporation | 621 |
+| United Overseas Bank | 622 |
+| Bangkok Bank | 631 |
+| Raiffeisen Zentralbank | 641 |
+| KBC Group | 651 |
+| Fortis Bank | 652 |
+| ABN AMRO Bank | 661 |
+| ING Bank | 662 |
+| Standard Chartered Bank | 671 |
+| The Royal Bank of Scotland | 672 |
+| Societe Generate | 691 |
+| Banque Indosuez | 694 |
+| Natixis | 695 |
+| Dresdner Bank AG | 711 |
+| Deutsche Bank | 712 |
+| Commerzbank | 713 |
+| Westdeutsche Landesbank | 714 |
+| Bayerische Landesbank AG | 715 |
+| Norddeutsche Landesbank | 716 |
+| Intesa Sanpaolo | 732 |
+| Credit Suisse | 741 |
+| Swiss Bank Corp | 742 |
+| Bank of Nova Scotia | 751 |
+| Bank of Montreal | 752 |
+| Australian and New Zealand Bank | 761 |
+| Morgan Stanley International Bank | 771 |
+| Rabobank | 776 |
+| Xiamen International Bank | 781 |
+| BNP Paribas | 782 |
+| Chinese Mercantile Bank | 785 |
+| First Sino Bank | 787 |
 
