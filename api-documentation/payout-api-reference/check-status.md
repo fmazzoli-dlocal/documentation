@@ -29,13 +29,13 @@ Example: D23weF2f4g
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="external\_id" type="string" required=true %}
-Payout identification \(at the merchant site\) \*  
+Payout identification \(at the merchant site\)\*  
 \(Max. 100 chars\)  
 Example: payout1234
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cashout\_id" type="string" required=true %}
-Payout identification \(at dLocal site\) \*  
+Payout identification \(at dLocal site\)\*  
 \(Max. 10 chars\)  
 Example: 10050
 {% endapi-method-parameter %}
