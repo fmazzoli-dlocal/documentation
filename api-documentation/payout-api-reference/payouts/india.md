@@ -263,4 +263,5 @@ Check below the different values that bank\_code parameter can take depending on
 | YES BANK | 180 |
 | THE ZOROASTRIAN COOPERATIVE BANK LIMITED | 181 |
 | ZILA SAHAKRI BANK LIMITED GHAZIABAD | 182 |
+| PAYTM PAYMENTS BANK LTD | 183 |
 
