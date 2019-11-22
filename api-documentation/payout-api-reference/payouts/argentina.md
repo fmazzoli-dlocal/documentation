@@ -109,7 +109,7 @@ Check below the different values that bank\_code parameter can take depending on
 | Bnp Paribas | 266 |
 | Citibank | 016 |
 | Deutsche Bank | 325 |
-| HSBC Bank Argentina | 015 |
+| HSBC Bank Argentina | 150 |
 | Ing Bank | 294 |
 | J P Morgan Chase Bank Sucursal Buenos Aires | 165 |
 | Lloyds Tsb Bank | 010 |
@@ -123,4 +123,5 @@ Check below the different values that bank\_code parameter can take depending on
 | Nuevo Banco Suquia | 387 |
 | Rci Ba | 339 |
 | The Bank Of Tokyo - Mitsubishi | 018 |
+| Banco CMF | 319 |
 
