@@ -17,25 +17,25 @@ This endpoint allows you to check the payout status
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="login" type="string" required=true %}
-Your merchant ID in dLocal platform \*1\*  
+Your merchant ID in dLocal platform   
 \(length: 32 chars\)  
 Example: AsGsd35Grf
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Password" type="string" required=true %}
-Your merchant password in dLocal platform \*1\*  
+Your merchant password in dLocal platform   
 \(length: 32 chars\)  
 Example: D23weF2f4g  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="external\_id" type="string" required=true %}
-Payout identification \(at the merchant site\) \*3\*  
+Payout identification \(at the merchant site\) \*  
 \(Max. 100 chars\)  
 Example: payout1234
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cashout\_id" type="string" required=true %}
-Payout identification \(at dLocal site\) \*3\*  
+Payout identification \(at dLocal site\) \*  
 \(Max. 10 chars\)  
 Example: 10050
 {% endapi-method-parameter %}
@@ -62,7 +62,7 @@ Check\_status OK
 {% endapi-method-spec %}
 {% endapi-method %}
 
-* The fields **external\_id** and **cashout\_id** are optional, but you **must send one or both.**
+* **\***The fields **external\_id** and **cashout\_id** are optional, but you **must send one or both.**
 
 {% hint style="success" %}
 **Response:**

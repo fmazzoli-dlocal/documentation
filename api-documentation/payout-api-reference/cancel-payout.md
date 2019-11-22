@@ -14,13 +14,13 @@ In order to cancel it, the status of the payout should be 'Pending'
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="login" type="string" required=true %}
-Your merchant ID in dLocal platform \*1\*  
+Your merchant ID in dLocal platform   
 \(length: 32 chars\)  
 Example: AsGsd35Grf
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="password" type="string" required=true %}
-Your merchant password in dLocal platform \*1\*  
+Your merchant password in dLocal platform   
 \(length: 32 chars\)  
 Example: D23weF2f4g
 {% endapi-method-parameter %}
