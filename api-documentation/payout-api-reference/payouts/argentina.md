@@ -4,15 +4,15 @@
 
 | Mandatory parameter | Description |
 | :--- | :--- |
-| login | 32 chars |
-| password | 32 chars |
-| external\_id | Max. 100 chars |
-| document\_id | See document's validations [here](argentina.md#documents-validations) |
-| beneficiary\_name | Max. 100 chars |
-| beneficiary\_lastname | Max. 100 chars |
-| country | AR |
-| bank\_account | See bank account's validations [here](argentina.md#bank-accounts-validations) |
-| amount | Max. 2 decimal numbers |
+| **login** | 32 chars |
+| **password** | 32 chars |
+| **external\_id** | Max. 100 chars |
+| **document\_id** | See document's validations [here](argentina.md#documents-validations) |
+| **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars |
+| **country** | AR |
+| **bank\_account** | See bank account's validations [here](argentina.md#bank-accounts-validations) |
+| **amount** | Max. 2 decimal numbers |
 
 ### Example request
 
