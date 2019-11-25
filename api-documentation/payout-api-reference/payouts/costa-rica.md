@@ -28,7 +28,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Document | CI | 9 | numeric | No | 123456789 |
 | Document | CJ | 10 | numeric | No | 1234567890 |
-| Document | CR | 11-22 | numeric | No | 1234567890155566 |
+| Document | CR | 11 to 22 | numeric | No | 1234567890155566 |
 
 ## Bank account validations
 
