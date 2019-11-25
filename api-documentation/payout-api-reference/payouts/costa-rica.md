@@ -2,21 +2,85 @@
 
 ## Mandatory parameters
 
-| **Mandatory parameter** | **Description** |
-| :--- | :--- |
-| **login** | 32 chars |
-| **password** | 32 chars |
-| **external\_id** | Max. 100 chars |
-| **document\_id** | See document's validations [here](costa-rica.md#documents-validations) |
-| **document\_type** | See document's validations [here](costa-rica.md#documents-validations) |
-| **beneficiary\_name** | Max. 100 chars |
-| **beneficiary\_lastname** | Max. 100 chars |
-| **country** | CR |
-| **bank\_account** | See bank account's validations [here](costa-rica.md#bank-account-validations) |
-| **amount** | Max. 2 decimal numbers |
-| **address** | Max. 200 chars |
-
-## Example request
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Mandatory parameter</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>login</b>
+      </td>
+      <td style="text-align:left">32 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>password</b>
+      </td>
+      <td style="text-align:left">32 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>external_id</b>
+      </td>
+      <td style="text-align:left">Max. 100 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>document_id</b>
+      </td>
+      <td style="text-align:left">See document&apos;s validations <a href="costa-rica.md#documents-validations">here</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>document_type</b>
+      </td>
+      <td style="text-align:left">See document&apos;s validations <a href="costa-rica.md#documents-validations">here</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>beneficiary_name</b>
+      </td>
+      <td style="text-align:left">Max. 100 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>beneficiary_lastname</b>
+      </td>
+      <td style="text-align:left">Max. 100 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>country</b>
+      </td>
+      <td style="text-align:left">CR</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>bank_account</b>
+      </td>
+      <td style="text-align:left">See bank account&apos;s validations <a href="costa-rica.md#bank-account-validations">here</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>amount</b>
+      </td>
+      <td style="text-align:left">Max. 2 decimal numbers</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>address</b>
+      </td>
+      <td style="text-align:left">Max. 200 chars</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>purpose code</b>
+      </td>
+      <td style="text-align:left">
+        <p>6 chars</p>
+        <p>See purpose codes <a href="../error-codes-reference.md#purpose-codes-reference">here</a>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>## Example request
 
 ```text
 
