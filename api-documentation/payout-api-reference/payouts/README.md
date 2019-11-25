@@ -258,8 +258,10 @@ The external ID exceeds the validate length
   * [Example request for China](china.md#example-request)
 * \*\*\*\*[**Colombia**](colombia.md)\*\*\*\*
   * [Example request for Colombia](colombia.md#example-request)
+* \*\*\*\*[**Costa Rica**](costa-rica.md#mandatory-parameters)\*\*\*\*
+  * [Example request for Costa Rica](costa-rica.md#example-request)
 * \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*
-  * Example request for Ecuador 
+  * [Example request for Ecuador](ecuador.md#example-request) 
 * \*\*\*\*[**India**](india.md)\*\*\*\*
   * [Example request for India ](india.md#example-request)
 * \*\*\*\*[**Mexico**](mexico.md)\*\*\*\*
