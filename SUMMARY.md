@@ -50,6 +50,7 @@
     * [Chile](api-documentation/payout-api-reference/payouts/chile.md)
     * [China](api-documentation/payout-api-reference/payouts/china.md)
     * [Colombia](api-documentation/payout-api-reference/payouts/colombia.md)
+    * [Costa Rica](api-documentation/payout-api-reference/payouts/costa-rica.md)
     * [Ecuador](api-documentation/payout-api-reference/payouts/ecuador.md)
     * [India](api-documentation/payout-api-reference/payouts/india.md)
     * [Mexico](api-documentation/payout-api-reference/payouts/mexico.md)
