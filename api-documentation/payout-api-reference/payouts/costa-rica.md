@@ -83,7 +83,29 @@
 </table>## Example request
 
 ```text
-
+{
+"login":"1n234n56",
+"pass":"HolAc123o",
+"external_id":"1234567812345678b",
+"document_id":"123456789",
+"document_type":"CI"
+"country":"CR",
+"bank_account":"12345678912345678",
+"amount":"2000.00",
+"type":"json",
+"notification_url":"",
+"comments":"",
+"beneficiary_name":"JUAN",
+"beneficiary_lastname":"RUIZ",
+"address":"calle 12# 12A - 12, La fortuna",
+"city":"",
+"postal_code":"",
+"bdate":"",
+"extra_info":"",
+"bank_city":"",
+"bank_branch_name":"",
+"purpose":"ISPAYR",
+}
 ```
 
 ## Document's validations
