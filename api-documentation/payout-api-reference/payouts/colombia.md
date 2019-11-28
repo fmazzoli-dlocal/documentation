@@ -176,35 +176,37 @@
   </tbody>
 </table>### _Bank account's validations_
 
-Check below the different values that bank\_code parameter can take depending on each country's bank requirements
+Some banks require a specific structure for the bank\_account field:
 
 | Bank | Bank code | Savings length | Checking length | Saving acc. example | Checking acc. Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Popular | 2 | 9 | 9 | 620630925 | 645324752 |
-| Corpbanca | 6 | 9 | 9 | 272132139 | 963828523 |
-| Bancolombia | 7 | 11 | 11 | 27213213912 | 96382852354 |
-| Citibank | 9 | 10 | 10 | 1005272463 | 1008323387 |
-| HSBC | 10 | 15 | 15 | 208342345908754 | 102938455738947 |
-| Sudameris | 12 | 8 | 11 | 208342345908754 | 102938455738947 |
-| BBVA | 13 | 16 | 16 | 1234567890123456 | 1234567890123456 |
-| Helm Bank s | 14 | 9 | 9 | 123456789 | 123456789 |
-| Colpatria | 19 | 10 | 10 | 1234567890 | 1234567890 |
-| Banco de Occidente | 23 | 9 | 9 | 123456789 | 123456789 |
-| Caja social BCSC | 32 | 12 | 12 | 123456789012 | 123456789012 |
-| Agrario | 40 | 12 | 12 | 123456789012 | 123456789012 |
-| Davivienda | 51 | 12 | 12 | 123456789012 | 123456789012 |
-| Av. Villas | 52 | 11 | 13 | 12345678901 | 1234567890123 |
-| Procredit | 58 | 13 | 13 | 1234567890123 | 1234567890123 |
-| Pichincha | 60 | 9 | 9 | 123456789 | 123456789 |
-| Bancoomeva | 61 | 12 | 12 | 123456789012 | 123456789012 |
-| Falabella S.A. | 62 | 12 | 12 | 123456789012 | 123456789012 |
-| Coopcentral S.A. | 76 | ------ | 9 | ------ | 123456789 |
+| Popular | 002 | 9 | 9 | 620630925 | 645324752 |
+| Santander | 006 | 9 | 9 | 272132139 | 963828523 |
+| Bancolombia | 007 | 11 | 11 | 27213213912 | 96382852354 |
+| Citibank | 009 | 10 | 10 | 1005272463 | 1008323387 |
+| HSBC | 010 | 15 | 15 | 208342345908754 | 102938455738947 |
+| Sudameris | 012 | 8 | 11 | 208342345908754 | 102938455738947 |
+| BBVA | 013 | 16 | 16 | 1234567890123456 | 1234567890123456 |
+| Itau | 014 | 9 | 9 | 123456789 | 123456789 |
+| Colpatria | 019 | 10 | 10 | 1234567890 | 1234567890 |
+| Banco de Occidente | 023 | 9 | 9 | 123456789 | 123456789 |
+| Caja social BCSC | 032 | 12 | 12 | 123456789012 | 123456789012 |
+| Agrario | 040 | 12 | 12 | 123456789012 | 123456789012 |
+| Davivienda | 051 | 12 | 12 | 123456789012 | 123456789012 |
+| Av. Villas | 052 | 11 | 13 | 12345678901 | 1234567890123 |
+| Procredit | 058 | 13 | 13 | 1234567890123 | 1234567890123 |
+| Pichincha | 060 | 9 | 9 | 123456789 | 123456789 |
+| Bancoomeva | 061 | 12 | 12 | 123456789012 | 123456789012 |
+| Falabella S.A. | 062 | 12 | 12 | 123456789012 | 123456789012 |
+| Coopcentral S.A. | 076 | ------ | 9 | ------ | 123456789 |
 | Cooperativa financiera de Antioquía | 283 | ------ | 11 | ------ | 12345678901 |
 | Cotrafa cooperativa financiera | 289 | ------ | 13 | ------ | 1234567890123 |
 | Confiar | 292 | 9 | 9 | 123456789 | 123456789 |
 | Financiera Juriscoop | 296 | ------ | 12 | ------ | 123456789012 |
 
 ### **Codes for bank\_code parameter**
+
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
 | **Bank** | **Code** |
 | :--- | :--- |
