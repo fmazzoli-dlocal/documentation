@@ -53,7 +53,7 @@ The banks supported may change according to the payment's flow
 
 ### P2P & B2C flow
 
-We support all banks covered by China UnionPay network
+We support every bank covered by China UnionPay network
 
 ### B2B flow
 
