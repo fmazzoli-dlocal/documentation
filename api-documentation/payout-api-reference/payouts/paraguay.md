@@ -10,7 +10,7 @@
 | **document\_type** | See document validations [here](paraguay.md#documents-validation) |
 | **document\_id** | See document validations [here](paraguay.md#documents-validation) |
 | **beneficiary\_lastname** | Max. 100 chars |
-| **country** | PA |
+| **country** | PY |
 | **currency** | PYG or USD or EUR |
 | **bank\_code** | BIC code |
 | **bank\_account** | See bank's account validations [here.](paraguay.md#bank-accounts-validations) |
