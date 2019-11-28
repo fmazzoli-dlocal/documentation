@@ -79,6 +79,8 @@
 
 Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
+We support all banks regulated by the Reserve Bank of India \(RBI\)
+
 | **Bank** | **Code** |
 | :--- | :--- |
 | ABHYUDAYA COOP BANK | 1 |

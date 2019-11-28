@@ -49,6 +49,8 @@
 
 Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
+We support all banks from ACH Interbanking network
+
 | **Bank name** | **Bank code** |
 | :--- | :--- |
 | A.B.N Amro Bank | 005 |
@@ -56,7 +58,6 @@ Check below the different values that bank\_code parameter can take depending on
 | Bacs Banco de Credito Y Securitizacion | 340 |
 | Banca Nazionale Del Lavoro | 265 |
 | Banco B. I. Creditanstalt | 147 |
-| Banco Banex | 297 |
 | Banco Bradesco Argentina | 336 |
 | Banco Cetelem Argentina | 331 |
 | Banco Cofidis | 335 |
@@ -88,23 +89,23 @@ Check below the different values that bank\_code parameter can take depending on
 | Banco Hipotecario | 044 |
 | Banco Itau Buen Ayre | 259 |
 | Banco Julio | 305 |
-| Banco Macro Bansud | 285 |
+| Banco Macro | 285 |
 | Banco Mariva | 254 |
 | Banco Mercurio | 293 |
 | Banco Meridian | 281 |
-| Banco Municipal de Ros | 065 |
+| Banco Municipal de Rosario | 065 |
 | Banco Patagonia Sudameris | 034 |
 | Banco Piano | 301 |
 | Banco Privado de Inversiones | 306 |
 | Banco Provincia de Tierra Del Fuego | 268 |
 | Banco Provincia Del Neuquen | 097 |
 | Banco Regional de Cuyo | 079 |
-| Banco Rio de La Plata | 072 |
+| Banco Santander Rio | 072 |
 | Banco Roela | 247 |
 | Banco Saenz | 277 |
-| Banco Societe Generale | 027 |
+| Banco Supervielle S.A. | 027 |
 | Bank Of America, National Associa | 262 |
-| Bankboston, National Associa | 015 |
+| Standard Bank Argentina | 015 |
 | BBVA Banco Frances | 017 |
 | Bnp Paribas | 266 |
 | Citibank | 016 |
@@ -124,4 +125,5 @@ Check below the different values that bank\_code parameter can take depending on
 | Rci Ba | 339 |
 | The Bank Of Tokyo - Mitsubishi | 018 |
 | Banco CMF | 319 |
+| Banco Mas ventas | 341 |
 

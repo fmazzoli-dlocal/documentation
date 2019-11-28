@@ -54,6 +54,7 @@
     * [Ecuador](api-documentation/payout-api-reference/payouts/ecuador.md)
     * [India](api-documentation/payout-api-reference/payouts/india.md)
     * [Mexico](api-documentation/payout-api-reference/payouts/mexico.md)
+    * [Paraguay](api-documentation/payout-api-reference/payouts/paraguay.md)
     * [Peru](api-documentation/payout-api-reference/payouts/peru.md)
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)
     * [Egypt](api-documentation/payout-api-reference/payouts/egypt.md)

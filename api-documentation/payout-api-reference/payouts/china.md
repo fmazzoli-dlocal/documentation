@@ -44,86 +44,45 @@
 }
 ```
 
-### **Codes for bank\_code parameter**
+## **Codes for bank\_code parameter**
 
-| **Bank name** | Bank Code |
-| :--- | :--- |
-| People s Bank of China | 1 |
-| Industrial and Commercial Bank | 102 |
-| Agricultural Bank of China | 103 |
-| Bank of China | 104 |
-| China Construction Bank | 105 |
-| China Development Bank | 201 |
-| Export-Import Bank of China | 202 |
-| Agricultural Development of China | 203 |
-| Bank of Communications | 301 |
-| China CITIC Bank | 302 |
-| China Everbright Bank | 303 |
-| Huaxia Bank | 304 |
-| China Minsheng Bank | 305 |
-| Guangdong Development Bank | 306 |
-| Shenzhen Development Bank | 307 |
-| China Merchants Bank | 308 |
-| China s Industrial Bank | 309 |
-| Shanghai Pudong Development Bank | 310 |
-| Dongguan Commercial Bank | 311 |
-| Evergrowing Bank | 315 |
-| China Zheshang Bank | 316 |
-| Bohai Bank | 318 |
-| Huishang Bank | 319 |
-| Postal Savings Bank of China | 403 |
-| Hongkong and Shanghai Banking Corporation | 501 |
-| Bank of East Asia | 502 |
-| Nanyang Commercial Bank | 503 |
-| Hang Seng Bank | 504 |
-| Bank of China \(Hongkong\) Ltd | 505 |
-| Chiyu Banking Corporation Limited | 506 |
-| Chong Hing Bank | 507 |
-| DBS Bank \(China\) | 509 |
-| Wing Hang Bank | 510 |
-| Wing Lung Bank | 512 |
-| Citibank | 531 |
-| Bank of America | 532 |
-| J.P. Morgan Chase | 533 |
-| Bank of Tokyo-Mitsubishi UFJ | 561 |
-| Sumitomo Mitsui Banking Corporation | 563 |
-| Mizuho Corporate Bank | 564 |
-| Japan Pass Bank | 565 |
-| Korea Exchange Bank | 591 |
-| Woori Bank | 593 |
-| Korea Development Bank | 594 |
-| ShinHan Bank | 595 |
-| Industrial Bank of Korea | 596 |
-| Hana Bank | 597 |
-| Overseas Chinese Banking Corporation | 621 |
-| United Overseas Bank | 622 |
-| Bangkok Bank | 631 |
-| Raiffeisen Zentralbank | 641 |
-| KBC Group | 651 |
-| Fortis Bank | 652 |
-| ABN AMRO Bank | 661 |
-| ING Bank | 662 |
-| Standard Chartered Bank | 671 |
-| The Royal Bank of Scotland | 672 |
-| Societe Generate | 691 |
-| Banque Indosuez | 694 |
-| Natixis | 695 |
-| Dresdner Bank AG | 711 |
-| Deutsche Bank | 712 |
-| Commerzbank | 713 |
-| Westdeutsche Landesbank | 714 |
-| Bayerische Landesbank AG | 715 |
-| Norddeutsche Landesbank | 716 |
-| Intesa Sanpaolo | 732 |
-| Credit Suisse | 741 |
-| Swiss Bank Corp | 742 |
-| Bank of Nova Scotia | 751 |
-| Bank of Montreal | 752 |
-| Australian and New Zealand Bank | 761 |
-| Morgan Stanley International Bank | 771 |
-| Rabobank | 776 |
-| Xiamen International Bank | 781 |
-| BNP Paribas | 782 |
-| Chinese Mercantile Bank | 785 |
-| First Sino Bank | 787 |
+The banks supported may change according to the payment's flow
+
+* [P2P & B2C flow](china.md#p-2-p-and-b-2-c-flow)
+* [B2B flow](china.md#b-2-b-flow)
+
+### P2P & B2C flow
+
+We support all banks covered by China UnionPay network
+
+### B2B flow
+
+| **Bank name** | Abbreviation | Bank code |
+| :--- | :--- | :--- |
+| **Bank of China** | **BOC** | 001 |
+| **Agricultural Bank of China** | **ABC** | 103 |
+| **Industrial and Commercial Bank of China** | **ICBC** | 102 |
+| **China Construction Bank** | **CCB** | 105 |
+| **Bank of Communications.** | **BOCOM** | 301 |
+| **Postal Savings Bank of China** | **PSBC** | 403 |
+| **China Merchants Bank** | **CMB** | 308 |
+| **China CITIC Bank** | **CITIC** | 302 |
+| **Ping An Bank** | **PINGAN** | 788 |
+| **Shanghai Pudong Development Bank** | **SPDB** | 310 |
+| **Industrial Bank Co.,Ltd** | **CIB** | 309 |
+| **China Minsheng Bank** | **CMBC** | 305 |
+| **China Everbright Bank** | **CEB** | 303 |
+| **China Guangfa Bank** | **GDB** | 789 |
+| **HSBC Bank** | **HXB** | 790 |
+| **Bank of Ningbo** | **NBCB** | 791 |
+| **Bank of Beijing** | **BCCB** | 792 |
+| **Hengfeng Bank Co.** | **HFB** | 793 |
+| **China Zheshang Bank** | **CZB** | 316 |
+| **China Bohai Bank** | **CBHB** | 318 |
+| **Bank of Shanghai** | **BOS** | 794 |
+| **Bank of Jiangsu** | **JSCB** | 795 |
+
+
+
+
 
