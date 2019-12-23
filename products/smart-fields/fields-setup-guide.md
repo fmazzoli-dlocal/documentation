@@ -167,7 +167,7 @@ The payment details collected using Smart Fields can then be converted into a to
 var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-  var cardHolderName = document.getElementById('card-holder');
+  var cardHolderName = document.getElementById('card-holder').value;
   dlocal.createToken(card, {
     name: cardHolderName
   }).then(function(result) {
