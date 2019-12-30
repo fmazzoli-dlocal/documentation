@@ -1,5 +1,7 @@
 # Uruguay
 
+### Mandatory parameters
+
 <table>
   <thead>
     <tr>
