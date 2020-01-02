@@ -148,4 +148,5 @@ Check below the different values that bank\_code parameter can take depending on
 | Caja Municipal de Ahorro y Crédito Sullana | 805 |
 | Caja Municipal de Ahorro y Crédito Cuzco | 806 |
 | Caja Municipal de Ahorro y Crédito Huancayo | 808 |
+| Caja Municipal de Ahorro y Crédito Tacna | 813 |
 
