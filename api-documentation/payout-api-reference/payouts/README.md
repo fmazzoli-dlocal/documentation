@@ -17,7 +17,7 @@ Your merchant ID in dLocal platform
 -Length: 32 chars-
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="password" type="string" required=true %}
+{% api-method-parameter name="pass" type="string" required=true %}
 Your merchant password in dLocal platform  
 -Length: 32 chars-
 {% endapi-method-parameter %}

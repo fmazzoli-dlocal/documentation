@@ -5,7 +5,7 @@
 | **Mandatory parameter** | **Description** |
 | :--- | :--- |
 | **login** | 32 chars |
-| **password** | 32 chars |
+| **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
 | **document\_type** | See document validations [here](paraguay.md#documents-validation) |
 | **document\_id** | See document validations [here](paraguay.md#documents-validation) |

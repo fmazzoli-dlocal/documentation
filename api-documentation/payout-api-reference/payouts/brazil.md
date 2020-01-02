@@ -18,7 +18,7 @@
       <td style="text-align:left">32 chars</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>password</b>
+      <td style="text-align:left"><b>pass</b>
       </td>
       <td style="text-align:left">32 chars</td>
     </tr>

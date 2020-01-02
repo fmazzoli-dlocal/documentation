@@ -5,7 +5,7 @@
 | Mandatory parameter | Description |
 | :--- | :--- |
 | **login** | 32 chars |
-| **password** | 32 chars |
+| **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
 | **document\_id** | See document's validations [here](argentina.md#documents-validations) |
 | **beneficiary\_name** | Max. 100 chars |

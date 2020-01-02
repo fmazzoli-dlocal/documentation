@@ -5,7 +5,7 @@
 | **Mandatory parameter** | **Description** |
 | :--- | :--- |
 | **login** | 32 chars |
-| **password** | 32 chars |
+| **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
 | **country** | CH |

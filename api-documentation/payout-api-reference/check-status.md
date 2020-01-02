@@ -22,7 +22,7 @@ Your merchant ID in dLocal platform
 Example: AsGsd35Grf
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Password" type="string" required=true %}
+{% api-method-parameter name="pass" type="string" required=true %}
 Your merchant password in dLocal platform   
 \(length: 32 chars\)  
 Example: D23weF2f4g  
