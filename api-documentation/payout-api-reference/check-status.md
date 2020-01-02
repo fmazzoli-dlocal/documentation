@@ -73,6 +73,8 @@ If cash\_out\_status = 3 --&gt; the status\_code field can take one of the [foll
 {% endhint %}
 
 {% hint style="info" %}
+**For fields 'login' & 'pass':**
+
 **x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.
 {% endhint %}
 

@@ -50,6 +50,8 @@ Exchange rate OK
 {% endapi-method %}
 
 {% hint style="info" %}
+**For fields 'login' & 'pass':**
+
 **x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.
 {% endhint %}
 

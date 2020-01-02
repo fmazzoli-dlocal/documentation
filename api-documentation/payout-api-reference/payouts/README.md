@@ -274,10 +274,8 @@ The external ID exceeds the validate length
   * [Example request for Egypt](egypt.md#example-request)
 
 {% hint style="info" %}
-**x\_login** and **x\_trans\_key** are your credentials.                                                                            
+**For fields 'login' & 'pass':**
 
-Remember to find them in the panel, section Integration -&gt; Credentials & Settings.
+**x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.              
 {% endhint %}
-
-
 
