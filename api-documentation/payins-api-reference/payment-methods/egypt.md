@@ -1,6 +1,6 @@
-# Ecuador
+# Egypt
 
-## Payment Methods Available
+## Payment Methods Available 
 
 <table>
   <thead>
@@ -57,23 +57,5 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left"><code>EF</code>
-      </td>
-      <td style="text-align:left">Pago Efectivo</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
-      </td>
-      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/EF.png">https://pay.dlocal.com/views/2.0/images/payments/EF.png</a>
-      </td>
-    </tr>
   </tbody>
 </table>
-
