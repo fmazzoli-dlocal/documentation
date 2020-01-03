@@ -133,9 +133,6 @@ Example Response
 | `PENDING` | 100 | The chargeback is pending. |
 | `COMPLETED` | 200 | The chargeback was executed. |
 | `CANCELLED` | 400 | The chargeback was cancelled. |
-| `REVERSAL` | 700 | The chargeback was completed but has now been reversed. |
-
-## Simulating Chargebacks in Sandbox
 
 In the Production environment, Chargebacks are triggered by the buyer by calling their bank. In dLocal's Sandbox environment though, merchants can simulate a Chargeback using the method described below:
 
