@@ -1,6 +1,6 @@
 # API codes
 
-This section includes a description of every API code used in the Payouts API, check below for:
+The description of every code used in Payouts API can be found in this section, check below for:
 
 * [Payout status](error-codes-reference.md#payout-status) - The possible status taken by each payout
 * [Error codes range](error-codes-reference.md#error-codes-range) - The error code shown when a payout fails
@@ -109,7 +109,7 @@ Different error codes types can be seen below:
 
 ## Purpose codes reference
 
-Some countries' bank compliance processes require you to specify each payment's purpose:
+Some countries's bank compliance must require to specify each payment's purpose:
 
 | **Code** | **Description** |
 | :--- | :--- |

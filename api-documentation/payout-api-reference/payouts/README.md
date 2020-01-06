@@ -204,7 +204,7 @@ Remitter's birthdate
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="purpose" type="string" required=true %}
-Payout purpose code. See the Purpose codes section below.  
+Payout purpose code. See purpose codes.  
 -Length: 6 chars-
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -274,8 +274,4 @@ Please see each country below for specific country requirements and example requ
 Once the transfer is confirmed by the bank, dLocal will send a notification to your merchant notification URL informing you of the result code of the transaction. This URL can be overridden using the `notification` parameter for individual payout requests, however note this new URL will only be active for that particular payout.
 
 For details on the notification message content, see the [Notification parameters](https://docs.dlocal.com/api-documentation/payout-api-reference/notification-parameters) section
-
-### Purpose codes
-
-Some countries' compliance regulations require you to specify each payment's purpose. For details on the purpose codes check the [API codes section](../error-codes-reference.md#purpose-codes-reference).
 
