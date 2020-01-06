@@ -30,13 +30,13 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/costa-rica#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="costa-rica.md#documents-validations">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>document_type</b>
       </td>
-      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/costa-rica#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="costa-rica.md#documents-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations <a href="costa-rica.md#bank-account-validations">here</a>
+      <td style="text-align:left">See bank account&apos;s validations <a href="costa-rica.md#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -71,7 +71,7 @@
       <td style="text-align:left">Max. 200 chars</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>purpose</b>
+      <td style="text-align:left"><b>purpose code</b>
       </td>
       <td style="text-align:left">
         <p>6 chars</p>
@@ -108,7 +108,7 @@
 }
 ```
 
-## Document validations
+## Document's validations
 
 | Validation | Name | Length | Type | Verification digit | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
