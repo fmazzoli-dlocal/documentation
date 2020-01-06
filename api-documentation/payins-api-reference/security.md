@@ -14,7 +14,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `Content-Type` | String | `application/json` |
 | `X-Version` | String | API Version |
 | `User-Agent` | String | Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. |
-| Authorization | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
+| `Authorization` | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
 
 #### Examples of HMAC signature generation in the most popular languages
 
