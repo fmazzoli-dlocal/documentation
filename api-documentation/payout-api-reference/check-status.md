@@ -67,9 +67,9 @@ Check\_status OK
 {% hint style="success" %}
 **Response:**
 
-If status = 0 --&gt; the **cash\_out\_status** field can take one of the [following values](error-codes-reference.md#payout-status)
+If status = 0 --&gt; the cash\_out\_status field can take one of the [following values](error-codes-reference.md#payout-status)
 
-If cash\_out\_status = 3 --&gt; the **status\_code** field can take one of the [following values](error-codes-reference.md#error-codes-range)
+If cash\_out\_status = 3 --&gt; the status\_code field can take one of the [following values](error-codes-reference.md#error-codes-range)
 {% endhint %}
 
 {% hint style="info" %}

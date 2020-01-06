@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="brazil.md#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="brazil.md#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -51,19 +51,19 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="brazil.md#bank-codes">here</a>
+      <td style="text-align:left">See bank&apos;s codes <a href="brazil.md#codes-for-bank_code-parameter">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">See bank branch validations <a href="brazil.md#bank-account-validations">here</a>
+      <td style="text-align:left">See bank&apos;s branch validations <a href="brazil.md#bank-accounts-validations">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations <a href="brazil.md#bank-account-validations">here</a>
+      <td style="text-align:left">See bank account&apos;s validations <a href="brazil.md#bank-accounts-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -104,7 +104,7 @@
 }
 ```
 
-### Document validations
+### Document Validations
 
 <table>
   <thead>
@@ -141,7 +141,7 @@
       </td>
     </tr>
   </tbody>
-</table>### Bank account validations
+</table>### Bank accounts' validations
 
 Reference
 
@@ -158,47 +158,47 @@ Reference
 | HSBC Bank Brasil S.A. | XXXX, XXXXD, XXXXDD, XXXX-D or XXXX-DD | XXXXX-XX | XXXXX-XX |
 | Other banks | XXXX, XXXXD, XXXXDD, XXXX-D or XXXX-DD | - | - |
 
-### **Bank codes**
+### **Codes for bank\_code parameter**
 
-These are the values the **bank\_code parameter** can take in Brazil.
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
-| Bank Name | Bank Code |
+| Bank name | Bank code |
 | :--- | :--- |
-| Banco ABC Brasil S.A. | 246 |
-| Banco Agiplan S.A. | 121 |
-| Banco Bmg S.A. | 318 |
-| Banco Bonsucesso S.A. | 218 |
-| Banco Bradesco S.A. | 237 |
-| Banco C6 S.A. | 336 |
-| Banco Citibank | 745 |
-| Banco Cooperativo do Brasil S.A. - BANCOOB | 756 |
-| Banco Cooperativo Sicredi S.A. | 748 |
-| Banco da Amazonia S.A. | 003 |
-| Banco Daycoval S.A. | 707 |
-| Banco de Brasilia S.A. - BRB | 070 |
-| Banco do Brasil S.A. | 001 |
-| Banco do Estado de Sergipe S.A. - BANESE | 047 |
-| Banco do Estado do Para S.A. - BANPARA | 037 |
-| Banco do Estado do Rio Grande do Sul S.A. - BANRISUL | 041 |
-| Banco do Nordeste do Brasil S.A. | 004 |
-| Banco Inter | 077 |
-| Banco Mercantil do Brasil S.A. | 389 |
-| Banco Modal S.A. | 746 |
-| Banco Neon | 735 |
-| Banco Original | 212 |
-| Banco Panamericano S.A. | 623 |
-| Banco Safra S.A. | 422 |
-| Banco Santander Brasil S.A. | 033 |
-| Banco Sofisa | 637 |
-| Banco Votorantim S.A. | 655 |
-| Banestes S.A. Banco do Estado do Espirito Santo | 021 |
-| Caixa Economica Federal - CEF | 104 |
-| Citibank N.A. | 477 |
-| Confederacao Nacional das Cooperativas Centrais Unicreds | 136 |
-| Cooperativa Central de Credito Urbano - CECRED | 085 |
-| HSBC Bank Brasil S.A. - Banco Multiplo | 399 |
-| Itau Unibanco S.A. | 341 |
-| Nu Pagamentos \(Nubank\) | 260 |
-| Pagseguro Internet S.A | 290 |
-| Unicred Norte do Parana | 084 |
+| BANCO ABC BRASIL S.A. | 246 |
+| BANCO DA AMAZONIA S.A. | 003 |
+| BANCO DO NORDESTE DO BRASIL S.A. | 004 |
+| BANCO BONSUCESSO S.A. | 218 |
+| BANCO BRADESCO S.A. | 237 |
+| BANCO DO BRASIL S.A. | 001 |
+| BANCO DE BRASILIA S.A. - BRB | 070 |
+| CAIXA ECONOMICA FEDERAL - CEF | 104 |
+| CITIBANK N.A. | 477 |
+| BANCO COOPERATIVO DO BRASIL S/A - BANCOOB | 756 |
+| BANCO DAYCOVAL S.A. | 707 |
+| BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO | 021 |
+| BANCO DO ESTADO DO PARA S.A. - BANPARA | 037 |
+| BANCO DO ESTADO DO RIO GRANDE DO SUL S.A. - BANRISUL | 041 |
+| BANCO DO ESTADO DE SERGIPE S.A. - BANESE | 047 |
+| HSBC BANK BRASIL S.A. - BANCO MULTIPLO | 399 |
+| ITAU UNIBANCO S.A. | 341 |
+| BANCO MERCANTIL DO BRASIL S.A. | 389 |
+| BANCO MODAL S.A. | 746 |
+| BANCO SAFRA S.A. | 422 |
+| BANCO SANTANDER BRASIL S.A. | 033 |
+| BANCO COOPERATIVO SICREDI S.A. | 748 |
+| BANCO INTER | 077 |
+| UNICRED NORTE DO PARANA | 084 |
+| COOPERATIVA CENTRAL DE CREDITO URBANO/CECRED | 085 |
+| BANCO AGIPLAN S.A. | 121 |
+| CONFEDERACAO NACIONAL DAS COOPERATIVAS CENTRAIS UNICREDS | 136 |
+| BANCO ORIGINAL | 212 |
+| NU PAGAMENTOS \(NUBANK\) | 260 |
+| PAGSEGURO INTERNET S.A | 290 |
+| BANCO BMG S.A. | 318 |
+| BANCO C6 S.A. | 336 |
+| BANCO PANAMERICANO S.A. | 623 |
+| BANCO SOFISA | 637 |
+| BANCO VOTORANTIM S.A. | 655 |
+| BANCO NEON | 735 |
+| BANCO CITIBANK | 745 |
 

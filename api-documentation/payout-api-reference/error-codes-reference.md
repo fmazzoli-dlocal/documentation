@@ -109,7 +109,7 @@ Different error codes types can be seen below:
 
 ## Purpose codes reference
 
-Some countries's bank compliance must require to specify each payment's purpose:
+Some countries' bank compliance processes require you to specify each payment's purpose:
 
 | **Code** | **Description** |
 | :--- | :--- |

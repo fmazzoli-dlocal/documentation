@@ -10,8 +10,8 @@
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | MX |
-| **bank\_code** | Mandatory only if bank\_account is not CLABE. See bank codes [here](mexico.md#bank-codes) |
-| **bank\_account** | See bank account validations [here.](mexico.md#bank-account-validations) |
+| **bank\_code** | Mandatory only if bank\_account is not CLABE. See bank's codes [here](mexico.md#codes-for-bank_code-parameter) |
+| **bank\_account** | See bank's account validations [here.](mexico.md#banks-account-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request
@@ -35,15 +35,15 @@
 }
 ```
 
-### Bank account validations
+### Bank's account validations
 
 | _Validation_ | Type | Length | Type | Verification digit | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Bank account | CLABE | 18 | numeric | Apply verification algorithm | 032180000118359719 |
 
-### **Bank codes**
+### **Codes for bank\_code parameter**
 
-Check below the different values that bank\_code parameter can take in Mexico
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
 | **Bank** | **Code** |
 | :--- | :--- |
