@@ -6,7 +6,8 @@ Cancel payout
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This function cancels a payout. Only payouts with 'Pending' status can be cancelled.
+This function cancels a payout.   
+In order to cancel it, the status of the payout should be 'Pending'
 {% endapi-method-description %}
 
 {% api-method-spec %}
