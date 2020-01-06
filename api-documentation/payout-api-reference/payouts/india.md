@@ -10,8 +10,8 @@
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | IN |
-| **bank\_code** | See bank's codes [here ](india.md#codes-for-bank_code-parameter)- Only mandatory if bank\_branch is not IFSC |
-| **bank\_branch** | See bank's branch validations [here](india.md#bank-accounts-validations) |
+| **bank\_code** | See bank codes [here ](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/india#bank-codes)- Only mandatory if bank\_branch is not IFSC |
+| **bank\_branch** | See bank branch validations [here](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/india#bank-codes) |
 | **bank\_account** | Max. 45 chars |
 | **amount** | Max. 2 decimal numbers |
 
@@ -39,7 +39,7 @@
 }
 ```
 
-### Bank account's validations
+### Bank account validations
 
 <table>
   <thead>
@@ -75,11 +75,9 @@
       <td style="text-align:left">INDB0000018</td>
     </tr>
   </tbody>
-</table>### **Codes for bank\_code parameter**
+</table>### **Bank codes**
 
-Check below the different values that bank\_code parameter can take depending on each country's bank requirements
-
-We support all banks regulated by the Reserve Bank of India \(RBI\)
+We support all banks regulated by the Reserve Bank of India \(RBI\).
 
 | **Bank** | **Code** |
 | :--- | :--- |
