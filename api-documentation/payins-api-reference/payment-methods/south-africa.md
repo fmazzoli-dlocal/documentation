@@ -8,5 +8,3 @@
 | `CARD` | MasterCard | `CARD` | `MC` | Credit Card | `DIRECT REDIRECT` |  |
 | `IO` | ACH | `BANK_TRANSFER` |  | Bank transfer | `REDIRECT` |  |
 
-
-

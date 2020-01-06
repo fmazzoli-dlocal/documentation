@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="uruguay.md#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="uruguay.md#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -51,19 +51,19 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/uruguay#bank-codes">here</a>
+      <td style="text-align:left">See bank&apos;s codes <a href="uruguay.md#codes-for-bank_code-parameter">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">Optional if bank_code is ITAU. See bank branch validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/uruguay#bank-account-validations">here</a>
+      <td style="text-align:left">Optional if bank_code is ITAU. See bank&apos;s branch validations <a href="uruguay.md#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/uruguay#bank-account-validations">here</a>
+      <td style="text-align:left">See bank account&apos;s validations <a href="uruguay.md#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -117,12 +117,13 @@
 }
 ```
 
-### Document validations
+### _Document validations_
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Validation</th>
+      <th style="text-align:left"><em>Validation</em>
+      </th>
       <th style="text-align:left">Name</th>
       <th style="text-align:left">Length</th>
       <th style="text-align:left">Type</th>
@@ -168,7 +169,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">BROU</td>
+      <td style="text-align:left">BeROU</td>
       <td style="text-align:left">XXXYYYYYYZ</td>
       <td style="text-align:left">12</td>
       <td style="text-align:left">
@@ -271,11 +272,11 @@
       <td style="text-align:left">0003237999</td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>### **Codes for bank\_code parameter**
 
 Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
-| **Bank name** | **Bank code** |
+| **Bank** | **Code** |
 | :--- | :--- |
 | BROU - Banco de la República Oriental del Uruguay | 001 |
 | Banco Hipotecario del Uruguay | 091 |

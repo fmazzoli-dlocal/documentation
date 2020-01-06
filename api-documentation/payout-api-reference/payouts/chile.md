@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/chile#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="chile.md#documents-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -46,7 +46,7 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/chile#bank-codes">here</a>
+      <td style="text-align:left">See bank&apos;s codes <a href="chile.md#codes-for-bank_code-parameter">here</a>
       </td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@
 }
 ```
 
-### Document validations
+### Document's validations
 
 <table>
   <thead>
@@ -119,31 +119,31 @@
       </td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>### **Codes for bank\_code parameter**
 
-These are the values the **bank\_code parameter** can take in Chile
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
-| Bank Name | Bank Code |
+| Bank name | Bank code |
 | :--- | :--- |
-| ABN Amro Bank Chile | 046 |
-| Banco Bice | 028 |
-| Banco Consorcio | 055 |
-| Banco Crédito e Inversiones | 016 |
 | Banco de Chile | 001 |
-| Banco del Desarrollo | 507 |
-| Banco del Estado de Chile | 012 |
-| Banco Falabella | 051 |
 | Banco Internacional | 009 |
-| Banco Penta | 056 |
-| Banco Ripley | 053 |
-| Banco Santander - Santiago | 037 |
-| Banco Security | 049 |
-| BBVA Chile | 504 |
-| Corpbanca | 027 |
-| Deutsche Bank | 052 |
-| HSBC Bank | 031 |
-| Itau Corpbanca | 039 |
-| Paris | 057 |
-| Rabobank Chile | 054 |
+| Banco del Estado de Chile | 012 |
 | Scotiabank Chile | 014 |
+| Banco Crédito e Inversiones | 016 |
+| Corpbanca | 027 |
+| Banco Bice | 028 |
+| HSBC Bank | 031 |
+| Banco Santander- Santiago | 037 |
+| Itau Corpbanca | 039 |
+| ABN Amro Bank Chile | 046 |
+| Banco Security | 049 |
+| Banco Falabella | 051 |
+| Deutsche Bank | 052 |
+| Banco Ripley | 053 |
+| Rabobank Chile | 054 |
+| Banco Consorcio | 055 |
+| Banco Penta | 056 |
+| Paris | 057 |
+| BBVA Chile | 504 |
+| Banco del Desarrollo | 507 |
 
