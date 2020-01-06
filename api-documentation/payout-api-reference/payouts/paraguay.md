@@ -13,7 +13,7 @@
 | **country** | PY |
 | **currency** | PYG or USD or EUR |
 | **bank\_code** | BIC code |
-| **bank\_account** | See bank account validations [here.](paraguay.md#bank-accounts-validations) |
+| **bank\_account** | See bank's account validations [here.](paraguay.md#bank-accounts-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request
@@ -22,20 +22,20 @@
 
 ```
 
-### Document validations
+### Document's validation
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Document | CI | 7 | numeric | N/A |
 | Document | RUC | 8 | numeric | CI + validation algorithm |
 
-### Bank account validations
+### Bank account's validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Bank account | SIPAP | 16 | numeric | N/A |
 
 {% hint style="info" %}
-If the account number has less than 16 digits, zeros should be added to the left side so as to complete the mandatory length.
+If the account number has less than 16 digits, zeros should be added to the left side, so as to complete the mandatory length
 {% endhint %}
 
