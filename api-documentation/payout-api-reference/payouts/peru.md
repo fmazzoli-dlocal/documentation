@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="peru.md#documents-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="peru.md#documents-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -43,7 +43,7 @@
         </p>
         <p><b>CE </b>-<b> </b>Carnet Extranjeria</p>
         <p><b>PASS </b>- Passport</p>
-        <p>See document validations <a href="peru.md#documents-validations">here</a>
+        <p>See document&apos;s validations <a href="peru.md#documents-validations">here</a>
         </p>
       </td>
     </tr>
@@ -65,7 +65,7 @@
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/peru#bank-account-validations">here</a>
+      <td style="text-align:left">See bank account&apos;s validations <a href="peru.md#banks-account-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -107,22 +107,22 @@
 }
 ```
 
-### Document validations
+### Document's validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Document | DNI | 8 | Numeric | Last digit |
 | Document | RUC | 11 | Numeric | Last digit |
 
-### Bank account validations
+### Bank's account validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Bank account | CCI | 20 | Numeric | Apply verification algorithm |
 
-### **Bank codes**
+### **Codes for bank\_code parameter**
 
-Check below the different values that bank\_code parameter can take in Peru.
+Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
 | **Bank** | **Code** |
 | :--- | :--- |
