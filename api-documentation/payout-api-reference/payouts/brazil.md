@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="brazil.md#document-validations">here</a>
+      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/brazil#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -51,19 +51,19 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="brazil.md#codes-for-bank_code-parameter">here</a>
+      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/brazil#bak-codes">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">See bank branch validations <a href="brazil.md#bank-accounts-validations">here</a>
+      <td style="text-align:left">See bank branch validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/brazil#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations <a href="brazil.md#bank-accounts-validations">here</a>
+      <td style="text-align:left">See bank account validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/brazil#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
