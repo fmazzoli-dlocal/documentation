@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document&apos;s validations <a href="colombia.md#documents-validations">here</a>
+      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/colombia#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -63,13 +63,13 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank&apos;s codes <a href="colombia.md#codes-for-bank_code-parameter">here</a>
+      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/colombia#bank-codes">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account&apos;s validations <a href="colombia.md#bank-accounts-validations">here</a>
+      <td style="text-align:left">See bank account validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/colombia#bank-account-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -137,7 +137,7 @@
 }
 ```
 
-### _Document's validations_
+### Document validations
 
 <table>
   <thead>
@@ -174,7 +174,7 @@
       </td>
     </tr>
   </tbody>
-</table>### _Bank account's validations_
+</table>### Bank account validations
 
 Some banks require a specific structure for the bank\_account field:
 
@@ -204,46 +204,46 @@ Some banks require a specific structure for the bank\_account field:
 | Confiar | 292 | 9 | 9 | 123456789 | 123456789 |
 | Financiera Juriscoop | 296 | ------ | 12 | ------ | 123456789012 |
 
-### **Codes for bank\_code parameter**
+### **Bank codes**
 
-Check below the different values that bank\_code parameter can take depending on each country's bank requirements
+These are the values the bank\_code parameter can take in Colombia:
 
-| **Bank** | **Code** |
+| Bank name | Bank code |
 | :--- | :--- |
-| BANCO DE BOGOTA | 001 |
-| BANCO POPULAR | 002 |
-| BANCO SANTANDER | 006 |
-| BANCOLOMBIA | 007 |
 | ABN AMRO | 008 |
-| CITIBANK | 009 |
-| HSBC | 010 |
-| BANCO SUDAMERIS | 012 |
+| Bancamia S.A. | 059 |
+| Banco Agrario | 040 |
+| Banco Av. Villas | 052 |
+| Banco Caja Social BCSC | 032 |
+| Banco Colpatria | 019 |
+| Banco Compartir S.A. | 067 |
+| Banco Davivienda | 051 |
+| Banco de Bogota | 001 |
+| Banco de Occidente | 023 |
+| Banco Falabella S.A. | 062 |
+| Banco Finandina S.A. | 063 |
+| Banco Multibank S.A. | 064 |
+| Banco Mundo Mujer | 047 |
+| Banco Pichincha | 060 |
+| Banco Popular | 002 |
+| Banco Procredit | 058 |
+| Banco Santander | 006 |
+| Banco Serfinanza S.A. | 069 |
+| Banco Sudameris | 012 |
+| Banco W S.A. | 053 |
+| Bancoldex S.A. | 031 |
+| Bancolombia | 007 |
+| Bancoomeva | 061 |
 | BBVA | 013 |
-| ITAU | 014 |
-| BANCO COLPATRIA | 019 |
-| BANCO DE OCCIDENTE | 023 |
-| BANCOLDEX S.A. | 031 |
-| BANCO CAJA SOCIAL BCSC | 032 |
-| BANCO AGRARIO | 040 |
-| BANCO MUNDO MUJER | 047 |
-| BANCO DAVIVIENDA | 051 |
-| BANCO AV VILLAS | 052 |
-| BANCO W S.A. | 053 |
-| BANCO PROCREDIT | 058 |
-| BANCAMIA S.A. | 059 |
-| BANCO PICHINCHA | 060 |
-| BANCOOMEVA | 061 |
-| BANCO FALABELLA S.A | 062 |
-| BANCO FINANDINA S.A. | 063 |
-| BANCO MULTIBANK S.A. | 064 |
-| BANCO COMPARTIR S.A | 067 |
-| BANCO SERFINANZA S.A | 069 |
-| COOPCENTRAL S.A | 076 |
-| COOPERATIVA FINANCIERA DE ANTIOQUIA | 283 |
-| COTRAFA COOPERATIVA FINANCIERA | 289 |
-| CONFIAR | 292 |
-| FINANCIERA JURISCOOP | 296 |
-| COLTEFINANCIERA S.A  | 370 |
-| NEQUI  | 507 |
-| DAVIPLATA | 551 |
+| Citibank | 009 |
+| Coltefinanciera S.A. | 370 |
+| Confiar | 292 |
+| Coopcentral S.A. | 076 |
+| Cooperativa Financiera de Antioquia | 283 |
+| Cotrafa Cooperativa Financiera | 289 |
+| Daviplata | 551 |
+| Financiera Juriscoop | 296 |
+| HSBC | 010 |
+| Itau | 014 |
+| Nequi | 507 |
 
