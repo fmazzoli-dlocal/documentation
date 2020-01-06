@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="ecuador.md#document-validations">here</a>
+      <td style="text-align:left">See document&apos;s validations <a href="ecuador.md#documents-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -62,13 +62,13 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="ecuador.md#bank-codes">here</a>
+      <td style="text-align:left">See bank&apos;s codes <a href="ecuador.md#codes-for-bank_code-parameter">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations<a href="ecuador.md#bank-codes"> here</a>
+      <td style="text-align:left">See bank account&apos;s validations<a href="ecuador.md#codes-for-bank_code-parameter"> here</a>
       </td>
     </tr>
     <tr>
@@ -91,7 +91,7 @@
 
 ```
 
-### Document validations
+### _Document's validations_
 
 <table>
   <thead>
@@ -125,7 +125,7 @@
       <td style="text-align:left">1234567892221</td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>### **Codes for bank\_code parameter**
 
 | Bank name | Bank code |
 | :--- | :--- |
