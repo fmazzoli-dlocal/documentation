@@ -2,11 +2,7 @@
 
 #### Introduction
 
-This API allows you to deposit money in the bank account of a customer. The deposit will always be in local currency. Once the transfer is confirmed by the bank, dLocal will send a notification to your merchant notification URL informing you of the result code of the transaction. 
-
-Payouts are made on varying schedules, depending on the country.
-
-The notification URL is defined by default by the merchant. These parameter can be over-ridden at any time using the notification parameter \(however, this new URL is only active for that particular payout, following which we will revert to the default URL previously provided\).
+The Payouts API allows you to deposit money in the bank account of a customer. The deposit will always be made in local currency. Once the transfer is confirmed by the bank, dLocal will send a notification to your merchant notification URL informing you of the result code of the transaction. This URL can be overridden by using the notification parameter for individual payout requests \(however note this new URL is only active for that particular payout\).
 
 This section covers the basic concepts of the payment transaction types and the technical details of the Payouts API. It contains functional examples of the requests and important observations to be taken into account during integration.
 
