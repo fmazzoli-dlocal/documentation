@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/chile#document-validations">here</a>
+      <td style="text-align:left">See document validations <a href="chile.md#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -46,7 +46,7 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/chile#bank-codes">here</a>
+      <td style="text-align:left">See bank codes <a href="chile.md#bank-codes">here</a>
       </td>
     </tr>
     <tr>
