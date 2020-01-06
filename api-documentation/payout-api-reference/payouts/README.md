@@ -6,7 +6,7 @@ Requesting a payout
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This is the base method used to request a payout. Please **note each country may have its own additional requirements** and will have their own payment schedules, see below for more detailed examples.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -246,30 +246,36 @@ The external ID exceeds the validate length
 #### Depending on each country's bank compliance requirements, some additional fields might be mandatory when sending payouts. 
 {% endhint %}
 
-### Country requirements
-
-Please see each country below for specific country requirements and example requests:
+### See each country's requirements below:
 
 * \*\*\*\*[**Argentina**](argentina.md)\*\*\*\*
-* \*\*\*\*[**Brazi**](brazil.md)**l**
+  * [Example request for Argentina](argentina.md#example-request) 
+* \*\*\*\*[**Brazil**](brazil.md)\*\*\*\*
+  * [Example request for Brazil ](brazil.md#example-request)
 * \*\*\*\*[**Chile**](chile.md)\*\*\*\*
+  * [Example request for Chile](chile.md#example-request)
 * \*\*\*\*[**China**](china.md)\*\*\*\*
+  * [Example request for China](china.md#example-request)
 * \*\*\*\*[**Colombia**](colombia.md)\*\*\*\*
+  * [Example request for Colombia](colombia.md#example-request)
 * \*\*\*\*[**Costa Rica**](costa-rica.md#mandatory-parameters)\*\*\*\*
+  * [Example request for Costa Rica](costa-rica.md#example-request)
 * \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*
-* [**Egypt**](egypt.md)\*\*\*\*
-* \*\*\*\*[**Indi**](india.md)**a**
+  * [Example request for Ecuador](ecuador.md#example-request) 
+* \*\*\*\*[**India**](india.md)\*\*\*\*
+  * [Example request for India ](india.md#example-request)
 * \*\*\*\*[**Mexico**](mexico.md)\*\*\*\*
+  * [Example request for Mexico](mexico.md#example-request)
 * \*\*\*\*[**Peru**](peru.md)\*\*\*\*
+  * [Example request for Peru](peru.md#example-request)
 * \*\*\*\*[**Uruguay**](uruguay.md)\*\*\*\*
+  * [Example request for Uruguay](uruguay.md#example-request)
+* \*\*\*\*[**Egypt**](egypt.md)\*\*\*\*
+  * [Example request for Egypt](egypt.md#example-request)
 
 {% hint style="info" %}
 **For fields 'login' & 'pass':**
 
 **x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.              
 {% endhint %}
-
-### Notifications
-
-Once the transfer is confirmed by the bank, dLocal will send a notification to your merchant notification URL informing you of the result code of the transaction. This URL can be overridden by using the notification parameter for individual payout requests, however note this new URL is only active for that particular payout.
 
