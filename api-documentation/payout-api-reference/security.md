@@ -4,23 +4,17 @@ description: Signature of message
 
 # Security
 
-All requests to the payouts API must be signed and the signature appended to the **Payload-Signature** request header for them to be accepted.
+All request to the payouts API must be signed using the merchant secret key with algorithm HMAC SHA256 in Hexadecimal lowercase format. 
 
-The signature must be calculated using the **request payload** as the data to be hashed and the merchant **secret key** as the hashing key, using the algorithm HMAC SHA256. This signature should be provided in hexadecimal lowercase format.
+The signature must be calculated using the request payload and adding this result in a request header with name Payload-Signature.
 
-The following PHP code snippet describes an example signature calculation:
+The following table describe an example calculation algorithm based on PHP language:
 
-### **Signature calculation example**
+### **Signature calculation algorithm** 
 
 ```text
 $secretKey = 'xxxxxxxxxxx';
 $requestPayload = { … }
-$signature = hash_hmac('sha256', $requestPayload, $secretKey, false)
+$signature = hash_hmac('sha256', $requestPayload, $secret, false)
 ```
-
-{% hint style="info" %}
-You can find your **secret key** in the [Merchant Panel](https://merchant.dlocal.com/panel), under the Integration &gt; Credentials & Settings section.
-{% endhint %}
-
-
 
