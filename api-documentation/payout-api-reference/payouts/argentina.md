@@ -7,11 +7,11 @@
 | **login** | 32 chars |
 | **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
-| **document\_id** | See document's validations [here](argentina.md#documents-validations) |
+| **document\_id** | See document validations [here](argentina.md#documents-validations) |
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | AR |
-| **bank\_account** | See bank account's validations [here](argentina.md#bank-accounts-validations) |
+| **bank\_account** | See bank account validations [here](argentina.md#bank-accounts-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request
@@ -33,23 +33,21 @@
 }
 ```
 
-### **Document's validations**
+### **Document validations**
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Document | CUIT/CUIL | 11 | numeric | last digit |
 
-### Bank account's validations
+### Bank account validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Bank account | CBU | 22 | numeric | Apply verification algorithm |
 
-### **Codes for bank\_code parameter**
+### Bank codes
 
-Check below the different values that bank\_code parameter can take depending on each country's bank requirements
-
-We support all banks from ACH Interbanking network
+These are the values the **bank\_code parameter** can take in Argentina. We currently support all banks from the ACH Interbanking network.
 
 | **Bank name** | **Bank code** |
 | :--- | :--- |
@@ -60,6 +58,7 @@ We support all banks from ACH Interbanking network
 | Banco B. I. Creditanstalt | 147 |
 | Banco Bradesco Argentina | 336 |
 | Banco Cetelem Argentina | 331 |
+| Banco CMF | 319 |
 | Banco Cofidis | 335 |
 | Banco Columbia | 389 |
 | Banco Comafi | 299 |
@@ -91,6 +90,7 @@ We support all banks from ACH Interbanking network
 | Banco Julio | 305 |
 | Banco Macro | 285 |
 | Banco Mariva | 254 |
+| Banco Mas Ventas | 341 |
 | Banco Mercurio | 293 |
 | Banco Meridian | 281 |
 | Banco Municipal de Rosario | 065 |
@@ -122,8 +122,6 @@ We support all banks from ACH Interbanking network
 | Nuevo Banco Del Chaco | 311 |
 | Nuevo Banco Industrial de Azul | 322 |
 | Nuevo Banco Suquia | 387 |
-| Rci Ba | 339 |
+| RCI Banque Argentina | 339 |
 | The Bank Of Tokyo - Mitsubishi | 018 |
-| Banco CMF | 319 |
-| Banco Mas ventas | 341 |
 
