@@ -1,6 +1,6 @@
 # API codes
 
-The description of every code used in Payouts API can be found in this section, check below for:
+This section includes a description of every API code used in the Payouts API, check below for:
 
 * [Payout status](error-codes-reference.md#payout-status) - The possible status taken by each payout
 * [Error codes range](error-codes-reference.md#error-codes-range) - The error code shown when a payout fails

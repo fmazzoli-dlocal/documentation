@@ -7,13 +7,13 @@
 | **login** | 32 chars |
 | **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
-| **document\_type** | See document validations [here](paraguay.md#documents-validation) |
-| **document\_id** | See document validations [here](paraguay.md#documents-validation) |
+| **document\_type** | See document validations [here](paraguay.md#document-validations) |
+| **document\_id** | See document validations [here](paraguay.md#document-validations) |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | PY |
 | **currency** | PYG or USD or EUR |
 | **bank\_code** | BIC code |
-| **bank\_account** | See bank's account validations [here.](paraguay.md#bank-accounts-validations) |
+| **bank\_account** | See bank account validations [here.](paraguay.md#bank-account-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request
@@ -22,20 +22,20 @@
 
 ```
 
-### Document's validation
+### Document validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Document | CI | 7 | numeric | N/A |
 | Document | RUC | 8 | numeric | CI + validation algorithm |
 
-### Bank account's validations
+### Bank account validations
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
 | Bank account | SIPAP | 16 | numeric | N/A |
 
 {% hint style="info" %}
-If the account number has less than 16 digits, zeros should be added to the left side, so as to complete the mandatory length
+If the account number has less than 16 digits, zeros should be added to the left side so as to complete the mandatory length.
 {% endhint %}
 

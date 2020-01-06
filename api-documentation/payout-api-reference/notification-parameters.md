@@ -1,6 +1,6 @@
 # Notification parameters
 
-The notification will inform that the status of a payout has changed. After that, you will need to ask the new status of the payout. Notification will be sent to the merchant notification URL by POST protocol, with the following parameters:
+Notifications will be sent to your notification URL using the POST protocol whenever there is a payout status change. The following is a list of the parameters included in the notification POST message:
 
 | Field | Format | Description | Example |
 | :--- | :--- | :--- | :--- |
