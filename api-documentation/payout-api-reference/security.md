@@ -1,8 +1,8 @@
 # Security
 
-All requests to the payouts API must be signed and the signature included in the **Payload-Signature** request header for them to be accepted.
+All requests to the Payouts API must be signed and the signature included in the **Payload-Signature** request header for them to be accepted.
 
-The signature must be calculated using the **request payload** as the data to be hashed and the merchant **secret key** as the hashing key, using the algorithm HMAC SHA256. The resulting signature should be provided in hexadecimal lowercase format.
+The signature must be calculated using the **request payload** as the data to be hashed and the merchant **secret key** as the hashing key, using the HMAC SHA256 algorithm. The resulting signature should be provided to the Payouts API in hexadecimal lowercase format.
 
 The following PHP code snippet describes an example signature calculation:
 
