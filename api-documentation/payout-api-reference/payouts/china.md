@@ -44,7 +44,7 @@
 }
 ```
 
-## **Bank codes**
+### **Bank codes**
 
 The banks supported may change according to the payment's flow**:**
 
