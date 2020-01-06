@@ -30,13 +30,13 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document validations <a href="costa-rica.md#documents-validations">here</a>
+      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/costa-rica#document-validations">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>document_type</b>
       </td>
-      <td style="text-align:left">See document validations <a href="costa-rica.md#documents-validations">here</a>
+      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/costa-rica#document-validations">here</a>
       </td>
     </tr>
     <tr>
