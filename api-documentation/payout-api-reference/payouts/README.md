@@ -143,7 +143,7 @@ Extra info of the beneficiary in json format
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="notification\_url" type="string" required=false %}
-To be provided if the notification URL is different from the notification URL defined by default  
+To be provided if the notification URL is different from the notification URL defined by default. See the Notifications section below.  
 -Max. 100 chars-
 {% endapi-method-parameter %}
 
