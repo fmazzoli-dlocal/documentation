@@ -30,7 +30,7 @@
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
-      <td style="text-align:left">See document&apos;s validations <a href="ecuador.md#documents-validations">here</a>
+      <td style="text-align:left">See document validations <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/ecuador#document-validations">here</a>
       </td>
     </tr>
     <tr>
@@ -62,13 +62,13 @@
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
-      <td style="text-align:left">See bank&apos;s codes <a href="ecuador.md#codes-for-bank_code-parameter">here</a>
+      <td style="text-align:left">See bank codes <a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/ecuador#bank-codes">here</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account&apos;s validations<a href="ecuador.md#codes-for-bank_code-parameter"> here</a>
+      <td style="text-align:left">See bank account validations<a href="https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/ecuador#bank-account-validations"> here</a>
       </td>
     </tr>
     <tr>
@@ -91,7 +91,7 @@
 
 ```
 
-### _Document's validations_
+### Document validations
 
 <table>
   <thead>
@@ -125,7 +125,7 @@
       <td style="text-align:left">1234567892221</td>
     </tr>
   </tbody>
-</table>### **Codes for bank\_code parameter**
+</table>### **Bank codes**
 
 | Bank name | Bank code |
 | :--- | :--- |
