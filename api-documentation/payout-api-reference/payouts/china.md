@@ -9,8 +9,8 @@
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
 | **country** | CH |
-| **bank\_code** | See bank codes [here](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/china#bank-codes) |
-| **bank\_name** | See bank names [here](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/china#bank-codes) - Only han characters |
+| **bank\_code** | See bank codes [here](china.md#bank-codes) |
+| **bank\_name** | See bank names [here](china.md#bank-codes) - Only han characters |
 | **bank\_province** | Only han characters |
 | **bank\_city** | Only han characters |
 | **bank\_branch** | Only numbers |
