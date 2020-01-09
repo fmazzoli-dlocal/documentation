@@ -6,7 +6,7 @@ Get exchange rate
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This function returns the exchange rate of the given currency in relation to one dollar \(USD\).
+This endpoint returns the exchange rate of the given currency in relation to one dollar \(USD\).
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -7,11 +7,11 @@
 | **login** | 32 chars |
 | **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
-| **document\_id** | See document validations [here](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/argentina#document-validations) |
+| **document\_id** | See document validations [here](argentina.md#document-validations) |
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | AR |
-| **bank\_account** | See bank account validations [here](https://docs.dlocal.com/api-documentation/payout-api-reference/payouts/brazil#bank-account-validations) |
+| **bank\_account** | See bank account validations [here](argentina.md#bank-account-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request

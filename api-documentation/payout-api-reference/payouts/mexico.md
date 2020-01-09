@@ -10,8 +10,8 @@
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | MX |
-| **bank\_code** | Mandatory only if bank\_account is not CLABE. See bank's codes [here](mexico.md#codes-for-bank_code-parameter) |
-| **bank\_account** | See bank's account validations [here.](mexico.md#banks-account-validations) |
+| **bank\_code** | Mandatory only if bank\_account is not CLABE. See bank codes [here](mexico.md#bank-codes) |
+| **bank\_account** | See bank account validations [here.](mexico.md#bank-account-validations) |
 | **amount** | Max. 2 decimal numbers |
 
 ### Example request
@@ -35,108 +35,108 @@
 }
 ```
 
-### Bank's account validations
+### Bank account validations
 
 | _Validation_ | Type | Length | Type | Verification digit | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Bank account | CLABE | 18 | numeric | Apply verification algorithm | 032180000118359719 |
 
-### **Codes for bank\_code parameter**
+### **Bank codes**
 
-Check below the different values that bank\_code parameter can take depending on each country's bank requirements
+Check below the different values that bank\_code parameter can take in Mexico
 
-| **Bank** | **Code** |
+| Bank Name | Bank Code |
 | :--- | :--- |
-| BANAMEX | 002 |
-| BANCOMEXT | 006 |
-| BANOBRAS | 009 |
-| BBVA BANCOMER | 012 |
-| SANTANDER | 014 |
-| BANJERCITO | 019 |
-| HSBC | 021 |
-| BAJIO | 030 |
-| IXE | 032 |
-| INBURSA | 036 |
-| INTERACCIONES | 037 |
-| MIFEL | 042 |
-| SCOTIABANK | 044 |
-| BANREGIO | 058 |
-| INVEX | 059 |
-| BANSI | 060 |
-| AFIRME | 062 |
-| BANORTE | 072 |
-| THE ROYAL BANK | 102 |
-| AMERICAN EXPRESS | 103 |
-| BAMSA | 106 |
-| TOKYO | 108 |
-| JP MORGAN | 110 |
-| BMONEX | 112 |
-| VE POR MAS | 113 |
-| ING | 116 |
-| DEUTSCHE | 124 |
-| CREDIT SUISSE | 126 |
-| AZTECA | 127 |
-| AUTOFIN | 128 |
-| BARCLAYS | 129 |
-| COMPARTAMOS | 130 |
-| BANCO FAMSA | 131 |
-| BMULTIVA | 132 |
-| ACTINVER | 133 |
-| WALMART | 134 |
-| NAFIN | 135 |
-| INTERBANCO | 136 |
-| BANCOPPEL | 137 |
-| ABC CAPITAL | 138 |
-| UBS BANK | 139 |
-| CONSUBANCO | 140 |
-| VOLKSWAGEN | 141 |
-| CIBANCO | 143 |
-| BBASE | 145 |
-| BANSEFI | 166 |
-| HIPOTECARIA FEDERAL | 168 |
-| MONEXCB | 600 |
-| GBM | 601 |
-| MASARI | 602 |
-| VALUE | 605 |
-| ESTRUCTURADORES | 606 |
-| TIBER | 607 |
-| VECTOR | 608 |
+| ABC Capital | 138 |
+| Accival | 614 |
+| Actinver | 133 |
+| Afirme | 062 |
+| Akala | 638 |
+| American Express | 103 |
+| Asea | 652 |
+| Autofin | 128 |
+| Azteca | 127 |
 | B&B | 610 |
-| ACCIVAL | 614 |
-| MERRILL LYNCH | 615 |
-| FINAMEX | 616 |
-| VALMEX | 617 |
-| UNICA | 618 |
-| MAPFRE | 619 |
-| PROFUTURO | 620 |
-| CB ACTINVER | 621 |
-| OACTIN | 622 |
-| SKANDIA | 623 |
-| CBDEUTSCHE | 626 |
-| ZURICH | 627 |
-| ZURICHVI | 628 |
-| SU CASITA | 629 |
-| CB INTERCAM | 630 |
-| CI BOLSA | 631 |
-| BULLTICK CB | 632 |
-| STERLING | 633 |
-| FINCOMUN | 634 |
-| HDI SEGUROS | 636 |
-| ORDER | 637 |
-| AKALA | 638 |
-| CB JPMORGAN | 640 |
-| REFORMA | 642 |
-| STP | 646 |
-| TELECOMM | 647 |
-| EVERCORE | 648 |
-| SKANDIA | 649 |
-| SEGMTY | 651 |
-| ASEA | 652 |
-| KUSPIT | 653 |
-| SOFIEXPRESS | 655 |
-| UNAGRA | 656 |
-| OPCIONES EMPRESARIALES DEL NOROESTE | 659 |
-| LIBERTAD | 670 |
+| Bajio | 030 |
+| Bamsa | 106 |
+| Banamex | 002 |
+| Banco Famsa | 131 |
+| Bancomext | 006 |
+| Bancoppel | 137 |
+| Banjercito | 019 |
+| Banobras | 009 |
+| Banorte | 072 |
+| Banregio | 058 |
+| Bansefi | 166 |
+| Bansi | 060 |
+| Barclays | 129 |
+| Bbase | 145 |
+| BBVA Bancomer | 012 |
+| BMonex | 112 |
+| BMultiva | 132 |
+| Bulltick CB | 632 |
+| CB Actinver | 621 |
+| CB Intercam | 630 |
+| CB JPMorgan | 640 |
+| CB Deutsche | 626 |
+| CI Bolsa | 631 |
+| Cibanco | 143 |
 | CLS | 901 |
-| INDEVAL | 902 |
+| Compartamos | 130 |
+| Consubanco | 140 |
+| Credit Suisse | 126 |
+| Deutsche Bank | 124 |
+| Estructuradores | 606 |
+| Evercore | 648 |
+| Finamex | 616 |
+| Fincomun | 634 |
+| GBM | 601 |
+| HDI Seguros | 636 |
+| Hipotecaria Federal | 168 |
+| HSBC | 021 |
+| Inbursa | 036 |
+| Indeval | 902 |
+| ING | 116 |
+| Interacciones | 037 |
+| Interbanco | 136 |
+| Invex | 059 |
+| IXE | 032 |
+| JP Morgan | 110 |
+| Kuspit | 653 |
+| Libertad | 670 |
+| Mapfre | 619 |
+| Masari | 602 |
+| Merrill Lynch | 615 |
+| Mifel | 042 |
+| Monexcb | 600 |
+| Nafin | 135 |
+| Oactin | 622 |
+| Opciones Empresariales del Noroeste | 659 |
+| Order | 637 |
+| Profuturo | 620 |
+| Reforma | 642 |
+| Santander | 014 |
+| Scotiabank | 044 |
+| Segmty | 651 |
+| Skandia Vida | 623 |
+| Skandia Operadora | 649 |
+| Sofiexpress | 655 |
+| Sterling | 633 |
+| STP | 646 |
+| Su Casita | 629 |
+| Telecomm | 647 |
+| The Royal Bank | 102 |
+| Tiber | 607 |
+| Tokyo | 108 |
+| UBS Bank | 139 |
+| Unagra | 656 |
+| Unica | 618 |
+| Valmex | 617 |
+| Value | 605 |
+| Ve Por Mas | 113 |
+| Vector | 608 |
+| Volkswagen | 141 |
+| Walmart | 134 |
+| Zurich | 627 |
+| Zurichvi | 628 |
 
