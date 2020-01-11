@@ -55,6 +55,11 @@
       <td style="text-align:left">Max. 100 chars</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>city</b>
+      </td>
+      <td style="text-align:left">Max. 100 chars</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b>country</b>
       </td>
       <td style="text-align:left">EC</td>
