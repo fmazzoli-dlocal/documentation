@@ -18,7 +18,7 @@ $signature = hash_hmac('sha256', $requestPayload, $secretKey, false)
 You can find your **secret key** in the [Merchant Panel](https://merchant.dlocal.com/panel), under the Integration &gt; Credentials & Settings section.
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 We recommend testing your generated signature using the [Get Exchange Rate](get-exchange-rate.md) call, to make sure your signature is working before moving forward with the integration.
 {% endhint %}
 
