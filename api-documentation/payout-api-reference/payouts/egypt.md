@@ -45,7 +45,7 @@
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">Swift code</td>
+      <td style="text-align:left">BIC code</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
@@ -93,6 +93,4 @@
 "type":"json"
 }
 ```
-
-
 
