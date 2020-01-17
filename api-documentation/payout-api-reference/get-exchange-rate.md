@@ -1,4 +1,4 @@
-# Get exchange rate
+# Currency exchange
 
 {% api-method method="post" host=" https://api.dlocal.com/api\_curl/cashout\_api" path="/get\_exchange\_rate" %}
 {% api-method-summary %}

@@ -61,7 +61,7 @@
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)
   * [Check status](api-documentation/payout-api-reference/check-status.md)
   * [Cancel payout](api-documentation/payout-api-reference/cancel-payout.md)
-  * [Get exchange rate](api-documentation/payout-api-reference/get-exchange-rate.md)
+  * [Currency exchange](api-documentation/payout-api-reference/get-exchange-rate.md)
   * [Notification parameters](api-documentation/payout-api-reference/notification-parameters.md)
   * [API codes](api-documentation/payout-api-reference/error-codes-reference.md)
 

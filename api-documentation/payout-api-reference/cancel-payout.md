@@ -6,7 +6,8 @@ Cancel payout
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to cancel a payout. Note that **only payouts with 'Pending' status** can be cancelled.
+This function cancels a payout.   
+In order to cancel it, the status of the payout should be 'Pending'
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -58,6 +59,6 @@ Payout cancelled
 {% hint style="info" %}
 **For fields 'login' & 'pass':**
 
-**x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the [Merchant Panel](https://merchant.dlocal.com/login), under the Integration &gt; Credentials & Settings section. 
+**x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.
 {% endhint %}
 
