@@ -2,7 +2,7 @@
 
 #### Signature <a id="signature"></a>
 
-The signature should use SHA256 as HMAC hash function. The signature header always should have the version prefix that contains the signature version and the used hash function. For now, V2-HMAC-SHA256.
+All calls to the Payins API should be signed using the HMAC-SHA256 algorithm, and the contents of the signature included in the `Authorization` header as documented below. This header should have as prefix the signature version and the hash function used, which is currently **V2-HMAC-SHA256**.
 
 #### Headers <a id="headers"></a>
 
@@ -14,7 +14,7 @@ The signature should use SHA256 as HMAC hash function. The signature header alwa
 | `Content-Type` | String | `application/json` |
 | `X-Version` | String | API Version |
 | `User-Agent` | String | Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. |
-| `Authorization` | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "X-Login+X-Date+RequestBody"\)&gt; |
+| `Authorization` | String | &lt;auth version&gt;, Signature: &lt;hmac\(secretKey, "`X-Login`+`X-Date`+RequestBody"\)&gt; |
 
 #### Examples of HMAC signature generation in the most popular languages
 
@@ -70,7 +70,7 @@ public final class SignatureCalculator {
 {% endtabs %}
 
 {% hint style="info" %}
-We recommend testing your generated signature using the [Search Payment Methods](payment-methods/#search-payment-methods) call, to make sure your signature is working before moving forward with the integration.
+We strongly suggest testing your generated signature using the [Search Payment Methods](payment-methods/#search-payment-methods) call to make sure your signature is working before moving forward with the integration.
 {% endhint %}
 
 ### Sensitive data encryption <a id="sensitive-data-encryption"></a>
@@ -108,7 +108,7 @@ The encryption flow is the following
 
 ## Idempotent Requests <a id="idempotent-requests"></a>
 
-To perform an idempotent request, provide an additional 'X-Idempotency-Key' header to the request.
+To perform an idempotent request, provide an additional `X-Idempotency-Key` header to the request.
 
 | **Header** | **Type** | **Description** |
 | :--- | :--- | :--- |
