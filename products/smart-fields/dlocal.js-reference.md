@@ -4,7 +4,7 @@
 
 However you’re using dlocal.js, you always begin by including the library and setting your API key. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com)**.** For testing purposes, you can use [https://js-sandbox.dlocal.com](https://js-sandbox.dlocal.com)**.**
 
-```text
+```php
 <script src="https://js.dlocal.com/"></script>
 ```
 
@@ -51,7 +51,7 @@ This method creates an instance of `fields`, which manages a group of Smart Fiel
 
 ### `dlocal.createToken(field, tokenData)`
 
-Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you safely pass to your server to use in an API call. **This token expires 10 minutes after it has been created, or after one operation with the token is made, such as a Payment or Card Save**, so you need to make sure that the payment \(or other operation\) is made within that timeframe.
+Use `dlocal.createToken()` to convert information collected by Smart Fields into a token that you can safely pass to your server for use in an API call. **This token expires 10 minutes after it has been created, or after one operation with the token is made, such as a Payment or Card Save**, so you need to make sure that the payment \(or other operation\) is made within that timeframe.
 
 {% hint style="warning" %}
 **Using Smart Fields token for Save + Payment**  
@@ -573,7 +573,7 @@ The only way to communicate with your Smart Field is by listening to an `event`.
   </tbody>
 </table>### Input validation
 
-Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any errors:
+Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any reported errors:
 
 ```javascript
 card.addEventListener('change', function(event) {
