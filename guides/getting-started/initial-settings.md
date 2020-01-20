@@ -10,7 +10,7 @@ And input the Return, Confirmations and Refunds URLs:
 
 ![](../../.gitbook/assets/screen-shot-2018-10-09-at-7.43.04-am.png)
 
-**Return URL:** This is the URL that we will be redirecting the user to after the ticket or bank flows ends or the user decides go back. _We don't send notifications here_.  
+**Return URL:** This is the URL that we will be redirecting the user after the ticket or bank flows ends or the user decides go back. _We don't send notifications here_.  
   
 **Confirm URL:** When a payment is created and the first status is `PENDING` , we will send a notification to this URL once the payment is either approved or rejected/expired.  
   
