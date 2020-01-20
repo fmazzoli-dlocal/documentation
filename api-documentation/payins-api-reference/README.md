@@ -2,11 +2,7 @@
 
 This section covers the basic concepts of the payment transaction types and the technical details of the Payins API. It contains functional examples of the requests and important observations to be taken into account during integration.
 
-All calls to the Payins API will return JSON responses, including errors. 
-
-{% hint style="info" %}
-For the sandbox environment just replace **api.dlocal.com** for **sandbox.dlocal.com**.
-{% endhint %}
+JSON is returned by all API responses, including errors. For sandbox environment just replace **api.dlocal.com** for **sandbox.dlocal.com**.
 
 ### Content
 
