@@ -32,9 +32,11 @@ All submissions of payment info using Smart Fields are made via a secure HTTPS c
 
 Smart Fields is available as part of dLocal.js. To get started, include this script on your pages—it should always be loaded directly from [https://js.dlocal.com](https://js.dlocal.com). For testing purposes, you can use [https://js-sandbox.dlocal.com](https://js-sandbox.dlocal.com)**.**
 
-```javascript
-<script src="https://js.dlocal.com/"></script>
-```
+`<script src="https://js.dlocal.com/"></script>`
+
+{% hint style="info" %}
+For more information on dLocal.js, please visit our [_**dLocal.js Reference page**_](dlocal.js-reference.md).
+{% endhint %}
 
 Next, create an instance of Smart Fields \(referred to as just `fields()`\):
 
@@ -45,14 +47,6 @@ var fields = dlocal.fields({
             country: 'BR'
         });
 ```
-
-{% hint style="info" %}
-If you are integrating Smart Fields, you are going to need an **API key**. Please contact your **Technical Account Manager** to get yours.
-{% endhint %}
-
-{% hint style="info" %}
-For more information on dLocal.js, please visit our [_**dLocal.js Reference page**_](dlocal.js-reference.md).
-{% endhint %}
 
 ## Step 2: Create your payment form
 
