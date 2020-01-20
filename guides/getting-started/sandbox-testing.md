@@ -86,7 +86,7 @@ curl -X POST \
 }
 ```
 
-We'll use it as an example to show how you should perform tests in the Sandbox environment. Pay special attention to the `description` property, which will be very useful when **testing the suggested scenarios:**
+We'll use it as an example to show how you should perform tests in Sandbox environment. Pay special attention to the `description` property, which will be very useful when **testing the suggested scenarios:**
 
 1. Payment with Credit Card `PAID`
 2. Payment with Credit Card `REJECTED`
@@ -97,7 +97,7 @@ We'll use it as an example to show how you should perform tests in the Sandbox e
 
 ### **Payment with Credit Card approved \(‘PAID’\)**
 
-As we mentioned earlier, you need to add the status code you want to test on the description body parameter of your request. In this case, we want to test status `PAID`, so we'll use code `200`. As you are testing cards, make sure you are correctly inputting CARD as the selected payment method. 
+As we mentioned earlier, you need to add the status code you want to test on the description body parameter of your request. In this case, we want to test status `PAID`, so we'll use code `200`. As you are testing cards, make sure you are correctly inputing CARD as the selected payment method. 
 
 ```yaml
 "payment_method_id" : "CARD",
