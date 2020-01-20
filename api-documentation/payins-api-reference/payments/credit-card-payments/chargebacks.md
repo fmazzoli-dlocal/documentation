@@ -2,7 +2,7 @@
 
 ## Chargeback asynchronous notification
 
-If a chargeback was applied \(requested by the user\) a notification is sent to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
+If a chargeback was applied \(requested by the user\) a notification is sent to the merchant to the previously registered Merchant chargeback notification URL by POST protocol, sending the following parameters:
 
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
