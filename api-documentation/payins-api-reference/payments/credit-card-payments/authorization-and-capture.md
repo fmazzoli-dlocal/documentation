@@ -102,7 +102,7 @@ ID of the Authorization to be captured.
 
 {% api-method-parameter name="amount" type="number" required=false %}
 Amount to be captured \(in the currency specified in `currency`\). Must be equal or less than the authorized amount.  
-**If not included, the capture will be for the total amount of the authorization.**
+**If not included, the captured will be for the total amount of the authorization.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=false %}
@@ -192,7 +192,7 @@ The `id` returned corresponds to the unique identifier of the Captured payment. 
 
 ## Authorization Cancellation
 
-An authorization can be cancelled before it is captured if the payment is no longer needed.
+Authorization can be cancelled before it being captured if the payment is no longer needed.
 
 {% api-method method="post" host="https://api.dlocal.com/payments/" path="{authorization\_id}/cancel" %}
 {% api-method-summary %}
