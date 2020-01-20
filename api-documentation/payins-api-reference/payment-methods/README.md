@@ -1,8 +1,8 @@
 # Payment Methods
 
-## The Payment Method Object
-
 Object that identifies each payment method accepted by dLocal.
+
+## The Payment Method Object
 
 {% tabs %}
 {% tab title="Payment Method Object" %}
@@ -118,7 +118,7 @@ Payment method country code.
 {% endapi-method %}
 
 {% hint style="info" %}
-You can find all the country codes available in the [**Country Reference**](../country-reference.md) page.
+You can find all the country code available in the [**Country Reference**](../country-reference.md) page.
 {% endhint %}
 
 ## Example Request
@@ -141,8 +141,8 @@ For **other types of payments** \(eg: bank transfer\), you should use the corres
 
 Examples:
 
-* For payment with Visa credit card in Argentina, use `payment_method_id = "CARD"`  
-* For payment with Rapi Pago in Argentina, use `payment_method_id = "RP"`
+* Payment with Visa credit card in Argentina, use `payment_method_id = "CARD"`  
+* Payment with Rapi Pago in Argentina, use `payment_method_id = "RP"`
 
 ### **Payment Methods By Country**
 
