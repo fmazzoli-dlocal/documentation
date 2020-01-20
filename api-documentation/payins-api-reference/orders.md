@@ -1,6 +1,6 @@
 # Orders
 
-Payments can include an `order_id` which is the ID of the payment given by the merchant in their system. Merchants can retrieve payments based on this ID.
+Payments can include an `order_id` which is the ID of the payment given by the merchant in their system. Merchants can retrieve payments based in this ID.
 
 ## The Order Object
 
