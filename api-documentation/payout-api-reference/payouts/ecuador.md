@@ -55,6 +55,11 @@
       <td style="text-align:left">Max. 100 chars</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>city</b>
+      </td>
+      <td style="text-align:left">Max. 100 chars</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b>country</b>
       </td>
       <td style="text-align:left">EC</td>
@@ -88,7 +93,25 @@
 </table>### Example request
 
 ```text
-
+{
+"login":"1n234n56",
+"pass":"HolAc123o",
+"external_id":"1234567812345678b",
+"document_id":"1784559964",
+"document_type":"CI",
+"beneficiary_name":"JUAN",
+"beneficiary_lastname":"PEREZ",
+"city":"CIUDAD DE GUAYAQUIL",
+"country":"EC",
+"bank_code":"034",
+"bank_account":"1234567891",
+"account_type":"C",
+"amount":"245.40",
+"comments":"this is the 1st comment",
+"extra_info":"{\"this_is_extra:2334/"}",
+"notification_url":"https:\/\/thisisawebsite.net\/payments",
+"type":"json"
+}
 ```
 
 ### Document validations

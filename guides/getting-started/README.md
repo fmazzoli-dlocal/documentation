@@ -14,11 +14,11 @@ After submitting information, you will receive a confirmation link from merchant
 
 ### First sign in
 
-Access the merchant panel through [https://merchant.dlocal.com/login](https://merchant.dlocal.com/login) using the email and password you set when signing up. You are ready to operate in the Sandbox environment.
+Access the merchant panel through [https://merchant.dlocal.com/login](https://merchant.dlocal.com/login) using the email and password you set when signing up. You are now ready to operate in the Sandbox environment.
 
+{% hint style="info" %}
 Remember to change your password after your first sign in. You can do that through _Settings &gt;&gt; Change my password._
-
-
+{% endhint %}
 
  
 

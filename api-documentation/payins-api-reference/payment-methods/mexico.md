@@ -1,6 +1,6 @@
 # Mexico
 
-### Payment Methods Available
+## Payment Methods Available
 
 <table>
   <thead>
@@ -203,3 +203,77 @@
     </tr>
   </tbody>
 </table>
+
+## Direct Alternative Payment Methods
+
+### OXXO
+
+#### Example
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example Request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
+
+#### Example Request Body
+
+```yaml
+{
+    "amount": 100,
+    "currency": "MXN",
+    "country": "MX",
+    "payment_method_id": "OX",
+    "payment_method_flow": "DIRECT",
+    "payer": {
+        "name": "Pedro Gomes",
+        "email": "pedrogomes@dlocal.com",
+        "document": "42243309114"
+    },
+    "order_id": "jhg4v34v534",
+    "notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+#### Example Response
+
+```yaml
+{
+    "id": "D-4-fecd8cfd-29a4-4bcc-87d0-75c057a8a2ec",
+    "amount": 100,
+    "currency": "MXN",
+    "payment_method_id": "OX",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "MX",
+    "ticket": {
+        "type": "REFERENCE_CODE",
+        "number": "8500-0273-6135-11",
+        "expiration_date": "2020-02-13T23:59:00.000+0000",
+        "image_url": "https://pay.dlocal.com/gmf/payments/M-6dc6f070-46c4-11ea-addf-83f8a04e38b5"
+    },
+    "created_date": "2020-02-03T20:33:25.000+0000",
+    "status": "PENDING",
+    "status_detail": "The payment is pending.",
+    "status_code": "100",
+    "order_id": "jhg4v34v534",
+    "notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%287%29.png)
+

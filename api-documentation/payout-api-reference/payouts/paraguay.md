@@ -19,7 +19,23 @@
 ### Example request
 
 ```text
-
+{
+"login":"1n234n56",
+"pass":"HolAc123o",
+"external_id":"1234567812345678b",
+"document_id":"1234567",
+"document_type":"CI",
+"beneficiary_lastname":"PEREZ",
+"country":"PY",
+"bank_code":"NACNPYPA0P3",
+"bank_account":"1234567891234567",
+"amount":"245.40",
+"comments":"this is the 1st comment",
+"currency":"PYG",
+"extra_info":"{\"this_is_extra:2334/"}",
+"notification_url":"https:\/\/thisisawebsite.net\/payments",
+"type":"json"
+}
 ```
 
 ### Document validations

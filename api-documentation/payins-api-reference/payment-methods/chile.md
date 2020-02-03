@@ -405,5 +405,5 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/image%20%2810%29.png)
+![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/image%20%2811%29.png)
 

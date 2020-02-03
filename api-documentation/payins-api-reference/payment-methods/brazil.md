@@ -325,7 +325,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%287%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%288%29.png)
 
 {% hint style="warning" %}
 Barcode needs to have the **Interleaved 2 of 5 \(ITF\)** format in order to be recognized by all Boleto Bancario barcode readers.

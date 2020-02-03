@@ -118,7 +118,7 @@ curl -X POST \
 
 ## Save a Card on a Payment
 
-You can save a card while making a Payment / Authorization. To do so, simple add a `"save" : true` parameter in the `card` object of the request.
+You can save a card while making a Payment / Authorization. To do so, simply add a `"save" : true` parameter in the `card` object of the request.
 
 If the operation was successful \(eg: Payment is `PAID`, or Authorization is `AUTHORIZED`\) The response will include the `card_id` that you can use for further payments. If the operation failed \(eg: Payment `REJECTED`\), no `card_id` will be generated. 
 

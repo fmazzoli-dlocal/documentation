@@ -1,4 +1,4 @@
-# Get exchange rate
+# Currency exchange
 
 {% api-method method="post" host=" https://api.dlocal.com/api\_curl/cashout\_api" path="/get\_exchange\_rate" %}
 {% api-method-summary %}
@@ -52,6 +52,6 @@ Exchange rate OK
 {% hint style="info" %}
 **For fields 'login' & 'pass':**
 
-**x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the panel, section Integration -&gt; Credentials & Settings.
+**x\_login** and **x\_trans\_key** are your credentials. Remember to find them in the [Merchant Panel](https://merchant.dlocal.com/login), under the Integration &gt; Credentials & Settings section. 
 {% endhint %}
 

@@ -49,7 +49,7 @@ Example Response
 {% endapi-method %}
 
 {% hint style="info" %}
-At the moment, only the only value for the `from` parameter is **`USD`**, and the `to`parameter can include any local currency.
+At the moment, the only acceptable value for the `from` parameter is **`USD`**, whereas the `to`parameter can include any local currency.
 {% endhint %}
 
 ## Example request
