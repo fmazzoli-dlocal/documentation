@@ -335,6 +335,6 @@ curl -X POST \
 * Barcode needs to have the **Interleaved 2 of 5 \(ITF\)** format in order to be recognized by all Boleto Bancario barcode readers.
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
 * Make sure that the **expiration date** is clear and visible enough. In Brazil people use the **dd/mm/yyyy** format.
-* Add a link to the full boleto: **ticket.image\_url**. Although it is not necessary to pay, some users prefer to have it and gives them a sense of security. See a full boleto example [here](https://ibb.co/mNBc6g2).
+* Add a link to the full boleto: **ticket.image\_url**. Although it is not necessary to pay, some users prefer to have it and gives them a sense of security. 
 {% endhint %}
 
