@@ -408,7 +408,7 @@ curl -X POST \
 ![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/screen-shot-2020-02-19-at-7.50.16-pm.png)
 
 {% hint style="success" %}
-User Interface Tips:
+**User Interface Tips:**
 
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
 * Make sure that the **expiration date** is clear and visible enough. In Chile people use the **dd/mm/yyyy** format.
