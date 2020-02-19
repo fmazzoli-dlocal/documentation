@@ -275,5 +275,17 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%287%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/screen-shot-2020-02-19-at-11.59.53-am.png)
+
+{% hint style="success" %}
+**User Interface tips**
+
+* Separate the **ticket.number** this way: **4 digits - 5 digits - 5 digits**. It is easier for users to dictate it to cashiers.
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* Make sure that the **expiration date** is clear and visible enough. In Mexico people use the **dd/mm/yyyy** format.
+* Include **payment instructions**. Although most users are familiarized with OXXO payment method, it is a good practice to help those who are not used to it. In the image above there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
+* A **Store locator feature** is a helpful feature. Just link it to [https://google.com/maps/search/oxxo/](https://google.com/maps/search/oxxo/)
+* A **Download button** helps users to have their ticket always on their phone, making it needless to take notes or keep the browser opened.
+* A **Print button** is useful for some users that need to have their tickets printed.
+{% endhint %}
 
