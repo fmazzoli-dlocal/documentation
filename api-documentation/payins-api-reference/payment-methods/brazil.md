@@ -327,7 +327,16 @@ curl -X POST \
 
 ![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%288%29.png)
 
+
+
 {% hint style="warning" %}
-Barcode needs to have the **Interleaved 2 of 5 \(ITF\)** format in order to be recognized by all Boleto Bancario barcode readers.
+**User Interface tips:**
+
+* Always offer an option to copy the **ticket.number**. It’s a long number and users that pay through their homebanking need to input it on their bank app/website. 
+* Include the **barcode**. It is useful for users that pay through homebanking with barcode reader, and for the ones that pay at physical stores.
+* Barcode needs to have the **Interleaved 2 of 5 \(ITF\)** format in order to be recognized by all Boleto Bancario barcode readers.
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* Make sure that the **expiration date** is clear and visible enough. In Brazil people use the **dd/mm/yyyy** format.
+* Add a link to the full boleto: **ticket.image\_url**. Although it is not necessary to pay, some users prefer to have it and gives them a sense of security.
 {% endhint %}
 
