@@ -387,8 +387,8 @@ curl -X POST \
     "country": "CL",
     "ticket": {
         "type": "CUSTOM",
-        "number": "12345234",
-        "expiration_date": "2018-12-27T20:25:19.000+0000",
+        "number": "42808224",
+        "expiration_date": "2020-02-25T20:25:19.000+0000",
         "company_name": "dLocal",
         "company_id": "50283",
         "company_id2" : "50284",
@@ -405,5 +405,17 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/image%20%2811%29.png)
+![Example Servipag UI built with the information in the example above.](../../../.gitbook/assets/screen-shot-2020-02-19-at-7.50.16-pm.png)
+
+{% hint style="success" %}
+User Interface Tips:
+
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* Make sure that the **expiration date** is clear and visible enough. In Chile people use the **dd/mm/yyyy** format.
+* Include **company\_id2** and **company\_id** numbers, as they are important for payers that pay in physical stores.
+* Make it clear for the user that their payment will be **credited immediately**. This brings confidence and a sense of security that helps conversion rates.
+* A **store locator** is a helpful feature. Just link it to [google.com/maps/search/servipag/](https://www.google.com/maps/search/servipag/)
+* A **Save button** helps users to have their ticket always on their phone, making it needless to take notes or keep the browser opened.
+* A **Print button** is useful for some users that need to have their tickets printed.
+{% endhint %}
 
