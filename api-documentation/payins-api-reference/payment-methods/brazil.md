@@ -329,7 +329,7 @@ curl -X POST \
 
 
 
-{% hint style="warning" %}
+{% hint style="success" %}
 **User Interface tips:**
 
 * Always offer an option to copy the **ticket.number**. It’s a long number and users that pay through their homebanking need to input it on their bank app/website. 
