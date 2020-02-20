@@ -161,4 +161,109 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BP.png">https://pay.dlocal.com/views/2.0/images/payments/BP.png</a>&#x200B;</td>
     </tr>
   </tbody>
-</table>
+</table>## Direct Alternative Payment Methods
+
+### Pago Efectivo
+
+#### Example
+
+{% tabs %}
+{% tab title=" Example Request" %}
+#### Example Request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
+
+#### Example Request Body
+
+```c
+{
+"amount": 100,
+"currency": "PEN",
+"country": "PE",
+"payment_method_id": "EF",
+"payment_method_flow": "DIRECT",
+"payer": {
+      "name": "Pedro Gomez",
+      "email": "pedrogomez@dlocal.com",
+      "document": "27662162"
+},
+"order_id": "jhg4v34v534",
+"notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+#### Example Response
+
+```c
+{
+    "id": "D-4-a291131e-f640-4579-b5de-95a709522272",
+    "amount": 100,
+    "currency": "PEN",
+    "payment_method_id": "EF",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "PE",
+    "ticket": {
+        "type": "CUSTOM",
+        "number": "28945684",
+        "expiration_date": "2020-02-24T04:59:00.000+0000",
+        "id": "EF-28945684",
+        "company_name": "DEMERGE PERU SAC",
+        "provider_name": "PagoEfectivo",
+        "provider_logo": "https://pay.dlocal.com/views/2.0/images/payments/EF.png",
+        "image_url": "https://pay.dlocal.com/gmf/payments/M-e622da70-5295-11ea-addf-83f8a04e38b5",
+        "amount": 100,
+        "currency": "PEN"
+    },
+    "created_date": "2020-02-18T21:30:35.000+0000",
+    "status": "PENDING",
+    "status_detail": "The payment is pending.",
+    "status_code": "100",
+    "order_id": "bbca8035-6d49-4283-abe0-6be78d29d8d6",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+![Provider ticket example](../../../.gitbook/assets/pagoefectivo.png)
+
+{% hint style="success" %}
+**User Interface Tips**
+
+We strongly recommend using the ticket on the **ticket.image\_url**. Peruvian users are very familiar with this ticket \(example above\) made by the provider itself, for every kind of purchase paid through Pago Efectivo. It includes
+
+* Many payment options instructions
+* Capability of sending the payment code through SMS
+* Provider’s store locator
+
+If still need to design your own ticket, bear in mind:
+
+* Show the **ticket.number** as _"Código de Pago \(CIP\)"_.
+* Show the **ticket.provider\_name**, as it is useful at the moment of paying through homebanking.
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* Make sure that the **expiration date** is clear and visible enough. In Perú people use the **dd/mm/yyyy** format.
+* Include **payment instructions**. Although most users are familiarized with Pago Efectivo payment method, it is a good practice to help those who are not used to it. In the provider ticket \(image above\) there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
+* A **Store locator feature** is a helpful feature. Just link it to the provider's tool: [https://ubicanos.pagoefectivo.pe/\#/?tienda=\[idServicio\]&moneda=\[idMoneda\]&monto=100.00&ubicame=true&\_k=zzuutu](https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=[idMoneda]&monto=100.00&ubicame=true&_k=zzuutu)
+* A **Download button** helps users to have their ticket always on their phone, making it needless to take notes or keep the browser opened.
+* A **Print button** is useful for some users that need to have their tickets printed.
+{% endhint %}
+
+
+
+
+
+
+
