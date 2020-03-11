@@ -57,5 +57,22 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>FW</code>
+      </td>
+      <td style="text-align:left">Fawry</td>
+      <td style="text-align:left"><code>TICKET</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Cash</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/FW.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
