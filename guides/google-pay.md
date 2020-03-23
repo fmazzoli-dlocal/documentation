@@ -1,4 +1,4 @@
-# Google Pay
+# Google Pay™
 
 Google Pay is a convenient payment system which allows customers to make payments in your app or website using any credit or debit card saved to their Google Account.
 
