@@ -160,7 +160,7 @@ curl -X POST \
 
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `type` | String | Type of ticket, can be `NUMERIC`, `BARCODE` or `CUSTOM` |
+| `type` | String | Type of ticket, can be `NUMERIC`, `BARCODE` , `CUSTOM` or `REFERENCE_CODE` |
 | `number` | String | Numeric code of the `NUMERIC` or `CUSTOM` ticket |
 | `barcode` | String | Code to be included in the barcode of the `BARCODE` or `CUSTOM` ticket. |
 | `format` | String | Format of the barcode of the `BARCODE` or `CUSTOM` ticket. Example `CODE_128,`or `ITF` |
