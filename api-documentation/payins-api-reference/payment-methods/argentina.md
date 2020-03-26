@@ -47,7 +47,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/PF.png">https://pay.dlocal.com/views/2.0/images/payments/PF.png</a>&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/PF.png">https://static.dlocal.com/images/providers/PF.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>RP</code>
@@ -59,7 +60,8 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/RP.png">https://pay.dlocal.com/views/2.0/images/payments/RP.png</a>&#x200B;</td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/RP.png">https://static.dlocal.com/images/providers/RP.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
