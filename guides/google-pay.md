@@ -38,8 +38,6 @@ Supporting Google Pay requires following these two steps:
 * **`gatewayMerchantId`** – You can obtain this value from your TAM
 * **`gateway`** - use **`dlocal`** as the parameter value
 * Required fields: Name, address, phone, and email
-
-For supported authentication methods use**`PAN_ONLY`**
 {% endhint %}
 
 {% hint style="warning" %}
@@ -49,7 +47,9 @@ Please remember to also **request the user's personal ID document** before or af
 {% endhint %}
 
 {% hint style="success" %}
-**Supported Card Networks**
+**Supported Payment Methods**
+
+For supported payment type, select **`CARD`**. The following card networks are currently supported:
 
 * VISA
 * ELECTRON
@@ -60,6 +60,8 @@ Please remember to also **request the user's personal ID document** before or af
 * JCB \(Only for Brazil\)
 * ELO \(Only for Brazil\)
 * ELO\_DEBIT \(Only for Brazil\)
+
+For supported authentication methods use**`PAN_ONLY`**
 {% endhint %}
 
 ### Step 2 - dLocal Integration \(Backend\)
