@@ -110,7 +110,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">PAN</td>
       <td style="text-align:left">
         <p>10 characters
-          <br />(5 letters, 4 numbers, 1 letter/number)</p>
+          <br />(5 letters, 4 numbers, 1 letter)</p>
         <p>full PAN validation</p>
       </td>
       <td style="text-align:left">Yes</td>
