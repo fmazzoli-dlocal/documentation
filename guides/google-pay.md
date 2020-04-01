@@ -5,7 +5,7 @@ Google Pay is a convenient payment system which allows customers to make payment
 Since Google devices are widely used in the countries where dLocal operates, supporting Google Pay in your app can help **simplify the checkout process and increase conversions**, as payment details are recovered from the customers' Google Accounts whenever they have previously saved or used their credit or debit cards with Google Pay.
 
 {% hint style="info" %}
-As of Jan 2020, in Latin America, Google Pay is supported in the following countries: Argentina, Brazil, Chile, Colombia, Egypt, India, Indonesia, Mexico, Peru, Uruguay
+As of Jan 2020, Google Pay is supported in the following countries: Argentina, Brazil, Chile, Colombia, Egypt, India, Indonesia, Mexico, Peru, Uruguay
 
 For a more up to date list, please see: [https://support.google.com/pay/answer/9023773?hl=en](https://support.google.com/pay/answer/9023773?hl=en)
 
