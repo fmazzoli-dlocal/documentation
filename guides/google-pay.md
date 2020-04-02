@@ -128,7 +128,7 @@ You will need to submit the [standard payment request](https://docs.dlocal.com/a
 {% endtab %}
 {% endtabs %}
 
-### Request production access
+## Getting ready to go live
 
-After you complete all the necessary steps of the integration process, you will need to request [Google Production Access](https://services.google.com/fb/forms/googlepayAPIenable/).  Google will review your integration with the the Google Pay API set on **test environment.** If everything is correct, they will provide you with a merchantID to use with Google Pay API. After that they will review your integration to **production environment**, as a final step.
+After you have completed all the necessary steps of the integration process in the testing environment, please make sure you have requested [Google Production Access](https://services.google.com/fb/forms/googlepayAPIenable/), as detailed in the Google [Web](https://developers.google.com/pay/api/web/guides/test-and-deploy/request-prod-access) and [Android](https://developers.google.com/pay/api/web/guides/test-and-deploy/request-prod-access) documentation, and have updated your Google integration configuration \(Step 1\) for Production environment access. Finally, make sure you have contacted your Technical Account Manager so that we can help check everything has been correctly configured and confirm you are ready to go live.
 
