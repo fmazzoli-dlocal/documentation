@@ -83,6 +83,7 @@
   * [Going live](guides/getting-started/go-live.md)
 * [PCI Compliance](guides/pci-compliance.md)
 * [Google Pay™](guides/google-pay.md)
+* [Shopify](guides/shopify.md)
 
 ## Other <a id="undefined"></a>
 

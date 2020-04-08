@@ -131,8 +131,11 @@ Example Response
 | **Status** | **Status code** | **Description** |
 | :--- | :--- | :--- |
 | `PENDING` | 100 | The chargeback is pending. |
+| `DISPUTE_RECEIVED` | 101 | Dispute documentation received |
 | `COMPLETED` | 200 | The chargeback was executed. |
-| `CANCELLED` | 400 | The chargeback was cancelled. |
+| `IN_DISPUTE` | 201 | Dispute documentation was sent to the acquirer. |
+| `DISPUTE_LOST` | 202 | The chargeback dispute was lost. |
+| `REVERSAL` | 700 | The chargeback dispute was won. |
 
 In the Production environment, Chargebacks are triggered by the buyer by calling their bank. In dLocal's Sandbox environment though, merchants can simulate a Chargeback using the method described below:
 
