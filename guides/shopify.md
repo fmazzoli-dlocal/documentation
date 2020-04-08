@@ -2,7 +2,7 @@
 description: How to configure dLocal in your Shopify store?
 ---
 
-# Shopify
+# Shopify setup
 
 ![](../.gitbook/assets/58482ec0cef1014c0b5e4a70.png)
 
