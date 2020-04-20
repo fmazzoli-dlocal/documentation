@@ -196,6 +196,7 @@ curl -X POST \
         "name": "Rajesh Koothrappali",
         "email": "rajesh@acme.com",
         "document": "EHFGA5967A",
+        "document2": "37AADCB2230M2ZR",
         "address": {
             "city": "Goa",
             "street": "Maddo Vaddo",
