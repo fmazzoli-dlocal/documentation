@@ -119,10 +119,11 @@ Example Response
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
 | `phone` | String | User’s phone. Optional. |
 | `document` | String | User’s personal identification number. [Click here for more details.](../country-reference.md#documents) **Required**. |
+| `document2` | String | Additional personal identification. Optional. |
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](./#the-address-object) | User’s address. **Only required in India.** |
-| `ip` | String | User's IP address. |
-| `device_id` | String | User's unique device identifier. |
+| `ip` | String | User's IP address. Optional. |
+| `device_id` | String | User's unique device identifier. Optional. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}

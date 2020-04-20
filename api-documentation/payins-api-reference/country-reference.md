@@ -116,6 +116,17 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>GSTIN</p>
+        <p>(<code>document2</code> field)</p>
+      </td>
+      <td style="text-align:left">15 characters</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Indonesia</td>
       <td style="text-align:left"><code>ID</code>
       </td>
