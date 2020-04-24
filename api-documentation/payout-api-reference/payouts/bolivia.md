@@ -41,9 +41,9 @@
 
 | Validation | Name | Length | Type | Verification digit | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Cédula de identidad | CI **** | 8 | numeric | No check digit | 1234567 |
-| Cédula de Identidad de extranjero \(Foreign ID number\) | CE | 8 | numeric | No check digit | E-1234567 |
-| Número de Identificación Tributaria \(For companies\) | NIT | 15 | numeric |  |  |
+| Cédula de identidad | CI **** | up to 8 | Numeric | No check digit | 1234567 |
+| Cédula de Identidad de extranjero \(Foreign ID number\) | CE |  up to 8 | E - \(numeric\) | No check digit | E-1234567 |
+| Número de Identificación Tributaria \(For companies\) | NIT | up to 15 | Numeric |  |  |
 
 ### Bank account validations
 
