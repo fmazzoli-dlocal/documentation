@@ -325,7 +325,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%288%29.png)
+![Example mobile UI built with the information in the example above](../../../.gitbook/assets/image%20%289%29.png)
 
 {% hint style="success" %}
 **User Interface tips:**

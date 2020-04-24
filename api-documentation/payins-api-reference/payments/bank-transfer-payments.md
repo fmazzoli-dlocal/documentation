@@ -69,5 +69,5 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example of redirect page of a Caixa bank transfer](../../../.gitbook/assets/image%20%2821%29.png)
+![Example of redirect page of a Caixa bank transfer](../../../.gitbook/assets/image%20%2822%29.png)
 
