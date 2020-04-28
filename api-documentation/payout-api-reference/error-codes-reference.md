@@ -79,6 +79,7 @@ Different error codes types can be seen below:
 | 510 | Invalid status: payout is not Pending |
 | 511 | External ID already used |
 | 514 | Insufficient funds |
+|  |  |
 
 ### Transactional error
 
@@ -106,6 +107,8 @@ Different error codes types can be seen below:
 | 812 | ERROR\_ACCOUNT\_NOT\_ACCEPT\_TRANSFERS |
 | 813 | ERROR\_BENEFICARY\_DOCUMENT\_NOT\_MATCH\_NAME |
 | 814 | ERROR\_ACCOUNT\_OF\_OTHER\_CURRENCY |
+| 815  | ERROR\_REJECTED\_BY\_COMPLIANCE |
+| 816 | ERROR\_REJECTED\_BENEFICIARY\_BLACKLISTED |
 
 ## Purpose codes reference
 
