@@ -78,8 +78,9 @@ Different error codes types can be seen below:
 | 509 | Payout not found with this ID |
 | 510 | Invalid status: payout is not Pending |
 | 511 | External ID already used |
+| 512 | Rejected compliance limits |
+| 513 | End beneficiary blacklisted |
 | 514 | Insufficient funds |
-|  |  |
 
 ### Transactional error
 
