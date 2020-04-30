@@ -124,4 +124,11 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Nuevo Banco Suquia | 387 |
 | RCI Banque Argentina | 339 |
 | The Bank Of Tokyo - Mitsubishi | 018 |
+| Brubank S.A.U | 143 |
+| Wilobank S.A. | 384 |
+| Banco Bica S.A. | 426 |
+| Banco Coinag S.A. | 431 |
+| Banco de Comercio S.A. | 432 |
+| Banco Sucredito Regional S.A.U. | 435 |
+| Bank of Chine Limited Sucursal Buenos Aires | 515 |
 
