@@ -201,4 +201,109 @@ These are the values the **bank\_code parameter** can take in Brazil.
 | Nu Pagamentos \(Nubank\) | 260 |
 | Pagseguro Internet S.A | 290 |
 | Unicred Norte do Parana | 084 |
+| BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL | 007 |
+| CREDICOAMO CREDITO RURAL COOPERATIVA | 010 |
+| CREDIT SUISSE HEDGING-GRIFFO CORRETORA DE VALORES S.A | 011 |
+| Banco Inbursa S.A. | 012 |
+| STATE STREET BRASIL S.A. – BANCO COMERCIAL | 014 |
+| UBS Brasil Corretora de Câmbio Títulos e Valores Mobiliários S.A. | 015 |
+| BNY Mellon Banco S.A. | 017 |
+| Banco Tricury S.A. | 018 |
+| Banco Bandepe S.A. | 024 |
+| Banco Alfa S.A. | 025 |
+| Banco Itaú Consignado S.A. | 029 |
+| Banco Bradesco BBI S.A. | 036 |
+| Banco Cargill S.A. | 040 |
+| Hipercard Banco Múltiplo S.A. | 062 |
+| Banco Bradescard S.A. | 063 |
+| GOLDMAN SACHS DO BRASIL BANCO MULTIPLO S.A. | 064 |
+| Banco AndBank \(Brasil\) S.A. | 065 |
+| BANCO MORGAN STANLEY S.A. | 066 |
+| Banco Crefisa S.A. | 069 |
+| Banco J. Safra S.A. | 074 |
+| Banco ABN Amro S.A. | 075 |
+| Banco KDB do Brasil S.A. | 076 |
+| Haitong Banco de Investimento do Brasil S.A. | 078 |
+| Banco Original do Agronegócio S.A. | 079 |
+| BancoSeguro S.A. | 081 |
+| BANCO TOPÁZIO S.A. | 082 |
+| Banco da China Brasil S.A. | 083 |
+| Banco Finaxis S.A. | 094 |
+| Travelex Banco de Câmbio S.A. | 095 |
+| Banco B3 S.A. | 096 |
+| Banco Bocom BBM S.A. | 107 |
+| Banco Western Union do Brasil S.A. | 119 |
+| BANCO RODOBENS S.A. | 120 |
+| Banco Bradesco BERJ S.A. | 122 |
+| Banco Woori Bank do Brasil S.A. | 124 |
+| Plural S.A. Banco Múltiplo | 125 |
+| BR Partners Banco de Investimento S.A. | 126 |
+| MS Bank S.A. Banco de Câmbio | 128 |
+| UBS Brasil Banco de Investimento S.A. | 129 |
+| ICBC do Brasil Banco Múltiplo S.A. | 132 |
+| Intesa Sanpaolo Brasil S.A. - Banco Múltiplo | 139 |
+| BEXS BANCO DE CÂMBIO S/A | 144 |
+| Commerzbank Brasil S.A. - Banco Múltiplo | 163 |
+| Banco Olé Bonsucesso Consignado S.A. | 169 |
+| Banco Itaú BBA S.A. | 184 |
+| Banco BTG Pactual S.A. | 208 |
+| Banco Arbi S.A. | 213 |
+| Banco John Deere S.A. | 217 |
+| BANCO CRÉDIT AGRICOLE BRASIL S.A. | 222 |
+| Banco Fibra S.A. | 224 |
+| Banco Cifra S.A. | 233 |
+| BANCO CLASSICO S.A. | 241 |
+| Banco Máxima S.A. | 243 |
+| Banco Investcred Unibanco S.A. | 249 |
+| BCV - BANCO DE CRÉDITO E VAREJO S.A. | 250 |
+| Bexs Corretora de Câmbio S/A | 253 |
+| PARANÁ BANCO S.A. | 254 |
+| MONEYCORP BANCO DE CÂMBIO S.A. | 259 |
+| Banco Fator S.A. | 265 |
+| BANCO CEDULA S.A. | 266 |
+| HSBC BRASIL S.A. - BANCO DE INVESTIMENTO | 269 |
+| Banco de la Nacion Argentina | 300 |
+| BPP Instituição de Pagamento S.A. | 301 |
+| China Construction Bank \(Brasil\) Banco Múltiplo S/A | 320 |
+| BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A. | 330 |
+| Banco Digio S.A. | 335 |
+| Banco XP S.A. | 348 |
+| BANCO SOCIETE GENERALE BRASIL S.A. | 366 |
+| Banco Mizuho do Brasil S.A. | 370 |
+| BANCO J.P. MORGAN S.A. | 376 |
+| Banco Bradesco Financiamentos S.A. | 394 |
+| BANCO CAPITAL S.A. | 412 |
+| Banco MUFG Brasil S.A. | 456 |
+| Banco Sumitomo Mitsui Brasileiro S.A. | 464 |
+| Banco Caixa Geral - Brasil S.A. | 473 |
+| Banco ItauBank S.A. | 479 |
+| DEUTSCHE BANK S.A. - BANCO ALEMAO | 487 |
+| JPMorgan Chase Bank National Association | 488 |
+| ING Bank N.V. | 492 |
+| Banco Credit Suisse \(Brasil\) S.A. | 505 |
+| Banco Luso Brasileiro S.A. | 600 |
+| Banco Industrial do Brasil S.A. | 604 |
+| Banco VR S.A. | 610 |
+| Banco Paulista S.A. | 611 |
+| Banco Guanabara S.A. | 612 |
+| Omni Banco S.A. | 613 |
+| BANCO FICSA S.A. | 626 |
+| Banco Smartbank S.A. | 630 |
+| Banco Rendimento S.A. | 633 |
+| BANCO TRIANGULO S.A. | 634 |
+| Banco Pine S.A. | 643 |
+| Itaú Unibanco Holding S.A. | 652 |
+| BANCO INDUSVAL S.A. | 653 |
+| BANCO A.J. RENNER S.A. | 654 |
+| Banco Ourinvest S.A. | 712 |
+| Banco Cetelem S.A. | 739 |
+| BANCO RIBEIRAO PRETO S.A. | 741 |
+| Banco Semear S.A. | 743 |
+| Banco Rabobank International Brasil S.A. | 747 |
+| Scotiabank Brasil S.A. Banco Múltiplo | 751 |
+| Banco BNP Paribas Brasil S.A. | 752 |
+| Novo Banco Continental S.A. - Banco Múltiplo | 753 |
+| Banco Sistema S.A. | 754 |
+| Bank of America Merrill Lynch Banco Múltiplo S.A. | 755 |
+| BANCO KEB HANA DO BRASIL S.A. | 757 |
 
