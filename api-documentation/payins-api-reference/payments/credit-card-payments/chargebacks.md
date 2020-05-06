@@ -136,6 +136,7 @@ Example Response
 | `IN_DISPUTE` | 201 | Dispute documentation was sent to the acquirer. |
 | `DISPUTE_LOST` | 202 | The chargeback dispute was lost. |
 | `REVERSAL` | 700 | The chargeback dispute was won. |
+| `INQUIRY` | 800 | Request for information received. |
 
 In the Production environment, Chargebacks are triggered by the buyer by calling their bank. In dLocal's Sandbox environment though, merchants can simulate a Chargeback using the method described below:
 
