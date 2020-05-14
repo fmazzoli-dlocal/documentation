@@ -88,6 +88,7 @@ The currency of the installments plan.
 | `bin` | String | The credit card bin. |
 | `amount` | Positive Float | The amount of the installments plan. |
 | `installments` | [Installment Object](installments.md#the-installment-object)\[ \] | The installments plan information |
+| `installments_by_bank` | Boolean | If `false`: the installment interest is known beforehand and can be shown to the buyer. If `true`: The installment interest is not known beforehand and will be determined by the issuer. \(\*\) |
 {% endtab %}
 
 {% tab title="Example Installment Plan Object" %}
@@ -122,6 +123,8 @@ The currency of the installments plan.
 ```
 {% endtab %}
 {% endtabs %}
+
+\(\*\) In these cases it is a good practice to give this information to users in the checkout in order to let them know that the bank will apply interests in the card statement. 
 
 ### The Installment Object
 
@@ -202,6 +205,7 @@ $ curl -X POST \
             "total_amount" : 1150.00
         }
     ]
+    "installments_by_bank": false
 }
 ```
 {% endtab %}
