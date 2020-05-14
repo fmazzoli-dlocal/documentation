@@ -118,7 +118,8 @@ The currency of the installments plan.
             "installments" : 3,
             "total_amount" : 1150.00
         }
-    ]
+    ],
+    "installments_by_bank": false
 }
 ```
 {% endtab %}
@@ -204,7 +205,7 @@ $ curl -X POST \
             "installments" : 3,
             "total_amount" : 1150.00
         }
-    ]
+    ],
     "installments_by_bank": false
 }
 ```
