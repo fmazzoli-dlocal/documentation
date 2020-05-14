@@ -158,10 +158,10 @@ Examples:
 * \*\*\*\*[**Indonesia**](indonesia.md)\*\*\*\*
 * \*\*\*\*[**Mexico**](mexico.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Morocco**](morocco.md#payment-methods-available)\*\*\*\*
-* **Nigeria**
+* \*\*\*\*[**Nigeria**](nigeria.md)\*\*\*\*
 * \*\*\*\*[**Paraguay**](paraguay.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md#payment-methods-available)\*\*\*\*
-* **South Africa**
+* \*\*\*\*[**South Africa**](south-africa.md)\*\*\*\*
 * \*\*\*\*[**Turkey**](turkey.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Uruguay**](uruguay.md#payment-methods-available)\*\*\*\*
 
