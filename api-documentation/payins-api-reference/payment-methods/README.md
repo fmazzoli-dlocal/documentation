@@ -153,12 +153,15 @@ Examples:
 * \*\*\*\*[**China**](chile.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Colombia**](colombia.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*
+* **Egypt**
 * \*\*\*\*[**India**](india.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Indonesia**](indonesia.md)\*\*\*\*
 * \*\*\*\*[**Mexico**](mexico.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Morocco**](morocco.md#payment-methods-available)\*\*\*\*
+* **Nigeria**
 * \*\*\*\*[**Paraguay**](paraguay.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md#payment-methods-available)\*\*\*\*
+* **South Africa**
 * \*\*\*\*[**Turkey**](turkey.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Uruguay**](uruguay.md#payment-methods-available)\*\*\*\*
 
