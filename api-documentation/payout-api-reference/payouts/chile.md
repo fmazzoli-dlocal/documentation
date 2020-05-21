@@ -59,7 +59,9 @@
       </td>
       <td style="text-align:left">
         <p><b>C</b>: for Checking accounts</p>
-        <p><b>S</b>: for Savings accounts</p>
+        <p><b>S: </b>for Savings accounts</p>
+        <p><b>V:</b> for Vista account<b> </b>
+        </p>
       </td>
     </tr>
     <tr>
