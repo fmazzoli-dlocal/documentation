@@ -43,7 +43,7 @@
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
-| Bank account | CBU | 22 | numeric | Apply verification algorithm |
+| Account | CBU/CVU | 22 | numeric | Apply verification algorithm |
 
 ### Bank codes
 
@@ -51,6 +51,7 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 
 | **Bank name** | **Bank code** |
 | :--- | :--- |
+| CVU Account | 000 |
 | A.B.N Amro Bank | 005 |
 | American Express Bank Ltd | 295 |
 | Bacs Banco de Credito Y Securitizacion | 340 |
@@ -131,4 +132,11 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Banco de Comercio S.A. | 432 |
 | Banco Sucredito Regional S.A.U. | 435 |
 | Bank of Chine Limited Sucursal Buenos Aires | 515 |
+| Brubank S.A.U. | 143 |
+| Wilobank S.A. | 384 |
+| Banco Bica S.A. | 426 |
+| Banco Coinag S.A. | 431 |
+| Banco de Comercio S.A.  | 432 |
+| Banco Sucredito Regional S.A.U. | 435 |
+| Bank of China Limited Sucursal Buenos Aires  | 515 |
 
