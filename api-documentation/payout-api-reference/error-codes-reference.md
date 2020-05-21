@@ -110,6 +110,7 @@ Different error codes types can be seen below:
 | 814 | ERROR\_ACCOUNT\_OF\_OTHER\_CURRENCY |
 | 815  | ERROR\_REJECTED\_BY\_COMPLIANCE |
 | 816 | ERROR\_REJECTED\_BENEFICIARY\_BLACKLISTED |
+| 817 | REJECTED POST APPROVAL |
 
 ## Purpose codes reference
 
