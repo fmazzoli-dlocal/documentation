@@ -48,6 +48,7 @@
   * [Security](api-documentation/payout-api-reference/security.md)
   * [Submit a payout](api-documentation/payout-api-reference/payouts/README.md)
     * [Argentina](api-documentation/payout-api-reference/payouts/argentina.md)
+    * [Bangladesh](api-documentation/payout-api-reference/payouts/bangladesh.md)
     * [Bolivia](api-documentation/payout-api-reference/payouts/bolivia.md)
     * [Brazil](api-documentation/payout-api-reference/payouts/brazil.md)
     * [Chile](api-documentation/payout-api-reference/payouts/chile.md)
