@@ -46,9 +46,9 @@ d. Select _**dLocal:**_
 
 You will find three different gateways:
 
-![](../.gitbook/assets/gateways-name-presentation.png)
+![](../.gitbook/assets/gateways-chico.png)
 
-Choose the first one for Spanish speaking countries \(LATAM excluding Brazil\). Choose the third option in portuguese for a store selling to Brazilian customers. Choose the second one in English for all remaining countries.
+Set the correct gateway to improve conversion. Choose the first one for Spanish speaking countries \(LATAM excluding Brazil\). Choose the third option in portuguese for a store selling to Brazilian customers. Choose the second one in English for all remaining countries.
 
 e. Input the dLocal's _**API keys**_ \(continue below to see where to find them\):
 
@@ -63,13 +63,11 @@ f. Select the _**payment methods**_ you want to be displayed to your users:
 ![](../.gitbook/assets/screen-shot-2020-04-03-at-5.05.17-pm.png)
 
 {% hint style="info" %}
-You do not need to select all payment methods. All of them will be available for the user to pay, do not worry. It is recommended to choose only few as these are the logos to be displayed.  In order to get more users to pay, we recommend:
+You do not need to select all payment methods. Don't worry, all of them will be available for the user to pay. Given that the space within checkout is reduced, Shopify will only allow 4 icons. It is recommended to choose only few as these are the logos to be displayed. 
 
 * For Brazil Gateway: Visa, Mastercard, Boleto, ELO
 * For Other Countries: Ask your TAM for recommended logos to display
 {% endhint %}
-
-
 
 When you finish your selection, click on the _**Activate dLocal**_ button.
 
