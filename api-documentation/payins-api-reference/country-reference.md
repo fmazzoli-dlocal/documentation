@@ -102,6 +102,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Egypt</td>
+      <td style="text-align:left"><code>EG</code>
+      </td>
+      <td style="text-align:left"><code>EGP</code>
+      </td>
+      <td style="text-align:left">ID</td>
+      <td style="text-align:left">14 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">India</td>
       <td style="text-align:left"><code>IN</code>
       </td>
@@ -154,6 +164,16 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left">CNIE</td>
       <td style="text-align:left">between 5 to 20 characters</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Nigeria</td>
+      <td style="text-align:left"><code>NG</code>
+      </td>
+      <td style="text-align:left"><code>NGN</code>
+      </td>
+      <td style="text-align:left">NIN</td>
+      <td style="text-align:left">11 digits</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
