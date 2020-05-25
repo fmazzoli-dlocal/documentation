@@ -17,6 +17,8 @@
 | **bank\_branch\_name** | Only han characters |
 | **bank\_account** | See bank account validations [here](china.md#codes-for-bank_code-parameter) |
 | **amount** | Max. 2 decimal numbers |
+| **phone** | Max. 100 chars |
+| **document\_id** | Max. 100 chars \(Resident Identity Card\) |
 
 ### Example request
 
@@ -38,9 +40,12 @@
 "city":"\a1b2c\a1b2c\a1b2c",
 "comments":"this is the 1st comment",
 "currency":"CNY",
+"phone": "6767658758869",
+"document_id": "110102YYYYMMDD888X"
 "extra_info":"{\"this_is_extra:2334/"}",
 "notification_url":"https:\/\/thisisawebsite.net\/payments",
 "type":"json"
+
 }
 ```
 
