@@ -8,7 +8,7 @@
 | **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
-| **country** | CH |
+| **country** | CN |
 | **bank\_code** | See bank codes [here](china.md#bank-codes) |
 | **bank\_name** | See bank names [here](china.md#bank-codes) - Only han characters |
 | **bank\_branch\_name** | Only han characters |
@@ -25,13 +25,11 @@
 "pass":"HolAc123o",
 "external_id":"1234567812345678",
 "beneficiary_name":"\a1b2c\a1b2c\a1b2c",
-"beneficiary_lastname":"LING",
 "country":"CN",
 "bank_account":"1234567891234",
 "bank_branch_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
 "amount":"9273.34",
 "bank_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
-"city":"\a1b2c\a1b2c\a1b2c",
 "comments":"this is the 1st comment",
 "currency":"CNY",
 "phone": "6767658758869",
