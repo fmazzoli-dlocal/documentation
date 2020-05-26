@@ -9,7 +9,6 @@
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
 | **country** | CN |
-| **bank\_name** | See bank names [here](china.md#bank-codes) - Only han characters |
 | **bank\_branch\_name** | Only han characters |
 | **bank\_account** | See bank account validations [here](china.md#codes-for-bank_code-parameter) |
 | **amount** | Max. 2 decimal numbers |
