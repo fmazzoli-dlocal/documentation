@@ -11,9 +11,6 @@
 | **country** | CH |
 | **bank\_code** | See bank codes [here](china.md#bank-codes) |
 | **bank\_name** | See bank names [here](china.md#bank-codes) - Only han characters |
-| **bank\_province** | Only han characters |
-| **bank\_city** | Only han characters |
-| **bank\_branch** | Only numbers |
 | **bank\_branch\_name** | Only han characters |
 | **bank\_account** | See bank account validations [here](china.md#codes-for-bank_code-parameter) |
 | **amount** | Max. 2 decimal numbers |
@@ -30,10 +27,7 @@
 "beneficiary_name":"\a1b2c\a1b2c\a1b2c",
 "beneficiary_lastname":"LING",
 "country":"CN",
-"bank_branch":"623052",
 "bank_account":"1234567891234",
-"bank_city":"\a1b2c\a1b2c\a1b2c",
-"bank_province":"\a1b2c\a1b2c\a1b2c",
 "bank_branch_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
 "amount":"9273.34",
 "bank_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
