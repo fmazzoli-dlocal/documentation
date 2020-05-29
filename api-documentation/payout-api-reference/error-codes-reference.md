@@ -69,7 +69,9 @@ Different error codes types can be seen below:
       </td>
     </tr>
   </tbody>
-</table>### Business logic validation
+</table>
+
+### Business logic validation
 
 | Code | Description |
 | :--- | :--- |

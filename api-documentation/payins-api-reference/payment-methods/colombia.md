@@ -378,7 +378,9 @@
       <td style="text-align:left"></td>
     </tr>
   </tbody>
-</table>## Direct Alternative Payment Methods
+</table>
+
+## Direct Alternative Payment Methods
 
 ### Efecty
 

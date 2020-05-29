@@ -60,6 +60,7 @@
     * [India](api-documentation/payout-api-reference/payouts/india.md)
     * [Mexico](api-documentation/payout-api-reference/payouts/mexico.md)
     * [Morocco](api-documentation/payout-api-reference/payouts/morocco.md)
+    * [Nigeria](api-documentation/payout-api-reference/payouts/nigeria.md)
     * [Paraguay](api-documentation/payout-api-reference/payouts/paraguay.md)
     * [Peru](api-documentation/payout-api-reference/payouts/peru.md)
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)

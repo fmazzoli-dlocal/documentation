@@ -75,7 +75,9 @@
       <td style="text-align:left">INDB0000018</td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>
+
+### **Bank codes**
 
 We support all banks regulated by the Reserve Bank of India \(RBI\).
 

@@ -101,7 +101,9 @@
       <td style="text-align:left">Max. 20 chars</td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {
@@ -174,7 +176,9 @@
       </td>
     </tr>
   </tbody>
-</table>### Bank account validations
+</table>
+
+### Bank account validations
 
 Some banks require a specific structure for the bank\_account field:
 

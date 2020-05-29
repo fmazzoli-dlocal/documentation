@@ -251,7 +251,9 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>&#x200B;</td>
     </tr>
   </tbody>
-</table>## Direct Alternative Payment Methods
+</table>
+
+## Direct Alternative Payment Methods
 
 ### Boleto Bancário
 

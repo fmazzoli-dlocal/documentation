@@ -72,7 +72,9 @@
       </td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {

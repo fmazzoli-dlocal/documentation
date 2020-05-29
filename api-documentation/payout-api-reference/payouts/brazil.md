@@ -80,7 +80,9 @@
       <td style="text-align:left">Max. 2 decimal numbers</td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {
@@ -141,7 +143,9 @@
       </td>
     </tr>
   </tbody>
-</table>### Bank account validations
+</table>
+
+### Bank account validations
 
 Reference
 

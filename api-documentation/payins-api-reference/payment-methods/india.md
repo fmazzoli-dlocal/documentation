@@ -163,7 +163,9 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/RU.png">https://pay.dlocal.com/views/2.0/images/payments/RU.png</a>&#x200B;</td>
     </tr>
   </tbody>
-</table>## Redirect Alternative Payment Methods
+</table>
+
+## Redirect Alternative Payment Methods
 
 ### PayTM Wallet
 

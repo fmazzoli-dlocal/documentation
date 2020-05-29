@@ -326,6 +326,8 @@
   </tbody>
 </table>
 
+
+
 ## Direct Alternative Payment Methods
 
 ### Servipag

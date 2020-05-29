@@ -204,6 +204,8 @@
   </tbody>
 </table>
 
+
+
 ## Direct Alternative Payment Methods
 
 ### OXXO

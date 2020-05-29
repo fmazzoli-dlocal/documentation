@@ -90,7 +90,9 @@
       <td style="text-align:left">Max. 2 decimal numbers</td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {
@@ -148,7 +150,9 @@
       <td style="text-align:left">1234567892221</td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>
+
+### **Bank codes**
 
 | Bank Name | Bank Code |
 | :--- | :--- |

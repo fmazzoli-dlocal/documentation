@@ -117,7 +117,9 @@ This method takes two arguments.
       <td style="text-align:left">Currency of the transaction</td>
     </tr>
   </tbody>
-</table>`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
+</table>
+
+`dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
 * `result.token`: a Token was created successfully.
 * `result.error`: there was an error. This includes client-side validation errors.
@@ -376,7 +378,9 @@ All Smart Fields accept a common set of options, and then some Field-specific op
       </td>
     </tr>
   </tbody>
-</table>#### Options available exclusively to the card or number Field
+</table>
+
+#### Options available exclusively to the card or number Field
 
 | **Option** | **Type** | **Description** |
 | :--- | :--- | :--- |
@@ -571,7 +575,9 @@ The only way to communicate with your Smart Field is by listening to an `event`.
         which is <b><code>true</code></b> if the field is autofilled.</td>
     </tr>
   </tbody>
-</table>### Input validation
+</table>
+
+### Input validation
 
 Smart Fields validates customer input as it is typed. To help your customers catch mistakes, listen to `change`events on the Field and display any reported errors:
 

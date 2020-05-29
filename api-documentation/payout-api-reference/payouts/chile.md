@@ -70,7 +70,9 @@
       <td style="text-align:left">Max. 2 decimal numbers</td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {
@@ -121,7 +123,9 @@
       </td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>
+
+### **Bank codes**
 
 These are the values the **bank\_code parameter** can take in Chile
 

@@ -161,7 +161,9 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BP.png">https://pay.dlocal.com/views/2.0/images/payments/BP.png</a>&#x200B;</td>
     </tr>
   </tbody>
-</table>## Direct Alternative Payment Methods
+</table>
+
+## Direct Alternative Payment Methods
 
 ### Pago Efectivo
 

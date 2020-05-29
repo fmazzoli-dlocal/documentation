@@ -81,7 +81,9 @@
       <td style="text-align:left">Max. 2 decimal numbers</td>
     </tr>
   </tbody>
-</table>### Example request
+</table>
+
+### Example request
 
 ```text
 {
@@ -154,7 +156,9 @@
       </td>
     </tr>
   </tbody>
-</table>### Bank account validations
+</table>
+
+### Bank account validations
 
 <table>
   <thead>
@@ -271,7 +275,9 @@
       <td style="text-align:left">0003237999</td>
     </tr>
   </tbody>
-</table>### **Bank codes**
+</table>
+
+### **Bank codes**
 
 Check below the different values that bank\_code parameter can take depending on each country's bank requirements
 
