@@ -9,8 +9,7 @@
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
 | **country** | CN |
-| **bank\_branch\_name** | Only han characters |
-| **bank\_name** | Only han characters |
+| **bank\_branch** | CNAPS code |
 | **bank\_account** | See bank account validations [here](china.md#codes-for-bank_code-parameter) |
 | **amount** | Max. 2 decimal numbers |
 | **phone** | Max. 100 chars |
@@ -26,9 +25,8 @@
 "beneficiary_name":"\a1b2c\a1b2c\a1b2c",
 "country":"CN",
 "bank_account":"1234567891234",
-"bank_branch_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
+"bank_branch: "303513000052",
 "amount":"9273.34",
-"bank_name":"\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c\a1b2c",
 "comments":"this is the 1st comment",
 "currency":"CNY",
 "phone": "6767658758869",
