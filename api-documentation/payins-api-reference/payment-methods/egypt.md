@@ -71,7 +71,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/FW.png</a>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/fawry.png">https://static.dlocal.com/images/providers/fawry.png</a>
       </td>
     </tr>
   </tbody>
