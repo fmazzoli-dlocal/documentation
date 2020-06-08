@@ -81,7 +81,7 @@
       </td>
       <td style="text-align:left">
         <p><b>C</b>: for Checking accounts</p>
-        <p><b>A</b>: for Savings accounts</p>
+        <p><b>S</b>: for Savings accounts</p>
       </td>
     </tr>
     <tr>
