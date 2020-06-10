@@ -74,50 +74,10 @@ This method takes two arguments.
 * `field`, the Smart Field you wish to tokenize data from. If applicable, the Smart Field pulls data from other Smart Fields you’ve created on the same instance of [`fields`](dlocal.js-reference.md#dlocal-fields-options) to tokenize.
 * `tokenData`, an object containing additional payment information you might have collected. In the case of cards, it can contain any of the following parameters:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Parameter</b>
-      </th>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>name</code>
-      </td>
-      <td style="text-align:left">String <b>(Required)</b>
-      </td>
-      <td style="text-align:left">Cardholder name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p><code>address_line1 </code>
-        </p>
-        <p><code>address_line2 </code>
-        </p>
-        <p><code>address_city address_state </code>
-        </p>
-        <p><code>address_zip address_country</code>
-        </p>
-      </td>
-      <td style="text-align:left">String (Optional)</td>
-      <td style="text-align:left">
-        <p>Fields for billing address information.</p>
-        <p>The <b>address_country</b> field is a two character country code (for example, <code>&apos;BR&apos;</code>).</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>currency</code>
-      </td>
-      <td style="text-align:left">String (Optional)</td>
-      <td style="text-align:left">Currency of the transaction</td>
-    </tr>
-  </tbody>
-</table>
+| **Parameter** | **Type** | **Description** |
+| :--- | :--- | :--- |
+| `name` | String **\(Required\)** | Cardholder nam |
+| `currency` | String \(Optional\) | Currency of the transaction |
 
 `dlocal.createToken` returns a `Promise` which resolves with a `result` object. This object has either:
 
