@@ -31,7 +31,7 @@
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
+      <td style="text-align:left"><code>DIRECT</code>  <code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EY.png">https://pay.dlocal.com/views/2.0/images/payments/EY.png</a>&#x200B;</td>
     </tr>
