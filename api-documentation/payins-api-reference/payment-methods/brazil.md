@@ -38,7 +38,7 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BL.png">https://pay.dlocal.com/views/2.0/images/payments/BL.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>WA</code>
+      <td style="text-align:left"><code>WH</code>
       </td>
       <td style="text-align:left">Whatsapp</td>
       <td style="text-align:left"><code>TICKET</code>
