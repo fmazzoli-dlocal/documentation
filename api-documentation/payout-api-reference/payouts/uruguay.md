@@ -34,6 +34,11 @@
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>document_type</b>
+      </td>
+      <td style="text-align:left">only mandatory when document type it is RUT</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b>beneficiary_name</b>
       </td>
       <td style="text-align:left">Max. 100 chars</td>
@@ -146,7 +151,7 @@
     </tr>
     <tr>
       <td style="text-align:left">Document</td>
-      <td style="text-align:left">RUC</td>
+      <td style="text-align:left">RUT</td>
       <td style="text-align:left">12</td>
       <td style="text-align:left">Numeric</td>
       <td style="text-align:left">Last digit</td>
