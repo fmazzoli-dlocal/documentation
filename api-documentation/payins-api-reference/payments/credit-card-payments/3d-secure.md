@@ -99,7 +99,7 @@ curl -X POST \
 ## 3rd-party Authentication \(MPI\)
 
 {% hint style="warning" %}
-Please contact your Technical Account Manager before integrating using the 3rd-party authentication.
+3rd-party Authentication is only available in Brazil at the moment.
 {% endhint %}
 
 Submit a payment, using authentication data from a third-party 3D Secure 1.0 provider.
