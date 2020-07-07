@@ -50,7 +50,7 @@
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">Max. 45 chars</td>
+      <td style="text-align:left">International Bank Account Number (IBAN)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
