@@ -62,7 +62,7 @@
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">Optional if bank is ITAU.</td>
+      <td style="text-align:left">Mandatory only If bank is Santander</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
