@@ -62,8 +62,7 @@
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">Optional if bank is ITAU. See bank branch validations <a href="uruguay.md#bank-codes">here</a>
-      </td>
+      <td style="text-align:left">Optional if bank is ITAU.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
