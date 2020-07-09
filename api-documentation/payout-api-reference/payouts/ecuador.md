@@ -162,10 +162,8 @@
 | Banco Capital S.A. | 061 |
 | Banco Central | 001 |
 | Banco Citibank | 024 |
-| Banco Cofiec | 050 |
 | Banco Comercial De Manabi | 039 |
 | Banco Coopnacional S.A. | 064 |
-| Banco de Fomento | 002 |
 | Banco de Guayaquil | 017 |
 | Banco de Loja | 029 |
 | Banco de Machala | 025 |
@@ -182,9 +180,6 @@
 | Banco Produbanco | 036 |
 | Banco Promerica | 040 |
 | Banco Solidario | 059 |
-| Banco Sudamericano | 045 |
-| Banco Territorial | 019 |
-| Banco Unibanco | 026 |
 | Coop. 15 de Abril Ltda | 057 |
 | Coop. 15 de Agosto Pilacoto | 290 |
 | Coop. Accion y Desarrollo | 051 |
@@ -192,7 +187,6 @@
 | Coop. Aho. y Cred. 1Ro de Enero del Austro | 284 |
 | Coop. Aho. y Cred. 23 de Julio | 058 |
 | Coop. Aho. y Cred. 23 de Mayo Ltda. | 606 |
-| Coop. Aho. y Cred. 27 de Abril Loja | 652 |
 | Coop. Aho. y Cred. 29 de Octubre | 095 |
 | Coop. Aho. y Cred. 4 de Octubre Ltda. | 294 |
 | Coop. Aho. y Cred. 9 de Octubre Ltda | 325 |
@@ -203,9 +197,7 @@
 | Coop. Aho. y Cred. Alfonso Jaramillo | 296 |
 | Coop. Aho. y Cred. Alianza del Valle Ltda | 062 |
 | Coop. Aho. y Cred. Alianza Minas Ltda. | 278 |
-| Coop. Aho. y Cred. Amazonas Ltda. | 274 |
 | Coop. Aho. y Cred. Ambato Ltda | 414 |
-| Coop. Aho. y Cred. Andalucia | 063 |
 | Coop. Aho. y Cred. Andina Ltda. | 642 |
 | Coop. Aho. y Cred. Artesanos Ltda | 417 |
 | Coop. Aho. y Cred. Atuntaqui Ltda. | 086 |
@@ -220,17 +212,14 @@
 | Coop. Aho. y Cred. Coca Ltda | 607 |
 | Coop. Aho. y Cred. Comercio Ltda Portoviejo | 088 |
 | Coop. Aho. y Cred. Const Comercio y Produccion | 407 |
-| Coop. Aho. y Cred. Coopera Ltda. | 282 |
 | Coop. Aho. y Cred. Cotocollao | 065 |
 | Coop. Aho. y Cred. Credi Facil Ltda. | 628 |
 | Coop. Aho. y Cred. Crediamigo Ltda. Loja Mi | 653 |
 | Coop. Aho. y Cred. Cristo Rey | 291 |
-| Coop. Aho. y Cred. de la Camara de Comercio De | 649 |
 | Coop. Aho. y Cred. de la Peq. Emp. Cacpe Macara | 658 |
 | Coop. Aho. y Cred. de la Peq. Emp. Cacpe Zamora Ltda. | 602 |
 | Coop. Aho. y Cred. de Los Serv. Publ. del Min. de Ed. | 605 |
 | Coop. Aho. y Cred. Desarrollo Integral Ltda. | 603 |
-| Coop. Aho. y Cred. Desarrollo Pueblos | 068 |
 | Coop. Aho. y Cred. Dorado Ltda | 415 |
 | Coop. Aho. y Cred. Ecuafuturo Ltda. | 630 |
 | Coop. Aho. y Cred. Educ del Tungurahua | 413 |
@@ -262,7 +251,6 @@
 | Coop. Aho. y Cred. la Dolorosa Ltda | 073 |
 | Coop. Aho. y Cred. la Merced | 557 |
 | Coop. Aho. y Cred. Llanganates | 348 |
-| Coop. Aho. y Cred. Los Rios | 288 |
 | Coop. Aho. y Cred. Lucha Campesina Ltda. | 663 |
 | Coop. Aho. y Cred. Malchingui Ltda. | 273 |
 | Coop. Aho. y Cred. Manantial de Oro Ltda. | 601 |
@@ -307,7 +295,6 @@
 | Coop. Aho. y Cred. San Jose S.J. | 283 |
 | Coop. Aho. y Cred. San Miguel de Los Bancos | 330 |
 | Coop. Aho. y Cred. San Miguel de Sigchos | 646 |
-| Coop. Aho. y Cred. San Pedro de Taboada | 401 |
 | Coop. Aho. y Cred. Santa Ana Ltda | 084 |
 | Coop. Aho. y Cred. Santa Anita Ltda | 418 |
 | Coop. Aho. y Cred. Santa Rosa de Patutan Ltda. | 334 |
@@ -341,4 +328,45 @@
 | Mutualista Imbabura | 099 |
 | Mutualista Pichincha | 071 |
 | Pacificard | 005 |
+| BANCO D MIRO SA | 063 |
+| BANECUADOR B.P. | 066 |
+| BANCO DESARROLLO DE LOS PUEBLOS SA | 068 |
+| COOP. DE A. Y C. UNIDAD Y PROGRESO | 100 |
+| COOP DE A. Y C. MUSHUK YUYAY LTDA | 102 |
+| COOP. DE A. Y C. NIZAG LTDA. | 103 |
+| COOP. DE A. Y C. EL BUEN SEMBRADOR LTDA. | 104 |
+| BCE-TRANSFERENCIAS REMESAS | 105 |
+| BCE DINERO ELECTRONICO | 106 |
+| COOP.DE AHORRO Y CREDITO 29 DE ENERO | 108 |
+| COAC SINDICATO DE CHOFERES PROFESIONALES DE YANTZA | 109 |
+| COOP. DE A. Y C. SENOR DEL ARBOL | 114 |
+| COOP. DE A. Y C. QUILOTOA | 118 |
+| COOP DE A. Y C. 22 DE JUNIO-ORIANGA | 119 |
+| COOPERATIVA DE AHORRO Y CREDITO AMBATO LTDA. | 122 |
+| COOPERATIVA DE AHORRO Y CREDITO CAMPESINA COOPAC | 125 |
+| COOPERATIVA DE AHORRO Y CREDITO SANTA ISABEL LTDA | 176 |
+| COOPERATIVA DIVINO NINO | 177 |
+| COOPERATIVA LLACTA PURA | 178 |
+| COOPERATIVA DE AHORRO Y CREDITO SEMBRANDO FUTURO | 179 |
+| COAC AHORRISTA SOLIDARIO | 181 |
+| COOP.DE AHORRO Y CREDITO CIUDAD DE ZAMORA | 182 |
+| COAC LOJA INTERNACIONAL LTDA. | 186 |
+| COOP DE AHORRO Y CREDITO BCE | 189 |
+| COOP. DE A. Y C. EL MOLINO LTDA. | 193 |
+| COOPERATIVA DE AHORRO Y CREDITO ARMADA NACIONAL | 194 |
+| COOPERATIVA DE AHORRO Y CREDITO DISTRITO METROPOL | 196 |
+| LA COOPERATIVA DE AH Y CRED SIMON BOLIVAR | 198 |
+| COOPERATIVA DE AHORRO Y CREDITO GENERAL ANGEL FLOR | 200 |
+| COOP.AHO Y CRED CAMARA DE COMERCIO PINDAL CADECOPI | 649 |
+| COOP. DE A. Y C. COOPAC AUSTRO LTDA \(MIESS\) | 666 |
+| FONDO DE CESANTIA DEL MAGISTERIO ECUATORIANO FCME- | 667 |
+| COPP AHO CRED CREDISUR | 668 |
+| COOP AHO Y CRED MAQUITA CUSHUNCHIC | 669 |
+| COOP AHO Y CRED GRAL RUMINAHUI | 670 |
+| COOP AHO Y CRED CASEG LTDA | 671 |
+| COOP AHO Y CRED FOCLA | 672 |
+| COOP AHO Y CRED FINAN INDIGENA | 673 |
+| COOP AHO Y CRED 20 DE FEBRERO LTDA | 674 |
+| COOP AHO Y CRED INDIGENA ALFA | 675 |
+| COOP AHO Y CRED HUAQUILLAS | 677 |
 
