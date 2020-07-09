@@ -154,6 +154,8 @@
 
 ### **Bank codes**
 
+_In this list there are the major banks of the country to see the complete list please ask for it._
+
 | Bank Name | Bank Code |
 | :--- | :--- |
 | Banco Amazonas | 034 |
