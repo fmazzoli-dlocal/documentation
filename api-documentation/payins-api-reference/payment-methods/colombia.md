@@ -36,18 +36,6 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/EY.png">https://pay.dlocal.com/views/2.0/images/payments/EY.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>DA</code>
-      </td>
-      <td style="text-align:left">Davivienda</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DA.png">https://pay.dlocal.com/views/2.0/images/payments/DA.png</a>&#x200B;</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>PC</code>
       </td>
       <td style="text-align:left">PSE</td>
