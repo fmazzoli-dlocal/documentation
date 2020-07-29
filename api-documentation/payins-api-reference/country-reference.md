@@ -65,7 +65,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left"><code>CLP</code>
       </td>
       <td style="text-align:left">CI/RUT</td>
-      <td style="text-align:left">between 8 to 9 digits</td>
+      <td style="text-align:left">between 8 to 9 characters</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
