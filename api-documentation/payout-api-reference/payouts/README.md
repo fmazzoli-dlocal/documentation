@@ -224,20 +224,6 @@ Request OK
 }
 ```
 {% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-The external ID exceeds the validate length
-{% endapi-method-response-example-description %}
-
-```
-{
-“status”: 1,
-“desc”: “Invalid param external_id”,
-“error_code”: “300”
-}
-```
-{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -245,6 +231,46 @@ The external ID exceeds the validate length
 {% hint style="warning" %}
 #### Depending on each country's bank compliance requirements, some additional fields might be mandatory when sending payouts. 
 {% endhint %}
+
+## Response
+
+**If the status is 0 then the payout was ok submitted.**
+
+```text
+http code:200
+{
+    "status":0,
+    "desc":"OK",
+    "cashout_id":206766
+}
+```
+
+**If the status is 1 the payout could not be created.**
+
+Example 1:
+
+```text
+http code:200
+{
+    "status":1,
+    "desc":"External ID already used",
+    "error_code":"511",
+    "cashout_id":206766
+}
+```
+
+Example 2:
+
+```text
+http code:200
+{
+    "status":1,
+    "desc":"Empty param login"
+    "error_code":"301"
+}
+```
+
+
 
 ### Country requirements
 
