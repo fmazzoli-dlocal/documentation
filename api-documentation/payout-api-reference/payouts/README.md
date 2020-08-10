@@ -277,6 +277,8 @@ http code:200
 Please see each country below for specific country requirements and example requests:
 
 * \*\*\*\*[**Argentina**](argentina.md)\*\*\*\*
+* \*\*\*\*[**Bangladesh**](bangladesh.md)
+* [**Bolivia**](bolivia.md)\*\*\*\*
 * \*\*\*\*[**Brazi**](brazil.md)**l**
 * \*\*\*\*[**Chile**](chile.md)\*\*\*\*
 * \*\*\*\*[**China**](china.md)\*\*\*\*
@@ -286,6 +288,9 @@ Please see each country below for specific country requirements and example requ
 * [**Egypt**](egypt.md)\*\*\*\*
 * \*\*\*\*[**Indi**](india.md)**a**
 * \*\*\*\*[**Mexico**](mexico.md)\*\*\*\*
+* \*\*\*\*[**Morocco**](morocco.md)\*\*\*\*
+* \*\*\*\*[**Nigeria**](nigeria.md)\*\*\*\*
+* \*\*\*\*[**Paraguay**](paraguay.md)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md)\*\*\*\*
 * \*\*\*\*[**Uruguay**](uruguay.md)\*\*\*\*
 
