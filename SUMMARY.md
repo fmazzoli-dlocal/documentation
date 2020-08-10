@@ -63,6 +63,7 @@
     * [Nigeria](api-documentation/payout-api-reference/payouts/nigeria.md)
     * [Paraguay](api-documentation/payout-api-reference/payouts/paraguay.md)
     * [Peru](api-documentation/payout-api-reference/payouts/peru.md)
+    * [Korea](api-documentation/payout-api-reference/payouts/korea.md)
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)
   * [Check status](api-documentation/payout-api-reference/check-status.md)
   * [Cancel payout](api-documentation/payout-api-reference/cancel-payout.md)
