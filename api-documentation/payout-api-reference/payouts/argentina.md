@@ -106,7 +106,7 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Banco Saenz | 277 |
 | Banco Supervielle S.A. | 027 |
 | Bank Of America, National Associa | 262 |
-| Standard Bank Argentina | 015 |
+| Industrial and Commercial Bank of China \(ICBC\) Argentina | 015 |
 | BBVA Banco Frances | 017 |
 | Bnp Paribas | 266 |
 | Citibank | 016 |
