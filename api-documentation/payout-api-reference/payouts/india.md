@@ -1,6 +1,6 @@
 # India
 
-### Mandatory parameters
+### Mandatory parameters Bank Transfer
 
 | **Mandatory parameter** | **Description** |
 | :--- | :--- |
@@ -38,6 +38,27 @@
 "type":"json"
 }
 ```
+
+| \*\*\*\* |  |
+| :--- | :--- |
+
+
+### Mandatory parameters to Paytm Wallet transfer
+
+To send payouts to a Paytm wallet the merchant will need a different MID to be created.
+
+| **Mandatory parameter** | **Description** |
+| :--- | :--- |
+| **login** | 32 chars |
+| **pass** | 32 chars |
+| **external\_id** | Max. 100 chars |
+| **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars |
+| **country** | IN |
+| **document\_id** | Max. 45 chars |
+| **email** | Max. 45 chars |
+| **phone** | Phone number is the Paytm account number, include the country code.  |
+| **amount** | Max. 2 decimal numbers |
 
 ### Bank account validations
 
