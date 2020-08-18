@@ -56,8 +56,8 @@ To send payouts to a Paytm wallet the merchant will need a different MID to be c
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | IN |
 | **document\_id** | Max. 45 chars |
-| **email** | Max. 45 chars |
-| **phone** | Phone number is the Paytm account number, include the country code.  |
+| **email** | Email or Phone number are the Paytm account number, If email the user is register with phone, email is not mandatory. |
+| **phone** | Email or Phone number are the Paytm account number, \(include the country code\) If the user is register with email, phone is not mandatory. |
 | **amount** | Max. 2 decimal numbers |
 
 ### Bank account validations
