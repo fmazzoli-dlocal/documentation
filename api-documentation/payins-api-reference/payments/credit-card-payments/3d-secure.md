@@ -413,9 +413,9 @@ Optional 3D-Secure  is only available in Mexico at the moment
     },
     "created_date": "2018-12-26T20:26:09.000+0000",
     "approved_date": "2018-12-26T20:26:09.000+0000",
-    "status": "AUTHORIZED",
-    "status_detail": "The payment was authorized",
-    "status_code": "600",
+    "status": "PENDING",
+    "status_detail": "The payment is pending 3D Secure authentication.",
+    "status_code": "101",
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
