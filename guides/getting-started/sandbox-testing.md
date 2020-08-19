@@ -134,3 +134,50 @@ The same goes to test the `REJECTED` status, but with `300` as the input code:
 
 As we mentioned earlier, you can include in `description` the error code that you want the payment to result to. For example, "302" will result in the payment being rejected with the error: "Insufficient Amount".
 
+### **Testing DIRECT Cash payments - Approve or Expire**
+
+Our `DIRECT` cash payment methods can be tested by either forcing an approval \(`PAID`\) or an expiration \(`REJECTED`\).
+
+#### Example Request
+
+```typescript
+$ curl -X POST \
+   -H 'X-Login: sak223k2wdksdl2' \
+   -H 'X-Trans-Key: fm12O7G9' \
+   -H 'X-IdMerchant: 4' \
+   -H 'Content-Type: application/json' \
+   https://sandbox.dlocal.com/sandbox-tools/payments
+```
+
+#### Example Request Body
+
+```yaml
+{
+   "payment_id" : "PAY4334346343",
+   "status": "PAID"/"REJECTED"
+}
+```
+
+**Responses**
+
+In both cases, if you receive a code `200`, it means your`PAID` or `REJECTED` request is successful.
+
+If `payment_id` doesn’t exist, you will receive a `404` response:
+
+```yaml
+{
+ "code": 0,
+ "status": "ERROR",
+ "message": "404 {\"code\":4000,\"message\":\"Payment not found\"}"
+}
+```
+
+If `payment_id` is not in `PENDING` status, you will receive a `400` response:
+
+```yaml
+{
+ "code": 5002,
+ "message": "Payment D-4-fdb6fe34-de6c-4f66-8895-ef87a1918b29 has not status PENDING. Actual status: PAID"
+}
+```
+
