@@ -156,7 +156,7 @@
     <tr>
       <td style="text-align:left">Document</td>
       <td style="text-align:left">CC</td>
-      <td style="text-align:left">10</td>
+      <td style="text-align:left">Between 6 to 10</td>
       <td style="text-align:left">numeric</td>
       <td style="text-align:left">No</td>
       <td style="text-align:left">
