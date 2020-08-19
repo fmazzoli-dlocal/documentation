@@ -144,7 +144,6 @@ Our `DIRECT` cash payment methods can be tested by either forcing an approval \(
 $ curl -X POST \
    -H 'X-Login: sak223k2wdksdl2' \
    -H 'X-Trans-Key: fm12O7G9' \
-   -H 'X-IdMerchant: 4' \
    -H 'Content-Type: application/json' \
    https://sandbox.dlocal.com/sandbox-tools/payments
 ```
