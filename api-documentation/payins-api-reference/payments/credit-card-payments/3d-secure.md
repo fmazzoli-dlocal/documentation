@@ -408,6 +408,9 @@ Optional 3D-Secure  is only available in Mexico at the moment
         "brand": "VI",
         "last4": "1111"
     },
+    "three_dsecure" : {
+        "redirect_url" : "http://api.dlocal.com/three-ds/M-64356345634587b3495"
+    },
     "created_date": "2018-12-26T20:26:09.000+0000",
     "approved_date": "2018-12-26T20:26:09.000+0000",
     "status": "AUTHORIZED",
