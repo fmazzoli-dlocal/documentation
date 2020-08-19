@@ -2,6 +2,10 @@
 
 ## Redirect 3D-Secure
 
+{% hint style="warning" %}
+Redirect 3D-Secure is available in all the markets where authentication might be mandatory: Egypt, India, Indonesia, Nigeria, and South Africa. 
+{% endhint %}
+
 In some regions 3D-Secure authentication might be mandatory. In such a scenario, the [Create a Payment](https://docs.dlocal.com/api-documentation/payins-api-reference/payments#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object in the response will include a 3D-Secure object \(`three_dsecure`\), containing the `redirect_url` that the user needs to be redirected to so as to complete the authorization.
 
 Once the user completed the authentication successfully, the payment will be processed and the user will be redirected to the `callback_url` .
@@ -282,6 +286,104 @@ curl -X POST \
         "xid" : "ODUzNTYzOTcwODU5NzY3Qw==",
         "enrollment_response" : "Y",
         "authentication_response" : "Y"
+    }
+    "order_id": "657434343",
+    "notification_url": "http://merchant.com/notifications"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+```yaml
+{
+    "id": "D-4-cf8eef6b-52d5-4320-b5ea-f5e0bbe4343f",
+    "amount": 120,
+    "currency": "BRL",
+    "payment_method_id": "CARD",
+    "payment_method_type": "CARD",
+    "payment_method_flow": "DIRECT",
+    "country": "BR",
+    "card": {
+        "holder_name": "Thiago Gabriel",
+        "expiration_month": 10,
+        "expiration_year": 2040,
+        "brand": "VI",
+        "last4": "1111"
+    },
+    "created_date": "2018-12-26T20:26:09.000+0000",
+    "approved_date": "2018-12-26T20:26:09.000+0000",
+    "status": "AUTHORIZED",
+    "status_detail": "The payment was authorized",
+    "status_code": "600",
+    "order_id": "657434343",
+    "notification_url": "http://merchant.com/notifications"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Optional 3D-Secure
+
+Submit a payment and choose whether you want to force the user to go through a 3D-Secure authentication.
+
+To force a 3D-Secure authenticated payment, you need to create a payment with the parameter `force` = `TRUE` within the `three_dsecure` object.
+
+{% hint style="warning" %}
+'Forced' 3D-Secure  is only available in Mexico at the moment
+{% endhint %}
+
+### Example Authorization with 'forced' 3D-Secure 
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example Request
+
+```bash
+    curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'User-Agent: MerchantTest / 1.0 ' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/secure_payments
+```
+
+#### Example Request body
+
+```yaml
+{
+    "amount": 120.00,
+    "currency" : "BRL",
+    "country": "BR",
+    "payment_method_id" : "CARD",
+    "payment_method_flow" : "DIRECT",
+    "payer":{
+        "name" : "Thiago Gabriel",
+        "email" : "thiago@example.com",
+        "document" : "53033315550",
+        "user_reference": "12345",
+        "address": {
+            "state"  : "Rio de Janeiro",
+            "city" : "Volta Redonda",
+            "zip_code" : "27275-595",
+            "street" : "Servidao B-1",
+            "number" : "1106"
+        },
+        "ip" : "179.27.83.210",
+        "device_id" : "2fg3d4gf234"
+    },
+    "card":{
+        "holder_name" : "Thiago Gabriel",
+        "number" : "4111111111111111",
+        "cvv" : "123",
+        "expiration_month" : 10,
+        "expiration_year" : 2040,
+    },
+    "three_dsecure":{
+        "force" : TRUE,
     }
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
