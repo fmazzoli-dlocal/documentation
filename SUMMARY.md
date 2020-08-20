@@ -39,6 +39,7 @@
       * [Installments](api-documentation/payins-api-reference/payments/credit-card-payments/installments.md)
     * [Cash \(Ticket\) Payments](api-documentation/payins-api-reference/payments/cash-ticket-payments.md)
     * [Bank Transfer Payments](api-documentation/payins-api-reference/payments/bank-transfer-payments.md)
+    * [PayLater Payments](api-documentation/payins-api-reference/payments/paylater-payments.md)
   * [Refunds](api-documentation/payins-api-reference/refunds.md)
   * [Orders](api-documentation/payins-api-reference/orders.md)
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)

@@ -162,6 +162,42 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/RU.png">https://pay.dlocal.com/views/2.0/images/payments/RU.png</a>&#x200B;</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>II</code>
+      </td>
+      <td style="text-align:left">ICIC Bank</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">PayLater</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>GS</code>
+      </td>
+      <td style="text-align:left">Getsimpl</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">PayLater</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>PL</code>
+      </td>
+      <td style="text-align:left">epaylater</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">PayLater</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
