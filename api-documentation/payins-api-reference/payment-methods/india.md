@@ -165,7 +165,7 @@
     <tr>
       <td style="text-align:left"><code>II</code>
       </td>
-      <td style="text-align:left">ICIC Bank</td>
+      <td style="text-align:left">ICICI Bank</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>

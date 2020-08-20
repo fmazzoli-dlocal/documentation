@@ -2,21 +2,21 @@
 
 ## Redirect PayLater Payments
 
-PayLater provides the end-user with an instant credit line. After selecting this payment method, the user is redirected and required to input some personal information. Once submitted, the user receives an approval message, and can use the credited amount as balance. Monthly payments will be automatically deducted from his bank account, until full amount completion. See the ICIC Bank example screenshots below:
+PayLater provides the end-user with an instant credit line. After selecting this payment method, the user is redirected and required to input some personal information. Once submitted, the user receives an approval message, and can use the credited amount as balance. Monthly payments will be automatically deducted from his bank account, until full amount completion. See the ICICI Bank example screenshots below:
 
 ![1. After requesting PayLater, user inputs information](../../../.gitbook/assets/step-3.png)
 
 ![2. If approved, credit line is available for the user](../../../.gitbook/assets/step-8.png)
 
 {% hint style="warning" %}
-PayLater is only available in India
+PayLater is only available in India at the moment
 {% endhint %}
 
-PayLater payment methods fall under `BANK_TRANSFER` and offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). The API returns a `redirect_URL`, which is used to redirect the user to the selected bank's PayLater page \(ICIC in the example above\).
+PayLater payment methods fall under `BANK_TRANSFER` and offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). The API returns a `redirect_URL`, which is used to redirect the user to the selected bank's PayLater page \(ICICI in the example above\).
 
 Using the Redirect method, the payment will have the `PENDING` status until the user submits the information as shown in Picture 1 above, and dLocal gets notified.
 
-The example below belongs to payment using PayLater from ICIC Bank in India. For a full list of `BANK_TRANSFER` payment methods available, visit the [Payment Methods page](../payment-methods/).
+The example below belongs to payment using PayLater from ICICI Bank in India. For a full list of `BANK_TRANSFER` payment methods available, visit the [Payment Methods page](../payment-methods/).
 
 {% tabs %}
 {% tab title="Example Request" %}
