@@ -159,7 +159,7 @@ $ curl -X POST \
 
 **Responses**
 
-In both cases, if you receive a code `200`, it means your`PAID` or `REJECTED` request is successful.
+In both cases, if you receive a code `200`, it means your`PAID` or `REJECTED` request is successful. Also this will trigger a **notification** with the new status.
 
 If `payment_id` doesn’t exist, you will receive a `404` response:
 
