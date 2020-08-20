@@ -415,7 +415,7 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
-![Example Pago F&#xE1;cil UI built with the information in the example above.](../../../.gitbook/assets/screen-shot-2020-02-20-at-10.06.46-am.png)
+![Pago F&#xE1;cil UI built with the information in the example above.](../../../.gitbook/assets/screen-shot-2020-02-20-at-10.06.46-am.png)
 
 {% hint style="success" %}
 **User Interface Tips**
