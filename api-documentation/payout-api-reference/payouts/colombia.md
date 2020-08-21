@@ -119,7 +119,6 @@
 "amount":"2000000000.00",
 "type":"json",
 "notification_url":"",
-"bank_name":"BANCOLOMBIA",
 "bank_code":"7",
 "comments":"",
 "on_hold":"",
