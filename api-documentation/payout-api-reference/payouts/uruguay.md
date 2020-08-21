@@ -206,16 +206,6 @@
       <td style="text-align:left">0061436006</td>
     </tr>
     <tr>
-      <td style="text-align:left">Bandes</td>
-      <td style="text-align:left">XXXYYYYYY</td>
-      <td style="text-align:left">9</td>
-      <td style="text-align:left">
-        <p>X-&gt; Bank branch</p>
-        <p>Y-&gt; Account num.</p>
-      </td>
-      <td style="text-align:left">012123456</td>
-    </tr>
-    <tr>
       <td style="text-align:left">Itau</td>
       <td style="text-align:left">XXXXXXX</td>
       <td style="text-align:left">7</td>
