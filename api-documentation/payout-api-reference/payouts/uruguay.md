@@ -279,7 +279,6 @@ Check below the different values that bank\_code parameter can take depending on
 | :--- | :--- |
 | BROU - Banco de la República Oriental del Uruguay | 001 |
 | Banco Hipotecario del Uruguay | 091 |
-| Banco Bandes | 110 |
 | Banco ITAU | 113 |
 | Scotiabank | 128 |
 | Banco Santander | 137 |
