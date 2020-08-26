@@ -237,7 +237,6 @@ These are the values the bank\_code parameter can take in Colombia:
 | Bancolombia | 007 |
 | Bancoomeva | 061 |
 | BBVA | 013 |
-| Citibank | 009 |
 | Coltefinanciera S.A. | 370 |
 | Confiar | 292 |
 | Coopcentral S.A. | 076 |
