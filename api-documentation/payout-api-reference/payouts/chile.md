@@ -131,7 +131,6 @@ These are the values the **bank\_code parameter** can take in Chile
 
 | Bank Name | Bank Code |
 | :--- | :--- |
-| ABN Amro Bank Chile | 046 |
 | Banco Bice | 028 |
 | Banco Consorcio | 055 |
 | Banco Crédito e Inversiones | 016 |
@@ -140,16 +139,12 @@ These are the values the **bank\_code parameter** can take in Chile
 | Banco del Estado de Chile | 012 |
 | Banco Falabella | 051 |
 | Banco Internacional | 009 |
-| Banco Penta | 056 |
 | Banco Ripley | 053 |
 | Banco Santander - Santiago | 037 |
 | Banco Security | 049 |
 | BBVA Chile | 504 |
-| Corpbanca | 027 |
 | Deutsche Bank | 052 |
 | HSBC Bank | 031 |
 | Itau Corpbanca | 039 |
-| Paris | 057 |
-| Rabobank Chile | 054 |
 | Scotiabank Chile | 014 |
 
