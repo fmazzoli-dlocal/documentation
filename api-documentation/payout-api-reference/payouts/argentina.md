@@ -102,7 +102,6 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | HSBC Bank Argentina | 150 |
 | J P Morgan Chase Bank Sucursal Buenos Aires | 165 |
 | M. B. A. Banco de Inversiones | 312 |
-| Nuevo Banco Bisel | 388 |
 | Nuevo Banco de Entre Rios | 386 |
 | Nuevo Banco de La Rioja | 309 |
 | Nuevo Banco de Santa Fe | 330 |
