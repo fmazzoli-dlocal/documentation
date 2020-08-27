@@ -52,15 +52,11 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | **Bank name** | **Bank code** |
 | :--- | :--- |
 | CVU Account | 000 |
-| A.B.N Amro Bank | 005 |
-| American Express Bank Ltd | 295 |
 | Bacs Banco de Credito Y Securitizacion | 340 |
-| Banca Nazionale Del Lavoro | 265 |
 | Banco B. I. Creditanstalt | 147 |
 | Banco Bradesco Argentina | 336 |
 | Banco Cetelem Argentina | 331 |
 | Banco CMF | 319 |
-| Banco Cofidis | 335 |
 | Banco Columbia | 389 |
 | Banco Comafi | 299 |
 | Banco Credicoop Coop. L | 191 |
@@ -82,25 +78,18 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Banco de Valores | 198 |
 | Banco Del Chubut | 083 |
 | Banco Del Sol | 310 |
-| Banco Del Tucuman | 060 |
-| Banco do Brasil | 046 |
-| Banco Empresario de Tucuman Coop. L | 137 |
-| Banco Finansur | 303 |
 | Banco Hipotecario | 044 |
 | Banco Itau Buen Ayre | 259 |
 | Banco Julio | 305 |
 | Banco Macro | 285 |
 | Banco Mariva | 254 |
 | Banco Mas Ventas | 341 |
-| Banco Mercurio | 293 |
 | Banco Meridian | 281 |
 | Banco Municipal de Rosario | 065 |
 | Banco Patagonia Sudameris | 034 |
 | Banco Piano | 301 |
-| Banco Privado de Inversiones | 306 |
 | Banco Provincia de Tierra Del Fuego | 268 |
 | Banco Provincia Del Neuquen | 097 |
-| Banco Regional de Cuyo | 079 |
 | Banco Santander Rio | 072 |
 | Banco Roela | 247 |
 | Banco Saenz | 277 |
@@ -110,11 +99,8 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | BBVA Banco Frances | 017 |
 | Bnp Paribas | 266 |
 | Citibank | 016 |
-| Deutsche Bank | 325 |
 | HSBC Bank Argentina | 150 |
-| Ing Bank | 294 |
 | J P Morgan Chase Bank Sucursal Buenos Aires | 165 |
-| Lloyds Tsb Bank | 010 |
 | M. B. A. Banco de Inversiones | 312 |
 | Nuevo Banco Bisel | 388 |
 | Nuevo Banco de Entre Rios | 386 |
@@ -122,21 +108,13 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Nuevo Banco de Santa Fe | 330 |
 | Nuevo Banco Del Chaco | 311 |
 | Nuevo Banco Industrial de Azul | 322 |
-| Nuevo Banco Suquia | 387 |
 | RCI Banque Argentina | 339 |
-| The Bank Of Tokyo - Mitsubishi | 018 |
-| Brubank S.A.U | 143 |
 | Wilobank S.A. | 384 |
 | Banco Bica S.A. | 426 |
 | Banco Coinag S.A. | 431 |
-| Banco de Comercio S.A. | 432 |
 | Banco Sucredito Regional S.A.U. | 435 |
 | Bank of Chine Limited Sucursal Buenos Aires | 515 |
 | Brubank S.A.U. | 143 |
-| Wilobank S.A. | 384 |
-| Banco Bica S.A. | 426 |
-| Banco Coinag S.A. | 431 |
 | Banco de Comercio S.A.  | 432 |
-| Banco Sucredito Regional S.A.U. | 435 |
-| Bank of China Limited Sucursal Buenos Aires  | 515 |
+| Banco Dino S.A. | 448 |
 
