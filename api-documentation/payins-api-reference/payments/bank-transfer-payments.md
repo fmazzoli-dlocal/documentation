@@ -1,6 +1,6 @@
 # Bank Transfer Payments
 
-Redirect Bank Transfer Payments
+## Redirect Bank Transfer Payments
 
 All Bank Transfer \(`BANK_TRANSFER`\) payment methods offer a redirect solution \(`payment_method_flow` = `REDIRECT`\). The API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted page. The user will be able to see the details in order to complete the transfer via their home banking.
 
