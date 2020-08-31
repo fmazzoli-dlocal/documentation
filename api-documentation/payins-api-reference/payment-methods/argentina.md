@@ -22,16 +22,20 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>SI</code>
+      <td style="text-align:left"><code>IO</code>
       </td>
-      <td style="text-align:left">Santander Rio</td>
+      <td style="text-align:left">Bank Transfer</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Bank Transfer Offline</td>
-      <td style="text-align:left"><code>REDIRECT</code>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SI.png">https://pay.dlocal.com/views/2.0/images/payments/SI.png</a>&#x200B;</td>
+      <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VS.png</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PF</code>
