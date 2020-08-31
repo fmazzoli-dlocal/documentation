@@ -104,6 +104,75 @@ If wallet.save = TRUE, the notification will include a wallet.token as long as t
 
 
 
+### Direct Wallet Payments
+
+Once a wallet.token was obtained, further payments can be processed without the need of redirecting the user to authenticate, and the payment will be done synchronously.
+
+#### Example Request
+
+{% tabs %}
+{% tab title="Example Request" %}
+**Example Request**
+
+```yaml
+curl -X POST \
+   -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+   -H 'X-Login: sak223k2wdksdl2' \
+   -H 'X-Trans-Key: fm12O7G9' \
+   -H 'Content-Type: application/json' \
+   -H 'X-Version: 2.1' \
+   -H 'User-Agent: MerchantTest / 1.0 ' \
+   -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+   -d '{body}'
+   https://api.dlocal.com/payments
+```
+
+#### Example body Request
+
+```yaml
+{
+   "amount": 100,
+   "currency": "ARS",
+   "country": "AR",
+   "payment_method_id": "MP",
+   "payment_method_flow": "DIRECT",
+   "payer": {
+       "name": "Thiago Gabriel",
+       "email": "thiago@example.com",
+       "document": "53033315550"
+   },
+   "wallet": {
+       "token": "W-yu23y4ibnyiu23y4"
+   },
+   "order_id": "5346523565",
+   "notification_url": "http://merchant.com/notifications",
+   "callback_url": "http://merchant.com/callback"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+```yaml
+{
+   "id": "D-4-75c7473a-ab86-4e43-bd39-c840268747d3",
+   "amount": 100,
+   "currency": "ARS",
+   "payment_method_id": "MP",
+   "payment_method_type": "WALLET",
+   "payment_method_flow": "DIRECT",
+   "country": "AR",
+   "created_date": "2018-12-26T20:37:20.000+0000",
+   "status": "PAID",
+   "status_detail": "The payment was paid.",
+   "status_code": "200",
+   "order_id": "5346523565",
+   "notification_url": "http://merchant.com/notifications",
+   "redirect_url": "https://sandbox.dlocal.com/collect/pay/pay/M-0aa0cc00-094e-11e9-9f92-dbdad3ad0963?xtid=CATH-ST-1545856640-602791137"
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ### The Wallet Object
 
 | **Property** | **Type** | **Description** |
