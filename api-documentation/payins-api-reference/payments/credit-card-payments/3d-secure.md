@@ -3,7 +3,7 @@
 ## Redirect 3D-Secure
 
 {% hint style="warning" %}
-Redirect 3D-Secure is mandatory in: India, Indonesia, Nigeria, Egypt and South Africa. 
+Redirect 3D-Secure is mandatory in: India, Indonesia, Nigeria, Egypt, South Africa, and Debit cards in Brazil. 
 {% endhint %}
 
 In some regions 3D-Secure authentication might be mandatory. In such a scenario, the [Create a Payment](https://docs.dlocal.com/api-documentation/payins-api-reference/payments#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object in the response will include a 3D-Secure object \(`three_dsecure`\), containing the `redirect_url` that the user needs to be redirected to so as to complete the authorization.
