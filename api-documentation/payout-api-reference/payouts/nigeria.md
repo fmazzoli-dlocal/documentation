@@ -11,7 +11,7 @@
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
-| **country** | NI |
+| **country** | NG |
 | **bank\_code** | See bank codes here |
 | **bank\_account** | See bank account validations here |
 | **amount** | Max. 2 decimal numbers |
@@ -23,7 +23,7 @@
 "external_id":"1234567812345678",
 "beneficiary_name":"Daniela",
 "beneficiary_lastname":"Perez",
-"country":"NI",
+"country":"NG",
 "amount":"4316.50",
 "bank_code":"001",
 "bank_account":"1234567891234567891234",
