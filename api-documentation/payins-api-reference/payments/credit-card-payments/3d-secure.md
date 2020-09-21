@@ -165,7 +165,8 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
         </p>
         <p><b>&lt;code&gt;&lt;/code&gt;</b>
         </p>
-        <p>*See possible values and descriptions here</p>
+        <p>*See possible values and descriptions <a href="3d-secure.md#electronic-commerce-indicator-eci-values">here</a>
+        </p>
       </td>
     </tr>
     <tr>
