@@ -161,8 +161,11 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       <td style="text-align:left">
         <p></p>
         <p>The electronic commerce indicator.</p>
-        <p><b>Required if <code>mpi</code> = <code>TRUE </code>and<code>three_dsecure_version</code> = <code>&quot;1.0&quot;</code></b>
+        <p><b>Required if <code>mpi</code> = <code>TRUE </code>and<code>three_dsecure_version</code> = <code>&quot;1.0&quot; </code></b>
         </p>
+        <p><b>&lt;code&gt;&lt;/code&gt;</b>
+        </p>
+        <p>*See possible values and descriptions here</p>
       </td>
     </tr>
     <tr>
@@ -420,4 +423,21 @@ Optional 3D-Secure  is only available in Mexico at the moment
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+### Electronic Commerce Indicator \(ECI\) Values
+
+| **Brand** | **ECI** | **Description** |
+| :--- | :--- | :--- |
+| VI, VD | 05 | Authenticated by Issuer - Chargeback risk shifted to Issuer |
+| VI, VD | 06 | Authenticated by Network - Chargeback risk shifted to Issuer |
+| VI, VD | Other | Not authenticated |
+| MC, MD, MS | 01 | Authenticated by Network - Chargeback risk shifted to Issuer |
+| MC, MD, MS | 02 | Authenticated by Issuer - Chargeback risk shifted to Issuer |
+| MC, MD, MS | 04 | Not authenticated |
+| MC, MD, MS | Other | Not authenticated |
+| EL | 05 | Authenticated by Issuer - Chargeback risk shifted to Issuer |
+| EL | 06 | Authenticated by Network - Chargeback risk shifted to Issuer |
+| EL | 07 | Not authenticated |
 
