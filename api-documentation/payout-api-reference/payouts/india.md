@@ -125,7 +125,7 @@ To send payouts to a Paytm wallet the merchant will need a different MID to be c
 | **phone** | Email or Phone number are the Paytm account number, \(include the country code\) If the user is register with email, phone is not mandatory. |
 | **amount** | Max. 2 decimal numbers |
 
-### Bank account validations
+### Bank branch validation
 
 <table>
   <thead>
