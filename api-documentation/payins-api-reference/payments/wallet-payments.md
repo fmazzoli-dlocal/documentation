@@ -28,7 +28,7 @@ curl -X POST \
 
 ```yaml
 {
-   "amount": 100,
+   "amount": 0,
    "currency": "ARS",
    "country": "AR",
    "payment_method_id": "MP",
@@ -39,8 +39,11 @@ curl -X POST \
        "document": "53033315550"
    },
    "wallet": {
-       "save": TRUE
+       "save": TRUE,
+       "verify": TRUE,
+       "label": "New suscription for merchant service",
    },
+   "description": "Exclusive contents with this service",   
    "order_id": "5346523564",
    "notification_url": "http://merchant.com/notifications",
    "callback_url": "http://merchant.com/callback"
@@ -80,9 +83,9 @@ If wallet.save = TRUE, the notification will include a wallet.token as long as t
 {
    "id": "D-4-75c7473a-ab86-4e43-bd39-c840268747d3",
    "amount": 100.00,
-   "status": "PAID",
-   "status_detail": "The payment was paid.",
-   "status_code": "200",
+   "status": "VERIFIED",
+   "status_detail": "The wallet was verified.",
+   "status_code": "700",
    "currency": "USD",
    "country": "AR",
    "payment_method_id": "MP",
@@ -94,7 +97,8 @@ If wallet.save = TRUE, the notification will include a wallet.token as long as t
        "document": "53033315550"
    },
    "wallet": {
-       "token": "W-yu23y4ibnyiu23y4"
+       "token": "W-yu23y4ibnyiu23y4",
+       "userid": "45696493593"
    },
    "order_id": "5346523564",
    "notification_url": "http://www.merchant.com/notifications",
