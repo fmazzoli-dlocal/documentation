@@ -111,7 +111,7 @@
     <tr>
       <td style="text-align:left"><code>IO</code>
       </td>
-      <td style="text-align:left">ACH</td>
+      <td style="text-align:left">TEF</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
