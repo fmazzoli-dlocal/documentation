@@ -310,4 +310,5 @@ These are the values the **bank\_code parameter** can take in Brazil.
 | Banco Sistema S.A. | 754 |
 | Bank of America Merrill Lynch Banco Múltiplo S.A. | 755 |
 | BANCO KEB HANA DO BRASIL S.A. | 757 |
+| Mercadopago.com Representacoes LTDA | 323 |
 
