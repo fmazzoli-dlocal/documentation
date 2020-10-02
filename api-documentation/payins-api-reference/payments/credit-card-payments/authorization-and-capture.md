@@ -279,6 +279,85 @@ $ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
+## $0 Authorization
+
+Use a $0 Authorization to valide the user's card. You need to create an Authorization as explained above, but with `amount` = `0` and `verify` = `true` within the `card` object:
+
+{% tabs %}
+{% tab title="Request Example" %}
+Request example:
+
+```yaml
+{
+    "amount": 0,
+    "currency": "BRL",
+    "country": "BR",
+    "payment_method_id": "CARD",
+    "payment_method_flow": "DIRECT",
+    "payer": {
+        "name": "MXFGpBEw AJsGTALt",
+        "email": "0yesa0xbd3g2-autest@dlocal.com",
+        "phone": "4832695335",
+        "address": {
+            "country": "BR",
+            "state": "Santa Catarina",
+            "city": "Florianopolis",
+            "zip_code": "88058",
+            "street": "Rodovia Armando Calil Bulos",
+            "number": "5940"
+        },
+        "document": 26410722
+    },
+    "card": {
+        "holder_name" : "Thiago Gabriel",
+        "expiration_month": 7,
+        "expiration_year": 2024,
+        "brand": "Visa",
+        "verify": true,
+        "capture": false,
+        "cvv": "***",
+        "number": "42976**********"
+    },
+    "order_id": "BENtest-h8fJ8blUTjY",
+    "description": "LO4nLkTqt2tt",
+    "notification_url": "https://postman-echo.com/post"
+}
+```
+{% endtab %}
+
+{% tab title="Response Example" %}
+Response Example:
+
+```yaml
+{
+    "id": "T-40004-eebc14d9-8381-4bf6-b8b7-82acbb06f166",
+    "amount": 0,
+    "currency": "BRL",
+    "payment_method_id": "CARD",
+    "payment_method_type": "CARD",
+    "payment_method_flow": "DIRECT",
+    "country": "BR",
+    "card": {
+        "holder_name" : "Thiago Gabriel",
+        "expiration_month": 7,
+        "expiration_year": 2024,
+        "brand": "VI",
+        "last4": "8528",
+        "verify": true
+    },
+    "created_date": "2020-09-29T17:42:40.000+0000",
+    "approved_date": "2020-09-29T17:42:40.000+0000",
+    "status": "VERIFIED",
+    "status_detail": "The payment was verified.",
+    "status_code": "700",
+    "order_id": "BENtest-h8fJ8blU",
+    "description": "LO4nLkTqt2tt",
+    "notification_url": "https://postman-echo.com/post",
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ## Refunds for Captures
 
 **Refunds are applied to the Captures, not the Authorization**. 
