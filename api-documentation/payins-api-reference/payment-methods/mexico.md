@@ -295,3 +295,97 @@ curl -X POST \
 * A **Print button** is useful for some users that need to have their tickets printed.
 {% endhint %}
 
+### SPEI
+
+#### Example
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
+
+#### Example request body
+
+```javascript
+{
+    "amount": 10,
+    "currency": "MXN",
+    "country": "MX",
+    "payment_method_id": "SE",
+    "payment_method_flow": "DIRECT",
+    "payer": {
+        "name": "Pedro Gomes",
+        "email": "pedrogomes@dlocal.com",
+        "document": "42243309114"
+    },
+    "order_id": "jhg4v34v534",
+    "notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+#### Example response
+
+```javascript
+{
+    "id": "D-4-7370c340-9b78-4416-890b-c2e1d93430b8",
+    "amount": 10,
+    "currency": "MXN",
+    "payment_method_id": "SE",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "MX",
+    "bank_transfer": {
+        "bank_account_type": "CHECKING",
+        "bank_name": "BBVA Bancomer",
+        "bank_code": "BV",
+        "beneficiary_name": "Dlocal MX",
+        "bank_account": "013890012935777293",
+        "bank_account2": "1249930",
+        "bank_account_label": "CLABE",
+        "bank_account2_label": "Numero de convenio CIE",
+        "reference": "36668329502542825275",
+        "redirect_url": "https://pay.dlocal.com/gmf-apm/payments/M-153ab926-e185-4da1-add5-a41b61ef5089",
+        "user_payment_amount": 10
+    },
+    "ticket": {
+        "type": "CUSTOM",
+        "number": "1000002055830",
+        "expiration_date": "2020-10-13T04:59:00.000+0000",
+        "image_url": "https://pay.dlocal.com/gmf-apm/payments/M-153ab926-e185-4da1-add5-a41b61ef5089"
+    },
+    "created_date": "2020-10-02T20:39:29.000+0000",
+    "status": "PENDING",
+    "status_detail": "The payment is pending.",
+    "status_code": "100",
+    "order_id": "b823d3aa-44bf-46e7-9a4c-329c928d29c4",
+    "notification_url": "https://merchant.com/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+![Example SPEI UI built with the information in the example above](../../../.gitbook/assets/spei_direct_fields.png)
+
+{% hint style="success" %}
+**User Interface tips**
+
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* Make sure that the **expiration date** is clear and visible enough. In Mexico people use the **dd/mm/yyyy** format
+* Include **payment instructions**. In the image above there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
+* In the payment instructions, include sections **for both BBVA and other banks.** This is because the payment details requested by BBVA's online banking system is different for SPEI payments.
+* A **Print button** is useful for some users that need to have their tickets printed.
+{% endhint %}
+
