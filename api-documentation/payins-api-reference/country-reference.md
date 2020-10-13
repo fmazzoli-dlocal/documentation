@@ -92,6 +92,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Costa Rica</td>
+      <td style="text-align:left"><code>CR</code>
+      </td>
+      <td style="text-align:left"><code>CRC</code>
+      </td>
+      <td style="text-align:left">CI</td>
+      <td style="text-align:left">9 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Ecuador</td>
       <td style="text-align:left"><code>EC</code>
       </td>
