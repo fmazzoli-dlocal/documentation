@@ -190,7 +190,7 @@ Some banks require a specific structure for the bank\_account field:
 | Sudameris | 012 | 8 | 11 | 208342345908754 | 102938455738947 |
 | BBVA | 013 | 16 | 16 | 1234567890123456 | 1234567890123456 |
 | Itau | 014 | 9 | 9 | 123456789 | 123456789 |
-| Colpatria | 019 | 10 | 10 | 1234567890 | 1234567890 |
+| Scotiabank Colpatria | 019 | 10 | 10 | 1234567890 | 1234567890 |
 | Banco de Occidente | 023 | 9 | 9 | 123456789 | 123456789 |
 | Caja social BCSC | 032 | 12 | 12 | 123456789012 | 123456789012 |
 | Agrario | 040 | 12 | 12 | 123456789012 | 123456789012 |
@@ -217,7 +217,7 @@ These are the values the bank\_code parameter can take in Colombia:
 | Banco Agrario | 040 |
 | Banco Av. Villas | 052 |
 | Banco Caja Social BCSC | 032 |
-| Banco Colpatria | 019 |
+| Scotiabank Colpatria | 019 |
 | Banco Compartir S.A. | 067 |
 | Banco Davivienda | 051 |
 | Banco de Bogota | 001 |
