@@ -29,6 +29,7 @@
     * [Mexico](api-documentation/payins-api-reference/payment-methods/mexico.md)
     * [Morocco](api-documentation/payins-api-reference/payment-methods/morocco.md)
     * [Nigeria](api-documentation/payins-api-reference/payment-methods/nigeria.md)
+    * [Panama](api-documentation/payins-api-reference/payment-methods/panama.md)
     * [Paraguay](api-documentation/payins-api-reference/payment-methods/paraguay.md)
     * [Peru](api-documentation/payins-api-reference/payment-methods/peru.md)
     * [Senegal](api-documentation/payins-api-reference/payment-methods/senegal.md)
