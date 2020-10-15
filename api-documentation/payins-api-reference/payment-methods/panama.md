@@ -1,6 +1,6 @@
 # Panama
 
-
+### Payment Methods available
 
 <table>
   <thead>
