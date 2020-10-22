@@ -70,7 +70,7 @@
     <tr>
       <td style="text-align:left"><code>CX</code>
       </td>
-      <td style="text-align:left">BNCR</td>
+      <td style="text-align:left">Banco Nacional</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left"></td>
