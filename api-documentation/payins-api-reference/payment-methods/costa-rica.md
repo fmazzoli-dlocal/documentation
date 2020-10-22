@@ -56,7 +56,8 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left">TU</td>
+      <td style="text-align:left"><code>TU</code>
+      </td>
       <td style="text-align:left">Tucan</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
@@ -67,7 +68,8 @@
       <td style="text-align:left">&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left">CX</td>
+      <td style="text-align:left"><code>CX</code>
+      </td>
       <td style="text-align:left">BNCR</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
