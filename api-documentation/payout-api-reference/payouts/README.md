@@ -203,7 +203,7 @@ Remitter's birthdate
 -Format: 'YYYYMMDD'-
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="purpose" type="string" required=true %}
+{% api-method-parameter name="purpose" type="string" required=false %}
 Payout purpose code. See the Purpose codes section below.  
 -Length: 6 chars-
 {% endapi-method-parameter %}
