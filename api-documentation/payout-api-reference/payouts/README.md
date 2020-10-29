@@ -28,7 +28,7 @@ Payout identification \(at the merchant site\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="metadata" type="string" required=false %}
-Payouts meta data in json format   
+Payouts metadata in json format   
 -Length 500 chars- 
 {% endapi-method-parameter %}
 
