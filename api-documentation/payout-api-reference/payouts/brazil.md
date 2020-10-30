@@ -1,6 +1,6 @@
 # Brazil
 
-### Mandatory parameters
+### Mandatory parameters bank transfers
 
 <table>
   <thead>
@@ -106,6 +106,42 @@
 }
 ```
 
+### Mandatory parameters PIX transfer
+
+
+
+| **Mandatory parameter** | **Description** |
+| :--- | :--- |
+| login | 32 chars |
+| pass | 32 chars |
+| external\_id | Max. 100 chars |
+| document\_id | See document validations [here](brazil.md#document-validations) |
+| beneficiary\_name | Max. 100 chars |
+| beneficiary\_lastname | Max. 100 chars |
+| country | BR |
+| bank\_code | See bank codes [here](brazil.md#bank-codes) |
+| amount | Max. 2 decimal numbers |
+| metadata | json format: { "pix\_key": &lt;key&gt;} Possible key values: "email"," phone","document\_id","bank\_account"  |
+| Key field | It will be mandatory the field that was mention on the metadata field as pix key. |
+
+```text
+{
+"login":"1n234n56",
+"pass":"HolAc123o",
+"external_id":"1234567812345678",
+"document_id":"123.456.789-10",
+"beneficiary_name":"JUAN",
+"beneficiary_lastname":"NASCIMENTO",
+"country":"BR",
+"amount":"1100.00",
+"currency":"BRL",
+"metadata": {
+    "pix_key":"email"
+    }
+"email":"juan@gmail.com"
+}
+```
+
 ### Document validations
 
 <table>
@@ -161,6 +197,7 @@ Reference
 | Itau Unibanco S.A. | XXXX | XXXXX-X | XXXXX-X |
 | HSBC Bank Brasil S.A. | XXXX, XXXXD, XXXXDD, XXXX-D or XXXX-DD | XXXXX-XX | XXXXX-XX |
 | Other banks | XXXX, XXXXD, XXXXDD, XXXX-D or XXXX-DD | - | - |
+| Pix account | no format validation | no  format validation |  |
 
 ### **Bank codes**
 
