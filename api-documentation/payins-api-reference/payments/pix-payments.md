@@ -12,7 +12,7 @@ PIX payments support a `REDIRECT` or `DIRECT` flow.
 
 In this flow, `payment_method_flow` is set to `REDIRECT` . The API returns a `redirect_URL`, which is used to redirect the user to a dLocal-hosted page \(shown below\). The user will be able to open any App that supports PIX \(Home Banking and Ewallets\) and decide whether to use the scan QR or the Transaction ID copy/paste option.
 
-Using the Redirect method, the payment will have the `PENDING` status until the user confirms the payment, and dLocal gets notified \(immediate after user confirmation\).
+Using the `REDIRECT` method, the payment will have the `PENDING` status until the user confirms the payment, and dLocal gets notified \(immediate after user confirmation\).
 
 ![PIX redirect display example](../../../.gitbook/assets/pixredirect.png)
 
@@ -65,6 +65,8 @@ Using the Redirect method, the payment will have the `PENDING` status until the 
 ### Direct PIX Payment
 
 PIX payments are available via our **Direct APMs** solution \(`payment_method_flow` = `DIRECT`\). The important parameters are returned via API, so the merchant can build their own PIX UI.
+
+Using the `DIRECT` method, the payment will have the `PENDING` status until the user confirms the payment, and dLocal gets notified \(immediate after user confirmation\).
 
 {% tabs %}
 {% tab title="Example Request" %}
