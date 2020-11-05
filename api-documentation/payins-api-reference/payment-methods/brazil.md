@@ -51,6 +51,22 @@
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>PQ</code>
+      </td>
+      <td style="text-align:left">PIX</td>
+      <td style="text-align:left"><code>TICKET</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">PIX</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>I</code>
       </td>
       <td style="text-align:left">Itau</td>

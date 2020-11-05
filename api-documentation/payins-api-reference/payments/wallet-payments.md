@@ -2,7 +2,7 @@
 
 Wallet payments \(`WALLET`\) ****require the user to log in to their wallet provider \(through a redirect\) and approve the payment. Once the first payment is successful, a token is returned which can be used to make recurring payments without the need of a redirect.
 
-#### Redirect Wallet Payment
+### Redirect Wallet Payment
 
 In this flow, the user is redirected to the wallet's website to authenticate. Once that's done, the user will be redirected back to the callback\_url, and the payment will be processed asynchronously. If wallet.save = `TRUE` in the request, the asynchronous notification will include a wallet.token , which can be used for further payments without the need to authenticating again.  
 

@@ -47,6 +47,7 @@
     * [Bank Transfer Payments](api-documentation/payins-api-reference/payments/bank-transfer-payments.md)
     * [PayLater Payments](api-documentation/payins-api-reference/payments/paylater-payments.md)
     * [Wallet Payments](api-documentation/payins-api-reference/payments/wallet-payments.md)
+    * [PIX Payments](api-documentation/payins-api-reference/payments/pix-payments.md)
   * [Refunds](api-documentation/payins-api-reference/refunds.md)
   * [Orders](api-documentation/payins-api-reference/orders.md)
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
