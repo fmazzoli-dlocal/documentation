@@ -560,7 +560,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 |  | 5007 | Amount exceeded. |
 |  | 5008 | Token not found or inactive. |
 |  | 5009 | Order id is duplicated. |
-|  | 5010 | Request timeout. |
+|  | 5010 | Method not available. |
 |  | 5013 | Unsupported operation. |
 |  | 5014 | User blacklisted. |
 |  | 5016 | Amount too low. |
