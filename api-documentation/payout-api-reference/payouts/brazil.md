@@ -119,7 +119,6 @@
 | beneficiary\_name | Max. 100 chars |
 | beneficiary\_lastname | Max. 100 chars |
 | country | BR |
-| bank\_code | See bank codes [here](brazil.md#bank-codes) |
 | amount | Max. 2 decimal numbers |
 | metadata | json format: { "pix\_key": &lt;key&gt;} Possible key values: "email"," phone","document\_id","bank\_account"  |
 | Key field | It will be mandatory the field that was mention on the metadata field as pix key. |
