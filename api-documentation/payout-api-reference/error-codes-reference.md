@@ -113,6 +113,7 @@ Different error codes types can be seen below:
 | 815  | ERROR\_REJECTED\_BY\_COMPLIANCE |
 | 816 | ERROR\_REJECTED\_BENEFICIARY\_BLACKLISTED |
 | 817 | REJECTED POST APPROVAL |
+| 819 | ERROR\_INCORRECT\_WALLET\_KEY |
 
 ## Purpose codes reference
 
