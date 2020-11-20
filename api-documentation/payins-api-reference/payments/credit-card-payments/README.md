@@ -65,7 +65,11 @@ URL where dlocal will send notifications associated to changes to this payment.
 
 {% api-method-parameter name="callback\_url" type="string" required=false %}
 URL where dlocal does the final redirect.  
-**Required only for `REDIRECT` payment method flow.**
+**Required only for `REDIRECT` payment flow.**
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="additional\_risk\_data" type="object" required=false %}
+Additional information for fraud prevention, see Additional Risk Data Object documentation.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

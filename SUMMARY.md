@@ -50,6 +50,7 @@
     * [PIX Payments](api-documentation/payins-api-reference/payments/pix-payments.md)
   * [Refunds](api-documentation/payins-api-reference/refunds.md)
   * [Orders](api-documentation/payins-api-reference/orders.md)
+  * [Fraud Prevention](api-documentation/payins-api-reference/fraud-prevention.md)
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
   * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](api-documentation/payout-api-reference/README.md)
