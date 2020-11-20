@@ -69,7 +69,7 @@ URL where dlocal does the final redirect.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="additional\_risk\_data" type="object" required=false %}
-Additional information for fraud prevention, see Additional Risk Data Object documentation.
+Additional information for fraud prevention, see the Fraud Prevention - Additional Risk Data Object documentation.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
