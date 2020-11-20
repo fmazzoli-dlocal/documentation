@@ -28,12 +28,12 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
 {% tab title="Additional Risk Data object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `submerchant` | Submerchant object | Information on the submerchant account |
-| `shipping` | Shipping object | Information on the shipping / alternative address |
-| `beneficiary` | Beneficiary object | Information on the beneficiary, if different from the payer |
-| `basket` | List of Item object | Information on the items purchased |
-| `payer` | Payer object | Additional information on the payer's user account |
-| `device` | Device object | Additional information on the device used for purchase |
+| `submerchant` | Submerchant object | Information on the submerchant account. Optional. |
+| `shipping` | Shipping object | Information on the shipping / alternative address. Optional. |
+| `beneficiary` | Beneficiary object | Information on the beneficiary, if different from the payer. Optional. |
+| `basket` | List of Item objects | Information on the items purchased. Optional. |
+| `payer` | Payer object | Additional information on the payer's user account. Optional. |
+| `device` | Device object | Additional information on the device used for purchase. Optional. |
 {% endtab %}
 
 {% tab title="Example Payment with Additional Risk Data object" %}
@@ -122,16 +122,16 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
 
 #### The Submerchant object
 
-For PSPs / merchants with sub-merchant accounts, the submerchant object may be used to provide more information on the specific sub-merchant for which the payment was issued. All properties are optional.
+For PSPs / merchants with sub-merchant accounts, the submerchant object may be used to provide more information on the specific sub-merchant for which the payment was issued.
 
 {% tabs %}
 {% tab title="Submerchant object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `merchant_reference` | String | The ID / reference of the sub-merchant account |
-| `name` | String | Sub-merchant name |
-| `website` | String | Sub-merchant website |
-| `industry` | Number  | Sub-merchant industry, see [industry codes list](fraud-prevention.md#industry-codes) |
+| `merchant_reference` | String | The ID / reference of the sub-merchant account. Optional. |
+| `name` | String | Sub-merchant name. Optional. |
+| `website` | String | Sub-merchant website. Optional. |
+| `industry` | Number  | Sub-merchant industry, see [industry codes list](fraud-prevention.md#industry-codes). Optional. |
 {% endtab %}
 
 {% tab title="Example Submerchant object" %}
@@ -148,19 +148,19 @@ For PSPs / merchants with sub-merchant accounts, the submerchant object may be u
 
 #### The Shipping object
 
-For merchants who handle separate Payment / Shipping addresses, the Shipping object may be used to specify the shipping address, and also to indicate whether the purchase has a physical delivery or not \(i.e. retail vs digital goods\). All properties are optional.
+For merchants who handle separate Payment / Shipping addresses, the Shipping object may be used to specify the shipping address, and also to indicate whether the purchase has a physical delivery or not \(i.e. retail vs digital goods\).
 
 {% tabs %}
 {% tab title="Shipping object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `address` | Address object | Represents the address, documented in this table |
-| `address.state` | String | State |
-| `address.city` | String | City |
-| `address.zip_code` | String | Zip code |
-| `address.street` | String | Street |
-| `address.number` | String | Street number |
-| `is_physical` | Boolean | True if a physical delivery to this address is involved \(i.e. for retail goods\) |
+| `address` | Address object | Represents the address, documented in this table. Optional. |
+| `address.state` | String | State. Optional. |
+| `address.city` | String | City. Optional. |
+| `address.zip_code` | String | Zip code. Optional. |
+| `address.street` | String | Street. Optional. |
+| `address.number` | String | Street number. Optional. |
+| `is_physical` | Boolean | True if a physical delivery to this address is involved \(i.e. for retail goods\). Optional. |
 {% endtab %}
 
 {% tab title="Example Shipping object" %}
@@ -181,16 +181,16 @@ For merchants who handle separate Payment / Shipping addresses, the Shipping obj
 
 #### The Beneficiary object
 
-For purchases where the beneficiary / recipient is not the payer \(e.g. for gifts of physical / virtual goods\), the Beneficiary object may be used to provide information on the product or service's recipient. All properties are optional.
+For purchases where the beneficiary / recipient is not the payer \(e.g. for gifts of physical / virtual goods\), the Beneficiary object may be used to provide information on the product or service's recipient.
 
 {% tabs %}
 {% tab title="Beneficiary object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `email` | String | Email address |
-| `name` | String | Name & surname |
-| `phone` | String | Phone number |
-| `document` | String | Document |
+| `email` | String | Email address. Optional. |
+| `name` | String | Name & surname. Optional. |
+| `phone` | String | Phone number. Optional. |
+| `document` | String | Document. Optional. |
 {% endtab %}
 
 {% tab title="Example Beneficiary object" %}
@@ -205,23 +205,23 @@ For purchases where the beneficiary / recipient is not the payer \(e.g. for gift
 {% endtab %}
 {% endtabs %}
 
-#### The Basket object
+#### The Item object
 
-The Basket object is a **list of Item objects**, used to provide information on the items purchased. All properties are optional.
+The `basket` property contains a **list of Item objects**, used to provide information on the items purchased.
 
 {% tabs %}
 {% tab title="Item object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `unit_price` | Number | Unit price |
-| `brand` | String | Product brand |
-| `category` | String | Product category |
-| `item_reference` | String | Item ID / Reference |
-| `upc` | String | Universal Product Code |
-| `manufacturer` | String | Product manufacturer |
-| `product_name` | String | Product or service name |
-| `quantity` | Number | Quantity of items purchased |
-| `size` | String | Product size \(e.g. S, M, L, XL\) |
+| `unit_price` | Number | Unit price. Optional. |
+| `brand` | String | Product brand. Optional. |
+| `category` | String | Product category. Optional. |
+| `item_reference` | String | Item ID / Reference. Optional. |
+| `upc` | String | Universal Product Code. Optional. |
+| `manufacturer` | String | Product manufacturer. Optional. |
+| `product_name` | String | Product or service name. Optional. |
+| `quantity` | Number | Quantity of items purchased. Optional. |
+| `size` | String | Product size \(e.g. S, M, L, XL\). Optional. |
 {% endtab %}
 
 {% tab title="Example Basket & Item object" %}
@@ -245,17 +245,17 @@ The Basket object is a **list of Item objects**, used to provide information on 
 
 #### The Payer object
 
-The Payer object within the Additional Risk Data object allows for providing additional information on the payer's user account. All properties are optional.
+The Payer object within the Additional Risk Data object allows for providing additional information on the payer's user account.
 
 {% tabs %}
 {% tab title="Payer object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `email_is_valid` | Boolean | Set to True if the payer's email has been validated |
-| `phone_is_valid` | Boolean | Set to True if the payer's phone number has been validated |
-| `account_creation_date` | String | Date of account creation in `YYYYMMDD` format |
-| `first_purchase_date` | String | Date of first successful purchase in `YYYYMMDD` format |
-| `is_positive` | Boolean | Set to True if this payer is considered as a positive user by the merchant, e.g. for regular customers with a good purchase history. |
+| `email_is_valid` | Boolean | Set to True if the payer's email has been validated. Optional. |
+| `phone_is_valid` | Boolean | Set to True if the payer's phone number has been validated. Optional. |
+| `account_creation_date` | String | Date of account creation in `YYYYMMDD` format. Optional. |
+| `first_purchase_date` | String | Date of first successful purchase in `YYYYMMDD` format. Optional. |
+| `is_positive` | Boolean | Set to True if this payer is considered as a positive user by the merchant, e.g. for regular customers with a good purchase history. Optional. |
 {% endtab %}
 
 {% tab title="Example Payer object" %}
@@ -273,15 +273,15 @@ The Payer object within the Additional Risk Data object allows for providing add
 
 #### The Device object
 
-The Device object is used to store information on the device \(i.e. laptop, smartphone\) used to make the purchase. All properties are optional.
+The Device object is used to store information on the device \(i.e. laptop, smartphone\) used to make the purchase.
 
 {% tabs %}
 {% tab title="Device object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `user_agent` | String | Browser's User Agent property |
-| `geolocation` | String | User's geolocation |
-| `locale` | String | Browser's locale |
+| `user_agent` | String | Browser's User Agent property. Optional. |
+| `geolocation` | String | User's geolocation. Optional. |
+| `locale` | String | Browser's locale. Optional. |
 {% endtab %}
 
 {% tab title="Example Device object" %}

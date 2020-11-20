@@ -71,7 +71,7 @@ URL where dlocal does the final redirect.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="additional\_risk\_data" type="object" required=false %}
-Additional information for fraud prevention, see Additional Risk Data Object documentation.
+Additional information for fraud prevention, see Fraud Prevention - Additional Risk Data Object documentation.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -127,7 +127,7 @@ Example Response
 | `user_reference` | String | Unique user id at the merchant side. Optional. |
 | `address` | [Address Object ](./#the-address-object) | User’s address. **Only required in India.** |
 | `ip` | String | User's IP address. Optional. |
-| `device_id` | String | User's unique device identifier. Optional. |
+| `device_id` | String | User's unique device identifier, for information on how to obtain the `device_id` see the [Device ID](../fraud-prevention.md#device-id) documentation. Optional. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
