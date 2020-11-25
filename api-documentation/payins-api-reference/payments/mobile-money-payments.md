@@ -24,8 +24,8 @@ Mobile money payments are available trough a DIRECT flow only and, as mentioned 
 There's a specific parameter that is particularly mandatory for **Ghana**. Find and example request/response after the first example.
 {% endhint %}
 
-{% hint style="warning" %}
-Sending `phone` is key so that the user can receive the push notification
+{% hint style="danger" %}
+Sending `phone` is mandatory so that the user can receive the push notification
 {% endhint %}
 
 {% tabs %}
@@ -101,6 +101,7 @@ Request Example
     "payer":{
         "name" : "David Otieno",
         "email" : "dotieno@example.com",
+        "phone": "+2544832695335",
         "document" : "+23353033315550",
         "user_reference": "12345",
         "address": {
