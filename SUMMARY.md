@@ -48,6 +48,7 @@
     * [PayLater Payments](api-documentation/payins-api-reference/payments/paylater-payments.md)
     * [Wallet Payments](api-documentation/payins-api-reference/payments/wallet-payments.md)
     * [PIX Payments](api-documentation/payins-api-reference/payments/pix-payments.md)
+    * [Mobile Money Payments](api-documentation/payins-api-reference/payments/mobile-money-payments.md)
   * [Refunds](api-documentation/payins-api-reference/refunds.md)
   * [Orders](api-documentation/payins-api-reference/orders.md)
   * [Fraud Prevention](api-documentation/payins-api-reference/fraud-prevention.md)
