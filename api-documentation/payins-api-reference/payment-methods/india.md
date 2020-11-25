@@ -119,7 +119,8 @@
       <td style="text-align:left">Wallet</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/PW.png&#x200B;</td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/PW.png">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/PW.png&#x200B;</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>NB</code>
