@@ -102,7 +102,7 @@ Request Example
         "name" : "David Otieno",
         "email" : "dotieno@example.com",
         "phone": "+2544832695335",
-        "document" : "+23353033315550",
+        "document" : "353033315550",
         "user_reference": "12345",
         "address": {
             "state"  : "Accra",
