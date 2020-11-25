@@ -16,11 +16,15 @@ The response will have the `PENDING` status until the user inputs the required P
 
 ![Example of mobile money push notification in Ghana](../../../.gitbook/assets/ghs-push-notification.png)
 
-### Mobile Money request \(for Kenya, Cameroon and Senegal\)
+### Mobile Money request
 
-
+Mobile money payments are available trough a DIRECT flow only and, as mentioned above, make sure you set`payment_method_id` _=_ `MW`. For a full list of country and currency codes, visit the [Country Reference page](../country-reference.md).
 
 {% hint style="info" %}
+There's a specific parameter that is particularly mandatory for **Ghana**. Find and example request/response after the first example.
+{% endhint %}
+
+{% hint style="warning" %}
 Sending `phone` is key so that the user can receive the push notification
 {% endhint %}
 
