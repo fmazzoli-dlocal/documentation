@@ -36,16 +36,16 @@ Example request
     "payment_method_flow": "DIRECT",
     "payment_method_id": "MW",
     "payer": {
-        "name": "Juan Gómez",
-        "email": "jgomez@example.com",
+        "name": "David Otieno",
+        "email": "dotieno@example.com",
         "phone": "+2544832695335",
         "document": "27183121",
         "address": {
             "country": "KE",
-            "state": "Santa Fe",
-            "city": "Rosario",
+            "state": "Nairobi",
+            "city": "Nairobi",
             "zip_code": "2341",
-            "street": "Av. de las Acacias",
+            "street": "Lusaka Rd",
             "number": "5940"
         }
     },
@@ -95,8 +95,8 @@ Request Example
     "payment_method_id" : "MW",
     "payment_method_flow" : "DIRECT",
     "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
+        "name" : "David Otieno",
+        "email" : "dotieno@example.com",
         "document" : "+23353033315550",
         "user_reference": "12345",
         "address": {
