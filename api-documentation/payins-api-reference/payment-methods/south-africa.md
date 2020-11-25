@@ -29,7 +29,8 @@
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left"><code>DIRECT REDIRECT</code>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/VI.png</td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -42,7 +43,8 @@
       <td style="text-align:left">Credit Card</td>
       <td style="text-align:left"><code>DIRECT REDIRECT</code>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/MC.png</td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -59,7 +61,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;</td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/VD.png">https://pay.dlocal.com/views/2.0/images/payments/VD.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -76,7 +78,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;</td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>IO</code>
@@ -88,7 +90,8 @@
       <td style="text-align:left">Bank transfer</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/VS.png">https://pay.dlocal.com/views/2.0/images/payments/VS.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
