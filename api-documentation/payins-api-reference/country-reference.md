@@ -59,6 +59,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Cameroon</td>
+      <td style="text-align:left"><code>CM</code>
+      </td>
+      <td style="text-align:left"><code>XAF</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">Chile</td>
       <td style="text-align:left"><code>CL</code>
       </td>
@@ -102,6 +112,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Dominican Republic</td>
+      <td style="text-align:left"><code>DO</code>
+      </td>
+      <td style="text-align:left"><code>DOP</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">Ecuador</td>
       <td style="text-align:left"><code>EC</code>
       </td>
@@ -120,6 +140,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">ID</td>
       <td style="text-align:left">14 digits</td>
       <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Ghana</td>
+      <td style="text-align:left"><code>GH</code>
+      </td>
+      <td style="text-align:left"><code>GHS</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">India</td>
@@ -155,6 +185,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">NIK</td>
       <td style="text-align:left">16 digits</td>
       <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Kenya</td>
+      <td style="text-align:left"><code>KE</code>
+      </td>
+      <td style="text-align:left"><code>KES</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">Mexico</td>
@@ -205,6 +245,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">DNI</td>
       <td style="text-align:left">between 8 to 9 digits</td>
       <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Senegal</td>
+      <td style="text-align:left"><code>SN</code>
+      </td>
+      <td style="text-align:left"><code>XOF</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">South Africa</td>
