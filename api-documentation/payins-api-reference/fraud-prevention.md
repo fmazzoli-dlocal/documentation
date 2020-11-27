@@ -337,7 +337,7 @@ export function checksum(s) {
 | 2 | Antivirus |
 | 3 | Delivery |
 | 4 | Donations |
-| 5 | Educations |
+| 5 | Education |
 | 6 | Gaming |
 | 7 | Healthcare |
 | 8 | Hosting |
