@@ -358,6 +358,7 @@ export function checksum(s) {
 | 23 | Transport |
 | 24 | Travel |
 | 25 | Wallet |
+| 26 | Dating |
 | 999 | Others |
 
 
