@@ -172,3 +172,40 @@ curl -X POST \
 | `provider_logo` | String | URL of the logo of the company/bank that is creating the ticket. |
 | `image_url` | String | URL of the full version of the ticket.  |
 
+### Cancel a Cash Payment
+
+Some of our **DIRECT APMs** tickets can be cancelled by merchants just giving the following instruction through the API: [https://api.dlocal.com/payments/{payment\_id}/cancel](https://api.dlocal.com/payments/id_payment/cancel%20)
+
+{% tabs %}
+{% tab title="Example Request" %}
+####  <a id="example-request-3"></a>
+
+```bash
+https://api.dlocal.com/payments/D-4-f1500792-7527-4a0e-86ef-3a9472b63f21/cancel
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+
+
+```bash
+{
+    "id": "D-4-f1500792-7527-4a0e-86ef-3a9472b63f21",
+    "amount": 1000,
+    "currency": "MXN",
+    "payment_method_id": "OX",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "MX",
+    "created_date": "2020-09-14T19:11:48.000+0000",
+    "status": "CANCELLED",
+    "status_detail": "The payment was cancelled.",
+    "status_code": "400",
+    "order_id": "23796c17-2cc5-4fbb-86b5-10da0859a282",
+    "description": "test",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
