@@ -149,18 +149,22 @@ Examples:
 * \*\*\*\*[**Argentina**](argentina.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Bolivia**](bolivia.md)\*\*\*\*
 * \*\*\*\*[**Brazil**](brazil.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**Cameroon**](https://docs.dlocal.com/api-documentation/payins-api-reference/payment-methods/cameroon)\*\*\*\*
 * \*\*\*\*[**Chile**](chile.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**China**](chile.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Colombia**](colombia.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*
 * \*\*\*\*[**Egypt**](egypt.md)\*\*\*\*
+* \*\*\*\*[**Ghana**](https://docs.dlocal.com/api-documentation/payins-api-reference/payment-methods/ghana)\*\*\*\*
 * \*\*\*\*[**India**](india.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Indonesia**](indonesia.md)\*\*\*\*
+* \*\*\*\*[**Kenya**](https://docs.dlocal.com/api-documentation/payins-api-reference/payment-methods/kenya)\*\*\*\*
 * \*\*\*\*[**Mexico**](mexico.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Morocco**](morocco.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Nigeria**](nigeria.md)\*\*\*\*
 * \*\*\*\*[**Paraguay**](paraguay.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**Senegal**](https://docs.dlocal.com/api-documentation/payins-api-reference/payment-methods/senegal)\*\*\*\*
 * \*\*\*\*[**South Africa**](south-africa.md)\*\*\*\*
 * \*\*\*\*[**Turkey**](turkey.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Uruguay**](uruguay.md#payment-methods-available)\*\*\*\*
