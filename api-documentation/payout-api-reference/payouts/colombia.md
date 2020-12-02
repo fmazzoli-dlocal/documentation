@@ -110,7 +110,7 @@
 "login":"1n234n56",
 "pass":"HolAc123o",
 "external_id":"1234567812345678b",
-"document_id":"123.456.789-10",
+"document_id":"901.458.652-7",
 "country":"CO",
 "bank_branch":"",
 "bank_account":"1234567891",
@@ -170,8 +170,8 @@
       <td style="text-align:left">numeric</td>
       <td style="text-align:left">Last digit</td>
       <td style="text-align:left">
-        <p>800.198.456-1</p>
-        <p>8001984561</p>
+        <p>901.458.652-7</p>
+        <p>901458.6527</p>
       </td>
     </tr>
   </tbody>
