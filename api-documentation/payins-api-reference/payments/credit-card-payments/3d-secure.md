@@ -311,6 +311,9 @@ curl -X POST \
         "brand": "VI",
         "last4": "1111"
     },
+    "three_dsecure": {
+        "eci" : "05",
+    },
     "created_date": "2018-12-26T20:26:09.000+0000",
     "approved_date": "2018-12-26T20:26:09.000+0000",
     "status": "AUTHORIZED",
