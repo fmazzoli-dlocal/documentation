@@ -126,7 +126,7 @@ A commentary for this payout
 -Max. 200 chars-
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="currency" type="string" required=false %}
+{% api-method-parameter name="currency" type="string" required=true %}
 Each country accepts USD and local currency.  
 **Default: USD**  
 -Length: 3 chars-
