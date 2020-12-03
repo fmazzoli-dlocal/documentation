@@ -333,7 +333,7 @@ Submit a payment and choose whether you want to force the user to go through a 3
 To force a 3D-Secure authenticated payment, you need to create a payment with the parameter `force` = `TRUE` within the `three_dsecure` object.
 
 {% hint style="warning" %}
-Optional 3D-Secure  is only available in Mexico at the moment
+Optional 3D-Secure  is available in Mexico, Turkey and Egypt at the moment
 {% endhint %}
 
 ### Example Authorization with Optional 3D-Secure 
