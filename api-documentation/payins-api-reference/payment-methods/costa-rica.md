@@ -65,7 +65,8 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/tucan.png">https://static.dlocal.com/images/providers/tucan.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CX</code>
@@ -77,7 +78,8 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/banco_nacional_costa_rica.png">https://static.dlocal.com/images/providers/banco_nacional_costa_rica.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
