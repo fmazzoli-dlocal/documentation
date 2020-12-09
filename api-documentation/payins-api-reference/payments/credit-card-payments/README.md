@@ -4,7 +4,7 @@ For credit card payments you can use the card information only if you business i
 For recurring payments, first [save the card](https://docs.dlocal.com/api-documentation/payins-api-reference/saving-cards#create-a-card), and then use the `card_id` to charge the card.
 
 {% hint style="info" %}
-**Important**: If you are making a payment **with credit card information**, you need to use the following endpoint:   
+**Important**: If you are making a payment **with credit card information** or a ****[**Google Pay**™ **token**](../../../../guides/google-pay.md), you need to use the following endpoint:   
 h**ttps://api.dlocal.com/secure\_payments**
 
 Card payments with a `card_id` or `token` should use the endpoint: **https://api.dlocal.com/payments**

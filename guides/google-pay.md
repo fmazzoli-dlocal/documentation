@@ -66,7 +66,7 @@ For supported authentication methods use**`PAN_ONLY`**
 
 ### Step 2 - dLocal Integration \(Backend\)
 
-You will need to submit the [standard payment request](https://docs.dlocal.com/api-documentation/payins-api-reference/payments) using the following parameter values: 
+You will need to submit a [standard payment request](https://docs.dlocal.com/api-documentation/payins-api-reference/payments) via the **https://api.dlocal.com/secure\_payments** endpoint using the following parameter values: 
 
 * **`payment_method_id`** should be **`CARD`**
 * **`card.gpay_token`** should be the **json** obtained in the Google Integration step. It is important to send a json object and not a string in this parameter.
