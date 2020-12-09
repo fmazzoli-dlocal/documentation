@@ -12,7 +12,7 @@ The Payout status can take one of the following values:
 
 | Code | Description | Description |
 | :--- | :--- | :--- |
-| 0 | Pending | The payout is received to be processed in the next cut off |
+| 0 | Received | The payout is received to be processed in the next cut off |
 | 1 | Completed | The payout was completed |
 | 2 | Cancelled | The payout was cancelled |
 | 3 | Rejected | The payout was rejected by the bank |
