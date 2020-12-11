@@ -27,11 +27,11 @@ Transaction amount \(in the currency entered in the field `currency`\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-Three-letter ISO-4217 currency code, in uppercase.
+Three-letter ISO-4217 currency code, in uppercase. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_id" type="string" required=true %}
-Always send **`CARD`** for card payments.
+Always send `CARD` for card payments.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
@@ -53,6 +53,10 @@ Card Object
 
 {% api-method-parameter name="order\_id" type="string" required=true %}
 ID given by the merchant in their system.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="original\_order\_id" type="string" required=false %}
+For payment retries. ID given by the merchant in their system for the original transaction that was rejected and needs to be retried.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="description" type="string" required=false %}

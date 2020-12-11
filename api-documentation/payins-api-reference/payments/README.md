@@ -27,12 +27,12 @@ Three-letter ISO-4217 currency code, in uppercase.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_id" type="string" required=false %}
-Payment method code chosen to make the payment, or the keyword `CARD`  
+Payment method code chosen to make the payment, or the keyword `CARD`   
 **Required for** `DIRECT` **payment method flow.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payment\_method\_flow" type="string" required=true %}
-Payment method flow, can be `DIRECT` or `REDIRECT`
+Payment method flow, can `DIRECT` or `REDIRECT`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="country" type="string" required=true %}
@@ -40,21 +40,25 @@ User's country code. ISO 3166-1 alpha-2 code.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payer" type="object" required=true %}
-Payer Object
+Payer Object.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=false %}
 Card Object  
-**Required only for** `CARD` **payment type.**
+**Required only for `CARD` payment type.**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direct\_debit" type="object" required=false %}
-Direct Debit Object  
-**Required only for** `DIRECT_DEBIT` **payment type.**
+Direct Debit Object.   
+Required only for `DIRECT_DEBIT` payment type
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="order\_id" type="string" required=true %}
 ID given by the merchant in their system.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="original\_order\_id" type="string" required=false %}
+For payment retries. ID given by the merchant in their system for the original transaction that was rejected and needs to be retried.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="description" type="string" required=false %}
@@ -106,6 +110,102 @@ Example Response
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.dlocal.com" path="/payments" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="amount" type="number" required=true %}
+Transaction amount \(in the currency entered in the field
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.dlocal.com" path="/payments" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="amount" type="number" required=true %}
+Transaction amount \(in the currency entered in the field `currency`\)
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://api.dlocal.com" path="/payments" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-body-parameters %}
+{% api-method-parameter name="amount" type="number" required=true %}
+Transaction amount \(in the currency entered in the field `currency`\)
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
