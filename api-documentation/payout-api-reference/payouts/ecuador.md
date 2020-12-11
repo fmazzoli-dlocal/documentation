@@ -73,8 +73,7 @@
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">See bank account validations<a href="ecuador.md#bank-codes"> here</a>
-      </td>
+      <td style="text-align:left">Max. 30 chars</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>account_type</b>
