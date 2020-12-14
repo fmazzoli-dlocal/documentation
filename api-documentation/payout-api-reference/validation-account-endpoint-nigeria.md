@@ -7,7 +7,7 @@ description: This service is only available for Nigeria
 **Sandbox environment:**[**https://sandbox.dlocal.com/payouts/validations**  
 ](https://sandbox.dlocal.com/payouts/validations)**Production environment:** [**https://api.dlocal.com/payouts/validations**](https://api.dlocal.com/payouts/validations)
 
-
+**Headers**
 
 | **Header** | **Type** | **Description** |
 | :--- | :--- | :--- |
