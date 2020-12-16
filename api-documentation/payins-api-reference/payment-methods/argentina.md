@@ -503,12 +503,12 @@ E**xample Response**
 {% hint style="success" %}
 **User Interface Tips**
 
-* Separate the **ticket.number** this way: 4 digits - 4 digits. It is easier for users to dictate it to cashiers.
+* Separate the **ticket.number** every 4 digits. It is easier for users to dictate it to cashiers.
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
 * Make sure that the **expiration date** is clear and visible enough. In Argentina people use the **dd/mm/yyyy** format.
 * Make it clear for the user that their payment will be **credited immediately**. This brings confidence and a sense of security that helps conversion rates.
-* Include **payment instructions**. Although most users are familiarized with Pago Fácil payment method, it is a good practice to help those who are not used to it. In the image above there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
-* A **Store locator** is a helpful feature. Just link it to [google.com/maps/search/pagofacil/](https://www.google.com/maps/search/pagofacil)
+* Include **payment instructions**. Although most users are familiarized with Pago Fácil and Rapi Pago, it is a good practice to help those who are not used to it. In the image above there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
+* A **Store locator** is a helpful feature. Just link it to [google.com/maps/search/&lt;payment-method-name&gt;/](https://www.google.com/maps/search/pagofacil)
 * A **Save button** helps users to have their ticket always on their phone, making it needless to take notes or keep the browser opened.
 * A **Print button** is useful for some users that need to have their tickets printed.
 {% endhint %}
