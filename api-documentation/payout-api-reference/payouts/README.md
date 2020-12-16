@@ -153,7 +153,7 @@ To be provided if the notification URL is different from the notification URL de
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="on\_hold" type="boolean" required=false %}
-If the merchant wants to hold the payout and set it to process later through the merchants panel  
+If the merchant wants to hold the payout and set it to process later through the merchants panel. This functionality is not available for instant payouts flow such as Nigeria.  
 **Default: 0**  
 -Boolean 1 or 0-
 {% endapi-method-parameter %}
