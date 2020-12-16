@@ -423,6 +423,81 @@ curl -X POST \
 {% endtab %}
 {% endtabs %}
 
+### Rapi Pago
+
+#### Example
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example Request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
+
+#### Example Request Body
+
+```c
+{
+"amount": 10,
+"currency": "ARS",
+"country": "AR",
+"payment_method_id": "RP",
+"payment_method_flow": "DIRECT",
+"payer": {
+      "name": "Juan Garcia",
+      "email": "juangarcia@dlocal.com",
+      "document": "35676910"
+},
+"order_id": "n7ky12VwBE",
+"notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+E**xample Response**
+
+```csharp
+{
+    "id": "D-4-91097d1b-5a54-4472-43ca-bcfb80676231",
+    "amount": 10,
+    "currency": "ARS",
+    "payment_method_id": "RP",
+    "payment_method_type": "TICKET",
+    "payment_method_flow": "DIRECT",
+    "country": "AR",
+    "ticket": {
+        "type": "CUSTOM",
+        "number": "173200902757",
+        "expiration_date": "2020-02-25T02:59:00.000+0000",
+        "id": "214100001000200550000004265230000000000011",
+        "barcode": "214100001000200550000004265230000000000011",
+        "provider_name": "rapipago",
+        "provider_logo": "https://pay.dlocal.com/views/2.0/images/payments/RP.png",
+        "image_url": "https://pay.dlocal.com/gmf/payments/M-6b90a432-5290-11ea-abfe-5d29dfbtrf58",
+        "amount": 10,
+        "currency": "ARS"
+    },
+    "created_date": "2020-02-18T20:51:22.000+0000",
+    "status": "PENDING",
+    "status_detail": "The payment is pending.",
+    "status_code": "100",
+    "order_id": "f7a32fd5-9afd-446e-be7f-8534729mf685",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ![Pago F&#xE1;cil UI built with the information in the example above.](../../../.gitbook/assets/screen-shot-2020-02-20-at-10.06.46-am.png)
 
 {% hint style="success" %}
