@@ -503,6 +503,8 @@ curl -X POST \
 {% hint style="success" %}
 **User Interface Tips**
 
+Rapi Pago and Pago Fácil use the same UI, so the following tips apply to both of them.
+
 * Separate the **ticket.number** every 4 digits. It is easier for users to dictate it to cashiers.
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
 * Make sure that the **expiration date** is clear and visible enough. In Argentina people use the **dd/mm/yyyy** format.
