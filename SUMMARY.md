@@ -102,7 +102,6 @@
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
 * [Guides](guides/guides.md)
-* [Refunds](guides/refunds.md)
 
 ## Other <a id="undefined"></a>
 
