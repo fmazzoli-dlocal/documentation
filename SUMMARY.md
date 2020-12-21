@@ -83,6 +83,7 @@
   * [Cancel payout](api-documentation/payout-api-reference/cancel-payout.md)
   * [Currency exchange](api-documentation/payout-api-reference/get-exchange-rate.md)
   * [Notification parameters](api-documentation/payout-api-reference/notification-parameters.md)
+  * [Payout Flows](api-documentation/payout-api-reference/payout-flows.md)
   * [API codes](api-documentation/payout-api-reference/error-codes-reference.md)
 
 ## Products

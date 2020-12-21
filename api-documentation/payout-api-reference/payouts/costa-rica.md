@@ -90,7 +90,7 @@
 "pass":"HolAc123o",
 "external_id":"1234567812345678b",
 "document_id":"123456789",
-"document_type":"CI"
+"document_type":"CI",
 "country":"CR",
 "bank_account":"12345678912345678",
 "amount":"2000.00",
@@ -106,7 +106,7 @@
 "extra_info":"",
 "bank_city":"",
 "bank_branch_name":"",
-"purpose":"ISPAYR",
+"purpose":"ISPAYR"
 }
 ```
 

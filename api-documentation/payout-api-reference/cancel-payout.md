@@ -6,7 +6,7 @@ Cancel payout
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to cancel a payout. Note that **only payouts with 'Pending' status** can be cancelled.
+This endpoint allows you to cancel a payout. Note that **only payouts with 'Received' status** can be cancelled.
 {% endapi-method-description %}
 
 {% api-method-spec %}
