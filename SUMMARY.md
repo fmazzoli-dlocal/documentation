@@ -32,6 +32,7 @@
     * [Panama](api-documentation/payins-api-reference/payment-methods/panama.md)
     * [Paraguay](api-documentation/payins-api-reference/payment-methods/paraguay.md)
     * [Peru](api-documentation/payins-api-reference/payment-methods/peru.md)
+    * [Dominican Republic](api-documentation/payins-api-reference/payment-methods/dominican-republic.md)
     * [Senegal](api-documentation/payins-api-reference/payment-methods/senegal.md)
     * [South Africa](api-documentation/payins-api-reference/payment-methods/south-africa.md)
     * [Turkey](api-documentation/payins-api-reference/payment-methods/turkey.md)
@@ -100,6 +101,8 @@
 * [PCI Compliance](guides/pci-compliance.md)
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
+* [Guides](guides/guides.md)
+* [Refunds](guides/refunds.md)
 
 ## Other <a id="undefined"></a>
 
