@@ -314,3 +314,7 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 | `429 Too many requests` | 6000 | Too many requests to the API. |
 | `500 Internal Server Error` | 7000 | Failed to process the request. |
 
+**Refunds Generic Flow** 
+
+![](../../.gitbook/assets/generic-refund-flow-2-.png)
+
