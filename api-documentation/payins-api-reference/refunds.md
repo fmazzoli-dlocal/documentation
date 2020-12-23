@@ -316,5 +316,5 @@ All the errors are returned with appropriate HTTP status code, 4XX or 5XX. The f
 
 ### Refunds Generic Flow
 
-![](../../.gitbook/assets/generic-refund-flow-2-.png)
+![](../../.gitbook/assets/generic-refund-flow-3-.png)
 
