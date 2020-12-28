@@ -152,6 +152,23 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MG.png">https://pay.dlocal.com/views/2.0/images/payments/MG.png</a>&#x200B;</td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Mach</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>MH</code>
+      </td>
+      <td style="text-align:left">Prepaid Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>SP</code>
       </td>
       <td style="text-align:left">Servipag</td>
