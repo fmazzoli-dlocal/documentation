@@ -236,7 +236,7 @@ These are the values the **bank\_code parameter** can take in Brazil.
 | Citibank N.A. | 477 |
 | Confederacao Nacional das Cooperativas Centrais Unicreds | 136 |
 | Cooperativa Central de Credito Urbano - CECRED | 085 |
-| HSBC Bank Brasil S.A. - Banco Multiplo | 399 |
+| Kirton Bank S.A. - Banco Multiplo | 399 |
 | Itau Unibanco S.A. | 341 |
 | Nu Pagamentos \(Nubank\) | 260 |
 | Pagseguro Internet S.A | 290 |
