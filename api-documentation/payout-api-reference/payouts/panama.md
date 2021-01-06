@@ -120,5 +120,23 @@ These are the values the **bank\_code parameter** can take in Chile
 | BANCO PICHINCHA PANAMA | 151 |
 | BANCO DELTA | 156 |
 | BANCO LAFISE | 157 |
-|  |  |
+| BANESCO | 158 |
+| CAPITAL BANK | 159 |
+| BANISI | 161 |
+| MERCANTIL BANK | 163 |
+| BBP BANK | 165 |
+| PRIVAL BANK | 167 |
+| UNI BANK & TRUST, INC. | 170 |
+| BANCO FICOHSA | 172 |
+| BANCOLOMBIA | 175 |
+| BI-BANK | 178 |
+| COOPEDUC | 250 |
+| COOESAN | 251 |
+| CACECHI | 252 |
+| COEDUCO | 253 |
+| COOPEVE | 254 |
+| COOPERATIVA CRISTOBAL | 500 |
+| EDIOACC | 501 |
+| ECASESO | 502 |
+| COOPRAC, R.L. | 503 |
 
