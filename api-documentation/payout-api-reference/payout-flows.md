@@ -6,5 +6,5 @@ description: >-
 
 # Payout Flows
 
-![](../../.gitbook/assets/copy-of-payouts-flows-2-.png)
+![](../../.gitbook/assets/payouts-flows-2-.png)
 
