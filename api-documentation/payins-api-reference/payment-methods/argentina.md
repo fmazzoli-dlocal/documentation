@@ -35,7 +35,7 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VS.png</td>
+      <td style="text-align:left">&#x200B;https://static.dlocal.com/views/2.0/images/payments/VS.png</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PF</code>
