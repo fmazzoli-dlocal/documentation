@@ -197,6 +197,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left"></td>
     </tr>
     <tr>
+      <td style="text-align:left">Malaysia</td>
+      <td style="text-align:left"><code>MY</code>
+      </td>
+      <td style="text-align:left"><code>MYR</code>
+      </td>
+      <td style="text-align:left">NRIC</td>
+      <td style="text-align:left">12 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Mexico</td>
       <td style="text-align:left"><code>MX</code>
       </td>
@@ -247,6 +257,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Philippines</td>
+      <td style="text-align:left"><code>PH</code>
+      </td>
+      <td style="text-align:left"><code>PHP</code>
+      </td>
+      <td style="text-align:left">PSN</td>
+      <td style="text-align:left">12 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Senegal</td>
       <td style="text-align:left"><code>SN</code>
       </td>
@@ -284,6 +304,16 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left">CI</td>
       <td style="text-align:left">between 6 to 8 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Vietnam</td>
+      <td style="text-align:left"><code>VN</code>
+      </td>
+      <td style="text-align:left"><code>VND</code>
+      </td>
+      <td style="text-align:left">VNID</td>
+      <td style="text-align:left">9 or 12 digits</td>
       <td style="text-align:left">Yes</td>
     </tr>
   </tbody>

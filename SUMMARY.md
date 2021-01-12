@@ -27,16 +27,19 @@
     * [India](api-documentation/payins-api-reference/payment-methods/india.md)
     * [Indonesia](api-documentation/payins-api-reference/payment-methods/indonesia.md)
     * [Kenya](api-documentation/payins-api-reference/payment-methods/kenya.md)
+    * [Malaysia](api-documentation/payins-api-reference/payment-methods/malaysia.md)
     * [Mexico](api-documentation/payins-api-reference/payment-methods/mexico.md)
     * [Morocco](api-documentation/payins-api-reference/payment-methods/morocco.md)
     * [Nigeria](api-documentation/payins-api-reference/payment-methods/nigeria.md)
     * [Panama](api-documentation/payins-api-reference/payment-methods/panama.md)
     * [Paraguay](api-documentation/payins-api-reference/payment-methods/paraguay.md)
     * [Peru](api-documentation/payins-api-reference/payment-methods/peru.md)
+    * [Philippines](api-documentation/payins-api-reference/payment-methods/philippines.md)
     * [Senegal](api-documentation/payins-api-reference/payment-methods/senegal.md)
     * [South Africa](api-documentation/payins-api-reference/payment-methods/south-africa.md)
     * [Turkey](api-documentation/payins-api-reference/payment-methods/turkey.md)
     * [Uruguay](api-documentation/payins-api-reference/payment-methods/uruguay.md)
+    * [Vietnam](api-documentation/payins-api-reference/payment-methods/vietnam.md)
   * [Payments](api-documentation/payins-api-reference/payments/README.md)
     * [Credit Card Payments](api-documentation/payins-api-reference/payments/credit-card-payments/README.md)
       * [Authorization and Capture](api-documentation/payins-api-reference/payments/credit-card-payments/authorization-and-capture.md)
@@ -104,6 +107,7 @@
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
 * [Guides](guides/guides.md)
+* [Lightspeed](guides/lightspeed.md)
 
 ## Other <a id="undefined"></a>
 
