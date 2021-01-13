@@ -31,7 +31,11 @@
       <td style="text-align:left"><code>VI</code>
       </td>
       <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left"><code>REDIRECT</code>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
       </td>
       <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VI.png&#x200B;</td>
     </tr>
@@ -44,7 +48,11 @@
       <td style="text-align:left"><code>MC</code>
       </td>
       <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left"><code>REDIRECT</code>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
       </td>
       <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/MC.png&#x200B;</td>
     </tr>
@@ -84,4 +92,6 @@
     </tr>
   </tbody>
 </table>
+
+
 
