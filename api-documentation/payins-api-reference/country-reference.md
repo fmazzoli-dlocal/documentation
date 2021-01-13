@@ -119,7 +119,7 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left">ID</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">No</td>
     </tr>
     <tr>
       <td style="text-align:left">Ecuador</td>
