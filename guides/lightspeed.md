@@ -2,7 +2,9 @@
 
 
 
-1. Login: through the admin URL [http://dlocal.shoplightspeed.com/admin](http://dlocal.shoplightspeed.com/admin)
+### 1. Login and locate 'Payment provider' menu
+
+Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlocal.shoplightspeed.com/admin)
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.06.53-pm.png)
 
