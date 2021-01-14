@@ -8,11 +8,11 @@ Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlo
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.06.53-pm.png)
 
-2. Settings: Locate the Settings link in the menu
+Locate the `Settings` link in the menu
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.07.27-pm.png)
 
-3. Payment providers: Select Payment providers under Payment Settings
+Payment providers: Select `Payment providers` under `Payment Settings`
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.07.42-pm.png)
 
@@ -20,7 +20,7 @@ Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlo
 
 dLocal will be listed as payment provider in Mexico:
 
-![](../.gitbook/assets/screen-shot-2020-12-10-at-2.09.18-pm.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-4.56.27-pm.png)
 
 ### 3. Grant access to dLocal
 
