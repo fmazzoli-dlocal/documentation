@@ -16,15 +16,21 @@ Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlo
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.07.42-pm.png)
 
-4. Select dLocal: dLocal will be listed as payment provider
+### 2. Select dLocal as preferred payment provider
+
+dLocal will be listed as payment provider in Mexico:
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.09.18-pm.png)
 
-5. Access permit: Accept dLocal and lightbox access request
+### 3. Grant access to dLocal
+
+Dialogue like the one shown below will be displayed for you grant access: 
 
 ![](../.gitbook/assets/captura-de-pantalla-2020-12-09-a-la-s-12.10.30.png)
 
-7. Instructions page. Redirect to a page with instructions, asking:
+### 4. Send application email 
+
+After granting access you will be redirected to a page with instructions, asking you to send an email to lightspeed@dlocal.com:
 
 * Store Name
 * Store URL
@@ -33,5 +39,20 @@ Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlo
 
 ![](../.gitbook/assets/captura-de-pantalla-2020-12-09-a-la-s-12.21.00.png)
 
+#### 4.1 Where to find the Store number?
+
+Click on the store URL at the top-left of your screen to reach the store listing as shown in the image below. There you will find your store's number:
+
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-3.01.23-pm.png)
+
+### 5. Sign the documents
+
+After sending your application email, you will receive an email response from dLocal, with two files attached: Terms & Conditions and KYC \(Know your Customer\).
+
+Please sign them and returning back to the same email address.
+
+### 6. Wait for the setup confirmation
+
+After 3 to 7 days you’ll receive an email from dLocal confirming that the store is ready to process payments in Mexico  
+
 
