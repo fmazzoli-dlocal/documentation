@@ -59,6 +59,8 @@ Please sign them and returning back to the same email address.
 
 ### 6. Wait for the setup confirmation
 
-After 3 to 7 days you’ll receive an email from dLocal confirming that the store is ready to process payments in Mexico  
+After 3 to 7 days you’ll receive an email from dLocal confirming that the store is ready to process payments in Mexico
+
+That's it! Time to sell :\)  
 
 
