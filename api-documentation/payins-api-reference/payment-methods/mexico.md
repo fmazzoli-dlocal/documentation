@@ -49,7 +49,8 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/SE.png">https://pay.dlocal.com/views/2.0/images/payments/SE.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left">IO</td>
+      <td style="text-align:left"><code>IO</code>
+      </td>
       <td style="text-align:left">STP</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
