@@ -24,9 +24,9 @@ dLocal will be listed as payment provider in Mexico:
 
 ### 3. Grant access to dLocal
 
-Dialogue like the one shown below will be displayed for you grant access: 
+Dialogue like the one shown below will be displayed for you grant access. You will need to input your login information once again:
 
-![](../.gitbook/assets/captura-de-pantalla-2020-12-09-a-la-s-12.10.30.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-5.00.53-pm.png)
 
 ### 4. Send application email 
 
