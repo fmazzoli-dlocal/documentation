@@ -10,13 +10,13 @@ description: >-
 
 ### 1. Login and locate 'Payment provider' menu
 
-Login through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlocal.shoplightspeed.com/admin)
+Start by logging in through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlocal.shoplightspeed.com/admin)
 
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.06.53-pm.png)
 
-Locate the `Settings` link in the menu
+Locate the `Settings` link in the menu on the left \(at the bottom\):
 
-![](../.gitbook/assets/screen-shot-2020-12-10-at-2.07.27-pm.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-5.14.31-pm.png)
 
 Payment providers: Select `Payment providers` under `Payment Settings`
 
