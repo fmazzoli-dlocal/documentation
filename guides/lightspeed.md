@@ -1,3 +1,9 @@
+---
+description: >-
+  Follow this guide to setup dLocal as the chosen payment provider in your
+  Lightspeed account in Mexico
+---
+
 # Lightspeed
 
 
