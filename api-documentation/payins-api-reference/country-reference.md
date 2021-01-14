@@ -118,7 +118,7 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left"><code>DOP</code>
       </td>
       <td style="text-align:left">ID</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">11 digits</td>
       <td style="text-align:left">No</td>
     </tr>
     <tr>
