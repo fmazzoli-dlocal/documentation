@@ -24,19 +24,19 @@ Payment providers: Select `Payment providers` under `Payment Settings`
 
 ### 2. Select dLocal as preferred payment provider
 
-dLocal will be listed as payment provider in Mexico:
+dLocal will be listed as payment provider in Mexico. Click on it.
 
 ![](../.gitbook/assets/screen-shot-2021-01-14-at-4.56.27-pm.png)
 
 ### 3. Grant access to dLocal
 
-Dialogue like the one shown below will be displayed for you grant access. You will need to input your login information once again:
+Dialogue like the one shown below will be displayed for you to grant access. You will need to input your login information once again, and click on `Grand access`
 
 ![](../.gitbook/assets/screen-shot-2021-01-14-at-5.00.53-pm.png)
 
 ### 4. Send application email 
 
-After granting access you will be redirected to a page with instructions, asking you to send an email to lightspeed@dlocal.com:
+After granting access you will be redirected to a page with instructions, asking you to send an email to lightspeed@dlocal.com \(as shown in the image below\), including the following data points:
 
 * Store Name
 * Store URL
@@ -49,7 +49,7 @@ After granting access you will be redirected to a page with instructions, asking
 
 Click on the store URL at the top-left of your screen to reach the store listing as shown in the image below. There you will find your store's number:
 
-![](../.gitbook/assets/screen-shot-2020-12-10-at-3.01.23-pm.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-5.20.10-pm.png)
 
 ### 5. Sign the documents
 
