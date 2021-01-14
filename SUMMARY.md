@@ -107,7 +107,7 @@
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
 * [Guides](guides/guides.md)
-* [Lightspeed](guides/lightspeed.md)
+* [Lightspeed setup](guides/lightspeed.md)
 
 ## Other <a id="undefined"></a>
 

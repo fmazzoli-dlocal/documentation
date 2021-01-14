@@ -4,7 +4,7 @@ description: >-
   Lightspeed account in Mexico
 ---
 
-# Lightspeed
+# Lightspeed setup
 
 
 
