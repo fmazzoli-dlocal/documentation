@@ -20,7 +20,7 @@ Locate the `Settings` link in the menu on the left \(at the bottom\):
 
 Payment providers: Select `Payment providers` under `Payment Settings`
 
-![](../.gitbook/assets/screen-shot-2020-12-10-at-2.07.42-pm.png)
+![](../.gitbook/assets/screen-shot-2021-01-14-at-7.04.45-pm.png)
 
 ### 2. Select dLocal as preferred payment provider
 
