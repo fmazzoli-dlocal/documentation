@@ -177,8 +177,16 @@
     <tr>
       <td style="text-align:left">Document</td>
       <td style="text-align:left">PASS</td>
-      <td style="text-align:left">12</td>
-      <td style="text-align:left">caracters</td>
+      <td style="text-align:left">up to 12</td>
+      <td style="text-align:left">characters</td>
+      <td style="text-align:left">No</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Document</td>
+      <td style="text-align:left">CE</td>
+      <td style="text-align:left">up to 12</td>
+      <td style="text-align:left">characters</td>
       <td style="text-align:left">No</td>
       <td style="text-align:left"></td>
     </tr>
