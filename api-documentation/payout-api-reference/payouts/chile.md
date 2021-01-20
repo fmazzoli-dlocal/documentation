@@ -131,20 +131,20 @@ These are the values the **bank\_code parameter** can take in Chile
 
 | Bank Name | Bank Code |
 | :--- | :--- |
-| Banco Bice | 028 |
-| Banco Consorcio | 055 |
-| Banco Crédito e Inversiones | 016 |
-| Banco de Chile | 001 |
+| Banco Bice | 28 |
+| Banco Consorcio | 55 |
+| Banco Crédito e Inversiones | 16 |
+| Banco de Chile | 01 |
 | Banco del Desarrollo | 507 |
-| Banco del Estado de Chile | 012 |
-| Banco Falabella | 051 |
-| Banco Internacional | 009 |
-| Banco Ripley | 053 |
-| Banco Santander - Santiago | 037 |
-| Banco Security | 049 |
+| Banco del Estado de Chile | 12 |
+| Banco Falabella | 51 |
+| Banco Internacional | 09 |
+| Banco Ripley | 53 |
+| Banco Santander - Santiago | 37 |
+| Banco Security | 49 |
 | BBVA Chile | 504 |
-| Deutsche Bank | 052 |
-| HSBC Bank | 031 |
-| Itau Corpbanca | 039 |
-| Scotiabank Chile | 014 |
+| Deutsche Bank | 52 |
+| HSBC Bank | 31 |
+| Itau Corpbanca | 39 |
+| Scotiabank Chile | 14 |
 
