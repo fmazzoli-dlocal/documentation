@@ -134,11 +134,11 @@ These are the values the **bank\_code parameter** can take in Chile
 | Banco Bice | 28 |
 | Banco Consorcio | 55 |
 | Banco Crédito e Inversiones | 16 |
-| Banco de Chile | 01 |
+| Banco de Chile | 1 |
 | Banco del Desarrollo | 507 |
 | Banco del Estado de Chile | 12 |
 | Banco Falabella | 51 |
-| Banco Internacional | 09 |
+| Banco Internacional | 9 |
 | Banco Ripley | 53 |
 | Banco Santander - Santiago | 37 |
 | Banco Security | 49 |
