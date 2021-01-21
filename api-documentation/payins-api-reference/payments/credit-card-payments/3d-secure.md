@@ -3,7 +3,7 @@
 ## Redirect 3D-Secure
 
 {% hint style="warning" %}
-Redirect 3D-Secure is mandatory in: India, Indonesia, Nigeria, South Africa, and Debit cards in Brazil. 
+Redirect 3D-Secure is mandatory in: India, Indonesia, Nigeria, South Africa, the Philippines and Debit cards in Brazil. 
 {% endhint %}
 
 In some regions 3D-Secure authentication might be mandatory. In such a scenario, the [Create a Payment](https://docs.dlocal.com/api-documentation/payins-api-reference/payments#create-a-payment) function will return a payment with `status` =`PENDING` \(`status_code` = `101` \). The Payment Object in the response will include a 3D-Secure object \(`three_dsecure`\), containing the `redirect_url` that the user needs to be redirected to so as to complete the authorization.
@@ -333,7 +333,7 @@ Submit a payment and choose whether you want to force the user to go through a 3
 To force a 3D-Secure authenticated payment, you need to create a payment with the parameter `force` = `TRUE` within the `three_dsecure` object.
 
 {% hint style="warning" %}
-Optional 3D-Secure  is available in Mexico, Turkey and Egypt at the moment
+Optional 3D-Secure  is available in Mexico, Turkey, Egypt, Nigeria, Dominican Republic, Indonesia, and Brazil \(For credit cards\).
 {% endhint %}
 
 ### Example Authorization with Optional 3D-Secure 
