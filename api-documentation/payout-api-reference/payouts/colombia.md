@@ -262,5 +262,5 @@ These are the values the bank\_code parameter can take in Colombia:
 | Financiera Juriscoop | 296 |
 | HSBC | 010 |
 | Itau | 014 |
-| Nequi | 0507 |
+| Nequi | 507 |
 
