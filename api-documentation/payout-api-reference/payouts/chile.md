@@ -147,4 +147,7 @@ These are the values the **bank\_code parameter** can take in Chile
 | HSBC Bank | 31 |
 | Itau Corpbanca | 39 |
 | Scotiabank Chile | 14 |
+| Coopeuch | 672 |
+
+
 
