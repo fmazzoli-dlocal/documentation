@@ -59,6 +59,7 @@
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
   * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](api-documentation/payout-api-reference/README.md)
+  * [Untitled](api-documentation/payout-api-reference/untitled.md)
   * [Environments](api-documentation/payout-api-reference/environments.md)
   * [Security](api-documentation/payout-api-reference/security.md)
   * [Submit a payout](api-documentation/payout-api-reference/payouts/README.md)
@@ -106,6 +107,7 @@
 * [PCI Compliance](guides/pci-compliance.md)
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
+* [Reporting](guides/reporting.md)
 * [Guides](guides/guides.md)
 * [Lightspeed setup](guides/lightspeed.md)
 
