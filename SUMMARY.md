@@ -108,8 +108,10 @@
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
 * [Reporting](guides/reporting.md)
-* [Guides](guides/guides.md)
 * [Lightspeed setup](guides/lightspeed.md)
+* [Guides](guides/guides/README.md)
+  * [Card Payments](guides/guides/card-payments.md)
+  * [Alternative Payment Methods \(APMs\)](guides/guides/alternative-payment-methods-apms.md)
 
 ## Other <a id="undefined"></a>
 
