@@ -33,11 +33,11 @@ This report will show the settlement **Payins** breakdown, including all **Clear
 
 **1. Daily Payouts Crossborder Model**
 
-You will have access to your daily **Payouts** cycle, including all approved/not approved transactions.  This report can be used exclusively by merchants that process Payouts by the Crossboder model only.  
+This report will show the daily **Payouts** cycle, including all approved/not approved transactions.  This report can be used exclusively by merchants that process Payouts by the Crossboder model only.  
 
 **2. Daily Payouts Local-To-Local Model** 
 
-You will have access to your daily **Payouts** cycle, including all approved/not approved transactions.  This report can be used exclusively by merchants that process Payouts by the Local-to-Local model only.  
+This report will show the daily **Payouts** cycle, including all approved/not approved transactions.  This report can be used exclusively by merchants that process Payouts by the Local-to-Local model only.  
 
 ## How Do I access these reports? 
 
