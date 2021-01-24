@@ -30,7 +30,7 @@ dLocal will be listed as payment provider in Mexico. Click on it.
 
 ### 3. Grant access to dLocal
 
-Dialogue like the one shown below will be displayed for you to grant access. You will need to input your login information once again, and click on `Grand access`
+Dialogue like the one shown below will be displayed for you to grant access. You will need to input your login information once again and click on `Grant access`
 
 ![](../.gitbook/assets/screen-shot-2021-01-14-at-5.00.53-pm.png)
 
