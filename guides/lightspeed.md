@@ -53,7 +53,7 @@ Click on the store URL at the top-left of your screen to reach the store listing
 
 ### 5. Sign the documents
 
-After sending your application email, you will receive an email response from dLocal, with two files attached: Terms & Conditions and KYC \(Know your Customer\).
+After sending your application email, you will receive an email response from dLocal, with two files attached: Terms & Conditions and KYC \(Know Your Customer\).
 
 Please sign them and returning back to the same email address.
 
