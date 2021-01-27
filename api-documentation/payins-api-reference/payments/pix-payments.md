@@ -122,3 +122,23 @@ Using the `DIRECT` method, the payment will have the `PENDING` status until the 
 {% endtab %}
 {% endtabs %}
 
+### Specific instructions:
+
+#### Mobile version instructions \(Direct flow\):
+
+#### Copy and paste flow
+
+1. As users who are paying using PIX with their mobile device will not be able to scan the QR code, the mobile flow is based on copying and pasting the `ticket.number` to the Bank Application in order to complete the payment.
+2. Please use `ticket.number` for the Copy and Paste experience, the label presented to the user should be '"Copia e Cola" \(The local and known term\).
+
+### Desktop version instructions 
+
+#### Adding a QR code to the PIX payment page \(Direct flow\)
+
+There are 2 ways of presenting the QR code to the user:
+
+1. Build a QR code using the `ticket.number` field
+2. Use the `ticket.barcode` field - It includes a Base64 encoded QR image.
+
+
+
