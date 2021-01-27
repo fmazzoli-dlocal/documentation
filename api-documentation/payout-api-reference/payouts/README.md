@@ -395,6 +395,7 @@ Please see each country below for specific country requirements and example requ
 * \*\*\*\*[**Nigeria**](nigeria.md)\*\*\*\*
 * \*\*\*\*[**Paraguay**](paraguay.md)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md)\*\*\*\*
+* **Turkey**
 * \*\*\*\*[**Korea**](korea.md)\*\*\*\*
 * \*\*\*\*[**Uruguay**](uruguay.md)\*\*\*\*
 
