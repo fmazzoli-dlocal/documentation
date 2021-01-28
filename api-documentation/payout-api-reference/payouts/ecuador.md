@@ -148,6 +148,14 @@
       <td style="text-align:left">Apply verification algorithm</td>
       <td style="text-align:left">1234567892221</td>
     </tr>
+    <tr>
+      <td style="text-align:left">Document</td>
+      <td style="text-align:left">PASS</td>
+      <td style="text-align:left">8 to 12</td>
+      <td style="text-align:left">Characters</td>
+      <td style="text-align:left">N/A</td>
+      <td style="text-align:left">123456789</td>
+    </tr>
   </tbody>
 </table>
 
