@@ -75,6 +75,19 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
+      <td style="text-align:left">Tarjeta Clave</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>CV</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
       <td style="text-align:left">Mastercard Debit</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
@@ -91,4 +104,6 @@
     </tr>
   </tbody>
 </table>
+
+
 

@@ -6,7 +6,11 @@ description: >-
 
 # Lightspeed setup
 
+### 1. Find the dLocal App page in the Lightspeed marketplace
 
+Click on 'Install'
+
+![](../.gitbook/assets/screen-shot-2021-01-28-at-3.12.37-pm.png)
 
 ### 1. Login and locate 'Payment provider' menu
 
