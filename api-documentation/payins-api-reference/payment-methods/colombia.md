@@ -365,6 +365,19 @@
       </td>
       <td style="text-align:left"></td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>NQ</code>
+      </td>
+      <td style="text-align:left">Nequi</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"><a href="https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/NQ.jpg">https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/NQ.jpg</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
