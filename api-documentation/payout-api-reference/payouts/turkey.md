@@ -30,3 +30,11 @@
 }
 ```
 
+
+
+### Bank account validations
+
+| _Validation_ | Type | Length | Type | Verification  |
+| :--- | :--- | :--- | :--- | :--- |
+| Bank account | IBAN | 26 | Characters | IBAN algorithm |
+
