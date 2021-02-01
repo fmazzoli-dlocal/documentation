@@ -127,7 +127,7 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"> <a href="https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/NQ.jpg">https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/NQ.jpg</a>
+      <td style="text-align:left"> <a href="https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/PV.jpeg">https://static-dlocal.s3-eu-west-1.amazonaws.com/images/providers/PV.jpeg</a>
       </td>
     </tr>
   </tbody>
