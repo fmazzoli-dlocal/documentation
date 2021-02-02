@@ -8,29 +8,13 @@ description: >-
 
 ### 1. Find the dLocal App page in the Lightspeed marketplace
 
-Click on 'Install'
+Find dLocal listed at [https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/](https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/).
+
+Click on 'Install'. If your are not logged in your Lightspeed account, you will be requested to do so. 
 
 ![](../.gitbook/assets/screen-shot-2021-01-28-at-3.12.37-pm.png)
 
-### 1. Login and locate 'Payment provider' menu
-
-Start by logging in through the admin URL: [http://dlocal.shoplightspeed.com/admin](http://dlocal.shoplightspeed.com/admin)
-
 ![](../.gitbook/assets/screen-shot-2020-12-10-at-2.06.53-pm.png)
-
-Locate the `Settings` link in the menu on the left \(at the bottom\):
-
-![](../.gitbook/assets/screen-shot-2021-01-14-at-5.14.31-pm.png)
-
-Payment providers: Select `Payment providers` under `Payment Settings`
-
-![](../.gitbook/assets/screen-shot-2021-01-14-at-7.04.45-pm.png)
-
-### 2. Select dLocal as preferred payment provider
-
-dLocal will be listed as payment provider in Mexico. Click on it.
-
-![](../.gitbook/assets/screen-shot-2021-01-14-at-4.56.27-pm.png)
 
 ### 3. Grant access to dLocal
 
@@ -67,4 +51,18 @@ After 3 to 7 days you’ll receive an email from dLocal confirming that the stor
 
 That's it! Time to sell :\)  
 
+
+### 7. Check the app is correctly installed
+
+Locate the `Settings` link in the menu on the left \(at the bottom\):
+
+![](../.gitbook/assets/screen-shot-2021-01-14-at-5.14.31-pm.png)
+
+Payment providers: Select `Payment providers` under `Payment Settings`
+
+![](../.gitbook/assets/screen-shot-2021-01-14-at-7.04.45-pm.png)
+
+dLocal should be listed there:
+
+![](../.gitbook/assets/screen-shot-2021-01-14-at-4.56.27-pm.png)
 
