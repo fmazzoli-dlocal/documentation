@@ -59,7 +59,6 @@
   * [Currency Exchange](api-documentation/payins-api-reference/currency-exchange.md)
   * [Country Reference](api-documentation/payins-api-reference/country-reference.md)
 * [Payouts API Reference](api-documentation/payout-api-reference/README.md)
-  * [Untitled](api-documentation/payout-api-reference/untitled.md)
   * [Environments](api-documentation/payout-api-reference/environments.md)
   * [Security](api-documentation/payout-api-reference/security.md)
   * [Submit a payout](api-documentation/payout-api-reference/payouts/README.md)
