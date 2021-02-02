@@ -133,7 +133,91 @@
   </tbody>
 </table>
 
+### Redirect APM - Wallet - Nequi
 
+{% tabs %}
+{% tab title="Example Request" %}
+**Request Example**
 
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
 
+**Request Example Body**
+
+```text
+{
+    "amount": 10,
+    "currency": "USD",
+    "country": "PA",
+    "payment_method_id": "NQ",
+    "payment_method_flow": "REDIRECT",
+    "payer": {
+        "name": "#RANDOMNAME",
+        "email": "#RANDOMEMAIL",
+        "phone": "4832696773",
+        "document": "12345678",
+        "address": {
+            "country": "BR",
+            "state": "Santa Catarina",
+            "city": "Florianopolis",
+            "zip_code": "88058",
+            "street": "Rodovia Armando Calil Bulos",
+            "number": "5940"
+        }
+    },
+    "order_id": "#RANDOMUUID",
+    "description": "n7kk12VoBE",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response" %}
+#### Response Example
+
+```yaml
+{
+    "id": "D-4-f3f12c65-64ea-43b2-b941-caf004febf27",
+    "amount": 10,
+    "currency": "USD",
+    "payment_method_id": "NQ",
+    "payment_method_flow": "REDIRECT",
+    "country": "PA",
+    "created_date": "2021-02-02T15:27:16.000+0000",
+    "status": "PENDING",
+    "status_detail": "The payment is pending.",
+    "status_code": "100",
+    "order_id": "d450dd5e-3284-4ab6-8cd6-2033f33a190a",
+    "description": "n7kk12VoBE",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new",
+    "redirect_url": "http://catherine.dlocal.rc/collect/pay/pay/M-0897d67c-6815-4dd4-a801-779b160d6ef9?xtid=CATH-ST-1612279636-1385339883"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+#### 
+
+### Specific instructions
+
+#### Redirect Page
+
+After initiating a payment request, the user will be redirected to a static landing page that will appear this way:
+
+####  
+
+![This page is static and cannot be adjusted by the merchant.](../../../.gitbook/assets/image-17-.png)
+
+Translation for non-Spanish speakers:
+
+“Have your phone nearby. You will receive a notification from Nequi that you will need to accept to complete the payment”.
 
