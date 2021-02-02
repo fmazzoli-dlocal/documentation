@@ -237,6 +237,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Panama</td>
+      <td style="text-align:left"><code>PA</code>
+      </td>
+      <td style="text-align:left"><code>USD</code>
+      </td>
+      <td style="text-align:left">Cedula de Identidad</td>
+      <td style="text-align:left">8 digits</td>
+      <td style="text-align:left">No</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Paraguay</td>
       <td style="text-align:left"><code>PY</code>
       </td>
