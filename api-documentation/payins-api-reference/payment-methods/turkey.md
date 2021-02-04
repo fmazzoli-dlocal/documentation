@@ -90,7 +90,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;</td>
+      <td style="text-align:left"><a href="      https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;">https://pay.dlocal.com/views/2.0/images/payments/VD.png&#x200B;</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -107,7 +108,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;</td>
+      <td style="text-align:left"><a href="      https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;">https://pay.dlocal.com/views/2.0/images/payments/MD.png&#x200B;</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -124,7 +126,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/OT.png">https://static.dlocal.com/images/providers/OT.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
