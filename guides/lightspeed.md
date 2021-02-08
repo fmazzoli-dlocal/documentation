@@ -8,7 +8,7 @@ description: >-
 
 ### 1. Find the dLocal App page in the Lightspeed marketplace
 
-Find dLocal listed at [https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/](https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/).
+Find dLocal listed at [https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/](https://www.lightspeedhq.com/ecommerce/store/apps/dlocal-payments/) or directly install from this link: [https://services.shoplightspeed.com/login/?redirect=/store/apps/307](https://services.shoplightspeed.com/login/?redirect=/store/apps/307)
 
 Click on 'Install'. If your are not logged in your Lightspeed account, you will be requested to do so. 
 
