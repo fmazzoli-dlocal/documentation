@@ -221,6 +221,7 @@ Some banks require a specific structure for the bank\_account field:
 | Cotrafa cooperativa financiera | 289 | ------ | 13 | ------ | 1234567890123 |
 | Confiar | 292 | 9 | 9 | 123456789 | 123456789 |
 | Financiera Juriscoop | 296 | ------ | 12 | ------ | 123456789012 |
+| Banco de Bogota | 001 | 11 | 11 | 12345678912 | 12345678912 |
 
 ### **Bank codes**
 
