@@ -10,6 +10,7 @@
 | **document\_type** | See document validations [here](paraguay.md#document-validations) |
 | **document\_id** | See document validations [here](paraguay.md#document-validations) |
 | **beneficiary\_lastname** | Max. 100 chars |
+| **beneficiary\_name** | Max. 100 chars |
 | **country** | PY |
 | **currency** | PYG or USD or EUR |
 | **bank\_account** | See bank account validations [here.](paraguay.md#bank-account-validations) |
@@ -25,6 +26,7 @@
 "external_id":"1234567812345678b",
 "document_id":"1234567",
 "document_type":"CI",
+"beneficiary_name": "Juan"
 "beneficiary_lastname":"PEREZ",
 "country":"PY",
 "bank_account":"1234567891234567",
