@@ -197,7 +197,7 @@
 
 Some banks require a specific structure for the bank\_account field:
 
-| Bank | Bank code | Savings length | Checking length | Saving acc. example | Checking acc. Example |
+| Bank | Bank code | Savings length \(up to\) | Checking length \(up to\) | Saving acc. example | Checking acc. Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Popular | 002 | 9 | 9 | 620630925 | 645324752 |
 | Santander | 006 | 9 | 9 | 272132139 | 963828523 |
