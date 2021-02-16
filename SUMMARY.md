@@ -80,7 +80,6 @@
     * [Paraguay](api-documentation/payout-api-reference/payouts/paraguay.md)
     * [Peru](api-documentation/payout-api-reference/payouts/peru.md)
     * [Turkey](api-documentation/payout-api-reference/payouts/turkey.md)
-    * [Korea](api-documentation/payout-api-reference/payouts/korea.md)
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)
   * [Validation account endpoint - Nigeria](api-documentation/payout-api-reference/validation-account-endpoint-nigeria.md)
   * [Check status](api-documentation/payout-api-reference/check-status.md)
