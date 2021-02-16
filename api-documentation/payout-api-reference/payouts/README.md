@@ -393,6 +393,7 @@ Please see each country below for specific country requirements and example requ
 * \*\*\*\*[**Mexico**](mexico.md)\*\*\*\*
 * \*\*\*\*[**Morocco**](morocco.md)\*\*\*\*
 * \*\*\*\*[**Nigeria**](nigeria.md)\*\*\*\*
+* \*\*\*\*[**Panama**](panama.md)\*\*\*\*
 * \*\*\*\*[**Paraguay**](paraguay.md)\*\*\*\*
 * \*\*\*\*[**Peru**](peru.md)\*\*\*\*
 * \*\*\*\*[**Turkey**](turkey.md)\*\*\*\*
