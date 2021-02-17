@@ -139,4 +139,8 @@ Some countries' bank compliance processes require you to specify each payment's 
 | ISSUPP | Supplier payment |
 | EPREMT | Remittances |
 | ISSCVE | Purchase sale of services |
+| EPCAPI | Payment of capital contribution |
+| EPRENT | Payment of movable property rental |
+
+
 
