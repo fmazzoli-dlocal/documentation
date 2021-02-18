@@ -132,6 +132,7 @@ Some countries' bank compliance processes require you to specify each payment's 
 | ISUBIL | Payment to common utility provider |
 | ISTAXS | Payment of taxes |
 | EPTOUR | Tourism |
+| EPTKAG | Payment of travel tickets or tourism agencies |
 | ISSAVG | Payment to savings/retirement account |
 | ISPENS | Pension payment |
 | ISPAYR | Payment of payroll |
