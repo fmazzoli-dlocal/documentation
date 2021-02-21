@@ -102,7 +102,7 @@ curl -X POST \
 ## 3rd-party Authentication \(MPI\)
 
 {% hint style="warning" %}
-3rd-party Authentication is only available in Brazil, Panama, Costa Rica and Guatemala at the moment.
+3rd-party Authentication is only available in Brazil, Panama, Costa Rica, Guatemala and Nigeria at the moment.
 {% endhint %}
 
 Submit a payment, using authentication data from a third-party 3D Secure 1.0 provider.
