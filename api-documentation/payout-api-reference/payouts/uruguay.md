@@ -287,4 +287,5 @@ Check below the different values that bank\_code parameter can take depending on
 | Banque Heritage | 162 |
 | Citibank N.A. Sucursal | 205 |
 | Banco de la Nación Argentina | 246 |
+| Banco Bandes | 110 |
 
