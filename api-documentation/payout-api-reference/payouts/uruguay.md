@@ -288,4 +288,5 @@ Check below the different values that bank\_code parameter can take depending on
 | Citibank N.A. Sucursal | 205 |
 | Banco de la Nación Argentina | 246 |
 | Banco Bandes | 110 |
+| BAPRO | 61 |
 
