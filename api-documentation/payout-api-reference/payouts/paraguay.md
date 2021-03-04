@@ -12,7 +12,7 @@
 | **beneficiary\_lastname** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars |
 | **country** | PY |
-| **currency** | PYG or USD or EUR |
+| **currency** | PYG or USD |
 | **bank\_account** | See bank account validations [here.](paraguay.md#bank-account-validations) |
 | **bank\_code** | See bank code list here. |
 | **amount** | Max. 2 decimal numbers |
