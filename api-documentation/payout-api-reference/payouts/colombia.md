@@ -204,7 +204,7 @@ Some banks require a specific structure for the bank\_account field:
 | Bancolombia | 007 | 11 | 11 | 27213213912 | 96382852354 |
 | HSBC | 010 | 15 | 15 | 208342345908754 | 102938455738947 |
 | Sudameris | 012 | 8 | 11 | 208342345908754 | 102938455738947 |
-| BBVA | 013 | 16 | 16 | 1234567890123456 | 1234567890123456 |
+| BBVA | 013 | 16 | 16 \(for payouts above 15K we only accept 9 digit accounts\) | 1234567890123456 | 1234567890123456 |
 | Itau | 014 | 9 | 9 | 123456789 | 123456789 |
 | Scotiabank Colpatria | 019 | 10 | 10 | 1234567890 | 1234567890 |
 | Banco de Occidente | 023 | 9 | 9 | 123456789 | 123456789 |
