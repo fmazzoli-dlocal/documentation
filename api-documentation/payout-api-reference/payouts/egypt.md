@@ -45,7 +45,7 @@
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
-      <td style="text-align:left">BIC code</td>
+      <td style="text-align:left">BIC code (we accept 8 or 11 characters)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
