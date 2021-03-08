@@ -30,7 +30,7 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_VF.png</a>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/FW_VF.png">&#x200B;https://static.dlocal.com/images/providers/FW_VF.png</a>
       </td>
     </tr>
     <tr>
@@ -58,7 +58,7 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_TG.png</a>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/FW_TG.png">&#x200B;https://static.dlocal.com/images/providers/FW_TG.png</a>
       </td>
     </tr>
     <tr>
@@ -73,7 +73,7 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/FW_MT.png">&#x200B;</a>
         <a
-        href="https://static.dlocal.com/images/providers/FW_MT.png">https://static.dlocal.com/images/providers/FW_AT.png</a>
+        href="https://static.dlocal.com/images/providers/FW_AT.png">https://static.dlocal.com/images/providers/FW_AT.png</a>
       </td>
     </tr>
     <tr>
