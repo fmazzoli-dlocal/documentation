@@ -28,28 +28,27 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Orange</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_OR.png</a>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>CARD</code>
+      <td style="text-align:left"><code>MW</code>
       </td>
-      <td style="text-align:left">Visa</td>
-      <td style="text-align:left"><code>CARD</code>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left"><code>VI</code>
+      <td style="text-align:left">W Money</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/FW_MT.png">&#x200B;</a>
+        <a
+        href="https://static.dlocal.com/images/providers/FW_MT.png">https://static.dlocal.com/images/providers/FW_WM.png</a>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VI.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
