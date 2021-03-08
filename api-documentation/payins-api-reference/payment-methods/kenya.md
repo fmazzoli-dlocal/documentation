@@ -28,11 +28,25 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Orange</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_OR.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">W Money</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_WM.png">https://static.dlocal.com/images/providers/FW_WM.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
