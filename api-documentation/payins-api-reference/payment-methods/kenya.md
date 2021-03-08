@@ -28,11 +28,11 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left">Orange</td>
+      <td style="text-align:left">Airtel</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_OR.png</a>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_OR.png">https://static.dlocal.com/images/providers/FW_AT.png</a>
       </td>
     </tr>
     <tr>
@@ -41,11 +41,11 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left">W Money</td>
+      <td style="text-align:left">mPesa</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_WM.png">https://static.dlocal.com/images/providers/FW_WM.png</a>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_WM.png">https://static.dlocal.com/images/providers/FW_MP.png</a>
       </td>
     </tr>
     <tr>
