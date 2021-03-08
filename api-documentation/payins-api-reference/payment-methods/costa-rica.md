@@ -69,19 +69,6 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>TU</code>
-      </td>
-      <td style="text-align:left">Banco de Costa Rica</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Cash Payment</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/tucan.png">https://static.dlocal.com/images/providers/TU.png</a>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>CX</code>
       </td>
       <td style="text-align:left">Banco Nacional</td>
