@@ -120,6 +120,19 @@
       </td>
       <td style="text-align:left"></td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>IO</code>
+      </td>
+      <td style="text-align:left">Okra</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Direct Debit</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Okra.png">https://static.dlocal.com/images/providers/Okra.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
