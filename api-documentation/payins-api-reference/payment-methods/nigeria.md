@@ -154,7 +154,7 @@
         "document": "123455",
         "document_type": "CI",
         "address": {
-            "country": "NG",
+            "country": "MX",
             "state": "Santa Catarina",
             "city": "Florianopolis",
             "zip_code": "88058",
