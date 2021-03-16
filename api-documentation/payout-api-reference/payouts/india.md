@@ -17,6 +17,7 @@
 | **address** | 200 chars |
 | **email** | 100 chars |
 | **phone** | Phone number of the beneficiary Max. 20 chars. |
+| **currency** | 3 chars |
 
 ### Example request
 
