@@ -195,6 +195,8 @@
 
 ### Bank account validations
 
+For every bank account the minimum length is 3 digits \(they have to be different to cero\) and for the banks that do not have a maximum length on the following table, the maximum length is 18. 
+
 Some banks require a specific structure for the bank\_account field:
 
 | Bank | Bank code | Savings length \(up to\) | Checking length \(up to\) | Saving acc. example | Checking acc. Example |
