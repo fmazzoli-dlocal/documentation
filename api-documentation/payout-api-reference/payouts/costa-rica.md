@@ -55,5 +55,5 @@
 
 | _Validation_ | Name | Length | Type | Verification digit | Example |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Bank account | IBAN | 22 | alfanumeric | Apply verification algorithm | CR32011400007914077990 |
+| Bank account | IBAN | 22 | alpha -numeric | Apply verification algorithm | CR32011400007914077990 |
 
