@@ -394,6 +394,7 @@ curl -X POST \
 **User Interface tips**
 
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* **Display SPEI** **logo**, since bank transfer payment method is known by general public in Mexico as SPEI
 * Make sure that the **expiration date** is clear and visible enough. In Mexico people use the **dd/mm/yyyy** format.
 * Add a **Copy CLABE** button. The CLABE is the only information that all users need to use in order to complete payment. And it is quite long. Adding a feature to copy this number will help to their payment experience.
 * The **Concepto de pago** \(Payment concept\) and **Referencia** \(Reference\) values are not necessary in order to complete payments, but some banks may ask for them in their flows. So it is recommended to display these information since some users may otherwise get stuck at this point. 
