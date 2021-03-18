@@ -51,7 +51,7 @@
     <tr>
       <td style="text-align:left"><code>IO</code>
       </td>
-      <td style="text-align:left">STP</td>
+      <td style="text-align:left">Bank Transfer</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
@@ -311,7 +311,7 @@ curl -X POST \
 * A **Print button** is useful for some users that need to have their tickets printed.
 {% endhint %}
 
-### SPEI
+### Bank Transfer
 
 #### Example
 
@@ -335,17 +335,17 @@ curl -X POST \
 
 ```javascript
 {
-    "amount": 10,
+    "amount": 100,
     "currency": "MXN",
     "country": "MX",
-    "payment_method_id": "SE",
+    "payment_method_id": "IO",
     "payment_method_flow": "DIRECT",
     "payer": {
         "name": "Pedro Gomes",
         "email": "pedrogomes@dlocal.com",
         "document": "42243309114"
     },
-    "order_id": "jhg4v34v534",
+    "order_id": "jhg4v3215t4",
     "notification_url": "http://merchant.com/notification/new"
 }
 ```
@@ -356,52 +356,50 @@ curl -X POST \
 
 ```javascript
 {
-    "id": "D-4-7370c340-9b78-4416-890b-c2e1d93430b8",
-    "amount": 10,
+    "id": "D-4-0ceeef7a-854b-4181-afd8-d7ef748914a5",
+    "amount": 100,
     "currency": "MXN",
-    "payment_method_id": "SE",
-    "payment_method_type": "TICKET",
+    "payment_method_id": "IO",
+    "payment_method_type": "BANK_TRANSFER",
     "payment_method_flow": "DIRECT",
     "country": "MX",
     "bank_transfer": {
         "bank_account_type": "CHECKING",
-        "bank_name": "BBVA Bancomer",
-        "bank_code": "BV",
+        "bank_name": "STP",
+        "bank_code": "STP",
         "beneficiary_name": "Dlocal MX",
-        "bank_account": "013890012935777293",
-        "bank_account2": "1249930",
+        "bank_account": "646180205700001446",
         "bank_account_label": "CLABE",
-        "bank_account2_label": "Numero de convenio CIE",
-        "reference": "36668329502542825275",
-        "redirect_url": "https://pay.dlocal.com/gmf-apm/payments/M-153ab926-e185-4da1-add5-a41b61ef5089",
-        "user_payment_amount": 10
+        "reference": "0000144",
+        "redirect_url": "https://pay.dlocal.com/gmf-apm/payments/M-24d932cf-fb12-4521-999e-7faf3e60d865",
+        "user_payment_amount": 100,
+        "payment_instruction": "Ingresa a tu banca en línea y realiza la transferencia a la siguiente cuenta. Recuerda que no se pueden hacer pagos en ventanilla.",
+        "expiration_date": "2021-03-24T05:59:00.000+0000"
     },
-    "ticket": {
-        "type": "CUSTOM",
-        "number": "1000002055830",
-        "expiration_date": "2020-10-13T04:59:00.000+0000",
-        "image_url": "https://pay.dlocal.com/gmf-apm/payments/M-153ab926-e185-4da1-add5-a41b61ef5089"
-    },
-    "created_date": "2020-10-02T20:39:29.000+0000",
+    "ticket": {},
+    "created_date": "2021-03-18T18:34:15.000+0000",
     "status": "PENDING",
     "status_detail": "The payment is pending.",
     "status_code": "100",
-    "order_id": "b823d3aa-44bf-46e7-9a4c-329c928d29c4",
-    "notification_url": "https://merchant.com/notification/new"
+    "order_id": "386fe81e-3075-4d4c-8725-28abbb1462f3",
+    "notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
 }
 ```
 {% endtab %}
 {% endtabs %}
 
-![Example SPEI UI built with the information in the example above](../../../.gitbook/assets/spei_direct_fields.png)
+![Example STP UI built with the information in the example above](../../../.gitbook/assets/stp%20%281%29.png)
 
 {% hint style="success" %}
 **User Interface tips**
 
 * **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
-* Make sure that the **expiration date** is clear and visible enough. In Mexico people use the **dd/mm/yyyy** format
-* Include **payment instructions**. In the image above there is an example of instructions, but if needed, our team will be happy to help you with more personalized instructions.
-* In the payment instructions, include sections **for both BBVA and other banks.** This is because the payment details requested by BBVA's online banking system is different for SPEI payments.
-* A **Print button** is useful for some users that need to have their tickets printed.
+* Make sure that the **expiration date** is clear and visible enough. In Mexico people use the **dd/mm/yyyy** format.
+* Add a **Copy CLABE** button. The CLABE is the only information that all users need to use in order to complete payment. And it is quite long. Adding a feature to copy this number will help to their payment experience.
+* The **Concepto de pago** \(Payment concept\) and **Referencia** \(Reference\) values are not necessary in order to complete payments, but some banks may ask for them in their flows. So it is recommended to display these information since some users may otherwise get stuck at this point. 
+* Also, some banks may pre-populate the **Referencia** \(Reference\) field in their payment flows with a different number. Let users know that there is no problem at all if they use the **Referencia** provided by the bank, the payment will be processed successfully anyway. 
+* Include a reminder that payments will only be accepted through home banking. **Payment to the cashier at the bank branches is not allowed**. 
 {% endhint %}
+
+
 
