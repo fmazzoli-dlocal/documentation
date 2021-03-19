@@ -402,5 +402,118 @@ curl -X POST \
 * Include a reminder that payments will only be accepted through home banking. **Payment to the cashier at the bank branches is not allowed**. 
 {% endhint %}
 
+### CODI
 
+#### Example
+
+{% tabs %}
+{% tab title="Example Request" %}
+#### Example request
+
+```bash
+curl -X POST \
+    -H 'X-Date: 2018-02-20T15:44:42.310Z' \
+    -H 'X-Login: sak223k2wdksdl2' \
+    -H 'X-Trans-Key: fm12O7G9' \
+    -H 'Content-Type: application/json' \
+    -H 'X-Version: 2.1' \
+    -H 'Authorization: V2-HMAC-SHA256, Signature: 1bd227f9d892a7f4581b998c21e353b1686a6bdad5940e7bb6aa596c96e0a6ec' \
+    -d '{body}'
+    https://api.dlocal.com/payments
+```
+
+#### Example request body
+
+```javascript
+{
+    "amount": 100,
+    "currency": "MXN",
+    "country": "MX",
+    "payment_method_id": "CD",
+    "payment_method_flow": "DIRECT",
+    "payer": {
+        "name": "Pedro Gomes",
+        "email": "pedrogomes@dlocal.com",
+        "document": "42243309114",
+        "phone": "527621559017"
+    },
+    "order_id": "jhg4v3215t4",
+    "notification_url": "http://merchant.com/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response - QR" %}
+#### Example response - QR Code
+
+```javascript
+{
+"id": "D-4-1a64bdbd-faf5-473e-94b5-f96d36ef0d3f",
+"amount": 100,
+"currency": "MXN",
+"payment_method_id": "CD",
+"payment_method_type": "TICKET",
+"payment_method_flow": "DIRECT",
+"country": "MX",
+"ticket": {
+    "type": "CUSTOM",
+    "expiration_date": "2021-02-21T06:49:19.000+0000",
+    "id": "14000000001099765",
+    "barcode": "iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAIAAABEtEjdAABeuklEQVR4XuzUQa4cyQ4gwX//S88AvjQ1ARGKrImqSVs2nGRUqvH+939er9fr9XP+5394vV6v1/d7/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9cPev+4v16v1w96/7i/Xq/XD3r/uL9er9c.....",
+    "company_name": "DLOCAL MX",
+    "provider_name": "codi",
+    "provider_logo": "http://static.dlocal.com/images/providers/caixa.png",
+    "image_url": "http://pay.dlocal.com/gmf/payments/M-cee70da0-0542-11e9-b88f-39144191f926"
+},
+"created_date": "2021-02-20T17:06:49.545+0000",
+"status": "PENDING",
+"order_id": "jhg4v34v534",
+"notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+
+{% tab title="Example Response - Push Notification" %}
+#### Example response - Push notification
+
+```javascript
+{
+"id": "D-4-1a64bdbd-faf5-473e-94b5-f96d36ef0d3f",
+"amount": 100,
+"currency": "MXN",
+"payment_method_id": "CD",
+"payment_method_type": "TICKET",
+"payment_method_flow": "DIRECT",
+"country": "MX",
+"ticket": {
+    "type": "CUSTOM",
+    "expiration_date": "2021-02-21T06:49:19.000+0000",
+    "id": "14000000001099765",
+    "company_name": "DLOCAL MX",
+    "provider_name": "codi",
+    "provider_logo": "http://static.dlocal.com/images/providers/caixa.png",
+    "image_url": "http://pay.dlocal.com/gmf/payments/M-cee70da0-0542-11e9-b88f-39144191f926"
+},
+"created_date": "2021-02-20T17:06:49.545+0000",
+"status": "PENDING",
+"order_id": "jhg4v34v534",
+"notification_url": "http://conductor.sandbox.internal/robot-server/rest/generic/notification/new"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+![Example CODI - QR Code UI built with the information in the example above](../../../.gitbook/assets/codi-qr%20%282%29.png)
+
+{% hint style="success" %}
+**User Interface tips**
+
+* Although it is not mandatory, asking for **user phone** is recommended, since if we receive that information, a **push notification** will be send to user's phone in order to complete the payment. If phone is not received, a payment QR code will be displayed.
+* Build the QR Codes in **UTF-8** format.
+* **Currency** and **amount** should be relevant elements in the ticket. Users need to be aware of that at all times.
+* **Display CODI** **logo**
+* Make sure that the **expiration time** is clear and visible enough. 
+{% endhint %}
+
+ 
 
