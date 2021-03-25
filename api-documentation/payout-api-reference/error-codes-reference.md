@@ -83,6 +83,7 @@ Different error codes types can be seen below:
 | 512 | Rejected compliance limits |
 | 513 | End beneficiary blacklisted |
 | 514 | Insufficient funds |
+| 515 | Rejected due to compliance |
 
 ### Transactional error
 
