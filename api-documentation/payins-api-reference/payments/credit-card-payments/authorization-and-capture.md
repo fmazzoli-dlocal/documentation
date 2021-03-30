@@ -281,7 +281,7 @@ $ curl -X POST \
 
 ## $0 Authorization
 
-Use a $0 Authorization to valide the user's card. You need to create an Authorization as explained above, but with `amount` = `0` and `verify` = `true` within the `card` object:
+Use a $0 Authorization to validate the user's card. You need to create an Authorization as explained above, but with `amount` = `0` and `verify` = `true` within the `card` object:
 
 {% tabs %}
 {% tab title="Request Example" %}
