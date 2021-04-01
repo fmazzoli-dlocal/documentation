@@ -24,6 +24,7 @@
     * [Ecuador](api-documentation/payins-api-reference/payment-methods/ecuador.md)
     * [Egypt](api-documentation/payins-api-reference/payment-methods/egypt.md)
     * [Ghana](api-documentation/payins-api-reference/payment-methods/ghana.md)
+    * [Guatemala](api-documentation/payins-api-reference/payment-methods/guatemala.md)
     * [India](api-documentation/payins-api-reference/payment-methods/india.md)
     * [Indonesia](api-documentation/payins-api-reference/payment-methods/indonesia.md)
     * [Kenya](api-documentation/payins-api-reference/payment-methods/kenya.md)
