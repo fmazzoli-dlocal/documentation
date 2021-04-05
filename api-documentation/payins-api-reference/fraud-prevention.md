@@ -15,6 +15,7 @@ In order to obtain the best results from dLocal Defense, it is **strongly recomm
 * Document
 * Address
 * IP address
+* User reference \(user id\)
 * Device ID \(see [below](fraud-prevention.md#device-id)\)
 {% endhint %}
 
