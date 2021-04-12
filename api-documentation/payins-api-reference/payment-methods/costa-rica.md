@@ -56,6 +56,76 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">American Express</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>AE</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Diners</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>DC</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>&#x200B;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Discover</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>DI</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">JCB</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>JC</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/JC.png">https://pay.dlocal.com/views/2.0/images/payments/JC.png</a>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>TU</code>
       </td>
       <td style="text-align:left">Tucan</td>
