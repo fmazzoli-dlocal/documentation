@@ -111,10 +111,10 @@
 
 ### Document validations
 
-| Validation | Name | Length | Type | Verification digit |
-| :--- | :--- | :--- | :--- | :--- |
-| Document | DNI | 8 | Numeric | Last digit |
-| Document | RUC | 11 | Numeric | Last digit |
+| Validation | Name | Length | Verification digit |
+| :--- | :--- | :--- | :--- |
+| Document | DNI | 8 Numeric or 9 Alphanumeric | Last digit |
+| Document | RUC | 11 Numeric | Last digit |
 
 ### Bank account validations
 
