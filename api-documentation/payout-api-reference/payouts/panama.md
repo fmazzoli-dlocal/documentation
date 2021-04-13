@@ -65,6 +65,11 @@
       </td>
       <td style="text-align:left">Max. 2 decimal numbers</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b>country</b>
+      </td>
+      <td style="text-align:left">PA</td>
+    </tr>
   </tbody>
 </table>
 
