@@ -31,7 +31,7 @@
     "bank_account": "1234567890",
     "account_type": "C",
     "amount": 10,
-    "currency": "USD",
+    "currency": "VND",
     "type": "json",
     "phone": "09233456",
     "notification_url":"https:\/\/thisisawebsite.net\/payments"
