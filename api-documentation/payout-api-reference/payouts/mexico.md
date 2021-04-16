@@ -10,7 +10,7 @@
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
 | **country** | MX |
-| **bank\_code** | Mandatory only if bank\_account is not CLABE. See bank codes [here](mexico.md#bank-codes) |
+| **bank\_code** | Mandatory only if the account is a debit card.  See bank codes [here](mexico.md#bank-codes) |
 | **bank\_account** | See bank account validations [here.](mexico.md#bank-account-validations) |
 | **amount** | Max. 2 decimal numbers |
 
