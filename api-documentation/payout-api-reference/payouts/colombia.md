@@ -231,7 +231,6 @@ These are the values the bank\_code parameter can take in Colombia:
 
 | Bank name | Bank code |
 | :--- | :--- |
-| ABN AMRO | 008 |
 | Bancamia S.A. | 059 |
 | Banco Agrario | 040 |
 | Banco Av. Villas | 052 |
