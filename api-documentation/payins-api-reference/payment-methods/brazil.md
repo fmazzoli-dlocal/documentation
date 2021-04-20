@@ -38,19 +38,6 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BL.png">https://pay.dlocal.com/views/2.0/images/payments/BL.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>WH</code>
-      </td>
-      <td style="text-align:left">Whatsapp</td>
-      <td style="text-align:left"><code>TICKET</code>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Wallet</td>
-      <td style="text-align:left"><code>REDIRECT</code>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BL.png&#x200B;">https://pay.dlocal.com/views/2.0/images/payments/WA.png&#x200B;</a>
-      </td>
-    </tr>
-    <tr>
       <td style="text-align:left"><code>PQ</code>
       </td>
       <td style="text-align:left">PIX</td>
