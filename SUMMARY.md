@@ -117,6 +117,7 @@
 
 ## Other <a id="undefined"></a>
 
+* [Dashboard Manual](https://dlocal.gitbook.io/merchant-dashboard/)
 * [Changelog](undefined/changelog.md)
 * [Status Page](https://dlocal.statuspage.io/)
 * [Chinese 中文文档](https://dlocal.gitbook.io/dlocal-china/)
