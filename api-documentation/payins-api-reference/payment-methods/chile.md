@@ -33,6 +33,17 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/WP.png">https://pay.dlocal.com/views/2.0/images/payments/WP.png</a>&#x200B;</td>
     </tr>
     <tr>
+      <td style="text-align:left">IO</td>
+      <td style="text-align:left">Khipu</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Bank Transfer Online</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left">Visa</td>
