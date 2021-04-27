@@ -79,7 +79,7 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Banco Del Chubut | 083 |
 | Banco Del Sol | 310 |
 | Banco Hipotecario | 044 |
-| Banco Itau Buen Ayre | 259 |
+| Banco Itau  | 259 |
 | Banco Julio | 305 |
 | Banco Macro | 285 |
 | Banco Mariva | 254 |
