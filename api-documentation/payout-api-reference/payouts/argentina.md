@@ -90,15 +90,14 @@ These are the values the **bank\_code parameter** can take in Argentina. We curr
 | Banco Piano | 301 |
 | Banco Provincia de Tierra Del Fuego | 268 |
 | Banco Provincia Del Neuquen | 097 |
-| Banco Santander Rio | 072 |
+| Banco Santander | 072 |
 | Banco Roela | 247 |
 | Banco Saenz | 277 |
 | Banco Supervielle S.A. | 027 |
 | Bank Of America, National Associa | 262 |
 | Industrial and Commercial Bank of China \(ICBC\) Argentina | 015 |
-| BBVA Banco Frances | 017 |
+| BBVA | 017 |
 | Bnp Paribas | 266 |
-| Citibank | 016 |
 | HSBC Bank Argentina | 150 |
 | J P Morgan Chase Bank Sucursal Buenos Aires | 165 |
 | BANCO VOII S.A. | 312 |
