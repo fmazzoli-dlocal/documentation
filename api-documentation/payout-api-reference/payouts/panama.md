@@ -88,7 +88,7 @@
 "account_type":"C",
 "amount":"1148.00",
 "comments":"this is the 1st comment",
-"currency":"PAB",
+"currency":"USD",
 "type":"json"
 }
 ```
