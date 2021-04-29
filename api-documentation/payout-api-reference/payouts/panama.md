@@ -95,7 +95,7 @@
 
 ### **Bank codes** <a id="bank-codes-panama"></a>
 
-These are the values the **bank\_code parameter** can take in Chile
+These are the values the **bank\_code parameter** can take in Panama
 
 | Bank Name | Bank Code |
 | :--- | :--- |
