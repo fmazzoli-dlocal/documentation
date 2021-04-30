@@ -6,6 +6,10 @@ All Bank Transfer \(`BANK_TRANSFER`\) payment methods offer a redirect solution 
 
 Using the Redirect method, the payment will have the `PENDING` status until the user completes the transfer, and dLocal gets notified.
 
+{% hint style="info" %}
+The usage of the  `redirect_url` must be with a `GET` operation.
+{% endhint %}
+
 The example below belongs to payment using Caixa in Brazil. For a full list of `BANK_TRANSFER` payment methods available, visit the [Payment Methods page](../payment-methods/).
 
 {% tabs %}

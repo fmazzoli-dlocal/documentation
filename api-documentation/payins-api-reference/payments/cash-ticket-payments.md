@@ -6,6 +6,10 @@ All Cash \(`TICKET`\) payment methods offer a redirect solution \(`payment_metho
 
 Using the Redirect method, the payment will have the `PENDING` status until the user pays the ticket, and dLocal gets notified.
 
+{% hint style="info" %}
+The usage of the  `redirect_url` must be with a `GET` operation.
+{% endhint %}
+
 The example below belongs to payment using OXXO in Mexico. For a full list of `TICKET` payment methods available, visit the [Payment Methods page](../payment-methods/).
 
 {% tabs %}
