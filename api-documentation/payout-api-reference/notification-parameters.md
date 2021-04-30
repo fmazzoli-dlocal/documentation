@@ -10,5 +10,15 @@ The Payouts API will send notifications to your Notification URL using the POST 
 | bank\_reference\_id | String \(max. 50 chars\) | Number reference at the bank | 513512.04198.5 |
 | comments | String \(max. 200 chars\) | Payout comment | This is a comment |
 
+## Example
 
+```text
+Content-Type: application/x-www-form-urlencoded
+external_id=ext123
+cashout_id=123456
+date=2021-04-29 02:16:24
+bank_reference_id=ref321
+comments=Merchant 
+comments&control=6C40B2B4E7F43EF7EA3C6C0F386C11865D60892591301CDF6C62FBE6A5FFEF1D
+```
 
