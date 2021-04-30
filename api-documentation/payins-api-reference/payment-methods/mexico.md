@@ -103,7 +103,7 @@
       <td style="text-align:left">Bank Transfer Online</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BN.png">https://pay.dlocal.com/views/2.0/images/payments/BN.png</a>&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/BQ.png">https://pay.dlocal.com/views/2.0/images/payments/BQ.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>SM</code>
