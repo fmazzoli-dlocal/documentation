@@ -64,9 +64,9 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left"><code>XAF</code>
       </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">CNI or ID</td>
+      <td style="text-align:left">8 digits</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Chile</td>
@@ -147,9 +147,9 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left"><code>GHS</code>
       </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Ghana Card</td>
+      <td style="text-align:left">16 digits</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">India</td>
@@ -192,9 +192,9 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left"><code>KES</code>
       </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">National ID Card</td>
+      <td style="text-align:left">8 digits</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Malaysia</td>
@@ -282,9 +282,9 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left"><code>XOF</code>
       </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">CNI or ECOWAS ID Card</td>
+      <td style="text-align:left">13 to 17 digits</td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">South Africa</td>
