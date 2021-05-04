@@ -56,6 +56,27 @@ Check\_status OK
 “status_code”: “[if is status rejected, the reason code for the rejection]”,
 “status_reason”: “[if is status rejected, the reason message for the rejection]”
 } 
+
+If the status is 0 then:
+
+{    
+    "status": 0,   
+    "cash_out_status": 0,    
+    "description": "Received"
+}
+
+
+
+IF the status is 1 then:
+{
+    "status": 1,
+    "desc": "Invalid control string",
+    "error_code": "302"
+}
+
+
+
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
