@@ -151,7 +151,7 @@ Examples:
 * \*\*\*\*[**Brazil**](brazil.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Cameroon**](https://docs.dlocal.com/api-documentation/payins-api-reference/payment-methods/cameroon)\*\*\*\*
 * \*\*\*\*[**Chile**](chile.md#payment-methods-available)\*\*\*\*
-* \*\*\*\*[**China**](china.md#payment-methods-available)\*\*\*\*
+* \*\*\*\*[**China**]()\*\*\*\*
 * \*\*\*\*[**Colombia**](colombia.md#payment-methods-available)\*\*\*\*
 * \*\*\*\*[**Dominican Republic**](dominican-republic.md)
 * \*\*\*\*[**Ecuador**](ecuador.md)\*\*\*\*

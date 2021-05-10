@@ -17,7 +17,6 @@
     * [Brazil](api-documentation/payins-api-reference/payment-methods/brazil.md)
     * [Cameroon](api-documentation/payins-api-reference/payment-methods/cameroon.md)
     * [Chile](api-documentation/payins-api-reference/payment-methods/chile.md)
-    * [China](api-documentation/payins-api-reference/payment-methods/china.md)
     * [Colombia](api-documentation/payins-api-reference/payment-methods/colombia.md)
     * [Costa Rica](api-documentation/payins-api-reference/payment-methods/costa-rica.md)
     * [Dominican Republic](api-documentation/payins-api-reference/payment-methods/dominican-republic.md)
