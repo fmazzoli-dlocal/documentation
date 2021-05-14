@@ -38,7 +38,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VI.png&#x200B;</td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Visa_logo.png">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VI.png&#x200B;</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
