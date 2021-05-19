@@ -7,7 +7,11 @@ All Cash \(`TICKET`\) payment methods offer a redirect solution \(`payment_metho
 Using the Redirect method, the payment will have the `PENDING` status until the user pays the ticket, and dLocal gets notified.
 
 {% hint style="info" %}
-The usage of the  `redirect_url` must be with a `GET` operation.
+The usage of the `redirect_url` must be with a `GET` operation.
+{% endhint %}
+
+{% hint style="warning" %}
+Starting May 1st 2021, the `redirect_url` will start returning an `HTTP 200 OK` with the HTML content of the ticket. This will be instead of the `HTTP 302 FOUND ,`that used to generate a double redirect.
 {% endhint %}
 
 The example below belongs to payment using OXXO in Mexico. For a full list of `TICKET` payment methods available, visit the [Payment Methods page](../payment-methods/).
