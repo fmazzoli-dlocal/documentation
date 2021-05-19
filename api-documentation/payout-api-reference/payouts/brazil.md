@@ -1,6 +1,6 @@
 # Brazil
 
-### Mandatory parameters bank transfers
+### Mandatory parameters bank transfers 
 
 <table>
   <thead>
@@ -9,6 +9,7 @@
       </th>
       <th style="text-align:left"><b>Description</b>
       </th>
+      <th style="text-align:left">Flow type</th>
     </tr>
   </thead>
   <tbody>
@@ -16,55 +17,65 @@
       <td style="text-align:left"><b>login</b>
       </td>
       <td style="text-align:left">32 chars</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>pass</b>
       </td>
       <td style="text-align:left">32 chars</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>external_id</b>
       </td>
       <td style="text-align:left">Max. 100 chars</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>document_id</b>
       </td>
       <td style="text-align:left">See document validations <a href="brazil.md#document-validations">here</a>
       </td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>beneficiary_name</b>
       </td>
       <td style="text-align:left">Max. 100 chars</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>beneficiary_lastname</b>
       </td>
       <td style="text-align:left">Max. 100 chars</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>country</b>
       </td>
       <td style="text-align:left">BR</td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_code</b>
       </td>
       <td style="text-align:left">See bank codes <a href="brazil.md#bank-codes">here</a>
       </td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
       <td style="text-align:left">See bank branch validations <a href="brazil.md#bank-account-validations">here</a>
       </td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
       <td style="text-align:left">See bank account validations <a href="brazil.md#bank-account-validations">here</a>
       </td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>account_type</b>
@@ -73,11 +84,49 @@
         <p><b>C</b>: for Checking accounts</p>
         <p><b>S</b>: for Savings accounts</p>
       </td>
+      <td style="text-align:left">ALL</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
       </td>
       <td style="text-align:left">Max. 2 decimal numbers</td>
+      <td style="text-align:left">ALL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>document_type</b>
+      </td>
+      <td style="text-align:left">CPF or CNPJ</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>address</b>
+      </td>
+      <td style="text-align:left">Beneficiary address Max. 200 chars</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>city</b>
+      </td>
+      <td style="text-align:left">Beneficiary city Max. 100 chars</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>remitter_full_name</b>
+      </td>
+      <td style="text-align:left">Max. 200 chars</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>remitter_birth_date</b>
+      </td>
+      <td style="text-align:left">Format: &quot;YYYYMMDD&quot;</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>remitter_country</b>
+      </td>
+      <td style="text-align:left">ISO 3166- 1 alpha -2 code</td>
+      <td style="text-align:left">P2P</td>
     </tr>
   </tbody>
 </table>
@@ -107,8 +156,6 @@
 ```
 
 ### Mandatory parameters PIX transfer
-
-
 
 | **Mandatory parameter** | **Description** |
 | :--- | :--- |
