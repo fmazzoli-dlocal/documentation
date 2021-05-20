@@ -2,21 +2,26 @@
 
 ## dLocal Defense
 
-[dLocal Defense](https://dlocal.com/our-solution/fraud-prevention/), our fraud prevention solution, is an integral part of our service and is available at **no additional cost** for all our customers. With dLocal Defense, all transactions processed by dLocal are run through our fraud prevention engine, which identifies market and industry-specific fraud patterns and prevents potentially fraudulent transactions from being processed.
+[dLocal Defense](https://dlocal.com/our-solution/fraud-prevention/), our fraud prevention solution, is an integral part of our service and is included for all merchant accounts. With dLocal Defense, all transactions processed by dLocal are run through our fraud prevention engine, which identifies market and industry-specific fraud patterns and prevents potentially fraudulent transactions from being processed.
 
-In order to obtain the best results from dLocal Defense, it is **strongly recommended** that as much information as possible is provided in the Payments API call \(as documented [here](payments/)\). 
+In order to obtain the best results from dLocal Defense, it is **required** that as much information as possible is provided in the Payments API call \(as documented [here](payments/)\). 
 
 {% hint style="info" %}
-**Essential payment information** used for fraud prevention includes the following:
+**Required payment information** used for fraud prevention includes the following:
 
 * Payer's name and surname
 * Email address
 * Phone number
 * Document
-* Address
+* Shipping address, otherwise billing address
 * IP address
-* User reference \(user id\)
+* User reference \(user ID\)
+* Product details \(see Item object definition below\)
 * Device ID \(see [below](fraud-prevention.md#device-id)\)
+
+**For PSPs / Marketplaces:**
+
+* Sub-merchant name
 {% endhint %}
 
 ## Additional information for fraud prevention
@@ -29,10 +34,10 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
 {% tab title="Additional Risk Data object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `submerchant` | Submerchant object | Information on the submerchant account. Optional. |
-| `shipping` | Shipping object | Information on the shipping / alternative address. Optional. |
+| `submerchant` | Submerchant object | Information on the submerchant account. **Required for PSPs / Marketplaces**. |
+| `shipping` | Shipping object | Information on the shipping / alternative address. **Required for Retail**. |
 | `beneficiary` | Beneficiary object | Information on the beneficiary, if different from the payer. Optional. |
-| `basket` | List of Item objects | Information on the items purchased. Optional. |
+| `basket` | List of Item objects | Information on the items purchased. **Required**. |
 | `payer` | Payer object | Additional information on the payer's user account. Optional. |
 | `device` | Device object | Additional information on the device used for purchase. Optional. |
 {% endtab %}
@@ -130,7 +135,7 @@ For PSPs / merchants with sub-merchant accounts, the submerchant object may be u
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `merchant_reference` | String | The ID / reference of the sub-merchant account. Optional. |
-| `name` | String | Sub-merchant name. Optional. |
+| `name` | String | Sub-merchant name. **Required for PSPs / marketplaces**. |
 | `website` | String | Sub-merchant website. Optional. |
 | `industry` | Number  | Sub-merchant industry, see [industry codes list](fraud-prevention.md#industry-codes). Optional. |
 {% endtab %}
@@ -208,20 +213,20 @@ For purchases where the beneficiary / recipient is not the payer \(e.g. for gift
 
 #### The Item object
 
-The `basket` property contains a **list of Item objects**, used to provide information on the items purchased.
+The `basket` property contains a **list of Item objects**, used to provide information on the items purchased. Item objects are required for effective fraud prevention, within these the properties marked with "Recommended" are the most recommended ones to include.
 
 {% tabs %}
 {% tab title="Item object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| `unit_price` | Number | Unit price. Optional. |
+| `unit_price` | Number | Unit price. **Recommended**. |
 | `brand` | String | Product brand. Optional. |
-| `category` | String | Product category. Optional. |
-| `item_reference` | String | Item ID / Reference. Optional. |
+| `category` | String | Product category. **Recommended**. |
+| `item_reference` | String | Item ID / Reference. **Recommended**. |
 | `upc` | String | Universal Product Code. Optional. |
 | `manufacturer` | String | Product manufacturer. Optional. |
-| `product_name` | String | Product or service name. Optional. |
-| `quantity` | Number | Quantity of items purchased. Optional. |
+| `product_name` | String | Product or service name. **Recommended**. |
+| `quantity` | Number | Quantity of items purchased. **Recommended** |
 | `size` | String | Product size \(e.g. S, M, L, XL\). Optional. |
 {% endtab %}
 

@@ -123,12 +123,12 @@ Example Response
 | `name` | String | User's full name. **Required.** |
 | `email` | String | User’s email address. **Required.** |
 | `birth_date` | String | User’s birthdate \(DD-MM-YYYY\). Optional. |
-| `phone` | String | User’s phone. Optional. |
+| `phone` | String | User’s phone. **Required for fraud prevention** \(see [Fraud Prevention](../../fraud-prevention.md)\). |
 | `document` | String | User’s personal identification number. [Click here for more details.](../../country-reference.md#documents) **Required**. |
-| `user_reference` | String | Unique user id at the merchant side. Optional. |
-| `address` | [Address Object ](../#the-address-object) | User’s address. **Only required in India.** |
-| `ip` | String | User's IP address. |
-| `device_id` | String | User's unique device identifier. |
+| `user_reference` | String | Unique user id at the merchant side. **Required for fraud prevention**. |
+| `address` | [Address Object ](../#the-address-object) | User’s address. **Required in India and for fraud prevention.** |
+| `ip` | String | User's IP address. **Required for fraud prevention**. |
+| `device_id` | String | User's unique device identifier. **Required for fraud prevention**. |
 {% endtab %}
 
 {% tab title="Example Payer Object" %}
