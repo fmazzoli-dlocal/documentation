@@ -71,7 +71,7 @@
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Bank Transfer Online</td>
+      <td style="text-align:left">Codi QR code</td>
       <td style="text-align:left">
         <p><code>DIRECT</code>
         </p>
@@ -82,12 +82,13 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">CJ</td>
+      <td style="text-align:left"><code>CJ</code>
+      </td>
       <td style="text-align:left">CODI</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Bank Transfer Online</td>
+      <td style="text-align:left">Codi Push Notification</td>
       <td style="text-align:left">
         <p><code>DIRECT</code>
         </p>
