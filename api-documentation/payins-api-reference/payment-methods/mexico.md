@@ -65,8 +65,24 @@
       <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/NB.png">https://pay.dlocal.com/views/2.0/images/payments/NB.png</a>&#x200B;</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>CD</code>
+      <td style="text-align:left"><code>CQ</code>
       </td>
+      <td style="text-align:left">CODI</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Bank Transfer Online</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/codi.png">https://static.dlocal.com/images/providers/codi.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">CJ</td>
       <td style="text-align:left">CODI</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
