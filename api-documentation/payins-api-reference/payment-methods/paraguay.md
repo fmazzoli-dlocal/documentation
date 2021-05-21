@@ -65,7 +65,7 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
-      <td style="text-align:left">America Express</td>
+      <td style="text-align:left">American Express</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
       <td style="text-align:left"><code>AE</code>
