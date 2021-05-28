@@ -63,7 +63,7 @@ All payment methods \(Boleto, OXXO, UPI, etc.\) fall under one of the payment me
 * [Bank Transfer Payments](../../api-documentation/payins-api-reference/payments/bank-transfer-payments.md)
 * [PayLater Payments](../../api-documentation/payins-api-reference/payments/paylater-payments.md) \(only India\)
 * [Wallet Payments](../../api-documentation/payins-api-reference/payments/wallet-payments.md)
-* [PIX Payments \(only Brazil\)](../../api-documentation/payins-api-reference/payments/pix-payments.md)
+* [PIX Payments \(only Brazil\)](../../api-documentation/payins-api-reference/payments/pix-payments/)
 * [Mobile Money Payments](../../api-documentation/payins-api-reference/payments/mobile-money-payments.md)
 
 ## More guides &gt;

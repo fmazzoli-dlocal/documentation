@@ -16,7 +16,7 @@ All payment methods \(Boleto, OXXO, UPI, etc.\) fall under one of the payment me
 
 {% page-ref page="../../api-documentation/payins-api-reference/payments/wallet-payments.md" %}
 
-{% page-ref page="../../api-documentation/payins-api-reference/payments/pix-payments.md" %}
+{% page-ref page="../../api-documentation/payins-api-reference/payments/pix-payments/" %}
 
 
 
