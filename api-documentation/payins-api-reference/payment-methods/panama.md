@@ -108,7 +108,7 @@
       <td style="text-align:left"><code>NQ</code>
       </td>
       <td style="text-align:left">Nequi</td>
-      <td style="text-align:left"><code>WALLET</code>
+      <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Wallet</td>
