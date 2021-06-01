@@ -142,6 +142,23 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DS.png">https://pay.dlocal.com/views/2.0/images/payments/DS.png</a>&#x200B;</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>ZP</code>
+      </td>
+      <td style="text-align:left">Banco Popular</td>
+      <td style="text-align:left"><code>TICKET</code>
+      </td>
+      <td style="text-align:left">&lt;code&gt;&lt;/code&gt;</td>
+      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/DO.png">https://static.dlocal.com/images/providers/DO.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
