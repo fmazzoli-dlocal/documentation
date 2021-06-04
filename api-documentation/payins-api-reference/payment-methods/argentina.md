@@ -360,6 +360,22 @@
       </td>
       <td style="text-align:left"></td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>MP</code>
+      </td>
+      <td style="text-align:left">Mercado Pago</td>
+      <td style="text-align:left"><code>BANK TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
