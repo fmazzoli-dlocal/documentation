@@ -90,6 +90,42 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>&#x200B;</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>GC</code>
+      </td>
+      <td style="text-align:left">GCash</td>
+      <td style="text-align:left"><code>BANK TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>GY</code>
+      </td>
+      <td style="text-align:left">GrabPay</td>
+      <td style="text-align:left"><code>BANK TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>PM</code>
+      </td>
+      <td style="text-align:left">PayMaya</td>
+      <td style="text-align:left"><code>BANK TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
