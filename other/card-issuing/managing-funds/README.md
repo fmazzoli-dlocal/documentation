@@ -11,9 +11,3 @@ Possible operations are:
    1. From merchant to user
    2. User to bank account \(payout\) **\(soon\)**
 
-[PreviousTransaction History](../transaction-history.md)[NextTransfer Funds](transfer-funds.md)
-
-![](https://lh3.googleusercontent.com/a-/AOh14GgvcDhAdjkplK9VDlcKtB8KMDOJzdcagucluwSi)
-
-Last updated 4 months ago
-
