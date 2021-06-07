@@ -10,9 +10,5 @@ Find below the mains flows for issuing.
 
 **Issuing Journey / First Time Use**
 
-![](https://gblobscdn.gitbook.com/assets%2F-M5Xo_3JcLX9jl4lCVGK%2F-Ma42Mol5P3Zl8SwBQQG%2F-Ma44-sVFF3rtTb3tF8x%2Fimage.png?alt=media&token=3a8a9b68-00fe-457e-9966-abe67ea6232b)[API DOCUMENTATION - PreviousCard Issuing](./)[NextEnvironments](environments.md)
-
-![](https://lh5.googleusercontent.com/-8tCQWPzm-pY/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclDqmuMhgVpw9RCZJYOr2g47jMqew/s96-c/photo.jpg)
-
-Last updated 3 weeks ago
+![](https://gblobscdn.gitbook.com/assets%2F-M5Xo_3JcLX9jl4lCVGK%2F-Ma42Mol5P3Zl8SwBQQG%2F-Ma44-sVFF3rtTb3tF8x%2Fimage.png?alt=media&token=3a8a9b68-00fe-457e-9966-abe67ea6232b)
 
