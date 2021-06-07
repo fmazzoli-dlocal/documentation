@@ -42,6 +42,7 @@
         <p><b>RUC</b>
         </p>
         <p><b>PASS </b>- Passport</p>
+        <p><b>CE</b> - C&#xE9;dula de Extranjero</p>
       </td>
     </tr>
     <tr>
