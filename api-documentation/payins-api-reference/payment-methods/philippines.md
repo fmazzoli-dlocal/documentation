@@ -100,7 +100,8 @@
       <td style="text-align:left">Wallet</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GCash.png">https://static.dlocal.com/images/providers/GCash.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GY</code>
@@ -112,7 +113,8 @@
       <td style="text-align:left">Wallet</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GrabPay.png">https://static.dlocal.com/images/providers/GrabPay.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PM</code>
@@ -124,7 +126,8 @@
       <td style="text-align:left">Wallet</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/PayMaya.png">https://static.dlocal.com/images/providers/PayMaya.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
