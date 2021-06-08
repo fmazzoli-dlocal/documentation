@@ -152,6 +152,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Guatemala</td>
+      <td style="text-align:left"><code>GT</code>
+      </td>
+      <td style="text-align:left"><code>GTQ</code>
+      </td>
+      <td style="text-align:left">CUI</td>
+      <td style="text-align:left">13 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">India</td>
       <td style="text-align:left"><code>IN</code>
       </td>
