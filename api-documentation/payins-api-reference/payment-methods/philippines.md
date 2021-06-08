@@ -19,6 +19,8 @@
       <th style="text-align:left">Allowed Flows</th>
       <th style="text-align:left"><b>Logo</b>
       </th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
@@ -38,6 +40,9 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/VI.png&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -55,6 +60,9 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;https://pay.dlocal.com/views/2.0/images/payments/MC.png&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -72,6 +80,9 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VD.png">https://pay.dlocal.com/views/2.0/images/payments/VD.png</a>&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -89,6 +100,9 @@
         </p>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GC</code>
@@ -102,6 +116,8 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GCash.png">https://static.dlocal.com/images/providers/GCash.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GY</code>
@@ -115,6 +131,8 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GrabPay.png">https://static.dlocal.com/images/providers/GrabPay.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PM</code>
@@ -128,6 +146,27 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/PayMaya.png">https://static.dlocal.com/images/providers/PayMaya.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>SL</code>
+      </td>
+      <td style="text-align:left">7-Eleven</td>
+      <td style="text-align:left"><code>TICKET</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/7eleven.png">https://static.dlocal.com/images/providers/7eleven.png</a>
+      </td>
+      <td style="text-align:left">&lt;code&gt;&lt;/code&gt;</td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
