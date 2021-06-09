@@ -38,11 +38,6 @@
       <td style="text-align:left">EG</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>bank_name</b>
-      </td>
-      <td style="text-align:left">Max. 40 chars</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><b>bank_branch</b>
       </td>
       <td style="text-align:left">BIC code (we accept 8 or 11 characters)</td>
@@ -56,11 +51,6 @@
       <td style="text-align:left"><b>amount</b>
       </td>
       <td style="text-align:left">Max. 2 decimal numbers</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>address</b>
-      </td>
-      <td style="text-align:left">Max. 200 chars</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>purpose</b>
