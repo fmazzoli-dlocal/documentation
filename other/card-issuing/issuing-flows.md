@@ -1,7 +1,5 @@
 # Issuing Flows
 
-## Issuing Flows
-
 Find below the mains flows for issuing.
 
 **Issuing Journey / Main Functions**

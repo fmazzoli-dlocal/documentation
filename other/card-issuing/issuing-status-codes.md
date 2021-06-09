@@ -1,5 +1,39 @@
 # Issuing Status Codes
 
+### Pending Status
+
+| Status | Status code | Status detail |
+| :--- | :--- | :--- |
+| `PENDING` | 100 | The operation is pending |
+| `PENDING` | 101 | The account is pending |
+| `PENDING` | 102 | The KYC process is pending |
+| `PENDING` | 103 | The transfer is pending |
+| `PENDING` | 104 | The card is pending |
+
+### Waiting for Images Status
+
+| Status | Status code | Status detail |
+| :--- | :--- | :--- |
+| `WAITING_FOR_IMAGES` | 200 | Images are required |
+
+### Active Status <a id="waiting-for-images-status"></a>
+
+| Status | Status code | Status detail |
+| :--- | :--- | :--- |
+| `ACTIVE` | 300 | The account is active |
+| `ACTIVE` | 301 | Request has been accepted and is being processed |
+| `ACTIVE` | 302 | The card is active |
+| `ACTIVE` | 303 | The transfer is approved |
+
+### Inactive Status <a id="waiting-for-images-status"></a>
+
+| Status | Status code | Status detail |
+| :--- | :--- | :--- |
+| `INACTIVE` | 400 | The account is inactive |
+| `INACTIVE` | 401 | The card is inactive |
+
+### Rejection Status <a id="waiting-for-images-status"></a>
+
 | Status | Status code | Status detail |
 | :--- | :--- | :--- |
 | `REJECTED` | 500 | The operation was rejected |
@@ -24,4 +58,22 @@
 | `REJECTED` | 519 | The destination account does not exist |
 | `REJECTED` | 520 | Amount too large |
 | `REJECTED` | 521 | Amount too small |
+
+### Error Status <a id="waiting-for-images-status"></a>
+
+| Status | Status code | Status detail |
+| :--- | :--- | :--- |
+| `ERROR` | 3001 | Invalid credentials |
+| `ERROR` | 3002 | Unregistered IP address |
+| `ERROR` | 3003 | Merchant has no authorization to use this API |
+| `ERROR` | 4004 | Account not found |
+| `ERROR` | 4004 | Transfer not found |
+| `ERROR` | 4004 | Card not found |
+| `ERROR` | 5000 | Invalid request |
+| `ERROR` | 5001 | Invalid parameter |
+| `ERROR` | 5002 | Missing parameter |
+| `ERROR` | 5002 | Invalid account status |
+| `ERROR` | 7000 | Internal error |
+
+
 

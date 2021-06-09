@@ -1,6 +1,50 @@
 # Enable/Disable Account
 
-```text
-{    "account_id": "ISGA-4-0c0abb666a6a4fa38f0c21260ed99ce8",    "country": "CO",    "currency": "COP",    "balance": 0,    "account_reference": "fOrvqODPvK",    "status": "INACTIVE",    "owner": {        "first_name": "John",        "last_names": "Smith",        "birth_date": "08-01-1957",        "phone_number": "46043767",        "document": "6095786098",        "address": {            "country": "CO",            "city": "Medellin",            "state": "Antioquia",            "street": "Carrera 74 zZmLkR",            "street2": "Carrera 74 EbXiEI"            "house_number": "52",            "zip_code": "05001000",            "neighbourhood": "El Poblado"        },        "marital_status": "S",        "gender": "M",        "birth_place": "Colombia",        "document_type": "CC",        "nationality": "Colombian"    },    "description": "dLocal Issuing for John Smith",    "creation_date": "2021-03-09T17:02:01.307Z",    "notification_url": "http://merchant.dlocal.com/notification",    "cards": []}
+This function is used to enable and disable an account. 
+
+Disabled accounts will not allow:
+
+* Issuing cards
+* Top ups
+* Incoming or outgoing transfers
+
+As an example, you can use this function to disable if fraud is suspected or if user requests to freeze balance.
+
+{% api-method method="patch" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}" %}
+{% api-method-summary %}
+Enable/Disable Account
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="account\_id" type="string" required=true %}
+Account id provided when account-owner was created
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="status" type="string" required=true %}
+enum\('active', 'inactive'\)
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
 ```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 

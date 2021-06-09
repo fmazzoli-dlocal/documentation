@@ -1,7 +1,5 @@
 # Managing Funds
 
-## Managing Funds
-
 This section provides the necessary set of functions to manage users funds and balance.
 
 Possible operations are:
