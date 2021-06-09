@@ -14,6 +14,7 @@
 | **country** | MA |
 | **bank\_account** | RIB length 24 digits |
 | **amount** | Max. 2 decimal numbers |
+| **address** | Max. 200 chars |
 
 ### Example request
 
