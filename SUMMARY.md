@@ -118,9 +118,9 @@
 ## Other
 
 * [Card Issuing](other/card-issuing/README.md)
-  * [Security](other/card-issuing/security.md)
   * [Issuing Flows](other/card-issuing/issuing-flows.md)
   * [Environments](other/card-issuing/environments.md)
+  * [Security](other/card-issuing/security.md)
   * [Create account](other/card-issuing/create-account/README.md)
     * [Create account-owner](other/card-issuing/create-account/create-account-owner.md)
     * [Upload KYC](other/card-issuing/create-account/upload-kyc.md)
