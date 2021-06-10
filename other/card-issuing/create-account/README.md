@@ -11,7 +11,8 @@ Each account will have a unique `account_id` that will be needed to transact, qu
 The flow to register users and create account is:
 
 1. Create account-owner
-2. Upload KYC documents
+2. Upload KYC documents. _Required only for Brazil._
+3. Sent OTP Codes \(Email / Phone Number\). _Required only for Colombia._
 
 You will then receive a final status once the account is approved. Step 2 is required only for Brazil.
 
