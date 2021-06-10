@@ -49,7 +49,14 @@ Transfer id provided when transfer was created.
 
 #### Transfer status
 
-* PENDING - Initial status.
-* APPROVED -  Transfer was complete. 
-* REJECTED - Transfer was rejected
+The transfer status can take one of the following values:
+
+| Code | Description | Description |
+| :--- | :--- | :--- |
+| 0 | Received | The transfer is received to be processed in the next cut off |
+| 1 | Completed | The transfer was completed |
+| 2 | Cancelled | The transfer was cancelled by merchant |
+| 3 | Rejected | The transfer was rejected |
+| 4 | Delivered | The transfer is being processed  |
+| 5 | On hold | The transfer is on hold by the merchant or awaiting for further legal information to be processed |
 
