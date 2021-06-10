@@ -1,6 +1,6 @@
 # Transfer Funds
 
-​his function allows transfers from account. It can be used for:
+​This function allows transfers from account. It can be used for:
 
 1. Transferring funds from merchant account to user account \(credit funds to user\).
 2. Payouts to bank accounts. **\(Soon\)**

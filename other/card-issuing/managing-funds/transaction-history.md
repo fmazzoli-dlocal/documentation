@@ -1,6 +1,6 @@
 # Transaction History
 
-This function enables retrieving account balance and detailed transaction history. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
+This function enables retrieving detailed transaction history. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
 
 {% api-method method="get" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
 {% api-method-summary %}
