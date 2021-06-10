@@ -14,7 +14,7 @@ The flow to register users and create account is:
 2. Upload KYC documents. _Required only for Brazil._
 3. Sent OTP Codes \(Email / Phone Number\). _Required only for Colombia._
 
-You will then receive a final status once the account is approved. Step 2 is required only for Brazil.
+You will then receive a final status once the account is approved. 
 
 ​
 
