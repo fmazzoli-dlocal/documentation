@@ -58,6 +58,7 @@
 | `REJECTED` | 519 | The destination account does not exist |
 | `REJECTED` | 520 | Amount too large |
 | `REJECTED` | 521 | Amount too small |
+| `REJECTED` | 522 | Document already exists |
 
 ### Error Status <a id="waiting-for-images-status"></a>
 
