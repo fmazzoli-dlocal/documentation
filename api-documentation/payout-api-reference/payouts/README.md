@@ -103,7 +103,7 @@ Payout amount \(in the currency entered in the field 'currency'\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="control" type="string" required=false %}
-Control string
+Control string.I should be used only if using API version &lt; 2
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="address" type="string" required=false %}
