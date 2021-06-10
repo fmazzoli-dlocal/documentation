@@ -1,7 +1,5 @@
 # Bangladesh
 
-
-
 ### Mandatory parameters
 
 | Mandatory parameter | Description |
@@ -35,6 +33,23 @@
 "phone":"8801755590738",
 }
 ```
+
+
+
+### Mandatory parameters Bkash wallet
+
+| Mandatory parameter | Description |
+| :--- | :--- |
+| **login** | 32 chars |
+| **pass** | 32 chars |
+| **external\_id** | Max. 100 chars |
+| **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars |
+| **country** | BD |
+| **amount** | Max. 2 decimal numbers |
+| **currency** | BDT |
+| **phone** | Max. 100 char |
+| **metadata** | “{\“wallet\“:\“Bkash\“}” |
 
 ### Bank codes
 
