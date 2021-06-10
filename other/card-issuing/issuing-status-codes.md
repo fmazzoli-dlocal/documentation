@@ -10,11 +10,13 @@
 | `PENDING` | 103 | The transfer is pending |
 | `PENDING` | 104 | The card is pending |
 
-### Waiting for Images Status
+### Waiting for Information
 
 | Status | Status code | Status detail |
 | :--- | :--- | :--- |
 | `WAITING_FOR_IMAGES` | 200 | Images are required |
+| `WAITING_FOR_OTP_EMAIL` | 201 | OTP EMAIL is required |
+| `WAITING_FOR_OTP_PHONE` | 202 | OTP PHONE is required |
 
 ### Active Status <a id="waiting-for-images-status"></a>
 
