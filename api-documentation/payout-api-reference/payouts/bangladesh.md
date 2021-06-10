@@ -34,8 +34,6 @@
 }
 ```
 
-
-
 ### Mandatory parameters Bkash wallet
 
 | Mandatory parameter | Description |
@@ -50,6 +48,23 @@
 | **currency** | BDT |
 | **phone** | Max. 100 char |
 | **metadata** | “{\“wallet\“:\“Bkash\“}” |
+
+### Example request
+
+```text
+{
+    "external_id": "68907654",
+    "phone": "8801531252231",
+    "beneficiary_name": "DLOCAL BANGLADESH",
+    "beneficiary_lastname": "Limited",
+    "country": "BD",
+    "amount": "1",
+    "currency": "BDT",
+    "metadata": "{\"wallet\":\"Bkash\"}",
+    "notification_url": "http://google.com",
+    "type": "json"
+}
+```
 
 ### Bank codes
 
