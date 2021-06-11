@@ -6,7 +6,7 @@ In Colombia, it is only possible to deactivate \(block\) cards via API. Unblocki
 
 {% api-method method="patch" host="https://sandbox.dlocal.com" path="/issuing/cards/{card\_id}" %}
 {% api-method-summary %}
-
+Block / Unblock Card
 {% endapi-method-summary %}
 
 {% api-method-description %}
