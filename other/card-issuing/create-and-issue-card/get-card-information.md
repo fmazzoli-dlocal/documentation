@@ -54,9 +54,11 @@ card\_id provided when card was created
 
 #### Card status
 
-* CREATED - card was created but is not active
-* PENDING - card is created and in process of delivery
-* INACTIVE - Card not activated
-* ACTIVE - Active card
+* CREATED - card was created but is not active.
+* PENDING - card is created and in process of delivery.
+* INACTIVE - Card not activated.
+* ACTIVE - Active card.
+* BLOCKED - card is blocked.
+* CANCELLED - card is cancelled. This status is permanent.
 * ERROR - Error in card creation, please retry or contact our support.
 

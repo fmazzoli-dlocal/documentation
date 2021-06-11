@@ -75,7 +75,8 @@
 | `ERROR` | 5000 | Invalid request |
 | `ERROR` | 5001 | Invalid parameter |
 | `ERROR` | 5002 | Missing parameter |
-| `ERROR` | 5002 | Invalid account status |
+| `ERROR` | 5003 | Invalid account status |
+| `ERROR` | 5004 | Invalid card status |
 | `ERROR` | 7000 | Internal error |
 
 
