@@ -4,12 +4,23 @@
 
 | Property | Description |
 | :--- | :--- |
-| hdmdata | Devices's fingerprint codified. |
+| hdmdata | Devices's fingerprint codified. Read more information below. |
 | payload | Device's fingerprint. |
 | notification\_url | Notification to receive change status webhooks |
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
-|  |  |
+| last\_names | Owner's complete Last Names. |
+| birth\_date | Owner's birth date. ISO 8601 Data time with time zone. |
+| email | Owner's email. |
+| phone\_number | Owner's cellphone number. |
+| document | Owner’s personal identification number.  |
+| document\_type | Owner's personal identification type. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#document-type) |
+| expedition\_date | Owner's personal identification expedition date. ISO 8601 Data time with time zone.  |
+| gender | M or F. |
+| marital\_status | [Check table](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#marital-status) below for more details. |
+| ip\_address | Owner's IP Address. |
+| terms\_and\_conditions\_accepted | Account's terms and conditions.  |
+| data\_management\_accepted | Account's data management.  |
 
 
 
@@ -28,7 +39,7 @@
 | W | Widowed |
 | D | Divorced |
 
- **Device Information**
+####  **Device Information**
 
 The following parameters are required to get device information:
 

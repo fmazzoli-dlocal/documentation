@@ -96,7 +96,7 @@ Account and owner description
 | last\_names | String | Owner's complete Last Names. **Required** |
 | birth\_date | String | Owner's birth date. ISO 8601 Data time with time zone. **Required.** |
 | email | String | Owner's email. **Required** |
-| phone\_number | String | Owner's phone number. In Brazil include DDD. **Required** |
+| phone\_number | String | Owner's cellphone number. In Brazil include DDD. **Required** |
 | document | String | Owner’s personal identification number. **Required** |
 | document\_type | String | Owner's personal identification type.  **Required** for Colombia. [See table below.]() |
 | expedition\_date | String | Owner's personal identification expedition date. ISO 8601 Data time with time zone. **Required** for Colombia.  |
