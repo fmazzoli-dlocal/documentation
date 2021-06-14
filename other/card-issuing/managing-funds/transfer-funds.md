@@ -5,7 +5,7 @@
 1. Transferring funds from merchant account to user account \(credit funds to user\).
 2. Payouts to bank accounts. **\(Soon\)**
 
-{% api-method method="post" host="https://sandbox.dlocal.com" path="/issuing/transfers" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/transfers" %}
 {% api-method-summary %}
 Transfer Funds
 {% endapi-method-summary %}

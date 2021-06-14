@@ -4,7 +4,7 @@ This function is used to modify the status of a card. The possible status are AC
 
 In Colombia, it is only possible to deactivate \(block\) cards via API. Unblocking must be done offline with provider.
 
-{% api-method method="patch" host="https://sandbox.dlocal.com" path="/issuing/cards/{card\_id}" %}
+{% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}" %}
 {% api-method-summary %}
 Block / Unblock Card
 {% endapi-method-summary %}

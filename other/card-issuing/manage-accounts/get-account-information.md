@@ -4,7 +4,7 @@ This function enables to retrieve account structure information such as owner, c
 
 You will need it to check account status after receiving asynchronous notification.
 
-{% api-method method="get" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}" %}
+{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}" %}
 {% api-method-summary %}
 Get Account Information
 {% endapi-method-summary %}

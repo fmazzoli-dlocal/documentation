@@ -2,7 +2,7 @@
 
 This function enables retrieving detailed transaction history. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
 
-{% api-method method="get" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
+{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
 {% api-method-summary %}
 Transaction History
 {% endapi-method-summary %}

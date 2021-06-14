@@ -6,7 +6,7 @@ Card schemes are subject to availability.
 
 On response to card creation, you will receive a `card_id`, please store this value as it will be used for transacting.
 
-{% api-method method="post" host="https://sandbox.dlocal.com" path="/issuing/cards" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards" %}
 {% api-method-summary %}
 Create New Card
 {% endapi-method-summary %}
@@ -18,6 +18,10 @@ Create New Card
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="ipAddress" type="string" required=true %}
+Cardholder's IP Address 
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="notification\_url" type="string" required=true %}
 URL to receive webhook notification on status change
 {% endapi-method-parameter %}
@@ -77,6 +81,7 @@ enum\('PHYSICAL','VIRTUAL'\)
 ```text
 {
     "account_id": "ISGA-4-9618440e0abe4fcfa77575319e6eb7ec",
+    "ipAddress": "186.52.133.239",
     "type": "PHYSICAL",
     "card_reference": "WCaM8vn1YMNJ",
     "delivery_address": {

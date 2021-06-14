@@ -10,7 +10,7 @@ Disabled accounts will not allow:
 
 As an example, you can use this function to disable if fraud is suspected or if user requests to freeze balance.
 
-{% api-method method="patch" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}" %}
+{% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}" %}
 {% api-method-summary %}
 Enable/Disable Account
 {% endapi-method-summary %}

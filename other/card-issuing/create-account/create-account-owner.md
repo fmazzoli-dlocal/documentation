@@ -1,6 +1,6 @@
 # Create account-owner
 
-{% api-method method="post" host="https://sandbox.dlocal.com" path="/issuing/accounts" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts" %}
 {% api-method-summary %}
 Create an account
 {% endapi-method-summary %}

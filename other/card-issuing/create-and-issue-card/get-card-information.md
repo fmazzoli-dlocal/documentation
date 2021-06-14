@@ -2,7 +2,7 @@
 
 This function enables to retrieve card information such as status. You will need it to check account status after receiving asynchronous notification.
 
-{% api-method method="get" host="https://sandbox.dlocal.com" path="/issuing/cards/{card\_id}" %}
+{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}" %}
 {% api-method-summary %}
 Get Card Information
 {% endapi-method-summary %}

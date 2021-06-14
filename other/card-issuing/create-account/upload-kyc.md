@@ -2,7 +2,7 @@
 
 This function is to send KYC files in order to provide necessary documentation to validate the account. Only used for **Brazil**.
 
-{% api-method method="post" host="https://sandbox.dlocal.com" path="/issuing/accounts/{account\_id}/images" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/images" %}
 {% api-method-summary %}
 Upload KYC
 {% endapi-method-summary %}

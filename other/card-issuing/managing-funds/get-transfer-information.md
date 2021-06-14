@@ -4,7 +4,7 @@ This function enables to retrieve account structure information such as transfer
 
 You will need it to check transfer status after receiving asynchronous notification.
 
-{% api-method method="get" host="https://sandbox.dlocal.com" path="/issuing/transfers/{transfer\_id}" %}
+{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/transfers/{transfer\_id}" %}
 {% api-method-summary %}
 Get Transfer Information
 {% endapi-method-summary %}
