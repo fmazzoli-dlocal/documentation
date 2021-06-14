@@ -92,36 +92,36 @@ Account and owner description
 {% tab title="Owner Object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| first\_name | String | Owner's First Name. **Required** |
-| last\_names | String | Owner's complete Last Names. **Required** |
-| birth\_date | String | Owner's birth date. ISO 8601 Data time with time zone. **Required.** |
-| email | String | Owner's email. **Required** |
-| phone\_number | String | Owner's cellphone number. In Brazil include DDD. **Required** |
-| document | String | Owner’s personal identification number. **Required** |
-| document\_type | String | Owner's personal identification type.  **Required** for Colombia. [See table below.]() |
-| expedition\_date | String | Owner's personal identification expedition date. ISO 8601 Data time with time zone. **Required** for Colombia.  |
-| mother\_name | String | Mothers Full Name. **Required** only for Brazil. |
-| birth\_place | String | Place of birth. **Required** only for **Colombia** |
-| nationality | String | Nationality. **Required** only for **Colombia** |
-| gender | Char | M or F. **Required** for **Colombia**. |
-| marital\_status | Char | [Check table below]() for more details. **Required** for **Colombia** |
-| address | Address Object | Owner's Address. **Required** |
-| ip\_address | String | Owner's IP Address. **Required for Colombia.** |
-| terms\_and\_conditions\_accepted | Boolean | Account's terms and conditions.  **Required for Colombia.** |
-| data\_management\_accepted | Boolean | Account's data management. **Required for Colombia.** |
+| first\_name | String | Owner's First Name.  |
+| last\_names | String | Owner's complete Last Names.  |
+| birth\_date | String | Owner's birth date. ISO 8601 Data time with time zone.  |
+| email | String | Owner's email.  |
+| phone\_number | String | Owner's cellphone number.   |
+| document | String | Owner’s personal identification number.  |
+| document\_type | String | Owner's personal identification type.  ****  |
+| expedition\_date | String | Owner's personal identification expedition date. ISO 8601 Data time with time zone.  |
+| mother\_name | String | Mothers Full Name.  |
+| birth\_place | String | Place of birth.  |
+| nationality | String | Nationality.  |
+| gender | Char | M or F.  |
+| marital\_status | Char | Marital Status. |
+| address | Address Object | Owner's Address.  |
+| ip\_address | String | Owner's IP Address.  |
+| terms\_and\_conditions\_accepted | Boolean | Account's terms and conditions.   |
+| data\_management\_accepted | Boolean | Account's data management.  |
 {% endtab %}
 
 {% tab title="Address Object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| country | String | Owner's country code. ISO 3166-1 alpha-2-code. **Required** |
-| city | String | Owner's address city code. **Required**. [Colombia - See table below.]() |
-| state | String | Owner's address state code. **Required**. [Colombia - See table below.]() |
-| street | String | Owner's address street. **Required.** |
-| street2 | String | Additional information on street. Optional. |
-| house\_number | String | Owner's house number \(floor, apartment\). **Required.** |
-| zip\_code | String | Owner's address zipcode. **Required for Brazil.** |
-| neighbourhood | String | Neighbourhood or district. **Required for Brazil.** |
+| country | String | Owner's country code. ISO 3166-1 alpha-2-code.  |
+| city | String | Owner's address city code.  |
+| state | String | Owner's address state code.  |
+| street | String | Owner's address street.  |
+| street2 | String | Additional information on street.  |
+| house\_number | String | Owner's house number \(floor, apartment\).  |
+| zip\_code | String | Owner's address zip code.  |
+| neighbourhood | String | Neighbourhood or district.  |
 {% endtab %}
 {% endtabs %}
 
