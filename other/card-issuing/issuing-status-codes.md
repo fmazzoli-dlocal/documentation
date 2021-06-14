@@ -61,6 +61,7 @@
 | `REJECTED` | 520 | Amount too large |
 | `REJECTED` | 521 | Amount too small |
 | `REJECTED` | 522 | Document already exists |
+| `REJECTED` | 523 | Rejected by invalid OTP |
 
 ### Error Status <a id="waiting-for-images-status"></a>
 
@@ -77,6 +78,7 @@
 | `ERROR` | 5002 | Missing parameter |
 | `ERROR` | 5003 | Invalid account status |
 | `ERROR` | 5004 | Invalid card status |
+| `ERROR` | 5005 | Invalid OTP |
 | `ERROR` | 7000 | Internal error |
 
 

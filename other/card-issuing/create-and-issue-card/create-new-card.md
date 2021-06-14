@@ -18,7 +18,7 @@ Create New Card
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="ipAddress" type="string" required=true %}
+{% api-method-parameter name="ip\_address" type="string" required=true %}
 Cardholder's IP Address 
 {% endapi-method-parameter %}
 
@@ -81,7 +81,7 @@ enum\('PHYSICAL','VIRTUAL'\)
 ```text
 {
     "account_id": "ISGA-4-9618440e0abe4fcfa77575319e6eb7ec",
-    "ipAddress": "186.52.133.239",
+    "ip_address": "186.52.133.239",
     "type": "PHYSICAL",
     "card_reference": "WCaM8vn1YMNJ",
     "delivery_address": {
