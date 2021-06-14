@@ -56,7 +56,7 @@
 | `REJECTED` | 515 | Error in issuer |
 | `REJECTED` | 516 | Timeout expired while executing transaction |
 | `REJECTED` | 517 | The source account does not exist |
-| `REJECTED` | 518 |  The source account has no funds |
+| `REJECTED` | 518 | The source account has no funds |
 | `REJECTED` | 519 | The destination account does not exist |
 | `REJECTED` | 520 | Amount too large |
 | `REJECTED` | 521 | Amount too small |

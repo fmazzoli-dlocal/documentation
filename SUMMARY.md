@@ -124,6 +124,7 @@
   * [Security](other/card-issuing/security.md)
   * [Create account](other/card-issuing/create-account/README.md)
     * [Create account-owner](other/card-issuing/create-account/create-account-owner/README.md)
+      * [Brazil](other/card-issuing/create-account/create-account-owner/brazil.md)
       * [Colombia](other/card-issuing/create-account/create-account-owner/colombia.md)
     * [Upload KYC](other/card-issuing/create-account/upload-kyc.md)
     * [Sent OTP Codes](other/card-issuing/create-account/sent-otp-codes.md)
