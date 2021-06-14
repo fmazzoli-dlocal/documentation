@@ -1,8 +1,6 @@
 # Block/Unblock Card
 
-This function is used to modify the status of a card. The possible status are ACTIVE, INACTIVE, CANCELED. 
-
-In Colombia, it is only possible to deactivate \(block\) cards via API. Unblocking must be done offline with provider.
+This function is used to modify the status of a card. The possible status are ACTIVE or BLOCKED.
 
 {% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}" %}
 {% api-method-summary %}
@@ -17,13 +15,13 @@ Block / Unblock Card
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="card\_id" type="string" required=true %}
-
+card\_id provided when card was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="status" type="string" required=true %}
-ACTIVE, INACTIVE or CANCELED
+ACTIVE or BLOCKED
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
