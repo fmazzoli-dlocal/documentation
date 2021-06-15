@@ -6,22 +6,7 @@ Issue company branded cards and send funds to cards directly to pay out partners
 
 ![Direct Issuing](../.gitbook/assets/issuing_hero_landing.jpg)
 
-### Create and manage user accounts
 
-The solution requires you to create an account for each user you want to credit funds to. Our API allows you to easily create and manage these accounts, which includes enabling or disabling them, or retrieving relevant account information such as the balance, status or the owner's information. Follow the links bellow to learn more about these services: 
-
-{% page-ref page="../api-documentation/direct-issuing-api-reference/create-account/" %}
-
-{% page-ref page="../api-documentation/direct-issuing-api-reference/manage-accounts/" %}
-
-### Manage funding
-
-Once the account is created, you can easily transfer funds to top up the user accounts in local currency. You also get access to a wide variety of   
-
-
-
-
-{% page-ref page="../api-documentation/direct-issuing-api-reference/" %}
 
 
 

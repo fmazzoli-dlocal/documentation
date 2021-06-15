@@ -1,7 +1,5 @@
 # Direct Issuing API Reference
 
-### Set up
-
 Follow these 4 easy steps to start with your integration setup:
 
 1. Refer to the flows page to get a full and general picture of the services included in this API
