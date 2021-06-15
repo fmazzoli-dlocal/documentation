@@ -113,6 +113,7 @@
     * [Retrieve Balance](api-documentation/direct-issuing-api-reference/managing-funds/retrieve-balance.md)
     * [Transaction History](api-documentation/direct-issuing-api-reference/managing-funds/transaction-history.md)
   * [Create and Issue Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/README.md)
+    * [Untitled](api-documentation/direct-issuing-api-reference/create-and-issue-card/untitled.md)
     * [Create New Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/create-new-card.md)
     * [Get Card Information](api-documentation/direct-issuing-api-reference/create-and-issue-card/get-card-information.md)
     * [Card Activation](api-documentation/direct-issuing-api-reference/create-and-issue-card/card-activation.md)
