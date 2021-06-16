@@ -153,7 +153,7 @@ Account and owner description
         "email": "john@dlocal.com",
         "phone_number": "46043767",
         "document": "6095786098",
-        "expedition_date": "2019-12-08T15:44:42.310Z"
+        "expedition_date": "2019-12-08T15:44:42.310Z",
         "address": {
             "country": "CO",
             "city": "Medellin",
