@@ -173,7 +173,8 @@
       <td style="text-align:left">PayLater</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/ICICIBANK.png">https://static.dlocal.com/images/providers/ICICIBANK.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GS</code>
@@ -185,7 +186,8 @@
       <td style="text-align:left">PayLater</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Simpl.png">https://static.dlocal.com/images/providers/Simpl.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>PL</code>
@@ -197,7 +199,8 @@
       <td style="text-align:left">PayLater</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/ePaylater.png">https://static.dlocal.com/images/providers/ePaylater.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
