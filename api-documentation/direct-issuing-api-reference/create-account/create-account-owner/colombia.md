@@ -12,7 +12,7 @@
 | last\_names | Owner's complete Last Names. |
 | birth\_date | Owner's birth date. ISO 8601 Data time with time zone. |
 | email | Owner's email. |
-| phone\_number | Owner's cellphone number. |
+| phone\_number | Owner's cellphone number. \(Area code + phone number\) |
 | document | Owner’s personal identification number.  |
 | document\_type | Owner's personal identification type. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#document-type) |
 | expedition\_date | Owner's personal identification expedition date. ISO 8601 Data time with time zone.  |
