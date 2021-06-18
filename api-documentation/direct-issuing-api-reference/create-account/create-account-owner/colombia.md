@@ -9,7 +9,7 @@
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
 | last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date. ISO 8601 Data time with time zone. |
+| birth\_date | Owner's birth date. User's  must be over 18 years old.  ISO 8601 Data time with time zone. |
 | email | Owner's email. |
 | phone\_number | Owner's cellphone number. \(Area code + phone number\) |
 | document | Owner’s personal identification number.  |
