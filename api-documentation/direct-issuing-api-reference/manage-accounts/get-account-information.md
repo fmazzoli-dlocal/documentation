@@ -82,7 +82,7 @@ Account id provided when account-owner was created
 * INACTIVE - Validated account but not activated
 * ACTIVE - Active account, created correctly
 * WAITING\_FOR\_IMAGES - KYC images must be sent \(only Brazil\)
-* WAITING\_FOR\_OTP\_EMAIL - OTP Code EMAIL must be sent \(only Colombia\)
-* WAITING\_FOR\_OTP\_PHONE - OTP Code PHONE must be sent \(only Colombia\)
+* WAITING\_FOR\_OTP\_EMAIL - OTP Code EMAIL must be sent. The OTP code sent by dLocal will be valid for 5 minutes \(only Colombia\)
+* WAITING\_FOR\_OTP\_PHONE - OTP Code PHONE must be sent.  The OTP code sent by dLocal will be valid for 5 minutes \(only Colombia\)
 * REJECTED - Account was rejected
 
