@@ -62,6 +62,8 @@
 | `REJECTED` | 521 | Amount too small |
 | `REJECTED` | 522 | Document already exists |
 | `REJECTED` | 523 | Rejected by invalid OTP |
+| `REJECTED` | 524 | User's  must be over 18 years old |
+| `REJECTED` | 525 | Rejected by invalid expedition date |
 
 ### Error Status <a id="waiting-for-images-status"></a>
 
