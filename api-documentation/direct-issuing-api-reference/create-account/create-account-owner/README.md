@@ -12,7 +12,7 @@ This is the based method used to create a new wallet account and holder. Please 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="hdmdata" type="string" required=false %}
+{% api-method-parameter name="hdm\_data" type="string" required=false %}
 Devices's fingerprint codified. 
 {% endapi-method-parameter %}
 
