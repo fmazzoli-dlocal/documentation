@@ -6,7 +6,6 @@
 | :--- | :--- |
 | hdmdata | Devices's fingerprint codified. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
 | payload | Device's fingerprint. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
-| notification\_url | Notification to receive change status webhooks |
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
 | last\_names | Owner's complete Last Names. |

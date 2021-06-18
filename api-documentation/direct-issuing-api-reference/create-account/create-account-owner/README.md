@@ -20,7 +20,7 @@ Devices's fingerprint codified.
 Device's fingerprint.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="notification\_url" type="string" required=true %}
+{% api-method-parameter name="notification\_url" type="string" required=false %}
 Notification to receive change status webhooks
 {% endapi-method-parameter %}
 
