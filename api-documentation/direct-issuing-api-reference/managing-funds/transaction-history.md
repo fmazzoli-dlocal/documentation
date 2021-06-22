@@ -39,65 +39,34 @@ Transaction start. By default 0.
 ```
 {
     "account_id": "ISGA-4-85e2b96385a3418dae1e5905f7893426",
-    "country": "CO",
-    "currency": "COP",
-    "balance": 1812,
-    "account_reference": "LCZjc0VGcU",
-    "status": "ACTIVE",
-    "owner": {
-        "first_name": "John",
-        "last_names": "Smith",
-        "birth_date": "08-01-1957",
-        "email": "john@dlocal.com",
-        "phone_number": "46044573",
-        "document": "3213368099",
-        "address": {
-            "country": "CO",
-            "city": "Medellin",
-            "state": "Antioquia",
-            "street": "Carrera 74 qeHDUh",
-            "street2": "Carrera 74 TUXgZf",
-            "house_number": "52",
-            "zip_code": "05001000",
-            "neighbourhood": "El Poblado"
-        },
-        "marital_status": "S",
-        "gender": "M",
-        "birth_place": "Colombia",
-        "document_type": "CC",
-        "nationality": "Colombian"
-    },
-    "description": "dLocal Wallet for John Smith",
-    "creation_date": "2021-03-09T17:02:17Z",
-    "notification_url": "http://merchant.dlocal.com/notification",
     "transactions": [
         {
             "status": "APPROVED",
             "type": "credit",
             "created_date": "2021-03-09T17:02:21.898Z",
             "amount": 1428,
-            "currency": "CLP"
+            "currency": "COP"
         },
         {
             "status": "APPROVED",
             "type": "debit",
             "created_date": "2021-03-09T17:02:21.898Z",
             "amount": 1126,
-            "currency": "CLP"
+            "currency": "COP"
         },
         {
             "status": "PENDING",
             "type": "debit",
             "created_date": "2021-03-09T17:02:21.898Z",
             "amount": 1574,
-            "currency": "CLP"
+            "currency": "COP"
         },
         {
             "status": "APPROVED",
             "type": "debit",
             "created_date": "2021-03-09T17:02:21.898Z",
             "amount": 1829,
-            "currency": "CLP"
+            "currency": "COP"
         }
     ]
 }
