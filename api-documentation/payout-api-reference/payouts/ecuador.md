@@ -183,7 +183,7 @@ _In this list there are the major banks of the country to see the complete list 
 | Banco Internacional | 032 |
 | Banco Procredit | 060 |
 | Banco Produbanco | 036 |
-| Banco Promerica | 040 |
+| Banco Promerica | 036 |
 | Banco Solidario | 059 |
 | Coop. 15 de Abril Ltda | 057 |
 | Coop. 15 de Agosto Pilacoto | 290 |
@@ -340,8 +340,6 @@ _In this list there are the major banks of the country to see the complete list 
 | COOP DE A. Y C. MUSHUK YUYAY LTDA | 102 |
 | COOP. DE A. Y C. NIZAG LTDA. | 103 |
 | COOP. DE A. Y C. EL BUEN SEMBRADOR LTDA. | 104 |
-| BCE-TRANSFERENCIAS REMESAS | 105 |
-| BCE DINERO ELECTRONICO | 106 |
 | COOP.DE AHORRO Y CREDITO 29 DE ENERO | 108 |
 | COAC SINDICATO DE CHOFERES PROFESIONALES DE YANTZA | 109 |
 | COOP. DE A. Y C. SENOR DEL ARBOL | 114 |
