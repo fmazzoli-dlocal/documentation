@@ -31,7 +31,7 @@ Card reference on merchant side
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="delivery\_address" type="object" required=false %}
-If not provided will use same as provided in account creation. See address object specs on Create account-owner section.
+If not provided will use same as provided in account creation. See address object specs on Create account-owner section. **-Not available for Colombia-**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="account\_id" type="string" required=true %}
