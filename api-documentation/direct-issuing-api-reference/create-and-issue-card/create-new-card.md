@@ -30,8 +30,8 @@ URL to receive webhook notification on status change
 Card reference on merchant side
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="delivery\_address" type="object" required=true %}
-Required if physical card. If not provided will use same as provided in account creation. See address object specs on Create account-owner section.
+{% api-method-parameter name="delivery\_address" type="object" required=false %}
+If not provided will use same as provided in account creation. See address object specs on Create account-owner section.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="account\_id" type="string" required=true %}
