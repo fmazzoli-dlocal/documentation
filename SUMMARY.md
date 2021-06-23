@@ -116,7 +116,8 @@
     * [Create New Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/create-new-card.md)
     * [Get Card Information](api-documentation/direct-issuing-api-reference/create-and-issue-card/get-card-information.md)
     * [Card Activation](api-documentation/direct-issuing-api-reference/create-and-issue-card/card-activation.md)
-    * [Block/Unblock Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/block-unblock-card.md)
+    * [Block Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/block-unblock-card.md)
+    * [Unblock Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/unblock-card.md)
   * [Issuing Status Codes](api-documentation/direct-issuing-api-reference/issuing-status-codes.md)
 
 ## Products
