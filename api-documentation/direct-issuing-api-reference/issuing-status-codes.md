@@ -81,6 +81,11 @@
 | `ERROR` | 5003 | Invalid account status |
 | `ERROR` | 5004 | Invalid card status |
 | `ERROR` | 5005 | Invalid OTP |
+| `ERROR` | 5006 | Transfer error due merchant reference already used |
+| `ERROR` | 5007 | Transfer error due compliance limits |
+| `ERROR` | 5008 | Transfer error due end beneficiary blacklisted |
+| `ERROR` | 5009 | Transfer error due Insufficient funds |
+| `ERROR` | 5010 | Transfer error due to compliance |
 | `ERROR` | 7000 | Internal error |
 
 
