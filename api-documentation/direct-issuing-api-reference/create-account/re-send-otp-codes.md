@@ -1,10 +1,14 @@
-# Send OTP Codes
+# Re send OTP Codes
 
-This function is to send OTP Codes in order to provide necessary documentation to validate Email or Telephone Number. Only used for **Colombia**.
+This function is to re send OTP codes to the end user if they didn't receive it. Only used by **Colombia**.
 
-{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/OTP" %}
+{% hint style="info" %}
+You can send up to 1 additional OTP code verification attempt via email or cellphone every 24 hours.
+{% endhint %}
+
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/otp/resend" %}
 {% api-method-summary %}
-Send OTP Codes
+Re send OTP Codes
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -22,10 +26,6 @@ Provided when account was created
 {% api-method-body-parameters %}
 {% api-method-parameter name="type" type="string" required=true %}
 ENUM \('EMAIL','PHONE'\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="code" type="string" required=true %}
-code sent to account owner.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
