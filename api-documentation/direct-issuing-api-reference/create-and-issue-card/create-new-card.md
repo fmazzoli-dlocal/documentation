@@ -18,6 +18,10 @@ Create New Card
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="terms\_and\_conditions\_accepted" type="boolean" required=true %}
+Card's terms and conditions 
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="ip\_address" type="string" required=true %}
 Cardholder's IP Address 
 {% endapi-method-parameter %}
@@ -94,6 +98,7 @@ enum\('PHYSICAL','VIRTUAL'\)
         "zip_code": "05001000",
         "neighbourhood": "El Poblado"
     },
+    "terms_and_conditions_accepted": "T",
     "notification_url": "http://merchant.dlocal.com/notification"
 }
 ```
