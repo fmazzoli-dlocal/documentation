@@ -53,7 +53,7 @@
 | `REJECTED` | 512 | Document is invalid |
 | `REJECTED` | 513 | Password is invalid |
 | `REJECTED` | 514 | Card already exists |
-| `REJECTED` | 515 | Error in issuer |
+| `REJECTED` | 515 | Invalid OTP \(error 5005\) |
 | `REJECTED` | 516 | Timeout expired while executing transaction |
 | `REJECTED` | 517 | The source account does not exist |
 | `REJECTED` | 518 | The source account has no funds |
@@ -64,29 +64,30 @@
 | `REJECTED` | 523 | Rejected by invalid OTP |
 | `REJECTED` | 524 | User's  must be over 18 years old |
 | `REJECTED` | 525 | Rejected by invalid expedition date |
+| `REJECTED` | 526 | Invalid credentials \(error 3001\) |
+| `REJECTED` | 527 | Unregistered IP address \(error 3002\) |
+| `REJECTED` | 528 | Merchant has no authorization to use this API \(error 3003\) |
+| `REJECTED` | 529 | Account not found \(error 4004\) |
+| `REJECTED` | 530 | Transfer not found \(error 4004?\) |
+| `REJECTED` | 531 | Card not found \(error 4004?\) |
+| `REJECTED` | 532 | Invalid request \(error 5000\) |
+| `REJECTED` | 533 | Invalid parameter  \(error 5001\) |
+| `REJECTED` | 534 | Missing parameter \(error 5002\) |
+| `REJECTED` | 535 | Invalid account status \(error 5003\) |
+| `REJECTED` | 536 | Invalid card status \(error 5004\) |
+| `REJECTED` | 537 | Invalid OTP \(error 5005\) |
+| `REJECTED` | 538 | Transfer error due merchant reference already used \(error 5006\) |
+| `REJECTED` | 539 | Transfer error due compliance limits \(error 5007\) |
+| `REJECTED` | 540 | Transfer error due end beneficiary blacklisted \(error 5008\) |
+| `REJECTED` | 541 | Transfer error due Insufficient funds \(error 5009\) |
+| `REJECTED` | 542 | Transfer error due to compliance \(error 5010\) |
 
 ### Error Status <a id="waiting-for-images-status"></a>
 
 | Status | Status code | Status detail |
 | :--- | :--- | :--- |
-| `ERROR` | 3001 | Invalid credentials |
-| `ERROR` | 3002 | Unregistered IP address |
-| `ERROR` | 3003 | Merchant has no authorization to use this API |
-| `ERROR` | 4004 | Account not found |
-| `ERROR` | 4004 | Transfer not found |
-| `ERROR` | 4004 | Card not found |
-| `ERROR` | 5000 | Invalid request |
-| `ERROR` | 5001 | Invalid parameter |
-| `ERROR` | 5002 | Missing parameter |
-| `ERROR` | 5003 | Invalid account status |
-| `ERROR` | 5004 | Invalid card status |
-| `ERROR` | 5005 | Invalid OTP |
-| `ERROR` | 5006 | Transfer error due merchant reference already used |
-| `ERROR` | 5007 | Transfer error due compliance limits |
-| `ERROR` | 5008 | Transfer error due end beneficiary blacklisted |
-| `ERROR` | 5009 | Transfer error due Insufficient funds |
-| `ERROR` | 5010 | Transfer error due to compliance |
 | `ERROR` | 7000 | Internal error |
+| `ERROR` | 7001 | Error in Issuer \(Ex rejected 515\) |
 
 
 
