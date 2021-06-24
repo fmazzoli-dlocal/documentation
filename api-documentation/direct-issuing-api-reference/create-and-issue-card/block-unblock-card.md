@@ -2,7 +2,7 @@
 
 This operation can be used for blocking a card.
 
-{% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/block" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/block" %}
 {% api-method-summary %}
 Block Card
 {% endapi-method-summary %}

@@ -6,7 +6,7 @@ This operation can be used for activating a registered card.
 Inform users that the **PIN** for card use is the **last 4 digits** of their **ID card**.
 {% endhint %}
 
-{% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/activate" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/activate" %}
 {% api-method-summary %}
 Card Activation
 {% endapi-method-summary %}

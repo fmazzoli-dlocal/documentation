@@ -2,7 +2,7 @@
 
 This operation can be used for unblocking a card.
 
-{% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/unblock" %}
+{% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/unblock" %}
 {% api-method-summary %}
 Unblock Card
 {% endapi-method-summary %}
