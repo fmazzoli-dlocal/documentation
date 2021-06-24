@@ -59,7 +59,7 @@ curl -X POST \
         "cvv" : "123",
         "expiration_month" : 10,
         "expiration_year" : 2040,
-        "capture" : FALSE
+        "capture" : false
     },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications",
@@ -277,17 +277,17 @@ curl -X POST \
         "cvv" : "123",
         "expiration_month" : 10,
         "expiration_year" : 2040,
-        "capture" : FALSE
+        "capture" : false
     },
     "three_dsecure":{
-        "mpi" : TRUE,
+        "mpi" : true,
         "three_dsecure_version" : "1.0",
         "cavv" : "3q2+78r+ur7erb7vyv66vv\/\/\/\/8=",
         "eci" : "05",
         "xid" : "ODUzNTYzOTcwODU5NzY3Qw==",
         "enrollment_response" : "Y",
         "authentication_response" : "Y"
-    }
+    },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
@@ -387,8 +387,8 @@ Optional 3D-Secure  is available in Mexico, Turkey, Egypt, Nigeria, Dominican Re
         "expiration_year" : 2040,
     },
     "three_dsecure":{
-        "force" : TRUE,
-    }
+        "force" : true,
+    },
     "order_id": "657434343",
     "notification_url": "http://merchant.com/notifications"
 }
