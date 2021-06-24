@@ -271,7 +271,6 @@ These are the values the **bank\_code parameter** can take in Brazil.
 | Banco Inter | 077 |
 | Banco Mercantil do Brasil S.A. | 389 |
 | Banco Modal S.A. | 746 |
-| Banco Neon | 655 |
 | Banco Original | 212 |
 | Banco Panamericano S.A. | 623 |
 | Banco Safra S.A. | 422 |
