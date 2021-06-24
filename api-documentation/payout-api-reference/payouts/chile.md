@@ -148,7 +148,6 @@ These are the values the **bank\_code parameter** can take in Chile
 | Banco Santander - Santiago | 37 |
 | Banco Security | 49 |
 | BBVA Chile | 504 |
-| Deutsche Bank | 52 |
 | HSBC Bank | 31 |
 | Itau Corpbanca | 39 |
 | Scotiabank Chile | 14 |
