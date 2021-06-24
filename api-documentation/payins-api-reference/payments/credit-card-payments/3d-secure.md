@@ -216,7 +216,7 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
 {% tab title="Example three\_dsecure Object" %}
 ```yaml
 "three_dsecure":{
-    "mpi": TRUE,
+    "mpi": true,
     "three_dsecure_version": "1.0",
     "cavv": "3q2+78r+ur7erb7vyv66vv\/\/\/\/8=",
     "eci": "05",
