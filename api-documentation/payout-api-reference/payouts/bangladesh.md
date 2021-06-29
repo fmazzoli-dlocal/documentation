@@ -1,6 +1,6 @@
 # Bangladesh
 
-### Mandatory parameters
+### Mandatory parameters bank transfer
 
 | Mandatory parameter | Description |
 | :--- | :--- |
