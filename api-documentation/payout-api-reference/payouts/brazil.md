@@ -332,6 +332,7 @@ These are the values the **bank\_code parameter** can take in Brazil.
 | Commerzbank Brasil S.A. - Banco Múltiplo | 163 |
 | Banco Olé Bonsucesso Consignado S.A. | 169 |
 | Banco Itaú BBA S.A. | 184 |
+| Stone Pagamentos S.A. | 197 |
 | Banco BTG Pactual S.A. | 208 |
 | Banco Arbi S.A. | 213 |
 | Banco John Deere S.A. | 217 |
