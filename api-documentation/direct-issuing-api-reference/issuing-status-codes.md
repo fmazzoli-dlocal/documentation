@@ -86,6 +86,7 @@
 | `ERROR` | 5008 | Transfer error due end beneficiary blacklisted |
 | `ERROR` | 5009 | Transfer error due Insufficient funds  |
 | `ERROR` | 5010 | Transfer error due to compliance  |
+| `ERROR` | 5011 | Email already exists |
 | `ERROR` | 7000 | Internal error |
 
 
