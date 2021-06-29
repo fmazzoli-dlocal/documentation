@@ -53,7 +53,7 @@
 | `REJECTED` | 512 | Document is invalid |
 | `REJECTED` | 513 | Password is invalid |
 | `REJECTED` | 514 | Card already exists |
-| `REJECTED` | 515 | Error in Issuer \(Ex rejected 515\) |
+| `REJECTED` | 515 | Error in Issuer  |
 | `REJECTED` | 516 | Timeout expired while executing transaction |
 | `REJECTED` | 517 | The source account does not exist |
 | `REJECTED` | 518 | The source account has no funds |
