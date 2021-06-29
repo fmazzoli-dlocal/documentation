@@ -213,6 +213,19 @@
       <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/CX_BN.png">https://static.dlocal.com/images/providers/CX_BN.png</a>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>PU</code>
+      </td>
+      <td style="text-align:left">ADC m&#xF3;vil</td>
+      <td style="text-align:left"><code>TICKET</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Cash Payment</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/ADCmovil.png">https://static.dlocal.com/images/providers/ADCmovil.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
