@@ -17,7 +17,7 @@
 | expedition\_date | Owner's personal identification expedition date. ISO 8601 Data time with time zone.  |
 | gender | M or F. |
 | marital\_status | [Check table](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#marital-status) below for more details. |
-| ip\_address | Owner's IP Address. |
+| ip\_address | Owner's IP Address. Colombian IP is only allow. |
 | terms\_and\_conditions\_accepted | Account's terms and conditions.  |
 | data\_management\_accepted | Account's data management.  |
 | **address** | Owner's Address. |
@@ -49,12 +49,30 @@ The following parameters are required to get device information:
 
 | Parameters | Description |
 | :--- | :--- |
-| hdmdata | Device's fingerprint codified. |
+| hdm\_data | Device's fingerprint codified. |
 | payload | Device's fingerprint. |
 
 _**Web:**_ Add the following script on website: [Link.](https://drive.google.com/drive/folders/19aez7Rf42floEgiZyQuXxTkBbXnCo42U?usp=sharing)
 
+```javascript
+<html>
+  <head>
+      <script src="/static/scripts/cx_disp.js"></script>
+  </head>
+  <body class="dl" onload="cx.initiate(null)">
+      <form id="form">
+        <input type="hidden" name="user_conutils" id="user_conutils" value="" />
+        <input type="hidden" name="user_conutils2" id="user_conutils2" value="" />
+      </form>
+  </body>
+</html>
+```
+
 _**App:**_ Use the following SDK to get mobile device information: [Link.](https://drive.google.com/drive/folders/1c4F0o7dHk2Lq-AJXJsh3jc3FDAD1quGz?usp=sharing) 
+
+
+
+
 
 #### **States**
 
