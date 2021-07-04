@@ -216,14 +216,14 @@
     <tr>
       <td style="text-align:left"><code>PU</code>
       </td>
-      <td style="text-align:left">Puntoxpress</td>
+      <td style="text-align:left">Expr&#xE9;s</td>
       <td style="text-align:left"><code>TICKET</code>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Puntoxpress.png">https://static.dlocal.com/images/providers/Puntoxpress.png</a>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/CRexpres.png">https://static.dlocal.com/images/providers/CRexpres.png</a>
       </td>
     </tr>
   </tbody>
