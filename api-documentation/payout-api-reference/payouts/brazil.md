@@ -128,6 +128,12 @@
       <td style="text-align:left">ISO 3166- 1 alpha -2 code</td>
       <td style="text-align:left">P2P</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b>purpose</b>
+      </td>
+      <td style="text-align:left">Payouts purpose. For P2P: EPREMT</td>
+      <td style="text-align:left">P2P</td>
+    </tr>
   </tbody>
 </table>
 
