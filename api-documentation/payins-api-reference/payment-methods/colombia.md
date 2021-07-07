@@ -162,6 +162,19 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>&#x200B;</td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Codensa</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>CZ</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/CO.svg">https://static.dlocal.com/images/providers/CO.svg</a>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>PC</code>
       </td>
       <td style="text-align:left">Banco Agrario</td>
