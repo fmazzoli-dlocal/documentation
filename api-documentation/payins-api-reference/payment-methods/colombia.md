@@ -170,7 +170,11 @@
       <td style="text-align:left"><code>CZ</code>
       </td>
       <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left"><code>DIRECT</code>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/CO.svg">https://static.dlocal.com/images/providers/CO.svg</a>
       </td>
