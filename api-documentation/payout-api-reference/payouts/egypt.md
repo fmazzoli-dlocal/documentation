@@ -121,7 +121,8 @@
       <td style="text-align:left">Max. 100 chars</td>
     </tr>
     <tr>
-      <td style="text-align:left">beneficiary_lastname</td>
+      <td style="text-align:left"><b>beneficiary_lastname</b>
+      </td>
       <td style="text-align:left">Max. 100 chars</td>
     </tr>
     <tr>
@@ -139,18 +140,13 @@
       </td>
       <td style="text-align:left">
         <p>&#x201C;{\&#x201C;wallet\&#x201C;:\&#x201C;&lt;name_of_wallet&gt;\&#x201C;}&#x201D;</p>
-        <p> <b>options:</b> vodafone, etisalat, orange, aman, bank_wallet</p>
+        <p> <b>options:</b> vodafone, etisalat, orange, bank_wallet</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><b>amount</b>
       </td>
       <td style="text-align:left">Max. 2 decimal numbers</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><b>email</b>
-      </td>
-      <td style="text-align:left">only mandatory if wallet is aman</td>
     </tr>
   </tbody>
 </table>
