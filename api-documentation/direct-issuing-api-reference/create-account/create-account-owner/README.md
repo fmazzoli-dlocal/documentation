@@ -171,8 +171,8 @@ Account and owner description
         "nationality": "Colombian",
         "document_type": "CC",
         "ip_address": "186.52.133.239",
-        "terms_and_conditions_accepted": "T",
-        "data_management_accepted": "T"
+        "terms_and_conditions_accepted": true,
+        "data_management_accepted": true
     },
     "description": "dLocal Issuing for John Smith",
     "notification_url": "http://merchant.dlocal.com/notification"

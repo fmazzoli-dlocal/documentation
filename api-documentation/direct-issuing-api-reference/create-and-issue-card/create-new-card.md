@@ -98,7 +98,7 @@ enum\('PHYSICAL','VIRTUAL'\)
         "zip_code": "05001000",
         "neighbourhood": "El Poblado"
     },
-    "terms_and_conditions_accepted": "T",
+    "terms_and_conditions_accepted": true,
     "notification_url": "http://merchant.dlocal.com/notification"
 }
 ```
