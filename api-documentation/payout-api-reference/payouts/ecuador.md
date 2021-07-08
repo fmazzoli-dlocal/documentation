@@ -165,7 +165,6 @@ _In this list there are the major banks of the country to see the complete list 
 | Banco Asistencia Comunitaria Finca S.A. | 323 |
 | Banco Bolivariano | 037 |
 | Banco Capital S.A. | 061 |
-| Banco Central | 001 |
 | Banco Citibank | 024 |
 | Banco Comercial De Manabi | 039 |
 | Banco Coopnacional S.A. | 064 |
