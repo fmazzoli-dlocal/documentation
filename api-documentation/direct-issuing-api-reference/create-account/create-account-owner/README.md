@@ -94,12 +94,12 @@ Account and owner description
 | :--- | :--- | :--- |
 | first\_name | String | Owner's First Name.  |
 | last\_names | String | Owner's complete Last Names.  |
-| birth\_date | String | Owner's birth date. ISO 8601 Data time with time zone.  |
+| birth\_date | String | Owner's birth date. YYYY-MM-DD. |
 | email | String | Owner's email.  |
 | phone\_number | String | Owner's cellphone number.   |
 | document | String | Owner’s personal identification number.  |
 | document\_type | String | Owner's personal identification type.  ****  |
-| expedition\_date | String | Owner's personal identification expedition date. ISO 8601 Data time with time zone.  |
+| expedition\_date | String | Owner's personal identification expedition date. YYYY-MM-DD. |
 | mother\_name | String | Mothers Full Name.  |
 | birth\_place | String | Place of birth.  |
 | nationality | String | Nationality.  |
@@ -149,11 +149,11 @@ Account and owner description
     "owner": {
         "first_name": "John",
         "last_names": "Smith",
-        "birth_date": "1990-11-27T15:44:42.310Z",
+        "birth_date": "1990-11-27",
         "email": "john@dlocal.com",
         "phone_number": "46043767",
         "document": "6095786098",
-        "expedition_date": "2019-12-08T15:44:42.310Z",
+        "expedition_date": "2019-12-08",
         "address": {
             "country": "CO",
             "city": "Medellin",
@@ -196,6 +196,7 @@ Account and owner description
         "email": "john@dlocal.com",
         "phone_number": "46043767",
         "document": "6095786098",
+        "expedition_date": "2019-12-08",
         "address": {
             "country": "CO",
             "city": "Medellin",
