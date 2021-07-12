@@ -74,7 +74,9 @@ _**App:**_ Use the following SDK to get mobile device information: [Link.](https
 
 
 
-#### **States**
+#### **States** 
+
+Note: [xlsx version](https://drive.google.com/file/d/12V0a8cUy0PBKLUMiuM9-szTbGySxL0cC/view?usp=sharing).
 
 | Code | Name |
 | :--- | :--- |
@@ -113,6 +115,8 @@ _**App:**_ Use the following SDK to get mobile device information: [Link.](https
 | 33 | VICHADA |
 
 #### **Cities**
+
+Note: [xlsx version](https://drive.google.com/file/d/1aBzAdTy2_KNEPSly6FCRetIh60Euxf9S/view?usp=sharing).
 
 | Code | Name |
 | :--- | :--- |
