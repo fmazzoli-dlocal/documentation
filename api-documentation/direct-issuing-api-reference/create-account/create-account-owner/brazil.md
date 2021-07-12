@@ -8,7 +8,7 @@
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
 | last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date. ISO 8601 Data time with time zone. |
+| birth\_date | Owner's birth date.  |
 | email | Owner's email. |
 | phone\_number | Owner's cellphone number. Include DDD. |
 | document | Owner’s personal identification number.  |
