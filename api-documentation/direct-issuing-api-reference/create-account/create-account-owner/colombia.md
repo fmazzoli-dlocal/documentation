@@ -70,10 +70,6 @@ _**Web:**_ Add the following script on website: [Link.](https://drive.google.com
 
 _**App:**_ Use the following SDK to get mobile device information: [Link.](https://drive.google.com/drive/folders/1c4F0o7dHk2Lq-AJXJsh3jc3FDAD1quGz?usp=sharing) 
 
-
-
-
-
 #### **States** 
 
 Note: [xlsx version](https://drive.google.com/file/d/12V0a8cUy0PBKLUMiuM9-szTbGySxL0cC/view?usp=sharing).
