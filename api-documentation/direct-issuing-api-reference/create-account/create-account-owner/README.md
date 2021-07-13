@@ -144,8 +144,8 @@ Account and owner description
         "expedition_date": "2019-12-08",
         "address": {
             "country": "CO",
-            "city": "Medellin",
-            "state": "Antioquia",
+            "city": "1",
+            "state": "1",
             "street": "Carrera 74 zZmLkR",
             "street2": "Carrera 74 EbXiEI",
             "house_number": "52",
