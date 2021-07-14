@@ -87,6 +87,7 @@
 | `ERROR` | 5009 | Transfer error due Insufficient funds  |
 | `ERROR` | 5010 | Transfer error due to compliance  |
 | `ERROR` | 5011 | Email already exists |
+| `ERROR` | 5012 | Phone number already exists |
 | `ERROR` | 7000 | Internal error |
 
 
