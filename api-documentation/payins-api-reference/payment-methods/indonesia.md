@@ -236,7 +236,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/IDDana.png">https://static.dlocal.com/images/providers/IDDana.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
