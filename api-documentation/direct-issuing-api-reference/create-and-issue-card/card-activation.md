@@ -24,7 +24,7 @@ Provided when card was created
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="lastDigits" type="string" required=true %}
+{% api-method-parameter name="last\_digits" type="string" required=true %}
 last 6 digits of the Primary Account Number \(PAN\)
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
