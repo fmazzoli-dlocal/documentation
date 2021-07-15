@@ -13,6 +13,6 @@ Or send funds to your partners in emerging countries with our Payouts solution:
 {% hint style="info" %}
 On this site you'll find the [API Reference of dLocal's API 2.0](api-documentation/payins-api-reference/).
 
-**Looking for the documentation of dLocal's API 1.0?** You can find it [here](https://dlocal.com/developers).
+**Looking for the documentation of dLocal's API 1.0?** You can find it [here](https://dlocal.com/developers/documentation.php).
 {% endhint %}
 
