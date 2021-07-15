@@ -110,6 +110,42 @@
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Diners</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>DC</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/DC.png">https://pay.dlocal.com/views/2.0/images/payments/DC.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Mestro Debit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>MS</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://pay.dlocal.com/views/2.0/images/payments/MS.png">https://pay.dlocal.com/views/2.0/images/payments/MS.png</a>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>PW</code>
       </td>
       <td style="text-align:left">PayTM Wallet</td>
