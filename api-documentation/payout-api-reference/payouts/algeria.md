@@ -12,6 +12,7 @@
 | **amount** | Max. 2 decimal numbers |
 | **currency** | DZD |
 | **phone** | Max. 10 digits - Has to start with 07, 06,05 |
+| **metadata** | “{\“mobile\_money\“:\“YES\“}” |
 
 ### Example request
 
