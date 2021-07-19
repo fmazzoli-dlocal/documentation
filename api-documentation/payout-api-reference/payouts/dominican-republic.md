@@ -154,7 +154,7 @@
 
 ### **Bank codes and account format**
 
-| Bank Name | Account length  | Bank code |
+| Bank Name | Max. Account length  | Bank code |
 | :--- | :--- | :--- |
 | Banco Popular | 10 | 1 |
 | Banco del Progreso | 10 | 2 |
