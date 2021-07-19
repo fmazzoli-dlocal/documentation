@@ -160,6 +160,22 @@
         <p>211003420017</p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left">Document</td>
+      <td style="text-align:left">DE</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">Numeric</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">33475876</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Document</td>
+      <td style="text-align:left">PASS</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">Alphanumeric</td>
+      <td style="text-align:left">-</td>
+      <td style="text-align:left">NNFE4379</td>
+    </tr>
   </tbody>
 </table>
 
