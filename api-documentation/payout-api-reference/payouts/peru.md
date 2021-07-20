@@ -120,7 +120,7 @@
 
 | Validation | Name | Length | Type | Verification digit |
 | :--- | :--- | :--- | :--- | :--- |
-| Bank account | CCI | 20 | Numeric | Apply verification algorithm |
+| Bank account | CCI | 20 | Numeric | First 3 digits will be the bank code and the last 2 apply verification algorithm |
 
 ### **Bank codes**
 
