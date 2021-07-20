@@ -171,7 +171,12 @@
       <td style="text-align:left">Cash Payment</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/tucan.png">https://static.dlocal.com/images/providers/tucan.png</a>
+      <td style="text-align:left">
+        <p>Use both logos:</p>
+        <p>&#x200B;<a href="https://static.dlocal.com/images/providers/tucan.png">https://static.dlocal.com/images/providers/tucan.png</a>
+        </p>
+        <p><a href="https://static.dlocal.com/images/providers/BCR.png">https://static.dlocal.com/images/providers/BCR.png</a>
+        </p>
       </td>
     </tr>
     <tr>
