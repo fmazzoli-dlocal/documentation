@@ -197,7 +197,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/UnionPay.png">https://static.dlocal.com/images/providers/UnionPay.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
