@@ -202,6 +202,45 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
+      <td style="text-align:left">Elo
+        <br />Debit</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>EL</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">
+        <p>Maestro</p>
+        <p>Debit</p>
+      </td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>MS</code>
+      </td>
+      <td style="text-align:left">Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/BRMaestro.png">https://static.dlocal.com/images/providers/BRMaestro.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
       <td style="text-align:left">Hipercard</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
