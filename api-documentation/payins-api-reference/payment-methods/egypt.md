@@ -110,6 +110,25 @@
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/fawry.png">https://static.dlocal.com/images/providers/fawry.png</a>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>ME</code>
+      </td>
+      <td style="text-align:left">Meeza</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>Debit</p>
+        <p>Card</p>
+      </td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
