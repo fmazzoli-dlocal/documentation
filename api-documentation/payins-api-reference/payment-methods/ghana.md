@@ -91,7 +91,26 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MC.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/master.png">https://static.dlocal.com/images/providers/master.png</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">Visa</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>VI</code>
+      </td>
+      <td style="text-align:left">Credit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Visa_logo.png">https://static.dlocal.com/images/providers/Visa_logo.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
