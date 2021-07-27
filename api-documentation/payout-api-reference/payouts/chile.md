@@ -57,7 +57,7 @@
     <tr>
       <td style="text-align:left"><b>bank_account</b>
       </td>
-      <td style="text-align:left">Max. 45 chars</td>
+      <td style="text-align:left">Max. 45 numbers</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>account_type</b>
