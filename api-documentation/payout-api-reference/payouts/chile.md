@@ -153,6 +153,7 @@ These are the values the **bank\_code parameter** can take in Chile
 | Scotiabank Chile | 14 |
 | Coopeuch | 672 |
 | Prepago los Héroes | 739 |
+| Tenpo Prepago | 730 |
 
 
 
