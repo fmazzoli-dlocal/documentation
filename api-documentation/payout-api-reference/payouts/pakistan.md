@@ -19,6 +19,7 @@
 | **remitter\_country** | ISO 3166- 1 alpha -2 code |
 | **remitter\_address** | Max. 200 chars |
 | **remitter\_document\_type** | Options: WP - Work Permit PASS - International Passport ID - Identification ID RP - Residence Permit |
+| **remitter\_document** | Max. 45 chars |
 | **purpose** | Payouts purpose.  |
 
 ### Example request
