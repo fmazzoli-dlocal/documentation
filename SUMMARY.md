@@ -143,6 +143,7 @@
 * [Reporting](guides/reporting.md)
 * [Lightspeed setup](guides/lightspeed.md)
 * [Guides](guides/guides/README.md)
+  * [Tienda Nube Guide](guides/guides/tienda-nube-guide.md)
   * [Card Payments](guides/guides/card-payments.md)
   * [Alternative Payment Methods \(APMs\)](guides/guides/alternative-payment-methods-apms.md)
 
