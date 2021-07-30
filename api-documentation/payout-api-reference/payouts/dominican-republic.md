@@ -158,9 +158,8 @@
 | :--- | :--- | :--- |
 | Banco Popular | 10 | 1 |
 | Banco del Progreso | 10 | 2 |
-| Banco BHD | 11 | 3 |
+| Banco BHD León | 11 | 3 |
 | Banco de Reservas | 10 | 4 |
-| Banco León | 9 | 5 |
 | Banco Santa Cruz | 14 | 6 |
 | Citibank | 10 | 7 |
 | Scotiabank | 17 | 8 |
@@ -175,13 +174,10 @@
 | Banesco \(Banco Multiple\) | 11 | 17 |
 | Banco de Ahorro y Credito Ademi | 10 | 18 |
 | Asoc. La Nacional | 12 | 19 |
-| Banco Peravia | 10 | 20 |
 | Banco Multiple Lafise | 11 | 21 |
-| Banco Providencial | 10 | 22 |
 | Banco Empire | 10 | 23 |
 | Bellbank | 12 | 24 |
 | Banco Atlántico | 8 | 25 |
 | Banco Unión | 10 | 26 |
-| Banco de Ahorro y Credito Federal | 10 | 27 |
 | Banco Multiple Activo | 10 | 28 |
 
