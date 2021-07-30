@@ -244,7 +244,7 @@ Reference
 | :--- | :--- | :--- | :--- |
 | Banco do Brasil S.A. | XXXX, XXXXD or XXXX-D | XXXXXXXX or XXXXXXXX-X | XXXXXXXXX or XXXXXXXXX-X Prefixes: 00, 01, 51, 02, 52, 91, 92, 96 or 97 |
 | Banco Santander Brasil S.A. | XXXX | XXXXXXXX-X Prefixes: 01, 02, 03, 05, 09, 13 or 92 | XXXXXXXX-X Prefixes: 60 |
-| Caixa CEF | XXXX, XXXXX or XXXX-X |  XXX.XXXXXXXX-X or any combiantion with or without ',' or '-' characters and prefix or verification code Prefixes: 001, 010, 003 or 023  | XXXX.XXXXXXXXX-X //XXX.XXXXXXXX-X or any combiantion with or without ',' or '-' characters and prefix or verification code Prefixes: 1288 or 013, 022 |
+| Caixa CEF | XXXX, XXXXX or XXXX-X |  XXX.XXXXXXXX-X or any combiantion with or without '.' or '-' characters and prefix or verification code Prefixes: 001, 010, 003 or 023  | XXXX.XXXXXXXXX-X //XXX.XXXXXXXX-X or any combiantion with or without '.' or '-' characters and prefix or verification code Prefixes: 1288 or 013, 022 |
 | Banco Bradesco S.A. | XXXX, XXXXX or XXXX-X | XXXXXXX or XXXXXXX-X | XXXXXXX or XXXXXXX-X |
 | Itau Unibanco S.A. | XXXX | XXXXX-X | XXXXX-X |
 | HSBC Bank Brasil S.A. | XXXX, XXXXD, XXXXDD, XXXX-D or XXXX-DD | XXXXX-XX | XXXXX-XX |
