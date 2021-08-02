@@ -8,5 +8,7 @@ For instance, if you need to rapidly disable an account due to suspicious behavi
 
 {% page-ref page="../managing-funds/get-transfer-information.md" %}
 
+{% page-ref page="list-all-accounts.md" %}
+
 
 
