@@ -1,6 +1,8 @@
 # Transaction History
 
-This function enables retrieving detailed transaction history. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
+This function enables retrieving detailed transaction history. The objects are sorted in descending order by creation date, with the most recently created object appearing first. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
+
+_Note: All transactions are in local time._ 
 
 {% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
 {% api-method-summary %}
@@ -20,12 +22,20 @@ Account id provided when account-owner was created
 {% endapi-method-path-parameters %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="limit" type="integer" required=false %}
+{% api-method-parameter name="page\_size" type="integer" required=false %}
 Limit of transactions to retreive. Default is 100 and max is 500
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="offset" type="integer" required=false %}
-Transaction start. By default 0.
+{% api-method-parameter name="page\_number" type="integer" required=false %}
+Transaction start. By default 0
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="start\_date" type="string" required=false %}
+Transactions created after and equals this date. YYYY-MM-DD
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="end\_date" type="string" required=false %}
+Transactions created before and equals this date. YYY-MM-DD
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -38,36 +48,50 @@ Transaction start. By default 0.
 
 ```
 {
-    "account_id": "ISGA-4-85e2b96385a3418dae1e5905f7893426",
+"account_id": "ISGA-4-85e2b96385a3418dae1e5905f7893426",
     "transactions": [
-        {
+      {
+            "transaction_id": "ISGC-4-1JEqoK2eZvKYlo2CGGaCQ8Xn",
             "status": "APPROVED",
+            "description": "Deposit"
             "type": "credit",
+            "created_date": "2021-03-10T10:02:21.898Z",
+            "amount": 5126,
+            "currency": "COP",
+            "card_id": "",
+            “card_acceptor”: {
+                “mid”: “”,
+                “mcc”: “”,
+                “category”: “”,
+                “name”: “”,
+                “zip_code”: “”,
+                “state”: “”
+                “street”: “”,
+                “city”: “”,
+                “country”: “”
+            },  
+      }
+      {
+            "transaction_id": "ISGC-4-1LTqoK2eZvKYasdCGGaCQ8Xn",
+            "status": "APPROVED",
+            "type": "debit",
+            "description": "Payment"
             "created_date": "2021-03-09T17:02:21.898Z",
             "amount": 1428,
-            "currency": "COP"
-        },
-        {
-            "status": "APPROVED",
-            "type": "debit",
-            "created_date": "2021-03-09T17:02:21.898Z",
-            "amount": 1126,
-            "currency": "COP"
-        },
-        {
-            "status": "PENDING",
-            "type": "debit",
-            "created_date": "2021-03-09T17:02:21.898Z",
-            "amount": 1574,
-            "currency": "COP"
-        },
-        {
-            "status": "APPROVED",
-            "type": "debit",
-            "created_date": "2021-03-09T17:02:21.898Z",
-            "amount": 1829,
-            "currency": "COP"
-        }
+            "currency": "COP",
+            "card_id": "ISGC-4-a635217734a746dd9f3875899492c3aa",
+            “card_acceptor”: {
+                “mid”: “000000000032111”,
+                “mcc”: “6411”,
+                “category”: “computer_software_stores”,
+                “name”: “Computer Shop”,
+                “zip_code”: “110111”,
+                “state”: “CA”
+                “street”: “Carrera 74”,
+                “city”: “Bogota”,
+                “country”: “CO”
+            },
+        }       
     ]
 }
 ```
