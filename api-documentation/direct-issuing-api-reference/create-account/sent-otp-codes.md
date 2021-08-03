@@ -8,7 +8,7 @@ Send OTP Codes
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+**Sandbox:** you can use any 6 digit code. If you want to test the error messages use the code: 000400. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
