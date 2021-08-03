@@ -9,7 +9,7 @@
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars |
 | **beneficiary\_lastname** | Max. 100 chars |
-| **country** | PH |
+| **country** | TH |
 | **bank\_code** | See list here |
 | **bank\_account** | Max. 45 chars |
 | **amount** | Max. 2 decimal numbers |
