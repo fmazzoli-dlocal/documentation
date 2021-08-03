@@ -12,7 +12,7 @@ Card Activation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+**Sandbox:** you can use any last digits code to active the card. If you want to test the error messages use the code: 000400.
 {% endapi-method-description %}
 
 {% api-method-spec %}
