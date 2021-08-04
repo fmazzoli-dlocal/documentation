@@ -265,4 +265,5 @@ These are the values the bank\_code parameter can take in Colombia:
 | HSBC | 010 |
 | Itau | 014 |
 | Nequi | 507 |
+| Banco Dale | 097 |
 
