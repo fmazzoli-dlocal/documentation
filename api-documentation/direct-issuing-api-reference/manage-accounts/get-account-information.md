@@ -33,7 +33,6 @@ Account id provided when account-owner was created
     "account_id": "ISGA-4-e225325f3bdb4f6d868403f7c7225b05",
     "country": "CO",
     "currency": "COP",
-    "balance": 0,
     "account_reference": "X7g67l1Ce0",
     "status": "ACTIVE",
     "owner": {

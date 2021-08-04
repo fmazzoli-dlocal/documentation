@@ -39,8 +39,9 @@ Accounts created before and equals this date. YYYY-MM-DD
 {% endapi-method-response-example-description %}
 
 ```
-[ 
 {
+    "content": [
+        {
         "description": "dLocal Issuing for John Smith",
         "notification_url": "http://someUrl.com",
         "owner": {
@@ -66,17 +67,20 @@ Accounts created before and equals this date. YYYY-MM-DD
             "birth_place": "Colombia",
             "nationality": "Colombian",
             "document_type": "CC",
-            "ip_address": "1234"
+            "mother_name": "Perez",    
+            "terms_and_conditions_accepted": true,
+            "data_management_accepted": true
+            "ip_address": "194.248.71.175"
         },
         "account_uid": "ISGA-33-15dab5f508aa47cabb3d53853e224fa1",
         "account_id": "ISGA-33-15dab5f508aa47cabb3d53853e224fa1",
         "country": "CO",
         "currency": "COP",
-        "balance": 0,
         "status": "ACTIVE",
         "status_code": "ACTIVE",
         "status_detail": "Is Active",
         "creation_date": "2021-06-07T19:10:25Z",
+        "account_reference": "Dneq12L2bp",
         "cards": [
             {
                 "card_id": "ISGC-1234-af4768bcee874a2ea34562f50e0be940",
@@ -85,7 +89,34 @@ Accounts created before and equals this date. YYYY-MM-DD
             }
         ]
     }
-]
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "page_number": 0,
+        "page_size": 1,
+        "offset": 0,
+        "paged": true,
+        "unpaged": false
+    },
+    "last": false,
+    "total_elements": 10415,
+    "total_pages": 10415,
+    "sort": {
+        "sorted": true,
+        "unsorted": false,
+        "empty": false
+    },
+    "first": true,
+    "number_of_elements": 1,
+    "size": 1,
+    "number": 0,
+    "empty": false
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
