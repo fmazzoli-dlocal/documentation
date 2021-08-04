@@ -49,50 +49,77 @@ Transactions created before and equals this date. YYY-MM-DD
 ```
 {
 "account_id": "ISGA-4-85e2b96385a3418dae1e5905f7893426",
-    "transactions": [
-      {
-            "transaction_id": "ISGC-4-1JEqoK2eZvKYlo2CGGaCQ8Xn",
-            "status": "APPROVED",
-            "description": "Deposit"
-            "type": "credit",
-            "created_date": "2021-03-10T10:02:21.898Z",
-            "amount": 5126,
-            "currency": "COP",
-            "card_id": "",
-            “card_acceptor”: {
-                “mid”: “”,
-                “mcc”: “”,
-                “category”: “”,
-                “name”: “”,
-                “zip_code”: “”,
-                “state”: “”
-                “street”: “”,
-                “city”: “”,
-                “country”: “”
-            },  
-      }
-      {
-            "transaction_id": "ISGC-4-1LTqoK2eZvKYasdCGGaCQ8Xn",
-            "status": "APPROVED",
-            "type": "debit",
-            "description": "Payment"
-            "created_date": "2021-03-09T17:02:21.898Z",
-            "amount": 1428,
-            "currency": "COP",
-            "card_id": "ISGC-4-a635217734a746dd9f3875899492c3aa",
-            “card_acceptor”: {
-                “mid”: “000000000032111”,
-                “mcc”: “6411”,
-                “category”: “computer_software_stores”,
-                “name”: “Computer Shop”,
-                “zip_code”: “110111”,
-                “state”: “CA”
-                “street”: “Carrera 74”,
-                “city”: “Bogota”,
-                “country”: “CO”
+    "transactions": {
+        content: [
+          {
+                "transaction_id": "ISGC-4-1JEqoK2eZvKYlo2CGGaCQ8Xn",
+                "status": "APPROVED",
+                "description": "Deposit"
+                "type": "credit",
+                "created_date": "2021-03-10T10:02:21.898Z",
+                "amount": 5126,
+                "currency": "COP",
+                "card_id": "",
+                “card_acceptor”: {
+                    “mid”: “”,
+                    “mcc”: “”,
+                    “category”: “”,
+                    “name”: “”,
+                    “zip_code”: “”,
+                    “state”: “”
+                    “street”: “”,
+                    “city”: “”,
+                    “country”: “”
+                },  
+          }
+          {
+                "transaction_id": "ISGC-4-1LTqoK2eZvKYasdCGGaCQ8Xn",
+                "status": "APPROVED",
+                "type": "debit",
+                "description": "Payment"
+                "created_date": "2021-03-09T17:02:21.898Z",
+                "amount": 1428,
+                "currency": "COP",
+                "card_id": "ISGC-4-a635217734a746dd9f3875899492c3aa",
+                “card_acceptor”: {
+                    “mid”: “000000000032111”,
+                    “mcc”: “6411”,
+                    “category”: “computer_software_stores”,
+                    “name”: “Computer Shop”,
+                    “zip_code”: “110111”,
+                    “state”: “CA”
+                    “street”: “Carrera 74”,
+                    “city”: “Bogota”,
+                    “country”: “CO”
+                },
+            }           
+        ],
+        "pageable": {
+            "sort": {
+                "sorted": true,
+                "unsorted": false,
+                "empty": false
             },
-        }       
-    ]
+            "page_number": 0,
+            "page_size": 1,
+            "offset": 0,
+            "paged": true,
+            "unpaged": false
+        },
+        "last": false,
+        "total_elements": 10415,
+        "total_pages": 10415,
+        "sort": {
+            "sorted": true,
+            "unsorted": false,
+            "empty": false
+        },
+        "first": true,
+        "number_of_elements": 1,
+        "size": 1,
+        "number": 0,
+        "empty": false    
+        } 
 }
 ```
 {% endapi-method-response-example %}
