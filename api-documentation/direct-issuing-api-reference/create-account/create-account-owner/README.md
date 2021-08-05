@@ -49,7 +49,6 @@ Account and owner description
     "account_id": "ISGA-4-0c0abb666a6a4fa38f0c21260ed99ce8",
     "country": "CO",
     "currency": "COP",
-    "balance": 0,
     "account_reference": "fOrvqODPvK",
     "status": "PENDING",
     "owner": {
