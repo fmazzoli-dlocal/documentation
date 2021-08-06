@@ -27,7 +27,7 @@
 | street | Owner's address street. |
 
 {% hint style="info" %}
-OTPs validations -email & phone number- are mandatory for this country.
+OTPs validations -email & phone number- are mandatory for this country. These codes expire in 5 minutes.
 {% endhint %}
 
 #### Document Type
