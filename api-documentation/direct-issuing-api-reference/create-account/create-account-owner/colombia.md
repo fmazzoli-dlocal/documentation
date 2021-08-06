@@ -26,7 +26,9 @@
 | state | Owner's address state code. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#states) |
 | street | Owner's address street. |
 
-
+{% hint style="info" %}
+OTPs validations -email & phone number- are mandatory for this country.
+{% endhint %}
 
 #### Document Type
 
