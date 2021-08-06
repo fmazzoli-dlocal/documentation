@@ -53,10 +53,10 @@ The transfer status can take one of the following values:
 
 | Code | Description | Description |
 | :--- | :--- | :--- |
-| 0 | Received | The transfer is received to be processed in the next cut off |
-| 1 | Completed | The transfer was completed |
-| 2 | Cancelled | The transfer was cancelled by merchant |
-| 3 | Rejected | The transfer was rejected |
-| 4 | Delivered | The transfer is being processed  |
-| 5 | On hold | The transfer is on hold by the merchant or awaiting for further legal information to be processed |
+| 0 | Received | The transfer was received by dLocal and is now pending to be processed. |
+| 1 | Completed | The transfer was completed and confirmed by the card issuer bank. |
+| 2 | Cancelled | The transfer was cancelled by the merchant. |
+| 3 | Rejected | The transfer was rejected by the card issuer bank. |
+| 4 | Delivered | The transfer was sent to the user card but it was not confirmed yet. |
+| 5 | On hold | The transfer is on hold by the merchant or awaiting for further legal information to be processed. |
 
