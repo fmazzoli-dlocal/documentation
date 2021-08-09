@@ -6,6 +6,11 @@ description: >-
 
 # Tienda Nube Guide
 
+**Pre-requisito: Crear tu cuenta en dLocal**  
+Crea tu cuenta como comerciante en el siguiente link: [https://merchant.dlocal.com/sign\_up](https://merchant.dlocal.com/sign_up)
+
+Luego de enviar la información recibirás un correo de confirmación desde la cuenta merchants@dlocal.com. Por favor verifica el link para poder empezar a utilizar tu panel de administrador. 
+
 **Activa dLocal en tu Tienda Nube**
 
 Paso 1: Ve al inicio de tu tienda. Por ejemplo: http://_ejemplo_.mitiendanube.com
