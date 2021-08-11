@@ -4,10 +4,6 @@
 
 PayLater provides the end-user with an instant credit line. After selecting this payment method, the user is redirected and required to input some personal information. Once submitted, the user receives an approval message, and can use the credited amount as balance. Monthly payments will be automatically deducted from his bank account, until full amount completion. See the ICICI Bank example screenshots below:
 
-![1. After requesting PayLater, user inputs information](../../../.gitbook/assets/step-3.png)
-
-![2. If approved, credit line is available for the user](../../../.gitbook/assets/step-8.png)
-
 {% hint style="warning" %}
 PayLater is only available in India at the moment
 {% endhint %}
