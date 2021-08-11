@@ -159,6 +159,21 @@
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">
+        <p>Cashfree</p>
+        <p>Wallet</p>
+      </td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>NB</code>
       </td>
       <td style="text-align:left">Netbanking</td>
