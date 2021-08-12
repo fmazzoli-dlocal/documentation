@@ -2,27 +2,20 @@
 
 ### Mandatory parameters bank transfers 
 
-| **Mandatory parameter** | **Description** |
-| :--- | :--- |
-| **login** | 32 chars |
-| **pass** | 32 chars |
-| **external\_id** | Max. 100 chars |
-| **beneficiary\_name** | Max. 100 chars |
-| **beneficiary\_lastname** | Max. 100 chars |
-| **birth\_country** | ISO 3166- 1alpha -2 code |
-| **country** | PK |
-| **bank\_code** | See bank codes [here](pakistan.md#bank-codes) |
-| **bank\_account** | Mx. 45 chars |
-| **amount** | Max. 2 decimal numbers |
-| **remitter\_full\_name** | Max. 200 chars |
-| **remitter\_birth\_date** | Format: "YYYYMMDD" |
-| **remitter\_country** | ISO 3166- 1 alpha -2 code |
-| **remitter\_address** | Max. 200 chars |
-| **remitter\_document\_type** | Options: WP - Work Permit PASS - International Passport ID - Identification ID RP - Residence Permit |
-| **remitter\_document** | Max. 45 chars |
-| **purpose** | Payouts purpose.  |
-
-### Example request
+| **Mandatory parameter** | **Description** | Flow Type |
+| :--- | :--- | :--- |
+| **login** | 32 chars | ALL |
+| **pass** | 32 chars | ALL |
+| **external\_id** | Max. 100 chars | ALL |
+| **beneficiary\_name** | Max. 100 chars | ALL |
+| **beneficiary\_lastname** | Max. 100 chars | ALL |
+| **country** | PK | ALL |
+| **bank\_code** | See bank codes [here](pakistan.md#bank-codes) | ALL |
+| **bank\_account** | Mx. 45 chars | ALL |
+| **amount** | Max. 2 decimal numbers | ALL |
+| **remitter\_full\_name** | Max. 200 chars | ALL |
+| **purpose** | Payouts purpose fix to: ISSCVE | B2C |
+| **metadata** | "CommercialType": "&lt;one of this values: OFS, FCISS,PT&gt;" [see commercial Types](pakistan.md#commercial-type) | B2C |
 
 ```text
 {
@@ -31,19 +24,12 @@
 "external_id":"1234567812345678",
 "beneficiary_name":"JUAN",
 "beneficiary_lastname":"NASCIMENTO",
-"birth_country": "PK",
 "amount":"1100.00",
 "currency":"PKR",
 "remitter_full_name": "Test",
-"remitter_document": "123456-98",
-"remitter_birth_date": "19871110",
-"remitter_address": "rem street 123",
-"remitter_country": "UK",
-"remitter_document_type": "WP",
 "country":"PK",
-"bank_code":"341",
+"bank_code":"13",
 "bank_account":"PK6200250002000000",
- "purpose": "ISMDCS",
 "comments":"this is the 1st comment",
 "notification_url":"https:\/\/thisisawebsite.net",
 "type":"json"
@@ -51,6 +37,14 @@
 
 
 ```
+
+### **Commercial Type**
+
+| Type | Description |
+| :--- | :--- |
+| FCISS | Freelance of Computer and Information Systems Services \(Equivalent to upto USD 1500/individual/month\): Remittances received by resident individuals from reputed overseas IT firms and online platforms on account of freelance of computer and information systems services. |
+| OFS | Other Freelance services \(Equivalent to up to USD 1500/individual/month\) Remittances received by resident individuals from reputed overseas online platforms, firms and individuals on account of freelance services other than computer and information services. |
+| PT | Pension Transactions \(Remittances received from known International Government and other organizations by resident pensioners on account of pensions only\) |
 
 ### **Bank codes**
 
