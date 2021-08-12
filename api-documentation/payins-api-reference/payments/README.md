@@ -129,7 +129,7 @@ Example Response
 | `document` | String | User’s personal identification number. [Click here for more details.](../country-reference.md#documents) **Required**. |
 | `document2` | String | Additional personal identification. Optional. |
 | `user_reference` | String | Unique user id at the merchant side. **Required for fraud prevention**. |
-| `address` | [Address Object ](./#the-address-object) | User’s address. **Required in India and for fraud prevention**. |
+| `address` | [Address Object ](./#the-address-object) | User’s address. **Required in India and South Africa for fraud prevention**. |
 | `ip` | String | User's IP address. **Required for fraud prevention**. |
 | `device_id` | String | User's unique device identifier, for information on how to obtain the `device_id` see the [Device ID](../fraud-prevention.md#device-id) documentation. **Required for fraud prevention**. |
 {% endtab %}
@@ -161,11 +161,11 @@ Example Response
 {% tab title="Address Object" %}
 | **Property** | **Type** | **Description** |
 | :--- | :--- | :--- |
-| `state` | String | User's address state. Optional. |
-| `city` | String | User’s address city. **Only required in India.** |
-| `zip_code` | String | User’s address zip\_code. Optional. |
-| `street` | String | User’s address street. **Only required in India.** |
-| `number` | String | User’s address number. **Only required in India.** |
+| `state` | String | User's address state. **Required in South Africa.** |
+| `city` | String | User’s address city. **Required in India and South Africa.** |
+| `zip_code` | String | User’s address zip\_code. **Required in South Africa.** |
+| `street` | String | User’s address street. **Required in India and South Africa.** |
+| `number` | String | User’s address number. **Required in India and South Africa.** |
 {% endtab %}
 
 {% tab title="Example Address Object" %}
