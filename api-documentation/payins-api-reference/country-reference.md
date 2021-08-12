@@ -302,8 +302,8 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left"><code>ZAR</code>
       </td>
-      <td style="text-align:left">ID</td>
-      <td style="text-align:left">between 5 to 20 digits</td>
+      <td style="text-align:left">South African identity card</td>
+      <td style="text-align:left">13 digits with full validation</td>
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
