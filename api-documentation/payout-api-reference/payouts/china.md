@@ -10,7 +10,7 @@
 | **beneficiary\_name** | Max. 100 chars - Only han characters |
 | **country** | CN |
 | **bank\_branch** | CNAPS code |
-| **bank\_account** | See bank account validations [here](china.md#codes-for-bank_code-parameter) |
+| **bank\_account** | Max. 45 chars |
 | **amount** | Max. 2 decimal numbers |
 | **phone** | Max. 100 chars |
 | **document\_id** | Max. 100 chars \(Resident Identity Card\) |
