@@ -1,5 +1,9 @@
 # Colombia
 
+### Flow
+
+![](../../../../.gitbook/assets/image%20%2828%29.png)
+
 ### Mandatory parameters
 
 | Property | Description |
