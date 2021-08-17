@@ -94,23 +94,6 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
-      <td style="text-align:left">American Express</td>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left"><code>AE</code>
-      </td>
-      <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/AE.png">https://pay.dlocal.com/views/2.0/images/payments/AE.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
       <td style="text-align:left">Diners</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
