@@ -41,7 +41,7 @@ curl -X POST \
    "wallet": {
        "save": TRUE,
        "verify": TRUE,
-       "label": "New suscription for merchant service",
+       "label": "New subscription for merchant service",
    },
    "description": "Exclusive contents with this service",   
    "order_id": "5346523564",
