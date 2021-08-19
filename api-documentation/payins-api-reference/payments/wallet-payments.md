@@ -55,7 +55,7 @@ curl -X POST \
 ```yaml
 {
    "id": "D-4-75c7473a-ab86-4e43-bd39-c840268747d3",
-   "amount": 100,
+   "amount": 0,
    "currency": "ARS",
    "payment_method_id": "MP",
    "payment_method_type": "WALLET",
@@ -82,7 +82,7 @@ If wallet.save = TRUE, the notification will include a wallet.token as long as t
 ```yaml
 {
    "id": "D-4-75c7473a-ab86-4e43-bd39-c840268747d3",
-   "amount": 100.00,
+   "amount": 0.00,
    "status": "VERIFIED",
    "status_detail": "The wallet was verified.",
    "status_code": "700",
