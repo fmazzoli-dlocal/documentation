@@ -282,7 +282,7 @@ For merchants who handle separate Payment / Shipping addresses, the Shipping obj
 | `is_physical` | Boolean | True if a physical delivery to this address is involved \(i.e. for retail goods\). Optional. |
 | `cost` | Number | Cost of the delivery \(in USD\) |
 | `delivery_company` | String | Name of the delivery company |
-| `method` | enum | The type of shipment selected during checkout |
+| `method` | Enum | The type of shipment selected during checkout |
 | `delivery_date` | String | Shipping delivery date. in YYYYMMDD format. |
 | `is_fowarding_address` | Boolean | If the shipping address is a forwarding address |
 | `geolocation` | String | Shipping geolocation |
@@ -491,7 +491,7 @@ The purchase object is used to provide additional general information about the 
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `is_retry` | Boolean | Indicates if the payment is a retry by the user of the same previously rejected purchase attempt. |
-| `channel` | Number | The channel or source where the order was placed, see list. |
+| `channel` | Enum | The channel or source where the order was placed, see list. |
 | `time_in_session` | String | The time in seconds that a user spent within the session in the website or app before making the purchase. |
 | `search_history` | Array | The search\_history list contains the list of products that the user visited within the session before making the purchase. |
 | `search_history.item_reference` | String | The item ID |
@@ -587,5 +587,24 @@ export function checksum(s) {
 | 26 | Dating |
 | 999 | Others |
 
+### Shipping methods list
 
+| Code | Description |
+| :--- | :--- |
+| FREE | Free Shipping |
+| PICKUP | Pickup in store |
+| INTERNATIONAL | International |
+| EXPRESS | Express |
+| STANDARD | Standard |
+
+### Purchase channel list
+
+| Code | Description |
+| :--- | :--- |
+| WEB | Users buy through the website |
+| PHONE | Orders made by phone calls |
+| MOBILE\_APP | Users buy through a mobile application |
+| SOCIAL | Users buy through a social network platform \(facebook, instagram\) |
+| MARKETPLACE | Users buy in an ecommerce store where products are sold by multiple sellers \(Amazon\) |
+| IN\_STORE | Orders purchased in a physical store |
 
