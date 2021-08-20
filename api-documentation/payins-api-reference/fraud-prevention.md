@@ -40,6 +40,7 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
 | `basket` | List of Item objects | Information on the items purchased. **Required**. |
 | `payer` | Payer object | Additional information on the payer's user account. Optional. |
 | `device` | Device object | Additional information on the device used for purchase. Optional. |
+| `purchase` | Purchase object | The purchase object is used to provide additional general information about the purchase |
 {% endtab %}
 
 {% tab title="Example Payment with Additional Risk Data object" %}
@@ -124,6 +125,165 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
 }
 ```
 {% endtab %}
+
+{% tab title="" %}
+```javascript
+{
+    "amount": 399.80,
+    "currency" : "USD",
+    "country": "BR",
+    "payment_method_id" : "CARD",
+    "payment_method_flow" : "DIRECT",
+    "payer":{
+        "name" : "Thiago Gabriel",
+        "email" : "thiago@example.com",
+        "document" : "53033315550",
+        "user_reference": "12345",
+        "address": {
+            "state"  : "Rio de Janeiro",
+            "city" : "Volta Redonda",
+            "zip_code" : "27275-595",
+            "street" : "Servidao B-1",
+            "number" : "1106"
+        }
+    },
+    "card":{
+        "holder_name" : "Thiago Gabriel",
+        "number" : "4111111111111111",
+        "cvv" : "123",
+        "expiration_month" : 10,
+        "expiration_year" : 2040
+    },
+    "order_id": "657434343",
+    "notification_url": "http://merchant.com/notifications",
+    "additional_risk_data": {
+        "submerchant": {
+            "merchant_reference" : "12534",
+            "name" : "Submerchant name",
+            "website" : "https://www.submerchant.com",
+            "industry" : 17,
+            "document" : "15236713521",
+            "nationality" : "BR",
+            "email" : "submerchant@gmail.com",
+            "username" : "submerchant_username",
+            "phone" : "123456712345",
+            "created_date" : "20210311",
+            "total_order_count" : 35,
+            "total_order_amount" : 45020,
+            "last_updated_date" : "20210312",
+            "onboarding_ip_address" : "123.21.31.124",
+            "onboarding_email" : "submerchant@gmail.com",
+            "reputation" : 4,
+            "ship_from_address" : {
+                "state" : "Montevideo",
+                "city" : "Montevideo",
+                "zip_code": "11300",
+                "street" : "Avda. Brasil",
+                "number": "1234 Ap. 401"
+            }
+        },
+        "shipping" : {
+            "address" : {
+                "state" : "Montevideo",
+                "city" : "Montevideo",
+                "zip_code": "11300",
+                "street" : "Avda. Brasil",
+                "number": "1234 Ap. 501"
+            },
+            "is_physical" : true,
+            "cost" : 12.34,
+            "delivery_company" : "FadEx",
+            "method" : "FREE",
+            "delivery_date" : "20211020",
+            "is_forwarding_address" : false,
+            "geolocation": "-34.8798853,-56.1867859"
+        },
+        "beneficiary" : {
+            "email" : "beneficiary@example.org",
+            "name" : "John Doe",
+            "phone" : "09671268364",
+            "document" : "513672561"
+        },
+        "basket" : [
+            {
+                "unit_price" : 199.90,
+                "brand" : "Smoogle",
+                "category" : "Smartphone",
+                "item_reference" : "SP-562138",
+                "upc": "1758929364928",
+                "manufacturer" : "Smoogle",
+                "product_name" : "Pexel 25",
+                "quantity" : 2,
+                "size" : "regular",
+                "subcategory": "Droid smartphones",
+                "url": "https://www.merchant.com/products/SP-562138",
+                "published_date": "20201113",
+                "rating": 4.5,
+                "count_reviews": 13,
+                "image": "https://www.merchant.com/products/SP-562138/photos/1.jpg",
+                "stock": 32,
+                "weight": 0.34,
+                "subscription": {
+                    "id": "A15-D267125367",
+                    "period": "P1M",
+                    "current_period": 3,
+                    "end_date": "20220101" 
+                }
+            }
+        ],
+        "payer" : {
+            "email_is_valid" : true,
+            "phone_is_valid" : false,
+            "account_creation_date" : "20201110",
+            "first_purchase_date" : "20201110",
+            "is_positive" : false,
+            "last_order_id": "1525634152634",
+            "total_order_count": 12,
+            "total_order_amount": 152.03,
+            "last_updated_date": "20201020",
+            "wish_list": [
+                {
+                    "item_reference": "125312435",
+                    "unit_price": 1300,
+                    "product_name": "Pexel 25 for dummies"
+                }
+            ],
+            "reputation": 5
+        },
+        "purchase": {
+            "is_retry": false,
+            "channel": "WEB",
+            "time_in_session": 55,
+            "search_history": [
+                {
+                    "item_reference": "125312435",
+                    "unit_price": 1300,
+                    "product_name": "Pexel 25 for dummies"
+                }
+            ]
+        },
+        "discount_codes": [
+            {
+                "amount": 10,
+                "percentage": 20,
+                "code": "PROMO20OFF",
+                "valid_until" : "20211130",
+                "description" : "20% off Smoogle products"
+            }
+        ],
+        "device" : {
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+            "geolocation" : "-34.8798853,-56.1867859",
+            "locale": "en-US",
+            "advertising_id" : "EA7583CD-A667-48BC-B806-42ECB2B48606",
+            "vendor_id": "uapff_93e9a58cc03a0e7f45c2cf50ca567a99",
+            "android_id": "cdda802e-fb9c-47ad-9866-0794d394c913",
+            "media_drm_id": "0102030405060708090a0b0c0d0e0f10"
+        }
+    }
+}
+```
+{% endtab %}
 {% endtabs %}
 
 #### The Submerchant object
@@ -138,6 +298,24 @@ For PSPs / merchants with sub-merchant accounts, the submerchant object may be u
 | `name` | String | Sub-merchant name. **Required for PSPs / marketplaces**. |
 | `website` | String | Sub-merchant website. Optional. |
 | `industry` | Number  | Sub-merchant industry, see [industry codes list](fraud-prevention.md#industry-codes). Optional. |
+| `document` | String | Submerchant's document |
+| `nationality` | String | Submerchant's nationality \(ISO 3166 country code\) |
+| `email` | String | Submerchant's email address |
+| `username` | String | The unique username associated with the seller's online account. |
+| `phone` | String | Phone number |
+| `created_date` | String | Date of account creation in YYYYMMDD format |
+| `total_order_count` | Number | The total count of orders sold by this seller |
+| `total_order_amount` | Number | The total amount sold by this seller \(in USD\) |
+| `last_updated_date` | String | The last time a change was made to this submerchant \(e.g. changed address\).YYYYMMDD format. |
+| `onboarding_ip_address` | String | The IP address of the device used when this seller account was created. |
+| `onboarding_email` | String | The email used when this seller account was created. |
+| `reputation` | Number | The reputation of the submerchant, from 0 \(negative\) to 5 \(positive\) |
+| `ship_from_address` | Object | The address from where the submerchant ships the orders |
+| `ship_from_address.street` | String | Street |
+| `ship_from_address.number` | String | Street number |
+| `ship_from_address.city` | String | City |
+| `ship_from_address.zip_code` | String | Zip Code |
+| `ship_from_address.state` | String | State |
 {% endtab %}
 
 {% tab title="Example Submerchant object" %}
@@ -148,6 +326,35 @@ For PSPs / merchants with sub-merchant accounts, the submerchant object may be u
     "website" : "https://www.submerchant.com",
     "industry" : 17
 }
+```
+{% endtab %}
+
+{% tab title="" %}
+```javascript
+"submerchant": {
+            "merchant_reference" : "12534",
+            "name" : "Submerchant name",
+            "website" : "https://www.submerchant.com",
+            "industry" : 17,
+            "document" : "15236713521",
+            "nationality" : "BR",
+            "email" : "submerchant@gmail.com",
+            "username" : "submerchant_username",
+            "phone" : "123456712345",
+            "created_date" : "20210311",
+            "total_order_count" : 35,
+            "total_order_amount" : 45020,
+            "last_updated_date" : "20210312",
+            "onboarding_ip_address" : "123.21.31.124",
+            "onboarding_email" : "submerchant@gmail.com",
+            "reputation" : 4,
+            "ship_from_address" : {
+                "state" : "Montevideo",
+                "city" : "Montevideo",
+                "zip_code": "11300",
+                "street" : "Avda. Brasil",
+                "number": "1234 Ap. 401"
+            }
 ```
 {% endtab %}
 {% endtabs %}
@@ -167,6 +374,12 @@ For merchants who handle separate Payment / Shipping addresses, the Shipping obj
 | `address.street` | String | Street. Optional. |
 | `address.number` | String | Street number. Optional. |
 | `is_physical` | Boolean | True if a physical delivery to this address is involved \(i.e. for retail goods\). Optional. |
+| `cost` | Number | Cost of the delivery \(in USD\) |
+| `delivery_company` | String | Name of the delivery company |
+| `method` | enum | The type of shipment selected during checkout |
+| `delivery_date` | String | Shipping delivery date. in YYYYMMDD format. |
+| `is_fowarding_address` | Boolean | If the shipping address is a forwarding address |
+| `geolocation` | String | Shipping geolocation |
 {% endtab %}
 
 {% tab title="Example Shipping object" %}
@@ -181,6 +394,27 @@ For merchants who handle separate Payment / Shipping addresses, the Shipping obj
     },
     "is_physical" : true
 }
+```
+{% endtab %}
+
+{% tab title="" %}
+```javascript
+"shipping" : {
+            "address" : {
+                "state" : "Montevideo",
+                "city" : "Montevideo",
+                "zip_code": "11300",
+                "street" : "Avda. Brasil",
+                "number": "1234 Ap. 501"
+            },
+            "is_physical" : true,
+            "cost" : 12.34,
+            "delivery_company" : "FadEx",
+            "method" : "FREE",
+            "delivery_date" : "20211020",
+            "is_forwarding_address" : false,
+            "geolocation": "-34.8798853,-56.1867859"
+        }
 ```
 {% endtab %}
 {% endtabs %}
@@ -209,6 +443,17 @@ For purchases where the beneficiary / recipient is not the payer \(e.g. for gift
 }
 ```
 {% endtab %}
+
+{% tab title="" %}
+```javascript
+"beneficiary" : {
+            "email" : "beneficiary@example.org",
+            "name" : "John Doe",
+            "phone" : "09671268364",
+            "document" : "513672561"
+        }
+```
+{% endtab %}
 {% endtabs %}
 
 #### The Item object
@@ -228,6 +473,19 @@ The `basket` property contains a **list of Item objects**, used to provide infor
 | `product_name` | String | Product or service name. **Recommended**. |
 | `quantity` | Number | Quantity of items purchased. **Recommended** |
 | `size` | String | Product size \(e.g. S, M, L, XL\). Optional. |
+| `subcategory` | String | The item subcategory |
+| `url` | String | The item url |
+| `published_date` | String | Date when the product was added / published in the store. In YYYYMMDD format |
+| `rating` | Number | The product rating, as a score from 1 to 5 |
+| `count_reviews` | Number | Number of customer reviews the product has received |
+| `image` | String | The url with the product image |
+| `stock` | Number | The quantity of products avaliable for sale |
+| `weight` | Number | The product weight in kg |
+| `subscription` | Object | A subscription object can be used to specify additional data for subscription business models |
+| `subscription.id` | String | Subcription ID/reference |
+| `subscription.period` | String | Renewal period in ISO 8601 format \(P1M, P3M, P1Y etc\) |
+| `subscription.current_period` | Number | The current suscription period that the recurring order belongs |
+| `subscription.end_date` | String | Suscription end date. YYYYMMDD format |
 {% endtab %}
 
 {% tab title="Example Basket & Item object" %}
@@ -247,6 +505,38 @@ The `basket` property contains a **list of Item objects**, used to provide infor
 ],
 ```
 {% endtab %}
+
+{% tab title="" %}
+```javascript
+"basket" : [
+            {
+                "unit_price" : 199.90,
+                "brand" : "Smoogle",
+                "category" : "Smartphone",
+                "item_reference" : "SP-562138",
+                "upc": "1758929364928",
+                "manufacturer" : "Smoogle",
+                "product_name" : "Pexel 25",
+                "quantity" : 2,
+                "size" : "regular",
+                "subcategory": "Droid smartphones",
+                "url": "https://www.merchant.com/products/SP-562138",
+                "published_date": "20201113",
+                "rating": 4.5,
+                "count_reviews": 13,
+                "image": "https://www.merchant.com/products/SP-562138/photos/1.jpg",
+                "stock": 32,
+                "weight": 0.34,
+                "subscription": {
+                    "id": "A15-D267125367",
+                    "period": "P1M",
+                    "current_period": 3,
+                    "end_date": "20220101" 
+                }
+            }
+        ]
+```
+{% endtab %}
 {% endtabs %}
 
 #### The Payer object
@@ -262,6 +552,15 @@ The Payer object within the Additional Risk Data object allows for providing add
 | `account_creation_date` | String | Date of account creation in `YYYYMMDD` format. Optional. |
 | `first_purchase_date` | String | Date of first successful purchase in `YYYYMMDD` format. Optional. |
 | `is_positive` | Boolean | Set to True if this payer is considered as a positive user by the merchant, e.g. for regular customers with a good purchase history. Optional. |
+| `last_order_id` | String | Last order id placed by this account, not including the current order |
+| `total_order_count` | Number | The total count of orders purchased by this account |
+| `total_order_amount` | Number | The total amount purchased by this account |
+| `last_updated_date` | String | The last time a change was made to this account \(e.g. changed address\).YYYYMMDD format. |
+| `wish_list` | Array | A list of items that the user has in any or all of their favorites lists |
+| `wish_list.item_reference` | String | Item ID |
+| `wish_list.unit_price` | Number | Item unit price |
+| `wish_list.product_name` | String | Item name |
+| `reputation` | Number | The reputation of the payer, from 0 \(negative\) to 5 \(positive\) |
 {% endtab %}
 
 {% tab title="Example Payer object" %}
@@ -273,6 +572,30 @@ The Payer object within the Additional Risk Data object allows for providing add
     "first_purchase_date" : "20201110",
     "is_positive" : false
 }
+```
+{% endtab %}
+
+{% tab title="" %}
+```javascript
+"payer" : {
+            "email_is_valid" : true,
+            "phone_is_valid" : false,
+            "account_creation_date" : "20201110",
+            "first_purchase_date" : "20201110",
+            "is_positive" : false,
+            "last_order_id": "1525634152634",
+            "total_order_count": 12,
+            "total_order_amount": 152.03,
+            "last_updated_date": "20201020",
+            "wish_list": [
+                {
+                    "item_reference": "125312435",
+                    "unit_price": 1300,
+                    "product_name": "Pexel 25 for dummies"
+                }
+            ],
+            "reputation": 5
+        }
 ```
 {% endtab %}
 {% endtabs %}
@@ -288,6 +611,10 @@ The Device object is used to store information on the device \(i.e. laptop, smar
 | `user_agent` | String | Browser's User Agent property. Optional. |
 | `geolocation` | String | User's geolocation. Optional. |
 | `locale` | String | Browser's locale. Optional. |
+| `advertising_id` | String | An advertising ID is a unique user ID assigned to a mobile device, or operating environment\(apple: advertisingIdentifier, android: GSF Id\) |
+| `vendor_id` | String | For Apple, an alphanumeric string that uniquely identifies a device to the vendor \(identifierForVendor\) |
+| `android_id` | String | For Android, 64-bit number \(as a hex String\) that the OS randomly generates when the user first sets up the device |
+| `media_drm_id` | String | For Android, the MediaDrm device unique ID |
 {% endtab %}
 
 {% tab title="Example Device object" %}
@@ -299,7 +626,64 @@ The Device object is used to store information on the device \(i.e. laptop, smar
 }
 ```
 {% endtab %}
+
+{% tab title="" %}
+```javascript
+"device" : {
+            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+            "geolocation" : "-34.8798853,-56.1867859",
+            "locale": "en-US",
+            "advertising_id" : "EA7583CD-A667-48BC-B806-42ECB2B48606",
+            "vendor_id": "uapff_93e9a58cc03a0e7f45c2cf50ca567a99",
+            "android_id": "cdda802e-fb9c-47ad-9866-0794d394c913",
+            "media_drm_id": "0102030405060708090a0b0c0d0e0f10"
+        }
+```
+{% endtab %}
 {% endtabs %}
+
+#### The Purchase object
+
+The purchase object is used to provide additional general information about the purchase
+
+{% tabs %}
+{% tab title="Purchase object" %}
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| `is_retry` | Boolean | Indicates if the payment is a retry by the user of the same previously rejected purchase attempt. |
+| `channel` | Number | The channel or source where the order was placed, see list. |
+| `time_in_session` | String | The time in seconds that a user spent within the session in the website or app before making the purchase. |
+| `search_history` | Array | The search\_history list contains the list of products that the user visited within the session before making the purchase. |
+| `search_history.item_reference` | String | The item ID |
+| `search_history.unit_price` | String | The item's unit price |
+| `search_history.product_name` | String | The item's product name |
+{% endtab %}
+
+{% tab title="Example Purchase object" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+
+```javascript
+        "purchase": {
+            "is_retry": false,
+            "channel": "WEB",
+            "time_in_session": 55,
+            "search_history": [
+                {
+                    "item_reference": "125312435",
+                    "unit_price": 1300,
+                    "product_name": "Pexel 25 for dummies"
+                }
+            ]
+        }
+```
+{% endtab %}
+{% endtabs %}
+
+#### 
 
 ## Device ID
 
