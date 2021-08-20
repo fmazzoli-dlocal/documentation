@@ -317,6 +317,17 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Uganda</td>
+      <td style="text-align:left"><code>UG</code>
+      </td>
+      <td style="text-align:left"><code>UGX</code>
+      </td>
+      <td style="text-align:left">Ndaga Muntu- National <b>ID number (NIC)</b>
+      </td>
+      <td style="text-align:left">14 - 17 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Uruguay</td>
       <td style="text-align:left"><code>UY</code>
       </td>
