@@ -450,6 +450,23 @@ The Payer object within the Additional Risk Data object allows for providing add
 {% endtab %}
 {% endtabs %}
 
+#### The Discount codes list
+
+The discount\_codes list is a list of entries that represent the discount codes or promotions that are applied to this purchase
+
+{% tabs %}
+{% tab title="Discount code object" %}
+| `Property` | Type | Description |
+| :--- | :--- | :--- |
+|  |  |  |
+| `amount` | Number | Product discount amount at the moment of the purchase. |
+| `percentage` | Number | If a percentage discount is applied the percentage of the total order amount the discount applies to. e.g. 20% off purchase. This field should be NULL if amount is provided. |
+| `code` | String | The id of the discount / code used. |
+| `valid_until` | String | Promotion end date. In YYYYMMDD format |
+| `description` | String | A description of the discount |
+{% endtab %}
+{% endtabs %}
+
 #### The Device object
 
 The Device object is used to store information on the device \(i.e. laptop, smartphone\) used to make the purchase.
