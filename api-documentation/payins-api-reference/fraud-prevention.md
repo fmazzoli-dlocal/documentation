@@ -78,89 +78,6 @@ For a more in-depth analysis of transactions for fraud patterns, we recommend th
             "merchant_reference" : "12534",
             "name" : "Submerchant name",
             "website" : "https://www.submerchant.com",
-            "industry" : 17
-        },
-        "shipping" : {
-            "address" : {
-                "state" : "Montevideo",
-                "city" : "Montevideo",
-                "zip_code": "11300",
-                "street" : "Avda. Brasil",
-                "number": "1234 Ap. 501"
-            },
-            "is_physical" : true
-        },
-        "beneficiary" : {
-            "email" : "beneficiary@example.org",
-            "name" : "John Doe",
-            "phone" : "09671268364",
-            "document" : "513672561"
-        },
-        "basket" : [
-            {
-                "unit_price" : 199.90,
-                "brand" : "Smoogle",
-                "category" : "Smartphone",
-                "item_reference" : "SP-562138",
-                "upc": "1758929364928",
-                "manufacturer" : "Smoogle",
-                "product_name" : "Pexel 25",
-                "quantity" : 2,
-                "size" : "regular"
-            }
-        ],
-        "payer" : {
-            "email_is_valid" : true,
-            "phone_is_valid" : false,
-            "account_creation_date" : "20201110",
-            "first_purchase_date" : "20201110",
-            "is_positive" : false
-        },
-        "device" : {
-            "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-            "geolocation" : "-34.8798853,-56.1867859",
-            "locale": "en-US"
-        }
-    }
-}
-```
-{% endtab %}
-
-{% tab title="" %}
-```javascript
-{
-    "amount": 399.80,
-    "currency" : "USD",
-    "country": "BR",
-    "payment_method_id" : "CARD",
-    "payment_method_flow" : "DIRECT",
-    "payer":{
-        "name" : "Thiago Gabriel",
-        "email" : "thiago@example.com",
-        "document" : "53033315550",
-        "user_reference": "12345",
-        "address": {
-            "state"  : "Rio de Janeiro",
-            "city" : "Volta Redonda",
-            "zip_code" : "27275-595",
-            "street" : "Servidao B-1",
-            "number" : "1106"
-        }
-    },
-    "card":{
-        "holder_name" : "Thiago Gabriel",
-        "number" : "4111111111111111",
-        "cvv" : "123",
-        "expiration_month" : 10,
-        "expiration_year" : 2040
-    },
-    "order_id": "657434343",
-    "notification_url": "http://merchant.com/notifications",
-    "additional_risk_data": {
-        "submerchant": {
-            "merchant_reference" : "12534",
-            "name" : "Submerchant name",
-            "website" : "https://www.submerchant.com",
             "industry" : 17,
             "document" : "15236713521",
             "nationality" : "BR",
@@ -321,17 +238,6 @@ For PSPs / merchants with sub-merchant accounts, the submerchant object may be u
 {% tab title="Example Submerchant object" %}
 ```javascript
 "submerchant": {
-    "merchant_reference" : "12534",
-    "name" : "Submerchant name",
-    "website" : "https://www.submerchant.com",
-    "industry" : 17
-}
-```
-{% endtab %}
-
-{% tab title="" %}
-```javascript
-"submerchant": {
             "merchant_reference" : "12534",
             "name" : "Submerchant name",
             "website" : "https://www.submerchant.com",
@@ -385,21 +291,6 @@ For merchants who handle separate Payment / Shipping addresses, the Shipping obj
 {% tab title="Example Shipping object" %}
 ```javascript
 "shipping" : {
-    "address" : {
-        "state" : "Montevideo",
-        "city" : "Montevideo",
-        "zip_code": "11300",
-        "street" : "Avda. Brasil",
-        "number": "1234 Ap. 501"
-    },
-    "is_physical" : true
-}
-```
-{% endtab %}
-
-{% tab title="" %}
-```javascript
-"shipping" : {
             "address" : {
                 "state" : "Montevideo",
                 "city" : "Montevideo",
@@ -434,17 +325,6 @@ For purchases where the beneficiary / recipient is not the payer \(e.g. for gift
 {% endtab %}
 
 {% tab title="Example Beneficiary object" %}
-```javascript
-"beneficiary" : {
-    "email" : "beneficiary@example.org",
-    "name" : "John Doe",
-    "phone" : "09671268364",
-    "document" : "513672561"
-}
-```
-{% endtab %}
-
-{% tab title="" %}
 ```javascript
 "beneficiary" : {
             "email" : "beneficiary@example.org",
@@ -489,24 +369,6 @@ The `basket` property contains a **list of Item objects**, used to provide infor
 {% endtab %}
 
 {% tab title="Example Basket & Item object" %}
-```javascript
-"basket" : [
-    {
-        "unit_price" : 499.90,
-        "brand" : "Google",
-        "category" : "Smartphones",
-        "item_reference" : "SP-562138",
-        "upc": "1758929364928",
-        "manufacturer" : "Google",
-        "product_name" : "Pixel 3",
-        "quantity" : 2,
-        "size" : "XL"
-    }
-],
-```
-{% endtab %}
-
-{% tab title="" %}
 ```javascript
 "basket" : [
             {
@@ -566,18 +428,6 @@ The Payer object within the Additional Risk Data object allows for providing add
 {% tab title="Example Payer object" %}
 ```javascript
 "payer" : {
-    "email_is_valid" : true,
-    "phone_is_valid" : false,
-    "account_creation_date" : "20201110",
-    "first_purchase_date" : "20201110",
-    "is_positive" : false
-}
-```
-{% endtab %}
-
-{% tab title="" %}
-```javascript
-"payer" : {
             "email_is_valid" : true,
             "phone_is_valid" : false,
             "account_creation_date" : "20201110",
@@ -620,16 +470,6 @@ The Device object is used to store information on the device \(i.e. laptop, smar
 {% tab title="Example Device object" %}
 ```javascript
 "device" : {
-    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
-    "geolocation" : "-34.8798853,-56.1867859",
-    "locale": "en-US"
-}
-```
-{% endtab %}
-
-{% tab title="" %}
-```javascript
-"device" : {
             "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
             "geolocation" : "-34.8798853,-56.1867859",
             "locale": "en-US",
@@ -660,10 +500,6 @@ The purchase object is used to provide additional general information about the 
 {% endtab %}
 
 {% tab title="Example Purchase object" %}
-
-{% endtab %}
-
-{% tab title="" %}
 
 
 ```javascript
