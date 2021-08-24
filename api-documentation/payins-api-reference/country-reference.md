@@ -296,6 +296,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Thailand</td>
+      <td style="text-align:left"><code>TH</code>
+      </td>
+      <td style="text-align:left"><code>THB</code>
+      </td>
+      <td style="text-align:left">Thai Identity Card</td>
+      <td style="text-align:left">13 digits</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left">Turkey</td>
       <td style="text-align:left"><code>TR</code>
       </td>
