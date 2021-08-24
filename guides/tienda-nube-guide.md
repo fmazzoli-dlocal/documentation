@@ -4,7 +4,7 @@ description: >-
   de 30 mercados.
 ---
 
-# Tienda Nube Guide
+# Tienda Nube setup
 
 **Pre-requisito: Crear tu cuenta en dLocal**  
 Crea tu cuenta como comerciante en el siguiente link: [https://merchant.dlocal.com/sign\_up](https://merchant.dlocal.com/sign_up)
@@ -17,7 +17,7 @@ Paso 1: Ve al inicio de tu tienda. Por ejemplo: http://_ejemplo_.mitiendanube.co
 
 Paso 2: Ve a “Configurar un medio de pago”
 
-![](../../.gitbook/assets/captura-de-pantalla-2021-07-29-a-la-s-12.46.58.png)
+![](../.gitbook/assets/captura-de-pantalla-2021-07-29-a-la-s-12.46.58.png)
 
 Paso 3: En una nueva pestaña o ventana, ingresa al link proporcionado por dLocal
 

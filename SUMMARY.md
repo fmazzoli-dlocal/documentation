@@ -143,10 +143,10 @@
 * [PCI Compliance](guides/pci-compliance.md)
 * [Google Pay™](guides/google-pay.md)
 * [Shopify setup](guides/shopify.md)
-* [Reporting](guides/reporting.md)
+* [Tienda Nube setup](guides/tienda-nube-guide.md)
 * [Lightspeed setup](guides/lightspeed.md)
+* [Reporting](guides/reporting.md)
 * [Guides](guides/guides/README.md)
-  * [Tienda Nube Guide](guides/guides/tienda-nube-guide.md)
   * [Card Payments](guides/guides/card-payments.md)
   * [Alternative Payment Methods \(APMs\)](guides/guides/alternative-payment-methods-apms.md)
 
