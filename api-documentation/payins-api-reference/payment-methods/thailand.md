@@ -1,5 +1,7 @@
 # Thailand
 
+### Payment Methods Available
+
 <table>
   <thead>
     <tr>
