@@ -38,6 +38,7 @@
     * [Philippines](api-documentation/payins-api-reference/payment-methods/philippines.md)
     * [Senegal](api-documentation/payins-api-reference/payment-methods/senegal.md)
     * [South Africa](api-documentation/payins-api-reference/payment-methods/south-africa.md)
+    * [Thailand](api-documentation/payins-api-reference/payment-methods/thailand.md)
     * [Turkey](api-documentation/payins-api-reference/payment-methods/turkey.md)
     * [Uruguay](api-documentation/payins-api-reference/payment-methods/uruguay.md)
     * [Vietnam](api-documentation/payins-api-reference/payment-methods/vietnam.md)
