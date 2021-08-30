@@ -15,7 +15,11 @@ Get Card Information
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="card\_id" type="string" required=true %}
-card\_id provided when card was created
+Provided when card was created.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="full\_data" type="boolean" required=false %}
+Shows the card's sensitive data tokens \(default: false\)
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -42,6 +46,11 @@ card\_id provided when card was created
         "house_number": "52",
         "zip_code": "05001000",
         "neighbourhood": "El Poblado"
+    },
+    "card_information": {
+        "front_token": "AQICAHjajCjj_m_SHvhC9QhV2CT_N062EgS6-BUD2Ddfq2y_iAGoLHvoSHaQCwGSJOeFpyYwA",
+        "rear_token": "AAAhjCBgwYJKoZIhvcNAQcGoHYwdAIBADBvBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDI1qTNda",
+        "type": "IMAGE"
     },
     "created_at": "2021-03-11T20:33:33Z",
     "notification_url": "http://merchant.dlocal.com/notification"

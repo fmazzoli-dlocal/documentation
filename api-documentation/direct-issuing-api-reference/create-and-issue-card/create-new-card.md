@@ -90,8 +90,8 @@ enum\('PHYSICAL','VIRTUAL'\)
     "card_reference": "WCaM8vn1YMNJ",
     "delivery_address": {
         "country": "CO",
-        "city": "Medellin",
-        "state": "Antioquia",
+        "city": "1",
+        "state": "1",
         "street": "Carrera 74 cYdDao",
         "street2": "Carrera 74 biVvwb",
         "house_number": "52",
