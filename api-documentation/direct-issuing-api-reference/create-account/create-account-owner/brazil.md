@@ -27,6 +27,13 @@
 | zip\_code | Owner's address zipcode. |
 | neighbourhood | Neighbourhood or district. |
 
+#### Document Type
+
+| document\_type | Description |
+| :--- | :--- |
+| RG | Registro Geral |
+| CNH | Carteira Nacional de Habilitação |
+
 #### Marital Status
 
 | Status | Description |

@@ -126,6 +126,8 @@
     * [Card Activation](api-documentation/direct-issuing-api-reference/create-and-issue-card/card-activation.md)
     * [Block Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/block-unblock-card.md)
     * [Unblock Card](api-documentation/direct-issuing-api-reference/create-and-issue-card/unblock-card.md)
+  * [Webhooks](api-documentation/direct-issuing-api-reference/webhooks/README.md)
+    * [Event Types](api-documentation/direct-issuing-api-reference/webhooks/event-types.md)
   * [Issuing Status Codes](api-documentation/direct-issuing-api-reference/issuing-status-codes.md)
 
 ## Products

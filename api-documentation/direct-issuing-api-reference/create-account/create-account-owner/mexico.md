@@ -17,7 +17,7 @@
 | ip\_address | Owner's IP Address.  |
 | **address** | Owner's Address. |
 | country | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
-| city | Owner's address city code.  |
+| city | Owner's address city code. [See table below](mexico.md#cities). |
 | state | Owner's address state code. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#states) |
 | street | Owner's address street. |
 | zip\_code | Owner's address zipcode. |
@@ -183,5 +183,7 @@
   </tbody>
 </table>
 
+#### **Cities**
 
+You can find the City's ID in the following [LINK](https://docs.google.com/spreadsheets/d/1lC2OffJVbi5A1ioWwLQ-p30XMfx84_8Ea4GHIpk_mO4/edit?usp=sharing). 
 
