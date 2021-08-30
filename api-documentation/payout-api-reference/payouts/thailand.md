@@ -40,6 +40,40 @@
 
 ```
 
+### Mandatory parameters wallet
+
+| Mandatory parameter | Description |
+| :--- | :--- |
+| **login** | 32 chars |
+| **pass** | 32 chars |
+| **external\_id** | Max. 100 chars |
+| **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars |
+| **country** | TH |
+| **amount** | Max. 2 decimal numbers |
+| **currency** | THB |
+| **phone** | With or without country code + 10 digits phone |
+| **metadata** | “{\“wallet\“:\“truemoney\“}” |
+
+### Example request
+
+```text
+{
+    "external_id": "68907654",
+    "phone": "8756435675",
+    "beneficiary_name": "DLOCAL Thailand",
+    "beneficiary_lastname": "Limited",
+    "country": "TH",
+    "amount": "100",
+    "currency": "THB",
+    "metadata": "{\"wallet\":\"truemoney\"}",
+    "notification_url": "http://google.com",
+    "type": "json"
+}
+```
+
+### 
+
 ### **Bank codes**
 
 | **Bank Name** | Bank code |
