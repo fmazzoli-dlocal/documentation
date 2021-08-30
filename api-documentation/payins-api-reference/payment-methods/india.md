@@ -162,8 +162,8 @@
       <td style="text-align:left"><code>CW</code>
       </td>
       <td style="text-align:left">
-        <p>Cashfree</p>
-        <p>Wallet</p>
+        <p></p>
+        <p>Wallets</p>
       </td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
