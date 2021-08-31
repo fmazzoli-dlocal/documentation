@@ -39,9 +39,9 @@ curl -X POST \
        "document": "53033315550"
    },
    "wallet": {
-       "save": TRUE,
-       "verify": TRUE,
-       "label": "New subscription for merchant service",
+       "save": true,
+       "verify": true,
+       "label": "New subscription for merchant service"
    },
    "description": "Exclusive contents with this service",   
    "order_id": "5346523564",
