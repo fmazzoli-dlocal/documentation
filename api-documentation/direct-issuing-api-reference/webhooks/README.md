@@ -214,6 +214,8 @@ Webhook enabled or disabled
 {% endapi-method-spec %}
 {% endapi-method %}
 
+Note: The headers only are showed when you create this webhook. You don't have to modify the headers later. 
+
 **Request**
 
 ```text
@@ -267,10 +269,6 @@ Webhook endpoint url
 List of available events \(for subscriber all events, send only ALL string\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="headers" type="string" required=false %}
-Optionals headers
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="is\_active" type="string" required=true %}
 Webhook enabled or disabled
 {% endapi-method-parameter %}
@@ -292,15 +290,6 @@ Webhook enabled or disabled
    "events": [
        "ALL"
    ],
-   "headers": {
-       "auth": {
-           "secret_key": "my_secret_key"
-       },
-       "custom": {
-           "header_key_1": "value_1",
-           "header_key_2": "value_2"
-       }
-   },   
    "is_active": true,
    "creation_date": "2021-08-23T20:54:34.276Z",
    "last_updated": "2021-08-23T20:54:34.276Z"
@@ -323,15 +312,6 @@ Webhook enabled or disabled
    "events": [
        "ALL"
    ],
-   "headers": {
-       "auth": {
-           "secret_key": "my_secret_key"
-       },
-       "custom": {
-           "header_key_1": "value_1",
-           "header_key_2": "value_2"
-       }
-   },
    "is_active": true
 }
 ```
@@ -369,15 +349,6 @@ Webhook unique identifier.
    "events": [
        "TRANSACTION_EVENT"
    ],
-   "headers": {
-       "auth": {
-           "secret_key": "my_secret_key"
-       },
-       "custom": {
-           "header_key_1": "value_1",
-           "header_key_2": "value_2"
-       }
-   },   
    "is_active": true,
    "creation_date": "2021-08-23T20:54:34.276Z",
    "last_updated": "2021-08-23T20:54:34.276Z"
@@ -427,15 +398,6 @@ Webhooks to start. By default is 0.
          "events": [
              "TRANSACTION_EVENT"
          ],
-         "headers": {
-             "auth": {
-                 "secret_key": "my_secret_key"
-             },
-             "custom": {
-                 "header_key_1": "value_1",
-                 "header_key_2": "value_2"
-             }
-         },   
          "is_active": true,
          "creation_date": "2021-08-23T20:54:34.276Z",
          "last_updated": "2021-08-23T20:54:34.276Z"
