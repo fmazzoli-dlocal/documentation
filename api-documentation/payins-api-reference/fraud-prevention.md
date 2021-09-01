@@ -482,6 +482,7 @@ The Device object is used to store information on the device \(i.e. laptop, smar
 | `vendor_id` | String | For Apple, an alphanumeric string that uniquely identifies a device to the vendor \(identifierForVendor\) |
 | `android_id` | String | For Android, 64-bit number \(as a hex String\) that the OS randomly generates when the user first sets up the device |
 | `media_drm_id` | String | For Android, the MediaDrm device unique ID |
+| `event_uuid` | String | dLocal Device ID - see dLocal Device ID integration below |
 {% endtab %}
 
 {% tab title="Example Device object" %}
@@ -536,39 +537,36 @@ The purchase object is used to provide additional general information about the 
 {% endtab %}
 {% endtabs %}
 
-#### 
+## **dLocal Device ID integration**
 
-## Device ID
+For merchants who are using `DIRECT` payment flows and are not using our Smart Fields solution, we strongly recommend the integration of the Fraud Prevention Javascript library within the payment flow of the client application. This script will allow the collection of detailed device information that will enhance the fraud prevention capabilities for each processed payment.
 
-In order to capture a Device ID from the user's device, we recommend that merchants use the following Javascript code in their website. The result returned by calling the `generateDeviceId()` function should be sent in the `device_id` parameter in the [Payment request](payments/#create-a-payment).
+{% hint style="info" %}
+If you are using our Smart Fields solution, or any of our REDIRECT flows, the Device ID is being automatically collected so you may ignore this section.
+{% endhint %}
 
-```javascript
-export function generateDeviceId() {
-    var nav = window.navigator;
-    var screen = window.screen;
-    var deviceId = nav.mimeTypes.length;
-    Object.values(navigator.mimeTypes).forEach(p => deviceId += p.type);
-    deviceId += nav.userAgent.replace(/\D+/g, '');//Only use digits
-    deviceId += nav.plugins.length;
-    Object.values(navigator.plugins).forEach(p => deviceId += p.filename);
-    deviceId += screen.height || '';
-    deviceId += screen.width || '';
-    deviceId += screen.pixelDepth || '';
-    return checksum(deviceId);
-};
-export function checksum(s) {
-    var hash = 0, strlen = s.length, i, c;
-    if ( strlen === 0 ) {
-        return hash;
-    }
-    for ( i = 0; i < strlen; i++ ) {
-        c = s.charCodeAt( i );
-        hash = ((hash << 5) - hash) + c;
-        hash = hash & hash; // Convert to 32bit integer
-    }
-    return Math.abs(hash);
-};
+**Fraud Prevention JS library URLs:**
+
+* **Testing:** [https://static-sandbox-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js](https://static-sandbox-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js)
+* **Production:** [https://static-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js](https://static-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js)
+
+For web applications, in order to integrate our JS library and perform the device data collection you should include the following code snippet right after the opening `<body>` tag:
+
+```markup
+<!-- Scripts -->
+<script src=LIBRARY_URL></script>
+
+<script text="text/javascript">
+   dlocalCollector.create({ apiKey: API_KEY })
+    .then((event_uuid) => console.log(event_uuid));
+</script>
 ```
+
+Within this code, you should:
+
+1. Replace `LIBRARY_URL` with the URL for the sandbox or production environment, as detailed above.
+2. Replace `API_KEY` with your Smart Fields API Key. This key can be obtained from the Settings -&gt; Integration section in the Merchant Dashboard.
+3. Retrieve the `event_uuid` returned by the call to the `dlocalCollector.create()` method, and submit this value in the payment request within the `additional_risk_data.device.event_uuid` parameter.
 
 ## Appendix - Codes
 
