@@ -39,6 +39,8 @@
 
 #### **States** 
 
+Note: [xlsx version](https://docs.google.com/spreadsheets/d/12DUNd4VFPfsszs5x4ZRyk3xJJVM-5dgJphhA437Uxkg/edit?usp=sharing).
+
 <table>
   <thead>
     <tr>
@@ -185,5 +187,5 @@
 
 #### **Cities**
 
-You can find the City's ID in the following [LINK](https://docs.google.com/spreadsheets/d/1lC2OffJVbi5A1ioWwLQ-p30XMfx84_8Ea4GHIpk_mO4/edit?usp=sharing). 
+You can find the City's ID in the following [LINK](https://docs.google.com/spreadsheets/d/1jbmpSdACKWHGcytsmW14OnZGuULNweKRAW-weLINBc0/edit?usp=sharing). 
 
