@@ -16,8 +16,6 @@
 | gender | M or F. |
 | marital\_status | [Check table ](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/brazil#marital-status)below for more details. |
 | ip\_address | Owner's IP Address. |
-| terms\_and\_conditions\_accepted | Account's terms and conditions.  |
-| data\_management\_accepted | Account's data management.  |
 | **address** | Owner's Address. |
 | country | Owner's country code. ISO 3166-1 alpha-2-code. \(BR\) |
 | city | Owner's address city code.  |
