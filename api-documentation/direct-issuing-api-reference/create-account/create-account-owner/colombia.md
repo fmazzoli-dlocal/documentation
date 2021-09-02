@@ -8,6 +8,7 @@
 
 | Property | Description |
 | :--- | :--- |
+| notification\_url | Notification to receive change status webhooks |
 | hdm\_data | Devices's fingerprint codified. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
 | payload | Device's fingerprint. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
 | **owner** | Owner Object |

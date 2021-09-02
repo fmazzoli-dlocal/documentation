@@ -4,6 +4,7 @@
 
 | Property | Description |
 | :--- | :--- |
+| notification\_url | Notification to receive change status webhooks |
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
 | last\_names | Owner's complete Last Names. |
