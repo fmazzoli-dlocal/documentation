@@ -26,7 +26,9 @@
 
 | document\_type | Description |
 | :--- | :--- |
+| IFE | Credencial Instituto Federal Electoral |
 | INE | Instituto Nacional Electoral |
+| PAS | Pasaporte |
 
 #### Marital Status
 
