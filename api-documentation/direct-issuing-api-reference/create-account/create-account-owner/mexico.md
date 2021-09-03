@@ -1,5 +1,9 @@
 # Mexico
 
+### Flow
+
+![](../../../../.gitbook/assets/image%20%2829%29.png)
+
 ### Mandatory parameters
 
 | Property | Description |
