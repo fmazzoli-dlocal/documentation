@@ -1,5 +1,9 @@
 # Brazil
 
+### Flow
+
+![](../../../../.gitbook/assets/image%20%2833%29.png)
+
 ### Mandatory parameters
 
 | Property | Description |
