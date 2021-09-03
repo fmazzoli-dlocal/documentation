@@ -212,7 +212,7 @@ Some banks require a specific structure for the bank\_account field:
 | Banco de Occidente | 023 | 9 | 9 | 123456789 | 123456789 |
 | Caja social BCSC | 032 | 12 | 12 | 123456789012 | 123456789012 |
 | Agrario | 040 | 12 | 12 | 123456789012 | 123456789012 |
-| Davivienda | 051 | 12 | 12 | 123456789012 | 123456789012 |
+| Davivienda | 051 | 18 | 18 | 123456789012 | 123456789012 |
 | Av. Villas | 052 | 11 | 13 | 12345678901 | 1234567890123 |
 | Procredit | 058 | 13 | 13 | 1234567890123 | 1234567890123 |
 | Pichincha | 060 | 9 | 9 | 123456789 | 123456789 |
