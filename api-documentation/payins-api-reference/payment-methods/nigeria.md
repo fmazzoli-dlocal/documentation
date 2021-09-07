@@ -126,6 +126,18 @@
       </td>
       <td style="text-align:left"></td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>OD</code>
+      </td>
+      <td style="text-align:left">Okra Direct Debit</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Okra</td>
+      <td style="text-align:left">Bank transfer / Direct Debit</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
