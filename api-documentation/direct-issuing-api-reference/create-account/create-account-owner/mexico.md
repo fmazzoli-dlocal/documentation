@@ -12,7 +12,7 @@
 | **owner** | Owner Object |
 | first\_name | Owner's First Name.  |
 | last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date. User's  must be over 18 years old.  |
+| birth\_date | Owner's birth date. User's must be over 18 years old.  |
 | email | Owner's email. |
 | phone\_number | Owner's cellphone number.  |
 | document | Owner’s personal identification number.  |
@@ -23,7 +23,7 @@
 | **address** | Owner's Address. |
 | country | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
 | city | Owner's address city code. [See table below](mexico.md#cities). |
-| state | Owner's address state code. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#states) |
+| state | Owner's address state code. [See table below](mexico.md#states). |
 | street | Owner's address street. |
 | zip\_code | Owner's address zipcode. [Zip Code Reference. ](https://docs.google.com/spreadsheets/d/1EW7JI-B814GAdULTr4njyBUulDvTTQ5dM_M2kD5AAkw/edit?usp=sharing) |
 
