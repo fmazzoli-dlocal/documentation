@@ -102,10 +102,12 @@ curl -X POST \
 ## 3rd-party Authentication \(MPI\)
 
 {% hint style="warning" %}
-3rd-party Authentication is only available in Brazil, Panama, Costa Rica, Guatemala and Nigeria at the moment.
+3rd-party Authentication is only available in Brazil, Panama, Costa Rica, Guatemala and Nigeria at the moment, for version 1.0.
+
+Version 2.x is currently only supported for Brazil.
 {% endhint %}
 
-Submit a payment, using authentication data from a third-party 3D Secure 1.0 provider.
+Submit a payment, using authentication data from a third-party 3D Secure provider.
 
 To authorize a 3D-Secure authenticated payment, you need to include the `three_dsecure` object in your payment request.
 
@@ -136,10 +138,7 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       <td style="text-align:left"><code>three_dsecure_version</code>
       </td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>Note: At the moment only 3DS 1.0 is supported.</p>
-        <p><b>If null, then <code>three_dsecure_version</code> = <code>&quot;1.0&quot;</code></b>
-        </p>
+      <td style="text-align:left">Options: <code>1.0</code>, <code>2.0</code>, <code>2.1.0</code>, <code>2.2.0</code> .<b> If null, then <code>three_dsecure_version</code> = <code>&quot;1.0&quot;</code></b>
       </td>
     </tr>
     <tr>
@@ -147,10 +146,9 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p></p>
         <p>The cardholder authentication value for the 3D Secure authentication session.
           The returned value is a base64-encoded 20-byte array.</p>
-        <p><b>Required if <code>mpi</code> = <code>TRUE</code> and<code>three_dsecure_version</code> = <code>&quot;1.0&quot;</code></b>
+        <p><b>Required if <code>mpi</code> = <code>TRUE</code></b>
         </p>
       </td>
     </tr>
@@ -159,9 +157,8 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p></p>
         <p>The electronic commerce indicator.</p>
-        <p><b>Required if <code>mpi</code> = <code>TRUE </code>and<code>three_dsecure_version</code> = <code>&quot;1.0&quot; </code></b>
+        <p><b>Required if <code>mpi</code> = <code>TRUE </code></b>
         </p>
         <p>*See possible values and descriptions <a href="3d-secure.md#electronic-commerce-indicator-eci-values">here</a>
         </p>
@@ -172,10 +169,20 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p></p>
-        <p>The transaction identifier assigned by the Directory Server (base64 encoded,
-          20 bytes in a decoded form).</p>
+        <p>The transaction identifier assigned by the Directory Server for v1 authentication
+          (base64 encoded, 20 bytes in a decoded form).</p>
         <p><b>Required if <code>mpi</code> = <code>TRUE </code>and<code>three_dsecure_version</code> = <code>&quot;1.0&quot;</code></b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>ds_transaction_id</code>
+      </td>
+      <td style="text-align:left">String</td>
+      <td style="text-align:left">
+        <p>The transaction identifier assigned by the 3DS Server for v2 authentication
+          (36 characters, commonly in UUID format).</p>
+        <p><b>Required if <code>mpi</code> = <code>TRUE </code>and<code>three_dsecure_version</code> = <code>2.x</code></b>
         </p>
       </td>
     </tr>
@@ -184,7 +191,6 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p></p>
         <p>The enrollment response from the <code>VERes</code> message from the Directory
           Server.</p>
         <p>&quot;Y&quot;: Authentication available
@@ -199,7 +205,6 @@ To authorize a 3D-Secure authenticated payment, you need to include the `three_d
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p></p>
         <p>From the <code>PARes</code> from the issuer&apos;s Access Control System.</p>
         <p>&quot;Y&quot;: Authentication successful</p>
         <p>&quot;A&quot;: Attempts processing performed</p>
