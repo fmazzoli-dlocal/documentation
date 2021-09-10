@@ -88,6 +88,7 @@
     * [Paraguay](api-documentation/payout-api-reference/payouts/paraguay.md)
     * [Peru](api-documentation/payout-api-reference/payouts/peru.md)
     * [Philippines](api-documentation/payout-api-reference/payouts/philippines.md)
+    * [Tanzania](api-documentation/payout-api-reference/payouts/tanzania.md)
     * [Turkey](api-documentation/payout-api-reference/payouts/turkey.md)
     * [Thailand](api-documentation/payout-api-reference/payouts/thailand.md)
     * [Uganda](api-documentation/payout-api-reference/payouts/uganda.md)
