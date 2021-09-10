@@ -90,6 +90,7 @@
     * [Philippines](api-documentation/payout-api-reference/payouts/philippines.md)
     * [Turkey](api-documentation/payout-api-reference/payouts/turkey.md)
     * [Thailand](api-documentation/payout-api-reference/payouts/thailand.md)
+    * [Uganda](api-documentation/payout-api-reference/payouts/uganda.md)
     * [Uruguay](api-documentation/payout-api-reference/payouts/uruguay.md)
     * [Vietnam](api-documentation/payout-api-reference/payouts/vietnam.md)
   * [Validation account endpoint - Nigeria](api-documentation/payout-api-reference/validation-account-endpoint-nigeria.md)
