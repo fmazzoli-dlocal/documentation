@@ -61,7 +61,7 @@ Transactions created after and equals this date. YYYY-MM-DD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="end\_date" type="string" required=false %}
-Transactions created before and equals this date. YYY-MM-DD
+Transactions created before and equals this date. YYYY-MM-DD
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
