@@ -49,7 +49,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_TG.png">https://static.dlocal.com/images/providers/FW_TG.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
