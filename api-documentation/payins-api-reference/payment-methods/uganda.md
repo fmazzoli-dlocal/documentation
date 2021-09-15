@@ -8,7 +8,7 @@
 | `MW` | Mobile Money | `BANK_TRANSFER` | M-cash | Mobile Money | `DIRECT` | ​ |
 | `MW` | Mobile Money | `BANK_TRANSFER` | Payway | Mobile Money | `DIRECT` | ​ |
 | `MW` | Mobile Money | `BANK_TRANSFER` | Eezy Money  | Mobile Money | `DIRECT` | ​ |
-| `MW` | Mobile Money | `BANK_TRANSFER` | MTN | Mobile Money | `DIRECT` | ​ |
-| `MW` | Mobile Money | `BANK_TRANSFER` | Airtel | Mobile Money | `DIRECT` | ​ |
+| `MW` | Mobile Money | `BANK_TRANSFER` | MTN | Mobile Money | `DIRECT` | ​[https://static.dlocal.com/images/providers/FW\_MT.png](https://static.dlocal.com/images/providers/FW_MT.png) |
+| `MW` | Mobile Money | `BANK_TRANSFER` | Airtel | Mobile Money | `DIRECT` | ​[https://static.dlocal.com/images/providers/FW\_AT.png](https://static.dlocal.com/images/providers/FW_AT.png) |
 | `MW` | Mobile Money | `BANK_TRANSFER` | Uganda Telecom | Mobile Money | `DIRECT` | ​ |
 
