@@ -30,7 +30,77 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left">Airtel</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
       <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Tigo</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">m-pesa</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Halopesa</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Ezy-pesa</td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>DIRECT</code>
+      </td>
+      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MW</code>
+      </td>
+      <td style="text-align:left">Mobile Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">TTCL</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
