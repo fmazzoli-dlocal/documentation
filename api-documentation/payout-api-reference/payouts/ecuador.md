@@ -182,7 +182,6 @@ _In this list there are the major banks of the country to see the complete list 
 | Banco Internacional | 032 |
 | Banco Procredit | 060 |
 | Banco Produbanco | 036 |
-| Banco Promerica | 036 |
 | Banco Solidario | 059 |
 | Coop. 15 de Abril Ltda | 057 |
 | Coop. 15 de Agosto Pilacoto | 290 |
