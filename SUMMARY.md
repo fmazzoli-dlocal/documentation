@@ -41,6 +41,7 @@
     * [Tanzania](api-documentation/payins-api-reference/payment-methods/tanzania.md)
     * [Thailand](api-documentation/payins-api-reference/payment-methods/thailand.md)
     * [Turkey](api-documentation/payins-api-reference/payment-methods/turkey.md)
+    * [Uganda](api-documentation/payins-api-reference/payment-methods/uganda.md)
     * [Uruguay](api-documentation/payins-api-reference/payment-methods/uruguay.md)
     * [Vietnam](api-documentation/payins-api-reference/payment-methods/vietnam.md)
   * [Payments](api-documentation/payins-api-reference/payments/README.md)
