@@ -296,6 +296,20 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Tanzania</td>
+      <td style="text-align:left"><code>TZ</code>
+      </td>
+      <td style="text-align:left"><code>TZS</code>
+      </td>
+      <td style="text-align:left">
+        <p></p>
+        <p>National Identity Card</p>
+        <p></p>
+      </td>
+      <td style="text-align:left">Unique 20 digit national ID number</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Thailand</td>
       <td style="text-align:left"><code>TH</code>
       </td>
@@ -303,7 +317,7 @@ In the table below you can find the `country` code and `currency` of the countri
       </td>
       <td style="text-align:left">Thai Identity Card</td>
       <td style="text-align:left">13 digits</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Yes</td>
     </tr>
     <tr>
       <td style="text-align:left">Turkey</td>
