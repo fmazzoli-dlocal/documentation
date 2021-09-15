@@ -34,7 +34,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_AT.png">https://static.dlocal.com/images/providers/FW_AT.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
@@ -62,7 +63,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/FW_MP.jpg">https://static.dlocal.com/images/providers/FW_MP.jpg</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
