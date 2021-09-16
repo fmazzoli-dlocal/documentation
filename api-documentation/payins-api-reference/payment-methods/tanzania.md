@@ -45,7 +45,7 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
-      <td style="text-align:left">Tigo</td>
+      <td style="text-align:left">Tigo Cash</td>
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
