@@ -38,6 +38,16 @@ In the table below you can find the `country` code and `currency` of the countri
       <td style="text-align:left">Yes</td>
     </tr>
     <tr>
+      <td style="text-align:left">Bangladesh</td>
+      <td style="text-align:left"><code>BD</code>
+      </td>
+      <td style="text-align:left"><code>BDT</code>
+      </td>
+      <td style="text-align:left">NID Card or National Identity Card</td>
+      <td style="text-align:left">13 - 17 digits</td>
+      <td style="text-align:left">Yes</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Bolivia</td>
       <td style="text-align:left"><code>BO</code>
       </td>
