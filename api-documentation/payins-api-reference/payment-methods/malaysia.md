@@ -230,7 +230,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GrabPay.png">https://static.dlocal.com/images/providers/GrabPay.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MB</code>
