@@ -8,6 +8,7 @@
 | **pass** | 32 chars |
 | **external\_id** | Max. 100 chars |
 | **beneficiary\_name** | Max. 100 chars |
+| **beneficiary\_lastname** | Max. 100 chars. |
 | **country** | DZ |
 | **amount** | Max. 2 decimal numbers |
 | **currency** | DZD |
