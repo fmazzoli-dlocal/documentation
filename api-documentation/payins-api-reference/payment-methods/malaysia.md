@@ -200,6 +200,70 @@
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/UnionPay.png">https://static.dlocal.com/images/providers/UnionPay.png</a>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"><code>YB</code>
+      </td>
+      <td style="text-align:left">eWallet</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Boost</td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>GY</code>
+      </td>
+      <td style="text-align:left">eWallet</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">GrabPay</td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>MB</code>
+      </td>
+      <td style="text-align:left">eWallet</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Maybank QR</td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>TG</code>
+      </td>
+      <td style="text-align:left">eWallet</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left">Touch n&apos; go</td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
 
