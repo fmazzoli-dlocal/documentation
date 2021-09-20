@@ -214,7 +214,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Boost.png">https://static.dlocal.com/images/providers/Boost.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GY</code>
@@ -247,7 +248,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/MaybankQR.png">https://static.dlocal.com/images/providers/MaybankQR.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>TG</code>
@@ -263,7 +265,8 @@
         <p><code>REDIRECT</code>
         </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Touchngo.png">https://static.dlocal.com/images/providers/Touchngo.png</a>
+      </td>
     </tr>
   </tbody>
 </table>
