@@ -79,7 +79,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/Halopesa.png">https://static.dlocal.com/images/providers/Halopesa.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
@@ -93,7 +94,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/Ezypesa.png">https://static.dlocal.com/images/providers/Ezypesa.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
@@ -107,7 +109,8 @@
       <td style="text-align:left">Mobile Money</td>
       <td style="text-align:left"><code>DIRECT</code>
       </td>
-      <td style="text-align:left">&#x200B;</td>
+      <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/TTCL.png">https://static.dlocal.com/images/providers/TTCL.png</a>
+      </td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
