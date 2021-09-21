@@ -295,40 +295,6 @@
     <tr>
       <td style="text-align:left"><code>CARD</code>
       </td>
-      <td style="text-align:left">Cordial</td>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left"><code>CO</code>
-      </td>
-      <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/CO.png">https://pay.dlocal.com/views/2.0/images/payments/CO.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left">Cordobesa</td>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left"><code>CB</code>
-      </td>
-      <td style="text-align:left">Credit Card</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/CB.png">https://pay.dlocal.com/views/2.0/images/payments/CB.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
       <td style="text-align:left">Cabal Debit</td>
       <td style="text-align:left"><code>CARD</code>
       </td>
