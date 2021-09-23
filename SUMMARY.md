@@ -99,6 +99,7 @@
   * [Validation account endpoint - Nigeria](api-documentation/payout-api-reference/validation-account-endpoint-nigeria.md)
   * [Check status](api-documentation/payout-api-reference/check-status.md)
   * [Cancel payout](api-documentation/payout-api-reference/cancel-payout.md)
+  * [Release payout](api-documentation/payout-api-reference/release-payout.md)
   * [Currency exchange](api-documentation/payout-api-reference/get-exchange-rate.md)
   * [Notification parameters](api-documentation/payout-api-reference/notification-parameters.md)
   * [Payout Flows](api-documentation/payout-api-reference/payout-flows.md)
