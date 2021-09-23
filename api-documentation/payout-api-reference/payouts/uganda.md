@@ -69,7 +69,7 @@
     <tr>
       <td style="text-align:left"><b>phone</b>
       </td>
-      <td style="text-align:left">+256 + mobile phone number</td>
+      <td style="text-align:left">+256 + mobile phone number (9 digits)</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>currency</b>
