@@ -55,14 +55,15 @@ var fields = dlocalInstance.fields({
 If you receive the `card_information_data` object use the following code:
 
 ```javascript
-var dlocal = dlocal('your_API_key');
-var fields = dlocal.fields({
-   locale:'en',
-   country:'BR',
-   cardInformation:{
-      frontToken:'AQICAHjajCjj_m_SHvhC9QhV2CT_N062EgS6-BUD2Ddfq2y_iAGoLHvoSHaQCwGSJOeFpyYwA',
-      rearToken:'AAAhjCBgwYJKoZIhvcNAQcGoHYwdAIBADBvBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDI1qTNda'
-   }
+var dlocalInstance = dlocal('your_API_key');
+var fields = dlocalInstance.fields({
+    locale: 'es',
+    country: 'MX',
+    cardInformationData: {
+	    panToken: 'The card's PAN',
+	    expToken: 'The card's expiration date',
+	    cvvToken: 'The card's CVV2'
+    }
 });
 ```
 
