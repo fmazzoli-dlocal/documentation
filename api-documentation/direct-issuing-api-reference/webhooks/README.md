@@ -1,6 +1,6 @@
 # Webhooks
 
-Webhooks are notifications about API events, sent as they occur. You can configure [webhook endpoints](https://stripe.com/docs/webhooks/) via the API to be notified about events that happen in your account or connected accounts.
+Webhooks are notifications about API events, sent as they occur. You can configure webhook endpoints via the API to be notified about events that happen in your account or connected accounts.
 
 ## **Endpoints**
 
