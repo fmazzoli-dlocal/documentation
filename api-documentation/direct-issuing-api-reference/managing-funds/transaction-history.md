@@ -1,38 +1,16 @@
-# Transaction History
+---
+description: Check the transaction history detail.
+---
 
-This function enables retrieving detailed transaction history. The objects are sorted in descending order by creation date, with the most recently created object appearing first. Usually used to present to user in-app balance changes such as payments, top ups and transfers. 
+# Transaction history
 
-### Transaction Object <a id="transaction-object"></a>
+This function enables **retrieving detailed transaction history**. The objects are sorted in descending order by creation date, with the most recently created object appearing first.
 
-| Property | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `transaction_id` | String | Unique identifier for the transaction. |
-| `status` | String | The current status of the transaction. |
-| `description` | String | Description of the transaction. |
-| `type` | String | The nature of the transaction \(debit / credit\). |
-| `created_date` | String | Time at which the transaction was created. _Note: transactions are in local time._  |
-| `amount` | Integer | The total amount that was authorized or rejected. |
-| `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html). |
-| `card_id` | String | Card associated with this authorization. |
-| `card_acceptor` | Object | Seller information object.  |
-
-#### \*card\_acceptor <a id="headers"></a>
-
-| Property | **Type** | **Description** |
-| :--- | :--- | :--- |
-| `mid` | String | Identifier for the seller. |
-| `mcc` | String | The merchant category code for the seller’s business |
-| `category` | String | A categorization of the seller’s type of business. |
-| `name` | String | Name of the seller. |
-| `zip_code` | String | ZIP code where the seller is located.  |
-| `state` | String | State where the seller is located. |
-| `street` | String | Street where the seller is located. |
-| `city` | String | City where the seller is located. |
-| `country` | String | Country where the seller is located. |
+Usually used to present to users in-app balance changes such as payments, top-ups, and transfers. 
 
 {% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
 {% api-method-summary %}
-Transaction History
+Transaction history
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -43,25 +21,25 @@ Transaction History
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id provided when account-owner was created
+Account ID provided when account-owner was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="page\_size" type="integer" required=false %}
-Limit of transactions to retreive. Default is 100 and max is 500
+Limit of transactions to retrieve. Default is 100 and max is 500.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_number" type="integer" required=false %}
-Transaction start. By default 0
+Transaction start. By default 0.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" required=false %}
-Transactions created after and equals this date. YYYY-MM-DD
+Transactions created after and equal this date. YYYY-MM-DD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="end\_date" type="string" required=false %}
-Transactions created before and equals this date. YYYY-MM-DD
+Transactions created before and equal this date. YYY-MM-DD
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -125,4 +103,41 @@ Transactions created before and equals this date. YYYY-MM-DD
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Transaction's and card acceptor object
+
+{% tabs %}
+{% tab title="Transaction object" %}
+| Property | **Type** | **Description** |
+| :--- | :--- | :--- |
+| `transaction_id` | String | Unique identifier for the transaction. |
+| `status` | String | The current status of the transaction. |
+| `description` | String | Description of the transaction. |
+| `type` | String | The nature of the transaction \(debit or credit\). |
+| `created_date` | String | Time at which the transaction was created. |
+| `amount` | Integer | The total amount that was authorized or rejected. |
+| `currency` | String | Three-letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html). |
+| `card_id` | String | Card associated with this authorization. |
+
+{% hint style="info" %}
+The `created_date` of the transactions appear in local time. 
+{% endhint %}
+{% endtab %}
+
+{% tab title="Card acceptor object" %}
+Seller information.
+
+| Property | **Type** | **Description** |
+| :--- | :--- | :--- |
+| `mid` | String | Identifier for the seller. |
+| `mcc` | String | The merchant category code for the seller's business. |
+| `category` | String | A categorization of the seller's type of business. |
+| `name` | String | Name of the seller. |
+| `zip_code` | String | ZIP code where the seller is located.  |
+| `state` | String | State where the seller is located. |
+| `street` | String | Street where the seller is located. |
+| `city` | String | City where the seller is located. |
+| `country` | String | Country where the seller is located. |
+{% endtab %}
+{% endtabs %}
 

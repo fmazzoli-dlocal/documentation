@@ -1,14 +1,20 @@
-# Create New Card
+---
+description: Learn how to create an issue a card.
+---
 
-This function allows to Create and Issue a New Card for an account-owner. The card is associated to the account and all transactions will be reflected on account's balance.
+# Create card
 
-Card schemes are subject to availability. 
+This function allows to **create and issue a new card for an account-owner**. The card is associated to the account and all transactions will be reflected on the account's balance.
 
-On response to card creation, you will receive a `card_id`, please store this value as it will be used for transacting.
+{% hint style="info" %}
+Card schemes are subject to availability.  
+{% endhint %}
+
+In response to card creation, you will receive a `card_id`, please store this value because it will be used for transacting.
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards" %}
 {% api-method-summary %}
-Create New Card
+Create new card
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -19,27 +25,27 @@ Create New Card
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="terms\_and\_conditions\_accepted" type="boolean" required=true %}
-Card's terms and conditions 
+Card's terms and conditions.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="ip\_address" type="string" required=true %}
-Cardholder's IP Address 
+Cardholder's IP address. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="notification\_url" type="string" required=true %}
-URL to receive webhook notification on status change
+URL to receive webhook notification on status change.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card\_reference" type="string" required=false %}
-Card reference on merchant side
+Card reference on merchant side.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="delivery\_address" type="object" required=false %}
-If not provided will use same as provided in account creation. See address object specs on Create account-owner section.
+If not provided will use same as provided in account creation. See Address object specs on Create account-owner section.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id to which card is associated
+Account ID to which card is associated.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=true %}
@@ -103,9 +109,9 @@ enum\('PHYSICAL','VIRTUAL'\)
 }
 ```
 
-#### Asynchronous Notifications
+## Asynchronous notifications
 
-When there is a change of status for the card, we will send you a notification to the provided `notification_url` indicating card`_id` . You will need to call [Get Card Information]() function to review this changes.
+When there is a change of status for the card, we will send you a notification to the provided `notification_url` indicating `card_id` . You will need to call [Get card information ](get-card-information.md)function to review these changes.
 
 ```text
 { 

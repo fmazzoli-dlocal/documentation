@@ -1,14 +1,18 @@
-# Card Activation
+---
+description: Learn how to activate a registered card.
+---
 
-This operation can be used for activating a registered card.
+# Activate card
+
+This operation can be used for **activating a registered card**.
 
 {% hint style="info" %}
-Inform users that the **PIN** for card use is the **last 4 digits** of their **ID card**.
+Inform users that the **PIN for card use is the last 4 digits of their ID card.**
 {% endhint %}
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/activate" %}
 {% api-method-summary %}
-Card Activation
+Card activation
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -19,13 +23,13 @@ Card Activation
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="card\_id" type="string" required=true %}
-Provided when card was created
+Card ID provided when the card was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="last\_digits" type="string" required=true %}
-last 6 digits of the Primary Account Number \(PAN\)
+Last 6 digits of the Primary Account Number \(PAN\).
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -49,6 +53,4 @@ last 6 digits of the Primary Account Number \(PAN\)
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-### 
 

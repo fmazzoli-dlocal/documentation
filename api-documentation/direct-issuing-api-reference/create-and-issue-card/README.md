@@ -1,6 +1,23 @@
-# Create and Issue Card
+---
+description: Learn how to issue cards to users.
+---
+
+# Create and issue card
 
 This section provides information related to functions used to issue cards to users.
 
-Required to implement function is Create and Issue Card and Activate/Deactivate Card. Each card must be associated to an account from which payments will be deducted. An account can only have one card associated with it.
+The requirements are: 
+
+#### **Create new card** 
+
+{% page-ref page="create-new-card.md" %}
+
+#### **Activate/Deactivate a card**
+
+{% page-ref page="card-activation.md" %}
+
+Please note that: 
+
+* Each card must be associated with an account from which payments will be deducted.
+* An account can only have one card associated with it.
 

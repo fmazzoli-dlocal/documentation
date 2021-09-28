@@ -1,12 +1,16 @@
-# Get Account Information
+---
+description: Learn how to retrieve account structure information.
+---
 
-This function enables to retrieve account structure information such as owner, creation date, balance and associated cards. Usually used to retrieve basic data and present account information to user on app main page.
+# Get account information
 
-You will need it to check account status after receiving asynchronous notification.
+Retrieve account structure information such as owner, creation date, balance, and associated cards. Usually used to retrieve basic data and present account information to the user on the app's main page.
+
+You will **need it to check account status after receiving asynchronous notifications**.
 
 {% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}" %}
 {% api-method-summary %}
-Get Account Information
+Get account information
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -17,7 +21,7 @@ Get Account Information
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id provided when account-owner was created
+Account ID provided when the account was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -75,13 +79,31 @@ Account id provided when account-owner was created
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Account status
+## Account status
 
-* PENDING - for account created but still not validated
-* INACTIVE - Validated account but not activated
-* ACTIVE - Active account, created correctly
-* WAITING\_FOR\_IMAGES - KYC images must be sent \(only Brazil\)
-* WAITING\_FOR\_OTP\_EMAIL - OTP Code EMAIL must be sent. The OTP code sent by dLocal will be valid for 5 minutes \(only Colombia\)
-* WAITING\_FOR\_OTP\_PHONE - OTP Code PHONE must be sent.  The OTP code sent by dLocal will be valid for 5 minutes \(only Colombia\)
-* REJECTED - Account was rejected
+### All countries
+
+| Status | Description |
+| :--- | :--- |
+| `PENDING` | Account created but awaiting validation. |
+| `INACTIVE` | Account validated but not activated. |
+| `ACTIVE` | Account created and activated correctly. |
+| `REJECTED` | Account rejected. |
+
+### Brazil
+
+| Status | Description |
+| :--- | :--- |
+| `WAITING_FOR_IMAGES` | KYC images must be sent. |
+
+### Colombia
+
+| Status |  Description |
+| :--- | :--- |
+| `WAITING_FOR_OTP_EMAIL` | OTP Code email must be sent. |
+| `WAITING_FOR_OTP_PHONE` | OTP Code phone must be sent.  |
+
+{% hint style="info" %}
+The OTP code sent by dLocal will be valid for 5 minutes.
+{% endhint %}
 

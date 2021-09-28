@@ -1,13 +1,27 @@
-# Managing Funds
+---
+description: Learn how to manage user's funds and balances.
+---
 
-This section provides the necessary set of functions to manage users funds and balance.
+# Manage funds
 
-Possible operations are:
+This section provides the necessary set of functions to manage user's funds and balances.
 
-1. User top up \([use our Payins solution](https://docs.dlocal.com/api-documentation/payins-api-reference/payments)\)
-2. ​[Funds transfers](transfer-funds.md)​
-   1. From merchant to user
-   2. User to bank account \(payout\) **\(soon\)**
-3. Retrieve balance
-4. Transaction History
+The operations are:
+
+**Handle user top-up**. For this use our Payins solution.
+
+{% page-ref page="../../payins-api-reference/payments/" %}
+
+**Transfer funds**
+
+* From [merchant to users](transfer-funds.md).
+* User to bank account. _Coming soon with our Payout solution_. 
+
+{% page-ref page="transfer-funds.md" %}
+
+**And others**
+
+{% page-ref page="retrieve-balance.md" %}
+
+{% page-ref page="transaction-history.md" %}
 

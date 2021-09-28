@@ -1,10 +1,14 @@
-# Block Card
+---
+description: Learn how to block a card.
+---
 
-This operation can be used for blocking a card.
+# Block card
+
+This operation can be used for **blocking a card**.
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/block" %}
 {% api-method-summary %}
-Block Card
+Block card
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -15,7 +19,7 @@ Block Card
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="card\_id" type="string" required=true %}
-card\_id provided when card was created.
+Card ID Provided when the card was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -39,6 +43,4 @@ card\_id provided when card was created.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

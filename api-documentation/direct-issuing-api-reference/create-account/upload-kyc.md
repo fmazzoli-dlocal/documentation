@@ -1,6 +1,14 @@
+---
+description: Send all the necessary information to validate the account.
+---
+
 # Upload KYC
 
-This function is to send KYC files in order to provide necessary documentation to validate the account. Only used for **Brazil**.
+This function is to send KYC files to provide the necessary documentation to validate the account.
+
+{% hint style="warning" %}
+Required only for ****Brazil.
+{% endhint %}
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/images" %}
 {% api-method-summary %}
@@ -15,17 +23,17 @@ Upload KYC
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id provided when account owner was created
+Account ID provided when the account was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-form-data-parameters %}
 {% api-method-parameter name="file" type="string" required=true %}
-Document image to upload
+Document image to upload.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="document\_type" type="string" required=true %}
-"SELFIE", "RG" or "CNH". Max 1MB
+"SELFIE", "RG" or "CNH". Max 1MB.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="document\_side" type="string" required=true %}
@@ -57,11 +65,13 @@ Document image to upload
 {% endapi-method-spec %}
 {% endapi-method %}
 
-For **Brazil**, 3 documents must be sent: 
+## Document details
 
-* "FRONT" -&gt; "SELFIE"
-* "FRONT" -&gt; Personal Document
-* "BACK" -&gt; Personal Document
+To validate a Brazilian account, **3 documents must be sent**: 
 
-Personal Document can be either RG \(Registro Geral or Carteira de Identidade\) or CNH \(Carteira Nacional de Habilitação\)
+1. "FRONT" -&gt; "SELFIE"
+2. "FRONT" -&gt; Personal Document
+3. "BACK" -&gt; Personal Document
+
+Personal Document can be either RG \(Registro Geral or Carteira de Identidade\) or CNH \(Carteira Nacional de Habilitação\).
 

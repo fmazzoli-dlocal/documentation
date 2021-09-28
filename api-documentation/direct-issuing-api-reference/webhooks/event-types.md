@@ -1,12 +1,16 @@
+---
+description: Learn all about the webhooks event types.
+---
+
 # Event Types
 
-DLocal supports event notifications for these types of events
+DLocal supports event notifications for these types of events.
 
 These transaction notifications are sent in near real time as transaction events occur; they contain detailed information about the events.
 
 ## **List of available events**
 
-### **Card transaction events**
+### **Transaction events**
 
 Webhook notification
 
@@ -22,9 +26,9 @@ Webhook notification
 
 | **Property** | Description |
 | :--- | :--- |
-| uuid | webhook unique identifier |
-| origin | webhook event key |
-| payload | webhook event body |
+| `uuid` | Webhook unique identifier. |
+| `origin` | Webhook event key. |
+| `payload` | Webhook event body. |
 
 ### **Card transaction events**
 
@@ -32,7 +36,7 @@ The following applies to debit/credit transaction events
 
 Webhook `origin` key = TRANSACTION\_EVENT
 
-Webhook `payload` = T[ransaction Object](../managing-funds/transaction-history.md#transaction-object)
+Webhook `payload` = [Transaction Object](../managing-funds/transaction-history.md#transaction-object)
 
 **Example Request**
 
@@ -64,10 +68,9 @@ Webhook `payload` = T[ransaction Object](../managing-funds/transaction-history.m
 }
 ```
 
-**Note:** You may specify “ALL” key to enable all events  
-  
-  
-****
+{% hint style="info" %}
+You may specify “ALL” key to enable all events**.**
+{% endhint %}
 
   
 

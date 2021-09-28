@@ -1,12 +1,16 @@
-# Get Transfer Information
+---
+description: See all the information of a transfer.
+---
 
-This function enables to retrieve account structure information such as transfer Id, amount, currency and status.
+# Get transfer information
 
-You will need it to check transfer status after receiving asynchronous notification.
+This function enables to **retrieve account structure information** such as amount, currency, and status through the transfer ID.
+
+You will need it to check the transfer status after receiving an asynchronous notification.
 
 {% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/transfers/{transfer\_id}" %}
 {% api-method-summary %}
-Get Transfer Information
+Get transfer information
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -17,7 +21,7 @@ Get Transfer Information
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="transfer\_id" type="string" required=true %}
-Transfer id provided when transfer was created.
+Transfer ID provided when the transfer was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}
@@ -47,16 +51,16 @@ Transfer id provided when transfer was created.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-#### Transfer status
+## Transfer status
 
 The transfer status can take one of the following values:
 
-| Code | Description | Description |
+| Code | Status | Description |
 | :--- | :--- | :--- |
-| 0 | Received | The transfer was received by dLocal and is now pending to be processed. |
-| 1 | Completed | The transfer was completed and confirmed by the card issuer bank. |
-| 2 | Cancelled | The transfer was cancelled by the merchant. |
-| 3 | Rejected | The transfer was rejected by the card issuer bank. |
-| 4 | Delivered | The transfer was sent to the user card but it was not confirmed yet. |
-| 5 | On hold | The transfer is on hold by the merchant or awaiting for further legal information to be processed. |
+| 0 | `RECEIVED` | Transfer received by dLocal and is now pending to be processed. |
+| 1 | `COMPLETED` | Transfer completed and confirmed by the card issuer bank. |
+| 2 | `CANCELLED` | Transfer canceled by the merchant. |
+| 3 | `REJECTED` | Transfer rejected by the card issuer bank. |
+| 4 | `DELIVERED` | Transfer sent to the user card but it was not confirmed yet. |
+| 5 | `ON HOLD` | Transfer is on hold by the merchant or awaiting for further legal information to be processed. |
 

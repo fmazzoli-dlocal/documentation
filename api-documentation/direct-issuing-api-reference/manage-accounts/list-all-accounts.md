@@ -1,10 +1,14 @@
-# List All Accounts
+---
+description: Learn how to create a list of Issuing Accounts.
+---
 
-Returns a list of Issuing Account objects. The objects are sorted in descending order by creation date, with the most recently created object appearing first.
+# List all the accounts
+
+The list of objects is sorted in descending order by creation date, with the most recently created object appearing first.
 
 {% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts" %}
 {% api-method-summary %}
-List all accounts
+List all the accounts
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -15,19 +19,19 @@ List all accounts
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="page\_size" type="integer" required=false %}
-Limit of accounts to retreive. Default is 100 and max is 500
+Limit of accounts to retrieve. Default is 100 and max is 500.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_number" type="integer" required=false %}
-Transaction start. By default 0
+Transaction start. By default 0.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" required=false %}
-Accounts created after and equals this date. YYYY-MM-DD
+Accounts created after and equal this date. YYYY-MM-DD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="end\_date" type="string" required=false %}
-Accounts created before and equals this date. YYYY-MM-DD
+Accounts created before and equal this date. YYYY-MM-DD
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}

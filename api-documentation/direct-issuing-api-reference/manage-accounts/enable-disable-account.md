@@ -1,18 +1,14 @@
-# Enable/Disable Account
+---
+description: Learn how to enable and disable an account.
+---
 
-This function is used to enable and disable an account. 
+# Enable/disable an account
 
-Disabled accounts will not allow:
-
-* Issuing cards
-* Top ups
-* Incoming or outgoing transfers
-
-As an example, you can use this function to disable if fraud is suspected or if user requests to freeze balance.
+You can use this function to disable an account if fraud is suspected or if the user requests to freeze balance.
 
 {% api-method method="patch" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}" %}
 {% api-method-summary %}
-Enable/Disable Account
+Enable/disable an account
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -23,7 +19,7 @@ Enable/Disable Account
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id provided when account-owner was created
+Account ID provided when the account was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -47,4 +43,8 @@ enum\('active', 'inactive'\)
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="warning" %}
+Keep in mind that **disabled accounts will not allow issuing cards, top-ups, and incoming or outgoing transfers**.
+{% endhint %}
 

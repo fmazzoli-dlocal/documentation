@@ -1,47 +1,72 @@
+---
+description: See all the information for the creation of an account for Colombia.
+---
+
 # Colombia
 
-### Flow
+## Flow
 
-![](../../../../.gitbook/assets/image%20%2832%29.png)
+![Flow for creation of Colombian &#x200B;accounts.](../../../../.gitbook/assets/image%20%2832%29.png)
 
-### Mandatory parameters
+## Mandatory parameters
+
+{% tabs %}
+{% tab title="Owner object" %}
+| Property | Description |
+| :--- | :--- |
+| `first_name` | Owner's first name.  |
+| `last_names` | Owner's complete last names. |
+| `birth_date` | Owner's birth date. Users must be over 18 years old.   |
+| `email` | Owner's email. |
+| `phone_number` | Owner's cellphone number. \(Area code + phone number\) |
+| `document` | Owner’s personal identification number.  |
+| `document_type` | Owner's personal[ identification type](colombia.md#document-type). |
+| `expedition_date` | Owner's personal identification expedition date. |
+| `gender` | M or F. |
+| `marital_status` | Check the [marital status table](colombia.md#marital-status) below for more details. |
+| `ip_address` | Owner's IP Address. Colombian IP is only allowed. |
+| `terms_and_conditions_accepted` | Account's terms and conditions.  |
+| `data_management_accepted` | Account's data management.  |
+
+{% hint style="info" %}
+**OTPs validations, email and phone number, are mandatory for this country**. These codes expire in 5 minutes.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Address object" %}
+Find more details of the city and state fields on ****[Address Information](colombia.md#address-information).
 
 | Property | Description |
 | :--- | :--- |
-| notification\_url | Notification to receive change status webhooks |
-| hdm\_data | Devices's fingerprint codified. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
-| payload | Device's fingerprint. [Read more information below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#device-information) |
-| **owner** | Owner Object |
-| first\_name | Owner's First Name.  |
-| last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date. User's  must be over 18 years old.   |
-| email | Owner's email. |
-| phone\_number | Owner's cellphone number. \(Area code + phone number\) |
-| document | Owner’s personal identification number.  |
-| document\_type | Owner's personal identification type. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#document-type) |
-| expedition\_date | Owner's personal identification expedition date. |
-| gender | M or F. |
-| marital\_status | [Check table](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#marital-status) below for more details. |
-| ip\_address | Owner's IP Address. Colombian IP is only allow. |
-| terms\_and\_conditions\_accepted | Account's terms and conditions.  |
-| data\_management\_accepted | Account's data management.  |
-| **address** | Owner's Address. |
-| country | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
-| city | Owner's address city code. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#cities) |
-| state | Owner's address state code. [See table below.](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/colombia#states) |
+| country | Owner's country code. ISO 3166-1 alpha-2-code. |
+| city | Owner's address city code. |
+| state | Owner's address state code. |
 | street | Owner's address street. |
+{% endtab %}
 
-{% hint style="info" %}
-OTPs validations -email & phone number- are mandatory for this country. These codes expire in 5 minutes.
-{% endhint %}
+{% tab title="Notifications" %}
+| Property | Description |
+| :--- | :--- |
+| notification\_url | Notification to receive change status webhooks. |
+{% endtab %}
 
-#### Document Type
+{% tab title="Device fingerprint" %}
+Find more details of the fields on ****[Device information](colombia.md#device-information)**.**
 
-| document\_type | Description |
+| Property | Description |
+| :--- | :--- |
+| hdm\_data | Device's fingerprint codified. |
+| payload | Device's fingerprint. |
+{% endtab %}
+{% endtabs %}
+
+## Document type
+
+| Type | Description |
 | :--- | :--- |
 | CC | Cédula de ciudadanía |
 
-#### Marital Status
+## Marital status
 
 | Status | Description |
 | :--- | :--- |
@@ -50,16 +75,18 @@ OTPs validations -email & phone number- are mandatory for this country. These co
 | W | Widowed |
 | D | Divorced |
 
-####  **Device Information**
+## **Device information**
 
 The following parameters are required to get device information:
 
 | Parameters | Description |
 | :--- | :--- |
-| hdm\_data | Device's fingerprint codified. |
-| payload | Device's fingerprint. |
+| `hdm_data` | Device's fingerprint codified. |
+| `payload` | Device's fingerprint. |
 
-_**Web:**_ Add the following script on website: [Link.](https://drive.google.com/drive/folders/19aez7Rf42floEgiZyQuXxTkBbXnCo42U?usp=sharing)
+### **Web**
+
+ ****Add the following script on the website:
 
 ```javascript
 <html>
@@ -75,11 +102,19 @@ _**Web:**_ Add the following script on website: [Link.](https://drive.google.com
 </html>
 ```
 
-_**App:**_ Use the following SDK to get mobile device information: [Link.](https://drive.google.com/drive/folders/1c4F0o7dHk2Lq-AJXJsh3jc3FDAD1quGz?usp=sharing) 
+[Download script](https://drive.google.com/drive/folders/19aez7Rf42floEgiZyQuXxTkBbXnCo42U)
 
-#### **States** 
+### **App**
 
-Note: [xlsx version](https://drive.google.com/file/d/12V0a8cUy0PBKLUMiuM9-szTbGySxL0cC/view?usp=sharing).
+ _****_Use the following SDK to get mobile device information: 
+
+[Download SDK](https://drive.google.com/drive/folders/1c4F0o7dHk2Lq-AJXJsh3jc3FDAD1quGz)
+
+## **Address information**
+
+### **States** 
+
+[Download the table in xlsx version.](https://drive.google.com/file/d/12V0a8cUy0PBKLUMiuM9-szTbGySxL0cC/view?usp=sharing)
 
 | Code | Name |
 | :--- | :--- |
@@ -117,9 +152,9 @@ Note: [xlsx version](https://drive.google.com/file/d/12V0a8cUy0PBKLUMiuM9-szTbGy
 | 32 | VAUPES |
 | 33 | VICHADA |
 
-#### **Cities**
+### **Cities**
 
-Note: [xlsx version](https://drive.google.com/file/d/1aBzAdTy2_KNEPSly6FCRetIh60Euxf9S/view?usp=sharing).
+[Download the table in xlsx version](https://drive.google.com/file/d/1aBzAdTy2_KNEPSly6FCRetIh60Euxf9S/view?usp=sharing).
 
 | Code | Name |
 | :--- | :--- |

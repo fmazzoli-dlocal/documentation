@@ -1,10 +1,14 @@
-# Retrieve Balance
+---
+description: See all the information of a balance.
+---
 
-This function enables retrieving account balance.
+# Retrieve balance
 
-{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/transactions" %}
+This function enables **retrieving account balance** through the account ID.
+
+{% api-method method="get" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/balance" %}
 {% api-method-summary %}
-Retrieve Balance
+Retrieve balance
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -15,7 +19,7 @@ Retrieve Balance
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Account id provided when account-owner was created
+Account ID provided when account-owner was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}

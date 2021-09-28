@@ -1,42 +1,58 @@
+---
+description: See all the information for the creation of an account for Brazil.
+---
+
 # Brazil
 
-### Flow
+## Flow
 
-![](../../../../.gitbook/assets/image%20%2833%29.png)
+![Flow for creation of Brazilian accounts.](../../../../.gitbook/assets/image%20%2833%29.png)
 
-### Mandatory parameters
+## Mandatory parameters
 
+{% tabs %}
+{% tab title="Owner object" %}
 | Property | Description |
 | :--- | :--- |
-| notification\_url | Notification to receive change status webhooks |
-| **owner** | Owner Object |
-| first\_name | Owner's First Name.  |
-| last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date.  |
-| email | Owner's email. |
-| phone\_number | Owner's cellphone number. Include DDD. |
-| document | Owner’s personal identification number.  |
-| mother\_name | Mothers Full Name.  |
-| gender | M or F. |
-| marital\_status | [Check table ](https://docs.dlocal.com/other/card-issuing/create-account/create-account-owner/brazil#marital-status)below for more details. |
-| ip\_address | Owner's IP Address. |
-| **address** | Owner's Address. |
-| country | Owner's country code. ISO 3166-1 alpha-2-code. \(BR\) |
-| city | Owner's address city code.  |
-| state | Owner's address state code.  |
-| street | Owner's address street. |
-| house\_number | Owner's house number \(floor, apartment\). |
-| zip\_code | Owner's address zipcode. |
-| neighbourhood | Neighbourhood or district. |
+| `first_name` | Owner's first name.  |
+| `last_names` | Owner's complete last names. |
+| `birth_date` | Owner's birth date.  |
+| `email` | Owner's email. |
+| `phone_number` | Owner's cellphone number. Include DDD. |
+| `document` | Owner’s personal [identification number](brazil.md#document-type).  |
+| `mother_name` | Mother full name.  |
+| `gender` | M or F. |
+| `marital_status` | Check the [marital status table](brazil.md#marital-status) below for more details. |
+| `ip_address` | Owner's IP address. |
+{% endtab %}
 
-#### Document Type
+{% tab title="Address object" %}
+| Property | Description |
+| :--- | :--- |
+| `country` | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
+| `city` | Owner's address city code.  |
+| `state` | Owner's address state code. |
+| `street` | Owner's address street. |
+| `house_number` | Owner's house number \(floor, apartment\). |
+| `zip_code` | Owner's address ZIP code. |
+| `neighbourhood` | Neighbourhood or district. |
+{% endtab %}
 
-| document\_type | Description |
+{% tab title="Notifications" %}
+| Property | Description |
+| :--- | :--- |
+| `notification_url` | Notification to receive change status webhooks. |
+{% endtab %}
+{% endtabs %}
+
+## Document type
+
+| Type | Description |
 | :--- | :--- |
 | RG | Registro Geral |
 | CNH | Carteira Nacional de Habilitação |
 
-#### Marital Status
+## Marital status
 
 | Status | Description |
 | :--- | :--- |

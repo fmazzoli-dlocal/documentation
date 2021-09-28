@@ -1,6 +1,14 @@
-# Re send OTP Codes
+---
+description: Renew the information of OTP Codes.
+---
 
-This function is to re send OTP codes to the end user if they didn't receive it. Only used by **Colombia**.
+# Resend OTP Codes
+
+This function is to re-send OTP codes to the end-user if they didn't receive them. 
+
+{% hint style="warning" %}
+Only used by **Colombia**.
+{% endhint %}
 
 {% hint style="info" %}
 You can send up to 1 additional OTP code verification attempt via email or cellphone every 24 hours.
@@ -8,7 +16,7 @@ You can send up to 1 additional OTP code verification attempt via email or cellp
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/otp/resend" %}
 {% api-method-summary %}
-Re send OTP Codes
+Resend OTP Codes
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -19,7 +27,7 @@ Re send OTP Codes
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Provided when account was created
+Account ID provided when the account was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 

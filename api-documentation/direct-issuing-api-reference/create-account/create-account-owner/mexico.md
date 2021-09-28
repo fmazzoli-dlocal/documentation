@@ -1,41 +1,59 @@
+---
+description: See all the information for the creation of an account for Mexico.
+---
+
 # Mexico
 
-### Flow
+## Flow
 
-![](../../../../.gitbook/assets/image%20%2831%29.png)
+![Flow for creation of Mexican &#x200B;accounts.](../../../../.gitbook/assets/image%20%2831%29.png)
 
-### Mandatory parameters
+## Mandatory parameters
 
+{% tabs %}
+{% tab title="Owner object" %}
 | Property | Description |
 | :--- | :--- |
-| notification\_url | Notification to receive change status webhooks |
-| **owner** | Owner Object |
-| first\_name | Owner's First Name.  |
-| last\_names | Owner's complete Last Names. |
-| birth\_date | Owner's birth date. User's must be over 18 years old.  |
-| email | Owner's email. |
-| phone\_number | Owner's cellphone number.  |
-| document | Owner’s personal identification number.  |
-| document\_type | Owner's personal identification type. [See table below.](mexico.md#document-type) |
-| gender | M or F. |
-| marital\_status | [Check table ](mexico.md#marital-status)below for more details. |
-| ip\_address | Owner's IP Address.  |
-| **address** | Owner's Address. |
-| country | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
-| city | Owner's address city code. [See table below](mexico.md#cities). |
-| state | Owner's address state code. [See table below](mexico.md#states). |
-| street | Owner's address street. |
-| zip\_code | Owner's address zipcode. [Zip Code Reference. ](https://docs.google.com/spreadsheets/d/1EW7JI-B814GAdULTr4njyBUulDvTTQ5dM_M2kD5AAkw/edit?usp=sharing) |
+| `first_name` | Owner's first name.  |
+| `last_names` | Owner's complete last names. |
+| `birth_date` | Owner's birth date. Users must be over 18 years old.  |
+| `email` | Owner's email. |
+| `phone_number` | Owner's cellphone number.  |
+| `document` | Owner’s personal identification number.  |
+| `document_type` | Owner's personal [identification type](mexico.md#document-type). |
+| `gender` | M or F. |
+| `marital_status` | Check the [marital status table](mexico.md#marital-status) below for more details. |
+| `ip_address` | Owner's IP address.  |
+{% endtab %}
 
-#### Document Type
+{% tab title="Address object" %}
+Find more details of the state and city fields on ****[Address Information](mexico.md#address-information)**.**
 
-| document\_type | Description |
+| Property | **Description** |
+| :--- | :--- |
+| `country` | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
+| `city` | Owner's address city code. |
+| `state` | Owner's address state code. |
+| `street` | Owner's address street. |
+| `zip_code` | Owner's address [ZIP code](https://docs.google.com/spreadsheets/d/1EW7JI-B814GAdULTr4njyBUulDvTTQ5dM_M2kD5AAkw/edit?usp=sharing). |
+{% endtab %}
+
+{% tab title="Notifications" %}
+| Property | Description |
+| :--- | :--- |
+| `notification_url` | Notification to receive change status webhooks. |
+{% endtab %}
+{% endtabs %}
+
+## Document type
+
+| Type | Description |
 | :--- | :--- |
 | IFE | Credencial Instituto Federal Electoral |
 | INE | Instituto Nacional Electoral |
 | PAS | Pasaporte |
 
-#### Marital Status
+## Marital status
 
 | Status | Description |
 | :--- | :--- |
@@ -44,9 +62,11 @@
 | W | Widowed |
 | D | Divorced |
 
-#### **States** 
+## Address information
 
-Note: [xlsx version](https://docs.google.com/spreadsheets/d/12DUNd4VFPfsszs5x4ZRyk3xJJVM-5dgJphhA437Uxkg/edit?usp=sharing).
+### **States** 
+
+[Download the table in xlsx version](https://docs.google.com/spreadsheets/d/12DUNd4VFPfsszs5x4ZRyk3xJJVM-5dgJphhA437Uxkg/edit?usp=sharing).
 
 <table>
   <thead>
@@ -192,7 +212,7 @@ Note: [xlsx version](https://docs.google.com/spreadsheets/d/12DUNd4VFPfsszs5x4ZR
   </tbody>
 </table>
 
-#### **Cities**
+### **Cities**
 
-You can find the City's ID in the following [LINK](https://docs.google.com/spreadsheets/d/1jbmpSdACKWHGcytsmW14OnZGuULNweKRAW-weLINBc0/edit?usp=sharing). 
+To find the City's ID, [download the table on xlsx version](https://docs.google.com/spreadsheets/d/1jbmpSdACKWHGcytsmW14OnZGuULNweKRAW-weLINBc0/edit?usp=sharing). 
 

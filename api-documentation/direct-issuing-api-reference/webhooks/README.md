@@ -1,23 +1,17 @@
+---
+description: Learn how to start using webhooks notifications.
+---
+
 # Webhooks
 
 Webhooks are notifications about API events, sent as they occur. You can configure webhook endpoints via the API to be notified about events that happen in your account or connected accounts.
 
-## **Endpoints**
-
-| **Name** | Description |
-| :--- | :--- |
-| **Create** | \[POST\] https://issuing-api.dlocal.com/webhooks |
-| **Update** | \[PUT\] https://issuing-api.dlocal.com/webhooks/:webhook\_id |
-| **Retrieve** | \[GET\] https://issuing-api.dlocal.com/webhooks/:webhook\_id |
-| **List** | \[GET\] https://issuing-api.dlocal.com/dlocal-api-issuing/webhooks |
-| **Delete** | \[DELETE\] https://issuing-api.dlocal.com/webhooks/:webhook\_id |
-
-## The webhook object
+## The **W**ebhook object
 
 ### **Attributes**
 
-**Body**
-
+{% tabs %}
+{% tab title="Body" %}
 <table>
   <thead>
     <tr>
@@ -57,7 +51,7 @@ Webhooks are notifications about API events, sent as they occur. You can configu
       <td style="text-align:left"><code>url</code>
       </td>
       <td style="text-align:left">String</td>
-      <td style="text-align:left">Webhook endpoint url.</td>
+      <td style="text-align:left">Webhook endpoint URL.</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>is_active</code>
@@ -68,18 +62,11 @@ Webhooks are notifications about API events, sent as they occur. You can configu
         <p>Webhook enabled or disabled.</p>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left"><code>headers</code>
-      </td>
-      <td style="text-align:left">Object</td>
-      <td style="text-align:left">Optionals headers.<b>*</b>
-      </td>
-    </tr>
   </tbody>
 </table>
+{% endtab %}
 
-#### \*Headers <a id="headers"></a>
-
+{% tab title="Headers" %}
 <table>
   <thead>
     <tr>
@@ -114,6 +101,8 @@ Webhooks are notifications about API events, sent as they occur. You can configu
     </tr>
   </tbody>
 </table>
+{% endtab %}
+{% endtabs %}
 
 ### Example Object
 
@@ -147,7 +136,7 @@ Webhooks are notifications about API events, sent as they occur. You can configu
 
 {% api-method method="post" host="https://issuing-api.dlocal.com/" path="issuing/webhooks" %}
 {% api-method-summary %}
-Create
+Create notifications
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -158,27 +147,27 @@ Create
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-Webhook name
+Webhook name.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="description" type="string" required=false %}
-Webhook description
+Webhook description.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="url" type="string" required=true %}
-Webhook endpoint url
+Webhook endpoint URL.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="events" type="string" required=true %}
-List of available events \(for subscriber all events, send only ALL string\)
+List of available events \(for subscriber all events, send only ALL string\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="headers" type="string" required=false %}
-Optionals headers
+Optional headers.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="is\_active" type="boolean" required=true %}
-Webhook enabled or disabled
+Webhook enabled or disabled.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -214,7 +203,9 @@ Webhook enabled or disabled
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Note: The headers only are showed when you create this webhook. You don't have to modify the headers later. 
+{% hint style="info" %}
+The headers only are shown when you create this webhook. You don't have to modify the headers later. 
+{% endhint %}
 
 **Request**
 
@@ -237,7 +228,7 @@ Note: The headers only are showed when you create this webhook. You don't have t
 
 {% api-method method="put" host="https://issuing-api.dlocal.com/" path="issuing/webhooks/{webhook\_uuid}" %}
 {% api-method-summary %}
-Update
+Update webhooks
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -248,29 +239,29 @@ Update
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="webhook\_uuid" type="string" required=false %}
-Webhook unique identifier
+Webhook unique identifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-Webhook name
+Webhook name.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="description" type="string" required=false %}
-Webhook description
+Webhook description.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="url" type="string" required=true %}
-Webhook endpoint url
+Webhook endpoint URL.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="events" type="string" required=true %}
-List of available events \(for subscriber all events, send only ALL string\)
+List of available events \(for subscriber all events, send only ALL string\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="is\_active" type="string" required=true %}
-Webhook enabled or disabled
+Webhook enabled or disabled.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -300,7 +291,9 @@ Webhook enabled or disabled
 {% endapi-method-spec %}
 {% endapi-method %}
 
-**Note:** all of fields will be updated.
+{% hint style="info" %}
+All of the fields will be updated.
+{% endhint %}
 
 **Request**
 
@@ -318,7 +311,7 @@ Webhook enabled or disabled
 
 {% api-method method="get" host="https://issuing-api.dlocal.com/" path="issuing/webhooks/{webhook\_uuid}" %}
 {% api-method-summary %}
-Retrieve
+Retrieve a notification
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -361,7 +354,7 @@ Webhook unique identifier.
 
 {% api-method method="get" host="https://issuing-api.dlocal.com/" path="issuing/webhooks" %}
 {% api-method-summary %}
-List
+List all the notifications
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -415,7 +408,7 @@ Webhooks to start. By default is 0.
 
 {% api-method method="delete" host="https://issuing-api.dlocal.com/" path="issuing/webhooks/{webhook\_uuid}" %}
 {% api-method-summary %}
-Delete
+Delete webhooks
 {% endapi-method-summary %}
 
 {% api-method-description %}

@@ -1,10 +1,14 @@
-# Unblock Card
+---
+description: Learn how to ublock a card.
+---
 
-This operation can be used for unblocking a card.
+# Unblock card
+
+This operation can be used for **unblocking a card**.
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/unblock" %}
 {% api-method-summary %}
-Unblock Card
+Unblock card
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -15,7 +19,7 @@ Unblock Card
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="card\_id" type="string" required=true %}
-card\_id provided when card was created.
+Card ID provided when the card was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 {% endapi-method-request %}

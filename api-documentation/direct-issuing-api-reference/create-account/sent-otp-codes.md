@@ -1,6 +1,14 @@
+---
+description: Send all the necessary information to validate the account.
+---
+
 # Send OTP Codes
 
-This function is to send OTP Codes in order to provide necessary documentation to validate Email or Telephone Number. Only used for **Colombia**.
+This function is to send OTP Codes to provide the necessary documentation to validate the email or telephone number. 
+
+{% hint style="warning" %}
+Required only for Colombia.
+{% endhint %}
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts/{account\_id}/OTP" %}
 {% api-method-summary %}
@@ -15,7 +23,7 @@ Send OTP Codes
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="account\_id" type="string" required=true %}
-Provided when account was created
+Account ID provided when the account was created.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -25,7 +33,7 @@ ENUM \('EMAIL','PHONE'\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="code" type="string" required=true %}
-code sent to account owner.
+Code sent to account-owner.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

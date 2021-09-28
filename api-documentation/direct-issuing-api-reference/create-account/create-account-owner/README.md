@@ -1,4 +1,14 @@
+---
+description: >-
+  Create an account with all the necessary information according to your
+  country.
+---
+
 # Create account-owner
+
+{% hint style="warning" %}
+Please note **each country may have additional requirements**. See the country’s section for more information.
+{% endhint %}
 
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/accounts" %}
 {% api-method-summary %}
@@ -6,14 +16,14 @@ Create an account
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This is the based method used to create a new wallet account and holder. Please **note each country may have its own additional requirements**, see below for more information.  
+This is the based method used to create a new wallet account and holder. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="hdm\_data" type="string" required=false %}
-Devices's fingerprint codified. 
+Device's fingerprint codified. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="payload" type="string" required=false %}
@@ -21,7 +31,7 @@ Device's fingerprint.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="notification\_url" type="string" required=false %}
-Notification to receive change status webhooks
+Notification to receive change status webhooks.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="account\_reference" type="string" required=false %}
@@ -29,11 +39,11 @@ Owner's account unique id at merchant side.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="owner" type="object" required=true %}
-Owner Object
+Owner Object.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="description" type="string" required=false %}
-Account and owner description
+Account and owner description.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -85,42 +95,42 @@ Account and owner description
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Owner's and Address Object
+### Owner's and Address object
 
 {% tabs %}
-{% tab title="Owner Object" %}
+{% tab title="Owner object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| first\_name | String | Owner's First Name.  |
-| last\_names | String | Owner's complete Last Names.  |
-| birth\_date | String | Owner's birth date. YYYY-MM-DD. |
-| email | String | Owner's email.  |
-| phone\_number | String | Owner's cellphone number.   |
-| document | String | Owner’s personal identification number.  |
-| document\_type | String | Owner's personal identification type.  ****  |
-| expedition\_date | String | Owner's personal identification expedition date. YYYY-MM-DD. |
-| mother\_name | String | Mothers Full Name.  |
-| birth\_place | String | Place of birth.  |
-| nationality | String | Nationality.  |
-| gender | Char | M or F.  |
-| marital\_status | Char | Marital Status. |
-| address | Address Object | Owner's Address.  |
-| ip\_address | String | Owner's IP Address.  |
-| terms\_and\_conditions\_accepted | Boolean | Account's terms and conditions.   |
-| data\_management\_accepted | Boolean | Account's data management.  |
+| `first_name` | String | Owner's first name.  |
+| `last_names` | String | Owner's complete last names.  |
+| `birth_date` | String | Owner's birth date. YYYY-MM-DD. |
+| `email` | String | Owner's email.  |
+| `phone_number` | String | Owner's cellphone number.   |
+| `document` | String | Owner’s personal identification number.  |
+| `document_type` | String | Owner's personal identification type.  ****  |
+| `expedition_date` | String | Owner's personal identification expedition date. YYYY-MM-DD. |
+| `mother_name` | String | Mother full name.  |
+| `birth_place` | String | Place of birth.  |
+| `nationality` | String | Nationality.  |
+| `gender` | Char | M or F.  |
+| `marital_status` | Char | Marital status. |
+| `address` | Address Object | Owner's address.  |
+| `ip_address` | String | Owner's IP address.  |
+| `terms_and_conditions_accepted` | Boolean | Account's terms and conditions.   |
+| `data_management_accepted` | Boolean | Account's data management.  |
 {% endtab %}
 
-{% tab title="Address Object" %}
+{% tab title="Address object" %}
 | Property | Type | Description |
 | :--- | :--- | :--- |
-| country | String | Owner's country code. ISO 3166-1 alpha-2-code.  |
-| city | String | Owner's address city code.  |
-| state | String | Owner's address state code.  |
-| street | String | Owner's address street.  |
-| street2 | String | Additional information on street.  |
-| house\_number | String | Owner's house number \(floor, apartment\).  |
-| zip\_code | String | Owner's address zip code.  |
-| neighbourhood | String | Neighbourhood or district.  |
+| `country` | String | Owner's country code. ISO 3166-1 alpha-2-code.  |
+| `city` | String | Owner's address city code.  |
+| `state` | String | Owner's address state code.  |
+| `street` | String | Owner's address street.  |
+| `street2` | String | Additional information on street.  |
+| `house_number` | String | Owner's house number \(floor, apartment\).  |
+| `zip_code` | String | Owner's address zip code.  |
+| `neighbourhood` | String | Neighbourhood or district.  |
 {% endtab %}
 {% endtabs %}
 
@@ -208,9 +218,9 @@ Account and owner description
 {% endtab %}
 {% endtabs %}
 
-#### Asynchronous Notifications
+### Asynchronous notifications
 
-When there is a change of status in the account, we will send you a notification to the provided `notification_url` indicating `account_id` . You will need to call [Get Account Information](../../manage-accounts/get-account-information.md) function to review this changes.
+When there is a change of status in the account, we will send you a notification to the provided `notification_url` indicating `account_id` . You will need to call the [Get Account Information](../../manage-accounts/get-account-information.md) function to review these changes.
 
 ```text
 { 
