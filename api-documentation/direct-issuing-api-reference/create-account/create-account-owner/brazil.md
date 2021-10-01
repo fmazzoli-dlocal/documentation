@@ -51,6 +51,7 @@ description: See all the information for the creation of an account for Brazil.
 | :--- | :--- |
 | RG | Registro Geral |
 | CNH | Carteira Nacional de Habilitação |
+| CPF | Cadastro de Pessoa Física |
 
 ## Marital status
 
