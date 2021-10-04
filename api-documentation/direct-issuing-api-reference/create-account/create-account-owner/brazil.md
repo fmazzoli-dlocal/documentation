@@ -27,6 +27,8 @@ description: See all the information for the creation of an account for Brazil.
 {% endtab %}
 
 {% tab title="Address object" %}
+Find more details of the state and city fields on ****[Address Information](brazil.md#address-information)**.**
+
 | Property | Description |
 | :--- | :--- |
 | `country` | Owner's country code. ISO 3166-1 alpha-2-code. \(CO\) |
@@ -61,4 +63,44 @@ description: See all the information for the creation of an account for Brazil.
 | M | Married |
 | W | Widowed |
 | D | Divorced |
+
+## Address information
+
+### **States** 
+
+[Download the table in xlsx version.](https://docs.google.com/spreadsheets/d/1vjuMiNAEqM75l0QbRIbg6CRD1lxuQlzY/edit?usp=sharing&ouid=111924045272314592561&rtpof=true&sd=true)
+
+| Code | Name |
+| :--- | :--- |
+| AC | Acre |
+| AL | Alagoas |
+| AP | Amapá |
+| AM | Amazonas |
+| BA | Bahia |
+| CE | Ceará |
+| DF | Distrito Federal |
+| ES | Espírito Santo |
+| GO | Goiás |
+| MA | Maranhão |
+| MT | Mato Grosso |
+| MS | Mato Grosso do Sul |
+| MG | Minas Gerais |
+| PA | Pará |
+| PB | Paraíba |
+| PR | Paraná |
+| PE | Pernambuco |
+| PI | Piauí |
+| RN | Rio Grande do Norte |
+| RS | Rio Grande do Sul |
+| RJ | Rio de Janeiro |
+| RO | Rondônia |
+| RR | Roraima |
+| SC | Santa Catarina |
+| SP | São Paulo |
+| SE | Sergipe |
+| TO | Tocantins |
+
+### **Cities**
+
+To find the City's ID, [download the table on xlsx version](https://docs.google.com/spreadsheets/d/12s35bUqttJZWfQSeSn6nIClZnz1BdAcz/edit?usp=sharing&ouid=111924045272314592561&rtpof=true&sd=true). 
 
