@@ -146,6 +146,24 @@
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left">RuPay</td>
+      <td style="text-align:left"><code>CARD</code>
+      </td>
+      <td style="text-align:left"><code>RU</code>
+      </td>
+      <td style="text-align:left">Credit / Debit Card</td>
+      <td style="text-align:left">
+        <p><code>DIRECT</code>
+        </p>
+        <p><code>REDIRECT</code>
+        </p>
+      </td>
+      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/RU.png">https://pay.dlocal.com/views/2.0/images/payments/RU.png</a>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><code>PW</code>
       </td>
       <td style="text-align:left">PayTM Wallet</td>
@@ -161,10 +179,67 @@
     <tr>
       <td style="text-align:left"><code>CW</code>
       </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Wallets</p>
+      <td style="text-align:left">PhonePe</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">MobiKwik</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">Ola Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">airtel money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">Jio Money</td>
+      <td style="text-align:left"><code>BANK_TRANSFER</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Wallet</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>CW</code>
+      </td>
+      <td style="text-align:left">freecharge</td>
       <td style="text-align:left"><code>BANK_TRANSFER</code>
       </td>
       <td style="text-align:left"></td>
@@ -196,23 +271,6 @@
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/UI.png">https://pay.dlocal.com/views/2.0/images/payments/UI.png</a>&#x200B;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left">RuPay</td>
-      <td style="text-align:left"><code>CARD</code>
-      </td>
-      <td style="text-align:left"><code>RU</code>
-      </td>
-      <td style="text-align:left">Credit / Debit Card</td>
-      <td style="text-align:left">
-        <p><code>DIRECT</code>
-        </p>
-        <p><code>REDIRECT</code>
-        </p>
-      </td>
-      <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/RU.png">https://pay.dlocal.com/views/2.0/images/payments/RU.png</a>&#x200B;</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>II</code>
