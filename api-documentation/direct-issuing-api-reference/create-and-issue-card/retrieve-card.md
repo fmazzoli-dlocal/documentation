@@ -60,9 +60,9 @@ var fields = dlocalInstance.fields({
     locale: 'es',
     country: 'MX',
     cardInformationData: {
-	    panToken: 'The card's PAN',
-	    expToken: 'The card's expiration date',
-	    cvvToken: 'The card's CVV2'
+	    panToken: 'The card PAN token',
+	    expToken: 'The card expiration date token',
+	    cvvToken: 'The card CVV2 token'
     }
 });
 ```

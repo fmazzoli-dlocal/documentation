@@ -53,11 +53,18 @@ Shows the card's sensitive data tokens. By default: false.
         "zip_code": "05001000",
         "neighbourhood": "El Poblado"
     },
-    "card_information": {
-        "front_token": "AQICAHjajCjj_m_SHvhC9QhV2CT_N062EgS6-BUD2Ddfq2y_iAGoLHvoSHaQCwGSJOeFpyYwA",
-        "rear_token": "AAAhjCBgwYJKoZIhvcNAQcGoHYwdAIBADBvBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDI1qTNda",
+    "card_information_image": {
+        "front_token": "the card front token",
+        "rear_token": "the card rear token",
         "type": "IMAGE"
     },
+    "card_information_data": {
+        "pan_token": "The card PAN token",
+        "cvv_token": "The card CVV2 token",
+        "exp_token": "The card expiration date token",
+        "type": "DATA"
+    },
+    
     "created_at": "2021-03-11T20:33:33Z",
     "notification_url": "http://merchant.dlocal.com/notification"
 }
