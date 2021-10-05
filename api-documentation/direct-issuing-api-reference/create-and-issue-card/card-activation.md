@@ -6,10 +6,6 @@ description: Learn how to activate a registered card.
 
 This operation can be used for **activating a registered card**.
 
-{% hint style="info" %}
-Inform users that the **PIN for card use is the last 4 digits of their ID card.**
-{% endhint %}
-
 {% api-method method="post" host="https://issuing-api.dlocal.com" path="/issuing/cards/{card\_id}/activate" %}
 {% api-method-summary %}
 Card activation
