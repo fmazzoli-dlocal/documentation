@@ -186,7 +186,8 @@
       <td style="text-align:left">Wallet</td>
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/PhonePe.png">https://static.dlocal.com/images/providers/PhonePe.png</a>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CW</code>
