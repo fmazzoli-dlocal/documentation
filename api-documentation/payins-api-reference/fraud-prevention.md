@@ -547,8 +547,8 @@ If you are using our Smart Fields solution, or any of our REDIRECT flows, the De
 
 **Fraud Prevention JS library URLs:**
 
-* **Testing:** [https://static-sandbox-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js](https://static-sandbox-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js)
-* **Production:** [https://static-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js](https://static-dlocal.s3-eu-west-1.amazonaws.com/js/collector/direct.js)
+* **Testing:** [https://static-sandbox.dlocal.com/js/collector/direct.js](https://static-sandbox.dlocal.com/js/collector/direct.js)
+* **Production:** [https://static.dlocal.com/js/collector/direct.js](https://static.dlocal.com/js/collector/direct.js)
 
 For web applications, in order to integrate our JS library and perform the device data collection you should include the following code snippet right after the opening `<body>` tag:
 
