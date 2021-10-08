@@ -19,6 +19,9 @@
       <th style="text-align:left">Allowed Flows</th>
       <th style="text-align:left"><b>Logo</b>
       </th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left"></th>
     </tr>
   </thead>
   <tbody>
@@ -34,6 +37,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/RC.png">https://static.dlocal.com/images/providers/RC.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>NM</code>
@@ -47,6 +53,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/NN.png">https://static.dlocal.com/images/providers/NN.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>FP</code>
@@ -60,6 +69,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/FP.png">https://static.dlocal.com/images/providers/FP.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>XC</code>
@@ -72,6 +84,10 @@
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/XC.png">https://static.dlocal.com/images/providers/XC.png</a>&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>XP</code>
@@ -84,6 +100,10 @@
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/XP.png">https://static.dlocal.com/images/providers/XP.png</a>&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>HR</code>
@@ -96,6 +116,10 @@
       <td style="text-align:left"><code>REDIRECT</code>
       </td>
       <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/HR.png">https://static.dlocal.com/images/providers/HR.png</a>&#x200B;</td>
+      <td
+      style="text-align:left"></td>
+        <td style="text-align:left"></td>
+        <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>HL</code>
@@ -109,6 +133,24 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/HL.png">https://static.dlocal.com/images/providers/HL.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>IO</code>
+      </td>
+      <td style="text-align:left">FPX</td>
+      <td style="text-align:left"><code>BANK_TRANSFERS</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Bank Transfers</td>
+      <td style="text-align:left"><code>REDIRECT</code>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -127,6 +169,9 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/Visa_logo.png">https://pay.dlocal.com/views/2.0/images/payments/VI.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -145,6 +190,9 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/VD.png">https://pay.dlocal.com/views/2.0/images/payments/VD.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -163,6 +211,9 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://static.dlocal.com/images/providers/master.png">https://pay.dlocal.com/views/2.0/images/payments/MC.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -181,6 +232,9 @@
       </td>
       <td style="text-align:left">&#x200B;<a href="https://pay.dlocal.com/views/2.0/images/payments/MD.png">https://pay.dlocal.com/views/2.0/images/payments/MD.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>CARD</code>
@@ -199,6 +253,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/UnionPay.png">https://static.dlocal.com/images/providers/UnionPay.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>YB</code>
@@ -216,6 +273,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Boost.png">https://static.dlocal.com/images/providers/Boost.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>GY</code>
@@ -233,6 +293,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/GrabPay.png">https://static.dlocal.com/images/providers/GrabPay.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>MB</code>
@@ -250,6 +313,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/MaybankQR.png">https://static.dlocal.com/images/providers/MaybankQR.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left"><code>TG</code>
@@ -267,6 +333,9 @@
       </td>
       <td style="text-align:left"><a href="https://static.dlocal.com/images/providers/Touchngo.png">https://static.dlocal.com/images/providers/Touchngo.png</a>
       </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
